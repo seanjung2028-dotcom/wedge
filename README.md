@@ -36,7 +36,8 @@ This is a working snapshot from Week 10 of the 2026 season, exported from the se
 - **What's in it:**
   - `index.html` and the page scripts (`wg.js`, `final.js`, `brain.js`) and styles (`wg.css`), the same files the artifact serves
   - `runtime.js`, which stands in for the artifact runtime: it loads the data, then the scripts
-  - `data/`, one CSV per dataset, plus the record as `certs.json` and `analysts.json`
+  - `data/wedge-data.json`, one bundle holding every dataset's CSV text plus the record (certified picks and analysts). It's a single JSON file because Cloudflare compresses JSON (about 0.7 MB on the wire) but serves `.csv` uncompressed.
+  - The page loads its scripts, stylesheet and data with `?v=<hash>` URLs. That lets browsers cache them for a year, and a new build still shows up on the next visit, because the page itself is never cached.
   - `assets/` (images, fonts, helmets, player photos) and `vendor/d3.min.js`
   - `_headers` (security and cache headers, read by Netlify and Cloudflare Pages) and `robots.txt`
 - **Rebuild:** run `python3 v2/build_site.py` after every site update, then sync. It reads the last built page in `v2/out/`, the dataset CSVs, `rh/certs_seed.json` and `rh/analysts_seed.json`.
