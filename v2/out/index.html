@@ -17,8 +17,9 @@
         <button type="button" class="wz-btn wz-btn-ghost wz-btn-sm" id="wz-login">Log in</button>
         <button type="button" class="wz-btn wz-btn-g wz-btn-sm" id="wz-signup">Sign up</button>
         <button type="button" class="wz-me" id="wz-me" hidden><span class="wz-av" id="wz-me-av">W</span><span id="wz-me-name">Account</span><em id="wz-me-plan">Free</em></button>
-        <button type="button" class="wz-btn wz-btn-g wz-btn-sm" id="wz-gopro" data-wz-join="monthly" hidden>Go Pro</button>
-        <button type="button" class="wz-btn wz-btn-w wz-btn-sm pf-join" data-wz-join="monthly">Join ↗</button>
+        <button type="button" class="wz-btn wz-btn-g wz-btn-sm" id="wz-gopro" data-go="subscribe" hidden>Go Pro</button>
+        <button type="button" class="wz-btn wz-btn-ghost wz-btn-sm" id="v2-acct" hidden>Sign in</button>
+        <button type="button" class="wz-btn wz-btn-w wz-btn-sm pf-join" data-go="subscribe">Join ↗</button>
       </div>
     </div>
     <p class="wg-certnote" id="certnote" role="status" hidden></p>
@@ -63,10 +64,10 @@
       <div class="pf-hero-copy">
         <h2 class="pf-h1" id="hero-title">Football,<br><em>understood.</em></h2>
         <div class="pf-row">
-          <button type="button" class="wz-btn wz-btn-g wz-btn-lg" data-wz-join="monthly">Join Wedge Pro ↗</button>
+          <button type="button" class="wz-btn wz-btn-g wz-btn-lg" data-go="subscribe">Join Wedge Pro ↗</button>
           <button type="button" class="wz-btn wz-btn-line wz-btn-lg" data-wz-jump="v2-matchups">This week's matchups</button>
         </div>
-        <p class="pf-fine">$19.99 a month or $119.99 a season · cancel anytime</p>
+        <p class="pf-fine">Research $19.99 a month · Inner Circle $119.99 for the season</p>
         <p class="wg-hero-desc wg-visually-hidden" id="wg-profit" data-source="results" aria-live="polite">Net profit on Wedge-certified picks so far: —</p>
       </div>
       <div class="pf-proof" data-source="results" aria-label="Track record">
@@ -547,6 +548,73 @@
 </div>
 
   <!-- ============ Soccer (placeholder) ============ -->
+
+  <div class="rs-page v2-open v2-plans-page" id="subscribe" hidden>
+    <header class="wx-band"><span class="wx-label"><i class="wx-dot" aria-hidden="true"></i>Wedge / Membership</span><h2>Pick your edge.</h2></header>
+    <div class="v2-plans">
+      <article class="v2-plan" data-plan="research" aria-labelledby="plan-r-h">
+        <span class="pf-label">Tier 1</span>
+        <h3 class="v2-plan-name" id="plan-r-h">Research</h3>
+        <div class="v2-plan-price"><b>$19.99</b><span>a month</span></div>
+        <p class="v2-plan-sub">Renews monthly. Cancel anytime.</p>
+        <ul class="v2-plan-list">
+          <li><b>Research</b>: every NFL and NBA line at every price, with our projection beside each</li>
+          <li>The <b>research file</b> behind any line: bull, bear and base, the injury report and the game script</li>
+          <li><b>Charts &amp; Trends</b>: which spots clear the line, by role, script and scheme</li>
+          <li><b>Results</b> and <b>Analysts</b>: every posted line and analyst pick, graded from the box score</li>
+        </ul>
+        <button type="button" class="wz-btn wz-btn-w wz-btn-lg v2-plan-go">Start Research ↗</button>
+        <p class="v2-plan-note"></p>
+      </article>
+      <article class="v2-plan is-top" data-plan="inner" aria-labelledby="plan-i-h">
+        <span class="pf-label">Tier 2</span>
+        <h3 class="v2-plan-name" id="plan-i-h">Inner Circle</h3>
+        <div class="v2-plan-price"><b>$119.99</b><span>for the season</span></div>
+        <p class="v2-plan-sub">One payment. No renewal.</p>
+        <ul class="v2-plan-list">
+          <li>Everything in <b>Research</b></li>
+          <li><b>The Winning Edge</b>: our final lines and conditional leans for every game, every week</li>
+          <li>The <b>Thesis</b> behind every game on the card</li>
+          <li>Every sport we publish a card for, all season</li>
+        </ul>
+        <button type="button" class="wz-btn wz-btn-g wz-btn-lg v2-plan-go">Join the Inner Circle ↗</button>
+        <p class="v2-plan-note"></p>
+      </article>
+    </div>
+    <div class="v2-plans-foot">
+      <p>Already a member? <button type="button" class="wz-link" data-go="signin">Sign in with your email</button></p>
+      <p class="v2-fine">Research renews each month until you cancel. Inner Circle is a one-time payment that covers the 2026–27 season, through the Super Bowl. Wedge publishes research and opinions on prediction-market prices for information and entertainment. It isn’t financial or betting advice, and past results don’t guarantee future ones.</p>
+    </div>
+  </div>
+
+  <div class="rs-page v2-open" id="signin" hidden>
+    <header class="wx-band"><span class="wx-label"><i class="wx-dot" aria-hidden="true"></i>Wedge / Account</span><h2 id="v2-si-h">Sign in.</h2></header>
+    <section class="v2-si" aria-labelledby="v2-si-h">
+      <div class="v2-si-card">
+        <form id="v2-si-email" novalidate>
+          <label for="v2-si-e">Your email</label>
+          <input id="v2-si-e" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required>
+          <button type="submit" class="wz-btn wz-btn-g wz-btn-lg">Email me a code</button>
+        </form>
+        <form id="v2-si-code" novalidate hidden>
+          <p>Enter the 6-digit code we sent to <b id="v2-si-to"></b>.</p>
+          <label for="v2-si-c" class="wg-visually-hidden">Sign-in code</label>
+          <input id="v2-si-c" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" placeholder="000000" required>
+          <button type="submit" class="wz-btn wz-btn-g wz-btn-lg">Sign in</button>
+          <button type="button" class="wz-link" id="v2-si-back">Use a different email</button>
+        </form>
+        <div id="v2-si-acct" hidden>
+          <dl id="v2-si-dl"></dl>
+          <button type="button" class="wz-btn wz-btn-g wz-btn-lg" id="v2-si-up">See Inner Circle ↗</button>
+          <a class="wz-btn wz-btn-line wz-btn-lg" id="v2-si-bill" href="#" target="_blank" rel="noopener" hidden>Manage billing ↗</a>
+          <button type="button" class="wz-link" id="v2-si-out">Sign out</button>
+        </div>
+        <p class="v2-si-msg" id="v2-si-msg" role="status" aria-live="polite"></p>
+      </div>
+      <p class="v2-si-help">No password. We email you a one-time code whenever you sign in on a new device. Not a member yet? <button type="button" class="wz-link" data-go="subscribe">See plans</button></p>
+    </section>
+  </div>
+
   <div class="rs-page" id="soccer" hidden>
     <header class="wx-band"><span class="wx-label"><i class="wx-dot" aria-hidden="true"></i>Soccer</span><h2>In preparation.</h2><p>Premier League, Champions League, MLS</p></header>
     <section class="wg-soon">

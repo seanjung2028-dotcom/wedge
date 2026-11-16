@@ -129,22 +129,21 @@
   /* handwritten headings on the sheet; the numbers and charts stay typed */
   .v2-folder .wg-sd-sech h3, .v2-folder .wg-sd-sec > h3 { font-family: var(--hand); font-weight: 600; font-size: 21px; line-height: 1.25; letter-spacing: .03em; color: var(--ink); text-transform: none; }
   .v2-folder .wg-sd-hint { font-family: var(--hand); font-weight: 500; font-size: 14.5px; letter-spacing: .03em; color: var(--ink-mu); text-transform: none; }
-  /* page turns: the old sheet lifts away (forward) or drops away (back) and shows the new one underneath */
-  .v2-leaf { position: absolute; z-index: 4; pointer-events: none; transform-style: preserve-3d; perspective: 3200px; }
-  .v2-leaf-card { position: absolute; inset: 0; transform-style: preserve-3d; will-change: transform; }
-  .v2-leaf-f, .v2-leaf-b { position: absolute; inset: 0; overflow: hidden; border-radius: 2px; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
-  .v2-leaf-f { background: var(--pap); }
-  .v2-leaf-f::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(60, 50, 25, .2)); opacity: 0; }
-  .v2-leaf-b { transform: rotateX(180deg); background: linear-gradient(180deg, #F6F5F0, #E9E6DC); box-shadow: inset 0 0 40px rgba(120, 100, 60, .14); }
+  /* page shuffle: the old sheet slides off to the side, flat on the desk, and the new sheet slides in from the other side */
+  .v2-leaf { position: absolute; z-index: 4; pointer-events: none; }
+  .v2-leaf-card { position: absolute; inset: 0; will-change: transform, opacity; }
+  .v2-leaf-f { position: absolute; inset: 0; overflow: hidden; border-radius: 2px; background: var(--pap); box-shadow: 0 18px 32px -20px rgba(70, 55, 25, .55), 0 0 0 1px rgba(150, 130, 90, .14); }
+  .v2-leaf-b { display: none; }
   .v2-leaf-in { position: absolute; left: 0; right: 0; top: 0; }
-  .v2-leaf.up .v2-leaf-card { transform-origin: 50% 0; animation: v2LeafUp .72s cubic-bezier(.5, .05, .25, 1) both; }
-  .v2-leaf.down .v2-leaf-card { transform-origin: 50% 100%; animation: v2LeafDown .72s cubic-bezier(.5, .05, .25, 1) both; }
-  .v2-leaf .v2-leaf-f::after { animation: v2LeafShade .72s ease-in both; }
-  @keyframes v2LeafUp { 0% { transform: rotateX(0) translateZ(0); opacity: 1; } 12% { transform: rotateX(8deg) translateZ(6px); } 72% { opacity: 1; } 100% { transform: rotateX(178deg) translateZ(0); opacity: 0; } }
-  @keyframes v2LeafDown { 0% { transform: rotateX(0); opacity: 1; } 12% { transform: rotateX(-8deg); } 72% { opacity: 1; } 100% { transform: rotateX(-178deg); opacity: 0; } }
-  @keyframes v2LeafShade { 0% { opacity: 0; } 60% { opacity: 1; } 100% { opacity: 1; } }
-  .v2-folder .wg-sd-body.v2-under { animation: v2Under .72s ease-out both; }
-  @keyframes v2Under { 0% { filter: brightness(.9); } 100% { filter: none; } }
+  .v2-leaf.up .v2-leaf-card { transform-origin: 30% 100%; animation: v2ShufL .42s cubic-bezier(.45, 0, .2, 1) both; }
+  .v2-leaf.down .v2-leaf-card { transform-origin: 70% 100%; animation: v2ShufR .42s cubic-bezier(.45, 0, .2, 1) both; }
+  @keyframes v2ShufL { 0% { transform: none; opacity: 1; } 55% { opacity: 1; } 100% { transform: translateX(-62%) rotate(-2deg); opacity: 0; } }
+  @keyframes v2ShufR { 0% { transform: none; opacity: 1; } 55% { opacity: 1; } 100% { transform: translateX(62%) rotate(2deg); opacity: 0; } }
+  .v2-folder .wg-sd-body.v2-under.v2-in-r { animation: v2InR .42s cubic-bezier(.2, .7, .2, 1) both; }
+  .v2-folder .wg-sd-body.v2-under.v2-in-l { animation: v2InL .42s cubic-bezier(.2, .7, .2, 1) both; }
+  @keyframes v2InR { from { transform: translateX(28px); opacity: .55; } to { transform: none; opacity: 1; } }
+  @keyframes v2InL { from { transform: translateX(-28px); opacity: .55; } to { transform: none; opacity: 1; } }
+  .v2-folder .wg-sd-in { overflow-x: clip; }
   /* opening: the folder slides up, its tabs rise into place, the sheet comes out of the folder and the label writes itself in */
   .v2-folder.v2-opening .wg-sd-in { animation: v2FolderIn .46s cubic-bezier(.2, .8, .2, 1) both; }
   .v2-folder.v2-opening .wg-sd-body { animation: v2PaperIn .6s .32s cubic-bezier(.2, .8, .2, 1) both; }
@@ -386,7 +385,10 @@
   .wg-paper.wg-paper .wz-top .wg-dd-item:hover { padding-left: 18px; background: rgba(255, 255, 255, .07); }
   .wg-paper.wg-paper .wz-top .wg-dd-item[aria-current="page"] { background: rgba(0, 154, 68, .16); color: #F6F7F8; }
   .wg-paper.wg-paper .wz-top .wg-dd-sub { padding-left: 30px; }
-  .wg-paper.wg-paper .wz-top .wg-dd-sub::before { left: 16px; }
+  .wg-paper.wg-paper .wz-top .wg-dd-sub::before { left: 16px; transition: left .2s, opacity .2s; }
+  /* the sub-item's dash and text slide together on hover (the general hover rule used to pull the text back over the dash) */
+  .wg-paper.wg-paper .wz-top .wg-dd-sub:hover { padding-left: 34px; }
+  .wg-paper.wg-paper .wz-top .wg-dd-sub:hover::before { left: 20px; opacity: .85; }
   .wg-paper.wg-paper .wz-top .wg-dd-label { padding: 6px 14px 8px; font-size: 11px; letter-spacing: .12em; }
   .wg-paper.wg-paper .wz-top .wg-dd-label ~ .wg-dd-label { padding-top: 4px; }
   .wg-paper.wg-paper .wz-top .wg-dd-sep { margin: 12px 14px; background: rgba(255, 255, 255, .08); }

@@ -11,9 +11,15 @@
   const DDS = [...document.querySelectorAll('.wg-nav .wg-dd')].map((dd) => ({ dd, btn: $('.wg-dd-btn', dd), menu: $('.wg-dd-menu', dd), cur: $('.wg-dd-cur', dd), items: [...dd.querySelectorAll('.wg-dd-item')] }));
   const closeMenu = (D, focusBtn) => { D.menu.hidden = true; D.btn.setAttribute('aria-expanded', 'false'); if (focusBtn) D.btn.focus(); };
   const closeMenus = () => DDS.forEach((D) => closeMenu(D, false));
+  // the nav scrolls sideways on phones, so menus hang from the header: line each one up under its own button
+  const placeMenu = (D) => {
+    const host = D.menu.offsetParent; if (!host || D.menu.hidden) return;
+    const hr = host.getBoundingClientRect(), br = D.btn.getBoundingClientRect(), mw = D.menu.offsetWidth;
+    D.menu.style.left = Math.round(Math.max(8, Math.min(br.left - hr.left, hr.width - mw - 8))) + 'px';
+  };
   const openMenu = (D, focusItem) => {
     DDS.forEach((o) => { if (o !== D) closeMenu(o, false); });
-    D.menu.hidden = false; D.btn.setAttribute('aria-expanded', 'true');
+    D.menu.hidden = false; D.btn.setAttribute('aria-expanded', 'true'); placeMenu(D);
     if (focusItem) (D.items.find((i) => i.getAttribute('aria-current') === 'page') || D.items[0]).focus();
   };
   DDS.forEach((D) => {
@@ -30,6 +36,8 @@
     });
   });
   document.addEventListener('click', (e) => { if (!e.target.closest('.wg-nav .wg-dd')) closeMenus(); });
+  window.addEventListener('resize', () => DDS.forEach(placeMenu));
+  { const nv = $('.wg-nav'); if (nv) nv.addEventListener('scroll', () => DDS.forEach(placeMenu), { passive: true }); }
   const v2Top = () => { const t = $('#top'); if (t) t.scrollIntoView({ block: 'start' }); };
   // the strip of each sport's pages under the page title
   const subBtns = [...document.querySelectorAll('.v2-subnav [data-page]')];

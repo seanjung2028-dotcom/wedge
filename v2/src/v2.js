@@ -368,8 +368,9 @@
     if (tab && !reduced() && prev && prev !== k) { tab.classList.remove('v2-tab-pop'); void tab.offsetWidth; tab.classList.add('v2-tab-pop'); }
     if (!leaf) return;
     $('.wg-sd-in', sitDlg).append(leaf);
-    body.classList.remove('v2-under'); void body.offsetWidth; body.classList.add('v2-under');
-    clearTimeout(V2.flipT); V2.flipT = setTimeout(() => { leaf.remove(); body.classList.remove('v2-under'); if (tab) tab.classList.remove('v2-tab-pop'); }, 780);
+    const fwd = leaf.classList.contains('up');
+    body.classList.remove('v2-under', 'v2-in-r', 'v2-in-l'); void body.offsetWidth; body.classList.add('v2-under', fwd ? 'v2-in-r' : 'v2-in-l');
+    clearTimeout(V2.flipT); V2.flipT = setTimeout(() => { leaf.remove(); body.classList.remove('v2-under', 'v2-in-r', 'v2-in-l'); if (tab) tab.classList.remove('v2-tab-pop'); }, 480);
   }
 
   // ---------------- Injury Report: the body chart and the reports ----------------

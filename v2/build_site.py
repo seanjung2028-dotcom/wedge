@@ -83,9 +83,9 @@ RUNTIME = r"""/* Wedge standalone runtime: stands in for the dashboard runtime a
   var user = { isOwner: function () { return Promise.resolve(false); }, id: function () { return Promise.resolve(null); }, me: function () { return Promise.resolve(null); } };
   window.claude = { use: function (n) { return Promise.resolve(n === 'db' ? db : n === 'user' ? user : null); } };
 
-  // One versioned, compressed bundle: { ds: {id: csv text}, certs, analysts }. Shows progress while it downloads.
+  // Data comes in bundles of { ds: {id: csv text}, certs, analysts }: the public one for everyone, the Research one for members.
   var getBundle = function (u, onProgress) {
-    return fetch(u).then(function (r) {
+    return fetch(u, { credentials: 'same-origin' }).then(function (r) {
       if (!r.ok) throw new Error(u + ' ' + r.status);
       if (!r.body || !r.body.getReader || !window.TextDecoder) return r.text();
       var rd = r.body.getReader(), dec = new TextDecoder(), parts = [], got = 0;
@@ -99,24 +99,151 @@ RUNTIME = r"""/* Wedge standalone runtime: stands in for the dashboard runtime a
   var loadScript = function (src) { return new Promise(function (res, rej) { var s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = function () { rej(new Error(src)); }; document.body.appendChild(s); }); };
   var resolveReady;
   ready = new Promise(function (r) { resolveReady = r; });
-  window.WedgeRuntime = { boot: function (bundle, scripts) {
+  // who's here: /api/me on wedgepicks.com; anywhere without it (a local copy) the whole site is open
+  var getMe = function () {
+    return fetch('/api/me', { credentials: 'same-origin', cache: 'no-store' })
+      .then(function (r) { return r.ok && /json/.test(r.headers.get('content-type') || '') ? r.json() : null; })
+      .catch(function () { return null; });
+  };
+  window.WedgeRuntime = { boot: function (C) {
     var veil = document.getElementById('wz-boot'), msg = document.getElementById('wz-boot-msg') || veil, sub = document.getElementById('wz-boot-sub');
     var slow = setTimeout(function () { if (sub) sub.textContent = 'Still loading. This can take a moment on a slow connection.'; }, 8000);
     var fail = function (e) { console.error(e); clearTimeout(slow); if (msg) msg.textContent = 'Wedge couldn’t load this week’s card.'; if (sub) sub.innerHTML = 'Check your connection, then <a href="" style="color:inherit">reload the page</a>.'; };
-    return getBundle(bundle, function (n) { if (sub && n > 150000) sub.textContent = (n / 1e6).toFixed(1) + ' MB loaded'; })
-      .then(function (b) {
-        store['wedger/certs'] = b.certs; store['wedger/analysts'] = b.analysts; resolveReady();
-        IDS.forEach(function (id) { raw[id] = d3.csvParse(b.ds[id] || ''); });
-        booted = true;
-        return scripts.reduce(function (p, s) { return p.then(function () { return loadScript(s); }); }, Promise.resolve());
-      })
+    var got = {}, prog = function (k) { return function (n) { got[k] = n; var t = 0; for (var x in got) t += got[x]; if (sub && t > 150000) sub.textContent = (t / 1e6).toFixed(1) + ' MB loaded'; }; };
+    var A;
+    return getMe().then(function (m) {
+      A = m ? { api: true, gating: !!m.gating, level: m.gating ? (m.level || 0) : 3, signedIn: !!m.signedIn, email: m.email || null, plan: m.plan || 'free', planName: m.planName || 'Free',
+                until: m.until || null, source: m.source || null, signInReady: !!m.signInReady, checkout: m.checkout || {}, portal: m.portal || '' }
+            : { api: false, gating: false, level: 3, signedIn: false, checkout: {} };
+      window.WEDGE_ACCESS = A;
+      var jobs = [getBundle(C.pub, prog('p'))];
+      if (A.level >= 1) jobs.push(getBundle(C.t1, prog('t')).catch(function (e) { console.warn(e); A.level = 0; return null; }));
+      return Promise.all(jobs);
+    }).then(function (bs) {
+      var b = { ds: {}, certs: { picks: [] }, analysts: { order: [], picks: {} } };
+      bs.forEach(function (x) { if (!x) return; for (var k in x.ds) b.ds[k] = x.ds[k]; if (x.certs) b.certs = x.certs; if (x.analysts) b.analysts = x.analysts; });
+      store['wedger/certs'] = b.certs; store['wedger/analysts'] = b.analysts; resolveReady();
+      IDS.forEach(function (id) { if (b.ds[id] != null) raw[id] = d3.csvParse(b.ds[id]); });
+      booted = true;
+      var full = A.level >= 2;
+      var card = full ? loadScript(C.fin[0]).then(function () { return loadScript(C.brain[0]); }).catch(function (e) { console.warn(e); A.level = Math.min(A.level, 1); return loadScript(C.fin[1]).then(function () { return loadScript(C.brain[1]); }); })
+                      : loadScript(C.fin[1]).then(function () { return loadScript(C.brain[1]); });
+      return card.then(function () { return loadScript(C.wg); });
+    })
       .then(function () { clearTimeout(slow); subs.forEach(function (f) { try { f(); } catch (e) { console.error(e); } }); if (veil) veil.remove(); })
       .catch(fail);
   } };
 })();
 """
 
+# ---------------- tiers ----------------
+# Who sees what (the gate itself is functions/p/[[path]].js; pages lock in v2/src/site.js):
+#   everyone      data/public.json: the certified picks that have settled (the headline record), no research
+#                 data/final-public.js, brain-public.js: this week's games and scores, no plays
+#   Research (1)  p/t1/<hash>/data.json: every dataset, the analysts and the full record
+#   Inner (2)     p/t2/<hash>/final.js, brain.js: The Winning Edge card and its reasoning
+PREVIEW_PAGES = ['research', 'final', 'thesis', 'charts', 'analysts', 'results', 'nba', 'nba-charts', 'nba-results']
+
+def key_of_result(r):
+    return '|'.join(['w' + (r.get('week') or '6'), r['game'], 'Anytime Touchdown' if r['group'] == 'ATD filter picks' else r['market'], r['contract']])
+
+def public_record(results_csv, certs):
+    import csv, io
+    rows = list(csv.DictReader(io.StringIO(results_csv)))
+    keep = [r for r in rows if key_of_result(r) in certs and r['outcome'] in ('Won', 'Lost', 'Void')]
+    settled = {key_of_result(r) for r in keep}
+    out = io.StringIO(); w = csv.DictWriter(out, fieldnames=list(rows[0].keys()), lineterminator='\n'); w.writeheader(); w.writerows(keep)
+    return out.getvalue(), [k for k in certs if k in settled]
+
+def read_js_obj(path, name):
+    t = open(path, encoding='utf-8').read().strip()
+    m = re.match(r'window\.%s\s*=\s*([\s\S]*?);?\s*$' % name, t); assert m, path
+    return json.loads(m.group(1))
+
+def public_card(F):
+    keep = {k: F.get(k) for k in ('at', 'books_at', 'week', 'model', 'backtest', 'graded') if k in F}
+    keep.update({k: None for k in ('lens_how', 'lens_check', 'lens_check_title', 'lens_check_head', 'lens_thru')})
+    keep['public'] = True
+    keep['cards'] = [{'game': c['game'], 'kick': c.get('kick', ''), 'venue': c.get('venue', ''), 'status': c.get('status', ''), 'score': c.get('score', ''),
+                      'market': '', 'lineup': '', 'branches': '', 'keys': [], 'scripts': {}, 'plays': [], 'passed': [], 'likely': [], 'value': [], 'sources': [], 'lens': {'sides': []}}
+                     for c in F['cards']]
+    return keep
+
+def public_brain(B):
+    return {'at': B.get('at'), 'plays': {}, 'games': {}, 'rank': [], 'bt': B.get('bt'), 'mix': B.get('mix'), 'public': True}
+
+def favicons():
+    from PIL import Image, ImageDraw
+    G = '#7ED957'
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M14 59 L50 59 L50 5 Z" fill="%s"/></svg>' % G)
+    open(OUT + 'favicon.svg', 'w').write(svg)
+    def tri(n, bg=None):
+        s = 8; im = Image.new('RGBA', (n * s, n * s), bg or (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+        f = lambda v: v / 64 * n * s
+        d.polygon([(f(14), f(59)), (f(50), f(59)), (f(50), f(5))], fill=G)
+        return im.resize((n, n), Image.LANCZOS)
+    tri(32).save(OUT + 'favicon-32.png')
+    tri(48).save(OUT + 'favicon.ico', sizes=[(16, 16), (32, 32), (48, 48)])
+    tri(180, (21, 22, 20, 255)).save(OUT + 'apple-touch-icon.png')
+
+def previews():
+    """Blurred pictures of each members-only page, shown behind the sign-up card. Rendered from the full local build."""
+    import socket, subprocess, threading, http.server, functools
+    from PIL import Image, ImageFilter
+    os.makedirs(OUT + 'assets/locked', exist_ok=True)
+    s = socket.socket(); s.bind(('127.0.0.1', 0)); port = s.getsockname()[1]; s.close()
+    class Q(http.server.SimpleHTTPRequestHandler):
+        def log_message(self, *a): pass
+        def translate_path(self, path):
+            q = path.split('?', 1)[0]
+            if q.startswith('/p/'): return PROT_RAW + q[1:]
+            return super().translate_path(path)
+    srv = http.server.ThreadingHTTPServer(('127.0.0.1', port), functools.partial(Q, directory=OUT))
+    th = threading.Thread(target=srv.serve_forever, daemon=True); th.start()
+    try:
+        tmp = '/tmp/wedge_pv'; os.makedirs(tmp, exist_ok=True)
+        r = subprocess.run(['node', W + 'v2/previews.js', f'http://127.0.0.1:{port}/', tmp] + PREVIEW_PAGES, capture_output=True, text=True, timeout=240)
+        if r.returncode: print(r.stdout[-800:], r.stderr[-800:]); raise SystemExit('previews failed')
+    finally:
+        srv.shutdown()
+    out = {}
+    for pid in PREVIEW_PAGES:
+        src = f'{tmp}/{pid}.png'
+        if not os.path.exists(src): continue
+        im = Image.open(src).convert('RGB')
+        im = im.resize((im.width // 2, im.height // 2), Image.LANCZOS).filter(ImageFilter.GaussianBlur(8))
+        dst = f'assets/locked/{pid}.webp'; im.save(OUT + dst, 'WEBP', quality=55, method=6)
+        out[pid] = dst + '?v=' + hashlib.sha1(open(OUT + dst, 'rb').read()).hexdigest()[:10]
+    return out
+
+# ---------------- paid files: bundled into the /p function, never static ----------------
+PROT = W + 'lib/protected/'      # gzipped copies the function serves (deployed with the functions)
+PROT_RAW = W + 'site_protected/' # plain copies, only for rendering the previews locally (not deployed, not synced)
+_prot = []
+def protect(rel, text, ctype, need):
+    import gzip
+    if not _prot:
+        for d in (PROT, PROT_RAW):
+            if os.path.exists(d): shutil.rmtree(d)
+            os.makedirs(d)
+    name = f'f{len(_prot)}.bin'
+    open(PROT + name, 'wb').write(gzip.compress(text.encode('utf-8'), 9, mtime=0))
+    os.makedirs(os.path.dirname(PROT_RAW + rel), exist_ok=True); open(PROT_RAW + rel, 'w', encoding='utf-8').write(text)
+    _prot.append((rel[2:], name, ctype, need))   # key without the leading "p/"
+
+def write_manifest():
+    lines = ['// written by v2/build_site.py: the paid files the /p function serves (path under /p/ -> [gzipped body, type, level needed])']
+    lines += [f"import {n[:-4]} from './{n}';" for _, n, _, _ in _prot]
+    lines.append('export const FILES = {')
+    lines += [f"  {json.dumps(k)}: [{n[:-4]}, {json.dumps(ct)}, {lv}]," for k, n, ct, lv in _prot]
+    lines.append('};')
+    open(PROT + 'manifest.js', 'w').write('\n'.join(lines) + '\n')
+
 def main():
+    fast = '--fast' in sys.argv   # skip the blurred previews (keeps the last ones)
+    keep_pv = {}
+    if fast and os.path.exists(OUT + 'assets/locked'):
+        shutil.copytree(OUT + 'assets/locked', '/tmp/wedge_pv_keep', dirs_exist_ok=True)
     if os.path.exists(OUT): shutil.rmtree(OUT)
     for d in ('data', 'assets/img', 'assets/fonts', 'assets/helmets', 'assets/players', 'vendor'): os.makedirs(OUT + d, exist_ok=True)
     A = assets(); used = set()
@@ -129,31 +256,50 @@ def main():
     body = page.replace(links, '', 1) if page.startswith(links) else page
     body = re.sub(r'\s*<script src="final\.js"></script><script src="brain\.js"></script><script src="wg\.js"></script>\s*$', '\n', body)
     assert '<script src="wg.js">' not in body, 'page scripts not stripped'
-    for f in ('wg.js', 'wg.css', 'final.js', 'brain.js'):
+    for f in ('wg.js', 'wg.css'):
         open(OUT + f, 'w').write(fix(open(SRC + f).read()))
     for k in used:
         src, dst = A[k]; shutil.copy2(src, OUT + dst)
-    # All data in one JSON file: Cloudflare compresses JSON (it serves .csv uncompressed), and it's one request instead of 28.
+    hx = lambda b: hashlib.sha1(b if isinstance(b, bytes) else b.encode()).hexdigest()
+    put = lambda rel, text: (os.makedirs(os.path.dirname(OUT + rel), exist_ok=True), open(OUT + rel, 'w', encoding='utf-8').write(text))
+    # data: Research gets everything; the public bundle is just the settled certified record (the headline numbers)
     tot = 0; ds = {}
     for k, v in DS.items():
         p = v if v.startswith('/') else R + v; ds[k] = open(p, encoding='utf-8').read(); tot += os.path.getsize(p)
+    certs = json.load(open(CERTS))['picks']
     a = json.load(open(ANALYSTS)); a = a.get('data', a)
-    bundle = json.dumps({'ds': ds, 'certs': {'picks': json.load(open(CERTS))['picks']}, 'analysts': a}, ensure_ascii=False, separators=(',', ':'))
-    open(OUT + 'data/wedge-data.json', 'w', encoding='utf-8').write(bundle)
+    full = json.dumps({'ds': ds, 'certs': {'picks': certs}, 'analysts': a}, ensure_ascii=False, separators=(',', ':'))
+    rec, pub_certs = public_record(ds['results'], set(certs))
+    pub = json.dumps({'ds': {'results': rec}, 'certs': {'picks': pub_certs}, 'analysts': {'order': a.get('order', []), 'picks': {}}}, ensure_ascii=False, separators=(',', ':'))
+    T1 = f'p/t1/{hx(full)[:16]}/data.json'; protect(T1, full, 'application/json; charset=utf-8', 1)
+    put('data/public.json', pub)
+    # the card: Inner Circle gets it whole; everyone else gets the games and scores only
+    fin_full = fix(open(SRC + 'final.js').read()); brain_full = fix(open(SRC + 'brain.js').read())
+    T2 = f'p/t2/{hx(fin_full + brain_full)[:16]}/'
+    protect(T2 + 'final.js', fin_full, 'application/javascript; charset=utf-8', 2); protect(T2 + 'brain.js', brain_full, 'application/javascript; charset=utf-8', 2)
+    write_manifest()
+    put('data/final-public.js', 'window.WZ_FINAL=' + json.dumps(public_card(read_js_obj(SRC + 'final.js', 'WZ_FINAL')), ensure_ascii=False, separators=(',', ':')) + ';\n')
+    put('data/brain-public.js', 'window.WZ_BRAIN=' + json.dumps(public_brain(read_js_obj(SRC + 'brain.js', 'WZ_BRAIN')), ensure_ascii=False, separators=(',', ':')) + ';\n')
     shutil.copy2('/opt/npm-tools/node_modules/d3/dist/d3.min.js', OUT + 'vendor/d3.min.js')
     open(OUT + 'runtime.js', 'w').write(RUNTIME.replace('__IDS__', json.dumps(list(DS))))
+    favicons()
     # Versioned URLs: the browser can cache each file, and a new build is picked up immediately (the page itself is never cached).
-    ver = lambda f: f + '?v=' + hashlib.sha1(open(OUT + f, 'rb').read()).hexdigest()[:10]
-    V = {f: ver(f) for f in ('vendor/d3.min.js', 'runtime.js', 'final.js', 'brain.js', 'wg.js', 'data/wedge-data.json')}
+    ver = lambda f: f + '?v=' + hx(open(OUT + f, 'rb').read())[:10]
+    boot = {'pub': ver('data/public.json'), 't1': '/' + T1, 'fin': ['/' + T2 + 'final.js', ver('data/final-public.js')],
+            'brain': ['/' + T2 + 'brain.js', ver('data/brain-public.js')], 'wg': ver('wg.js')}
     links = links.replace('href="wg.css"', 'href="' + ver('wg.css') + '"')
-    html = f"""<!doctype html>
+    def write_index(pv):
+        html = f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wedge · Football, understood.</title>
-<meta name="description" content="Wedge screens NFL prediction-market lines, prices them with its own model and posts a weekly card of final lines and leans, with a graded record.">
-<link rel="icon" type="image/png" href="assets/img/wedger-tri.png">
+<title>wedge</title>
+<meta name="description" content="Wedge screens NFL and NBA prediction-market lines, prices them with its own model and posts a weekly card of final lines and leans, with a graded record.">
+<meta name="theme-color" content="#151614">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 {links.strip()}
 <style>
 :root{{{LIGHT}{COMMON}}}
@@ -163,8 +309,8 @@ html,body{{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);f
 #wz-boot{{position:fixed;inset:0;display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:0 24px;text-align:center;background:#151614;color:#e9e7e1;font:500 14px/1.4 system-ui,sans-serif;z-index:9999;letter-spacing:.02em}}
 #wz-boot-sub{{color:#9a9890;font-weight:400;font-size:13px;min-height:1.4em}}
 </style>
-<script src="{V['vendor/d3.min.js']}"></script>
-<script src="{V['runtime.js']}"></script>
+<script src="{ver('vendor/d3.min.js')}"></script>
+<script src="{ver('runtime.js')}"></script>
 </head>
 <body>
 <div id="wz-boot" role="status"><div id="wz-boot-msg">Loading this week’s card…</div><div id="wz-boot-sub"></div></div>
@@ -173,13 +319,21 @@ html,body{{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);f
 {body.strip()}
 </div>
 <script>
-if (window.WedgeRuntime && window.d3) WedgeRuntime.boot('{V['data/wedge-data.json']}', ['{V['final.js']}', '{V['brain.js']}', '{V['wg.js']}']);
+window.WEDGE_PREVIEWS = {json.dumps(pv)};
+if (window.WedgeRuntime && window.d3) WedgeRuntime.boot({json.dumps(boot)});
 else {{ document.getElementById('wz-boot-msg').textContent = 'Wedge couldn’t load this week’s card.'; document.getElementById('wz-boot-sub').innerHTML = 'Check your connection, then <a href="" style="color:inherit">reload the page</a>.'; }}
 </script>
 </body>
 </html>
 """
-    open(OUT + 'index.html', 'w').write(html)
+        open(OUT + 'index.html', 'w').write(html)
+    write_index({})
+    if fast and os.path.exists('/tmp/wedge_pv_keep'):
+        shutil.copytree('/tmp/wedge_pv_keep', OUT + 'assets/locked', dirs_exist_ok=True)
+        pv = {f[:-5]: 'assets/locked/' + f + '?v=' + hx(open(OUT + 'assets/locked/' + f, 'rb').read())[:10] for f in os.listdir(OUT + 'assets/locked') if f.endswith('.webp')}
+    else:
+        pv = {} if fast else previews()
+    write_index(pv)
     open(OUT + '_headers', 'w').write("""/*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
@@ -198,10 +352,20 @@ else {{ document.getElementById('wz-boot-msg').textContent = 'Wedge couldn’t l
   Cache-Control: public, max-age=31536000, immutable
 /vendor/*
   Cache-Control: public, max-age=31536000, immutable
+/p/*
+  X-Robots-Tag: noindex
 """)
-    open(OUT + 'robots.txt', 'w').write('User-agent: *\nAllow: /\n')
+    open(OUT + '404.html', 'w').write('''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>wedge</title>
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="robots" content="noindex">
+<style>html,body{margin:0;height:100%;background:#151614;color:#e9e7e1;font:500 16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+main{min-height:100%;display:grid;place-items:center;text-align:center;padding:0 24px}h1{margin:0 0 8px;font-size:44px;letter-spacing:-.03em}h1 b{color:#7ED957}
+p{margin:0 0 24px;color:#9a9890}a{display:inline-block;padding:12px 22px;border-radius:999px;background:#F6F7F8;color:#0D0F12;text-decoration:none;font-weight:700}</style></head>
+<body><main><div><h1>wedge<b>.</b></h1><p>That page isn’t here.</p><a href="/">Back to Wedge</a></div></main></body></html>
+''')
+    open(OUT + 'robots.txt', 'w').write('User-agent: *\nDisallow: /p/\nDisallow: /api/\nAllow: /\n')
     size = sum(os.path.getsize(os.path.join(r, f)) for r, _, fs in os.walk(OUT) for f in fs)
-    print(f'site built: {len(used)} assets, {len(DS)} datasets ({tot / 1e6:.1f} MB of data), {size / 1e6:.1f} MB total')
+    print(f'site built: {len(used)} assets, {len(DS)} datasets ({tot / 1e6:.1f} MB of data), public record {len(pub_certs)} settled certified picks, '
+          f'{len(pv)} previews, {size / 1e6:.1f} MB total')
 
 if __name__ == '__main__':
     main()

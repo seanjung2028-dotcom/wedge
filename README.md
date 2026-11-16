@@ -29,23 +29,26 @@ This is a working snapshot from Week 10 of the 2026 season, exported from the se
    - `bt/results_w10.py` writes the record file, `rh/results_w6_w10.csv`.
    - Certified picks are the `wedger/certs` document; `rh/certs_seed.json` is the local copy.
 
-## Standalone website (live at https://wedgepicks.com)
+## Website and memberships (live at https://wedgepicks.com)
 
-`site/` is the same site as the dashboard artifact, packaged as plain static files that any host can serve on your own domain. It is read-only: nobody signs in, and the certify boxes never show.
+`site/` is the public website: the same pages as the dashboard artifact, served by Cloudflare Pages with a small server in `functions/` for sign-in and paid access.
 
-- **What's in it:**
-  - `index.html` and the page scripts (`wg.js`, `final.js`, `brain.js`) and styles (`wg.css`), the same files the artifact serves
-  - `runtime.js`, which stands in for the artifact runtime: it loads the data, then the scripts
-  - `data/wedge-data.json`, one bundle holding every dataset's CSV text plus the record (certified picks and analysts). It's a single JSON file because Cloudflare compresses JSON (about 0.7 MB on the wire) but serves `.csv` uncompressed.
-  - The page loads its scripts, stylesheet and data with `?v=<hash>` URLs. That lets browsers cache them for a year, and a new build still shows up on the next visit, because the page itself is never cached.
-  - `assets/` (images, fonts, helmets, player photos) and `vendor/d3.min.js`
-  - `_headers` (security and cache headers, read by Netlify and Cloudflare Pages) and `robots.txt`
-- **Rebuild:** run `python3 v2/build_site.py` after every site update, then sync. It reads the last built page in `v2/out/`, the dataset CSVs, `rh/certs_seed.json` and `rh/analysts_seed.json`.
-- **Preview locally:** `python3 -m http.server -d site 8000`, then open http://localhost:8000. Opening `index.html` straight from disk won't load the data, because browsers block `fetch` from `file://`.
-- **Host:**
-  - Live on Cloudflare Pages (project `wedgepicks`, branch `main`, no build command, output directory `site`). `netlify.toml` covers Netlify if the site ever moves.
-  - Each push to `main` redeploys.
-  - Add the custom domain in the host's dashboard, then point the domain's DNS at the host.
+- **Who sees what:**
+  - Everyone: Home, the Subscribe and Sign-in pages, and the headline record.
+  - Research (Tier 1, $19.99 a month): Research, Charts & Trends, Analysts and Results, for the NFL and NBA.
+  - Inner Circle (Tier 2, $119.99 for the season): everything in Research, plus The Winning Edge (final lines and leans) and the Thesis.
+  - Analysts: everything.
+  - Locked pages show a blurred picture of the page (`site/assets/locked/`) with a way to subscribe or sign in. The paid data itself never reaches a visitor without access.
+- **Files:**
+  - `site/index.html`, `wg.js`, `wg.css`: the page. `runtime.js` asks `/api/me` who is signed in, then loads what that visitor may see.
+  - `site/data/public.json`, `final-public.js`, `brain-public.js`: what everyone gets (the settled certified record; this week's games and scores, no picks).
+  - `lib/protected/`: the paid files (all datasets, the full card), gzipped. They are bundled into the `/p/` function, not served as static files.
+  - `functions/api/`: `me`, `login` (emails a 6-digit code), `verify`, `logout`, `stripe` (webhook). `functions/p/[[path]].js` checks the visitor's level before serving a paid file. Shared code: `lib/wedge.js`.
+  - Versioned `?v=<hash>` URLs let browsers cache everything; a new build shows up on the next visit.
+- **Settings** (Cloudflare: Workers & Pages > wedgepicks > Settings): `WEDGE_GATING` (`on` locks paid pages; anything else keeps the site open), `SESSION_SECRET`, `RESEND_API_KEY`, `MAIL_FROM`, `STRIPE_WEBHOOK_SECRET`, `CHECKOUT_RESEARCH`, `CHECKOUT_INNER`, `BILLING_PORTAL`, `SEASON_END`, `ANALYST_EMAILS`, `INNER_EMAILS`, `RESEARCH_EMAILS`, and the KV binding `WEDGE`. Each is described at the top of `lib/wedge.js`.
+- **Rebuild:** `python3 v2/build_v2.py && python3 v2/split_v2.py && python3 v2/build_site.py`, then sync. `--fast` skips re-rendering the blurred previews.
+- **Test locally:** `npm i wrangler@4` in a scratch folder, then from the repo root run `wrangler pages dev site --kv WEDGE --binding WEDGE_GATING=on --binding SESSION_SECRET=test --binding ANALYST_EMAILS=you@example.com`. Without an email key, sign-in shows the code on the page (local only).
+- **Host:** Cloudflare Pages project `wedgepicks`, branch `main`, no build command, output directory `site`. Pages builds `functions/` automatically. Each push to `main` redeploys.
 
 ## The model
 
