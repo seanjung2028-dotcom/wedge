@@ -4,6 +4,7 @@ This repo mirrors the Wedge workspace (the weekly NFL pipeline, model, research 
 
 **Standing instruction from the owner:** every time the site is updated (new prices, settled results, card changes, record changes, code changes), sync this repo and push to `main` in the same turn.
 
+- First rebuild the standalone website: `python3 /home/claude/wedger/v2/build_site.py`. It writes `site/` from `v2/out/`, the dataset CSVs and `rh/certs_seed.json` / `rh/analysts_seed.json`. Refresh those two seeds from the live `wedger/certs` and `wedger/analysts` docs whenever they change. The host redeploys `site/` on every push to `main`.
 - Sync with `python3 /home/claude/wedger/sync_repo.py "<what changed>"`. A copy of the script is at `sync_repo.py` in the repo root. It copies code, configs, records and raw pulls from the workspace into this repo, commits, and pushes. If nothing changed, it pushes nothing.
 - Leave out raw downloads, generated datasets, store snapshots and anything with personal notes. The script's filter already does this.
-- Keep the repo private. `rh/check.js` and `v2/v1_js.js` contain the owner's contact email.
+- Keep the repo private. `rh/check.js`, `v2/v1_js.js` and the built `wg.js` files (including `site/wg.js`) contain the owner's contact email.

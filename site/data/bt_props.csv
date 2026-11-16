@@ -1,0 +1,214 @@
+period,factor,level,n,over_pct,diff
+2023–25,All,All props,15337,40.5,0.0
+2023–25,Favorite / underdog,Favorite,7949,41.1,0.6
+2023–25,Favorite / underdog,Underdog,7388,39.9,-0.6
+2023–25,Home / away,Away,7610,38.8,-1.7
+2023–25,Home / away,Home,7727,42.3,1.7
+2023–25,Momentum,Cold efficiency,813,43.5,3.0
+2023–25,Momentum,Early season,1879,32.3,-8.2
+2023–25,Momentum,Hot efficiency,721,41.6,1.1
+2023–25,Momentum,Role down,624,33.2,-7.4
+2023–25,Momentum,Role up,848,47.8,7.2
+2023–25,Momentum,Stable,6685,42.3,1.8
+2023–25,Momentum,Volume down,1693,38.9,-1.7
+2023–25,Momentum,Volume up,2074,41.2,0.7
+2023–25,Position,QB,1239,47.4,6.8
+2023–25,Position,RB,4045,39.7,-0.9
+2023–25,Position,TE,2889,40.7,0.2
+2023–25,Position,WR,7164,39.8,-0.8
+2023–25,Season hit rate,Hit 50% or less,8019,41.4,0.8
+2023–25,Season hit rate,Hit >50% vs line,5439,42.2,1.6
+2023–25,Stat,Passing yards,1239,47.4,6.8
+2023–25,Stat,Receiving yards,5900,42.3,1.8
+2023–25,Stat,Receptions,6250,36.6,-4.0
+2023–25,Stat,Rushing yards,1948,43.5,2.9
+2023–25,Team total,Implied 20.5–24,5780,40.6,0.0
+2023–25,Team total,Implied 24.5+,4802,42.3,1.7
+2023–25,Team total,Implied under 20.5,4755,38.8,-1.8
+Wk 1,All,All props,301,35.5,0.0
+Wk 1,Favorite / underdog,Favorite,165,31.5,-4.0
+Wk 1,Favorite / underdog,Underdog,136,40.4,4.9
+Wk 1,Home / away,Away,147,40.8,5.3
+Wk 1,Home / away,Home,154,30.5,-5.0
+Wk 1,Momentum,Early season,301,35.5,0.0
+Wk 1,Position,QB,28,42.9,7.3
+Wk 1,Position,RB,76,40.8,5.2
+Wk 1,Position,TE,70,31.4,-4.1
+Wk 1,Position,WR,127,33.1,-2.5
+Wk 1,Stat,Passing yards,28,42.9,7.3
+Wk 1,Stat,Receiving yards,117,33.3,-2.2
+Wk 1,Stat,Receptions,121,34.7,-0.8
+Wk 1,Stat,Rushing yards,35,40.0,4.5
+Wk 1,Team total,Implied 20.5–24,146,41.8,6.2
+Wk 1,Team total,Implied 24.5+,99,28.3,-7.3
+Wk 1,Team total,Implied under 20.5,56,32.1,-3.4
+Wk 2,All,All props,287,33.8,0.0
+Wk 2,Favorite / underdog,Favorite,148,38.5,4.7
+Wk 2,Favorite / underdog,Underdog,139,28.8,-5.0
+Wk 2,Home / away,Away,137,34.3,0.5
+Wk 2,Home / away,Home,150,33.3,-0.5
+Wk 2,Momentum,Early season,287,33.8,0.0
+Wk 2,Position,QB,29,44.8,11.0
+Wk 2,Position,RB,74,28.4,-5.4
+Wk 2,Position,TE,61,29.5,-4.3
+Wk 2,Position,WR,123,36.6,2.8
+Wk 2,Stat,Passing yards,29,44.8,11.0
+Wk 2,Stat,Receiving yards,110,32.7,-1.1
+Wk 2,Stat,Receptions,114,35.1,1.3
+Wk 2,Stat,Rushing yards,34,23.5,-10.3
+Wk 2,Team total,Implied 20.5–24,118,25.4,-8.4
+Wk 2,Team total,Implied 24.5+,100,44.0,10.2
+Wk 2,Team total,Implied under 20.5,69,33.3,-0.5
+Wk 3,All,All props,284,41.5,0.0
+Wk 3,Favorite / underdog,Favorite,139,39.6,-2.0
+Wk 3,Favorite / underdog,Underdog,145,43.4,1.9
+Wk 3,Home / away,Away,137,42.3,0.8
+Wk 3,Home / away,Home,147,40.8,-0.7
+Wk 3,Momentum,Early season,284,41.5,0.0
+Wk 3,Position,QB,28,46.4,4.9
+Wk 3,Position,RB,76,34.2,-7.3
+Wk 3,Position,TE,63,34.9,-6.6
+Wk 3,Position,WR,117,48.7,7.2
+Wk 3,Stat,Passing yards,28,46.4,4.9
+Wk 3,Stat,Receiving yards,108,45.4,3.8
+Wk 3,Stat,Receptions,113,37.2,-4.4
+Wk 3,Stat,Rushing yards,35,40.0,-1.5
+Wk 3,Team total,Implied 20.5–24,125,40.8,-0.7
+Wk 3,Team total,Implied 24.5+,76,39.5,-2.1
+Wk 3,Team total,Implied under 20.5,83,44.6,3.0
+Wk 4,All,All props,266,47.7,0.0
+Wk 4,Favorite / underdog,Favorite,143,51.7,4.0
+Wk 4,Favorite / underdog,Underdog,123,43.1,-4.7
+Wk 4,Home / away,Away,138,47.8,0.1
+Wk 4,Home / away,Home,128,47.7,-0.1
+Wk 4,Momentum,Early season,41,39.0,-8.7
+Wk 4,Momentum,Stable,225,49.3,1.6
+Wk 4,Position,QB,26,53.8,6.1
+Wk 4,Position,RB,68,38.2,-9.5
+Wk 4,Position,TE,53,47.2,-0.6
+Wk 4,Position,WR,119,52.1,4.4
+Wk 4,Season hit rate,Hit 50% or less,94,46.8,-0.9
+Wk 4,Season hit rate,Hit >50% vs line,131,51.1,3.4
+Wk 4,Stat,Passing yards,26,53.8,6.1
+Wk 4,Stat,Receiving yards,105,53.3,5.6
+Wk 4,Stat,Receptions,104,42.3,-5.4
+Wk 4,Stat,Rushing yards,31,41.9,-5.8
+Wk 4,Team total,Implied 20.5–24,122,54.1,6.4
+Wk 4,Team total,Implied 24.5+,101,48.5,0.8
+Wk 4,Team total,Implied under 20.5,43,27.9,-19.8
+Wk 5,All,All props,295,39.0,0.0
+Wk 5,Favorite / underdog,Favorite,161,38.5,-0.5
+Wk 5,Favorite / underdog,Underdog,134,39.6,0.6
+Wk 5,Home / away,Away,151,35.1,-3.9
+Wk 5,Home / away,Home,144,43.1,4.1
+Wk 5,Momentum,Early season,21,42.9,3.9
+Wk 5,Momentum,Stable,274,38.7,-0.3
+Wk 5,Position,QB,26,46.2,7.2
+Wk 5,Position,RB,74,37.8,-1.1
+Wk 5,Position,TE,60,40.0,1.0
+Wk 5,Position,WR,135,37.8,-1.2
+Wk 5,Season hit rate,Hit 50% or less,199,39.2,0.2
+Wk 5,Season hit rate,Hit >50% vs line,75,37.3,-1.6
+Wk 5,Stat,Passing yards,26,46.2,7.2
+Wk 5,Stat,Receiving yards,114,40.4,1.4
+Wk 5,Stat,Receptions,119,35.3,-3.7
+Wk 5,Stat,Rushing yards,36,41.7,2.7
+Wk 5,Team total,Implied 20.5–24,120,42.5,3.5
+Wk 5,Team total,Implied 24.5+,96,36.5,-2.5
+Wk 5,Team total,Implied under 20.5,79,36.7,-2.3
+Wk 6,All,All props,294,40.8,0.0
+Wk 6,Favorite / underdog,Favorite,152,44.7,3.9
+Wk 6,Favorite / underdog,Underdog,142,36.6,-4.2
+Wk 6,Home / away,Away,150,41.3,0.5
+Wk 6,Home / away,Home,144,40.3,-0.5
+Wk 6,Momentum,Early season,9,33.3,-7.5
+Wk 6,Momentum,Stable,243,42.4,1.6
+Wk 6,Momentum,Volume down,9,33.3,-7.5
+Wk 6,Momentum,Volume up,20,35.0,-5.8
+Wk 6,Position,QB,25,56.0,15.2
+Wk 6,Position,RB,70,28.6,-12.2
+Wk 6,Position,TE,61,42.6,1.8
+Wk 6,Position,WR,138,43.5,2.7
+Wk 6,Season hit rate,Hit 50% or less,151,45.0,4.2
+Wk 6,Season hit rate,Hit >50% vs line,134,36.6,-4.2
+Wk 6,Stat,Passing yards,25,56.0,15.2
+Wk 6,Stat,Receiving yards,120,40.8,0.0
+Wk 6,Stat,Receptions,117,38.5,-2.4
+Wk 6,Stat,Rushing yards,32,37.5,-3.3
+Wk 6,Team total,Implied 20.5–24,96,46.9,6.1
+Wk 6,Team total,Implied 24.5+,108,42.6,1.8
+Wk 6,Team total,Implied under 20.5,90,32.2,-8.6
+Wk 7,All,All props,286,40.9,0.0
+Wk 7,Favorite / underdog,Favorite,160,38.8,-2.2
+Wk 7,Favorite / underdog,Underdog,126,43.7,2.7
+Wk 7,Home / away,Away,140,38.6,-2.3
+Wk 7,Home / away,Home,146,43.2,2.2
+Wk 7,Momentum,Cold efficiency,13,38.5,-2.4
+Wk 7,Momentum,Early season,11,36.4,-4.5
+Wk 7,Momentum,Hot efficiency,10,30.0,-10.9
+Wk 7,Momentum,Role up,10,60.0,19.1
+Wk 7,Momentum,Stable,189,42.3,1.4
+Wk 7,Momentum,Volume down,17,41.2,0.3
+Wk 7,Momentum,Volume up,36,33.3,-7.6
+Wk 7,Position,QB,26,57.7,16.8
+Wk 7,Position,RB,70,50.0,9.1
+Wk 7,Position,TE,65,40.0,-0.9
+Wk 7,Position,WR,125,32.8,-8.1
+Wk 7,Season hit rate,Hit 50% or less,173,42.2,1.3
+Wk 7,Season hit rate,Hit >50% vs line,102,39.2,-1.7
+Wk 7,Stat,Passing yards,26,57.7,16.8
+Wk 7,Stat,Receiving yards,112,37.5,-3.4
+Wk 7,Stat,Receptions,114,36.0,-4.9
+Wk 7,Stat,Rushing yards,34,55.9,15.0
+Wk 7,Team total,Implied 20.5–24,116,32.8,-8.2
+Wk 7,Team total,Implied 24.5+,89,44.9,4.0
+Wk 7,Team total,Implied under 20.5,81,48.1,7.2
+Wk 8,All,All props,288,41.7,0.0
+Wk 8,Favorite / underdog,Favorite,145,42.8,1.1
+Wk 8,Favorite / underdog,Underdog,143,40.6,-1.1
+Wk 8,Home / away,Away,148,37.2,-4.5
+Wk 8,Home / away,Home,140,46.4,4.8
+Wk 8,Momentum,Cold efficiency,16,62.5,20.8
+Wk 8,Momentum,Hot efficiency,19,31.6,-10.1
+Wk 8,Momentum,Role up,11,45.5,3.8
+Wk 8,Momentum,Stable,157,42.7,1.0
+Wk 8,Momentum,Volume down,26,57.7,16.0
+Wk 8,Momentum,Volume up,49,30.6,-11.1
+Wk 8,Position,QB,29,44.8,3.2
+Wk 8,Position,RB,74,39.2,-2.5
+Wk 8,Position,TE,64,42.2,0.5
+Wk 8,Position,WR,121,42.1,0.5
+Wk 8,Season hit rate,Hit 50% or less,170,42.4,0.7
+Wk 8,Season hit rate,Hit >50% vs line,111,41.4,-0.2
+Wk 8,Stat,Passing yards,29,44.8,3.2
+Wk 8,Stat,Receiving yards,111,40.5,-1.1
+Wk 8,Stat,Receptions,112,40.2,-1.5
+Wk 8,Stat,Rushing yards,36,47.2,5.6
+Wk 8,Team total,Implied 20.5–24,121,40.5,-1.2
+Wk 8,Team total,Implied 24.5+,93,39.8,-1.9
+Wk 8,Team total,Implied under 20.5,74,45.9,4.3
+Wk 9,All,All props,326,39.6,0.0
+Wk 9,Favorite / underdog,Favorite,168,42.3,2.7
+Wk 9,Favorite / underdog,Underdog,158,36.7,-2.9
+Wk 9,Home / away,Away,167,40.7,1.1
+Wk 9,Home / away,Home,159,38.4,-1.2
+Wk 9,Momentum,Cold efficiency,17,41.2,1.6
+Wk 9,Momentum,Early season,12,25.0,-14.6
+Wk 9,Momentum,Hot efficiency,24,45.8,6.3
+Wk 9,Momentum,Role up,18,27.8,-11.8
+Wk 9,Momentum,Stable,166,39.8,0.2
+Wk 9,Momentum,Volume down,29,65.5,25.9
+Wk 9,Momentum,Volume up,55,30.9,-8.7
+Wk 9,Position,QB,25,36.0,-3.6
+Wk 9,Position,RB,88,37.5,-2.1
+Wk 9,Position,TE,71,29.6,-10.0
+Wk 9,Position,WR,142,46.5,6.9
+Wk 9,Season hit rate,Hit 50% or less,183,40.4,0.9
+Wk 9,Season hit rate,Hit >50% vs line,131,39.7,0.1
+Wk 9,Stat,Passing yards,25,36.0,-3.6
+Wk 9,Stat,Receiving yards,130,42.3,2.7
+Wk 9,Stat,Receptions,133,35.3,-4.2
+Wk 9,Stat,Rushing yards,38,47.4,7.8
+Wk 9,Team total,Implied 20.5–24,166,41.0,1.4
+Wk 9,Team total,Implied 24.5+,99,40.4,0.8
+Wk 9,Team total,Implied under 20.5,61,34.4,-5.1

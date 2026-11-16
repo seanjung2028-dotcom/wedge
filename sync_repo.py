@@ -1,5 +1,6 @@
 """Mirror the Wedge workspace's code and records into the GitHub repo (seanjung2028-dotcom/wedge) and push.
-Run after every site publish:  python3 /home/claude/wedger/sync_repo.py "what changed"
+Run after every site publish:  python3 /home/claude/wedger/v2/build_site.py && python3 /home/claude/wedger/sync_repo.py "what changed"
+(build_site.py rebuilds site/, the standalone read-only website; this script pushes all of site/.)
 Same filter as the first export: code, configs, records and raw pulls; no downloads, generated datasets,
 store snapshots, harness pages or images; files over 2 MB are skipped (except the built site in v2/out)."""
 import os, re, shutil, subprocess, sys, tempfile
@@ -9,9 +10,10 @@ EXD = re.compile(r'^(dl\d+|nflverse_dl\d*|nba_dl\d*|bak_.*|dbsnap.*|dbw|brand|ar
 KEEP_EXT = {'.py', '.js', '.css', '.sh', '.md', '.json', '.csv', '.txt'}
 HTML_OK = {'rh/index_full.html', 'v2/out/index.html'}
 SKIP = {'picklog/pick_log_nov8_12.md', 'kx_1023.json', 'blobs_1022.json', 'dash_skill_hits.txt', 'js_calls.txt', 'w7_old_keys.json'}
-RH_DATA_OK = {'results_w6_w10.csv', 'certs_seed.json', 'weather_w10.json'}   # rh/ keeps code plus these records
-REPO_ONLY = {'README.md', '.gitignore', 'CLAUDE.md'}
+RH_DATA_OK = {'results_w6_w10.csv', 'certs_seed.json', 'analysts_seed.json', 'weather_w10.json'}   # rh/ keeps code plus these records
+REPO_ONLY = {'README.md', '.gitignore', 'CLAUDE.md', 'netlify.toml'}
 MAXB = 2 * 1024 * 1024
+SITE_MAXB = 50 * 1024 * 1024   # site/ is the standalone website: every file goes, whatever its type
 
 def wanted():
     out = {}
@@ -20,6 +22,9 @@ def wanted():
         dirs[:] = [d for d in dirs if d not in ('__pycache__', 'node_modules', '.git') and not EXD.match((rel + '/' + d).lstrip('/'))]
         for f in files:
             rp = (rel + '/' + f).lstrip('/'); ext = os.path.splitext(f)[1].lower(); p = os.path.join(root, f)
+            if rp.startswith('site/'):
+                if os.path.getsize(p) <= SITE_MAXB: out[rp] = p
+                continue
             if rp in SKIP or rp in REPO_ONLY or (ext not in KEEP_EXT and rp not in HTML_OK): continue
             if rel == 'rh' and ext in ('.csv', '.json', '.txt') and f not in RH_DATA_OK: continue
             if rel.startswith('nba') and ext in ('.csv', '.json') and os.path.getsize(p) > 200 * 1024: continue

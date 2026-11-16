@@ -23,10 +23,28 @@ This is a working snapshot from Week 10 of the 2026 season, exported from the se
    - The page is a dashboard artifact. Each dataset is a CSV uploaded as an asset and pointed to by a `datasets/<id>` document.
    - The page itself is the `files/` documents: `index.html`, `wg.js`, `wg.css`, `final.js` and `brain.js`.
    - `v2/blobmap.json` maps local asset ids to the live ones.
+   - The standalone website is `site/`, built by `v2/build_site.py` (see **Standalone website** below).
 7. **Settle.**
    - `bt/settle_w10.py` (Thursday) and `bt/settle_w10s.py` (Sunday) grade every posted line from the box scores.
    - `bt/results_w10.py` writes the record file, `rh/results_w6_w10.csv`.
    - Certified picks are the `wedger/certs` document; `rh/certs_seed.json` is the local copy.
+
+## Standalone website
+
+`site/` is the same site as the dashboard artifact, packaged as plain static files that any host can serve on your own domain. It is read-only: nobody signs in, and the certify boxes never show.
+
+- **What's in it:**
+  - `index.html` and the page scripts (`wg.js`, `final.js`, `brain.js`) and styles (`wg.css`), the same files the artifact serves
+  - `runtime.js`, which stands in for the artifact runtime: it loads the data, then the scripts
+  - `data/`, one CSV per dataset, plus the record as `certs.json` and `analysts.json`
+  - `assets/` (images, fonts, helmets, player photos) and `vendor/d3.min.js`
+  - `_headers` (security and cache headers, read by Netlify and Cloudflare Pages) and `robots.txt`
+- **Rebuild:** run `python3 v2/build_site.py` after every site update, then sync. It reads the last built page in `v2/out/`, the dataset CSVs, `rh/certs_seed.json` and `rh/analysts_seed.json`.
+- **Preview locally:** `python3 -m http.server -d site 8000`, then open http://localhost:8000. Opening `index.html` straight from disk won't load the data, because browsers block `fetch` from `file://`.
+- **Host:**
+  - Connect this repo to Netlify or Cloudflare Pages. There's no build command, and the output directory is `site`. `netlify.toml` already sets this for Netlify.
+  - Each push to `main` redeploys.
+  - Add the custom domain in the host's dashboard, then point the domain's DNS at the host.
 
 ## The model
 
@@ -73,4 +91,4 @@ This is a working snapshot from Week 10 of the 2026 season, exported from the se
 - Live-site store snapshots, brand studies and image assets.
 - The raw Nov 8–12 pick log. Its verified rows are in `picklog/rows_nov8_12.csv`.
 
-`rh/check.js` and `v2/v1_js.js` contain the site owner's contact email (it's on the published page). Keep the repo private or remove it before sharing.
+`rh/check.js`, `v2/v1_js.js`, `rh/wg.js`, `v2/out/wg.js` and `site/wg.js` contain the site owner's contact email (it's on the published page). Keep the repo private or remove it before sharing.

@@ -1,0 +1,5 @@
+# Netlify: serve the prebuilt read-only site. No build step; the site is built in the workspace
+# (python3 v2/build_site.py) and pushed with the rest of the repo.
+[build]
+  publish = "site"
+  command = ""

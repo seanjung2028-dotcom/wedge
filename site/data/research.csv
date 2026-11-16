@@ -1,0 +1,218 @@
+section,key,label,value,value2,n,note
+recency_best,WR rec,WR targets → yds/target,4.0,12,3310,"volume prior-season factor 0.5; efficiency shrink 100 units toward the position average, prior-season factor 1.0"
+recency_vol,WR rec|1,WR rec,1.0,5.83,3310,
+recency_vol,WR rec|2,WR rec,2.0,1.37,3310,
+recency_vol,WR rec|3,WR rec,3.0,0.21,3310,
+recency_vol,WR rec|4,WR rec,4.0,0.0,3310,
+recency_vol,WR rec|6,WR rec,6.0,0.26,3310,
+recency_vol,WR rec|8,WR rec,8.0,0.6,3310,
+recency_vol,WR rec|12,WR rec,12.0,1.2,3310,
+recency_vol,WR rec|16,WR rec,16.0,1.54,3310,
+recency_vol,WR rec|24,WR rec,24.0,1.97,3310,
+recency_vol,WR rec|1000,WR rec,1000.0,3.0,3310,
+recency_eff,WR rec|1,WR rec,1.0,0.48,3310,
+recency_eff,WR rec|2,WR rec,2.0,0.27,3310,
+recency_eff,WR rec|3,WR rec,3.0,0.17,3310,
+recency_eff,WR rec|4,WR rec,4.0,0.1,3310,
+recency_eff,WR rec|6,WR rec,6.0,0.02,3310,
+recency_eff,WR rec|8,WR rec,8.0,0.0,3310,
+recency_eff,WR rec|12,WR rec,12.0,0.0,3310,
+recency_eff,WR rec|16,WR rec,16.0,0.02,3310,
+recency_eff,WR rec|24,WR rec,24.0,0.04,3310,
+recency_eff,WR rec|1000,WR rec,1000.0,0.29,3310,
+recency_shrink,WR rec|0,WR rec,0.0,2.35,3310,
+recency_shrink,WR rec|10,WR rec,10.0,1.35,3310,
+recency_shrink,WR rec|25,WR rec,25.0,0.61,3310,
+recency_shrink,WR rec|50,WR rec,50.0,0.15,3310,
+recency_shrink,WR rec|100,WR rec,100.0,0.0,3310,
+recency_shrink,WR rec|200,WR rec,200.0,0.12,3310,
+recency_best,TE rec,TE targets → yds/target,24.0,1000,1323,"volume prior-season factor 0.3; efficiency shrink 100 units toward the position average, prior-season factor 0.5"
+recency_vol,TE rec|1,TE rec,1.0,6.51,1323,
+recency_vol,TE rec|2,TE rec,2.0,2.42,1323,
+recency_vol,TE rec|3,TE rec,3.0,1.24,1323,
+recency_vol,TE rec|4,TE rec,4.0,0.71,1323,
+recency_vol,TE rec|6,TE rec,6.0,0.38,1323,
+recency_vol,TE rec|8,TE rec,8.0,0.24,1323,
+recency_vol,TE rec|12,TE rec,12.0,0.1,1323,
+recency_vol,TE rec|16,TE rec,16.0,0.0,1323,
+recency_vol,TE rec|24,TE rec,24.0,0.0,1323,
+recency_vol,TE rec|1000,TE rec,1000.0,0.19,1323,
+recency_eff,TE rec|1,TE rec,1.0,0.86,1323,
+recency_eff,TE rec|2,TE rec,2.0,0.6,1323,
+recency_eff,TE rec|3,TE rec,3.0,0.44,1323,
+recency_eff,TE rec|4,TE rec,4.0,0.33,1323,
+recency_eff,TE rec|6,TE rec,6.0,0.21,1323,
+recency_eff,TE rec|8,TE rec,8.0,0.15,1323,
+recency_eff,TE rec|12,TE rec,12.0,0.1,1323,
+recency_eff,TE rec|16,TE rec,16.0,0.06,1323,
+recency_eff,TE rec|24,TE rec,24.0,0.04,1323,
+recency_eff,TE rec|1000,TE rec,1000.0,0.0,1323,
+recency_shrink,TE rec|0,TE rec,0.0,2.47,1323,
+recency_shrink,TE rec|10,TE rec,10.0,1.47,1323,
+recency_shrink,TE rec|25,TE rec,25.0,0.74,1323,
+recency_shrink,TE rec|50,TE rec,50.0,0.24,1323,
+recency_shrink,TE rec|100,TE rec,100.0,0.0,1323,
+recency_shrink,TE rec|200,TE rec,200.0,0.14,1323,
+recency_best,RB rush,RB carries → yds/carry,4.0,3,2513,"volume prior-season factor 0.3; efficiency shrink 200 units toward the position average, prior-season factor 0.3"
+recency_vol,RB rush|1,RB rush,1.0,3.8,2513,
+recency_vol,RB rush|2,RB rush,2.0,0.58,2513,
+recency_vol,RB rush|3,RB rush,3.0,0.03,2513,
+recency_vol,RB rush|4,RB rush,4.0,0.0,2513,
+recency_vol,RB rush|6,RB rush,6.0,0.33,2513,
+recency_vol,RB rush|8,RB rush,8.0,0.7,2513,
+recency_vol,RB rush|12,RB rush,12.0,1.21,2513,
+recency_vol,RB rush|16,RB rush,16.0,1.59,2513,
+recency_vol,RB rush|24,RB rush,24.0,2.04,2513,
+recency_vol,RB rush|1000,RB rush,1000.0,3.3,2513,
+recency_eff,RB rush|1,RB rush,1.0,0.21,2513,
+recency_eff,RB rush|2,RB rush,2.0,0.04,2513,
+recency_eff,RB rush|3,RB rush,3.0,0.0,2513,
+recency_eff,RB rush|4,RB rush,4.0,0.01,2513,
+recency_eff,RB rush|6,RB rush,6.0,0.04,2513,
+recency_eff,RB rush|8,RB rush,8.0,0.07,2513,
+recency_eff,RB rush|12,RB rush,12.0,0.11,2513,
+recency_eff,RB rush|16,RB rush,16.0,0.14,2513,
+recency_eff,RB rush|24,RB rush,24.0,0.17,2513,
+recency_eff,RB rush|1000,RB rush,1000.0,0.23,2513,
+recency_shrink,RB rush|0,RB rush,0.0,8.92,2513,
+recency_shrink,RB rush|10,RB rush,10.0,4.02,2513,
+recency_shrink,RB rush|25,RB rush,25.0,1.86,2513,
+recency_shrink,RB rush|50,RB rush,50.0,0.69,2513,
+recency_shrink,RB rush|100,RB rush,100.0,0.1,2513,
+recency_shrink,RB rush|200,RB rush,200.0,0.0,2513,
+recency_best,RB rec,RB targets → yds/target,16.0,1000,878,"volume prior-season factor 0.5; efficiency shrink 100 units toward the position average, prior-season factor 0.7"
+recency_vol,RB rec|1,RB rec,1.0,8.75,878,
+recency_vol,RB rec|2,RB rec,2.0,4.1,878,
+recency_vol,RB rec|3,RB rec,3.0,2.46,878,
+recency_vol,RB rec|4,RB rec,4.0,1.59,878,
+recency_vol,RB rec|6,RB rec,6.0,0.71,878,
+recency_vol,RB rec|8,RB rec,8.0,0.38,878,
+recency_vol,RB rec|12,RB rec,12.0,0.05,878,
+recency_vol,RB rec|16,RB rec,16.0,0.0,878,
+recency_vol,RB rec|24,RB rec,24.0,0.05,878,
+recency_vol,RB rec|1000,RB rec,1000.0,0.49,878,
+recency_eff,RB rec|1,RB rec,1.0,0.87,878,
+recency_eff,RB rec|2,RB rec,2.0,0.74,878,
+recency_eff,RB rec|3,RB rec,3.0,0.62,878,
+recency_eff,RB rec|4,RB rec,4.0,0.52,878,
+recency_eff,RB rec|6,RB rec,6.0,0.4,878,
+recency_eff,RB rec|8,RB rec,8.0,0.31,878,
+recency_eff,RB rec|12,RB rec,12.0,0.22,878,
+recency_eff,RB rec|16,RB rec,16.0,0.17,878,
+recency_eff,RB rec|24,RB rec,24.0,0.12,878,
+recency_eff,RB rec|1000,RB rec,1000.0,0.0,878,
+recency_shrink,RB rec|0,RB rec,0.0,0.85,878,
+recency_shrink,RB rec|10,RB rec,10.0,0.5,878,
+recency_shrink,RB rec|25,RB rec,25.0,0.26,878,
+recency_shrink,RB rec|50,RB rec,50.0,0.08,878,
+recency_shrink,RB rec|100,RB rec,100.0,0.0,878,
+recency_shrink,RB rec|200,RB rec,200.0,0.14,878,
+recency_best,QB pass,QB attempts → yds/attempt,4.0,12,1321,"volume prior-season factor 0.3; efficiency shrink 200 units toward the position average, prior-season factor 0.5"
+recency_vol,QB pass|1,QB pass,1.0,2.76,1321,
+recency_vol,QB pass|2,QB pass,2.0,0.57,1321,
+recency_vol,QB pass|3,QB pass,3.0,0.09,1321,
+recency_vol,QB pass|4,QB pass,4.0,0.0,1321,
+recency_vol,QB pass|6,QB pass,6.0,0.1,1321,
+recency_vol,QB pass|8,QB pass,8.0,0.22,1321,
+recency_vol,QB pass|12,QB pass,12.0,0.38,1321,
+recency_vol,QB pass|16,QB pass,16.0,0.47,1321,
+recency_vol,QB pass|24,QB pass,24.0,0.58,1321,
+recency_vol,QB pass|1000,QB pass,1000.0,0.9,1321,
+recency_eff,QB pass|1,QB pass,1.0,1.35,1321,
+recency_eff,QB pass|2,QB pass,2.0,0.93,1321,
+recency_eff,QB pass|3,QB pass,3.0,0.6,1321,
+recency_eff,QB pass|4,QB pass,4.0,0.38,1321,
+recency_eff,QB pass|6,QB pass,6.0,0.13,1321,
+recency_eff,QB pass|8,QB pass,8.0,0.01,1321,
+recency_eff,QB pass|12,QB pass,12.0,0.0,1321,
+recency_eff,QB pass|16,QB pass,16.0,0.01,1321,
+recency_eff,QB pass|24,QB pass,24.0,0.05,1321,
+recency_eff,QB pass|1000,QB pass,1000.0,0.16,1321,
+recency_shrink,QB pass|0,QB pass,0.0,2.62,1321,
+recency_shrink,QB pass|10,QB pass,10.0,2.11,1321,
+recency_shrink,QB pass|25,QB pass,25.0,1.58,1321,
+recency_shrink,QB pass|50,QB pass,50.0,0.97,1321,
+recency_shrink,QB pass|100,QB pass,100.0,0.41,1321,
+recency_shrink,QB pass|200,QB pass,200.0,0.0,1321,
+def_signal,RB rushing yards|d_raw,Raw yards allowed (defense vs position),0.103,0.042,1947,RB rushing yards
+def_signal,RB rushing yards|d_resid,Allowed vs each opponent’s own average,0.155,0.065,1947,RB rushing yards
+def_signal,RB rushing yards|d_same,"Same, only opponents with his role",0.065,0.049,1613,RB rushing yards
+def_signal,RB rushing yards|d_c_vol,Extra volume allowed (carries / targets),0.202,0.064,1947,RB rushing yards
+def_signal,RB rushing yards|d_c_eff,Extra yards per touch allowed,0.143,0.037,1947,RB rushing yards
+def_signal,RB rushing yards|d_c_ybc,Blocking: yards before contact allowed,0.187,0.042,1947,RB rushing yards
+def_signal,RB rushing yards|d_c_yac,The runners: yards after contact,0.042,0.008,1947,RB rushing yards
+def_signal,RB rushing yards|d_c_xry,"NGS expected rush yards (blocking, box, defenders)",0.196,0.04,1933,RB rushing yards
+def_signal,RB rushing yards|d_c_ryoe,NGS rush yards over expected (the runner),0.021,0.008,1933,RB rushing yards
+def_signal,RB rushing yards|d_last1,Only the most recent opponent,0.029,0.031,1947,RB rushing yards
+def_oos,RB rushing yards|oos_d_raw,RB rushing yards,-0.26,0.183,,oos_d_raw
+def_oos,RB rushing yards|oos_d_resid,RB rushing yards,-0.09,0.249,,oos_d_resid
+def_signal,WR receiving yards|d_raw,Raw yards allowed (defense vs position),0.007,0.002,3778,WR receiving yards
+def_signal,WR receiving yards|d_resid,Allowed vs each opponent’s own average,0.034,0.01,3778,WR receiving yards
+def_signal,WR receiving yards|d_same,"Same, only opponents with his role",-0.054,-0.026,3642,WR receiving yards
+def_signal,WR receiving yards|d_c_vol,Extra volume allowed (carries / targets),0.068,0.016,3778,WR receiving yards
+def_signal,WR receiving yards|d_c_eff,Extra yards per touch allowed,-0.002,-0.0,3778,WR receiving yards
+def_signal,WR receiving yards|d_last1,Only the most recent opponent,0.005,0.006,3778,WR receiving yards
+def_oos,WR receiving yards|oos_d_raw,WR receiving yards,-0.15,0.051,,oos_d_raw
+def_oos,WR receiving yards|oos_d_resid,WR receiving yards,-0.12,0.105,,oos_d_resid
+def_signal,TE receiving yards|d_raw,Raw yards allowed (defense vs position),0.118,0.055,1465,TE receiving yards
+def_signal,TE receiving yards|d_resid,Allowed vs each opponent’s own average,0.128,0.06,1465,TE receiving yards
+def_signal,TE receiving yards|d_same,"Same, only opponents with his role",0.011,0.008,1254,TE receiving yards
+def_signal,TE receiving yards|d_c_vol,Extra volume allowed (carries / targets),0.103,0.037,1465,TE receiving yards
+def_signal,TE receiving yards|d_c_eff,Extra yards per touch allowed,0.134,0.043,1465,TE receiving yards
+def_signal,TE receiving yards|d_last1,Only the most recent opponent,0.007,0.007,1465,TE receiving yards
+def_oos,TE receiving yards|oos_d_raw,TE receiving yards,0.17,0.052,,oos_d_raw
+def_oos,TE receiving yards|oos_d_resid,TE receiving yards,0.46,0.067,,oos_d_resid
+def_signal,RB receiving yards|d_raw,Raw yards allowed (defense vs position),0.184,0.107,665,RB receiving yards
+def_signal,RB receiving yards|d_resid,Allowed vs each opponent’s own average,0.209,0.121,665,RB receiving yards
+def_signal,RB receiving yards|d_same,"Same, only opponents with his role",0.08,0.068,510,RB receiving yards
+def_signal,RB receiving yards|d_c_vol,Extra volume allowed (carries / targets),0.164,0.068,665,RB receiving yards
+def_signal,RB receiving yards|d_c_eff,Extra yards per touch allowed,0.193,0.09,665,RB receiving yards
+def_signal,RB receiving yards|d_last1,Only the most recent opponent,0.032,0.032,665,RB receiving yards
+def_oos,RB receiving yards|oos_d_raw,RB receiving yards,0.75,0.165,,oos_d_raw
+def_oos,RB receiving yards|oos_d_resid,RB receiving yards,1.12,0.155,,oos_d_resid
+def_signal,WR receptions|d_raw,Raw yards allowed (defense vs position),0.087,0.031,3441,WR receptions
+def_signal,WR receptions|d_resid,Allowed vs each opponent’s own average,0.104,0.033,3441,WR receptions
+def_signal,WR receptions|d_same,"Same, only opponents with his role",-0.005,-0.002,3314,WR receptions
+def_signal,WR receptions|d_c_vol,Extra volume allowed (carries / targets),0.08,0.024,3441,WR receptions
+def_signal,WR receptions|d_c_eff,Extra yards per touch allowed,0.067,0.015,3441,WR receptions
+def_signal,WR receptions|d_last1,Only the most recent opponent,0.022,0.024,3441,WR receptions
+def_oos,WR receptions|oos_d_raw,WR receptions,-0.05,0.082,,oos_d_raw
+def_oos,WR receptions|oos_d_resid,WR receptions,0.09,0.105,,oos_d_resid
+def_signal,QB passing yards|d_raw,Raw yards allowed (defense vs position),0.172,0.083,1187,QB passing yards
+def_signal,QB passing yards|d_resid,Allowed vs each opponent’s own average,0.226,0.11,1187,QB passing yards
+def_signal,QB passing yards|d_same,"Same, only opponents with his role",0.101,0.08,947,QB passing yards
+def_signal,QB passing yards|d_c_vol,Extra volume allowed (carries / targets),0.186,0.075,1187,QB passing yards
+def_signal,QB passing yards|d_c_eff,Extra yards per touch allowed,0.197,0.069,1187,QB passing yards
+def_signal,QB passing yards|d_last1,Only the most recent opponent,0.035,0.033,1187,QB passing yards
+def_oos,QB passing yards|oos_d_raw,QB passing yards,0.89,0.182,,oos_d_raw
+def_oos,QB passing yards|oos_d_resid,QB passing yards,0.8,0.246,,oos_d_resid
+big_game,RB rushing yards|after_big_game,after big game,5.61,,325,RB rushing yards
+big_game,RB rushing yards|otherwise,otherwise,2.34,,1622,RB rushing yards
+big_game,RB rushing yards|big_game_led_by_blocking,big game led by blocking,6.9,,171,RB rushing yards
+big_game,RB rushing yards|big_game_led_by_runner,big game led by runner,4.19,,154,RB rushing yards
+big_game,WR receiving yards|after_big_game,after big game,2.72,,918,WR receiving yards
+big_game,WR receiving yards|otherwise,otherwise,3.07,,2860,WR receiving yards
+big_game,TE receiving yards|after_big_game,after big game,4.3,,175,TE receiving yards
+big_game,TE receiving yards|otherwise,otherwise,4.07,,1290,TE receiving yards
+big_game,RB receiving yards|after_big_game,after big game,2.68,,25,RB receiving yards
+big_game,RB receiving yards|otherwise,otherwise,-1.05,,640,RB receiving yards
+big_game,WR receptions|after_big_game,after big game,0.2,,616,WR receptions
+big_game,WR receptions|otherwise,otherwise,0.02,,2825,WR receptions
+big_game,QB passing yards|after_big_game,after big game,1.76,,348,QB passing yards
+big_game,QB passing yards|otherwise,otherwise,-6.48,,839,QB passing yards
+variants,v1 standard,v1 standard,0.2475,0.005,706,"Brier, fit on one week tested on the other (85% price)"
+variants,l4,l4,0.2478,-0.013,706,"Brier, fit on one week tested on the other (85% price)"
+variants,v3,v3,0.2474,0.008,706,"Brier, fit on one week tested on the other (85% price)"
+variants,ve 50%,ve 50%,0.2475,0.003,706,"Brier, fit on one week tested on the other (85% price)"
+variants,ve 100%,ve 100%,0.2475,0.001,706,"Brier, fit on one week tested on the other (85% price)"
+variants,adj defense,adj defense,0.2475,0.001,706,"Brier, fit on one week tested on the other (85% price)"
+variants,v4 (ve 50% + adj defense),v4 (ve 50% + adj defense),0.2476,-0.004,706,"Brier, fit on one week tested on the other (85% price)"
+variants,price,Price alone,0.2512,,706,
+rm,real_base,Wedge % (v3),0.2472,,444,real Week 6-7 prices
+rm,real_rm,Wedge % + role & matchup history,0.2467,,444,"shift fit on 2023-25 only, weight 0.5"
+rm,real_price,Price alone,0.251,,444,
+rm_q,0,Fifth 1,41.7,45.8,437,"2026 Weeks 1-7, modeled lines"
+rm_q,1,Fifth 2,44.1,41.6,437,"2026 Weeks 1-7, modeled lines"
+rm_q,2,Fifth 3,45.5,44.6,437,"2026 Weeks 1-7, modeled lines"
+rm_q,3,Fifth 4,47.1,42.6,437,"2026 Weeks 1-7, modeled lines"
+rm_q,4,Fifth 5,49.8,49.4,437,"2026 Weeks 1-7, modeled lines"
