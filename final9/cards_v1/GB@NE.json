@@ -1,0 +1,28 @@
+{
+ "game": "GB @ NE", "kick": "Sun 3:25 PM CT", "venue": "Foxborough, 55°F, wind 9 mph (gusts 14)",
+ "market": "NE −3.5, total 44.5. Love 38 attempts / 23 completions (the highest attempts line of the week); Maye 31.5 / 20.5 and 5.5 rushes. Jacobs 14.5 carries; Stevenson 14.5.",
+ "lineup": "GB has been without Micah Parsons all season (PUP), so the defensive numbers already reflect his absence. GB G Sean Rhyan, OT Travis Glover and TE Josh Whyle are out; Christian Watson has no designation but was limited (ribs). NE RB TreVeyon Henderson is out (illness), as are WRs A.J. Brown and Mack Hollins.",
+ "keys": [
+  {"team": "NE", "take": "Matthew Golden, who has seen 12–13 targets in each of the last three games.", "how": "Blitz (37.2%) and make Love hurry. NE holds QBs to 20.2 points a game, and 7 of 8 opponents threw for under 275.", "gives": "Volume to the WRs. NE allows 152 WR yards and 17.6 WR targets a game.", "counter": "Love throws more than any QB this week (38+ attempts), so even at a low catch rate the volume holds up."},
+  {"team": "GB", "take": "Maye's legs and his second-reaction plays.", "how": "Contain without Parsons. GB allows 13.9 QB rushing yards a game.", "gives": "WR volume. GB allows 22.1 WR targets a game, the most of any defense here.", "counter": "With Henderson out, NE leans on Stevenson and Kiner."}
+ ],
+ "scripts": {
+  "control": "NE leads. GB throws even more (its two losses of 8+ averaged 47.5 attempts), and Golden's targets go up. NE's backs get the carries.",
+  "competitive": "Love still throws about 35 times (GB's close games averaged 34.7).",
+  "reversal": "GB leads. Love's attempts fall to the 29–31 range, the one script that threatens Golden's volume."
+ },
+ "plays": [
+  {"decision": "Final", "line": "Matthew Golden 6+ receptions (Yes)", "price": 46, "cond": "At 46¢ or less.", "why": "This QB has the highest attempts line of the week, Golden has been his top target three weeks running, and the defense allows WR volume and is favored to make GB chase.", "support": "Books set Love at 38 attempts. Golden had a 29–33% target share and 12–13 targets in each of Weeks 6–8.", "sample": "6+ catches in 5 of 8 (6, 6, 7 the last three).", "counter": "He catches only about half his targets (19 of 38 in the last three games). One drop-heavy game and he's at 5.", "loses": "GB leads and runs Jacobs, or Watson (limited) gets the volume back.", "vs": "Preferred over 70+ yards (49¢). His yards per catch swings (39 to 123 yards in his last four), while the catches have been steady.", "est": [49, 58]}
+ ],
+ "likely": ["Golden 5+ rec (~68%)", "Golden 6+ rec (~54%)"],
+ "value": ["Golden 6+ at 46¢ (needs 48%)"],
+ "passed": [
+  {"name": "Jordan Love 275+ pass yds (51¢)", "why": "His volume says Yes and our backtest says passing-yard overs are underpriced, but NE held 7 of 8 under 275. They cancel.", "move": "Watson fully healthy (more explosives)."},
+  {"name": "Rhamondre Stevenson 55+ rush (51¢), either side", "why": "Henderson out raises his carries (thesis Yes), but he averages 3.6 yards a carry and our backtest leans No.", "move": "Kiner inactive."},
+  {"name": "Drake Maye 25+ rush (53¢)", "why": "He's gone 25+ in 5 of 8, but GB contains QB runs well (13.9 yards a game). Coin flip.", "move": "None."},
+  {"name": "Josh Jacobs props", "why": "Two games back, at 2–3 yards a carry.", "move": "None."}
+ ],
+ "sources": [
+  {"t": "Rotoballer — Parsons not ready to practice", "u": "https://www.rotoballer.com/player-news/micah-parsons-not-ready-to-practice-unlikely-to-play-before-week-9/1968720"}
+ ]
+}

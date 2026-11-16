@@ -1,0 +1,115 @@
+{
+ "game": "NYG @ PHI",
+ "kick": "Sun 12:00 PM CT",
+ "venue": "Philadelphia, 58°F, wind 10 mph (gusts 17)",
+ "market": "NYG −3, total 38.5 (lowest of the week). McCarthy 29.5 attempts / 17.5 completions; Milton 31.5 / 17.5. Singletary 15.5 carries.",
+ "lineup": "PHI starts Joe Milton (first NFL start) after benching Tanner McKee. Jalen Hurts is out for the season. PHI WRs DeVonta Smith, A.J. Brown, Dontayvion Wicks and Britain Covey are out, along with CBs Jonathan Jones and Michael Carter II. NYG: Cam Skattebo is doubtful and Tyrone Tracy out, so Devin Singletary and Najee Harris carry it.",
+ "branches": "If Skattebo is surprisingly active, Singletary's carries split three ways. If Milton struggles early, McKee (questionable, ribs) is the fallback.",
+ "keys": [
+  {
+   "team": "NYG",
+   "take": "Milton's arm and legs. He's a 6-5 first-time starter the Eagles say is elusive in the pocket.",
+   "how": "Blitz. NYG sends extra rushers on 41.8% of dropbacks, the most of any defense here, and PHI's line has struggled against the blitz.",
+   "gives": "Escape lanes and hot reads. NYG allows 25 QB rushing yards a game (Daniels ran for 104).",
+   "counter": "Quick throws to Dallas Goedert, the one healthy veteran target, who says he wants to be Milton's reliable outlet."
+  },
+  {
+   "team": "PHI",
+   "take": "Malik Nabers, 30% of targets and 33–38% over the last four games.",
+   "how": "PHI has no healthy pair of corners to do it. It allows 182.6 WR yards a game (worst here) and 21.6 WR targets a game.",
+   "gives": "If PHI shades help to Nabers, Isaiah Likely (27% target share) works the middle.",
+   "counter": "NYG can just run Singletary and protect a three-point lead in wind."
+  }
+ ],
+ "scripts": {
+  "control": "NYG leads. Its wins came on 29 attempts, so Nabers' volume shrinks, and Singletary and Harris get 25+ carries between them. Milton has to throw, and Goedert's and Makai Lemon's volume rises.",
+  "competitive": "With a 38.5 total, a field-position game. Nabers keeps his share and the receptions floor matters more than yards.",
+  "reversal": "Milton hits early shots and PHI leads. NYG throws more (it averaged 38 attempts in its close games) and Nabers' yards upside opens."
+ },
+ "plays": [
+  {
+   "decision": "Lean",
+   "line": "Dallas Goedert 4+ receptions (Yes)",
+   "price": 55,
+   "cond": "Only if Milton starts as announced. Becomes a final line at 51¢ or less.",
+   "why": "With four WRs out against a blitz-heavy defense, the first-time starter's outlet is the veteran TE.",
+   "support": "NBC Sports Philadelphia (Zangaro, Nov 5): Goedert praised Milton's check-downs and wants to be his reliable outlet. PHI has struggled against the blitz.",
+   "sample": "4+ catches in 5 of 6 games, including all 3 McKee starts (6, 5, 4).",
+   "counter": "Milton's arm invites shots downfield, and NYG allows only 45 yards a game to TEs.",
+   "loses": "Milton scrambles instead of checking down, or PHI goes three-and-out in a 38.5-total game.",
+   "vs": "Preferred over Goedert 40+ yards (46¢). The catch count fits the check-down thesis better than the yardage.",
+   "est": [
+    53,
+    63
+   ],
+   "side": "Yes",
+   "be": 57,
+   "payout": 1.82,
+   "books": 54.5,
+   "wedge": 53.0,
+   "base": 53.8,
+   "adj": 4,
+   "ticker": "KXNFLREC-26NOV08NYGPHI-PHIDGOEDERT88-4"
+  },
+  {
+   "decision": "Lean",
+   "line": "Malik Nabers 6+ receptions (Yes)",
+   "price": 50,
+   "cond": "Becomes a final line at 46¢ or less.",
+   "why": "PHI is missing two starting corners, and Nabers already gets a third of NYG's targets.",
+   "support": "PHI allows 182.6 WR yards and 21.6 WR targets a game.",
+   "sample": "6+ catches in 5 of 7 (misses: 1 and 5 in Weeks 2–3). 7 of 9 in his only McCarthy start.",
+   "counter": "NYG won on 29 attempts. With wind and a low total, the control script caps volume.",
+   "loses": "NYG leads early and runs, so Nabers gets six targets.",
+   "vs": "Preferred over 80+ yards (46¢). Catches survive the low-total script better than yards do.",
+   "est": [
+    48,
+    58
+   ],
+   "side": "Yes",
+   "be": 52,
+   "payout": 2.0,
+   "books": 48.3,
+   "wedge": 47.0,
+   "base": 47.6,
+   "adj": 5,
+   "ticker": "KXNFLREC-26NOV08NYGPHI-NYGMNABERS1-6"
+  }
+ ],
+ "likely": [
+  "Nabers 5+ rec",
+  "Goedert 4+ rec",
+  "Nabers 6+ rec"
+ ],
+ "value": [
+  "Dallas Goedert 4+ receptions (Yes) at 55¢ (needs 57%, our number 53–63%)",
+  "Malik Nabers 6+ receptions (Yes) at 50¢ (needs 52%, our number 48–58%)"
+ ],
+ "passed": [
+  {
+   "name": "Joe Milton rushing yards",
+   "why": "There's no NFL sample to estimate from, so it stays off the ranking.",
+   "move": "First-half usage. Live markets only."
+  },
+  {
+   "name": "Devin Singletary 50+ rush (59¢)",
+   "why": "He hasn't been a lead back this year, and Najee Harris splits the work. The role is assumed, not shown.",
+   "move": "Skattebo and Harris both inactive."
+  },
+  {
+   "name": "Isaiah Likely props",
+   "why": "PHI holds TEs to 41.6 yards a game.",
+   "move": "PHI bracketing Nabers in the first quarter (live)."
+  }
+ ],
+ "sources": [
+  {
+   "t": "NBC Sports Philadelphia — Zangaro on Milton's first start (Nov 5)",
+   "u": "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/eagles-locker-room-joe-milton-start-giants-dallas-goedert-darius-cooper/764425/"
+  },
+  {
+   "t": "AP via News4Jax — Eagles switch to Joe Milton (Nov 4)",
+   "u": "https://www.news4jax.com/sports/2026/11/04/eagles-making-a-quarterback-change-to-joe-milton-for-their-game-sunday-against-the-giants/"
+  }
+ ]
+}

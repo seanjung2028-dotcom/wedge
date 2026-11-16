@@ -1,0 +1,18 @@
+# downloads and generated data (rebuilt by the pipeline)
+dl*/
+nflverse_dl*/
+nba_dl*/
+bak_*/
+dbsnap*/
+v2/db*/
+v2/data/
+v2/h/
+*_out/
+*.pkl
+*.parquet
+*.gz
+__pycache__/
+node_modules/
+.DS_Store
+# raw personal logs
+picklog/pick_log_*.md

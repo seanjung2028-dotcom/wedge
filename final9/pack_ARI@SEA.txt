@@ -1,0 +1,39 @@
+===== ARI@SEA | weather {'temp': 57, 'precip_prob': 8, 'precip_in': 0, 'wind': 12, 'gust': 19, 'code': 3}
+consensus spread [['ARI', 8.5, -110], ['SEA', -8.5, -110]] total [['over', 39.5, -110], ['under', 39.5, -110]] ML [['SEA', -427], ['ARI', 343]] @ 2026-11-07T23:47:21.061Z
+   Pass Attempts Sam Darnold SEA 28.5 [[15, 28.5, -114, -111]]
+   Pass Attempts Drew Lock SEA 27.5 [[15, 27.5, 101, -129]]
+   Pass Attempts Gardner Minshew ARI 34.5 [[15, 34.5, -104, -119]]
+   Completions Sam Darnold SEA 19.5 [[15, 19.5, -109, -117]]
+   Completions Drew Lock SEA 18.5 [[15, 18.5, -110, -121]]
+   Completions Gardner Minshew ARI 20.5 [[15, 20.5, -121, -112]]
+   Rush Attempts Drew Lock SEA 3.0 [[15, 3.5, 125, -160]]
+   Rush Attempts Gardner Minshew ARI 2.5 [[15, 2.5, 115, -145]]
+   Rush Attempts Tyler Allgeier ARI 15.5 [[15, 15.5, -105, -120]]
+   Rush Attempts Zach Charbonnet SEA 10.5 [[15, 10.5, 110, -140]]
+   Rush Attempts Jadarian Price SEA 13.5 [[15, 13.5, -105, -125]]
+ARI O: g8 pf 21.9 att 41.0 cmp 26.2 sk 2.5 rush 25.6 drv 11.2 ppd 6.14 neuPass 50.2% 3rd 39.0% PA 16.4% oop 13.3% | att by script {'won8+': [37.0, 1], 'close': [44.3, 3], 'lost8+': [39.5, 4]}
+   logs: W1 vLAC 26-14 att 37 sk 1 ru 31 | W2 vSEA 7-31 att 28 sk 2 ru 17 | W3 vSF 30-36 att 52 sk 2 ru 27 | W4 vNYG 24-36 att 35 sk 2 ru 26 | W5 vDET 21-45 att 47 sk 5 ru 18 | W6 vLA 18-16 att 35 sk 0 ru 35 | W7 vDEN 16-30 att 48 sk 3 ru 24 | W8 vDAL 33-30 att 46 sk 5 ru 27
+SEA D vs: pa 19.9 oppAtt 30.8 sk 2.2 oppRush 26.1 ypc 3.63 blitz 19.2% rushers 4.26 oopForced 34.4% box 6.47 QBrushYds/g 16.8 scr/g 2.5 20+pass/g 1.6 tgtAllowed {'WR': [16.5, 100.6], 'TE': [6.9, 38.2], 'RB': [6.0, 30.5]}
+   QB Jacoby Brissett: g8 tgt 0.1 (0.3%) rec 0.1 ryd 0.9 | car 3.6 (13.9%) rush 10.9 | att 38.1 pyd 214.9 || W6:0/0-0 c2-2 a35-218 W7:0/0-0 c7-16 a48-272 W8:0/0-0 c3-7 a23-119
+   QB Gardner Minshew: g1 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 0.0 (0.0%) rush 0.0 | att 23.0 pyd 188.0 || W8:0/0-0 c0-0 a23-188
+   RB Jeremiyah Love: g6 tgt 2.3 (6.0%) rec 1.8 ryd 6.0 | car 12.7 (51.0%) rush 44.7 || W4:1/1--8 c14-63 W5:0/1-0 c12-22 W8:0/0-0 c9-23
+   RB Tyler Allgeier: g8 tgt 2.8 (7.0%) rec 2.6 ryd 16.0 | car 9.0 (34.6%) rush 40.4 || W6:1/2-10 c18-38 W7:3/3-30 c8-19 W8:5/5-44 c11-147
+   TE Trey McBride: g8 tgt 10.8 (27.5%) rec 8.2 ryd 68.0 | car 0.0 (0.0%) rush 0.0 || W6:7/9-53 c0-0 W7:10/13-111 c0-0 W8:7/8-72 c0-0
+   WR Michael Wilson: g8 tgt 10.1 (25.9%) rec 5.6 ryd 60.8 | car 0.4 (1.4%) rush 3.5 || W6:4/7-32 c0-0 W7:4/8-55 c2-11 W8:8/15-111 c1-17
+   RB Bam Knight: g5 tgt 1.8 (4.7%) rec 1.2 ryd 8.6 | car 5.6 (23.1%) rush 33.6 || W6:2/2-18 c15-80 W7:3/5-15 c7-48 W8:1/2-10 c3-8
+   WR Kendrick Bourne: g7 tgt 5.4 (13.7%) rec 3.7 ryd 37.6 | car 0.0 (0.0%) rush 0.0 || W6:5/8-47 c0-0 W7:3/6-9 c0-0 W8:1/2-29 c0-0
+   WR Marvin Harrison Jr.: g4 tgt 3.2 (8.8%) rec 1.2 ryd 21.2 | car 0.0 (0.0%) rush 0.0 || W2:0/1-0 c0-0 W3:3/5-40 c0-0 W4:1/4-12 c0-0
+SEA O: g8 pf 23.1 att 32.4 cmp 20.2 sk 2.4 rush 27.8 drv 11.6 ppd 5.38 neuPass 45.6% 3rd 35.6% PA 26.1% oop 22.9% | att by script {'won8+': [27.0, 2], 'close': [34.2, 5], 'lost8+': [34.0, 1]}
+   logs: W1 vNE 13-10 att 24 sk 2 ru 21 | W2 vARI 31-7 att 26 sk 1 ru 40 | W3 vWAS 31-33 att 45 sk 0 ru 18 | W4 vLAC 30-23 att 22 sk 3 ru 31 | W5 vSF 29-32 att 29 sk 5 ru 26 | W6 vDEN 14-17 att 51 sk 5 ru 26 | W7 vKC 20-3 att 28 sk 0 ru 41 | W8 vCHI 17-34 att 34 sk 3 ru 19
+ARI D vs: pa 29.8 oppAtt 28.8 sk 2.4 oppRush 28.2 ypc 4.35 blitz 32.3% rushers 4.37 oopForced 20.5% box 6.57 QBrushYds/g 20.1 scr/g 1.5 20+pass/g 3.4 tgtAllowed {'WR': [16.1, 151.5], 'TE': [7.1, 56.1], 'RB': [4.4, 30.0]}
+   QB Sam Darnold: g7 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 1.6 (5.9%) rush 10.3 | att 30.1 pyd 211.1 || W6:0/0-0 c2-19 a51-278 W7:0/0-0 c2-17 a28-257 W8:0/0-0 c2-20 a34-188
+   QB Drew Lock: g2 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 1.0 (3.2%) rush 6.5 | att 24.0 pyd 211.0 || W1:0/0-0 c2-13 a22-187 W2:0/0-0 c0-0 a26-235
+   RB Emanuel Wilson: g7 tgt 1.3 (4.2%) rec 0.9 ryd 9.3 | car 15.9 (53.9%) rush 57.6 || W5:2/2-11 c20-61 W6:0/1-0 c14-52 W7:1/1-15 c24-100
+   RB Jadarian Price: g4 tgt 2.8 (8.5%) rec 1.5 ryd 7.2 | car 9.5 (38.4%) rush 37.0 || W2:1/2-8 c13-52 W3:1/3-7 c5-15 W8:2/4-8 c10-29
+   WR Jaxon Smith-Njigba: g8 tgt 11.1 (35.7%) rec 8.0 ryd 123.1 | car 0.4 (1.3%) rush 3.6 || W6:12/16-134 c0-0 W7:9/12-150 c2-13 W8:6/11-118 c0-0
+   RB Zach Charbonnet: g1 tgt 4.0 (11.8%) rec 3.0 ryd 6.0 | car 6.0 (31.6%) rush 23.0 || W8:3/4-6 c6-23
+   RB George Holani: g8 tgt 1.9 (6.0%) rec 1.5 ryd 11.0 | car 4.6 (16.4%) rush 14.6 || W6:0/0-0 c5-20 W7:1/2-12 c5-11 W8:0/1-0 c1-9
+   WR Rashid Shaheed: g7 tgt 4.3 (14.0%) rec 2.3 ryd 23.3 | car 0.6 (1.9%) rush 5.6 || W5:2/4-23 c0-0 W6:5/8-66 c1-2 W7:2/3-1 c0-0
+   TE AJ Barner: g8 tgt 4.2 (13.7%) rec 2.6 ryd 25.4 | car 0.5 (1.8%) rush 0.6 || W6:3/4-16 c0-0 W7:4/5-42 c3-4 W8:2/5-23 c0-0
+INJ: ARI Isaiah Adams G Out; ARI Jon Gaines II G Out; ARI Jayden Williams OT Out; ARI Walter Nolen III DT Questionable; ARI Max Melton CB Questionable; ARI Bam Knight RB Out; ARI James Conner RB Out; ARI Jeremiyah Love RB Out; ARI Kendrick Bourne WR Out; SEA Charles Cross OT Out; SEA Brandon Pili DT Out; SEA Uchenna Nwosu LB Out; SEA Leonard Williams DT Out; SEA Quenton Nelson G Out; SEA Rashid Shaheed WR Out; SEA Sam Darnold QB Out; SEA Connor O'Toole LB Questionable; ARI Jalen Brooks WR Out; ARI Tip Reiman TE Out; ARI Paris Johnson Jr. OT Out; ARI Hunter Long TE Out; ARI Will Johnson CB Out; ARI Kaleb Proctor DT Out; ARI Zachary Carter DT Out; ARI Trey Benson RB Out; ARI Chase Bisontis G Out; ARI Joey Blount S Out; SEA Elijah Arroyo TE Out; SEA Julian Neal CB Out; SEA Terrion Arnold CB Out; SEA Mason Richman G Out; SEA Bud Clark S Out; SEA Jake Bobo WR Out; SEA Robbie Ouzts FB Out
+RH game lines 35-65c: Over 35.5 points 65/37; Over 37.5 points 57/45; Over 38.5 points 54/47; Over 39.5 points 50/52; Over 40.5 points 47/55; Over 41.5 points 43/59; Over 42.5 points 41/61; Over 43.5 points 37/65; Seattle wins by over 5.5 points 64/37; Seattle wins by over 6.5 points 61/41; Seattle wins by over 7.5 points 55/47; Seattle wins by over 9.5 points 49/53; Seattle wins by over 10.5 points 45/57; Seattle wins by over 13.5 points 38/64

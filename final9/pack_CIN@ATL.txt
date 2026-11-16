@@ -1,0 +1,39 @@
+===== CIN@ATL | weather {'temp': None, 'precip_prob': 0, 'precip_in': 0, 'wind': 0, 'gust': 0, 'code': 0, 'dome': True}
+consensus spread [['CIN', -3.5, 104], ['ATL', 3.5, -118]] total [['under', 52.5, -110], ['over', 52.5, -110]] ML [['CIN', -175], ['ATL', 144]] @ 2026-11-07T23:47:21.061Z
+   Pass Attempts Joe Burrow CIN 36.5 [[15, 36.5, -120, -112]]
+   Pass Attempts Michael Penix ATL 31.5 [[15, 31.5, -118, -115]]
+   Completions Joe Burrow CIN 25.5 [[15, 25.5, -133, 102]]
+   Completions Michael Penix ATL 19.75 [[15, 20, -113, -105]]
+   Rush Attempts Samaje Perine CIN 5.5 [[15, 5.5, -100, -128]]
+   Rush Attempts Joe Burrow CIN 2.5 [[15, 2.5, -115, -115]]
+   Rush Attempts Khalil Herbert ATL 4.0 [[15, 3.5, -115, -115]]
+   Rush Attempts Brian Robinson ATL 6.5 [[15, 6.5, -117, -109]]
+   Rush Attempts Bijan Robinson ATL 19.5 [[15, 19.5, -110, -126]]
+   Rush Attempts Chase Brown CIN 13.5 [[15, 13.5, -125, -105]]
+   Rush Attempts Michael Penix ATL 3.0 [[15, 3.5, 125, -160]]
+CIN O: g7 pf 29.4 att 38.1 cmp 27.9 sk 1.9 rush 21.3 drv 10.7 ppd 5.72 neuPass 63.9% 3rd 52.9% PA 15.2% oop 10.0% | att by script {'won8+': [30.5, 2], 'close': [41.2, 5], 'lost8+': [nan, 0]}
+   logs: W1 vTB 33-27 att 35 sk 1 ru 26 | W2 vHOU 20-6 att 31 sk 5 ru 22 | W3 vPIT 27-30 att 37 sk 1 ru 18 | W4 vJAX 17-22 att 54 sk 2 ru 15 | W5 vMIA 31-24 att 32 sk 0 ru 29 | W7 vBAL 35-13 att 30 sk 1 ru 20 | W8 vTEN 43-36 att 48 sk 3 ru 19
+ATL D vs: pa 23.6 oppAtt 36.0 sk 2.1 oppRush 26.5 ypc 4.52 blitz 25.2% rushers 4.27 oopForced 19.2% box 6.58 QBrushYds/g 7.1 scr/g 0.8 20+pass/g 2.9 tgtAllowed {'WR': [18.9, 150.1], 'TE': [7.8, 54.9], 'RB': [7.2, 31.1]}
+   QB Joe Burrow: g7 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 2.9 (13.1%) rush 10.0 | att 38.1 pyd 302.1 || W5:0/0-0 c4-10 a32-190 W7:0/0-0 c2-12 a30-292 W8:0/0-0 c3-10 a48-462
+   RB Chase Brown: g7 tgt 6.0 (16.1%) rec 5.1 ryd 27.0 | car 13.4 (61.4%) rush 48.6 || W5:3/4-21 c13-39 W7:4/5-19 c11-39 W8:8/9-46 c12-55
+   WR Tee Higgins: g7 tgt 8.7 (23.4%) rec 6.1 ryd 103.7 | car 0.0 (0.0%) rush 0.0 || W5:2/4-22 c0-0 W7:6/7-148 c0-0 W8:10/11-155 c0-0
+   WR Ja'Marr Chase: g7 tgt 8.7 (23.4%) rec 6.1 ryd 70.3 | car 0.0 (0.0%) rush 0.0 || W5:6/10-77 c0-0 W7:5/7-62 c0-0 W8:11/16-141 c0-0
+   RB Samaje Perine: g7 tgt 1.6 (4.2%) rec 1.1 ryd 10.0 | car 5.0 (22.9%) rush 19.4 || W5:2/2-10 c14-68 W7:0/0-0 c4-16 W8:1/1-9 c4-10
+   TE Mike Gesicki: g6 tgt 4.0 (10.4%) rec 2.8 ryd 40.2 | car 0.0 (0.0%) rush 0.0 || W5:1/2-4 c0-0 W7:1/1-6 c0-0 W8:4/6-76 c0-0
+   WR Mitchell Tinsley: g2 tgt 4.0 (9.9%) rec 2.0 ryd 28.0 | car 0.0 (0.0%) rush 0.0 || W4:3/7-49 c0-0 W7:1/1-7 c0-0
+   WR Dohnte Meyers: g7 tgt 3.3 (8.8%) rec 2.3 ryd 25.0 | car 0.1 (0.7%) rush 1.4 || W5:2/2-12 c0-0 W7:0/2-0 c0-0 W8:3/3-34 c0-0
+   TE Erick All: g3 tgt 3.0 (10.0%) rec 2.7 ryd 18.7 | car 0.0 (0.0%) rush 0.0 || W2:2/3-5 c0-0 W5:3/3-25 c0-0 W7:3/3-26 c0-0
+ATL O: g8 pf 21.4 att 28.1 cmp 17.0 sk 2.0 rush 28.4 drv 11.5 ppd 5.09 neuPass 42.7% 3rd 33.7% PA 21.8% oop 13.1% | att by script {'won8+': [26.3, 3], 'close': [28.5, 2], 'lost8+': [29.7, 3]}
+   logs: W1 vPIT 13-20 att 22 sk 4 ru 31 | W2 vCAR 3-34 att 32 sk 3 ru 32 | W3 vGB 35-14 att 25 sk 0 ru 39 | W4 vNO 45-24 att 20 sk 1 ru 33 | W5 vBAL 23-30 att 35 sk 3 ru 26 | W6 vCHI 23-31 att 33 sk 5 ru 12 | W7 vSF 29-20 att 34 sk 0 ru 26 | W8 vTB 0-16 att 24 sk 0 ru 28
+CIN D vs: pa 22.6 oppAtt 34.4 sk 3.3 oppRush 24.7 ypc 4.99 blitz 18.1% rushers 4.14 oopForced 23.4% box 6.44 QBrushYds/g 29.0 scr/g 2.6 20+pass/g 3.6 tgtAllowed {'WR': [18.7, 142.4], 'TE': [9.9, 89.3], 'RB': [4.7, 29.9]}
+   QB Michael Penix Jr.: g6 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 2.8 (9.9%) rush 2.5 | att 28.0 pyd 213.7 || W6:0/0-0 c1-1 a33-225 W7:0/0-0 c5--1 a34-213 W8:0/0-0 c5-11 a24-125
+   RB Bijan Robinson: g8 tgt 4.1 (15.3%) rec 3.1 ryd 25.4 | car 18.8 (64.1%) rush 97.5 || W6:2/2--8 c9-61 W7:5/5-59 c20-63 W8:0/1-0 c19-76
+   QB Cooper Rush: g2 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 1.0 (3.2%) rush 10.0 | att 19.5 pyd 114.5 || W1:0/0-0 c0-0 a22-143 W2:0/0-0 c2-20 a17-86
+   QB Jack Strand: g1 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 2.0 (6.2%) rush 16.0 | att 15.0 pyd 59.0 || W2:0/0-0 c2-16 a15-59
+   RB Brian Robinson: g6 tgt 1.0 (3.8%) rec 0.8 ryd 5.0 | car 8.8 (29.9%) rush 35.2 || W4:1/1-5 c14-62 W5:0/1-0 c7-16 W6:2/2-9 c2-1
+   WR Drake London: g8 tgt 7.8 (28.8%) rec 4.9 ryd 78.0 | car 0.2 (0.9%) rush 0.5 || W6:4/10-62 c0-0 W7:7/10-66 c0-0 W8:1/6-8 c0-0
+   RB Khalil Herbert: g2 tgt 1.0 (3.6%) rec 1.0 ryd 11.0 | car 3.0 (10.5%) rush 10.5 || W7:1/1-19 c2-9 W8:1/1-3 c4-12
+   TE Kyle Pitts: g8 tgt 4.0 (14.9%) rec 2.8 ryd 24.6 | car 0.0 (0.0%) rush 0.0 || W6:5/7-60 c0-0 W7:5/5-22 c0-0 W8:2/5-6 c0-0
+   WR Jahan Dotson: g8 tgt 3.8 (14.0%) rec 1.8 ryd 42.1 | car 0.0 (0.0%) rush 0.0 || W6:3/5-87 c0-0 W7:1/3-6 c0-0 W8:2/5-95 c0-0
+INJ: ATL Beaux Collins WR Out; ATL James Pearce Jr. LB Questionable; ATL Divine Deablo LB Questionable; ATL Brian Robinson Jr. RB Out; ATL Yasir Abdullah LB Out; ATL Samson Ebukam DE Out; ATL Zachariah Branch WR Out; ATL Cameron Williams OL Out; ATL Anterio Thompson DT Out; CIN Cedric Johnson DE Questionable; CIN Kyle Dugger S Out; CIN Cashius Howell DE Out; CIN Andrei Iosivas WR Out; CIN Erick All Jr. TE Out; ATL Michael Jerrell OT Out; ATL Da'Shawn Hand DT Out; ATL Trey Sermon RB Out; ATL Storm Norton OT Out; ATL JD Bertrand LB Out; ATL Jalon Walker LB Out; ATL DeAngelo Malone LB Out; CIN Tanner Hudson TE Out; CIN Swayze Bozeman LB Out; CIN Jalen Davis CB Out; CIN Brian Parker II OT Out; CIN Ja'Sir Taylor CB Out
+RH game lines 35-65c: Over 48.5 points 64/37; Over 49.5 points 62/40; Over 50.5 points 60/41; Over 51.5 points 55/46; Over 52.5 points 52/49; Over 53.5 points 49/53; Over 54.5 points 46/56; Over 55.5 points 43/59; Over 56.5 points 40/62; Over 57.5 points 37/65; Atlanta wins by over 1.5 points 36/65; Cincinnati wins by over 1.5 points 60/42; Cincinnati wins by over 2.5 points 57/44; Cincinnati wins by over 3.5 points 48/54; Cincinnati wins by over 4.5 points 44/58; Cincinnati wins by over 5.5 points 41/60; Cincinnati wins by over 6.5 points 37/64; CIN 62/39; ATL 40/63

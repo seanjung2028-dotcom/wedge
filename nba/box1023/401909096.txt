@@ -1,0 +1,30 @@
+STATUS|STATUS_FINAL|true|Final
+TEAM|HOU|away|114
+TEAM|SA|home|110
+P|HOU|Kevin Durant|37|20|7|6|2|false
+P|HOU|Jabari Smith Jr.|31|7|5|1|1|false
+P|HOU|Alperen Sengun|36|29|7|7|2|false
+P|HOU|Fred VanVleet|32|14|3|5|3|false
+P|HOU|Amen Thompson|36|20|10|4|1|false
+P|HOU|Tari Eason|27|12|6|0|0|false
+P|HOU|Steven Adams|9|4|2|1|0|false
+P|HOU|Marcus Smart|21|5|3|1|0|false
+P|HOU|Bogdan Bogdanovic|12|3|1|0|1|false
+P|HOU|Jae'Sean Tate||||||true
+P|HOU|Isaiah Crawford||||||true
+P|HOU|Clint Capela||||||true
+P|HOU|Bruce Thornton||||||true
+P|SA|Victor Wembanyama|32|25|13|2|2|false
+P|SA|De'Aaron Fox|34|19|4|9|2|false
+P|SA|Devin Vassell|36|10|4|2|2|false
+P|SA|Stephon Castle|33|15|7|5|3|false
+P|SA|Dylan Harper|36|20|3|2|1|false
+P|SA|Harrison Barnes|5|0|0|0|0|false
+P|SA|Keldon Johnson|19|8|6|1|0|false
+P|SA|Julian Champagnie|25|6|0|0|2|false
+P|SA|Carter Bryant|4|0|0|0|0|false
+P|SA|Luke Kornet|16|7|3|0|0|false
+P|SA|Tarris Reed Jr.||||||true
+P|SA|Jordan McLaughlin||||||true
+T|HOU|38-78|10-25|28-31|8|44|25|15
+T|SA|40-87|12-37|18-25|9|40|21|15

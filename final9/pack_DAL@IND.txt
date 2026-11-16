@@ -1,0 +1,39 @@
+===== DAL@IND | weather {'temp': None, 'precip_prob': 0, 'precip_in': 0, 'wind': 0, 'gust': 0, 'code': 0, 'dome': True}
+consensus spread [['IND', 4.5, -110], ['DAL', -4.5, -110]] total [['under', 51.5, -110], ['over', 51.5, -110]] ML [['DAL', -227], ['IND', 185]] @ 2026-11-07T23:47:21.061Z
+   Pass Attempts Dak Prescott DAL 33.5 [[15, 33.5, 104, -116]]
+   Pass Attempts Daniel Jones IND 31.5 [[15, 31.5, -116, -112]]
+   Completions Dak Prescott DAL 22.5 [[15, 22.5, -116, -111]]
+   Completions Daniel Jones IND 20.5 [[15, 20.5, -114, -114]]
+   Rush Attempts Dak Prescott DAL 3.0 [[15, 2.5, -165, 130]]
+   Rush Attempts Daniel Jones IND 2.5 [[15, 2.5, -120, -110]]
+   Rush Attempts Jonathan Taylor IND 14.5 [[15, 14.5, -108, -120]]
+   Rush Attempts Javonte Williams DAL 17.5 [[15, 17.5, -108, -122]]
+   Rush Attempts Tyler Goodson DAL 5.5 [[15, 5.5, -115, -115]]
+   Rush Attempts Ryan Flournoy DAL 0.5 [[15, 0.5, 300, -425]]
+   Rush Attempts Seth McGowan IND 5.5 [[15, 5.5, -115, -115]]
+DAL O: g8 pf 27.4 att 37.8 cmp 24.6 sk 1.4 rush 24.9 drv 10.0 ppd 6.4 neuPass 54.1% 3rd 47.5% PA 21.9% oop 21.3% | att by script {'won8+': [29.0, 2], 'close': [38.0, 3], 'lost8+': [43.3, 3]}
+   logs: W1 vNYG 20-28 att 34 sk 0 ru 18 | W2 vWAS 37-20 att 31 sk 2 ru 21 | W3 vBAL 31-34 att 40 sk 1 ru 30 | W4 vHOU 34-30 att 45 sk 3 ru 25 | W5 vTB 16-24 att 42 sk 0 ru 13 | W6 vGB 13-23 att 54 sk 1 ru 15 | W7 vPHI 38-21 att 27 sk 0 ru 39 | W8 vARI 30-33 att 29 sk 4 ru 38
+IND D vs: pa 27.8 oppAtt 28.8 sk 2.0 oppRush 26.0 ypc 5.11 blitz 20.8% rushers 4.24 oopForced 21.6% box 6.76 QBrushYds/g 23.2 scr/g 1.8 20+pass/g 3.0 tgtAllowed {'WR': [15.8, 130.4], 'TE': [6.8, 51.4], 'RB': [4.9, 42.9]}
+   QB Dak Prescott: g8 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 2.9 (11.6%) rush 12.6 | att 37.8 pyd 255.8 || W6:0/0-0 c2-7 a54-258 W7:0/0-0 c2-8 a27-212 W8:0/0-0 c7-20 a29-195
+   RB Javonte Williams: g8 tgt 3.0 (8.2%) rec 2.5 ryd 13.0 | car 16.8 (67.3%) rush 66.0 || W6:2/2-9 c11-41 W7:0/0-0 c25-155 W8:1/2-1 c24-56
+   WR CeeDee Lamb: g8 tgt 11.5 (31.3%) rec 7.5 ryd 88.6 | car 0.2 (1.0%) rush -0.8 || W6:9/18-70 c0-0 W7:5/12-74 c0-0 W8:7/11-58 c0-0
+   WR George Pickens: g8 tgt 7.8 (21.1%) rec 4.9 ryd 66.6 | car 0.0 (0.0%) rush 0.0 || W6:6/11-73 c0-0 W7:4/6-57 c0-0 W8:2/4-48 c0-0
+   RB Tyler Goodson: g5 tgt 1.4 (3.7%) rec 0.8 ryd 4.6 | car 5.6 (19.0%) rush 17.2 || W6:1/3-9 c2-0 W7:0/0-0 c10-38 W8:2/2-19 c7-14
+   WR Ryan Flournoy: g8 tgt 5.5 (15.0%) rec 3.8 ryd 42.8 | car 0.1 (0.5%) rush 0.4 || W6:7/9-40 c0-0 W7:4/4-70 c0-0 W8:3/4-38 c1-3
+   TE Jake Ferguson: g7 tgt 3.6 (9.4%) rec 2.4 ryd 16.4 | car 0.0 (0.0%) rush 0.0 || W5:3/6-19 c0-0 W6:2/3-13 c0-0 W7:0/1-0 c0-0
+   TE Brevyn Spann-Ford: g8 tgt 2.2 (6.1%) rec 1.6 ryd 13.8 | car 0.0 (0.0%) rush 0.0 || W6:4/5-35 c0-0 W7:2/2-11 c0-0 W8:4/5-31 c0-0
+   WR KaVontae Turpin: g6 tgt 1.2 (2.9%) rec 0.7 ryd 6.5 | car 0.3 (1.6%) rush 1.7 || W4:0/0-0 c0-0 W5:2/4-22 c0-0 W6:0/0-0 c0-0
+IND O: g8 pf 20.1 att 33.8 cmp 20.5 sk 2.9 rush 27.8 drv 11.1 ppd 5.79 neuPass 54.6% 3rd 38.9% PA 27.7% oop 13.5% | att by script {'won8+': [34.0, 1], 'close': [32.8, 4], 'lost8+': [35.0, 3]}
+   logs: W1 vBAL 23-41 att 31 sk 2 ru 20 | W2 vKC 30-33 att 31 sk 0 ru 32 | W3 vHOU 19-17 att 36 sk 4 ru 31 | W4 vWAS 30-13 att 34 sk 2 ru 28 | W5 vPIT 22-34 att 44 sk 1 ru 24 | W6 vTEN 20-26 att 42 sk 6 ru 30 | W7 vMIN 10-16 att 22 sk 4 ru 33 | W8 vJAX 7-42 att 30 sk 4 ru 24
+DAL D vs: pa 26.6 oppAtt 32.5 sk 1.9 oppRush 29.5 ypc 5.22 blitz 24.6% rushers 4.26 oopForced 22.9% box 6.6 QBrushYds/g 30.0 scr/g 2.6 20+pass/g 3.5 tgtAllowed {'WR': [18.6, 164.1], 'TE': [7.1, 53.4], 'RB': [5.2, 26.6]}
+   QB Daniel Jones: g8 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 3.1 (11.1%) rush 9.4 | att 33.5 pyd 192.8 || W6:0/0-0 c3-30 a42-269 W7:0/0-0 c4-13 a22-108 W8:0/0-0 c4-7 a28-144
+   RB Jonathan Taylor: g8 tgt 3.9 (12.2%) rec 2.6 ryd 25.2 | car 18.5 (65.5%) rush 76.2 || W6:2/4-57 c21-94 W7:2/3-15 c18-95 W8:4/5-24 c8-23
+   TE Tyler Warren: g6 tgt 7.7 (23.5%) rec 5.7 ryd 38.5 | car 0.5 (1.8%) rush 1.0 || W4:5/5-41 c0-0 W5:7/9-83 c1-1 W8:4/10-18 c0-0
+   WR Keenan Allen: g7 tgt 7.1 (22.1%) rec 5.1 ryd 46.4 | car 0.0 (0.0%) rush 0.0 || W6:8/11-82 c0-0 W7:3/3-31 c0-0 W8:7/7-67 c0-0
+   WR Josh Downs: g8 tgt 6.4 (20.0%) rec 3.8 ryd 41.2 | car 0.1 (0.4%) rush 0.9 || W6:4/8-40 c1-7 W7:2/4-18 c0-0 W8:4/5-23 c0-0
+   RB Seth McGowan: g8 tgt 0.6 (2.0%) rec 0.5 ryd 1.5 | car 4.6 (16.4%) rush 20.4 || W6:0/0-0 c4-27 W7:1/1-2 c11-46 W8:0/0-0 c5-29
+   TE Will Mallory: g2 tgt 4.5 (15.3%) rec 1.0 ryd 10.0 | car 0.0 (0.0%) rush 0.0 || W6:2/6-20 c0-0 W7:0/3-0 c0-0
+   WR Laquon Treadwell: g8 tgt 3.5 (11.0%) rec 2.0 ryd 26.9 | car 0.0 (0.0%) rush 0.0 || W6:2/5-21 c0-0 W7:2/2-19 c0-0 W8:1/2-18 c0-0
+   WR Ashton Dulin: g4 tgt 1.8 (6.4%) rec 0.8 ryd 7.2 | car 0.2 (0.9%) rush 0.8 || W4:3/6-29 c0-0 W7:0/0-0 c0-0 W8:0/0-0 c1-3
+INJ: DAL Marist Liufau LB Questionable; DAL Joey Porter Jr. CB Questionable; DAL DeMarvion Overshown LB Questionable; DAL Malachi Lawrence LB Out; DAL KaVontae Turpin WR Out; DAL Jake Ferguson TE Questionable; DAL George Pickens WR Questionable; DAL Jalen Thompson S Out; DAL Luke Schoonmaker TE Questionable; IND Justin Walley CB Out; IND A.J. Haulcy S Out; IND Jalen Travis OT Questionable; IND Akeem Davis-Gaither LB Out; IND Alec Pierce WR Out; DAL Jonathan Bullard DT Out; DAL Malik Davis RB Out; DAL Devin Moore CB Out; DAL Matt Hennessy C Out; DAL Kelvin Gilliam Jr. DT Out; DAL Princeton Fant TE Out; IND Cam Taylor-Britt CB Out; IND Arden Key DE Out; IND Micheal Clemons DE Out; IND Carson Towt TE Out; IND D.J. Montgomery WR Out; IND Cameron Mitchell CB Out
+RH game lines 35-65c: Over 47.5 points 64/38; Over 48.5 points 62/40; Over 49.5 points 59/43; Over 50.5 points 56/46; Over 51.5 points 51/50; Over 52.5 points 48/53; Over 53.5 points 45/57; Over 54.5 points 42/60; Over 55.5 points 39/62; Over 56.5 points 36/65; Dallas wins by over 2.5 points 63/39; Dallas wins by over 3.5 points 54/47; Dallas wins by over 4.5 points 51/51; Dallas wins by over 5.5 points 48/53; Dallas wins by over 6.5 points 44/58; Dallas wins by over 7.5 points 37/64

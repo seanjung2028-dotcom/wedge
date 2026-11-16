@@ -1,0 +1,128 @@
+{
+ "JAX@BAL": {
+  "temp": 67,
+  "precip_prob": 27,
+  "precip_in": 0,
+  "wind": 5,
+  "gust": 7,
+  "code": 2
+ },
+ "DEN@CAR": {
+  "temp": 63,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 3,
+  "gust": 4,
+  "code": 2
+ },
+ "NYJ@KC": {
+  "temp": 58,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 3,
+  "gust": 4,
+  "code": 2
+ },
+ "DET@MIA": {
+  "temp": 82,
+  "precip_prob": 6,
+  "precip_in": 0,
+  "wind": 9,
+  "gust": 14,
+  "code": 2
+ },
+ "NYG@PHI": {
+  "temp": 57,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 10,
+  "gust": 16,
+  "code": 2
+ },
+ "LA@WAS": {
+  "temp": 58,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 10,
+  "gust": 15,
+  "code": 2
+ },
+ "GB@NE": {
+  "temp": 52,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 8,
+  "gust": 12,
+  "code": 2
+ },
+ "LV@SF": {
+  "temp": 71,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 4,
+  "gust": 6,
+  "code": 2
+ },
+ "ARI@SEA": {
+  "temp": 56,
+  "precip_prob": 21,
+  "precip_in": 0,
+  "wind": 10,
+  "gust": 15,
+  "code": 2
+ },
+ "TB@CHI": {
+  "temp": 49,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 6,
+  "gust": 9,
+  "code": 2
+ },
+ "CIN@ATL": {
+  "temp": null,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 0,
+  "gust": 0,
+  "code": 0,
+  "dome": true
+ },
+ "DAL@IND": {
+  "temp": null,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 0,
+  "gust": 0,
+  "code": 0,
+  "dome": true
+ },
+ "CLE@NO": {
+  "temp": null,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 0,
+  "gust": 0,
+  "code": 0,
+  "dome": true
+ },
+ "HOU@LAC": {
+  "temp": 84,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 2,
+  "gust": 3,
+  "code": 0,
+  "dome": true
+ },
+ "BUF@MIN": {
+  "temp": null,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 0,
+  "gust": 0,
+  "code": 0,
+  "dome": true
+ },
+ "_source": "Forecasts pulled Tue Nov 3 ~6:45 PM CT: NFLWeather (temp, wind, rain chance) and RotoWire (temp, rain chance), averaged; gusts estimated at 1.6x wind. Domes / closed roofs: DAL @ IND, CLE @ NO, HOU @ LAC, BUF @ MIN; CIN @ ATL is in Madrid (Bernabeu, retractable roof) and treated as covered."
+}

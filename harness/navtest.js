@@ -1,0 +1,34 @@
+const { chromium } = require('/opt/npm-tools/node_modules/playwright');
+(async () => {
+  const [,, file, outDir, width] = process.argv;
+  const W = Number(width || 1300);
+  const b = await chromium.launch();
+  const p = await b.newPage({ viewport: { width: W, height: 900 } });
+  const logs = []; p.on('pageerror', (e) => logs.push(e.message)); p.on('console', (m) => { if (m.type() === 'error') logs.push(m.text()); });
+  await p.goto('file://' + file); await p.waitForTimeout(3000);
+  await p.screenshot({ path: outDir + '/n_lobby.png' });
+  await p.click('#nfl-btn'); await p.waitForTimeout(200);
+  await p.screenshot({ path: outDir + '/n_menu.png', clip: { x: 0, y: 0, width: W, height: 560 } });
+  await p.click('#nfl-menu [data-page="cat-2"]'); await p.waitForTimeout(200);
+  const st = await p.evaluate(() => ({ vis: [...document.querySelectorAll('.rs-page')].filter((x) => !x.hidden).map((x) => x.id), nfl: document.querySelector('#nfl-btn').textContent, cur: document.querySelector('#nfl-btn').getAttribute('aria-current'), menu: document.querySelector('#nfl-menu').hidden, method: !document.querySelector('#method').hidden }));
+  console.log('after cat-2', JSON.stringify(st));
+  await p.click('#nfl-btn'); await p.click('#nfl-menu [data-page="results"]'); await p.waitForTimeout(150);
+  console.log('results visible', await p.isVisible('#results'), await p.textContent('#nfl-btn'));
+  await p.click('.wg-nav [data-page="nba"]'); await p.waitForTimeout(300);
+  await p.screenshot({ path: outDir + '/n_nba.png' });
+  await p.click('.wg-nav [data-page="apply"]'); await p.waitForTimeout(200);
+  await p.screenshot({ path: outDir + '/n_apply.png', fullPage: true });
+  // apply validation + submit
+  await p.click('#apply-form .wg-submit'); console.log('apply empty ->', await p.textContent('#apply-form .wg-form-msg'));
+  await p.fill('#apply-form [data-f=first]', 'Test'); await p.fill('#apply-form [data-f=last]', 'User'); await p.fill('#apply-form [data-f=email]', 'test@example.com');
+  await p.selectOption('#apply-form [data-f=experience]', '1–2 seasons'); await p.fill('#apply-form [data-f=edge]', 'I look at usage.');
+  await p.click('#apply-form .wg-submit'); await p.waitForTimeout(200);
+  console.log('apply done', await p.isVisible('#apply-form .wg-form-done'), (await p.getAttribute('#apply-form .wg-mailto', 'href')).slice(0, 160));
+  await p.click('.wg-nav [data-page="lobby"]'); await p.waitForTimeout(400);
+  await p.click('.wg-unlock-btn'); await p.waitForTimeout(400);
+  await p.screenshot({ path: outDir + '/n_unlock.png', fullPage: true });
+  await p.click('.wg-plan-hot .wg-plan-btn'); await p.waitForTimeout(700);
+  await p.fill('#waitlist-form [data-f=first]', 'A'); await p.fill('#waitlist-form [data-f=last]', 'B'); await p.fill('#waitlist-form [data-f=email]', 'bad');
+  await p.click('#waitlist-form .wg-submit'); console.log('waitlist bad email ->', await p.textContent('#waitlist-form .wg-form-msg'));
+  console.log('logs', JSON.stringify(logs)); await b.close();
+})();

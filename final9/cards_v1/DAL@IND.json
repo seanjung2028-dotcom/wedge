@@ -1,0 +1,30 @@
+{
+ "game": "DAL @ IND", "kick": "Sun 12:00 PM CT", "venue": "Indianapolis, dome",
+ "market": "DAL −4.5, total 51.5. Dak 33.5 attempts / 22.5 completions; Daniel Jones 31.5 / 20.5. Javonte Williams 17.5 carries; Jonathan Taylor 14.5.",
+ "lineup": "George Pickens (hamstring) and TE Jake Ferguson are questionable for DAL; KaVontae Turpin and S Jalen Thompson are out. IND is sticking with Daniel Jones after scoring 10 and 7 points the last two weeks.",
+ "branches": "Pickens out: Lamb's share, already 39–46% the last two weeks, climbs further. Pickens active and healthy: the receiving reads below lose most of their edge.",
+ "keys": [
+  {"team": "DAL", "take": "Jonathan Taylor. He's the only thing working in IND's offense (95 yards in each of Weeks 6–7).", "how": "DAL's run defense isn't built to stop him: 5.22 yards per carry allowed, the worst of the 14 defenses here. Its plan has been to win the scoreboard.", "gives": "Run lanes, plus 30 QB rushing yards a game.", "counter": "DAL scores and IND has to throw. In the 42–7 loss to JAX, Taylor had 8 carries."},
+  {"team": "IND", "take": "CeeDee Lamb, at a 39–46% target share the last two weeks.", "how": "IND blitzes only 20.8% and allows the fewest WR targets of these defenses (15.8 a game). It's a zone-and-rally approach.", "gives": "Underneath volume to the alpha receiver and the run. DAL ran 38–39 times in each of the last two weeks.", "counter": "DAL runs Javonte into a defense allowing 5.11 yards per carry."}
+ ],
+ "scripts": {
+  "control": "DAL leads. Javonte gets 24–25 carries (as in Weeks 7–8), Dak's attempts drop to 27–29, Lamb's share holds but volume dips, and Taylor's carries shrink.",
+  "competitive": "Taylor gets 18–24 carries against the league's worst-per-carry run defense. Lamb's 11–12 targets are steady.",
+  "reversal": "IND leads on Taylor. Dak throws 42–54 times (his three losses averaged 43 attempts) and Lamb's ceiling opens (17 catches against HOU)."
+ },
+ "plays": [
+  {"decision": "Lean", "line": "CeeDee Lamb 7+ receptions (Yes)", "price": 51, "cond": "Only if George Pickens is inactive or listed limited at 51¢ or less. If Pickens plays fully, pass.", "why": "Pickens' hamstring has concentrated Dak's targets in Lamb, and every script except a DAL blowout keeps his volume.", "support": "Lamb's target share was 46% and 39% the last two weeks. Pickens has had hamstring tightness in games (Rotoballer, Nov 3–4).", "sample": "7+ catches in 5 of 8, and 11–12 targets in each of the last three.", "counter": "IND allows the fewest WR targets here, and DAL's run-heavy turn caps the passing.", "loses": "DAL builds a lead and runs 38 times again, so Lamb sees 8 targets.", "vs": "Preferred over 90+ yards (46¢). The catch count tracks the target share. The yards need explosives IND rarely allows.", "est": [49, 59]}
+ ],
+ "likely": ["Lamb 6+ rec (~66%)", "Taylor 60+ rush (~55%)"],
+ "value": ["Lamb 7+ at 51¢ (needs 53%), only in the Pickens-out branch"],
+ "passed": [
+  {"name": "Jonathan Taylor 60+ rush (54¢), either side", "why": "He topped 60 in 6 of 8 against weaker run defenses than DAL's, but the books expect only 14.5 carries and our backtest leans No. The matchup and the script cancel.", "move": "IND within 3 at half (live)."},
+  {"name": "Javonte Williams 70+ rush (55¢)", "why": "DAL's turn to the run and IND's 5.11 yards per carry help, but he topped 70 only in the 155-yard game.", "move": "Ferguson inactive (more 12-personnel runs) plus a price of 50¢ or less."},
+  {"name": "Tyler Warren 5+ rec (60¢)", "why": "A 33% share last week and the trailing script fit, but at 60¢ there's no room.", "move": "A price of 55¢ or less."},
+  {"name": "Daniel Jones 200+ pass yds", "why": "IND's offense has scored 17 points in two weeks. No signal either way.", "move": "None."}
+ ],
+ "sources": [
+  {"t": "Rotoballer — Daniel Jones to remain Colts' starter", "u": "https://www.rotoballer.com/?p=1982148"},
+  {"t": "Rotoballer — Pickens has hamstring tightening up in games", "u": "https://www.rotoballer.com/?p=1982119"}
+ ]
+}

@@ -1,0 +1,31 @@
+STATUS|STATUS_FINAL|true|Final
+TEAM|ORL|home|93
+TEAM|MIN|away|115
+P|MIN|Jaden McDaniels|30|15|6|4|2|false
+P|MIN|Jonathan Kuminga|27|11|8|5|2|false
+P|MIN|Rudy Gobert|30|14|9|1|0|false
+P|MIN|LaMelo Ball|23|12|5|5|2|false
+P|MIN|Anthony Edwards|33|15|4|4|2|false
+P|MIN|Trey Lyles|17|9|6|2|2|false
+P|MIN|Cody Williams|3|0|0|0|0|false
+P|MIN|Isaiah Evans|2|0|0|1|0|false
+P|MIN|Joan Beringer|15|9|9|0|0|false
+P|MIN|Ayo Dosunmu|27|14|7|9|1|false
+P|MIN|Jaylen Clark|3|0|2|1|0|false
+P|MIN|Terrence Shannon Jr.|22|13|4|1|2|false
+P|MIN|Bones Hyland|8|3|1|0|1|false
+P|ORL|Paolo Banchero|26|14|6|5|0|false
+P|ORL|Franz Wagner|33|18|6|5|1|false
+P|ORL|Wendell Carter Jr.|29|20|9|1|3|false
+P|ORL|Desmond Bane|27|5|2|0|1|false
+P|ORL|Jalen Suggs|34|14|6|6|1|false
+P|ORL|Jamal Cain|11|0|1|0|0|false
+P|ORL|Tristan da Silva|29|5|3|1|1|false
+P|ORL|Nikola Vucevic|4|0|2|0|0|false
+P|ORL|Goga Bitadze|12|4|3|0|0|false
+P|ORL|Colin Castleton|4|7|2|1|0|false
+P|ORL|Jevon Carter|13|0|1|1|0|false
+P|ORL|Alex Morales|4|0|1|0|0|false
+P|ORL|Jase Richardson|14|6|1|3|1|false
+T|MIN|42-98|14-37|17-30|22|61|33|12
+T|ORL|37-84|8-39|11-19|8|43|23|16

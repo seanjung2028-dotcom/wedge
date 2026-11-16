@@ -1,0 +1,19 @@
+# Candidate theses for the Week 9 final card: (game, player, stat, delta in stat units, half-width, personnel condition)
+# delta > 0 means we expect more than the market does. Width = uncertainty in the same units.
+C = [
+ ('CIN@ATL', 'Joe Burrow', 'pass', +15, 12, ''), ('CIN@ATL', 'Tee Higgins', 'recyd', +6, 8, ''), ('CIN@ATL', 'Bijan Robinson', 'rush', +6, 8, ''),
+ ('CIN@ATL', 'Kyle Pitts', 'recyd', +4, 6, ''), ('CIN@ATL', 'Chase Brown', 'rush', 0, 6, ''),
+ ('NYG@PHI', 'Dallas Goedert', 'rec', +0.5, 0.4, 'Only if Milton starts as announced.'), ('NYG@PHI', 'Malik Nabers', 'rec', +0.6, 0.5, ''),
+ ('DEN@CAR', 'Bryce Young', 'pass', -15, 12, ''), ('DEN@CAR', 'Chuba Hubbard', 'rec', +0.4, 0.4, ''),
+ ('DET@MIA', 'Ollie Gordon', 'rush', -8, 6, ''), ('DET@MIA', 'Greg Dulcich', 'rec', +0.6, 0.4, ''), ('DET@MIA', 'Jahmyr Gibbs', 'rush', 0, 8, ''),
+ ('NYJ@KC', 'Braelon Allen', 'rush', -6, 5, 'Only if Breece Hall is active.'), ('NYJ@KC', 'Kenneth Walker', 'rush', +6, 8, ''),
+ ('CLE@NO', 'Harold Fannin', 'rec', +0.4, 0.4, 'Only if Watson is active and starting.'), ('CLE@NO', 'Tyler Shough', 'pass', -10, 12, ''), ('CLE@NO', 'Chris Olave', 'rec', +0.2, 0.4, ''),
+ ('LA@WAS', 'Jayden Daniels', 'rush', -6, 5, ''), ('LA@WAS', 'Puka Nacua', 'rec', +0.6, 0.5, ''),
+ ('DAL@IND', 'CeeDee Lamb', 'rec', +0.4, 0.5, 'Only in the Pickens-out branch.'), ('DAL@IND', 'Jonathan Taylor', 'rush', +5, 8, ''), ('DAL@IND', 'Javonte Williams', 'rush', +3, 8, ''),
+ ('HOU@LAC', 'Justin Herbert', 'rush', -6, 4, ''), ('HOU@LAC', 'Woody Marks', 'rush', +4, 7, ''),
+ ('LV@SF', 'George Kittle', 'rec', +0.6, 0.5, ''), ('LV@SF', 'Ashton Jeanty', 'recyd', +5, 6, ''), ('LV@SF', 'Christian McCaffrey', 'rush', +4, 7, ''),
+ ('ARI@SEA', 'Smith-Njigba', 'recyd', +10, 10, ''), ('ARI@SEA', 'Trey McBride', 'recyd', -10, 7, ''), ('ARI@SEA', 'Tyler Allgeier', 'rush', -4, 6, ''),
+ ('GB@NE', 'Matthew Golden', 'rec', +0.5, 0.5, ''), ('GB@NE', 'Rhamondre Stevenson', 'rush', +4, 7, ''),
+ ('TB@CHI', 'Bucky Irving', 'rush', -10, 7, ''), ('TB@CHI', 'Caleb Williams', 'rush', -5, 4, ''), ('TB@CHI', 'Colston Loveland', 'rec', +0.6, 0.5, ''), ("TB@CHI", "D'Andre Swift", 'rush', +3, 7, ''),
+ ('BUF@MIN', 'Josh Allen', 'rush', -4, 5, 'Only if Dawkins plays.'), ('BUF@MIN', 'James Cook', 'rush', 0, 8, ''), ('BUF@MIN', 'Hockenson', 'recyd', +3, 6, ''), ('BUF@MIN', 'Carson Wentz', 'pass', -10, 12, ''),
+]

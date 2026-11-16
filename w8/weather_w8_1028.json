@@ -1,0 +1,118 @@
+{
+ "CAR@GB": {
+  "temp": 55,
+  "precip_prob": 4,
+  "precip_in": 0,
+  "wind": 5,
+  "gust": 8,
+  "code": 2
+ },
+ "BAL@BUF": {
+  "temp": 62,
+  "precip_prob": 18,
+  "precip_in": 0,
+  "wind": 3,
+  "gust": 5,
+  "code": 2
+ },
+ "TEN@CIN": {
+  "temp": 66,
+  "precip_prob": 51,
+  "precip_in": 0,
+  "wind": 7,
+  "gust": 11,
+  "code": 61
+ },
+ "ARI@DAL": {
+  "temp": null,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 0,
+  "gust": 0,
+  "code": 0,
+  "dome": true
+ },
+ "MIN@DET": {
+  "temp": null,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 0,
+  "gust": 0,
+  "code": 0,
+  "dome": true
+ },
+ "LV@NYJ": {
+  "temp": 64,
+  "precip_prob": 4,
+  "precip_in": 0,
+  "wind": 7,
+  "gust": 11,
+  "code": 2
+ },
+ "CLE@PIT": {
+  "temp": 65,
+  "precip_prob": 36,
+  "precip_in": 0,
+  "wind": 5,
+  "gust": 8,
+  "code": 2
+ },
+ "ATL@TB": {
+  "temp": 83,
+  "precip_prob": 13,
+  "precip_in": 0,
+  "wind": 10,
+  "gust": 16,
+  "code": 2
+ },
+ "IND@JAX": {
+  "temp": 77,
+  "precip_prob": 34,
+  "precip_in": 0,
+  "wind": 13,
+  "gust": 21,
+  "code": 2
+ },
+ "LAC@LA": {
+  "temp": null,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 0,
+  "gust": 0,
+  "code": 0,
+  "dome": true
+ },
+ "KC@DEN": {
+  "temp": 58,
+  "precip_prob": 40,
+  "precip_in": 0,
+  "wind": 6,
+  "gust": 10,
+  "code": 2
+ },
+ "NE@MIA": {
+  "temp": 83,
+  "precip_prob": 30,
+  "precip_in": 0,
+  "wind": 7,
+  "gust": 11,
+  "code": 2
+ },
+ "PHI@WAS": {
+  "temp": 60,
+  "precip_prob": 20,
+  "precip_in": 0,
+  "wind": 3,
+  "gust": 5,
+  "code": 2
+ },
+ "CHI@SEA": {
+  "temp": 52,
+  "precip_prob": 6,
+  "precip_in": 0,
+  "wind": 6,
+  "gust": 10,
+  "code": 2
+ },
+ "_source": "Forecasts pulled Wed Oct 28 ~2:45 PM CT: NFLWeather (temp, wind, rain chance) and RotoWire (temp, rain chance), averaged; gusts estimated at 1.6x wind. CHI @ SEA: RotoWire only, wind assumed 6 mph. Domes / closed roofs: ARI @ DAL, MIN @ DET, LAC @ LA."
+}

@@ -1,0 +1,531 @@
+dim,stat,pos,label,n_season,over_season,n_w47,over_w47,n_hist,over_hist,base_season,base_hist,above50,held,under60,held_under,z
+Position & side,recyd,WR,WR receiving yds · favorite,270,43.7,160,46.9,2010,45.6,44.2,45.0,False,False,False,False,-2.070391267369526
+Position & side,recyd,WR,WR receiving yds · underdog,226,44.7,137,42.3,1824,44.4,44.2,45.0,False,False,False,False,-1.593529416107528
+Position & side,recyd,TE,TE receiving yds · favorite,130,43.1,75,46.7,780,47.9,41.8,47.9,False,False,False,False,-1.5734420866368106
+Position & side,recyd,TE,TE receiving yds · underdog,109,40.4,63,44.4,737,47.8,41.8,47.9,False,False,False,False,-2.0045388497108263
+Position & side,recyd,RB,RB receiving yds · favorite,56,41.1,37,43.2,432,39.8,39.1,40.6,False,False,False,False,-1.3320300296915226
+Position & side,recyd,RB,RB receiving yds · underdog,54,37.0,27,37.0,386,41.5,39.1,40.6,False,False,True,False,-1.910601999370879
+Position & side,rec,WR,WR receptions · favorite,230,47.0,136,51.5,1826,45.1,48.6,45.1,False,False,False,False,-0.9099450532861869
+Position & side,rec,WR,WR receptions · underdog,206,50.5,120,48.3,1694,45.2,48.6,45.1,False,False,False,False,0.14352700094407336
+Position & side,rec,TE,TE receptions · favorite,131,46.6,79,50.6,770,45.8,45.6,47.4,False,False,False,False,-0.778295573673652
+Position & side,rec,TE,TE receptions · underdog,106,44.3,60,53.3,747,49.0,45.6,47.4,False,False,False,False,-1.173701836072519
+Position & side,rec,RB,RB receptions · favorite,92,41.3,53,45.3,693,43.7,40.8,44.0,False,False,False,False,-1.6689493701128268
+Position & side,rec,RB,RB receptions · underdog,104,40.4,62,45.2,732,44.3,40.8,44.0,False,False,False,False,-1.9580234932196299
+Position & side,rushyd,RB,RB rushing yds · favorite,122,47.5,72,50.0,1028,49.8,43.1,46.4,False,True,False,False,-0.5522680508593635
+Position & side,rushyd,RB,RB rushing yds · underdog,133,39.1,76,43.4,998,43.0,43.1,46.4,False,False,False,True,-2.5140986456382333
+Position & side,rushyd,QB,QB rushing yds · favorite,27,29.6,12,25.0,228,42.1,38.5,41.8,False,False,True,False,-2.1200301884643054
+Position & side,rushyd,QB,QB rushing yds · underdog,25,48.0,15,53.3,157,41.4,38.5,41.8,False,False,False,False,-0.20000000000000018
+Position & side,passyd,QB,QB passing yds · favorite,100,50.0,54,57.4,704,49.3,51.1,48.8,False,False,False,False,0.0
+Position & side,passyd,QB,QB passing yds · underdog,88,52.3,49,51.0,556,48.2,51.1,48.8,True,False,False,False,0.43151824990375587
+Position & venue,recyd,WR,WR receiving yds · away,252,46.0,154,44.2,1896,42.8,44.2,45.0,False,False,False,True,-1.2699606293110028
+Position & venue,recyd,WR,WR receiving yds · home,244,42.2,143,45.5,1938,47.3,44.2,45.0,False,True,False,False,-2.4367978988828747
+Position & venue,recyd,TE,TE receiving yds · away,118,36.4,69,40.6,760,46.6,41.8,47.9,False,False,False,False,-2.9546762936064592
+Position & venue,recyd,TE,TE receiving yds · home,121,47.1,69,50.7,757,49.1,41.8,47.9,False,False,False,False,-0.6379999999999993
+Position & venue,recyd,RB,RB receiving yds · away,55,36.4,33,39.4,403,38.2,39.1,40.6,False,False,True,True,-2.01720598849002
+Position & venue,recyd,RB,RB receiving yds · home,55,41.8,31,41.9,415,42.9,39.1,40.6,False,True,False,False,-1.216256551883689
+Position & venue,rec,WR,WR receptions · away,226,50.0,136,47.8,1738,44.4,48.6,45.1,False,False,False,False,0.0
+Position & venue,rec,WR,WR receptions · home,210,47.1,120,52.5,1782,45.8,48.6,45.1,False,False,False,False,-0.8404998512789865
+Position & venue,rec,TE,TE receptions · away,119,41.2,69,50.7,755,46.4,45.6,47.4,False,False,False,False,-1.919933332175885
+Position & venue,rec,TE,TE receptions · home,118,50.0,70,52.9,762,48.4,45.6,47.4,False,False,False,False,0.0
+Position & venue,rec,RB,RB receptions · away,98,43.9,59,47.5,715,42.4,40.8,44.0,False,False,False,False,-1.2077383822666232
+Position & venue,rec,RB,RB receptions · home,98,37.8,56,42.9,710,45.6,40.8,44.0,False,False,False,False,-2.4154767645332478
+Position & venue,rushyd,RB,RB rushing yds · away,123,43.9,72,50.0,1002,45.9,43.1,46.4,False,False,False,False,-1.3530454537819487
+Position & venue,rushyd,RB,RB rushing yds · home,132,42.4,76,43.4,1024,47.0,43.1,46.4,False,False,False,False,-1.7463470445475608
+Position & venue,rushyd,QB,QB rushing yds · away,27,33.3,14,35.7,192,41.1,38.5,41.8,False,False,True,False,-1.7355149091840154
+Position & venue,rushyd,QB,QB rushing yds · home,25,44.0,13,46.2,193,42.5,38.5,41.8,False,False,False,False,-0.6
+Position & venue,passyd,QB,QB passing yds · away,92,50.0,52,50.0,625,44.8,51.1,48.8,False,False,False,True,0.0
+Position & venue,passyd,QB,QB passing yds · home,96,52.1,51,58.8,635,52.8,51.1,48.8,True,True,False,False,0.4115142767875743
+Role,recyd,WR,WR receiving yds · Deep threat,159,44.7,102,44.1,924,43.0,44.2,45.0,False,False,False,True,-1.3366091425693598
+Role,recyd,WR,WR receiving yds · Intermediate,264,45.8,150,46.0,2413,45.5,44.2,45.0,False,False,False,False,-1.3648384519788426
+Role,recyd,WR,WR receiving yds · Slot / underneath,66,36.4,38,42.1,477,47.6,44.2,45.0,False,True,False,False,-2.2097384460609812
+Role,recyd,TE,TE receiving yds · Receiving TE · underneath,111,47.7,61,49.2,682,49.4,41.8,47.9,False,False,False,False,-0.48464007263122527
+Role,recyd,TE,TE receiving yds · Secondary TE · underneath,94,40.4,58,48.3,621,47.0,41.8,47.9,False,False,False,False,-1.861509065247871
+Role,recyd,RB,RB receiving yds · Pass-catching back,39,43.6,25,48.0,377,41.4,39.1,40.6,False,False,False,False,-0.799359743794995
+Role,recyd,RB,RB receiving yds · Workhorse · three-down,50,40.0,28,42.9,282,38.7,39.1,40.6,False,False,False,False,-1.4142135623730947
+Role,rec,WR,WR receptions · Deep threat,122,54.9,73,57.5,724,47.7,48.6,45.1,True,True,False,False,1.08244537968435
+Role,rec,WR,WR receptions · Intermediate,242,48.3,140,46.4,2287,43.8,48.6,45.1,False,False,False,False,-0.528915872327538
+Role,rec,WR,WR receptions · Slot / underneath,68,38.2,39,48.7,503,47.7,48.6,45.1,False,True,False,False,-1.9461058552915358
+Role,rec,TE,TE receptions · Receiving TE · underneath,111,46.8,61,50.8,685,47.9,45.6,47.4,False,False,False,False,-0.6742818401825759
+Role,rec,TE,TE receptions · Secondary TE · underneath,90,47.8,57,56.1,658,47.4,45.6,47.4,False,False,False,False,-0.41742065114222643
+Role,rec,RB,RB receptions · Committee / change-of-pace,34,41.2,25,48.0,256,43.8,40.8,44.0,False,False,False,False,-1.0262475334927725
+Role,rec,RB,RB receptions · Early-down / goal-line,20,50.0,9,55.6,128,45.3,40.8,44.0,False,False,False,False,0.0
+Role,rec,RB,RB receptions · Pass-catching back,53,39.6,29,41.4,510,43.1,40.8,44.0,False,False,False,False,-1.5142628569703473
+Role,rec,RB,RB receptions · Workhorse · early-down,23,30.4,11,36.4,142,46.5,40.8,44.0,False,True,True,False,-1.879965957138586
+Role,rec,RB,RB receptions · Workhorse · three-down,63,42.9,38,47.4,386,44.0,40.8,44.0,False,False,False,False,-1.1270900585135157
+Role,rushyd,RB,RB rushing yds · Committee / change-of-pace,74,41.9,46,45.7,591,41.8,43.1,46.4,False,False,False,True,-1.3935766932609057
+Role,rushyd,RB,RB rushing yds · Early-down / goal-line,35,48.6,19,47.4,328,47.6,43.1,46.4,False,False,False,False,-0.1656502339267894
+Role,rushyd,RB,RB rushing yds · Pass-catching back,42,35.7,23,43.5,456,45.8,43.1,46.4,False,False,False,False,-1.8534918397446476
+Role,rushyd,RB,RB rushing yds · Workhorse · early-down,36,44.4,19,52.6,257,50.2,43.1,46.4,False,True,False,False,-0.6719999999999999
+Role,rushyd,RB,RB rushing yds · Workhorse · three-down,65,46.2,38,47.4,390,50.8,43.1,46.4,False,True,False,False,-0.6127315888706895
+Role,rushyd,QB,QB rushing yds · Vertical pocket,20,45.0,8,50.0,44,29.5,38.5,41.8,False,False,False,True,-0.44721359549995787
+Role,passyd,QB,QB passing yds · Pocket,65,46.2,34,50.0,586,47.1,51.1,48.8,False,False,False,False,-0.6127315888706895
+Role,passyd,QB,QB passing yds · Quick-game pocket,41,56.1,24,50.0,252,51.2,51.1,48.8,False,True,False,False,0.7811811569668082
+Role,passyd,QB,QB passing yds · Vertical pocket,58,51.7,33,57.6,224,49.6,51.1,48.8,True,False,False,False,0.25893628559937315
+Role & side,recyd,WR,WR receiving yds · Deep threat · favorite,86,43.0,59,45.8,492,44.7,44.2,45.0,False,False,False,False,-1.2983065893693988
+Role & side,recyd,WR,WR receiving yds · Deep threat · underdog,73,46.6,43,41.9,432,41.0,44.2,45.0,False,False,False,True,-0.5809922546815918
+Role & side,recyd,WR,WR receiving yds · Intermediate · favorite,143,44.8,76,47.4,1244,45.9,44.2,45.0,False,False,False,False,-1.2436591172825464
+Role & side,recyd,WR,WR receiving yds · Intermediate · underdog,121,47.1,74,44.6,1169,45.1,44.2,45.0,False,False,False,False,-0.6379999999999993
+Role & side,recyd,WR,WR receiving yds · Slot / underneath · favorite,38,42.1,22,50.0,264,47.0,44.2,45.0,False,True,False,False,-0.9739774124690977
+Role & side,recyd,WR,WR receiving yds · Slot / underneath · underdog,28,28.6,16,31.2,213,48.4,44.2,45.0,False,True,True,False,-2.2647631222712894
+Role & side,recyd,TE,TE receiving yds · Receiving TE · underneath · favorite,50,54.0,26,57.7,348,50.3,41.8,47.9,True,True,False,False,0.5656854249492386
+Role & side,recyd,TE,TE receiving yds · Receiving TE · underneath · underdog,61,42.6,35,42.9,334,48.5,41.8,47.9,False,False,False,False,-1.155916952034185
+Role & side,recyd,TE,TE receiving yds · Secondary TE · underneath · favorite,58,39.7,37,45.9,303,46.9,41.8,47.9,False,False,False,False,-1.5688492598079649
+Role & side,recyd,TE,TE receiving yds · Secondary TE · underneath · underdog,36,41.7,21,52.4,318,47.2,41.8,47.9,False,False,False,False,-0.9959999999999996
+Role & side,recyd,RB,RB receiving yds · Pass-catching back · favorite,24,37.5,17,41.2,197,40.1,39.1,40.6,False,False,False,False,-1.224744871391589
+Role & side,recyd,RB,RB receiving yds · Workhorse · three-down · favorite,23,47.8,15,46.7,154,39.0,39.1,40.6,False,False,False,False,-0.21101658702575984
+Role & side,recyd,RB,RB receiving yds · Workhorse · three-down · underdog,27,33.3,13,38.5,128,38.3,39.1,40.6,False,False,True,True,-1.7355149091840154
+Role & side,rec,WR,WR receptions · Deep threat · favorite,65,47.7,44,52.3,389,48.1,48.6,45.1,False,True,False,False,-0.37086385642173275
+Role & side,rec,WR,WR receptions · Deep threat · underdog,57,63.2,29,65.5,335,47.2,48.6,45.1,True,True,False,False,1.993156290911478
+Role & side,rec,WR,WR receptions · Intermediate · favorite,126,49.2,69,50.7,1161,43.7,48.6,45.1,False,False,False,False,-0.1795995545651481
+Role & side,rec,WR,WR receptions · Intermediate · underdog,116,47.4,71,42.3,1126,44.0,48.6,45.1,False,False,False,False,-0.5600571399419889
+Role & side,rec,WR,WR receptions · Slot / underneath · favorite,37,37.8,21,52.4,272,47.1,48.6,45.1,False,True,False,False,-1.4841940573927663
+Role & side,rec,WR,WR receptions · Slot / underneath · underdog,31,38.7,18,44.4,231,48.5,48.6,45.1,False,True,False,False,-1.2583147459995847
+Role & side,rec,TE,TE receptions · Receiving TE · underneath · favorite,50,50.0,26,53.8,350,45.7,45.6,47.4,False,False,False,False,0.0
+Role & side,rec,TE,TE receptions · Receiving TE · underneath · underdog,61,44.3,35,48.6,335,50.1,45.6,47.4,False,True,False,False,-0.8903684630533594
+Role & side,rec,TE,TE receptions · Secondary TE · underneath · favorite,58,46.6,39,51.3,310,46.8,45.6,47.4,False,False,False,False,-0.5178725711987454
+Role & side,rec,TE,TE receptions · Secondary TE · underneath · underdog,32,50.0,18,66.7,348,48.0,45.6,47.4,False,False,False,False,0.0
+Role & side,rec,RB,RB receptions · Committee / change-of-pace · underdog,20,45.0,17,47.1,151,43.0,40.8,44.0,False,False,False,False,-0.44721359549995787
+Role & side,rec,RB,RB receptions · Pass-catching back · favorite,28,39.3,17,41.2,258,43.0,40.8,44.0,False,False,False,False,-1.1323815611356454
+Role & side,rec,RB,RB receptions · Pass-catching back · underdog,25,40.0,12,41.7,252,43.3,40.8,44.0,False,False,False,False,-0.9999999999999998
+Role & side,rec,RB,RB receptions · Workhorse · three-down · favorite,28,46.4,20,45.0,191,43.5,40.8,44.0,False,False,False,False,-0.38098818879330143
+Role & side,rec,RB,RB receptions · Workhorse · three-down · underdog,35,40.0,18,50.0,195,44.6,40.8,44.0,False,False,False,False,-1.183215956619923
+Role & side,rushyd,RB,RB rushing yds · Committee / change-of-pace · favorite,32,50.0,18,55.6,292,44.9,43.1,46.4,False,False,False,False,0.0
+Role & side,rushyd,RB,RB rushing yds · Committee / change-of-pace · underdog,42,35.7,28,39.3,299,38.8,43.1,46.4,False,False,True,True,-1.8534918397446476
+Role & side,rushyd,RB,RB rushing yds · Pass-catching back · favorite,23,34.8,15,40.0,226,50.0,43.1,46.4,False,True,False,False,-1.457932783087067
+Role & side,rushyd,RB,RB rushing yds · Workhorse · three-down · favorite,28,60.7,20,55.0,191,57.1,43.1,46.4,True,True,False,False,1.1323815611356447
+Role & side,rushyd,RB,RB rushing yds · Workhorse · three-down · underdog,37,35.1,18,38.9,199,44.7,43.1,46.4,False,False,True,False,-1.812663234028869
+Role & side,passyd,QB,QB passing yds · Pocket · favorite,35,45.7,20,55.0,298,45.0,51.1,48.8,False,False,False,True,-0.5087828613465668
+Role & side,passyd,QB,QB passing yds · Pocket · underdog,30,46.7,14,42.9,288,49.3,51.1,48.8,False,False,False,False,-0.3614968879534094
+Role & side,passyd,QB,QB passing yds · Quick-game pocket · favorite,22,50.0,12,41.7,138,58.0,51.1,48.8,False,True,False,False,0.0
+Role & side,passyd,QB,QB passing yds · Vertical pocket · favorite,32,50.0,16,62.5,136,50.7,51.1,48.8,False,False,False,False,0.0
+Role & side,passyd,QB,QB passing yds · Vertical pocket · underdog,26,53.8,17,52.9,88,47.7,51.1,48.8,True,False,False,False,0.38752548303305084
+Role & spread,recyd,WR,WR receiving yds · Deep threat · favored by 1–6.5,70,41.4,47,44.7,356,44.1,44.2,45.0,False,False,False,False,-1.4390552456386103
+Role & spread,recyd,WR,WR receiving yds · Deep threat · underdog by 1–6.5,58,44.8,34,38.2,332,43.1,44.2,45.0,False,False,False,False,-0.7920404030098472
+Role & spread,recyd,WR,WR receiving yds · Intermediate · favored by 1–6.5,111,45.9,59,52.5,914,46.3,44.2,45.0,False,False,False,False,-0.8639236077339254
+Role & spread,recyd,WR,WR receiving yds · Intermediate · favored by 7+,32,40.6,17,29.4,330,44.8,44.2,45.0,False,False,False,False,-1.063488598904567
+Role & spread,recyd,WR,WR receiving yds · Intermediate · underdog by 1–6.5,91,40.7,58,41.4,878,45.2,44.2,45.0,False,False,False,False,-1.7743269146355183
+Role & spread,recyd,WR,WR receiving yds · Intermediate · underdog by 7+,30,66.7,16,56.2,291,44.7,44.2,45.0,True,False,False,False,1.8293933420672555
+Role & spread,recyd,WR,WR receiving yds · Slot / underneath · favored by 1–6.5,28,42.9,19,47.4,194,44.8,44.2,45.0,False,False,False,False,-0.7513933723423438
+Role & spread,recyd,WR,WR receiving yds · Slot / underneath · underdog by 1–6.5,25,32.0,15,33.3,155,50.3,44.2,45.0,False,True,True,False,-1.7999999999999998
+Role & spread,recyd,TE,TE receiving yds · Receiving TE · underneath · favored by 1–6.5,34,50.0,20,50.0,248,47.2,41.8,47.9,False,False,False,False,0.0
+Role & spread,recyd,TE,TE receiving yds · Receiving TE · underneath · underdog by 1–6.5,49,40.8,29,48.3,249,51.8,41.8,47.9,False,True,False,False,-1.2880000000000005
+Role & spread,recyd,TE,TE receiving yds · Secondary TE · underneath · favored by 1–6.5,51,41.2,31,48.4,223,44.4,41.8,47.9,False,False,False,True,-1.2568914034235412
+Role & spread,recyd,TE,TE receiving yds · Secondary TE · underneath · underdog by 1–6.5,28,35.7,16,43.8,228,48.7,41.8,47.9,False,False,False,False,-1.5133697499289456
+Role & spread,recyd,RB,RB receiving yds · Workhorse · three-down · underdog by 1–6.5,24,37.5,12,41.7,98,38.8,39.1,40.6,False,False,False,False,-1.224744871391589
+Role & spread,rec,WR,WR receptions · Deep threat · favored by 1–6.5,55,50.9,35,57.1,280,47.1,48.6,45.1,True,True,False,False,0.13349157276772206
+Role & spread,rec,WR,WR receptions · Deep threat · underdog by 1–6.5,46,63.0,23,69.6,262,48.9,48.6,45.1,True,True,False,False,1.7634057956125697
+Role & spread,rec,WR,WR receptions · Intermediate · favored by 1–6.5,98,50.0,53,54.7,858,43.8,48.6,45.1,False,False,False,False,0.0
+Role & spread,rec,WR,WR receptions · Intermediate · favored by 7+,28,46.4,16,37.5,303,43.2,48.6,45.1,False,False,False,False,-0.38098818879330143
+Role & spread,rec,WR,WR receptions · Intermediate · underdog by 1–6.5,87,44.8,55,41.8,843,44.8,48.6,45.1,False,False,False,False,-0.9700474215212377
+Role & spread,rec,WR,WR receptions · Intermediate · underdog by 7+,29,55.2,16,43.8,283,41.3,48.6,45.1,False,False,False,True,0.5600571399419889
+Role & spread,rec,WR,WR receptions · Slot / underneath · favored by 1–6.5,26,38.5,17,52.9,202,44.1,48.6,45.1,False,False,False,False,-1.1727744881263404
+Role & spread,rec,WR,WR receptions · Slot / underneath · underdog by 1–6.5,27,40.7,16,43.8,164,48.2,48.6,45.1,False,True,False,False,-0.9664843506234332
+Role & spread,rec,TE,TE receptions · Receiving TE · underneath · favored by 1–6.5,34,41.2,20,45.0,250,43.2,45.6,47.4,False,False,False,True,-1.0262475334927725
+Role & spread,rec,TE,TE receptions · Receiving TE · underneath · underdog by 1–6.5,49,42.9,29,51.7,250,50.4,45.6,47.4,False,True,False,False,-0.9940000000000001
+Role & spread,rec,TE,TE receptions · Secondary TE · underneath · favored by 1–6.5,52,46.2,33,51.5,227,43.2,45.6,47.4,False,False,False,True,-0.548043793870526
+Role & spread,rec,TE,TE receptions · Secondary TE · underneath · underdog by 1–6.5,24,45.8,13,61.5,251,50.2,45.6,47.4,False,True,False,False,-0.4115142767875743
+Role & spread,rec,RB,RB receptions · Pass-catching back · favored by 1–6.5,22,40.9,13,46.2,197,44.7,40.8,44.0,False,False,False,False,-0.8536556682878644
+Role & spread,rec,RB,RB receptions · Workhorse · three-down · underdog by 1–6.5,32,43.8,17,52.9,139,43.2,40.8,44.0,False,False,False,False,-0.7014499269370558
+Role & spread,rushyd,RB,RB rushing yds · Committee / change-of-pace · favored by 1–6.5,28,50.0,14,57.1,217,43.8,43.1,46.4,False,False,False,True,0.0
+Role & spread,rushyd,RB,RB rushing yds · Committee / change-of-pace · underdog by 1–6.5,32,31.2,21,33.3,225,37.8,43.1,46.4,False,False,True,True,-2.126977197809135
+Role & spread,rushyd,RB,RB rushing yds · Workhorse · three-down · underdog by 1–6.5,32,34.4,17,35.3,142,43.0,43.1,46.4,False,False,True,True,-1.7649385258416228
+Role & spread,passyd,QB,QB passing yds · Pocket · favored by 1–6.5,26,46.2,17,52.9,227,45.8,51.1,48.8,False,False,False,True,-0.3875254830330514
+Role & spread,passyd,QB,QB passing yds · Pocket · underdog by 1–6.5,22,40.9,11,45.5,212,49.1,51.1,48.8,False,False,False,False,-0.8536556682878644
+Role & spread,passyd,QB,QB passing yds · Vertical pocket · favored by 1–6.5,26,53.8,12,75.0,103,50.5,51.1,48.8,True,False,False,False,0.38752548303305084
+Role & spread,passyd,QB,QB passing yds · Vertical pocket · underdog by 1–6.5,21,57.1,13,61.5,74,47.3,51.1,48.8,True,False,False,False,0.6507257486837299
+Position & spread,recyd,WR,WR receiving yds · favored by 1–6.5,211,44.1,127,48.8,1472,45.4,44.2,45.0,False,False,False,False,-1.714049007467406
+Position & spread,recyd,WR,WR receiving yds · favored by 7+,59,42.4,33,39.4,538,46.1,44.2,45.0,False,False,False,False,-1.1675341536760286
+Position & spread,recyd,WR,WR receiving yds · underdog by 1–6.5,177,40.7,110,39.1,1372,45.2,44.2,45.0,False,False,False,False,-2.474569053390913
+Position & spread,recyd,WR,WR receiving yds · underdog by 7+,49,59.2,27,55.6,452,42.0,44.2,45.0,True,False,False,True,1.2880000000000011
+Position & spread,recyd,TE,TE receiving yds · favored by 1–6.5,102,42.2,60,45.0,563,45.8,41.8,47.9,False,False,False,True,-1.5755227703844834
+Position & spread,recyd,TE,TE receiving yds · favored by 7+,28,46.4,15,53.3,217,53.5,41.8,47.9,False,True,False,False,-0.38098818879330143
+Position & spread,recyd,TE,TE receiving yds · underdog by 1–6.5,87,37.9,51,45.1,541,49.7,41.8,47.9,False,False,False,False,-2.2572257308474932
+Position & spread,recyd,TE,TE receiving yds · underdog by 7+,22,50.0,12,41.7,196,42.3,41.8,47.9,False,False,False,True,0.0
+Position & spread,recyd,RB,RB receiving yds · favored by 1–6.5,44,43.2,31,48.4,316,41.8,39.1,40.6,False,False,False,False,-0.902121942976668
+Position & spread,recyd,RB,RB receiving yds · underdog by 1–6.5,45,40.0,23,39.1,290,43.8,39.1,40.6,False,True,False,False,-1.3416407864998734
+Position & spread,rec,WR,WR receptions · favored by 1–6.5,180,48.9,106,55.7,1344,44.5,48.6,45.1,False,False,False,False,-0.2951609730299725
+Position & spread,rec,WR,WR receptions · favored by 7+,50,40.0,30,36.7,482,46.7,48.6,45.1,False,False,False,False,-1.4142135623730947
+Position & spread,rec,WR,WR receptions · underdog by 1–6.5,161,49.7,95,49.5,1269,46.1,48.6,45.1,False,False,False,False,-0.07613146524269579
+Position & spread,rec,WR,WR receptions · underdog by 7+,45,53.3,25,44.0,425,42.4,48.6,45.1,False,False,False,True,0.44274145954495725
+Position & spread,rec,TE,TE receptions · favored by 1–6.5,103,43.7,63,47.6,555,43.6,45.6,47.4,False,False,False,True,-1.2787603372016187
+Position & spread,rec,TE,TE receptions · favored by 7+,28,57.1,16,62.5,215,51.6,45.6,47.4,True,True,False,False,0.7513933723423445
+Position & spread,rec,TE,TE receptions · underdog by 1–6.5,84,41.7,48,52.1,548,50.2,45.6,47.4,False,True,False,False,-1.5214151307253383
+Position & spread,rec,TE,TE receptions · underdog by 7+,22,54.5,12,58.3,199,45.7,45.6,47.4,True,False,False,False,0.422137418384109
+Position & spread,rec,RB,RB receptions · favored by 1–6.5,71,43.7,41,48.8,503,43.9,40.8,44.0,False,False,False,False,-1.0616948714202201
+Position & spread,rec,RB,RB receptions · favored by 7+,21,33.3,12,33.3,190,43.2,40.8,44.0,False,False,True,False,-1.530580282115251
+Position & spread,rec,RB,RB receptions · underdog by 1–6.5,84,40.5,50,42.0,535,44.5,40.8,44.0,False,False,False,False,-1.7413787640832188
+Position & spread,rec,RB,RB receptions · underdog by 7+,20,40.0,12,58.3,197,43.7,40.8,44.0,False,False,False,False,-0.8944271909999157
+Position & spread,rushyd,RB,RB rushing yds · favored by 1–6.5,98,46.9,57,50.9,758,49.6,43.1,46.4,False,True,False,False,-0.6137686860699239
+Position & spread,rushyd,RB,RB rushing yds · favored by 7+,24,50.0,15,46.7,270,50.4,43.1,46.4,False,True,False,False,0.0
+Position & spread,rushyd,RB,RB rushing yds · underdog by 1–6.5,106,39.6,60,43.3,766,42.3,43.1,46.4,False,False,False,True,-2.141491069325296
+Position & spread,rushyd,RB,RB rushing yds · underdog by 7+,27,37.0,16,43.8,232,45.3,43.1,46.4,False,False,False,False,-1.3509996299037244
+Position & spread,rushyd,QB,QB rushing yds · favored by 1–6.5,20,35.0,8,25.0,162,45.1,38.5,41.8,False,True,True,False,-1.341640786499874
+Position & spread,passyd,QB,QB passing yds · favored by 1–6.5,76,51.3,43,60.5,509,48.1,51.1,48.8,True,False,False,False,0.2266627450641152
+Position & spread,passyd,QB,QB passing yds · favored by 7+,24,45.8,11,45.5,195,52.3,51.1,48.8,False,True,False,False,-0.4115142767875743
+Position & spread,passyd,QB,QB passing yds · underdog by 1–6.5,69,47.8,39,51.3,429,49.4,51.1,48.8,False,False,False,False,-0.3654914499683956
+Position & team total,recyd,WR,WR receiving yds · team total 20.5–24,203,48.8,112,48.2,1432,45.5,44.2,45.0,False,False,False,False,-0.34194736437060047
+Position & team total,recyd,WR,WR receiving yds · team total 24.5+,166,42.2,98,45.9,1239,46.3,44.2,45.0,False,False,False,False,-2.0099194013691184
+Position & team total,recyd,WR,WR receiving yds · team total under 20.5,127,39.4,87,39.1,1163,43.2,44.2,45.0,False,False,True,False,-2.389118665951946
+Position & team total,recyd,TE,TE receiving yds · team total 20.5–24,101,38.6,59,44.1,556,47.5,41.8,47.9,False,False,False,False,-2.2913716416155627
+Position & team total,recyd,TE,TE receiving yds · team total 24.5+,80,46.2,46,50.0,479,49.7,41.8,47.9,False,False,False,False,-0.6797646651599357
+Position & team total,recyd,TE,TE receiving yds · team total under 20.5,58,41.4,33,42.4,482,46.5,41.8,47.9,False,False,False,False,-1.3099129742085927
+Position & team total,recyd,RB,RB receiving yds · team total 20.5–24,47,42.6,27,51.9,321,41.1,39.1,40.6,False,False,False,False,-1.0146368808593547
+Position & team total,recyd,RB,RB receiving yds · team total 24.5+,34,41.2,25,40.0,256,41.0,39.1,40.6,False,False,False,False,-1.0262475334927725
+Position & team total,recyd,RB,RB receiving yds · team total under 20.5,29,31.0,12,16.7,241,39.4,39.1,40.6,False,False,True,False,-2.0463626267111117
+Position & team total,rec,WR,WR receptions · team total 20.5–24,174,51.7,90,54.4,1334,44.1,48.6,45.1,True,False,False,False,0.44849080258127966
+Position & team total,rec,WR,WR receptions · team total 24.5+,143,45.5,87,49.4,1110,47.0,48.6,45.1,False,False,False,False,-1.0762434668791254
+Position & team total,rec,WR,WR receptions · team total under 20.5,119,47.9,79,45.6,1076,44.4,48.6,45.1,False,False,False,False,-0.4581659088147004
+Position & team total,rec,TE,TE receptions · team total 20.5–24,102,37.3,59,47.5,562,45.7,45.6,47.4,False,False,False,False,-2.5652742543439677
+Position & team total,rec,TE,TE receptions · team total 24.5+,78,52.6,47,57.4,471,48.2,45.6,47.4,True,False,False,False,0.45925156504904846
+Position & team total,rec,TE,TE receptions · team total under 20.5,57,50.9,33,51.5,484,48.6,45.6,47.4,True,False,False,False,0.13589701983487362
+Position & team total,rec,RB,RB receptions · team total 20.5–24,77,45.5,41,51.2,512,45.7,40.8,44.0,False,False,False,False,-0.7897467948652908
+Position & team total,rec,RB,RB receptions · team total 24.5+,61,39.3,39,41.0,413,44.3,40.8,44.0,False,False,False,False,-1.6713934306440246
+Position & team total,rec,RB,RB receptions · team total under 20.5,58,36.2,35,42.9,500,42.0,40.8,44.0,False,False,False,True,-2.1019533772184382
+Position & team total,rushyd,RB,RB rushing yds · team total 20.5–24,112,40.2,62,50.0,760,47.0,43.1,46.4,False,False,False,False,-2.0742690278746387
+Position & team total,rushyd,RB,RB rushing yds · team total 24.5+,75,46.7,46,41.3,604,49.0,43.1,46.4,False,True,False,False,-0.571576766497729
+Position & team total,rushyd,RB,RB rushing yds · team total under 20.5,68,44.1,40,47.5,662,43.5,43.1,46.4,False,False,False,True,-0.9730529276457679
+Position & team total,rushyd,QB,QB rushing yds · team total 24.5+,21,38.1,11,27.3,157,47.8,38.5,41.8,False,True,True,False,-1.09065301539949
+Position & team total,passyd,QB,QB passing yds · team total 20.5–24,77,50.6,38,55.3,501,49.5,51.1,48.8,True,False,False,False,0.10529957264870556
+Position & team total,passyd,QB,QB passing yds · team total 24.5+,66,53.0,38,60.5,437,50.1,51.1,48.8,True,False,False,False,0.48744230427815805
+Position & team total,passyd,QB,QB passing yds · team total under 20.5,45,48.9,27,44.4,322,46.0,51.1,48.8,False,False,False,True,-0.14758048651498626
+Role & team total,recyd,WR,WR receiving yds · Deep threat · team total 20.5–24,72,47.2,42,40.5,338,45.6,44.2,45.0,False,False,False,False,-0.4751757569573594
+Role & team total,recyd,WR,WR receiving yds · Deep threat · team total 24.5+,52,48.1,38,52.6,295,45.1,44.2,45.0,False,False,False,False,-0.27402189693526263
+Role & team total,recyd,WR,WR receiving yds · Deep threat · team total under 20.5,35,34.3,22,36.4,291,37.8,44.2,45.0,False,False,True,True,-1.85764905189328
+Role & team total,recyd,WR,WR receiving yds · Intermediate · team total 20.5–24,104,54.8,54,57.4,915,45.4,44.2,45.0,True,False,False,False,0.9790117466098133
+Role & team total,recyd,WR,WR receiving yds · Intermediate · team total 24.5+,88,37.5,46,39.1,752,46.0,44.2,45.0,False,False,True,False,-2.345207879911715
+Role & team total,recyd,WR,WR receiving yds · Intermediate · team total under 20.5,72,43.1,50,40.0,746,45.2,44.2,45.0,False,False,False,False,-1.1709688296449228
+Role & team total,recyd,WR,WR receiving yds · Slot / underneath · team total 20.5–24,25,32.0,14,42.9,172,45.9,44.2,45.0,False,False,False,False,-1.7999999999999998
+Role & team total,recyd,WR,WR receiving yds · Slot / underneath · team total 24.5+,24,45.8,12,50.0,183,51.4,44.2,45.0,False,True,False,False,-0.4115142767875743
+Role & team total,recyd,TE,TE receiving yds · Receiving TE · underneath · team total 20.5–24,44,36.4,21,38.1,236,51.3,41.8,47.9,False,True,True,False,-1.8042438859533376
+Role & team total,recyd,TE,TE receiving yds · Receiving TE · underneath · team total 24.5+,32,68.8,18,72.2,222,50.0,41.8,47.9,True,True,False,False,2.126977197809134
+Role & team total,recyd,TE,TE receiving yds · Receiving TE · underneath · team total under 20.5,35,42.9,22,40.9,224,46.9,41.8,47.9,False,False,False,False,-0.8400833292001456
+Role & team total,recyd,TE,TE receiving yds · Secondary TE · underneath · team total 20.5–24,43,46.5,30,53.3,233,43.3,41.8,47.9,False,False,False,True,-0.4590206967011397
+Role & team total,recyd,TE,TE receiving yds · Secondary TE · underneath · team total 24.5+,31,35.5,19,42.1,177,52.0,41.8,47.9,False,True,False,False,-1.6146516652207066
+Role & team total,recyd,TE,TE receiving yds · Secondary TE · underneath · team total under 20.5,20,35.0,9,44.4,211,46.9,41.8,47.9,False,False,False,False,-1.341640786499874
+Role & team total,rec,WR,WR receptions · Deep threat · team total 20.5–24,55,58.2,27,55.6,277,48.4,48.6,45.1,True,True,False,False,1.2162565518836896
+Role & team total,rec,WR,WR receptions · Deep threat · team total 24.5+,39,51.3,30,60.0,236,49.2,48.6,45.1,True,True,False,False,0.1623699479583585
+Role & team total,rec,WR,WR receptions · Deep threat · team total under 20.5,28,53.6,16,56.2,211,45.0,48.6,45.1,True,False,False,False,0.38098818879330143
+Role & team total,rec,WR,WR receptions · Intermediate · team total 20.5–24,94,54.3,50,56.0,870,43.1,48.6,45.1,True,False,False,True,0.8338009354756072
+Role & team total,rec,WR,WR receptions · Intermediate · team total 24.5+,77,44.2,42,42.9,690,45.4,48.6,45.1,False,False,False,False,-1.0178958689374862
+Role & team total,rec,WR,WR receptions · Intermediate · team total under 20.5,71,45.1,48,39.6,727,43.2,48.6,45.1,False,False,False,False,-0.8257626777712829
+Role & team total,rec,WR,WR receptions · Slot / underneath · team total 20.5–24,24,25.0,12,41.7,186,41.9,48.6,45.1,False,False,False,True,-2.449489742783178
+Role & team total,rec,WR,WR receptions · Slot / underneath · team total 24.5+,26,42.3,14,50.0,181,51.4,48.6,45.1,False,True,False,False,-0.785249005093289
+Role & team total,rec,TE,TE receptions · Receiving TE · underneath · team total 20.5–24,44,27.3,21,38.1,238,46.2,45.6,47.4,False,False,True,False,-3.0114953096427026
+Role & team total,rec,TE,TE receptions · Receiving TE · underneath · team total 24.5+,32,68.8,18,72.2,223,46.2,45.6,47.4,True,False,False,False,2.126977197809134
+Role & team total,rec,TE,TE receptions · Receiving TE · underneath · team total under 20.5,35,51.4,22,45.5,224,51.3,45.6,47.4,False,True,False,False,0.1656502339267894
+Role & team total,rec,TE,TE receptions · Secondary TE · underneath · team total 20.5–24,43,53.5,30,60.0,252,45.6,45.6,47.4,True,False,False,False,0.45902069670114043
+Role & team total,rec,TE,TE receptions · Secondary TE · underneath · team total 24.5+,28,42.9,18,50.0,181,50.8,45.6,47.4,False,True,False,False,-0.7513933723423438
+Role & team total,rec,RB,RB receptions · Pass-catching back · team total 20.5–24,22,40.9,8,50.0,192,47.4,40.8,44.0,False,True,False,False,-0.8536556682878644
+Role & team total,rec,RB,RB receptions · Workhorse · three-down · team total 20.5–24,24,54.2,16,62.5,158,44.3,40.8,44.0,True,False,False,False,0.4115142767875743
+Role & team total,rec,RB,RB receptions · Workhorse · three-down · team total under 20.5,20,30.0,10,40.0,125,42.4,40.8,44.0,False,False,False,False,-1.788854381999832
+Role & team total,rushyd,RB,RB rushing yds · Committee / change-of-pace · team total 20.5–24,33,39.4,19,47.4,225,43.6,43.1,46.4,False,False,False,True,-1.2178472810660623
+Role & team total,rushyd,RB,RB rushing yds · Committee / change-of-pace · team total 24.5+,20,45.0,13,38.5,171,44.4,43.1,46.4,False,False,False,True,-0.44721359549995787
+Role & team total,rushyd,RB,RB rushing yds · Committee / change-of-pace · team total under 20.5,21,42.9,14,50.0,195,37.4,43.1,46.4,False,False,False,True,-0.6507257486837295
+Role & team total,rushyd,RB,RB rushing yds · Pass-catching back · team total 20.5–24,21,38.1,8,62.5,179,45.8,43.1,46.4,False,False,False,False,-1.09065301539949
+Role & team total,rushyd,RB,RB rushing yds · Workhorse · three-down · team total 20.5–24,24,45.8,16,50.0,160,48.1,43.1,46.4,False,False,False,False,-0.4115142767875743
+Role & team total,rushyd,RB,RB rushing yds · Workhorse · three-down · team total under 20.5,22,40.9,10,50.0,127,45.7,43.1,46.4,False,False,False,False,-0.8536556682878644
+Role & team total,passyd,QB,QB passing yds · Pocket · team total 20.5–24,31,48.4,15,53.3,231,45.0,51.1,48.8,False,False,False,True,-0.17816845961056085
+Role & team total,passyd,QB,QB passing yds · Pocket · team total 24.5+,21,47.6,12,58.3,170,47.6,51.1,48.8,False,False,False,False,-0.21996363335788002
+Role & team total,passyd,QB,QB passing yds · Vertical pocket · team total 20.5–24,25,44.0,15,53.3,92,58.7,51.1,48.8,False,True,False,False,-0.6
+Role & team total,passyd,QB,QB passing yds · Vertical pocket · team total 24.5+,24,58.3,11,72.7,82,43.9,51.1,48.8,True,False,False,True,0.8132305946040148
+Scheme: blitz,recyd,WR,WR receiving yds · blitz-heavy defense,125,47.2,101,44.6,1206,47.0,44.2,45.0,False,True,False,False,-0.6260990336999405
+Scheme: blitz,recyd,WR,WR receiving yds · low-blitz defense,126,46.0,104,42.3,1187,45.3,44.2,45.0,False,False,False,False,-0.8979977728257454
+Scheme: blitz,recyd,TE,TE receiving yds · blitz-heavy defense,61,50.8,51,52.9,469,51.2,41.8,47.9,True,True,False,False,0.12496399481450658
+Scheme: blitz,recyd,TE,TE receiving yds · low-blitz defense,52,42.3,40,42.5,465,50.8,41.8,47.9,False,True,False,False,-1.1105097928429088
+Scheme: blitz,recyd,RB,RB receiving yds · blitz-heavy defense,28,21.4,24,25.0,249,38.2,39.1,40.6,False,False,True,True,-3.026739499857892
+Scheme: blitz,recyd,RB,RB receiving yds · low-blitz defense,25,40.0,18,38.9,250,47.2,39.1,40.6,False,True,False,False,-0.9999999999999998
+Scheme: blitz,rec,WR,WR receptions · blitz-heavy defense,101,46.5,81,44.4,1108,47.7,48.6,45.1,False,True,False,False,-0.7034912934784618
+Scheme: blitz,rec,WR,WR receptions · low-blitz defense,116,52.6,95,49.5,1091,45.4,48.6,45.1,False,False,False,False,0.5600571399419889
+Scheme: blitz,rec,TE,TE receptions · blitz-heavy defense,59,47.5,50,50.0,467,52.2,45.6,47.4,False,True,False,False,-0.38405728739343076
+Scheme: blitz,rec,TE,TE receptions · low-blitz defense,52,51.9,39,51.3,462,51.5,45.6,47.4,True,True,False,False,0.2740218969352634
+Scheme: blitz,rec,RB,RB receptions · blitz-heavy defense,47,31.9,39,33.3,438,41.3,40.8,44.0,False,False,True,True,-2.481746965345178
+Scheme: blitz,rec,RB,RB receptions · low-blitz defense,45,33.3,34,38.2,453,47.2,40.8,44.0,False,True,True,False,-2.2405401134547898
+Scheme: blitz,rushyd,RB,RB rushing yds · blitz-heavy defense,60,41.7,49,42.9,597,45.7,43.1,46.4,False,False,False,False,-1.285830470940862
+Scheme: blitz,rushyd,RB,RB rushing yds · low-blitz defense,62,56.5,48,60.4,648,48.0,43.1,46.4,True,False,False,False,1.0236210236215346
+Scheme: blitz,passyd,QB,QB passing yds · blitz-heavy defense,45,51.1,35,54.3,396,56.3,51.1,48.8,True,True,False,False,0.14758048651498626
+Scheme: blitz,passyd,QB,QB passing yds · low-blitz defense,47,51.1,35,45.7,398,46.7,51.1,48.8,False,False,False,True,0.1508244012088231
+Scheme: deep throws allowed,recyd,WR,WR receiving yds · defense allows deep throws,125,44.8,97,44.3,1202,44.9,44.2,45.0,False,False,False,False,-1.1627553482998916
+Scheme: deep throws allowed,recyd,WR,WR receiving yds · defense allows few deep throws,124,48.4,99,45.5,1188,45.5,44.2,45.0,False,False,False,False,-0.3563369192211217
+Scheme: deep throws allowed,recyd,TE,TE receiving yds · defense allows deep throws,52,40.4,42,38.1,461,46.4,41.8,47.9,False,False,False,False,-1.3845316897781723
+Scheme: deep throws allowed,recyd,TE,TE receiving yds · defense allows few deep throws,61,41.0,47,42.6,471,49.7,41.8,47.9,False,False,False,False,-1.4058449416631982
+Scheme: deep throws allowed,recyd,RB,RB receiving yds · defense allows deep throws,27,40.7,22,50.0,261,40.6,39.1,40.6,False,False,False,False,-0.9664843506234332
+Scheme: deep throws allowed,recyd,RB,RB receiving yds · defense allows few deep throws,26,30.8,20,25.0,247,42.9,39.1,40.6,False,True,True,False,-1.9580234932196292
+Scheme: deep throws allowed,rec,WR,WR receptions · defense allows deep throws,108,49.1,85,47.1,1086,45.8,48.6,45.1,False,False,False,False,-0.1870614872174389
+Scheme: deep throws allowed,rec,WR,WR receptions · defense allows few deep throws,103,50.5,81,48.1,1093,44.0,48.6,45.1,False,False,False,False,0.1014889156509223
+Scheme: deep throws allowed,rec,TE,TE receptions · defense allows deep throws,53,52.8,43,53.5,464,45.3,45.6,47.4,True,False,False,True,0.40768615379970935
+Scheme: deep throws allowed,rec,TE,TE receptions · defense allows few deep throws,62,46.8,49,49.0,469,51.0,45.6,47.4,False,True,False,False,-0.5039365039367564
+Scheme: deep throws allowed,rec,RB,RB receptions · defense allows deep throws,47,44.7,37,48.6,439,44.0,40.8,44.0,False,False,False,False,-0.7266993876425105
+Scheme: deep throws allowed,rec,RB,RB receptions · defense allows few deep throws,43,37.2,33,42.4,449,44.5,40.8,44.0,False,False,False,False,-1.6787042622213115
+Scheme: deep throws allowed,rushyd,RB,RB rushing yds · defense allows deep throws,62,41.9,50,46.0,624,43.9,43.1,46.4,False,False,False,True,-1.2755892755899136
+Scheme: deep throws allowed,rushyd,RB,RB rushing yds · defense allows few deep throws,58,50.0,44,47.7,627,49.4,43.1,46.4,False,True,False,False,0.0
+Scheme: deep throws allowed,passyd,QB,QB passing yds · defense allows deep throws,45,57.8,33,57.6,396,48.0,51.1,48.8,True,False,False,False,1.046479813469901
+Scheme: deep throws allowed,passyd,QB,QB passing yds · defense allows few deep throws,42,50.0,31,45.2,400,48.8,51.1,48.8,False,False,False,False,0.0
+Scheme: middle of field,recyd,WR,WR receiving yds · defense allows middle of field,129,41.9,104,39.4,1186,46.4,44.2,45.0,False,False,False,False,-1.839966304039289
+Scheme: middle of field,recyd,WR,WR receiving yds · defense funnels outside,120,46.7,90,42.2,1188,44.6,44.2,45.0,False,False,False,False,-0.7229937759068188
+Scheme: middle of field,recyd,TE,TE receiving yds · defense allows middle of field,53,49.1,40,50.0,489,48.5,41.8,47.9,False,False,False,False,-0.13104197800704945
+Scheme: middle of field,recyd,TE,TE receiving yds · defense funnels outside,55,34.5,42,35.7,468,50.4,41.8,47.9,False,True,True,False,-2.299021530999656
+Scheme: middle of field,recyd,RB,RB receiving yds · defense allows middle of field,24,33.3,19,26.3,247,41.3,39.1,40.6,False,False,True,False,-1.6362591481791633
+Scheme: middle of field,recyd,RB,RB receiving yds · defense funnels outside,28,42.9,20,55.0,267,39.7,39.1,40.6,False,False,False,False,-0.7513933723423438
+Scheme: middle of field,rec,WR,WR receptions · defense allows middle of field,112,40.2,92,39.1,1099,45.9,48.6,45.1,False,False,False,False,-2.0742690278746387
+Scheme: middle of field,rec,WR,WR receptions · defense funnels outside,105,54.3,77,51.9,1085,45.3,48.6,45.1,True,False,False,False,0.8812377658725239
+Scheme: middle of field,rec,TE,TE receptions · defense allows middle of field,55,52.7,43,58.1,486,51.6,45.6,47.4,True,True,False,False,0.4004747183031661
+Scheme: middle of field,rec,TE,TE receptions · defense funnels outside,56,48.2,42,50.0,462,47.0,45.6,47.4,False,False,False,False,-0.2693993318477232
+Scheme: middle of field,rec,RB,RB receptions · defense allows middle of field,44,31.8,33,39.4,435,43.0,40.8,44.0,False,False,True,False,-2.414502847378731
+Scheme: middle of field,rec,RB,RB receptions · defense funnels outside,46,54.3,34,58.8,448,44.4,40.8,44.0,True,False,False,False,0.583280378548772
+Scheme: middle of field,rushyd,RB,RB rushing yds · defense allows middle of field,60,48.3,47,51.1,628,49.0,43.1,46.4,False,True,False,False,-0.2633628675421046
+Scheme: middle of field,rushyd,RB,RB rushing yds · defense funnels outside,63,42.9,48,47.9,634,47.3,43.1,46.4,False,False,False,False,-1.1270900585135157
+Scheme: middle of field,passyd,QB,QB passing yds · defense allows middle of field,43,51.2,31,54.8,378,49.2,51.1,48.8,True,False,False,False,0.15737852458324816
+Scheme: middle of field,passyd,QB,QB passing yds · defense funnels outside,44,54.5,32,46.9,404,48.0,51.1,48.8,False,False,False,False,0.5969924622639725
+Scheme: box count,recyd,WR,WR receiving yds · light-box defense,120,46.7,98,44.9,1193,44.9,44.2,45.0,False,False,False,False,-0.7229937759068188
+Scheme: box count,recyd,WR,WR receiving yds · stacked-box defense,113,50.4,92,48.9,1188,45.5,44.2,45.0,False,False,False,False,0.08504116650187728
+Scheme: box count,recyd,TE,TE receiving yds · light-box defense,59,42.4,44,43.2,469,50.1,41.8,47.9,False,True,False,False,-1.1675341536760286
+Scheme: box count,recyd,TE,TE receiving yds · stacked-box defense,59,42.4,47,46.8,492,50.4,41.8,47.9,False,True,False,False,-1.1675341536760286
+Scheme: box count,recyd,RB,RB receiving yds · light-box defense,28,53.6,22,54.5,259,39.4,39.1,40.6,True,False,False,False,0.38098818879330143
+Scheme: box count,recyd,RB,RB receiving yds · stacked-box defense,24,29.2,17,35.3,244,41.4,39.1,40.6,False,False,True,False,-2.037975465995604
+Scheme: box count,rec,WR,WR receptions · light-box defense,106,51.9,87,48.3,1100,45.5,48.6,45.1,False,False,False,False,0.3912339453575064
+Scheme: box count,rec,WR,WR receptions · stacked-box defense,101,51.5,80,52.5,1085,44.9,48.6,45.1,True,False,False,False,0.301496268633627
+Scheme: box count,rec,TE,TE receptions · light-box defense,59,55.9,45,60.0,471,50.5,45.6,47.4,True,True,False,False,0.9063751982484949
+Scheme: box count,rec,TE,TE receptions · stacked-box defense,61,45.9,48,50.0,489,48.7,45.6,47.4,False,False,False,False,-0.6404404734243462
+Scheme: box count,rec,RB,RB receptions · light-box defense,48,43.8,37,54.1,443,44.2,40.8,44.0,False,False,False,False,-0.8590972005541639
+Scheme: box count,rec,RB,RB receptions · stacked-box defense,51,43.1,40,42.5,438,44.3,40.8,44.0,False,False,False,False,-0.9855171231389135
+Scheme: box count,rushyd,RB,RB rushing yds · light-box defense,63,42.9,50,40.0,634,50.3,43.1,46.4,False,True,False,False,-1.1270900585135157
+Scheme: box count,rushyd,RB,RB rushing yds · stacked-box defense,62,32.3,47,36.2,612,44.8,43.1,46.4,False,False,True,False,-2.7873987874001815
+Scheme: box count,passyd,QB,QB passing yds · light-box defense,42,52.4,31,51.6,387,44.4,51.1,48.8,True,False,False,True,0.3110755535235776
+Scheme: box count,passyd,QB,QB passing yds · stacked-box defense,47,57.4,38,60.5,384,53.6,51.1,48.8,True,True,False,False,1.014636880859354
+Defense quality: pass,recyd,WR,WR receiving yds · soft pass defense,123,43.9,96,43.8,1181,45.6,44.2,45.0,False,False,False,False,-1.3530454537819487
+Defense quality: pass,recyd,WR,WR receiving yds · tough pass defense,120,52.5,98,48.0,1213,43.0,44.2,45.0,False,False,False,True,0.5477225575051666
+Defense quality: pass,recyd,TE,TE receiving yds · soft pass defense,56,42.9,46,45.7,472,50.0,41.8,47.9,False,True,False,False,-1.0626306978437994
+Defense quality: pass,recyd,TE,TE receiving yds · tough pass defense,56,37.5,43,37.2,464,45.7,41.8,47.9,False,False,True,True,-1.8708286933869707
+Defense quality: pass,recyd,RB,RB receiving yds · soft pass defense,26,38.5,21,38.1,253,45.1,39.1,40.6,False,True,True,False,-1.1727744881263404
+Defense quality: pass,recyd,RB,RB receiving yds · tough pass defense,29,48.3,23,47.8,244,35.2,39.1,40.6,False,False,False,True,-0.1830956034425733
+Defense quality: pass,rec,WR,WR receptions · soft pass defense,105,51.4,83,53.0,1099,45.6,48.6,45.1,True,False,False,False,0.28691462144686897
+Defense quality: pass,rec,WR,WR receptions · tough pass defense,103,55.3,82,52.4,1105,43.5,48.6,45.1,True,False,False,False,1.075782505899774
+Defense quality: pass,rec,TE,TE receptions · soft pass defense,56,50.0,47,53.2,466,53.2,45.6,47.4,False,True,False,False,0.0
+Defense quality: pass,rec,TE,TE receptions · tough pass defense,58,44.8,43,44.2,462,46.3,45.6,47.4,False,False,False,False,-0.7920404030098472
+Defense quality: pass,rec,RB,RB receptions · soft pass defense,52,34.6,39,38.5,437,45.1,40.8,44.0,False,False,True,False,-2.221019585685817
+Defense quality: pass,rec,RB,RB receptions · tough pass defense,49,53.1,40,57.5,443,43.1,40.8,44.0,True,False,False,False,0.4340000000000004
+Defense quality: pass,rushyd,RB,RB rushing yds · soft pass defense,62,58.1,48,62.5,640,48.9,43.1,46.4,True,True,False,False,1.2755892755899128
+Defense quality: pass,rushyd,RB,RB rushing yds · tough pass defense,59,35.6,46,34.8,618,44.7,43.1,46.4,False,False,True,False,-2.212169975386159
+Defense quality: pass,passyd,QB,QB passing yds · soft pass defense,45,51.1,33,51.5,390,47.9,51.1,48.8,True,False,False,False,0.14758048651498626
+Defense quality: pass,passyd,QB,QB passing yds · tough pass defense,47,57.4,35,54.3,393,47.1,51.1,48.8,True,False,False,False,1.014636880859354
+Defense quality: run,recyd,WR,WR receiving yds · soft run defense,113,42.5,91,42.9,1200,45.6,44.2,45.0,False,False,False,False,-1.5945218719101977
+Defense quality: run,recyd,WR,WR receiving yds · tough run defense,127,47.2,98,42.9,1174,44.6,44.2,45.0,False,False,False,False,-0.6310879494967394
+Defense quality: run,recyd,TE,TE receiving yds · soft run defense,61,47.5,47,48.9,460,51.7,41.8,47.9,False,True,False,False,-0.39051248379533304
+Defense quality: run,recyd,TE,TE receiving yds · tough run defense,58,48.3,43,51.2,484,50.0,41.8,47.9,False,True,False,False,-0.25893628559937315
+Defense quality: run,recyd,RB,RB receiving yds · soft run defense,26,38.5,20,45.0,244,39.3,39.1,40.6,False,False,False,False,-1.1727744881263404
+Defense quality: run,recyd,RB,RB receiving yds · tough run defense,28,42.9,21,42.9,256,42.2,39.1,40.6,False,False,False,False,-0.7513933723423438
+Defense quality: run,rec,WR,WR receptions · soft run defense,96,47.9,76,44.7,1098,44.1,48.6,45.1,False,False,False,False,-0.4115142767875743
+Defense quality: run,rec,WR,WR receptions · tough run defense,111,48.6,86,45.3,1084,47.4,48.6,45.1,False,True,False,False,-0.29499830507987695
+Defense quality: run,rec,TE,TE receptions · soft run defense,62,46.8,46,50.0,468,48.9,45.6,47.4,False,False,False,False,-0.5039365039367564
+Defense quality: run,rec,TE,TE receptions · tough run defense,57,57.9,44,61.4,481,48.4,45.6,47.4,True,False,False,False,1.1928738407727777
+Defense quality: run,rec,RB,RB receptions · soft run defense,54,33.3,41,36.6,444,44.8,40.8,44.0,False,False,True,False,-2.454388722268745
+Defense quality: run,rec,RB,RB receptions · tough run defense,42,45.2,33,51.5,447,41.4,40.8,44.0,False,False,False,True,-0.6221511070471544
+Defense quality: run,rushyd,RB,RB rushing yds · soft run defense,70,44.3,55,45.5,624,48.9,43.1,46.4,False,True,False,False,-0.953792430248847
+Defense quality: run,rushyd,RB,RB rushing yds · tough run defense,58,44.8,47,44.7,624,41.7,43.1,46.4,False,False,False,True,-0.7920404030098472
+Defense quality: run,passyd,QB,QB passing yds · soft run defense,45,55.6,36,55.6,398,48.5,51.1,48.8,True,False,False,False,0.75131884043993
+Defense quality: run,passyd,QB,QB passing yds · tough run defense,47,59.6,34,52.9,397,49.6,51.1,48.8,True,False,False,False,1.316285683277
+Offense: pass rate over expected,recyd,WR,WR receiving yds · pass-leaning offense,119,49.6,90,47.8,1218,46.1,44.2,45.0,False,False,False,False,-0.08726969691708579
+Offense: pass rate over expected,recyd,WR,WR receiving yds · run-leaning offense,126,49.2,101,47.5,1155,47.3,44.2,45.0,False,True,False,False,-0.1795995545651481
+Offense: pass rate over expected,recyd,TE,TE receiving yds · pass-leaning offense,61,41.0,49,42.9,485,47.6,41.8,47.9,False,False,False,False,-1.4058449416631982
+Offense: pass rate over expected,recyd,TE,TE receiving yds · run-leaning offense,56,50.0,40,50.0,484,51.0,41.8,47.9,False,True,False,False,0.0
+Offense: pass rate over expected,recyd,RB,RB receiving yds · pass-leaning offense,31,35.5,24,33.3,249,39.8,39.1,40.6,False,False,True,False,-1.6146516652207066
+Offense: pass rate over expected,rec,WR,WR receptions · pass-leaning offense,103,50.5,77,53.2,1123,44.8,48.6,45.1,True,False,False,False,0.1014889156509223
+Offense: pass rate over expected,rec,WR,WR receptions · run-leaning offense,107,53.3,85,49.4,1034,46.4,48.6,45.1,False,False,False,False,0.682709308564046
+Offense: pass rate over expected,rec,TE,TE receptions · pass-leaning offense,65,44.6,52,48.1,488,48.8,45.6,47.4,False,False,False,False,-0.8707238368162432
+Offense: pass rate over expected,rec,TE,TE receptions · run-leaning offense,56,57.1,41,61.0,473,47.8,45.6,47.4,True,False,False,False,1.0626306978438003
+Offense: pass rate over expected,rec,RB,RB receptions · pass-leaning offense,45,40.0,35,42.9,425,41.6,40.8,44.0,False,False,False,True,-1.3416407864998734
+Offense: pass rate over expected,rec,RB,RB receptions · run-leaning offense,48,43.8,35,48.6,474,43.0,40.8,44.0,False,False,False,False,-0.8590972005541639
+Offense: pass rate over expected,rushyd,RB,RB rushing yds · pass-leaning offense,51,43.1,38,44.7,578,47.9,43.1,46.4,False,False,False,False,-0.9855171231389135
+Offense: pass rate over expected,rushyd,RB,RB rushing yds · run-leaning offense,75,44.0,57,45.6,716,44.3,43.1,46.4,False,False,False,True,-1.0392304845413263
+Offense: pass rate over expected,passyd,QB,QB passing yds · pass-leaning offense,49,53.1,37,51.4,400,48.0,51.1,48.8,True,False,False,False,0.4340000000000004
+Offense: pass rate over expected,passyd,QB,QB passing yds · run-leaning offense,44,54.5,34,50.0,365,49.6,51.1,48.8,False,False,False,False,0.5969924622639725
+Offense: play action,recyd,WR,WR receiving yds · low play-action offense,118,45.8,100,41.0,1168,44.9,44.2,45.0,False,False,False,False,-0.912473561260819
+Offense: play action,recyd,WR,WR receiving yds · play-action-heavy offense,129,46.5,96,44.8,1238,44.4,44.2,45.0,False,False,False,False,-0.7950471684120377
+Offense: play action,recyd,TE,TE receiving yds · low play-action offense,59,52.5,50,54.0,466,45.5,41.8,47.9,True,False,False,True,0.38405728739343076
+Offense: play action,recyd,TE,TE receiving yds · play-action-heavy offense,62,41.9,45,44.4,452,49.8,41.8,47.9,False,False,False,False,-1.2755892755899136
+Offense: play action,recyd,RB,RB receiving yds · low play-action offense,27,44.4,22,54.5,288,39.2,39.1,40.6,False,False,False,False,-0.5819690713431427
+Offense: play action,recyd,RB,RB receiving yds · play-action-heavy offense,26,34.6,20,30.0,229,42.8,39.1,40.6,False,True,True,False,-1.5704980101865773
+Offense: play action,rec,WR,WR receptions · low play-action offense,106,54.7,89,50.6,1095,45.1,48.6,45.1,True,False,False,False,0.9677892332527789
+Offense: play action,rec,WR,WR receptions · play-action-heavy offense,104,50.0,78,48.7,1150,45.3,48.6,45.1,False,False,False,False,0.0
+Offense: play action,rec,TE,TE receptions · low play-action offense,66,54.5,55,54.5,468,44.7,45.6,47.4,True,False,False,True,0.731163456417237
+Offense: play action,rec,TE,TE receptions · play-action-heavy offense,57,43.9,42,47.6,446,50.9,45.6,47.4,False,True,False,False,-0.9210798011030314
+Offense: play action,rec,RB,RB receptions · low play-action offense,43,37.2,36,41.7,445,44.5,40.8,44.0,False,False,False,False,-1.6787042622213115
+Offense: play action,rec,RB,RB receptions · play-action-heavy offense,52,40.4,40,47.5,429,43.6,40.8,44.0,False,False,False,False,-1.3845316897781723
+Offense: play action,rushyd,RB,RB rushing yds · low play-action offense,59,35.6,49,36.7,617,50.9,43.1,46.4,False,True,True,False,-2.212169975386159
+Offense: play action,rushyd,RB,RB rushing yds · play-action-heavy offense,54,57.4,40,60.0,631,47.2,43.1,46.4,True,False,False,False,1.0875734457957305
+Offense: play action,passyd,QB,QB passing yds · low play-action offense,48,52.1,39,53.8,395,47.1,51.1,48.8,True,False,False,False,0.2909845356715717
+Offense: play action,passyd,QB,QB passing yds · play-action-heavy offense,43,51.2,30,46.7,384,48.7,51.1,48.8,False,False,False,False,0.15737852458324816
+Offense: motion,recyd,WR,WR receiving yds · low-motion offense,117,48.7,101,46.5,1172,46.8,44.2,45.0,False,False,False,False,-0.2812329994861902
+Offense: motion,recyd,WR,WR receiving yds · motion-heavy offense,114,45.6,87,42.5,1214,42.6,44.2,45.0,False,False,False,True,-0.939582886178755
+Offense: motion,recyd,TE,TE receiving yds · low-motion offense,54,35.2,45,37.8,436,49.3,41.8,47.9,False,False,True,False,-2.175146891591462
+Offense: motion,recyd,TE,TE receiving yds · motion-heavy offense,62,51.6,46,52.2,473,52.9,41.8,47.9,True,True,False,False,0.2519682519683782
+Offense: motion,recyd,RB,RB receiving yds · low-motion offense,29,41.4,22,36.4,226,44.2,39.1,40.6,False,True,False,False,-0.926248346827135
+Offense: motion,recyd,RB,RB receiving yds · motion-heavy offense,29,37.9,24,37.5,301,40.2,39.1,40.6,False,False,True,False,-1.30320988332655
+Offense: motion,rec,WR,WR receptions · low-motion offense,106,49.1,91,47.3,1096,43.2,48.6,45.1,False,False,False,False,-0.1853213425377662
+Offense: motion,rec,WR,WR receptions · motion-heavy offense,94,54.3,71,53.5,1100,46.6,48.6,45.1,True,False,False,False,0.8338009354756072
+Offense: motion,rec,TE,TE receptions · low-motion offense,62,41.9,51,45.1,471,47.8,45.6,47.4,False,False,False,False,-1.2755892755899136
+Offense: motion,rec,TE,TE receptions · motion-heavy offense,57,59.6,42,64.3,456,49.3,45.6,47.4,True,False,False,False,1.4495682115719835
+Offense: motion,rec,RB,RB receptions · low-motion offense,49,40.8,39,41.0,497,45.3,40.8,44.0,False,False,False,False,-1.2880000000000005
+Offense: motion,rec,RB,RB receptions · motion-heavy offense,52,40.4,41,46.3,419,44.9,40.8,44.0,False,False,False,False,-1.3845316897781723
+Offense: motion,rushyd,RB,RB rushing yds · low-motion offense,58,48.3,45,51.1,622,45.3,43.1,46.4,False,False,False,False,-0.25893628559937315
+Offense: motion,rushyd,RB,RB rushing yds · motion-heavy offense,66,42.4,53,43.4,634,47.2,43.1,46.4,False,False,False,False,-1.234853837504666
+Offense: motion,passyd,QB,QB passing yds · low-motion offense,43,51.2,34,55.9,387,48.3,51.1,48.8,True,False,False,False,0.15737852458324816
+Offense: motion,passyd,QB,QB passing yds · motion-heavy offense,42,54.8,31,45.2,414,48.6,51.1,48.8,False,False,False,False,0.6221511070471537
+Role & deep throws allowed,recyd,WR,WR receiving yds · Deep threat · defense allows deep throws,46,54.3,38,52.6,320,43.1,44.2,45.0,True,False,False,False,0.583280378548772
+Role & deep throws allowed,recyd,WR,WR receiving yds · Deep threat · defense allows few deep throws,43,39.5,36,38.9,274,44.2,44.2,45.0,False,False,True,False,-1.3770620901034198
+Role & deep throws allowed,recyd,WR,WR receiving yds · Intermediate · defense allows deep throws,65,41.5,48,41.7,722,45.4,44.2,45.0,False,False,False,False,-1.3705838172107538
+Role & deep throws allowed,recyd,WR,WR receiving yds · Intermediate · defense allows few deep throws,58,56.9,44,54.5,764,45.5,44.2,45.0,True,False,False,False,1.0509766886092187
+Role & deep throws allowed,recyd,WR,WR receiving yds · Slot / underneath · defense allows few deep throws,21,42.9,17,35.3,143,49.0,44.2,45.0,False,True,False,False,-0.6507257486837295
+Role & deep throws allowed,recyd,TE,TE receiving yds · Receiving TE · underneath · defense allows deep throws,29,34.5,20,25.0,220,48.2,41.8,47.9,False,False,True,False,-1.6694010902116965
+Role & deep throws allowed,recyd,TE,TE receiving yds · Receiving TE · underneath · defense allows few deep throws,27,40.7,21,42.9,199,50.8,41.8,47.9,False,True,False,False,-0.9664843506234332
+Role & deep throws allowed,recyd,TE,TE receiving yds · Secondary TE · underneath · defense allows few deep throws,25,44.0,19,47.4,196,50.5,41.8,47.9,False,True,False,False,-0.6
+Role & deep throws allowed,rec,WR,WR receptions · Deep threat · defense allows deep throws,33,63.6,28,57.1,240,48.8,48.6,45.1,True,True,False,False,1.5625210398583438
+Role & deep throws allowed,rec,WR,WR receptions · Deep threat · defense allows few deep throws,30,50.0,24,45.8,216,46.3,48.6,45.1,False,False,False,False,0.0
+Role & deep throws allowed,rec,WR,WR receptions · Intermediate · defense allows deep throws,62,41.9,47,38.3,678,44.4,48.6,45.1,False,False,False,False,-1.2755892755899136
+Role & deep throws allowed,rec,WR,WR receptions · Intermediate · defense allows few deep throws,51,56.9,39,56.4,723,42.3,48.6,45.1,True,False,False,True,0.9855171231389127
+Role & deep throws allowed,rec,WR,WR receptions · Slot / underneath · defense allows few deep throws,21,38.1,17,35.3,151,49.0,48.6,45.1,False,True,True,False,-1.09065301539949
+Role & deep throws allowed,rec,TE,TE receptions · Receiving TE · underneath · defense allows deep throws,29,44.8,20,40.0,221,48.0,45.6,47.4,False,False,False,False,-0.5600571399419889
+Role & deep throws allowed,rec,TE,TE receptions · Receiving TE · underneath · defense allows few deep throws,27,44.4,21,47.6,200,48.0,45.6,47.4,False,False,False,False,-0.5819690713431427
+Role & deep throws allowed,rec,TE,TE receptions · Secondary TE · underneath · defense allows deep throws,20,60.0,19,63.2,199,41.7,45.6,47.4,True,False,False,True,0.8944271909999157
+Role & deep throws allowed,rec,TE,TE receptions · Secondary TE · underneath · defense allows few deep throws,24,45.8,19,47.4,203,54.2,45.6,47.4,False,True,False,False,-0.4115142767875743
+Role & deep throws allowed,rec,RB,RB receptions · Workhorse · three-down · defense allows few deep throws,20,40.0,15,46.7,113,46.9,40.8,44.0,False,True,False,False,-0.8944271909999157
+Role & deep throws allowed,rushyd,RB,RB rushing yds · Workhorse · three-down · defense allows few deep throws,20,55.0,15,46.7,114,55.3,43.1,46.4,False,True,False,False,0.44721359549995837
+Role & middle of field,recyd,WR,WR receiving yds · Deep threat · defense allows middle of field,37,32.4,33,36.4,283,44.9,44.2,45.0,False,False,True,False,-2.141132410664973
+Role & middle of field,recyd,WR,WR receiving yds · Deep threat · defense funnels outside,42,57.1,33,48.5,293,43.0,44.2,45.0,False,False,False,True,0.9202651791739169
+Role & middle of field,recyd,WR,WR receiving yds · Intermediate · defense allows middle of field,74,45.9,57,40.4,751,46.7,44.2,45.0,False,False,False,False,-0.705390671897496
+Role & middle of field,recyd,WR,WR receiving yds · Intermediate · defense funnels outside,60,45.0,42,42.9,744,45.3,44.2,45.0,False,False,False,False,-0.7745966692414833
+Role & middle of field,recyd,TE,TE receiving yds · Receiving TE · underneath · defense funnels outside,28,32.1,19,31.6,200,53.5,41.8,47.9,False,True,True,False,-1.894357938722247
+Role & middle of field,recyd,TE,TE receiving yds · Secondary TE · underneath · defense allows middle of field,28,50.0,24,54.2,203,47.3,41.8,47.9,False,False,False,False,0.0
+Role & middle of field,recyd,TE,TE receiving yds · Secondary TE · underneath · defense funnels outside,20,40.0,17,41.2,201,47.8,41.8,47.9,False,False,False,False,-0.8944271909999157
+Role & middle of field,rec,WR,WR receptions · Deep threat · defense allows middle of field,28,39.3,26,38.5,226,50.9,48.6,45.1,False,True,True,False,-1.1323815611356454
+Role & middle of field,rec,WR,WR receptions · Deep threat · defense funnels outside,29,69.0,22,59.1,219,47.5,48.6,45.1,True,True,False,False,2.046362626711111
+Role & middle of field,rec,WR,WR receptions · Intermediate · defense allows middle of field,67,40.3,53,37.7,710,43.5,48.6,45.1,False,False,False,False,-1.5879584377432558
+Role & middle of field,rec,WR,WR receptions · Intermediate · defense funnels outside,58,50.0,41,46.3,711,44.7,48.6,45.1,False,False,False,False,0.0
+Role & middle of field,rec,TE,TE receptions · Receiving TE · underneath · defense funnels outside,28,50.0,19,52.6,201,49.3,45.6,47.4,False,False,False,False,0.0
+Role & middle of field,rec,TE,TE receptions · Secondary TE · underneath · defense allows middle of field,27,51.9,24,58.3,213,51.2,45.6,47.4,True,True,False,False,0.19745379206285218
+Role & middle of field,rec,TE,TE receptions · Secondary TE · underneath · defense funnels outside,21,47.6,17,47.1,207,45.4,45.6,47.4,False,False,False,True,-0.21996363335788002
+Role & box count,recyd,WR,WR receiving yds · Deep threat · light-box defense,32,46.9,28,46.4,272,43.8,44.2,45.0,False,False,False,False,-0.3507249634685279
+Role & box count,recyd,WR,WR receiving yds · Deep threat · stacked-box defense,37,48.6,29,44.8,313,42.5,44.2,45.0,False,False,False,True,-0.1703173508483503
+Role & box count,recyd,WR,WR receiving yds · Intermediate · light-box defense,63,49.2,49,46.9,774,44.1,44.2,45.0,False,False,False,False,-0.12699606293109958
+Role & box count,recyd,WR,WR receiving yds · Intermediate · stacked-box defense,60,46.7,50,46.0,714,46.8,44.2,45.0,False,False,False,False,-0.5112338016993787
+Role & box count,recyd,WR,WR receiving yds · Slot / underneath · light-box defense,22,36.4,18,33.3,141,51.8,44.2,45.0,False,True,True,False,-1.2757930866719729
+Role & box count,recyd,TE,TE receiving yds · Receiving TE · underneath · light-box defense,26,50.0,18,55.6,205,50.2,41.8,47.9,False,True,False,False,0.0
+Role & box count,recyd,TE,TE receiving yds · Receiving TE · underneath · stacked-box defense,24,45.8,19,47.4,209,52.6,41.8,47.9,False,True,False,False,-0.4115142767875743
+Role & box count,recyd,TE,TE receiving yds · Secondary TE · underneath · light-box defense,24,41.7,19,42.1,199,49.7,41.8,47.9,False,False,False,False,-0.8132305946040148
+Role & box count,recyd,TE,TE receiving yds · Secondary TE · underneath · stacked-box defense,24,45.8,19,52.6,198,48.5,41.8,47.9,False,False,False,False,-0.4115142767875743
+Role & box count,rec,WR,WR receptions · Deep threat · light-box defense,24,58.3,21,52.4,221,50.2,48.6,45.1,True,True,False,False,0.8132305946040148
+Role & box count,rec,WR,WR receptions · Deep threat · stacked-box defense,28,71.4,21,66.7,248,45.2,48.6,45.1,True,False,False,False,2.2647631222712907
+Role & box count,rec,WR,WR receptions · Intermediate · light-box defense,60,53.3,48,47.9,726,42.7,48.6,45.1,False,False,False,True,0.5112338016993778
+Role & box count,rec,WR,WR receptions · Intermediate · stacked-box defense,56,39.3,46,41.3,684,44.4,48.6,45.1,False,False,False,False,-1.6014293615392474
+Role & box count,rec,WR,WR receptions · Slot / underneath · light-box defense,21,42.9,17,47.1,151,51.7,48.6,45.1,False,True,False,False,-0.6507257486837295
+Role & box count,rec,TE,TE receptions · Receiving TE · underneath · light-box defense,26,57.7,18,61.1,207,51.7,45.6,47.4,True,True,False,False,0.7852490050932895
+Role & box count,rec,TE,TE receptions · Receiving TE · underneath · stacked-box defense,24,50.0,19,52.6,210,49.0,45.6,47.4,False,False,False,False,0.0
+Role & box count,rec,TE,TE receptions · Secondary TE · underneath · light-box defense,23,52.2,19,57.9,208,51.0,45.6,47.4,True,True,False,False,0.21101658702575984
+Role & box count,rec,TE,TE receptions · Secondary TE · underneath · stacked-box defense,25,56.0,19,63.2,211,46.9,45.6,47.4,True,False,False,False,0.6000000000000005
+Role & blitz,recyd,WR,WR receiving yds · Deep threat · blitz-heavy defense,45,46.7,37,48.6,285,39.3,44.2,45.0,False,False,False,True,-0.44274145954495797
+Role & blitz,recyd,WR,WR receiving yds · Deep threat · low-blitz defense,42,50.0,34,44.1,299,46.8,44.2,45.0,False,False,False,False,0.0
+Role & blitz,recyd,WR,WR receiving yds · Intermediate · blitz-heavy defense,59,45.8,46,39.1,781,49.4,44.2,45.0,False,True,False,False,-0.6452162428209637
+Role & blitz,recyd,WR,WR receiving yds · Intermediate · low-blitz defense,66,45.5,55,43.6,728,44.9,44.2,45.0,False,False,False,False,-0.7311634564172361
+Role & blitz,recyd,TE,TE receiving yds · Receiving TE · underneath · blitz-heavy defense,28,60.7,21,66.7,190,48.4,41.8,47.9,True,False,False,False,1.1323815611356447
+Role & blitz,recyd,TE,TE receiving yds · Receiving TE · underneath · low-blitz defense,24,41.7,18,33.3,220,55.9,41.8,47.9,False,True,False,False,-0.8132305946040148
+Role & blitz,recyd,TE,TE receiving yds · Secondary TE · underneath · blitz-heavy defense,23,43.5,21,42.9,211,51.7,41.8,47.9,False,True,False,False,-0.6234580980306536
+Role & blitz,recyd,TE,TE receiving yds · Secondary TE · underneath · low-blitz defense,24,45.8,21,52.4,180,48.9,41.8,47.9,False,False,False,False,-0.4115142767875743
+Role & blitz,rec,WR,WR receptions · Deep threat · blitz-heavy defense,30,60.0,25,60.0,223,47.1,48.6,45.1,True,True,False,False,1.0954451150103321
+Role & blitz,rec,WR,WR receptions · Deep threat · low-blitz defense,35,65.7,27,55.6,231,46.8,48.6,45.1,True,False,False,False,1.85764905189328
+Role & blitz,rec,WR,WR receptions · Intermediate · blitz-heavy defense,50,44.0,39,38.5,740,46.9,48.6,45.1,False,False,False,False,-0.848528137423857
+Role & blitz,rec,WR,WR receptions · Intermediate · low-blitz defense,64,45.3,54,44.4,695,44.2,48.6,45.1,False,False,False,False,-0.7520000000000007
+Role & blitz,rec,TE,TE receptions · Receiving TE · underneath · blitz-heavy defense,28,50.0,21,57.1,190,49.5,45.6,47.4,False,True,False,False,0.0
+Role & blitz,rec,TE,TE receptions · Receiving TE · underneath · low-blitz defense,24,54.2,18,44.4,223,52.0,45.6,47.4,False,True,False,False,0.4115142767875743
+Role & blitz,rec,TE,TE receptions · Secondary TE · underneath · blitz-heavy defense,22,54.5,21,52.4,220,54.5,45.6,47.4,True,True,False,False,0.422137418384109
+Role & blitz,rec,TE,TE receptions · Secondary TE · underneath · low-blitz defense,24,54.2,20,60.0,190,52.1,45.6,47.4,True,True,False,False,0.4115142767875743
+Role & blitz,rushyd,RB,RB rushing yds · Committee / change-of-pace · low-blitz defense,21,42.9,15,53.3,208,40.9,43.1,46.4,False,False,False,True,-0.6507257486837295
+Role & pass rate,recyd,WR,WR receiving yds · Deep threat · pass-leaning offense,44,50.0,36,47.2,228,43.0,44.2,45.0,False,False,False,True,0.0
+Role & pass rate,recyd,WR,WR receiving yds · Deep threat · run-leaning offense,39,48.7,30,50.0,348,45.4,44.2,45.0,False,False,False,False,-0.1623699479583578
+Role & pass rate,recyd,WR,WR receiving yds · Intermediate · pass-leaning offense,56,51.8,40,52.5,837,46.5,44.2,45.0,True,False,False,False,0.269399331847724
+Role & pass rate,recyd,WR,WR receiving yds · Intermediate · run-leaning offense,77,48.1,63,44.4,635,48.0,44.2,45.0,False,True,False,False,-0.33344864672089997
+Role & pass rate,recyd,TE,TE receiving yds · Receiving TE · underneath · pass-leaning offense,24,54.2,18,50.0,208,50.5,41.8,47.9,False,True,False,False,0.4115142767875743
+Role & pass rate,recyd,TE,TE receiving yds · Receiving TE · underneath · run-leaning offense,24,54.2,19,52.6,210,55.7,41.8,47.9,True,True,False,False,0.4115142767875743
+Role & pass rate,recyd,TE,TE receiving yds · Secondary TE · underneath · pass-leaning offense,29,34.5,25,40.0,227,47.1,41.8,47.9,False,False,False,False,-1.6694010902116965
+Role & pass rate,recyd,TE,TE receiving yds · Secondary TE · underneath · run-leaning offense,24,50.0,16,50.0,172,44.8,41.8,47.9,False,False,False,True,0.0
+Role & pass rate,rec,WR,WR receptions · Deep threat · pass-leaning offense,34,61.8,28,57.1,177,48.0,48.6,45.1,True,True,False,False,1.3761046471834908
+Role & pass rate,rec,WR,WR receptions · Deep threat · run-leaning offense,26,65.4,18,61.1,256,50.4,48.6,45.1,True,True,False,False,1.570498010186578
+Role & pass rate,rec,WR,WR receptions · Intermediate · pass-leaning offense,53,47.2,38,52.6,785,43.9,48.6,45.1,False,False,False,False,-0.4076861537997085
+Role & pass rate,rec,WR,WR receptions · Intermediate · run-leaning offense,71,46.5,59,42.4,606,44.4,48.6,45.1,False,False,False,False,-0.5898304841223446
+Role & pass rate,rec,TE,TE receptions · Receiving TE · underneath · pass-leaning offense,24,54.2,18,55.6,208,50.5,45.6,47.4,True,True,False,False,0.4115142767875743
+Role & pass rate,rec,TE,TE receptions · Receiving TE · underneath · run-leaning offense,24,58.3,19,57.9,210,49.0,45.6,47.4,True,False,False,False,0.8132305946040148
+Role & pass rate,rec,TE,TE receptions · Secondary TE · underneath · pass-leaning offense,30,43.3,25,48.0,235,48.1,45.6,47.4,False,False,False,False,-0.7339482270569226
+Role & pass rate,rec,TE,TE receptions · Secondary TE · underneath · run-leaning offense,24,58.3,17,64.7,183,46.4,45.6,47.4,True,False,False,False,0.8132305946040148
+Role & pass rate,rushyd,RB,RB rushing yds · Committee / change-of-pace · run-leaning offense,29,37.9,23,43.5,208,40.9,43.1,46.4,False,False,False,True,-1.30320988332655
+Role & pass rate,passyd,QB,QB passing yds · Pocket · pass-leaning offense,24,50.0,18,44.4,206,43.2,51.1,48.8,False,False,False,True,0.0
+Momentum,recyd,WR,WR receiving yds · Cold efficiency,31,41.9,14,35.7,362,46.7,44.2,45.0,False,False,False,False,-0.9019778267784637
+Momentum,recyd,WR,WR receiving yds · Hot efficiency,27,29.6,12,33.3,339,40.7,44.2,45.0,False,False,True,True,-2.1200301884643054
+Momentum,recyd,WR,WR receiving yds · Role down,31,45.2,2,0.0,204,37.7,44.2,45.0,False,False,False,True,-0.5345053788316819
+Momentum,recyd,WR,WR receiving yds · Role up,23,56.5,2,0.0,253,51.4,44.2,45.0,False,True,False,False,0.623458098030653
+Momentum,recyd,WR,WR receiving yds · Stable,269,47.6,234,49.1,1517,47.5,44.2,45.0,False,True,False,False,-0.7872585344091216
+Momentum,recyd,WR,WR receiving yds · Volume down,63,42.9,10,30.0,542,40.4,44.2,45.0,False,False,False,True,-1.1270900585135157
+Momentum,recyd,WR,WR receiving yds · Volume up,52,30.8,23,26.1,617,44.2,44.2,45.0,False,False,True,False,-2.7690633795563437
+Momentum,recyd,TE,TE receiving yds · Cold efficiency,21,33.3,8,25.0,93,45.2,41.8,47.9,False,False,True,True,-1.530580282115251
+Momentum,recyd,TE,TE receiving yds · Stable,135,44.4,111,45.9,602,49.3,41.8,47.9,False,False,False,False,-1.301322404325692
+Momentum,recyd,TE,TE receiving yds · Volume down,21,42.9,4,75.0,169,46.2,41.8,47.9,False,False,False,False,-0.6507257486837295
+Momentum,recyd,TE,TE receiving yds · Volume up,24,33.3,6,50.0,337,49.6,41.8,47.9,False,False,False,False,-1.6362591481791633
+Momentum,recyd,RB,RB receiving yds · Stable,48,37.5,45,37.8,283,41.7,39.1,40.6,False,False,True,False,-1.7320508075688774
+Momentum,recyd,RB,RB receiving yds · Volume down,28,42.9,6,50.0,165,37.0,39.1,40.6,False,False,False,True,-0.7513933723423438
+Momentum,rec,WR,WR receptions · Role down,25,44.0,1,0.0,183,38.8,48.6,45.1,False,False,False,True,-0.6
+Momentum,rec,WR,WR receptions · Role up,21,52.4,0,,220,51.8,48.6,45.1,False,True,False,False,0.21996363335788052
+Momentum,rec,WR,WR receptions · Stable,271,51.7,223,51.6,1788,44.8,48.6,45.1,True,False,False,False,0.5597106395272476
+Momentum,rec,WR,WR receptions · Volume down,53,39.6,6,33.3,481,43.9,48.6,45.1,False,False,True,False,-1.5142628569703473
+Momentum,rec,WR,WR receptions · Volume up,47,46.8,18,55.6,551,45.2,48.6,45.1,False,False,False,False,-0.4387618944256672
+Momentum,rec,TE,TE receptions · Stable,149,45.6,120,48.3,739,48.6,45.6,47.4,False,False,False,False,-1.0741768941845655
+Momentum,rec,TE,TE receptions · Volume down,25,48.0,7,100.0,175,44.0,45.6,47.4,False,False,False,True,-0.20000000000000018
+Momentum,rec,TE,TE receptions · Volume up,22,50.0,6,83.3,322,46.9,45.6,47.4,False,False,False,False,0.0
+Momentum,rec,RB,RB receptions · Stable,97,44.3,89,46.1,669,44.8,40.8,44.0,False,False,False,False,-1.122769789404757
+Momentum,rec,RB,RB receptions · Volume down,48,31.2,8,50.0,290,40.7,40.8,44.0,False,False,False,True,-2.6050044145835916
+Momentum,rec,RB,RB receptions · Volume up,25,48.0,15,40.0,249,46.6,40.8,44.0,False,True,False,False,-0.20000000000000018
+Momentum,rushyd,RB,RB rushing yds · Stable,162,45.7,127,46.5,971,47.7,43.1,46.4,False,False,False,False,-1.0946012972767751
+Momentum,rushyd,RB,RB rushing yds · Volume up,36,27.8,8,25.0,300,45.0,43.1,46.4,False,False,True,False,-2.6639999999999997
+Momentum,rushyd,QB,QB rushing yds · Stable,31,41.9,24,41.7,192,43.2,38.5,41.8,False,False,False,False,-0.9019778267784637
+Momentum,passyd,QB,QB passing yds · Stable,159,50.9,100,54.0,986,48.6,51.1,48.8,True,False,False,False,0.22697136383253305
+Role & momentum,recyd,WR,WR receiving yds · Deep threat · Stable,84,48.8,79,49.4,388,42.5,44.2,45.0,False,False,False,True,-0.21996363335788052
+Role & momentum,recyd,WR,WR receiving yds · Intermediate · Stable,140,47.1,120,47.5,914,49.9,44.2,45.0,False,True,False,False,-0.6862652548395548
+Role & momentum,recyd,WR,WR receiving yds · Intermediate · Volume down,41,43.9,5,40.0,369,39.3,44.2,45.0,False,False,False,True,-0.7811811569668075
+Role & momentum,recyd,WR,WR receiving yds · Intermediate · Volume up,34,35.3,12,33.3,403,46.7,44.2,45.0,False,False,True,False,-1.7142998570845185
+Role & momentum,recyd,WR,WR receiving yds · Slot / underneath · Stable,40,45.0,30,53.3,200,48.5,44.2,45.0,False,True,False,False,-0.6324555320336757
+Role & momentum,recyd,TE,TE receiving yds · Receiving TE · underneath · Stable,65,43.1,48,43.8,299,50.2,41.8,47.9,False,True,False,False,-1.1125915692652
+Role & momentum,recyd,TE,TE receiving yds · Secondary TE · underneath · Stable,56,48.2,49,51.0,217,49.8,41.8,47.9,False,False,False,False,-0.2693993318477232
+Role & momentum,recyd,RB,RB receiving yds · Pass-catching back · Stable,20,40.0,17,41.2,124,41.9,39.1,40.6,False,False,False,False,-0.8944271909999157
+Role & momentum,recyd,RB,RB receiving yds · Workhorse · three-down · Stable,22,40.9,22,40.9,109,39.4,39.1,40.6,False,False,False,False,-0.8536556682878644
+Role & momentum,rec,WR,WR receptions · Deep threat · Stable,77,58.4,63,60.3,398,44.0,48.6,45.1,True,False,False,False,1.474194017081876
+Role & momentum,rec,WR,WR receptions · Intermediate · Stable,147,50.3,123,47.2,1127,44.2,48.6,45.1,False,False,False,False,0.0727461339178929
+Role & momentum,rec,WR,WR receptions · Intermediate · Volume down,34,44.1,3,66.7,338,38.2,48.6,45.1,False,False,False,True,-0.6880523235917454
+Role & momentum,rec,WR,WR receptions · Intermediate · Volume up,32,43.8,10,50.0,377,45.1,48.6,45.1,False,False,False,False,-0.7014499269370558
+Role & momentum,rec,WR,WR receptions · Slot / underneath · Stable,44,43.2,34,50.0,260,48.8,48.6,45.1,False,True,False,False,-0.902121942976668
+Role & momentum,rec,TE,TE receptions · Receiving TE · underneath · Stable,71,45.1,54,46.3,357,44.8,45.6,47.4,False,False,False,True,-0.8257626777712829
+Role & momentum,rec,TE,TE receptions · Secondary TE · underneath · Stable,59,50.8,49,55.1,291,54.6,45.6,47.4,True,True,False,False,0.12289833196589785
+Role & momentum,rec,RB,RB receptions · Committee / change-of-pace · Stable,24,45.8,24,45.8,105,41.0,40.8,44.0,False,False,False,True,-0.4115142767875743
+Role & momentum,rec,RB,RB receptions · Pass-catching back · Stable,25,32.0,21,38.1,259,45.6,40.8,44.0,False,False,True,False,-1.7999999999999998
+Role & momentum,rec,RB,RB receptions · Workhorse · three-down · Stable,32,53.1,31,54.8,209,42.6,40.8,44.0,True,False,False,False,0.3507249634685279
+Role & momentum,rushyd,RB,RB rushing yds · Committee / change-of-pace · Stable,44,38.6,36,41.7,217,44.7,43.1,46.4,False,False,False,False,-1.5123809044020622
+Role & momentum,rushyd,RB,RB rushing yds · Early-down / goal-line · Stable,27,55.6,16,50.0,136,47.8,43.1,46.4,False,False,False,False,0.5819690713431432
+Role & momentum,rushyd,RB,RB rushing yds · Pass-catching back · Stable,23,39.1,21,42.9,229,46.7,43.1,46.4,False,False,False,False,-1.0454912720821727
+Role & momentum,rushyd,RB,RB rushing yds · Workhorse · early-down · Stable,20,50.0,18,55.6,164,48.8,43.1,46.4,False,True,False,False,0.0
+Role & momentum,rushyd,RB,RB rushing yds · Workhorse · three-down · Stable,48,47.9,36,47.2,222,50.5,43.1,46.4,False,True,False,False,-0.2909845356715717
+Role & momentum,passyd,QB,QB passing yds · Pocket · Stable,51,47.1,32,50.0,472,46.2,51.1,48.8,False,False,False,True,-0.4142028488554849
+Role & momentum,passyd,QB,QB passing yds · Quick-game pocket · Stable,33,51.5,24,50.0,181,53.6,51.1,48.8,False,True,False,False,0.172336879396141
+Role & momentum,passyd,QB,QB passing yds · Vertical pocket · Stable,55,52.7,33,57.6,187,49.7,51.1,48.8,True,False,False,False,0.4004747183031661
+Position & roof,recyd,WR,WR receiving yds · indoors,140,44.3,83,43.4,1286,47.7,44.2,45.0,False,True,False,False,-1.3488661905467136
+Position & roof,recyd,WR,WR receiving yds · outdoors,356,44.1,214,45.3,2548,43.7,44.2,45.0,False,False,False,False,-2.2264195471653583
+Position & roof,recyd,TE,TE receiving yds · indoors,77,37.7,46,39.1,487,46.4,41.8,47.9,False,False,True,False,-2.158641239298462
+Position & roof,recyd,TE,TE receiving yds · outdoors,162,43.8,92,48.9,1030,48.5,41.8,47.9,False,False,False,False,-1.5782623356083756
+Position & roof,recyd,RB,RB receiving yds · indoors,39,35.9,23,43.5,277,41.9,39.1,40.6,False,False,False,False,-1.7610894355483484
+Position & roof,recyd,RB,RB receiving yds · outdoors,71,40.8,41,39.0,541,39.9,39.1,40.6,False,False,False,False,-1.5504115582644504
+Position & roof,rec,WR,WR receptions · indoors,131,52.7,75,52.0,1185,47.5,48.6,45.1,True,True,False,False,0.6180582496820188
+Position & roof,rec,WR,WR receptions · outdoors,305,46.9,181,49.2,2335,43.9,48.6,45.1,False,False,False,False,-1.0827834501875258
+Position & roof,rec,TE,TE receptions · indoors,75,42.7,44,47.7,492,43.3,45.6,47.4,False,False,False,True,-1.2643970895252794
+Position & roof,rec,TE,TE receptions · outdoors,162,46.9,95,53.7,1025,49.4,45.6,47.4,False,True,False,False,-0.7891311678041878
+Position & roof,rec,RB,RB receptions · indoors,63,39.7,39,46.2,443,46.5,40.8,44.0,False,True,False,False,-1.6350743102379166
+Position & roof,rec,RB,RB receptions · outdoors,133,41.4,76,44.7,982,42.9,40.8,44.0,False,False,False,False,-1.9836007662833774
+Position & roof,rushyd,RB,RB rushing yds · indoors,84,42.9,49,46.9,676,46.9,43.1,46.4,False,False,False,False,-1.301451497367459
+Position & roof,rushyd,RB,RB rushing yds · outdoors,171,43.3,99,46.5,1350,46.2,43.1,46.4,False,False,False,False,-1.752277375303351
+Position & roof,rushyd,QB,QB rushing yds · outdoors,43,41.9,24,41.7,291,40.9,38.5,41.8,False,False,False,False,-1.0623050409369243
+Position & roof,passyd,QB,QB passing yds · indoors,55,47.3,31,48.4,426,51.9,51.1,48.8,False,True,False,False,-0.4004747183031661
+Position & roof,passyd,QB,QB passing yds · outdoors,133,52.6,72,56.9,834,47.2,51.1,48.8,True,False,False,False,0.599693254922882

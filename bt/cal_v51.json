@@ -1,0 +1,1 @@
+{"cal_v5": {"passyd": 0.218, "passtd": 0.006, "int": 0.132, "rec": -0.08, "recyd": -0.192, "rush": -0.31, "td": -0.023}, "n": 1333, "groups": {"passyd": "passyd", "passtd": "passtd", "int": "int", "rec": "rec", "recyd": "recyd", "rushyd": "rush", "rryd": "rush", "td": "td"}}

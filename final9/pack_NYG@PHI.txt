@@ -1,0 +1,38 @@
+===== NYG@PHI | weather {'temp': 58, 'precip_prob': 0, 'precip_in': 0, 'wind': 10, 'gust': 17, 'code': 2}
+consensus spread [['NYG', -3, -118], ['PHI', 3, -103]] total [['under', 38.5, -110], ['over', 38.5, -109]] ML [['PHI', 135], ['NYG', -163]] @ 2026-11-07T23:47:21.061Z
+   Pass Attempts Tanner McKee PHI 34.5 [[15, 34.5, -107, -119]]
+   Pass Attempts J.J. McCarthy NYG 29.5 [[15, 29.5, -117, -112]]
+   Pass Attempts Joe Milton PHI 31.5 [[15, 31.5, -102, -109]]
+   Completions Tanner McKee PHI 20.5 [[15, 20.5, -121, -105]]
+   Completions J.J. McCarthy NYG 17.5 [[15, 17.5, -131, -106]]
+   Completions Joe Milton PHI 17.5 [[15, 17.5, -123, -104]]
+   Rush Attempts Saquon Barkley PHI 12.5 [[15, 12.5, -129, -105]]
+   Rush Attempts Devin Singletary NYG 15.5 [[15, 15.5, -115, -115]]
+   Rush Attempts Elijah Mitchell PHI 6.5 [[15, 6.5, -115, -115]]
+   Rush Attempts J.J. McCarthy NYG 3.5 [[15, 3.5, 110, -140]]
+NYG O: g7 pf 23.3 att 34.4 cmp 21.0 sk 3.0 rush 28.0 drv 11.6 ppd 5.65 neuPass 46.9% 3rd 43.0% PA 19.8% oop 16.8% | att by script {'won8+': [29.0, 2], 'close': [37.8, 4], 'lost8+': [32.0, 1]}
+   logs: W1 vDAL 28-20 att 29 sk 2 ru 34 | W2 vLA 6-28 att 32 sk 2 ru 21 | W3 vTEN 12-7 att 22 sk 3 ru 32 | W4 vARI 36-24 att 29 sk 4 ru 29 | W5 vWAS 27-27 att 54 sk 2 ru 27 | W6 vNO 27-34 att 47 sk 5 ru 19 | W7 vHOU 27-21 att 28 sk 3 ru 34
+PHI D vs: pa 25.2 oppAtt 34.1 sk 1.2 oppRush 30.2 ypc 4.4 blitz 27.7% rushers 4.28 oopForced 19.7% box 6.39 QBrushYds/g 15.4 scr/g 1.9 20+pass/g 3.5 tgtAllowed {'WR': [21.6, 182.6], 'TE': [6.0, 41.6], 'RB': [4.5, 18.6]}
+   QB Jameis Winston: g6 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 2.7 (9.8%) rush 8.3 | att 26.3 pyd 159.5 || W5:0/0-0 c5-27 a54-326 W6:0/0-0 c3-4 a26-152 W7:0/0-0 c4-4 a0-0
+   QB Jaxson Dart: g2 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 5.5 (19.0%) rush 27.0 | att 17.0 pyd 125.0 || W1:0/0-0 c11-54 a29-230 W2:0/0-0 c0-0 a5-20
+   RB Cam Skattebo: g6 tgt 2.2 (6.8%) rec 1.8 ryd 12.7 | car 16.3 (54.1%) rush 69.7 || W4:1/1-8 c18-58 W5:2/3-12 c13-59 W7:1/1--3 c17-124
+   QB J.J. McCarthy: g3 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 1.7 (6.1%) rush 9.7 | att 16.3 pyd 165.0 || W5:0/0-0 c2-2 a0-0 W6:0/0-0 c2-26 a21-243 W7:0/0-0 c1-1 a28-252
+   WR Malik Nabers: g7 tgt 10.0 (30.0%) rec 6.9 ryd 86.4 | car 0.0 (0.0%) rush 0.0 || W5:11/20-121 c0-0 W6:12/15-165 c0-0 W7:7/9-111 c0-0
+   TE Isaiah Likely: g7 tgt 9.0 (27.0%) rec 5.9 ryd 56.4 | car 0.0 (0.0%) rush 0.0 || W5:11/13-94 c0-0 W6:6/11-99 c0-0 W7:2/4-12 c0-0
+   RB Devin Singletary: g4 tgt 2.2 (6.9%) rec 2.0 ryd 13.8 | car 4.5 (16.1%) rush 20.0 || W2:0/1-0 c3-9 W6:1/1-19 c4-14 W7:3/3-14 c5-41
+   RB Najee Harris: g5 tgt 0.2 (0.6%) rec 0.2 ryd 1.0 | car 6.2 (23.8%) rush 19.8 || W4:0/0-0 c9-30 W5:1/1-5 c5-9 W6:0/0-0 c4-2
+   WR Malachi Fields: g7 tgt 4.3 (12.9%) rec 2.3 ryd 35.4 | car 0.0 (0.0%) rush 0.0 || W5:2/2-20 c0-0 W6:2/8-19 c0-0 W7:4/5-83 c0-0
+PHI O: g8 pf 17.1 att 33.6 cmp 20.1 sk 2.9 rush 23.2 drv 10.6 ppd 5.62 neuPass 51.0% 3rd 37.3% PA 18.1% oop 19.4% | att by script {'won8+': [nan, 0], 'close': [32.2, 4], 'lost8+': [35.0, 4]}
+   logs: W1 vWAS 24-22 att 25 sk 3 ru 23 | W2 vTEN 24-20 att 37 sk 3 ru 32 | W3 vCHI 7-27 att 26 sk 2 ru 19 | W4 vLA 20-24 att 27 sk 4 ru 27 | W5 vJAX 17-19 att 40 sk 1 ru 18 | W6 vCAR 14-25 att 45 sk 3 ru 13 | W7 vDAL 21-38 att 35 sk 2 ru 25 | W8 vWAS 10-27 att 34 sk 5 ru 29
+NYG D vs: pa 23.0 oppAtt 31.3 sk 1.3 oppRush 25.9 ypc 4.98 blitz 41.8% rushers 4.55 oopForced 19.7% box 6.85 QBrushYds/g 25.3 scr/g 2.1 20+pass/g 2.4 tgtAllowed {'WR': [18.6, 127.1], 'TE': [8.3, 45.0], 'RB': [3.6, 20.6]}
+   QB Tanner McKee: g3 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 2.0 (9.0%) rush 8.7 | att 38.0 pyd 212.7 || W6:0/0-0 c1-0 a45-215 W7:0/0-0 c1-1 a35-211 W8:0/0-0 c4-25 a34-212
+   QB Jalen Hurts: g5 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 4.6 (19.0%) rush 21.4 | att 30.8 pyd 186.6 || W3:0/0-0 c4-25 a25-153 W4:0/0-0 c5-18 a27-93 W5:0/0-0 c2-2 a40-220
+   RB Dameon Pierce: g3 tgt 3.7 (9.6%) rec 2.3 ryd 4.7 | car 12.3 (66.1%) rush 32.0 || W5:2/5--2 c11-14 W6:4/5-15 c12-35 W7:1/1-1 c14-47
+   RB Elijah Mitchell: g2 tgt 5.0 (15.4%) rec 3.5 ryd 13.0 | car 7.0 (25.9%) rush 22.5 || W7:3/4-23 c3-11 W8:4/6-3 c11-34
+   RB Saquon Barkley: g6 tgt 1.7 (5.8%) rec 1.2 ryd 6.8 | car 9.3 (35.7%) rush 45.7 || W4:1/1-2 c2-8 W7:2/2-9 c7-62 W8:1/1-24 c13-30
+   WR DeVonta Smith: g4 tgt 10.2 (32.8%) rec 6.5 ryd 77.5 | car 0.0 (0.0%) rush 0.0 || W2:10/13-117 c0-0 W3:6/8-65 c0-0 W6:7/14-75 c0-0
+   RB Tank Bigsby: g4 tgt 1.0 (3.8%) rec 0.8 ryd 2.5 | car 7.0 (27.2%) rush 22.8 || W2:2/2-5 c13-33 W3:1/1-5 c0-0 W4:0/1-0 c14-55
+   TE Dallas Goedert: g6 tgt 5.8 (17.3%) rec 4.3 ryd 43.0 | car 0.2 (0.7%) rush 0.3 || W6:6/8-61 c0-0 W7:5/7-48 c0-0 W8:4/4-30 c1-2
+   WR Makai Lemon: g8 tgt 5.6 (17.9%) rec 3.9 ryd 31.4 | car 0.1 (0.5%) rush -0.6 || W6:3/6-19 c0-0 W7:7/8-67 c0-0 W8:6/9-57 c0-0
+INJ: NYG Cam Skattebo RB Doubtful; NYG Charlie Jones WR Questionable; NYG Tyrone Tracy Jr. RB Out; PHI Jonathan Jones CB Out; PHI Michael Carter II CB Out; PHI Jihaad Campbell LB Out; PHI Britain Covey WR Out; PHI Tanner McKee QB Questionable; PHI DeVonta Smith WR Out; PHI Dontayvion Wicks WR Out; NYG Tyrone Tracy Jr. RB Out; NYG Tyrone Tracy Jr. RB Out; NYG Tremaine Edmunds LB Out; NYG Braxton Berrios WR Out; NYG Chauncey Golston DE Out; NYG Jaxson Dart QB Out; NYG Brian Burns LB Out; NYG Roy Robertson-Harris DT Out; NYG Korie Black CB Out; NYG Calvin Austin III WR Out; NYG Jarrick Bernard-Converse CB Out; NYG Rico Payton CB Out; NYG Gunner Olszewski WR Out; NYG Thaddeus Dixon CB Out; PHI Dameon Pierce RB Out; PHI Lane Johnson OT Out; PHI Jalen Hurts QB Out; PHI Will Shipley RB Out; PHI Tank Bigsby RB Out; PHI Andre' Sam S Out; PHI Johnny Wilson WR Out; PHI Tucker Large S Out; NYG Charlie Jones WR Questionable; NYG Cam Skattebo RB Doubtful
+RH game lines 35-65c: Philadelphia wins by over 1.5 points 37/64; New York G wins by over 1.5 points 58/43; New York G wins by over 2.5 points 56/45; New York G wins by over 3.5 points 47/54; New York G wins by over 4.5 points 44/57; New York G wins by over 5.5 points 42/60; New York G wins by over 6.5 points 38/64; Over 35.5 points 61/42; Over 37.5 points 55/48; Over 38.5 points 52/52; Over 39.5 points 48/55; Over 40.5 points 45/58; Over 41.5 points 42/62; Over 42.5 points 40/64; Over 43.5 points 37/68; NYG 61/40; PHI 40/61

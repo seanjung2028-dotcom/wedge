@@ -1,0 +1,110 @@
+
+######## home
+p.pf-fine | $19.99 a month or $119.99 a season · cancel anytime
+p. | Wedge % vs the price. A read needs a 3-point edge.
+small. | No in 6 of 8 games · Committee / change-of-pace
+p.wx-fine | Research, not financial advice. Figures are before fees. 21+ · Not available in all states · 1-800-GAMBLER
+
+######## research
+p.rs-note | Main props before books post them. Line: our expected opener. Proj.: our projection. Wedge %: our chance he clears it.
+
+######## final
+dd. | 
+span. | Sun 8:30 AM CT · Madrid, Bernabéu (roof closed or not, no weather factor)
+span. | Sun 12:00 PM CT · Philadelphia, 58°F, wind 10 mph (gusts 17)
+span. | Sun 12:00 PM CT · Charlotte, 64°F, clear, wind 6 mph
+span. | Sun 12:00 PM CT · Miami, 84°F, partly cloudy, wind 5 mph
+span. | Sun 12:00 PM CT · Kansas City, 60°F, clear, wind 5 mph
+span. | Sun 12:00 PM CT · Landover, 58°F, clear, wind 9 mph (gusts 14)
+span. | Sun 3:25 PM CT · Santa Clara, 68°F, wind 5 mph
+span. | Sun 3:25 PM CT · Seattle, 57°F, cloudy, wind 12 mph (gusts 19), 8% rain
+span. | Sun 3:25 PM CT · Foxborough, 55°F, wind 9 mph (gusts 14)
+span. | Sun 7:20 PM CT (SNF) · Chicago, 51°F, clear, wind 9 mph (gusts 14)
+p.fc-post | Every line is logged before kickoff and graded after the game.
+
+######## thesis
+span.wz-cap | MADRID, BERNABÉU (ROOF CLOSED OR NOT, NO WEATHER FACTOR)
+p. | CIN −3.5, total 52.5. Burrow 36.5 attempts / 25.5 completions; Penix 31.5 / 20. Bijan Robinson 19.5 carries.
+p. | Both starting QBs healthy. ATL: Brian Robinson Jr. (RB2) is out, so Bijan's backup is Khalil Herbert; edge James Pearce Jr. back from an eight-game suspension (snap count unknown). CIN: WR3 Andrei Iosivas and TE Erick All out; CB DJ Turner was day-to-day early in the week.
+p.v2-take | Bijan Robinson's explosive runs. ATL runs on 49.3% of plays (3rd).
+dd. | Cincinnati hasn't built its defense to do it: five-plus DBs on 82% of snaps and a light box on a league-high 39.9% of runs. It is betting on taking away the pass and winning the scoreboard.
+dd. | Run lanes. CIN allows 5.1 yards per carry to backs and has allowed nine 20-yard runs (31st).
+dd. | Score early so ATL has to pass. In ATL's Week 6 loss to Chicago, Bijan got 9 carries.
+p.v2-take | Tee Higgins in the 10–19-yard window. He leads the NFL in catches and yards on those throws.
+dd. | Pressure (41.6% rate, 4th) and single-high coverage (60.7%, 3rd most).
+dd. | One-on-ones outside. ATL allows 9.4 yards per target to outside receivers (26th), and Burrow has the league's lowest pressure rate (31.1%) because he gets it out fast from shotgun.
+dd. | Burrow throws on time to Higgins and Chase. Five of the seven QBs who threw normally against ATL passed for 286–312 yards.
+p. | CIN leads. Burrow still throws enough (30 attempts and 292 yards in the Week 7 rout of Baltimore), and Chase Brown gets the closeout carries. ATL has to throw into a defense that holds QBs to 41% completions under pressure, which is Penix's weak spot (28.6% under pressure).
+p. | CIN's five close games averaged 41 pass attempts. Burrow's volume is the safest stat on the board, and Bijan gets 18–22 carries.
+p. | ATL leads by running into light boxes. Burrow throws more, not less: 54 attempts in the Week 4 loss to JAX and 48 in the Week 8 shootout. Bijan's carries hold up only if ATL is the one leading.
+h3. | WHY EACH LINE IS ON THE CARD, AND THE PLAYER BEHIND IT.
+
+######## charts
+p.rs-note | Roles and spots that cleared the book line. “Held” = also beat its 2023–25 average. Overs hit about 45% overall.
+p.rs-note | Projection = volume × efficiency. Volume follows recent games; efficiency needs a long window.
+p.rs-note | WR targets → yds/target: volume works best over 4 games, efficiency over 12 games. Lower is better. 3,310 player-games.
+h3. | Other players vs this defense: what carries over
+p.rs-note | After a 40+ yard game against a defense, the next player beat his usual by 5.6 (vs 2.3). Before-contact games carry over (6.9); after-contact ones less (4.2).
+p.rs-note | Brier on 706 real Week 6–7 lines (lower is better): v1 standard 0.2475 · l4 0.2478 · v3 0.2474 · ve 50% 0.2475 · ve 100% 0.2475 · adj defense 0.2475 · v4 (ve 50% + adj defense) 0.2476 · Price alone 0.2512. With role and matchup: 0.2472 → 0.2467. The price is still hardest to beat.
+p.rs-note | Yes win % by week. Hover for record and return.
+p.rs-note | Overs vs a book-style line, by week. Green beats the week's average.
+p.rs-note | Hot or cold streaks barely carry forward. Role changes do.
+h3. | Error of each guide vs the season average (100)
+h3. | Overs vs a book-style line, by momentum (2023–26)
+p.rs-note | Brier, Week 7 / Week 6 (lower is better): Price alone 0.2511 / 0.2513 · Standard read (70/30) 0.2498 / 0.2462 · Last-4 momentum view 0.2508 / 0.2465 · v3: recent-role factor 0.2497 / 0.2462.
+p.rs-note | First four games (hollow) vs last four (filled), opponent-adjusted. Team momentum carries little.
+p.rs-note | 45–55¢ lines, Weeks 1–5. Past the tick = hit more than its price implied.
+p.rs-note | Tick factors to combine them. Small groups are hidden.
+p.rs-note | Hit rate by pair of factors. Green above 50%, red below.
+p.rs-note | Price vs hit rate for each Week 9 line. Above the diagonal = hit more than it cost.
+
+######## analysts
+p.rs-note | One contract per pick at its listed price. Settled picks only; ranked by win %, then profit.
+
+######## results
+p.rs-note | Week 6, 45–55¢ lines. Return: one Yes each, before fees.
+p.rs-note | Every Week 7–8 line, settled from box scores.
+
+######## nba
+p.rs-note | Robinhood NBA lines, Oct 24–27. Hit rate: last 20 games. Books %: sportsbooks' chance. Wedge %: ours.
+
+######## nba-edge
+p. | It will appear here in the NFL card’s format.
+
+######## nba-thesis
+p. | Keys, scripts and the thesis behind every line.
+
+######## nba-charts
+p.rs-note | 37,519 closing 2025-26 player props at sportsbook prices, settled from box scores.
+p.rs-note | Filter 48.9%, model 48.4%; both lost money (−2.5%, −1.3%). In the NBA, the price is the signal.
+p.wg-note | Dot: hit rate. Tick: average price. Green made money.
+div.wg-lab | CALIBRATION: CALLED CHANCE VS HOW OFTEN IT HIT
+p.wg-note | By Wedge % and by price. On the dashed line = right.
+p.wg-note | Average miss: book line 3.1, his average 3.28, our projection 3.26.
+
+######## nba-analysts
+
+######## nba-results
+p.rs-note | Every 45–55¢ NBA line, settled from box scores. Return: one Yes each, before fees. 446 lines settled from 2 nights (Thu, Oct 22, Fri, Oct 23), 14 games.
+span. | 446 lines settled from 2 nights (Thu, Oct 22, Fri, Oct 23), 14 games.
+p.wg-note | Dot: hit rate. Tick: average price. Green made money.
+p.wg-note | By Wedge % and by price. On the dashed line = right.
+
+######## soccer
+p. | Every 45–55¢ Robinhood line in the top leagues and MLS, with the full read.
+
+######## file0 sit-t-ov
+p.wg-note | The three ways the game can go, from the books (DEN 23.5, CAR 20.9).
+
+######## file0 sit-t-inj
+p.wg-note | Players with a line this week and an injury tag.
+
+######## file0 sit-t-mu
+
+######## file3 sit-t-ov
+p.wg-note | The three ways the game can go, from the books (DEN 23.5, CAR 20.9).
+
+######## file3 sit-t-inj
+p.wg-note | Players with a line this week and an injury tag.
+
+######## file3 sit-t-mu

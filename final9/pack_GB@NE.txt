@@ -1,0 +1,38 @@
+===== GB@NE | weather {'temp': 55, 'precip_prob': 0, 'precip_in': 0, 'wind': 9, 'gust': 14, 'code': 2}
+consensus spread [['NE', -3.5, -102], ['GB', 3.5, -114]] total [['under', 44.5, -110], ['over', 44.5, -110]] ML [['GB', 141], ['NE', -175]] @ 2026-11-07T23:47:21.061Z
+   Pass Attempts Jordan Love GB 38.25 [[15, 38, -113, -117]]
+   Pass Attempts Drake Maye NE 31.5 [[15, 31.5, -111, -108]]
+   Completions Jordan Love GB 22.75 [[15, 23, -114, -112]]
+   Completions Drake Maye NE 20.5 [[15, 20.5, -114, -115]]
+   Rush Attempts Josh Jacobs GB 14.5 [[15, 14.5, -150, -115]]
+   Rush Attempts Jordan Love GB 1.5 [[15, 1.5, -140, 110]]
+   Rush Attempts Rhamondre Stevenson NE 14.5 [[15, 14.5, 106, -136]]
+   Rush Attempts Drake Maye NE 5.5 [[15, 5.5, 115, -147]]
+   Rush Attempts MarShawn Lloyd GB 3.5 [[15, 3.5, -105, -125]]
+   Rush Attempts Corey Kiner NE 6.5 [[15, 6.5, -115, -115]]
+GB O: g8 pf 21.4 att 39.0 cmp 24.0 sk 1.8 rush 20.4 drv 11.2 ppd 5.43 neuPass 55.5% 3rd 38.7% PA 17.1% oop 13.1% | att by script {'won8+': [37.7, 3], 'close': [34.7, 3], 'lost8+': [47.5, 2]}
+   logs: W1 vMIN 22-39 att 42 sk 4 ru 21 | W2 vNYJ 20-17 att 29 sk 3 ru 18 | W3 vATL 14-35 att 53 sk 1 ru 9 | W4 vTB 17-14 att 30 sk 0 ru 22 | W5 vCHI 31-7 att 31 sk 2 ru 24 | W6 vDAL 23-13 att 41 sk 3 ru 24 | W7 vDET 17-20 att 45 sk 1 ru 19 | W8 vCAR 27-19 att 41 sk 0 ru 26
+NE D vs: pa 20.2 oppAtt 32.1 sk 2.8 oppRush 23.8 ypc 3.92 blitz 37.2% rushers 4.53 oopForced 19.7% box 6.61 QBrushYds/g 9.4 scr/g 1.2 20+pass/g 3.1 tgtAllowed {'WR': [17.6, 152.1], 'TE': [8.0, 52.4], 'RB': [5.0, 31.0]}
+   QB Jordan Love: g8 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 1.4 (6.5%) rush 1.2 | att 39.0 pyd 280.8 || W6:0/0-0 c4-12 a41-276 W7:0/0-0 c0-0 a45-274 W8:0/0-0 c0-0 a41-288
+   RB Josh Jacobs: g2 tgt 6.5 (16.0%) rec 5.5 ryd 34.0 | car 16.0 (71.1%) rush 37.5 || W7:5/7-55 c11-36 W8:6/6-13 c21-39
+   WR Matthew Golden: g8 tgt 10.2 (27.2%) rec 5.4 ryd 77.4 | car 0.1 (0.6%) rush 0.8 || W6:6/13-104 c0-0 W7:6/12-39 c0-0 W8:7/13-79 c0-0
+   RB MarShawn Lloyd: g8 tgt 2.1 (5.6%) rec 1.6 ryd 9.9 | car 7.1 (33.5%) rush 18.6 || W6:0/1-0 c8-10 W7:2/2-15 c6-20 W8:1/1-9 c3-7
+   RB Pierre Strong: g3 tgt 3.3 (9.1%) rec 2.7 ryd 16.7 | car 5.7 (21.8%) rush 12.3 || W5:3/4-11 c5-7 W6:5/6-39 c11-28 W8:0/0-0 c1-2
+   WR Christian Watson: g8 tgt 8.2 (21.9%) rec 5.2 ryd 88.5 | car 0.0 (0.0%) rush 0.0 || W6:3/8-64 c0-0 W7:5/8-57 c0-0 W8:8/10-113 c0-0
+   TE Tucker Kraft: g8 tgt 6.1 (16.2%) rec 4.4 ryd 43.8 | car 0.2 (1.2%) rush 0.6 || W6:5/8-37 c0-0 W7:4/6-48 c0-0 W8:6/6-53 c0-0
+   RB Kaleb Johnson: g6 tgt 0.5 (1.4%) rec 0.2 ryd 1.7 | car 4.7 (22.4%) rush 17.3 || W4:0/0-0 c8-42 W5:0/0-0 c7-26 W6:0/0-0 c1--2
+   RB Chris Brooks: g4 tgt 1.2 (3.3%) rec 0.8 ryd 6.0 | car 3.8 (20.5%) rush 17.5 || W2:1/2-15 c4-11 W3:1/1-4 c0-0 W4:1/1-5 c4-30
+NE O: g8 pf 23.0 att 29.9 cmp 20.0 sk 2.0 rush 28.6 drv 10.8 ppd 5.63 neuPass 45.3% 3rd 41.2% PA 20.8% oop 26.9% | att by script {'won8+': [28.0, 2], 'close': [30.6, 5], 'lost8+': [30.0, 1]}
+   logs: W1 vSEA 10-13 att 33 sk 3 ru 31 | W2 vPIT 20-3 att 22 sk 3 ru 26 | W3 vJAX 6-35 att 30 sk 3 ru 26 | W4 vBUF 29-26 att 37 sk 1 ru 33 | W5 vLV 45-17 att 34 sk 1 ru 28 | W6 vNYJ 26-19 att 32 sk 0 ru 35 | W7 vCHI 24-30 att 31 sk 2 ru 17 | W8 vMIA 24-19 att 20 sk 3 ru 33
+GB D vs: pa 20.5 oppAtt 35.5 sk 2.8 oppRush 27.8 ypc 4.02 blitz 33.8% rushers 4.42 oopForced 21.5% box 6.55 QBrushYds/g 13.9 scr/g 2.1 20+pass/g 1.9 tgtAllowed {'WR': [22.1, 152.5], 'TE': [6.1, 35.2], 'RB': [5.8, 33.6]}
+   QB Drake Maye: g8 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 5.8 (19.2%) rush 27.0 | att 29.2 pyd 247.9 || W6:0/0-0 c4-24 a32-235 W7:0/0-0 c4-26 a31-321 W8:0/0-0 c8-5 a20-199
+   RB Rhamondre Stevenson: g8 tgt 3.4 (11.8%) rec 2.9 ryd 26.5 | car 12.0 (40.0%) rush 45.9 || W6:0/0-0 c14-36 W7:5/5-93 c6-22 W8:3/3-8 c19-82
+   RB TreVeyon Henderson: g6 tgt 1.2 (3.9%) rec 0.8 ryd 7.5 | car 8.7 (30.1%) rush 33.8 || W5:1/1-16 c4-22 W6:1/1-9 c7-31 W7:2/2-14 c3-9
+   WR A.J. Brown: g3 tgt 6.7 (22.0%) rec 3.0 ryd 33.7 | car 0.0 (0.0%) rush 0.0 || W1:3/4-26 c0-0 W6:3/10-27 c0-0 W7:3/6-48 c0-0
+   RB Corey Kiner: g8 tgt 0.2 (0.9%) rec 0.2 ryd 2.0 | car 5.2 (17.5%) rush 23.6 || W6:0/0-0 c11-57 W7:0/0-0 c4-13 W8:0/0-0 c7-38
+   WR Mack Hollins: g4 tgt 5.0 (16.9%) rec 3.8 ryd 52.2 | car 0.0 (0.0%) rush 0.0 || W2:2/2-18 c0-0 W3:6/9-87 c0-0 W4:3/4-53 c0-0
+   WR DeMario Douglas: g8 tgt 4.6 (16.2%) rec 3.2 ryd 41.5 | car 0.0 (0.0%) rush 0.0 || W6:7/8-86 c0-0 W7:3/4-23 c0-0 W8:3/3-76 c0-0
+   TE Hunter Henry: g8 tgt 4.2 (14.9%) rec 3.6 ryd 40.8 | car 0.0 (0.0%) rush 0.0 || W6:4/5-48 c0-0 W7:7/7-71 c0-0 W8:3/3-30 c0-0
+   WR Romeo Doubs: g6 tgt 4.0 (13.4%) rec 2.3 ryd 43.5 | car 0.0 (0.0%) rush 0.0 || W4:6/9-58 c0-0 W5:1/3-16 c0-0 W6:1/1-42 c0-0
+INJ: GB Kedon Slovis QB Out; GB Travis Glover OT Out; GB Sean Rhyan G Out; GB Keisean Nixon CB Questionable; GB Zaire Franklin LB Out; GB Josh Whyle TE Out; GB Chris Brooks RB Out; GB MarShawn Lloyd RB Questionable; GB Micah Parsons DE Out; NE Mack Hollins WR Out; NE TreVeyon Henderson RB Out; NE Hunter Henry TE Questionable; NE A.J. Brown WR Out; NE Brenden Schooler S Questionable; NE Greg Van Roten G Out; NE Morgan Moses OT Questionable; GB Jacob Monk C Out; GB Luke Musgrave TE Out; GB Jonathan Ford DT Out; GB Javon Hargrave DT Out; GB Skyy Moore WR Out; GB Edgerrin Cooper LB Out; GB Warren Brinson DT Out; GB Jayden Reed WR Out; GB Zach Bako-Bewele OT Out; GB Collin Oliver DE Out; GB Thomas Yassmin TE Out; GB Johnathan Baldwin II S Out; NE Alijah Vera-Tucker G Out; NE Romeo Doubs WR Out; NE Reggie Gilliam FB Out; NE Quintayvious Hutchins LB Out; NE Dell Pettus S Out; NE Mike Onwenu G Out; NE Khalil Jacobs LB Out; NE Harold Landry III LB Out; NE Myles Montgomery RB Out; NE Julian Hill TE Out; NE Kevin Byard S Questionable; NE Carlton Davis III CB Questionable
+RH game lines 35-65c: Over 40.5 points 64/38; Over 41.5 points 61/41; Over 42.5 points 59/43; Over 43.5 points 55/47; Over 44.5 points 51/51; Over 45.5 points 48/54; Over 46.5 points 45/57; Over 47.5 points 41/61; Over 48.5 points 38/63; Over 49.5 points 35/66; New England wins by over 1.5 points 60/42; New England wins by over 2.5 points 57/44; New England wins by over 3.5 points 47/55; New England wins by over 4.5 points 44/58; New England wins by over 5.5 points 41/60; New England wins by over 6.5 points 37/64; Green Bay wins by over 1.5 points 36/65; GB 40/62; NE 62/40

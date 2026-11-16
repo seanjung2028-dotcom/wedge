@@ -1,0 +1,120 @@
+{
+ "game": "ARI @ SEA",
+ "kick": "Sun 3:25 PM CT",
+ "venue": "Seattle, 57°F, cloudy, wind 12 mph (gusts 19), 8% rain",
+ "market": "SEA −8.5, total 39.5. Lock 27.5 attempts / 18.5 completions; Minshew 34.5 / 20.5. Allgeier 15.5 carries; Jadarian Price 13.5; Charbonnet 10.5.",
+ "lineup": "SEA's Sam Darnold is out (quad), so Drew Lock starts; SEA LT Charles Cross is out. ARI is down to one back: James Conner, Jeremiyah Love and Bam Knight are all out, leaving Tyler Allgeier. ARI also has guards Isaiah Adams and Jon Gaines II and OT Jayden Williams out, plus WR Kendrick Bourne.",
+ "keys": [
+  {
+   "team": "ARI",
+   "take": "Jaxon Smith-Njigba, at 35.7% of SEA's targets and 123 yards a game.",
+   "how": "ARI's pass defense doesn't have a way to do it: 151.5 WR yards a game allowed and 3.4 completions of 20+ a game.",
+   "gives": "Nothing it can afford. SEA's run game is the alternative, and ARI has to respect it.",
+   "counter": "Lock to JSN. In Lock's two starts JSN had 42–46% of the targets, including 9 for 155 in the Week 2 31–7 win over ARI."
+  },
+  {
+   "team": "SEA",
+   "take": "Trey McBride, ARI's top target at 27.5%.",
+   "how": "SEA's defense is the best here against TEs (38.2 yards a game), allows 3.63 yards per carry, and forces QBs out of the pocket on 34.4% of dropbacks.",
+   "gives": "Michael Wilson outside, but ARI's patched line can't hold up long enough to use him.",
+   "counter": "Minshew checks down to McBride quickly. TEs have caught passes against SEA, just not for yards (McBride had 8 catches for 41 in Week 2)."
+  }
+ ],
+ "scripts": {
+  "control": "SEA leads (81% to win). Lock throws only 24–26 times, but JSN's share has carried him past 120 yards in those games anyway. ARI throws, and Allgeier's carries shrink behind a line missing three starters.",
+  "competitive": "A rock fight in the wind (39.5 total). ARI keeps running Allgeier, which is the main threat to the under.",
+  "reversal": "ARI leads. Lock throws more, and JSN's volume goes up, not down."
+ },
+ "plays": [
+  {
+   "decision": "Lean",
+   "line": "Trey McBride under 60 receiving yards (No)",
+   "price": 49,
+   "cond": "Becomes a final line at 48¢ or less.",
+   "why": "The volume will be there, but the yards won't, against the defense that has allowed the fewest TE yards this season.",
+   "support": "TEs facing SEA: Henry 26, McBride 41, Kittle 24, Kelce 44, Loveland 65. One of five reached 60.",
+   "sample": "McBride went 60+ in 5 of 8, but caught 8 for 41 against this defense in Week 2.",
+   "counter": "He's ARI's first read on 27.5% of targets, and a new QB (Minshew) tends to check down to the TE.",
+   "loses": "One catch-and-run of 30+, or ARI throws 50 times while chasing.",
+   "vs": "Preferred over McBride under 7.5 catches (No 60¢). The volume thesis argues against that one.",
+   "est": [
+    50,
+    60
+   ],
+   "side": "No",
+   "be": 51,
+   "payout": 2.04,
+   "books": 48.2,
+   "wedge": 52.8,
+   "base": 50.5,
+   "adj": 5,
+   "ticker": "KXNFLRECYDS-26NOV08ARISEA-ARITMCBRIDE85-60"
+  },
+  {
+   "decision": "Lean",
+   "line": "Tyler Allgeier under 50 rushing yards (No)",
+   "price": 53,
+   "why": "Even as ARI's only healthy back, he faces the stingiest run defense here, in a game ARI is expected to trail, behind a line missing three starters.",
+   "support": "SEA allows 3.63 yards per carry. Lead backs facing SEA: 51, 29, 36, 45, 68, 41, 36, 69. Five of eight stayed under 50.",
+   "sample": "Allgeier ran for 10 on 5 carries against SEA in Week 2, and went 50+ in 2 of 8 overall (the 147 came against DAL's last-ranked run defense).",
+   "counter": "He'll get every carry. 16–18 attempts at SEA's average gets close to 50, and the books expect 15.5.",
+   "loses": "ARI keeps it within a score into the fourth and keeps feeding him, or one long run.",
+   "vs": "Beat under 40 (No 47¢), which loses to a normal 15-carry game.",
+   "est": [
+    53,
+    63
+   ],
+   "side": "No",
+   "be": 55,
+   "payout": 1.89,
+   "books": 50.6,
+   "wedge": 59.6,
+   "base": 55.1,
+   "adj": 3,
+   "ticker": "KXNFLRSHYDS-26NOV08ARISEA-ARITALLGEIER22-50",
+   "cond": "Becomes a final line at 51¢ or less."
+  }
+ ],
+ "likely": [
+  "Allgeier under 60",
+  "McBride under 60 rec yds",
+  "Allgeier under 50",
+  "JSN 100+"
+ ],
+ "value": [
+  "Trey McBride under 60 receiving yards (No) at 49¢ (needs 51%, our number 50–60%)",
+  "Tyler Allgeier under 50 rushing yards (No) at 53¢ (needs 55%, our number 53–63%)"
+ ],
+ "passed": [
+  {
+   "name": "Jaxon Smith-Njigba 100+ receiving yards (Yes) (46¢)",
+   "why": "Our number (43–53%) doesn't clear the 48% break-even after fees. This QB has funneled 42–46% of SEA's targets to him, against a defense that has no answer for WRs and whom he already lit up with this same QB.",
+   "move": "A price of 46¢ or less makes it a lean."
+  },
+  {
+   "name": "SEA running backs (Wilson, Price, Charbonnet)",
+   "why": "A three-way split, with Charbonnet just back.",
+   "move": "A beat report naming a lead back."
+  },
+  {
+   "name": "Drew Lock 200+ pass yds (52¢)",
+   "why": "He went 187 and 235 on 22–26 attempts. The volume and the wind leave it a coin flip.",
+   "move": "None."
+  },
+  {
+   "name": "Michael Wilson props",
+   "why": "His ceiling rises if SEA takes away McBride, but ARI's line can't hold up for deep routes.",
+   "move": "None."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Seahawks.com — Darnold out vs Arizona (quad)",
+   "u": "https://www.seahawks.com/news/seahawks-qb-sam-darnold-out-for-sunday-s-game-vs-arizona-due-to-quad-injury"
+  },
+  {
+   "t": "AP via KOLD — Lock connects for 3 TDs with JSN, Seahawks beat Cardinals 31–7 (Sep 20)",
+   "u": "https://www.kold.com/2026/09/20/drew-lock-connects-3-tds-with-jaxon-smith-njigba-seahawks-roll-past-cardinals-31-7/"
+  }
+ ]
+}

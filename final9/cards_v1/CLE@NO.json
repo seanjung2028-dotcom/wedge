@@ -1,0 +1,30 @@
+{
+ "game": "CLE @ NO", "kick": "Sun 12:00 PM CT", "venue": "New Orleans, dome",
+ "market": "NO −3, total 42.5. Shough 34.5 attempts / 22.5 completions; books list Shedeur Sanders 30.5 / 18.5 for CLE. Judkins 16.5 carries; Kamara 12.5, Kendre Miller 11.5.",
+ "lineup": "CLE's QB is unsettled. Deshaun Watson entered the concussion protocol Wednesday, was reported cleared Saturday, and is listed questionable; Shedeur Sanders took the work midweek. Watson has been sacked a league-high 33 times. NO RBs Travis Etienne Jr. and CJ Donaldson are out, rookie WR Jordyn Tyson is out, and LT Kelvin Banks Jr. is out.",
+ "branches": "Watson starts: Harold Fannin Jr. is the volume target (26–30% share the last two weeks). Sanders starts: no NFL sample with this group, so CLE props stay off the card.",
+ "keys": [
+  {"team": "CLE", "take": "Chris Olave, NO's first read at 27% of targets.", "how": "CLE's pass defense has held 6 of 8 QBs under 225 yards and allows 21.6 points a game.", "gives": "Run lanes. CLE allows 4.78 yards per carry.", "counter": "NO's backfield is down to Kamara and Kendre Miller, so the run counter is weaker than usual."},
+  {"team": "NO", "take": "CLE's quick game to the TE. Fannin had 10 catches for 154 last week.", "how": "Pressure a line that has given up 8 sacks in two of the last four games.", "gives": "TE seams. NO allows 68.7 TE yards a game (Bowers 116, Likely 99).", "counter": "Judkins runs at a defense allowing 5.11 yards per carry, worst of the 14 defenses here."}
+ ],
+ "scripts": {
+  "control": "NO leads. CLE throws more, Fannin's volume rises with Watson, and Judkins drops out (11 carries for 25 in the 27–6 loss to PIT).",
+  "competitive": "A grinding, low-total game (42.5). Shough's volume (39 attempts a game) meets a defense that holds QBs under 225, which caps the overs.",
+  "reversal": "CLE leads behind Judkins. NO has to throw, and Olave's volume holds up even as his efficiency drops."
+ },
+ "plays": [
+  {"decision": "Lean", "line": "Harold Fannin Jr. 5+ receptions (Yes)", "price": 47, "cond": "Only if Watson is active and starting, and only at 47¢ or less.", "why": "Watson's targets have shifted to Fannin, and NO is soft against TEs.", "support": "NO allows 9.0 TE targets and 68.7 TE yards a game. CLE has been sacked 4.1 times a game, which pushes the ball out quickly.", "sample": "10 and 6 catches the last two weeks on 26–30% shares. 5+ in 4 of 8 overall.", "counter": "Only two games of the expanded role. Weeks 5–6 were 1 catch each.", "loses": "Sanders starts, or CLE stays committed to Judkins in a close game.", "vs": "Preferred over 45+ yards (49¢), because the catch count needs only the role to hold, not the big plays.", "est": [46, 56]}
+ ],
+ "likely": ["Olave 5+ rec (~70%)", "Fannin 4+ rec (~66%, Watson branch)"],
+ "value": ["None that clears with room. The one lean depends on the QB branch."],
+ "passed": [
+  {"name": "Tyler Shough under 225 pass yds (50¢)", "why": "CLE held 6 of 8 under 225, but our backtest says passing-yard overs are underpriced. That leaves it at a coin flip.", "move": "Watson out (a shorter CLE game) plus a No price of 47¢ or less."},
+  {"name": "Chris Olave 6+ rec (54¢)", "why": "Tyson being out helps his share, but he's caught 4, 4 and 6 in the last three games.", "move": "A price of 50¢ or less."},
+  {"name": "Quinshon Judkins 70+ rush (47¢)", "why": "NO allows 5.11 yards per carry, but CLE's sack-prone line kills drives, and Judkins has cleared 70 only 2 of 7 times.", "move": "Watson starting with NO's LT out doesn't change his carries."},
+  {"name": "Kamara / Kendre Miller", "why": "A new split after Etienne's injury, so there's no usage to project.", "move": "A beat report on the carry plan."}
+ ],
+ "sources": [
+  {"t": "AP via KSAT — Watson enters concussion protocol, Sanders could start (Nov 4)", "u": "https://www.ksat.com/sports/2026/11/04/browns-qb-watson-enters-concussion-protocol-after-symptoms-surfaced-sanders-could-go-against-saints/"},
+  {"t": "ClutchPoints — Monken on Sanders (Nov 5)", "u": "https://clutchpoints.com/nfl/cleveland-browns/browns-news-todd-monken-reveals-why-pumped-shedeur-sanders-get-first-start-2026"}
+ ]
+}

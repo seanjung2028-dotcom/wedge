@@ -1,0 +1,40 @@
+{
+ "base": {
+  "season": {
+   "QB passing yds": 51.1,
+   "QB rushing yds": 38.5,
+   "RB receiving yds": 39.1,
+   "RB receptions": 40.8,
+   "RB rushing yds": 43.1,
+   "TE receiving yds": 41.8,
+   "TE receptions": 45.6,
+   "WR receiving yds": 44.2,
+   "WR receptions": 48.6,
+   "all": 44.7
+  },
+  "w47": {
+   "QB passing yds": 54.4,
+   "QB rushing yds": 40.7,
+   "RB receiving yds": 40.6,
+   "RB receptions": 45.2,
+   "RB rushing yds": 46.6,
+   "TE receiving yds": 45.7,
+   "TE receptions": 51.8,
+   "WR receiving yds": 44.8,
+   "WR receptions": 50.0,
+   "all": 47.4
+  },
+  "hist": {
+   "QB passing yds": 48.8,
+   "QB rushing yds": 41.8,
+   "RB receiving yds": 40.6,
+   "RB receptions": 44.0,
+   "RB rushing yds": 46.4,
+   "TE receiving yds": 47.9,
+   "TE receptions": 47.4,
+   "WR receiving yds": 45.0,
+   "WR receptions": 45.1,
+   "all": 45.6
+  }
+ }
+}

@@ -1,0 +1,38 @@
+===== TB@CHI | weather {'temp': 51, 'precip_prob': 0, 'precip_in': 0, 'wind': 9, 'gust': 14, 'code': 0}
+consensus spread [['TB', 6.5, -112], ['CHI', -6.5, -107]] total [['over', 47.5, -110], ['under', 47.5, -110]] ML [['CHI', -275], ['TB', 222]] @ 2026-11-07T23:47:21.061Z
+   Pass Attempts Baker Mayfield TB 29.5 [[15, 29.5, -114, -113]]
+   Pass Attempts Caleb Williams CHI 31.5 [[15, 31.5, -115, -128]]
+   Completions Baker Mayfield TB 18.5 [[15, 18.5, -120, -110]]
+   Completions Caleb Williams CHI 20.5 [[15, 20.5, -135, -100]]
+   Rush Attempts Baker Mayfield TB 3.5 [[15, 3.5, 105, -135]]
+   Rush Attempts D'Andre Swift CHI 15.5 [[15, 15.5, -112, -118]]
+   Rush Attempts Kenneth Gainwell TB 6.5 [[15, 6.5, 105, -134]]
+   Rush Attempts Roschon Johnson CHI 5.5 [[15, 5.5, 102, -130]]
+   Rush Attempts Caleb Williams CHI 4.5 [[15, 4.5, -115, -115]]
+   Rush Attempts Bucky Irving TB 15.5 [[15, 15.5, -110, -120]]
+TB O: g8 pf 22.2 att 26.0 cmp 16.0 sk 2.9 rush 32.5 drv 11.6 ppd 5.28 neuPass 40.5% 3rd 38.4% PA 21.0% oop 23.3% | att by script {'won8+': [13.0, 3], 'close': [33.8, 5], 'lost8+': [nan, 0]}
+   logs: W1 vCIN 27-33 att 28 sk 4 ru 19 | W2 vCLE 19-23 att 34 sk 3 ru 25 | W3 vMIN 16-23 att 37 sk 6 ru 21 | W4 vGB 14-17 att 27 sk 3 ru 31 | W5 vDAL 24-16 att 25 sk 1 ru 37 | W6 vPIT 19-26 att 43 sk 5 ru 25 | W7 vCAR 43-13 att 11 sk 0 ru 47 | W8 vATL 16-0 att 3 sk 1 ru 55
+CHI D vs: pa 20.0 oppAtt 28.5 sk 2.8 oppRush 19.4 ypc 4.49 blitz 34.8% rushers 4.61 oopForced 16.7% box 6.79 QBrushYds/g 14.8 scr/g 1.8 20+pass/g 3.1 tgtAllowed {'WR': [16.8, 150.6], 'TE': [6.4, 52.4], 'RB': [5.0, 32.6]}
+   QB Baker Mayfield: g5 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 3.2 (9.4%) rush 16.0 | att 22.0 pyd 135.8 || W3:0/0-0 c2-6 a34-217 W7:0/0-0 c1-1 a11-64 W8:0/0-0 c4-14 a3-0
+   QB Jalon Daniels: g5 tgt 0.2 (0.7%) rec 0.2 ryd -0.6 | car 4.4 (13.3%) rush 24.6 | att 19.6 pyd 100.2 || W5:0/0-0 c7-23 a25-189 W6:1/1--3 c4-39 a43-164 W7:0/0-0 c2--3 a0-0
+   RB Bucky Irving: g8 tgt 2.9 (11.4%) rec 2.2 ryd 9.8 | car 18.4 (55.3%) rush 91.0 || W6:2/3-3 c19-46 W7:1/2-4 c24-106 W8:0/0-0 c27-170
+   RB Kenny Gainwell: g8 tgt 2.2 (9.0%) rec 1.5 ryd 7.6 | car 7.2 (21.8%) rush 36.1 || W6:1/1-7 c2-17 W7:0/0-0 c14-88 W8:0/1-0 c25-140
+   WR Emeka Egbuka: g6 tgt 8.2 (26.2%) rec 4.7 ryd 40.0 | car 0.3 (1.2%) rush 1.8 || W4:2/4-13 c0-0 W5:6/9-38 c1-14 W6:7/16-48 c0-0
+   WR Chris Godwin Jr.: g8 tgt 4.4 (17.4%) rec 3.4 ryd 30.4 | car 0.4 (1.1%) rush 2.2 || W6:4/8-37 c0-0 W7:4/5-27 c0-0 W8:0/1-0 c0-0
+   TE Cade Otton: g7 tgt 4.3 (15.2%) rec 2.7 ryd 26.6 | car 0.0 (0.0%) rush 0.0 || W5:3/4-25 c0-0 W6:1/2-4 c0-0 W7:0/1-0 c0-0
+   RB Sean Tucker: g4 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 3.8 (8.6%) rush 20.0 || W5:0/0-0 c5-18 W7:0/0-0 c7-52 W8:0/0-0 c0-0
+   WR Ted Hurst III: g7 tgt 3.4 (13.6%) rec 1.6 ryd 24.0 | car 0.0 (0.0%) rush 0.0 || W6:3/6-40 c0-0 W7:0/1-0 c0-0 W8:0/1-0 c0-0
+CHI O: g8 pf 26.8 att 34.4 cmp 23.6 sk 2.4 rush 34.1 drv 11.2 ppd 6.3 neuPass 50.9% 3rd 44.7% PA 33.2% oop 23.8% | att by script {'won8+': [33.4, 5], 'close': [34.0, 2], 'lost8+': [40.0, 1]}
+   logs: W1 vCAR 59-37 att 29 sk 2 ru 39 | W2 vMIN 3-9 att 35 sk 4 ru 31 | W3 vPHI 27-7 att 34 sk 0 ru 33 | W4 vNYJ 23-12 att 34 sk 1 ru 51 | W5 vGB 7-31 att 40 sk 4 ru 24 | W6 vATL 31-23 att 36 sk 4 ru 32 | W7 vNE 30-24 att 33 sk 3 ru 29 | W8 vSEA 34-17 att 34 sk 1 ru 34
+TB D vs: pa 18.9 oppAtt 33.8 sk 2.0 oppRush 21.5 ypc 3.81 blitz 40.5% rushers 4.76 oopForced 14.6% box 6.79 QBrushYds/g 12.6 scr/g 1.1 20+pass/g 2.1 tgtAllowed {'WR': [18.1, 131.2], 'TE': [8.1, 56.1], 'RB': [6.0, 32.8]}
+   QB Caleb Williams: g5 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 5.2 (15.5%) rush 25.8 | att 31.6 pyd 253.4 || W6:0/0-0 c4-3 a36-305 W7:0/0-0 c5-18 a33-308 W8:0/0-0 c2-1 a34-247
+   QB Case Keenum: g2 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 2.5 (8.5%) rush 5.0 | att 26.5 pyd 177.5 || W3:0/0-0 c4-6 a34-247 W5:0/0-0 c1-4 a19-108
+   QB Tyson Bagent: g3 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 2.3 (6.4%) rush 6.0 | att 21.3 pyd 136.3 || W2:0/0-0 c0-0 a9-54 W4:0/0-0 c4-1 a34-268 W5:0/0-0 c3-17 a21-87
+   RB D'Andre Swift: g8 tgt 3.5 (10.9%) rec 3.0 ryd 20.2 | car 17.9 (50.9%) rush 68.1 || W6:4/5-26 c16-44 W7:4/4-12 c22-78 W8:2/3-10 c27-69
+   RB Kyle Monangai: g4 tgt 1.2 (4.1%) rec 1.2 ryd 9.8 | car 15.0 (37.7%) rush 81.0 || W2:2/2-11 c10-47 W3:0/0-0 c10-31 W4:1/1-4 c30-146
+   WR Luther Burden III: g8 tgt 7.0 (21.7%) rec 5.2 ryd 68.4 | car 1.0 (2.8%) rush 3.6 || W6:8/8-95 c0-0 W7:4/4-130 c1-7 W8:7/9-56 c0-0
+   RB Roschon Johnson: g6 tgt 1.8 (5.7%) rec 1.5 ryd 14.3 | car 4.8 (13.5%) rush 17.2 || W6:2/2-34 c13-51 W7:0/0-0 c2-13 W8:1/1-11 c5-17
+   TE Colston Loveland: g8 tgt 6.4 (19.8%) rec 4.1 ryd 38.6 | car 0.0 (0.0%) rush 0.0 || W6:6/7-65 c0-0 W7:7/12-69 c0-0 W8:7/9-65 c0-0
+   WR Rome Odunze: g8 tgt 5.5 (17.1%) rec 3.5 ryd 58.5 | car 0.0 (0.0%) rush 0.0 || W6:3/4-39 c0-0 W7:4/5-69 c0-0 W8:4/6-87 c0-0
+INJ: CHI Tyrique Stevenson Sr. CB Questionable; CHI Malik Muhammad II CB Questionable; CHI Kyle Monangai RB Questionable; CHI Zavier Scott RB Out; CHI Kentavius Street DT Out; CHI Braxton Jones OT Out; TB Emeka Egbuka WR Questionable; TB Jalen McMillan WR Out; TB Yaya Diaby LB Out; TB Josh Hayes CB Out; CHI Coby Bryant S Out; TB Christian Rozeboom LB Out; CHI Cole Kmet TE Out; CHI Dayo Odeyingbo DE Out; CHI Dallis Flowers CB Out; CHI Hayden Large TE Out; CHI Ruben Hyppolite II LB Out; CHI Tony Fields II LB Out; CHI Brittain Brown RB Out; CHI Nephi Sewell LB Out; CHI Nikola Kalinic TE Out; TB Mohamed Kamara LB Out
+RH game lines 35-65c: Chicago wins by over 3.5 points 60/42; Chicago wins by over 4.5 points 56/45; Chicago wins by over 5.5 points 54/48; Chicago wins by over 6.5 points 49/52; Chicago wins by over 7.5 points 42/60; Chicago wins by over 9.5 points 37/64; Over 43.5 points 65/37; Over 44.5 points 62/40; Over 45.5 points 59/43; Over 46.5 points 56/46; Over 47.5 points 52/50; Over 48.5 points 49/53; Over 49.5 points 45/57; Over 50.5 points 43/59; Over 51.5 points 39/63; Over 52.5 points 36/66

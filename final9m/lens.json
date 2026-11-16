@@ -1,0 +1,2020 @@
+{
+ "game": "BUF @ MIN",
+ "thru": "Week 9 Sunday (BUF and MIN: 7 games each); FTN charting through Week 8",
+ "BUF_off": {
+  "off": "BUF",
+  "def": "MIN",
+  "def_ranks": {
+   "pass_att_faced": {
+    "v": 28.857,
+    "rank": 29,
+    "of": 32,
+    "lg": 32.839
+   },
+   "pass_yds_allowed": {
+    "v": 180.143,
+    "rank": 31,
+    "of": 32,
+    "lg": 234.179
+   },
+   "rush_att_faced": {
+    "v": 25.429,
+    "rank": 22,
+    "of": 32,
+    "lg": 26.121
+   },
+   "rush_yds_allowed": {
+    "v": 117.0,
+    "rank": 16,
+    "of": 32,
+    "lg": 113.17
+   },
+   "ypc_allowed": {
+    "v": 4.601,
+    "rank": 11,
+    "of": 32,
+    "lg": 4.316
+   },
+   "sacks": {
+    "v": 3.571,
+    "rank": 2,
+    "of": 32,
+    "lg": 2.359
+   },
+   "WR_tgt": {
+    "v": 16.571,
+    "rank": 25,
+    "of": 32,
+    "lg": 18.173
+   },
+   "WR_rec": {
+    "v": 10.0,
+    "rank": 25,
+    "of": 32,
+    "lg": 11.353
+   },
+   "WR_yds": {
+    "v": 122.714,
+    "rank": 27,
+    "of": 32,
+    "lg": 146.813
+   },
+   "TE_tgt": {
+    "v": 6.286,
+    "rank": 28,
+    "of": 32,
+    "lg": 7.566
+   },
+   "TE_rec": {
+    "v": 3.143,
+    "rank": 32,
+    "of": 32,
+    "lg": 5.4
+   },
+   "TE_yds": {
+    "v": 39.0,
+    "rank": 31,
+    "of": 32,
+    "lg": 54.78
+   },
+   "RB_tgt": {
+    "v": 4.571,
+    "rank": 29,
+    "of": 32,
+    "lg": 5.646
+   },
+   "RB_rec": {
+    "v": 3.143,
+    "rank": 30,
+    "of": 32,
+    "lg": 4.372
+   },
+   "RB_yds": {
+    "v": 18.429,
+    "rank": 29,
+    "of": 32,
+    "lg": 31.607
+   },
+   "share_TE": {
+    "v": 0.229,
+    "rank": 22,
+    "of": 32,
+    "lg": 0.241
+   },
+   "share_RB": {
+    "v": 0.167,
+    "rank": 24,
+    "of": 32,
+    "lg": 0.179
+   },
+   "share_WR outside": {
+    "v": 0.448,
+    "rank": 20,
+    "of": 32,
+    "lg": 0.454
+   },
+   "share_WR middle": {
+    "v": 0.156,
+    "rank": 4,
+    "of": 32,
+    "lg": 0.125
+   },
+   "blitz_rate": {
+    "v": 0.728,
+    "rank": 1,
+    "of": 32,
+    "lg": 0.32
+   },
+   "box_on_runs": {
+    "v": 6.506,
+    "rank": 24,
+    "of": 32,
+    "lg": 6.613
+   },
+   "rz_td_rate": {
+    "v": 0.25,
+    "rank": 32,
+    "of": 32,
+    "lg": 0.583
+   },
+   "ypc_inside_allowed": {
+    "v": 3.962,
+    "rank": 13,
+    "of": 32,
+    "lg": 3.95
+   },
+   "ypc_outside_allowed": {
+    "v": 4.99,
+    "rank": 9,
+    "of": 32,
+    "lg": 4.75
+   },
+   "sr_inside_allowed": {
+    "v": 0.38,
+    "rank": 22,
+    "of": 32,
+    "lg": 0.41
+   },
+   "sr_outside_allowed": {
+    "v": 0.388,
+    "rank": 27,
+    "of": 32,
+    "lg": 0.428
+   }
+  },
+  "rz_drives": 16,
+  "rz_tds": 4,
+  "off_ranks": {
+   "pass_att": {
+    "v": 29.286,
+    "rank": 25,
+    "of": 32,
+    "lg": 32.746
+   },
+   "rush_att": {
+    "v": 29.571,
+    "rank": 3,
+    "of": 32,
+    "lg": 26.152
+   },
+   "rush_yds": {
+    "v": 149.857,
+    "rank": 2,
+    "of": 32,
+    "lg": 113.654
+   },
+   "ypc": {
+    "v": 5.068,
+    "rank": 4,
+    "of": 32,
+    "lg": 4.32
+   },
+   "neutral_pass_rate": {
+    "v": 0.491,
+    "rank": 21,
+    "of": 32,
+    "lg": 0.511
+   },
+   "proe": {
+    "v": -1.932,
+    "rank": 17,
+    "of": 32,
+    "lg": -2.218
+   },
+   "ypc_inside": {
+    "v": 4.576,
+    "rank": 4,
+    "of": 32,
+    "lg": 3.744
+   },
+   "ypc_outside": {
+    "v": 4.475,
+    "rank": 16,
+    "of": 32,
+    "lg": 4.466
+   },
+   "sr_inside": {
+    "v": 0.528,
+    "rank": 1,
+    "of": 32,
+    "lg": 0.401
+   },
+   "sr_outside": {
+    "v": 0.475,
+    "rank": 5,
+    "of": 32,
+    "lg": 0.405
+   },
+   "share_inside": {
+    "v": 0.665,
+    "rank": 6,
+    "of": 32,
+    "lg": 0.553
+   },
+   "share_outside": {
+    "v": 0.324,
+    "rank": 28,
+    "of": 32,
+    "lg": 0.441
+   }
+  },
+  "traits": [
+   {
+    "k": "blitz_rate",
+    "z": 4.08,
+    "v": 0.728
+   },
+   {
+    "k": "sacks",
+    "z": 2.01,
+    "v": 3.571
+   },
+   {
+    "k": "pass_att_faced",
+    "z": -1.37,
+    "v": 28.857
+   },
+   {
+    "k": "share_WR middle",
+    "z": 1.32,
+    "v": 0.156
+   }
+  ],
+  "qb": {
+   "targets": 192,
+   "games": 7,
+   "split": {
+    "TE": {
+     "v": 0.26,
+     "rank": 11,
+     "of": 32,
+     "lg": 0.244
+    },
+    "RB": {
+     "v": 0.182,
+     "rank": 13,
+     "of": 32,
+     "lg": 0.18
+    },
+    "WR outside": {
+     "v": 0.401,
+     "rank": 27,
+     "of": 32,
+     "lg": 0.453
+    },
+    "WR middle": {
+     "v": 0.156,
+     "rank": 5,
+     "of": 32,
+     "lg": 0.123
+    }
+   }
+  },
+  "catchers": {
+   "n_blitz_targets": 70,
+   "n_no_blitz_targets": 123,
+   "rows": [
+    {
+     "player": "Khalil Shakir",
+     "pos": "WR",
+     "all": 0.197,
+     "vs_blitz": 0.229,
+     "vs_no_blitz": 0.179,
+     "this_opp": 0.215,
+     "uptick": 0.018
+    },
+    {
+     "player": "Dalton Kincaid",
+     "pos": "TE",
+     "all": 0.181,
+     "vs_blitz": 0.186,
+     "vs_no_blitz": 0.179,
+     "this_opp": 0.184,
+     "uptick": 0.003
+    },
+    {
+     "player": "Keon Coleman",
+     "pos": "WR",
+     "all": 0.14,
+     "vs_blitz": 0.186,
+     "vs_no_blitz": 0.114,
+     "this_opp": 0.166,
+     "uptick": 0.026
+    },
+    {
+     "player": "DJ Moore",
+     "pos": "WR",
+     "all": 0.14,
+     "vs_blitz": 0.114,
+     "vs_no_blitz": 0.154,
+     "this_opp": 0.125,
+     "uptick": -0.015
+    },
+    {
+     "player": "James Cook",
+     "pos": "RB",
+     "all": 0.088,
+     "vs_blitz": 0.1,
+     "vs_no_blitz": 0.081,
+     "this_opp": 0.095,
+     "uptick": 0.007
+    },
+    {
+     "player": "Dawson Knox",
+     "pos": "TE",
+     "all": 0.062,
+     "vs_blitz": 0.071,
+     "vs_no_blitz": 0.057,
+     "this_opp": 0.067,
+     "uptick": 0.005
+    },
+    {
+     "player": "Ty Johnson",
+     "pos": "RB",
+     "all": 0.078,
+     "vs_blitz": 0.057,
+     "vs_no_blitz": 0.089,
+     "this_opp": 0.066,
+     "uptick": -0.012
+    },
+    {
+     "player": "Josh Palmer",
+     "pos": "WR",
+     "all": 0.062,
+     "vs_blitz": 0.029,
+     "vs_no_blitz": 0.081,
+     "this_opp": 0.043,
+     "uptick": -0.019
+    }
+   ]
+  },
+  "comparable": [
+   {
+    "trait": "blitz_rate",
+    "v": 0.728,
+    "z": 4.08,
+    "nearest": [
+     {
+      "team": "WSH",
+      "v": 0.436,
+      "played": false
+     },
+     {
+      "team": "NYG",
+      "v": 0.417,
+      "played": false
+     },
+     {
+      "team": "TB",
+      "v": 0.406,
+      "played": false
+     }
+    ]
+   },
+   {
+    "trait": "sacks",
+    "v": 3.571,
+    "z": 2.01,
+    "nearest": [
+     {
+      "team": "HOU",
+      "v": 3.625,
+      "played": true
+     },
+     {
+      "team": "DET",
+      "v": 3.375,
+      "played": true
+     },
+     {
+      "team": "PIT",
+      "v": 3.25,
+      "played": false
+     }
+    ]
+   }
+  ],
+  "logs": {
+   "Josh Allen": [
+    {
+     "week": 1,
+     "opp": "HOU",
+     "comp": true,
+     "tgt": 0,
+     "rec": 0,
+     "recyd": 0,
+     "car": 6,
+     "rushyd": 23,
+     "att": 29,
+     "pyd": 334,
+     "td": 2
+    },
+    {
+     "week": 2,
+     "opp": "DET",
+     "comp": true,
+     "tgt": 0,
+     "rec": 0,
+     "recyd": 0,
+     "car": 14,
+     "rushyd": 69,
+     "att": 31,
+     "pyd": 248,
+     "td": 2
+    },
+    {
+     "week": 3,
+     "opp": "LAC",
+     "comp": false,
+     "tgt": 1,
+     "rec": 1,
+     "recyd": 1,
+     "car": 8,
+     "rushyd": 22,
+     "att": 26,
+     "pyd": 204,
+     "td": 2
+    },
+    {
+     "week": 4,
+     "opp": "NE",
+     "comp": false,
+     "tgt": 0,
+     "rec": 0,
+     "recyd": 0,
+     "car": 5,
+     "rushyd": 4,
+     "att": 33,
+     "pyd": 253,
+     "td": 1
+    },
+    {
+     "week": 5,
+     "opp": "LAR",
+     "comp": false,
+     "tgt": 0,
+     "rec": 0,
+     "recyd": 0,
+     "car": 10,
+     "rushyd": 121,
+     "att": 19,
+     "pyd": 210,
+     "td": 1
+    },
+    {
+     "week": 6,
+     "opp": "LV",
+     "comp": false,
+     "tgt": 0,
+     "rec": 0,
+     "recyd": 0,
+     "car": 5,
+     "rushyd": 1,
+     "att": 33,
+     "pyd": 255,
+     "td": 0
+    },
+    {
+     "week": 8,
+     "opp": "BAL",
+     "comp": false,
+     "tgt": 0,
+     "rec": 0,
+     "recyd": 0,
+     "car": 7,
+     "rushyd": 30,
+     "att": 34,
+     "pyd": 289,
+     "td": 1
+    }
+   ],
+   "James Cook": [
+    {
+     "week": 1,
+     "opp": "HOU",
+     "comp": true,
+     "tgt": 4,
+     "rec": 3,
+     "recyd": 12,
+     "car": 13,
+     "rushyd": 57,
+     "att": 0,
+     "pyd": 0,
+     "td": 0,
+     "opp_ypc_rank": 11
+    },
+    {
+     "week": 2,
+     "opp": "DET",
+     "comp": true,
+     "tgt": 3,
+     "rec": 1,
+     "recyd": 4,
+     "car": 21,
+     "rushyd": 135,
+     "att": 0,
+     "pyd": 0,
+     "td": 1,
+     "opp_ypc_rank": 16
+    },
+    {
+     "week": 3,
+     "opp": "LAC",
+     "comp": false,
+     "tgt": 1,
+     "rec": 0,
+     "recyd": 0,
+     "car": 24,
+     "rushyd": 154,
+     "att": 0,
+     "pyd": 0,
+     "td": 1,
+     "opp_ypc_rank": 20
+    },
+    {
+     "week": 4,
+     "opp": "NE",
+     "comp": false,
+     "tgt": 2,
+     "rec": 2,
+     "recyd": 8,
+     "car": 12,
+     "rushyd": 75,
+     "att": 0,
+     "pyd": 0,
+     "td": 1,
+     "opp_ypc_rank": 8
+    },
+    {
+     "week": 5,
+     "opp": "LAR",
+     "comp": false,
+     "tgt": 1,
+     "rec": 1,
+     "recyd": 7,
+     "car": 25,
+     "rushyd": 111,
+     "att": 0,
+     "pyd": 0,
+     "td": 2,
+     "opp_ypc_rank": 10
+    },
+    {
+     "week": 6,
+     "opp": "LV",
+     "comp": false,
+     "tgt": 3,
+     "rec": 3,
+     "recyd": 58,
+     "car": 22,
+     "rushyd": 95,
+     "att": 0,
+     "pyd": 0,
+     "td": 1,
+     "opp_ypc_rank": 32
+    },
+    {
+     "week": 8,
+     "opp": "BAL",
+     "comp": false,
+     "tgt": 3,
+     "rec": 2,
+     "recyd": 21,
+     "car": 21,
+     "rushyd": 80,
+     "att": 0,
+     "pyd": 0,
+     "td": 1,
+     "opp_ypc_rank": 4
+    }
+   ],
+   "DJ Moore": [
+    {
+     "week": 1,
+     "opp": "HOU",
+     "comp": true,
+     "tgt": 8,
+     "rec": 5,
+     "recyd": 100,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    },
+    {
+     "week": 2,
+     "opp": "DET",
+     "comp": true,
+     "tgt": 0,
+     "rec": 0,
+     "recyd": 0,
+     "car": 1,
+     "rushyd": -1,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 3,
+     "opp": "LAC",
+     "comp": false,
+     "tgt": 10,
+     "rec": 6,
+     "recyd": 67,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 4,
+     "opp": "NE",
+     "comp": false,
+     "tgt": 2,
+     "rec": 1,
+     "recyd": 11,
+     "car": 1,
+     "rushyd": 6,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 8,
+     "opp": "BAL",
+     "comp": false,
+     "tgt": 7,
+     "rec": 4,
+     "recyd": 82,
+     "car": 1,
+     "rushyd": 4,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    }
+   ],
+   "Dalton Kincaid": [
+    {
+     "week": 1,
+     "opp": "HOU",
+     "comp": true,
+     "tgt": 6,
+     "rec": 5,
+     "recyd": 130,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 2,
+     "opp": "DET",
+     "comp": true,
+     "tgt": 8,
+     "rec": 7,
+     "recyd": 95,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    },
+    {
+     "week": 3,
+     "opp": "LAC",
+     "comp": false,
+     "tgt": 3,
+     "rec": 2,
+     "recyd": 38,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 4,
+     "opp": "NE",
+     "comp": false,
+     "tgt": 2,
+     "rec": 1,
+     "recyd": 7,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 5,
+     "opp": "LAR",
+     "comp": false,
+     "tgt": 2,
+     "rec": 1,
+     "recyd": 7,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 6,
+     "opp": "LV",
+     "comp": false,
+     "tgt": 8,
+     "rec": 7,
+     "recyd": 38,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 8,
+     "opp": "BAL",
+     "comp": false,
+     "tgt": 6,
+     "rec": 4,
+     "recyd": 86,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    }
+   ],
+   "Khalil Shakir": [
+    {
+     "week": 1,
+     "opp": "HOU",
+     "comp": true,
+     "tgt": 6,
+     "rec": 4,
+     "recyd": 50,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 2,
+     "opp": "DET",
+     "comp": true,
+     "tgt": 6,
+     "rec": 3,
+     "recyd": 38,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 3,
+     "opp": "LAC",
+     "comp": false,
+     "tgt": 3,
+     "rec": 1,
+     "recyd": 6,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 4,
+     "opp": "NE",
+     "comp": false,
+     "tgt": 8,
+     "rec": 7,
+     "recyd": 82,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 5,
+     "opp": "LAR",
+     "comp": false,
+     "tgt": 3,
+     "rec": 3,
+     "recyd": 80,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 6,
+     "opp": "LV",
+     "comp": false,
+     "tgt": 6,
+     "rec": 4,
+     "recyd": 34,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    },
+    {
+     "week": 8,
+     "opp": "BAL",
+     "comp": false,
+     "tgt": 6,
+     "rec": 5,
+     "recyd": 64,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    }
+   ],
+   "Keon Coleman": [
+    {
+     "week": 1,
+     "opp": "HOU",
+     "comp": true,
+     "tgt": 1,
+     "rec": 1,
+     "recyd": 1,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 2,
+     "opp": "DET",
+     "comp": true,
+     "tgt": 6,
+     "rec": 6,
+     "recyd": 63,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 3,
+     "opp": "LAC",
+     "comp": false,
+     "tgt": 2,
+     "rec": 1,
+     "recyd": 37,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 4,
+     "opp": "NE",
+     "comp": false,
+     "tgt": 7,
+     "rec": 6,
+     "recyd": 116,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    },
+    {
+     "week": 5,
+     "opp": "LAR",
+     "comp": false,
+     "tgt": 2,
+     "rec": 1,
+     "recyd": 7,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    },
+    {
+     "week": 6,
+     "opp": "LV",
+     "comp": false,
+     "tgt": 6,
+     "rec": 4,
+     "recyd": 59,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    },
+    {
+     "week": 8,
+     "opp": "BAL",
+     "comp": false,
+     "tgt": 3,
+     "rec": 1,
+     "recyd": 4,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    }
+   ],
+   "Ty Johnson": [
+    {
+     "week": 3,
+     "opp": "LAC",
+     "comp": false,
+     "tgt": 4,
+     "rec": 4,
+     "recyd": 50,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 4,
+     "opp": "NE",
+     "comp": false,
+     "tgt": 2,
+     "rec": 2,
+     "recyd": 9,
+     "car": 1,
+     "rushyd": 3,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 5,
+     "opp": "LAR",
+     "comp": false,
+     "tgt": 4,
+     "rec": 4,
+     "recyd": 72,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 6,
+     "opp": "LV",
+     "comp": false,
+     "tgt": 2,
+     "rec": 2,
+     "recyd": 24,
+     "car": 1,
+     "rushyd": 3,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 8,
+     "opp": "BAL",
+     "comp": false,
+     "tgt": 3,
+     "rec": 3,
+     "recyd": 19,
+     "car": 4,
+     "rushyd": 4,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    }
+   ],
+   "Dawson Knox": [
+    {
+     "week": 1,
+     "opp": "HOU",
+     "comp": true,
+     "tgt": 1,
+     "rec": 1,
+     "recyd": 7,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 2,
+     "opp": "DET",
+     "comp": true,
+     "tgt": 2,
+     "rec": 2,
+     "recyd": 5,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    },
+    {
+     "week": 3,
+     "opp": "LAC",
+     "comp": false,
+     "tgt": 1,
+     "rec": 1,
+     "recyd": 5,
+     "car": 1,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 4,
+     "opp": "NE",
+     "comp": false,
+     "tgt": 2,
+     "rec": 2,
+     "recyd": 13,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 5,
+     "opp": "LAR",
+     "comp": false,
+     "tgt": 3,
+     "rec": 1,
+     "recyd": 6,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 6,
+     "opp": "LV",
+     "comp": false,
+     "tgt": 1,
+     "rec": 1,
+     "recyd": 0,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 8,
+     "opp": "BAL",
+     "comp": false,
+     "tgt": 2,
+     "rec": 1,
+     "recyd": 6,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    }
+   ]
+  },
+  "allen_scramble": {
+   "vs_blitz": 0.048,
+   "vs_no_blitz": 0.097,
+   "lg_vs_blitz": 0.035
+  },
+  "min_scrambles_allowed": {
+   "per_game": 1.14,
+   "yds_per_game": 8.0,
+   "rank": 28
+  }
+ },
+ "MIN_off": {
+  "off": "MIN",
+  "def": "BUF",
+  "def_ranks": {
+   "pass_att_faced": {
+    "v": 38.286,
+    "rank": 2,
+    "of": 32,
+    "lg": 32.839
+   },
+   "pass_yds_allowed": {
+    "v": 269.0,
+    "rank": 3,
+    "of": 32,
+    "lg": 234.179
+   },
+   "rush_att_faced": {
+    "v": 24.857,
+    "rank": 24,
+    "of": 32,
+    "lg": 26.121
+   },
+   "rush_yds_allowed": {
+    "v": 97.857,
+    "rank": 23,
+    "of": 32,
+    "lg": 113.17
+   },
+   "ypc_allowed": {
+    "v": 3.937,
+    "rank": 24,
+    "of": 32,
+    "lg": 4.316
+   },
+   "sacks": {
+    "v": 2.143,
+    "rank": 16,
+    "of": 32,
+    "lg": 2.359
+   },
+   "WR_tgt": {
+    "v": 19.714,
+    "rank": 9,
+    "of": 32,
+    "lg": 18.173
+   },
+   "WR_rec": {
+    "v": 12.0,
+    "rank": 12,
+    "of": 32,
+    "lg": 11.353
+   },
+   "WR_yds": {
+    "v": 154.0,
+    "rank": 13,
+    "of": 32,
+    "lg": 146.813
+   },
+   "TE_tgt": {
+    "v": 9.143,
+    "rank": 4,
+    "of": 32,
+    "lg": 7.566
+   },
+   "TE_rec": {
+    "v": 6.143,
+    "rank": 8,
+    "of": 32,
+    "lg": 5.4
+   },
+   "TE_yds": {
+    "v": 70.571,
+    "rank": 4,
+    "of": 32,
+    "lg": 54.78
+   },
+   "RB_tgt": {
+    "v": 8.714,
+    "rank": 1,
+    "of": 32,
+    "lg": 5.646
+   },
+   "RB_rec": {
+    "v": 6.0,
+    "rank": 2,
+    "of": 32,
+    "lg": 4.372
+   },
+   "RB_yds": {
+    "v": 44.429,
+    "rank": 3,
+    "of": 32,
+    "lg": 31.607
+   },
+   "share_TE": {
+    "v": 0.243,
+    "rank": 17,
+    "of": 32,
+    "lg": 0.241
+   },
+   "share_RB": {
+    "v": 0.232,
+    "rank": 2,
+    "of": 32,
+    "lg": 0.179
+   },
+   "share_WR outside": {
+    "v": 0.403,
+    "rank": 29,
+    "of": 32,
+    "lg": 0.454
+   },
+   "share_WR middle": {
+    "v": 0.122,
+    "rank": 18,
+    "of": 32,
+    "lg": 0.125
+   },
+   "blitz_rate": {
+    "v": 0.386,
+    "rank": 7,
+    "of": 32,
+    "lg": 0.32
+   },
+   "box_on_runs": {
+    "v": 6.799,
+    "rank": 4,
+    "of": 32,
+    "lg": 6.613
+   },
+   "rz_td_rate": {
+    "v": 0.655,
+    "rank": 13,
+    "of": 32,
+    "lg": 0.583
+   },
+   "ypc_inside_allowed": {
+    "v": 3.895,
+    "rank": 18,
+    "of": 32,
+    "lg": 3.95
+   },
+   "ypc_outside_allowed": {
+    "v": 4.182,
+    "rank": 24,
+    "of": 32,
+    "lg": 4.75
+   },
+   "sr_inside_allowed": {
+    "v": 0.438,
+    "rank": 11,
+    "of": 32,
+    "lg": 0.41
+   },
+   "sr_outside_allowed": {
+    "v": 0.439,
+    "rank": 12,
+    "of": 32,
+    "lg": 0.428
+   }
+  },
+  "rz_drives": 29,
+  "rz_tds": 19,
+  "off_ranks": {
+   "pass_att": {
+    "v": 27.429,
+    "rank": 29,
+    "of": 32,
+    "lg": 32.746
+   },
+   "rush_att": {
+    "v": 26.714,
+    "rank": 14,
+    "of": 32,
+    "lg": 26.152
+   },
+   "rush_yds": {
+    "v": 115.857,
+    "rank": 15,
+    "of": 32,
+    "lg": 113.654
+   },
+   "ypc": {
+    "v": 4.337,
+    "rank": 15,
+    "of": 32,
+    "lg": 4.32
+   },
+   "neutral_pass_rate": {
+    "v": 0.494,
+    "rank": 20,
+    "of": 32,
+    "lg": 0.511
+   },
+   "proe": {
+    "v": -3.008,
+    "rank": 21,
+    "of": 32,
+    "lg": -2.218
+   },
+   "ypc_inside": {
+    "v": 3.023,
+    "rank": 30,
+    "of": 32,
+    "lg": 3.744
+   },
+   "ypc_outside": {
+    "v": 4.938,
+    "rank": 9,
+    "of": 32,
+    "lg": 4.466
+   },
+   "sr_inside": {
+    "v": 0.302,
+    "rank": 31,
+    "of": 32,
+    "lg": 0.401
+   },
+   "sr_outside": {
+    "v": 0.383,
+    "rank": 20,
+    "of": 32,
+    "lg": 0.405
+   },
+   "share_inside": {
+    "v": 0.509,
+    "rank": 22,
+    "of": 32,
+    "lg": 0.553
+   },
+   "share_outside": {
+    "v": 0.479,
+    "rank": 11,
+    "of": 32,
+    "lg": 0.441
+   }
+  },
+  "traits": [
+   {
+    "k": "pass_att_faced",
+    "z": 1.87,
+    "v": 38.286
+   },
+   {
+    "k": "share_RB",
+    "z": 1.86,
+    "v": 0.232
+   },
+   {
+    "k": "box_on_runs",
+    "z": 1.37,
+    "v": 6.799
+   },
+   {
+    "k": "share_WR outside",
+    "z": -1.36,
+    "v": 0.403
+   }
+  ],
+  "qb": {
+   "targets": 38,
+   "games": 2,
+   "split": {
+    "TE": {
+     "v": 0.342,
+     "rank": 3,
+     "of": 32,
+     "lg": 0.244
+    },
+    "RB": {
+     "v": 0.105,
+     "rank": 32,
+     "of": 32,
+     "lg": 0.18
+    },
+    "WR outside": {
+     "v": 0.395,
+     "rank": 29,
+     "of": 32,
+     "lg": 0.453
+    },
+    "WR middle": {
+     "v": 0.158,
+     "rank": 5,
+     "of": 32,
+     "lg": 0.123
+    }
+   }
+  },
+  "qb_murray": {
+   "targets": 143,
+   "games": 6,
+   "split": {
+    "TE": {
+     "v": 0.28,
+     "rank": 6,
+     "of": 32,
+     "lg": 0.244
+    },
+    "RB": {
+     "v": 0.182,
+     "rank": 14,
+     "of": 32,
+     "lg": 0.18
+    },
+    "WR outside": {
+     "v": 0.476,
+     "rank": 13,
+     "of": 32,
+     "lg": 0.453
+    },
+    "WR middle": {
+     "v": 0.063,
+     "rank": 30,
+     "of": 32,
+     "lg": 0.123
+    }
+   }
+  },
+  "catchers": {
+   "n_blitz_targets": 60,
+   "n_no_blitz_targets": 121,
+   "rows": [
+    {
+     "player": "Justin Jefferson",
+     "pos": "WR",
+     "all": 0.221,
+     "vs_blitz": 0.217,
+     "vs_no_blitz": 0.223,
+     "this_opp": 0.221,
+     "uptick": -0.0
+    },
+    {
+     "player": "T.J. Hockenson",
+     "pos": "TE",
+     "all": 0.204,
+     "vs_blitz": 0.133,
+     "vs_no_blitz": 0.24,
+     "this_opp": 0.199,
+     "uptick": -0.006
+    },
+    {
+     "player": "Jordan Addison",
+     "pos": "WR",
+     "all": 0.182,
+     "vs_blitz": 0.233,
+     "vs_no_blitz": 0.157,
+     "this_opp": 0.186,
+     "uptick": 0.004
+    },
+    {
+     "player": "Aaron Jones",
+     "pos": "RB",
+     "all": 0.116,
+     "vs_blitz": 0.083,
+     "vs_no_blitz": 0.132,
+     "this_opp": 0.113,
+     "uptick": -0.003
+    },
+    {
+     "player": "Jauan Jennings",
+     "pos": "WR",
+     "all": 0.055,
+     "vs_blitz": 0.067,
+     "vs_no_blitz": 0.05,
+     "this_opp": 0.056,
+     "uptick": 0.001
+    }
+   ]
+  },
+  "wentz_shares": [
+   {
+    "player": "Justin Jefferson",
+    "share": 0.342,
+    "tgt": 13
+   },
+   {
+    "player": "T.J. Hockenson",
+    "share": 0.211,
+    "tgt": 8
+   },
+   {
+    "player": "Jordan Addison",
+    "share": 0.184,
+    "tgt": 7
+   },
+   {
+    "player": "Josh Oliver",
+    "share": 0.132,
+    "tgt": 5
+   },
+   {
+    "player": "DeeJay Dallas",
+    "share": 0.053,
+    "tgt": 2
+   },
+   {
+    "player": "Aaron Jones",
+    "share": 0.026,
+    "tgt": 1
+   }
+  ],
+  "comparable": [
+   {
+    "trait": "pass_att_faced",
+    "v": 38.286,
+    "z": 1.87,
+    "nearest": [
+     {
+      "team": "DET",
+      "v": 38.75,
+      "played": true
+     },
+     {
+      "team": "DEN",
+      "v": 37.556,
+      "played": false
+     },
+     {
+      "team": "WSH",
+      "v": 36.875,
+      "played": false
+     }
+    ]
+   },
+   {
+    "trait": "share_RB",
+    "v": 0.232,
+    "z": 1.86,
+    "nearest": [
+     {
+      "team": "SF",
+      "v": 0.235,
+      "played": false
+     },
+     {
+      "team": "MIA",
+      "v": 0.219,
+      "played": true
+     },
+     {
+      "team": "LAR",
+      "v": 0.218,
+      "played": false
+     }
+    ]
+   }
+  ],
+  "logs": {
+   "Carson Wentz": [
+    {
+     "week": 1,
+     "opp": "GB",
+     "comp": false,
+     "tgt": 0,
+     "rec": 0,
+     "recyd": 0,
+     "car": 5,
+     "rushyd": -1,
+     "att": 19,
+     "pyd": 133,
+     "td": 0
+    },
+    {
+     "week": 2,
+     "opp": "CHI",
+     "comp": false,
+     "tgt": 0,
+     "rec": 0,
+     "recyd": 0,
+     "car": 3,
+     "rushyd": 6,
+     "att": 20,
+     "pyd": 143,
+     "td": 0
+    }
+   ],
+   "Justin Jefferson": [
+    {
+     "week": 1,
+     "opp": "GB",
+     "comp": false,
+     "tgt": 9,
+     "rec": 8,
+     "recyd": 92,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 2
+    },
+    {
+     "week": 2,
+     "opp": "CHI",
+     "comp": false,
+     "tgt": 6,
+     "rec": 3,
+     "recyd": 55,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 3,
+     "opp": "TB",
+     "comp": false,
+     "tgt": 2,
+     "rec": 2,
+     "recyd": 32,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 5,
+     "opp": "NO",
+     "comp": false,
+     "tgt": 7,
+     "rec": 6,
+     "recyd": 79,
+     "car": 1,
+     "rushyd": -11,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    },
+    {
+     "week": 7,
+     "opp": "IND",
+     "comp": false,
+     "tgt": 7,
+     "rec": 4,
+     "recyd": 44,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 8,
+     "opp": "DET",
+     "comp": true,
+     "tgt": 9,
+     "rec": 5,
+     "recyd": 33,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    }
+   ],
+   "T.J. Hockenson": [
+    {
+     "week": 1,
+     "opp": "GB",
+     "comp": false,
+     "tgt": 5,
+     "rec": 4,
+     "recyd": 36,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    },
+    {
+     "week": 2,
+     "opp": "CHI",
+     "comp": false,
+     "tgt": 4,
+     "rec": 3,
+     "recyd": 29,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 3,
+     "opp": "TB",
+     "comp": false,
+     "tgt": 4,
+     "rec": 2,
+     "recyd": 11,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 4,
+     "opp": "MIA",
+     "comp": true,
+     "tgt": 13,
+     "rec": 13,
+     "recyd": 119,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 5,
+     "opp": "NO",
+     "comp": false,
+     "tgt": 1,
+     "rec": 1,
+     "recyd": 7,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 7,
+     "opp": "IND",
+     "comp": false,
+     "tgt": 5,
+     "rec": 4,
+     "recyd": 35,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    },
+    {
+     "week": 8,
+     "opp": "DET",
+     "comp": true,
+     "tgt": 5,
+     "rec": 4,
+     "recyd": 58,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    }
+   ],
+   "Jordan Addison": [
+    {
+     "week": 1,
+     "opp": "GB",
+     "comp": false,
+     "tgt": 2,
+     "rec": 0,
+     "recyd": 0,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 2,
+     "opp": "CHI",
+     "comp": false,
+     "tgt": 5,
+     "rec": 2,
+     "recyd": 21,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 3,
+     "opp": "TB",
+     "comp": false,
+     "tgt": 9,
+     "rec": 5,
+     "recyd": 90,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 1
+    },
+    {
+     "week": 4,
+     "opp": "MIA",
+     "comp": true,
+     "tgt": 6,
+     "rec": 4,
+     "recyd": 52,
+     "car": 1,
+     "rushyd": -1,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 7,
+     "opp": "IND",
+     "comp": false,
+     "tgt": 3,
+     "rec": 2,
+     "recyd": 20,
+     "car": 1,
+     "rushyd": 3,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    },
+    {
+     "week": 8,
+     "opp": "DET",
+     "comp": true,
+     "tgt": 8,
+     "rec": 3,
+     "recyd": 66,
+     "car": 0,
+     "rushyd": 0,
+     "att": 0,
+     "pyd": 0,
+     "td": 0
+    }
+   ],
+   "Aaron Jones": [
+    {
+     "week": 1,
+     "opp": "GB",
+     "comp": false,
+     "tgt": 1,
+     "rec": 0,
+     "recyd": 0,
+     "car": 12,
+     "rushyd": 40,
+     "att": 0,
+     "pyd": 0,
+     "td": 1,
+     "opp_ypc_rank": 13
+    },
+    {
+     "week": 2,
+     "opp": "CHI",
+     "comp": false,
+     "tgt": 0,
+     "rec": 0,
+     "recyd": 0,
+     "car": 23,
+     "rushyd": 105,
+     "att": 0,
+     "pyd": 0,
+     "td": 0,
+     "opp_ypc_rank": 21
+    },
+    {
+     "week": 3,
+     "opp": "TB",
+     "comp": false,
+     "tgt": 6,
+     "rec": 5,
+     "recyd": 34,
+     "car": 17,
+     "rushyd": 58,
+     "att": 0,
+     "pyd": 0,
+     "td": 0,
+     "opp_ypc_rank": 7
+    },
+    {
+     "week": 4,
+     "opp": "MIA",
+     "comp": true,
+     "tgt": 8,
+     "rec": 4,
+     "recyd": 34,
+     "car": 20,
+     "rushyd": 94,
+     "att": 0,
+     "pyd": 0,
+     "td": 0,
+     "opp_ypc_rank": 14
+    },
+    {
+     "week": 5,
+     "opp": "NO",
+     "comp": false,
+     "tgt": 3,
+     "rec": 3,
+     "recyd": 4,
+     "car": 25,
+     "rushyd": 113,
+     "att": 0,
+     "pyd": 0,
+     "td": 1,
+     "opp_ypc_rank": 26
+    },
+    {
+     "week": 7,
+     "opp": "IND",
+     "comp": false,
+     "tgt": 1,
+     "rec": 1,
+     "recyd": 0,
+     "car": 8,
+     "rushyd": 26,
+     "att": 0,
+     "pyd": 0,
+     "td": 0,
+     "opp_ypc_rank": 29
+    },
+    {
+     "week": 8,
+     "opp": "DET",
+     "comp": true,
+     "tgt": 2,
+     "rec": 2,
+     "recyd": 18,
+     "car": 5,
+     "rushyd": 22,
+     "att": 0,
+     "pyd": 0,
+     "td": 0,
+     "opp_ypc_rank": 16
+    }
+   ],
+   "Jordan Mason": [
+    {
+     "week": 1,
+     "opp": "GB",
+     "comp": false,
+     "tgt": 0,
+     "rec": 0,
+     "recyd": 0,
+     "car": 15,
+     "rushyd": 59,
+     "att": 0,
+     "pyd": 0,
+     "td": 1,
+     "opp_ypc_rank": 13
+    },
+    {
+     "week": 7,
+     "opp": "IND",
+     "comp": false,
+     "tgt": 2,
+     "rec": 0,
+     "recyd": 0,
+     "car": 15,
+     "rushyd": 68,
+     "att": 0,
+     "pyd": 0,
+     "td": 0,
+     "opp_ypc_rank": 29
+    },
+    {
+     "week": 8,
+     "opp": "DET",
+     "comp": true,
+     "tgt": 0,
+     "rec": 0,
+     "recyd": 0,
+     "car": 8,
+     "rushyd": 20,
+     "att": 0,
+     "pyd": 0,
+     "td": 0,
+     "opp_ypc_rank": 16
+    }
+   ]
+  },
+  "wentz_env": [
+   {
+    "week": 1,
+    "opp": "GB",
+    "roof": "dome",
+    "weather": "Sunny Temp: 71\u00b0 F, Humidity: 38%, Wind: NW 8 mph"
+   },
+   {
+    "week": 2,
+    "opp": "CHI",
+    "roof": "outdoors",
+    "weather": "Rain Temp: 68\u00b0 F, Humidity: 93%, Wind: NE 8 mph"
+   }
+  ]
+ },
+ "league_blitz": 0.32
+}

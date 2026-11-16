@@ -1,0 +1,38 @@
+===== NYJ@KC | weather {'temp': 60, 'precip_prob': 0, 'precip_in': 0, 'wind': 5, 'gust': 8, 'code': 0}
+consensus spread [['NYJ', 9.5, -105], ['KC', -9.5, -114]] total [['under', 48, -110], ['over', 48, -112]] ML [['KC', -522], ['NYJ', 400]] @ 2026-11-07T23:47:21.061Z
+   Pass Attempts Geno Smith NYJ 32.5 [[15, 32.5, -104, -119]]
+   Pass Attempts Patrick Mahomes KC 31.5 [[15, 31.5, -101, -116]]
+   Completions Geno Smith NYJ 20.5 [[15, 20.5, -105, -125]]
+   Completions Patrick Mahomes KC 21.75 [[15, 22, -110, -116]]
+   Rush Attempts Geno Smith NYJ 1.5 [[15, 1.5, -120, -110]]
+   Rush Attempts Patrick Mahomes KC 3.5 [[15, 3.5, 102, -132]]
+   Rush Attempts Kenneth Walker KC 20.5 [[15, 20.5, -105, -115]]
+   Rush Attempts Breece Hall NYJ 10.5 [[15, 10.5, -130, -122]]
+   Rush Attempts Braelon Allen NYJ 9.5 [[15, 9.5, -104, -122]]
+   Rush Attempts Emmett Johnson KC 3.5 [[15, 3.5, -110, -120]]
+NYJ O: g8 pf 21.2 att 29.9 cmp 20.6 sk 2.9 rush 24.9 drv 10.5 ppd 5.49 neuPass 49.6% 3rd 38.0% PA 21.1% oop 14.5% | att by script {'won8+': [24.0, 1], 'close': [33.3, 6], 'lost8+': [15.0, 1]}
+   logs: W1 vTEN 23-10 att 24 sk 0 ru 36 | W2 vGB 17-20 att 41 sk 4 ru 27 | W3 vDET 24-31 att 37 sk 5 ru 19 | W4 vCHI 12-23 att 15 sk 3 ru 14 | W5 vCLE 17-12 att 30 sk 4 ru 30 | W6 vNE 19-26 att 30 sk 3 ru 26 | W7 vMIA 25-28 att 30 sk 2 ru 20 | W8 vLV 33-38 att 32 sk 2 ru 27
+KC D vs: pa 18.7 oppAtt 34.9 sk 1.3 oppRush 26.9 ypc 3.6 blitz 25.8% rushers 4.32 oopForced 24.3% box 6.61 QBrushYds/g 16.7 scr/g 2.1 20+pass/g 2.9 tgtAllowed {'WR': [17.6, 121.6], 'TE': [10.0, 65.6], 'RB': [5.6, 39.1]}
+   QB Geno Smith: g8 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 2.9 (11.2%) rush 5.8 | att 29.9 pyd 239.1 || W6:0/0-0 c2--1 a30-252 W7:0/0-0 c2-0 a30-287 W8:0/0-0 c1-4 a32-290
+   RB Breece Hall: g3 tgt 3.3 (10.5%) rec 3.3 ryd 34.0 | car 17.0 (60.0%) rush 54.3 || W1:2/2-16 c22-102 W2:5/5-63 c16-29 W3:3/3-23 c13-32
+   RB Braelon Allen: g8 tgt 2.8 (9.6%) rec 2.1 ryd 10.1 | car 14.0 (54.4%) rush 70.6 || W6:2/2-26 c17-78 W7:6/7-30 c17-104 W8:2/2-6 c21-147
+   WR Garrett Wilson: g8 tgt 7.9 (27.6%) rec 5.4 ryd 65.9 | car 0.0 (0.0%) rush 0.0 || W6:4/6-44 c0-0 W7:2/3-26 c0-0 W8:6/12-83 c0-0
+   WR Adonai Mitchell: g4 tgt 6.8 (22.7%) rec 4.0 ryd 66.2 | car 0.0 (0.0%) rush 0.0 || W2:6/12-63 c0-0 W7:0/3-0 c0-0 W8:7/9-142 c0-0
+   TE Mason Taylor: g5 tgt 4.6 (16.3%) rec 3.4 ryd 27.2 | car 0.0 (0.0%) rush 0.0 || W6:4/6-33 c0-0 W7:5/6-62 c0-0 W8:3/5-19 c0-0
+   WR Omar Cooper Jr.: g3 tgt 4.3 (16.0%) rec 4.0 ryd 82.7 | car 0.0 (0.0%) rush 0.0 || W1:1/1-30 c0-0 W6:6/7-103 c0-0 W7:5/5-115 c0-0
+   TE Kenyon Sadiq: g8 tgt 3.4 (11.8%) rec 2.1 ryd 23.2 | car 0.1 (0.5%) rush 0.4 || W6:1/3-12 c0-0 W7:1/1-6 c0-0 W8:1/2-22 c0-0
+   RB Isaiah Davis: g7 tgt 0.9 (2.9%) rec 0.7 ryd 9.7 | car 2.1 (9.0%) rush 6.3 || W6:1/1-10 c7-16 W7:3/3-49 c1-5 W8:0/0-0 c5-15
+KC O: g7 pf 23.9 att 33.1 cmp 22.0 sk 1.3 rush 25.6 drv 10.6 ppd 5.68 neuPass 57.0% 3rd 40.5% PA 30.6% oop 31.0% | att by script {'won8+': [27.0, 3], 'close': [39.3, 3], 'lost8+': [33.0, 1]}
+   logs: W1 vDEN 31-10 att 27 sk 2 ru 35 | W2 vIND 33-30 att 47 sk 2 ru 29 | W3 vMIA 24-10 att 24 sk 0 ru 25 | W4 vLV 30-27 att 30 sk 2 ru 25 | W6 vLAC 22-6 att 30 sk 0 ru 25 | W7 vSEA 3-20 att 33 sk 1 ru 16 | W8 vDEN 24-28 att 41 sk 2 ru 24
+NYJ D vs: pa 23.5 oppAtt 29.9 sk 2.5 oppRush 30.0 ypc 4.16 blitz 39.4% rushers 4.49 oopForced 22.4% box 6.66 QBrushYds/g 17.8 scr/g 2.2 20+pass/g 2.8 tgtAllowed {'WR': [15.9, 121.4], 'TE': [7.8, 60.1], 'RB': [4.8, 26.9]}
+   QB Patrick Mahomes: g7 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 3.0 (11.4%) rush 11.0 | att 33.1 pyd 256.4 || W6:0/0-0 c5-16 a30-272 W7:0/0-0 c2-14 a33-165 W8:0/0-0 c2-6 a41-321
+   RB Kenneth Walker III: g7 tgt 4.6 (14.7%) rec 3.1 ryd 18.7 | car 20.1 (76.2%) rush 110.0 || W6:2/3-11 c19-128 W7:4/5-21 c14-36 W8:4/5-15 c21-69
+   WR Rashee Rice: g4 tgt 6.2 (19.4%) rec 5.0 ryd 60.8 | car 0.0 (0.0%) rush 0.0 || W2:4/6-83 c0-0 W3:7/9-88 c0-0 W8:7/8-53 c0-0
+   TE Travis Kelce: g7 tgt 6.0 (19.4%) rec 4.1 ryd 58.6 | car 0.0 (0.0%) rush 0.0 || W6:4/5-53 c0-0 W7:4/8-44 c0-0 W8:5/7-67 c0-0
+   WR Xavier Worthy: g7 tgt 5.9 (18.9%) rec 3.9 ryd 32.9 | car 0.0 (0.0%) rush 0.0 || W6:7/7-73 c0-0 W7:3/6-11 c0-0 W8:3/6-13 c0-0
+   RB Emmett Johnson: g7 tgt 2.3 (7.4%) rec 2.0 ryd 33.9 | car 2.9 (10.8%) rush 11.0 || W6:2/3-18 c3-6 W7:2/3-17 c0-0 W8:5/5-128 c1-15
+   WR Tyquan Thornton: g4 tgt 3.8 (12.7%) rec 2.8 ryd 54.8 | car 0.0 (0.0%) rush 0.0 || W2:4/4-86 c0-0 W3:2/2-22 c0-0 W4:5/8-111 c0-0
+   TE Noah Gray: g7 tgt 2.3 (7.4%) rec 2.0 ryd 24.7 | car 0.0 (0.0%) rush 0.0 || W6:3/3-53 c0-0 W7:3/3-44 c0-0 W8:2/2-15 c0-0
+   WR Cyrus Allen: g5 tgt 1.8 (6.0%) rec 1.0 ryd 13.0 | car 0.0 (0.0%) rush 0.0 || W6:2/2-27 c0-0 W7:1/2-18 c0-0 W8:2/3-20 c0-0
+INJ: KC Peter Woods DT Out; KC Nikko Remigio WR Questionable; KC Mansoor Delane CB Out; KC L'Jarius Sneed CB Out; KC Omarr Norman-Lott DT Out; NYJ Nahshon Wright CB Out; NYJ Joseph Ossai DE Out; NYJ Trevin Wallace LB Out; NYJ Garrett Wilson WR Out; NYJ VJ Payne S Out; NYJ Harrison Phillips DT Questionable; NYJ Max Mitchell OT Out; NYJ T'Vondre Sweat DT Out; KC Brashard Smith RB Out; KC Josh Simmons OT Out; KC Tyquan Thornton WR Out; KC Jimmy Holiday WR Out; KC Jeff Caldwell WR Out; KC Matt Waletzko OT Out; KC Ethan Downs LB Out; KC John Michael Gyllenborg TE Out; NYJ Kiko Mauigoa LB Out; NYJ Braiden McGregor DE Out; NYJ Arian Smith WR Out; NYJ David Onyemata DT Out; NYJ Marcelino McCrary-Ball LB Out; NYJ Kingsley Jonathan DE Out; NYJ Tyler Baron DE Out; NYJ Chip Trayanum RB Out; NYJ Anez Cooper G Out
+RH game lines 35-65c: Kansas City wins by over 6.5 points 62/39; Kansas City wins by over 7.5 points 55/46; Kansas City wins by over 9.5 points 51/51; Kansas City wins by over 10.5 points 45/56; Kansas City wins by over 13.5 points 39/62; Over 43.5 points 63/39; Over 44.5 points 60/42; Over 45.5 points 57/44; Over 46.5 points 55/47; Over 47.5 points 51/50; Over 48.5 points 47/54; Over 49.5 points 44/57; Over 50.5 points 41/60; Over 51.5 points 37/64; Over 52.5 points 35/66

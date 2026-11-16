@@ -1,0 +1,40 @@
+===== BUF@MIN | weather {'temp': None, 'precip_prob': 0, 'precip_in': 0, 'wind': 0, 'gust': 0, 'code': 0, 'dome': True}
+consensus spread [['BUF', -3, -115], ['MIN', 3, -105]] total [['under', 44.5, -110], ['over', 44.5, -111]] ML [['BUF', -173], ['MIN', 145]] @ 2026-11-07T23:47:21.061Z
+   Pass Attempts Carson Wentz MIN 30.5 [[15, 30.5, -110, -117]]
+   Pass Attempts Josh Allen BUF 30.5 [[15, 30.5, -108, -111]]
+   Pass Attempts Kyler Murray MIN 30.5 [[15, 30.5, -121, -107]]
+   Completions Carson Wentz MIN 19.5 [[15, 19.5, -111, -112]]
+   Completions Josh Allen BUF 20.25 [[15, 20, -114, -106]]
+   Completions Kyler Murray MIN 19.5 [[15, 19.5, -129, -100]]
+   Rush Attempts Carson Wentz MIN 2.5 [[15, 2.5, -154, 119]]
+   Rush Attempts Aaron Jones MIN 8.5 [[15, 8.5, -105, -125]]
+   Rush Attempts Josh Allen BUF 7.5 [[15, 7.5, 110, -140]]
+   Rush Attempts James Cook BUF 18.5 [[15, 18.5, -105, -125]]
+   Rush Attempts Jordan Mason MIN 11.5 [[15, 11.5, -125, -109]]
+   Rush Attempts Ray Davis BUF 1.5 [[15, 1.5, -110, -120]]
+BUF O: g7 pf 33.3 att 29.3 cmp 19.3 sk 1.9 rush 29.6 drv 11.0 ppd 5.52 neuPass 49.5% 3rd 45.3% PA 27.0% oop 30.3% | att by script {'won8+': [30.3, 3], 'close': [28.5, 4], 'lost8+': [nan, 0]}
+   logs: W1 vHOU 36-31 att 29 sk 2 ru 20 | W2 vDET 41-31 att 31 sk 2 ru 33 | W3 vLAC 24-16 att 26 sk 4 ru 32 | W4 vNE 26-29 att 33 sk 1 ru 20 | W5 vLA 37-34 att 19 sk 1 ru 37 | W6 vLV 33-30 att 33 sk 2 ru 26 | W8 vBAL 36-10 att 34 sk 1 ru 39
+MIN D vs: pa 13.3 oppAtt 29.0 sk 3.6 oppRush 25.6 ypc 4.58 blitz 72.8% rushers 4.94 oopForced 18.7% box 6.5 QBrushYds/g 11.9 scr/g 1.1 20+pass/g 1.9 tgtAllowed {'WR': [16.6, 122.7], 'TE': [6.3, 39.0], 'RB': [4.6, 18.4]}
+   QB Josh Allen: g7 tgt 0.1 (0.5%) rec 0.1 ryd 0.1 | car 7.9 (25.3%) rush 38.6 | att 29.3 pyd 256.1 || W5:0/0-0 c10-121 a19-210 W6:0/0-0 c5-1 a33-255 W8:0/0-0 c7-30 a34-289
+   RB James Cook: g7 tgt 2.4 (8.8%) rec 1.7 ryd 15.7 | car 19.7 (63.6%) rush 101.0 || W5:1/1-7 c25-111 W6:3/3-58 c22-95 W8:2/3-21 c21-80
+   WR DJ Moore: g5 tgt 5.4 (18.6%) rec 3.2 ryd 52.0 | car 0.6 (2.0%) rush 1.8 || W3:6/10-67 c0-0 W4:1/2-11 c1-6 W8:4/7-82 c1-4
+   WR Khalil Shakir: g7 tgt 5.4 (19.7%) rec 3.9 ryd 50.6 | car 0.0 (0.0%) rush 0.0 || W5:3/3-80 c0-0 W6:4/6-34 c0-0 W8:5/6-64 c0-0
+   TE Dalton Kincaid: g7 tgt 5.0 (18.1%) rec 3.9 ryd 57.3 | car 0.0 (0.0%) rush 0.0 || W5:1/2-7 c0-0 W6:7/8-38 c0-0 W8:4/6-86 c0-0
+   RB Ty Johnson: g5 tgt 3.0 (10.9%) rec 3.0 ryd 34.8 | car 1.2 (3.8%) rush 2.0 || W5:4/4-72 c0-0 W6:2/2-24 c1-3 W8:3/3-19 c4-4
+   WR Keon Coleman: g7 tgt 3.9 (14.0%) rec 2.9 ryd 41.0 | car 0.0 (0.0%) rush 0.0 || W5:1/2-7 c0-0 W6:4/6-59 c0-0 W8:1/3-4 c0-0
+   WR Josh Palmer: g5 tgt 2.4 (8.1%) rec 0.8 ryd 23.4 | car 0.0 (0.0%) rush 0.0 || W4:1/4-3 c0-0 W6:1/2-37 c0-0 W8:0/1-0 c0-0
+   RB Ray Davis: g6 tgt 0.5 (1.8%) rec 0.5 ryd 6.7 | car 1.8 (6.0%) rush 7.0 || W5:1/1-31 c2-2 W6:1/1-5 c1-4 W8:0/0-0 c6-30
+MIN O: g7 pf 20.0 att 27.6 cmp 17.6 sk 3.0 rush 26.7 drv 11.0 ppd 5.21 neuPass 45.8% 3rd 37.5% PA 34.3% oop 21.5% | att by script {'won8+': [27.0, 2], 'close': [27.8, 5], 'lost8+': [nan, 0]}
+   logs: W1 vGB 39-22 att 24 sk 3 ru 31 | W2 vCHI 9-3 att 20 sk 3 ru 28 | W3 vTB 23-16 att 29 sk 3 ru 23 | W4 vMIA 15-10 att 37 sk 4 ru 28 | W5 vNO 23-13 att 30 sk 2 ru 33 | W7 vIND 16-10 att 24 sk 3 ru 27 | W8 vDET 15-19 att 29 sk 3 ru 17
+BUF D vs: pa 25.9 oppAtt 38.3 sk 2.1 oppRush 24.9 ypc 3.94 blitz 38.3% rushers 4.43 oopForced 17.6% box 6.8 QBrushYds/g 14.1 scr/g 1.4 20+pass/g 4.0 tgtAllowed {'WR': [19.7, 154.0], 'TE': [9.1, 70.6], 'RB': [8.3, 39.7]}
+   QB Kyler Murray: g6 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 4.8 (17.0%) rush 27.8 | att 25.7 pyd 170.3 || W5:0/0-0 c10-51 a30-229 W7:0/0-0 c5-39 a24-150 W8:0/0-0 c4-35 a29-210
+   QB Carson Wentz: g2 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 4.0 (12.9%) rush 2.5 | att 19.5 pyd 138.0 || W1:0/0-0 c5--1 a19-133 W2:0/0-0 c3-6 a20-143
+   RB Aaron Jones: g7 tgt 3.0 (11.6%) rec 2.1 ryd 12.9 | car 15.7 (55.3%) rush 65.4 || W5:3/3-4 c25-113 W7:1/1-0 c8-26 W8:2/2-18 c5-22
+   RB Jordan Mason: g3 tgt 0.7 (2.7%) rec 0.0 ryd 0.0 | car 12.7 (46.9%) rush 49.0 || W1:0/0-0 c15-59 W7:0/2-0 c15-68 W8:0/0-0 c8-20
+   WR Justin Jefferson: g6 tgt 6.7 (27.0%) rec 4.7 ryd 55.8 | car 0.2 (0.6%) rush -1.8 || W5:6/7-79 c1--11 W7:4/7-44 c0-0 W8:5/9-33 c0-0
+   WR Jordan Addison: g6 tgt 5.5 (21.7%) rec 2.7 ryd 41.5 | car 0.3 (1.2%) rush 0.3 || W4:4/6-52 c1--1 W7:2/3-20 c1-3 W8:3/8-66 c0-0
+   TE T.J. Hockenson: g7 tgt 5.3 (20.4%) rec 4.4 ryd 42.1 | car 0.0 (0.0%) rush 0.0 || W5:1/1-7 c0-0 W7:4/5-35 c0-0 W8:4/5-58 c0-0
+   TE Gavin Bartholomew: g3 tgt 2.7 (9.3%) rec 2.3 ryd 18.0 | car 0.0 (0.0%) rush 0.0 || W4:1/1-4 c0-0 W5:5/6-33 c0-0 W7:1/1-17 c0-0
+   RB Demond Claiborne: g4 tgt 0.5 (1.9%) rec 0.5 ryd 2.0 | car 1.5 (5.1%) rush 3.2 || W3:0/0-0 c3-1 W4:0/0-0 c3-12 W5:1/1-6 c0-0
+INJ: BUF Joshua Palmer WR Out; BUF Dion Dawkins OT Questionable; BUF Alec Anderson OT Questionable; BUF Jordan Hancock CB Out; BUF Greg Gaines DT Questionable; MIN Jauan Jennings WR Out; MIN Kyler Murray QB Out; MIN Demond Claiborne RB Out; MIN Jay Ward S Questionable; BUF Tyrell Shavers WR Out; BUF Dorian Strong CB Out; BUF Zane Durant DT Out; MIN Donovan Jackson G Out; MIN Josh Oliver TE Out; MIN Nick Samac C Out; MIN Tyler Batty LB Out; MIN Jamal Adams LB Out
+RH game lines 35-65c: Over 40.5 points 63/38; Over 41.5 points 60/42; Over 42.5 points 57/44; Over 43.5 points 53/48; Over 44.5 points 49/52; Over 45.5 points 46/56; Over 46.5 points 43/58; Over 47.5 points 40/61; Over 48.5 points 38/64; Over 49.5 points 35/67; Minnesota wins by over 1.5 points 36/65; Buffalo wins by over 1.5 points 60/41; Buffalo wins by over 2.5 points 57/44; Buffalo wins by over 3.5 points 47/54; Buffalo wins by over 4.5 points 44/57; Buffalo wins by over 5.5 points 42/59; Buffalo wins by over 6.5 points 39/63; BUF 63/39; MIN 40/61

@@ -1,0 +1,99 @@
+{
+ "game": "CIN @ ATL",
+ "kick": "Sun 8:30 AM CT",
+ "venue": "Madrid, Bernabéu (roof closed or not, no weather factor)",
+ "market": "CIN −3.5, total 52.5. Burrow 36.5 attempts / 25.5 completions; Penix 31.5 / 20. Bijan Robinson 19.5 carries.",
+ "lineup": "Both starting QBs healthy. ATL: Brian Robinson Jr. (RB2) is out, so Bijan's backup is Khalil Herbert; edge James Pearce Jr. back from an eight-game suspension (snap count unknown). CIN: WR3 Andrei Iosivas and TE Erick All out; CB DJ Turner was day-to-day early in the week.",
+ "keys": [
+  {
+   "team": "CIN",
+   "take": "Bijan Robinson's explosive runs. ATL runs on 49.3% of plays (3rd).",
+   "how": "Cincinnati hasn't built its defense to do it: five-plus DBs on 82% of snaps and a light box on a league-high 39.9% of runs. It is betting on taking away the pass and winning the scoreboard.",
+   "gives": "Run lanes. CIN allows 5.1 yards per carry to backs and has allowed nine 20-yard runs (31st).",
+   "counter": "Score early so ATL has to pass. In ATL's Week 6 loss to Chicago, Bijan got 9 carries."
+  },
+  {
+   "team": "ATL",
+   "take": "Tee Higgins in the 10–19-yard window. He leads the NFL in catches and yards on those throws.",
+   "how": "Pressure (41.6% rate, 4th) and single-high coverage (60.7%, 3rd most).",
+   "gives": "One-on-ones outside. ATL allows 9.4 yards per target to outside receivers (26th), and Burrow has the league's lowest pressure rate (31.1%) because he gets it out fast from shotgun.",
+   "counter": "Burrow throws on time to Higgins and Chase. Five of the seven QBs who threw normally against ATL passed for 286–312 yards."
+  }
+ ],
+ "scripts": {
+  "control": "CIN leads. Burrow still throws enough (30 attempts and 292 yards in the Week 7 rout of Baltimore), and Chase Brown gets the closeout carries. ATL has to throw into a defense that holds QBs to 41% completions under pressure, which is Penix's weak spot (28.6% under pressure).",
+  "competitive": "CIN's five close games averaged 41 pass attempts. Burrow's volume is the safest stat on the board, and Bijan gets 18–22 carries.",
+  "reversal": "ATL leads by running into light boxes. Burrow throws more, not less: 54 attempts in the Week 4 loss to JAX and 48 in the Week 8 shootout. Bijan's carries hold up only if ATL is the one leading."
+ },
+ "plays": [
+  {
+   "decision": "Lean",
+   "line": "Joe Burrow 275+ passing yards (Yes)",
+   "price": 54,
+   "why": "ATL's plan to pressure and play single-high runs into the quarterback who is pressured least, and gives Higgins the intermediate one-on-ones he leads the league on.",
+   "support": "Sharp Football (Hribar, Nov 3): ATL single-high 60.7%, Burrow pressured on 31.1% of dropbacks, ATL 26th vs outside WRs.",
+   "sample": "Burrow cleared 275 in 4 of 7 starts this season and 7 of his last 12 dating to 2025. Five of seven QBs who threw normally against ATL topped 285 (Young, Love, Shough, Williams, Purdy).",
+   "counter": "Week 5: 190 yards in a 31–24 win where CIN ran 29 times. A rout can cap him.",
+   "loses": "CIN goes up big early and runs Chase Brown in the second half, or ATL's run game keeps Burrow to nine possessions.",
+   "vs": "Beat 250+ (68¢, needs 70%), which is more likely but thinner on price, and 300+ (40¢), where his 2-of-7 and ATL's 2-of-7 don't support the jump.",
+   "est": [
+    55,
+    65
+   ],
+   "side": "Yes",
+   "be": 56,
+   "payout": 1.85,
+   "books": 51.6,
+   "wedge": 59.3,
+   "base": 55.4,
+   "adj": 5,
+   "ticker": "KXNFLPASSYDS-26NOV08CINATL-CINJBURROW9-275",
+   "cond": "Becomes a final line at 53¢ or less."
+  }
+ ],
+ "likely": [
+  "Burrow 250+",
+  "Burrow 275+",
+  "Higgins 75+"
+ ],
+ "value": [
+  "Joe Burrow 275+ passing yards (Yes) at 54¢ (needs 56%, our number 55–65%)"
+ ],
+ "passed": [
+  {
+   "name": "Tee Higgins 75+ receiving yards (Yes) (53¢)",
+   "why": "Our number (50–60%) doesn't clear the 55% break-even after fees. Same thesis as Burrow's yards, aimed at the receiver ATL's coverage favors. Iosivas being out narrows the target tree.",
+   "move": "A price of 53¢ or less makes it a lean."
+  },
+  {
+   "name": "Bijan Robinson 100+ rush yds (47¢)",
+   "why": "The thesis is real (light boxes, Brian Robinson out), but the price already moved with it, and rushing-yard Yes prices have run about 8 points rich in our backtest.",
+   "move": "Atlanta leading early, or Herbert inactive. Either way he'd get 22+ carries."
+  },
+  {
+   "name": "Drake London 80+ rec yds / No side",
+   "why": "CIN is 31st against slot receivers, but Penix completes 28.6% under pressure and DJ Turner's status is unknown. The two signals cancel.",
+   "move": "DJ Turner inactive would flip this to a Yes lean."
+  },
+  {
+   "name": "Kyle Pitts 40+ rec yds (56¢)",
+   "why": "CIN allows 89 yards a game to TEs, but Pitts has cleared 40 in only 3 of 6 Penix starts.",
+   "move": "A price under 52¢."
+  },
+  {
+   "name": "Chase Brown 55+ rush yds No (54¢)",
+   "why": "The model likes the No, but he cleared 55 in 4 of 7, and ATL just gave up 310 rushing yards.",
+   "move": "None this week."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Sharp Football Analysis — Hribar worksheet (Nov 3)",
+   "u": "https://www.sharpfootballanalysis.com/fantasy/bengals-falcons-week-9-fantasy-football-preview-nfl-worksheet-rich-hribar-2026/amp/"
+  },
+  {
+   "t": "AP via KSAT — Stefanski prepares Falcons for Bengals (Nov 4)",
+   "u": "https://www.ksat.com/sports/2026/11/04/stefanski-prepares-falcons-for-bengals-offense-in-madrid-after-struggles-in-florida-rain/"
+  }
+ ]
+}

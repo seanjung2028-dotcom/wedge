@@ -1,0 +1,84 @@
+{
+ "game": "HOU @ LAC",
+ "kick": "Sun 3:05 PM CT",
+ "venue": "Inglewood, SoFi (covered)",
+ "market": "HOU −6, total 40.5. Stroud 32.5 attempts / 21.5 completions; Herbert 31.5 / 18.5 and 4.5 rushes. Woody Marks 16.5 carries; Hampton 10.5.",
+ "lineup": "HOU RB David Montgomery is out, so Marks is the lead back (Demercado behind him). HOU WR Jaylin Noel and S Reed Blankenship are out. LAC: TE David Njoku out, WR Brenen Thompson and G Kayode Awosika doubtful, and two DBs out. LAC has scored 14.1 points a game.",
+ "keys": [
+  {
+   "team": "HOU",
+   "take": "Herbert's legs, the most reliable part of LAC's offense (26 rushing yards a game, 3–5 scrambles most weeks).",
+   "how": "Rush lanes with contain. HOU forces QBs out of the pocket on 16.4% of dropbacks, the fewest here, and allows 7.9 QB rushing yards a game.",
+   "gives": "Time to throw, but LAC passes on only 37.5% of neutral downs and its receivers rarely win.",
+   "counter": "LAC runs its three backs against a run defense allowing 3.91 yards per carry."
+  },
+  {
+   "team": "LAC",
+   "take": "Nico Collins and C.J. Stroud's intermediate game.",
+   "how": "LAC's defense is fine (25 points allowed a game, 28 pass attempts against). It tries to shorten the game.",
+   "gives": "With LAC's offense this weak, the game script.",
+   "counter": "HOU leads and hands it to Marks."
+  }
+ ],
+ "scripts": {
+  "control": "HOU leads, as expected. LAC has to pass (31.4 attempts a game in its losses), and Herbert's runs depend on pressure that HOU contains rather than collapses.",
+  "competitive": "A low-total (40.5) field-position game. Herbert's designed runs are the variable: 0–3 a game this season, with most of his yards on scrambles.",
+  "reversal": "LAC leads, Herbert throws less, and HOU throws more. Collins' volume rises."
+ },
+ "plays": [
+  {
+   "decision": "Final",
+   "line": "Justin Herbert under 25 rushing yards (No)",
+   "price": 55,
+   "why": "Herbert's rushing comes from scrambles, and HOU is the best defense on the board at keeping QBs in the pocket and holding their runs down.",
+   "support": "HOU allows 7.9 QB rushing yards and 1.0 scrambles a game, both the lowest here. No QB has run for more than 24 against HOU this season (Allen 24, Lawrence 12, Dak 7, Jones 5).",
+   "sample": "Herbert went 25+ in 4 of 7 this year. Against this HOU staff he ran for 37 in Week 17 of 2025, and that's the counterexample to weigh.",
+   "counter": "LAC trailing means more dropbacks, and Herbert is a willing scrambler (5 scrambles in two games this year).",
+   "loses": "One coverage sack avoided becomes a 20-yard scramble, or LAC calls designed runs to make up for a weak passing game.",
+   "vs": "Beat under 20 (No 45¢, needs 47%), which leaves no cushion, and under 30 (No 68¢), which is priced past what his 2 of 7 at 30+ supports.",
+   "est": [
+    59,
+    69
+   ],
+   "side": "No",
+   "be": 57,
+   "payout": 1.82,
+   "books": 56.8,
+   "wedge": 61.5,
+   "base": 59.2,
+   "adj": 5,
+   "ticker": "KXNFLRSHYDS-26NOV08HOULAC-LACJHERBERT10-25",
+   "cond": "Holds as a final line up to 57¢."
+  }
+ ],
+ "likely": [
+  "Herbert under 30 rush",
+  "Herbert under 25 rush"
+ ],
+ "value": [
+  "Justin Herbert under 25 rushing yards (No) at 55¢ (needs 57%, our number 59–69%)"
+ ],
+ "passed": [
+  {
+   "name": "Woody Marks 60+ rush (54¢), either side",
+   "why": "Montgomery out plus the control script points toward 18–20 carries, but he averages 3.7 yards a carry and our backtest leans No. It's a coin flip.",
+   "move": "HOU up two scores at half (live), or a Yes price under 48¢."
+  },
+  {
+   "name": "Nico Collins 70+ rec yds (49¢)",
+   "why": "LAC sees only 28 pass attempts a game. HOU won't need to throw.",
+   "move": "LAC scores first (live)."
+  },
+  {
+   "name": "LAC receivers",
+   "why": "Targets spread over five players on a 37.5% neutral pass rate. No share to project.",
+   "move": "None."
+  }
+ ],
+ "sources": [
+  {
+   "t": "nflverse play-by-play 2025–26 (scrambles vs designed runs, our tables)",
+   "u": "https://github.com/nflverse/nflverse-data/releases"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "game": "BUF @ MIN", "kick": "Mon 7:15 PM CT (MNF)", "venue": "Minneapolis, dome",
+ "market": "BUF −3, total 44.5. Allen 30.5 attempts / 20 completions and 7.5 rushes; Wentz 30.5 / 19.5. James Cook 18.5 carries; Jordan Mason 11.5; Aaron Jones 8.5.",
+ "lineup": "MIN ruled out Kyler Murray (hamstring) on Thursday, so Carson Wentz starts; WR Jauan Jennings is also out. BUF WR Joshua Palmer and CB Jordan Hancock are out; OTs Dion Dawkins and Alec Anderson are questionable. Final actives post Monday about 5:45 PM CT. Re-check before trading.",
+ "branches": "If both BUF tackles sit, MIN's blitz gets home faster, which helps any Allen-under or sack-driven read and hurts Allen's passing.",
+ "keys": [
+  {"team": "MIN", "take": "Allen's off-script plays.", "how": "Pressure on almost every snap. MIN blitzes 72.8% of dropbacks, by far the most in the league, and allows 13.3 points a game, the fewest.", "gives": "Man coverage with defenders' backs to the QB. When the blitz is picked up, a QB who runs gets open grass (Allen scrambled 8 times for 121 yards against LA).", "counter": "BUF runs Cook (20 carries, 101 yards a game) at a defense allowing 4.58 yards per carry, and throws quick passes to Shakir and Kincaid."},
+  {"team": "BUF", "take": "Justin Jefferson. In Wentz's two starts he had 39% and 32% of the targets.", "how": "BUF allows 154 WR yards a game, but opponents throw 38 times a game against BUF because they're trailing.", "gives": "TE work. BUF allows 9.1 TE targets and 70.6 TE yards a game.", "counter": "MIN's run-first approach (45.8% neutral pass rate). Wentz threw only 19–20 times in his two wins."}
+ ],
+ "scripts": {
+  "control": "BUF leads. Wentz throws 30+ times for the first time this season, so Jefferson and Hockenson get more volume, but against the defense that has allowed the most pass attempts. Allen's runs become kneel-downs.",
+  "competitive": "A grinding Monday game with MIN's defense keeping it close. Allen's designed runs in the red zone matter most here.",
+  "reversal": "MIN leads behind its defense, as in Wentz's 39–22 and 9–3 wins. Allen chases against the blitz, his scramble-heavy scenario."
+ },
+ "plays": [
+  {"decision": "Lean", "line": "Josh Allen under 30 rushing yards (No)", "price": 47, "cond": "Only at 47¢ or less, and only if Dawkins plays (a protected pocket means fewer escapes).", "why": "MIN has contained every QB but one, and Allen's big rushing games have been scramble-driven, which needs the blitz to break down.", "support": "QBs facing MIN: Love 0, Caleb 42, Mayfield 6, Willis 11, Shough 0, Jones 13, Goff 2. Only one reached 30.", "sample": "Allen went 30+ in 3 of 7 (72, 121, 30). Four of his seven games were 24 or less.", "counter": "MIN's 72.8% blitz rate creates the exact escape lanes Allen uses. This is the doc's open question: does he cross the line or extend to throw?", "loses": "A 15-yard scramble on third down plus a couple of red-zone keepers. Two plays can do it.", "vs": "Preferred over under 25 (No 39¢), which loses to a normal Allen game, and under 40 (No 67¢), which is priced past what his 2 of 7 at 40+ supports.", "est": [48, 58]}
+ ],
+ "likely": ["Allen under 40 rush (~68%)", "Allen under 30 rush (~53%)"],
+ "value": ["Allen under 30 at 47¢ (needs 49%), a lean only"],
+ "passed": [
+  {"name": "James Cook 80+ rush (53¢), either side", "why": "He's gone 80+ in 5 of 7, but MIN holds lead backs to 4.58 yards per carry and our backtest leans No. They cancel.", "move": "BUF up 10 at half (live)."},
+  {"name": "Carson Wentz under 200 pass yds (No 44¢)", "why": "He threw for 133 and 143 in his starts, but those were MIN-led games on 19–20 attempts, and BUF opponents throw 38 times a game.", "move": "BUF's tackles both out (more sacks, shorter drives)."},
+  {"name": "Justin Jefferson 80+ (50¢)", "why": "His share with Wentz is high, but he has topped 80 once in six games.", "move": "None."},
+  {"name": "T.J. Hockenson 40+ (54¢)", "why": "BUF is soft against TEs (70.6 yards a game), but he went 36 and 29 with Wentz.", "move": "A price of 50¢ or less."}
+ ],
+ "sources": [
+  {"t": "AP via WAFB — Vikings sit Murray, will start Wentz (Nov 5)", "u": "https://www.wafb.com/2026/11/05/vikings-sit-murray-with-hamstring-strain-will-start-wentz-qb-against-bills-monday-night/"},
+  {"t": "Vikings.com — Bills injury report, Week 9", "u": "https://www.vikings.com/news/bills-injury-report-week-9-2026-nfl-season"}
+ ]
+}

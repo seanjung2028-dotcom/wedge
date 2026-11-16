@@ -1,0 +1,456 @@
+season,season_type,game_type,team,week,gsis_id,position,full_name,first_name,last_name,report_primary_injury,report_secondary_injury,report_status,practice_primary_injury,practice_secondary_injury,practice_status,date_modified,espn_status,espn_comment
+2026,REG,REG,ARI,9,00-0041027,RB,Jeremiyah Love,Jeremiyah,Love,,,Out,,,,2026-11-03,Injured Reserve,"Nov 3: Arizona placed Love (ankle) on injured reserve Tuesday, Darren Urban of the Cardinals' official site reports."
+2026,REG,REG,ARI,9,00-0033307,WR,Kendrick Bourne,Kendrick,Bourne,,,Out,,,,2026-11-03,Injured Reserve,"Nov 3: Arizona placed Bourne (tibia) on injured reserve Tuesday, Darren Urban of the Cardinals' official site reports."
+2026,REG,REG,ARI,9,00-0040706,DT,Walter Nolen III,Walter,III,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,ARI,9,00-0038571,G,Jon Gaines II,Jon,II,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,ARI,9,00-0037157,RB,Bam Knight,Bam,Knight,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Head coach Mike LaFleur revealed Monday that Knight is in the concussion protocol following Sunday's overtime win in Dallas, Josh Weinfuss of ESPN.com re"
+2026,REG,REG,ARI,9,00-0038559,WR,Michael Wilson,Michael,Wilson,,,Questionable,,,,2026-11-03,Questionable,"Nov 1: Wilson said after Sunday's 33-30 win at Dallas that he suffered two broken ribs during the contest, Josh Weinfuss of ESPN.com reports."
+2026,REG,REG,ARI,9,00-0041113,OT,Jayden Williams,Jayden,Williams,,,Questionable,,,,2026-11-03,Questionable,"Nov 1: Williams (knee) has been ruled out for the rest of Sunday's game against the Cowboys, Darren Urban of the Cardinals' official site reports."
+2026,REG,REG,ARI,9,00-0038640,WR,Jalen Brooks,Jalen,Brooks,,,Out,,,,2026-11-03,Injured Reserve,Oct 27: The Cardinals placed Brooks (wrist) on injured reserve Tuesday.
+2026,REG,REG,ARI,9,00-0039737,TE,Tip Reiman,Tip,Reiman,,,Out,,,,2026-11-03,Out,"Oct 26: Head coach Mike LaFleur stated he's ""not too sure"" if Reiman (ankle) will play this season, Dani Sureck of the Cardinals' official site reports."
+2026,REG,REG,ARI,9,00-0033553,RB,James Conner,James,Conner,,,Out,,,,2026-11-03,Injured Reserve,"Oct 26: When asked Monday if Conner (foot) will play this season, coach Mike LaFleur said ""potentially,"" Dani Sureck of the Cardinals' official site reports."
+2026,REG,REG,ARI,9,00-0039808,G,Isaiah Adams,Isaiah,Adams,,,Out,,,,2026-11-03,Injured Reserve,"Oct 10: The Cardinals placed Adams (ankle) on injured reserve Saturday, Darren Urban of the team's official site reports."
+2026,REG,REG,ARI,9,00-0038540,OT,Paris Johnson Jr.,Paris,Jr.,,,Out,,,,2026-11-03,Injured Reserve,Oct 6: The Cardinals placed Johnson (biceps) on injured reserve Tuesday.
+2026,REG,REG,ARI,9,00-0037004,TE,Hunter Long,Hunter,Long,,,Out,,,,2026-11-03,Injured Reserve,Oct 6: The Cardinals placed Long (knee) on injured reserve Tuesday.
+2026,REG,REG,ARI,9,00-0040751,CB,Will Johnson,Will,Johnson,,,Out,,,,2026-11-03,Injured Reserve,"Sep 23: The Cardinals placed Johnson (neck) on injured reserve  Wednesday, Darren Urban of the team's official site reports."
+2026,REG,REG,ARI,9,00-0041555,DT,Kaleb Proctor,Kaleb,Proctor,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,ARI,9,00-0037804,DT,Zachary Carter,Zachary,Carter,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: The Cardinals placed Carter (knee) on injured reserve Sunday with a designation to return, Darren Urban of the team's official site reports."
+2026,REG,REG,ARI,9,00-0039921,RB,Trey Benson,Trey,Benson,,,Out,,,,2026-11-03,Injured Reserve,"Aug 25: Benson (knee) reverted to the Cardinals' injured reserve list Tuesday, David Furones of the South Florida Sun Sentinel reports."
+2026,REG,REG,ARI,9,00-0041468,G,Chase Bisontis,Chase,Bisontis,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,ARI,9,00-0037141,S,Joey Blount,Joey,Blount,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,ATL,9,00-0037746,RB,Brian Robinson Jr.,Brian,Jr.,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,ATL,9,00-0036990,LB,Divine Deablo,Divine,Deablo,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,ATL,9,00-0040156,CB,Billy Bowman Jr.,Billy,Jr.,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,ATL,9,00-0033945,DE,Samson Ebukam,Samson,Ebukam,,,Out,,,,2026-11-03,Injured Reserve,"Nov 2: Ebukam (hamstring) has been ruled out for Atlanta's Week 9 matchup versus the Bengals, William McFadden of the team's official site reports."
+2026,REG,REG,ATL,9,00-0041044,WR,Zachariah Branch,Zachariah,Branch,,,Out,,,,2026-11-03,Out,"Nov 2: Coach Kevin Stefanski noted Monday that Branch (hamstring) won't play Sunday against the Bengals, William McFadden of the Falcons' official site reports."
+2026,REG,REG,ATL,9,00-0040687,OL,Cameron Williams,Cameron,Williams,,,Out,,,,2026-11-03,Injured Reserve,"Oct 31: Williams (ankle) will remain on injured reserve and has been ruled out for Sunday's game against the Buccaneers, Tori McElhany of the Falcons' official "
+2026,REG,REG,ATL,9,00-0040432,WR,Beaux Collins,Beaux,Collins,,,Out,,,,2026-11-03,Injured Reserve,"Oct 31: Collins (hip) has been ruled out for Sunday's game against the Buccaneers and will remain on injured reserve, Tori McElhaney of the Falcons' official si"
+2026,REG,REG,ATL,9,00-0041484,DT,Anterio Thompson,Anterio,Thompson,,,Out,,,,2026-11-03,Out,Oct 30: Thompson posted on social media this week that he was diagnosed with a genetic mutation on his spinal cord in early May and indicated that he was told h
+2026,REG,REG,ATL,9,00-0039842,OT,Michael Jerrell,Michael,Jerrell,,,Out,,,,2026-11-03,Injured Reserve,"Oct 24: The Falcons placed Jerrell (biceps) on injured reserve Saturday, Tori McElhaney of the team's official site reports."
+2026,REG,REG,ATL,9,00-0038580,LB,Yasir Abdullah,Yasir,Abdullah,,,Out,,,,2026-11-03,Injured Reserve,"Oct 10: The Falcons placed Abdullah (hamstring) on injured reserve Saturday, Tori McElhaney of the team's official site reports."
+2026,REG,REG,ATL,9,00-0034371,DT,Da'Shawn Hand,Da'Shawn,Hand,,,Out,,,,2026-11-03,Injured Reserve,"Sep 16: The Falcons placed Hand (quadriceps) on injured reserve Wednesday, William McFadden of the team's official site reports."
+2026,REG,REG,ATL,9,00-0036984,RB,Trey Sermon,Trey,Sermon,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,ATL,9,00-0033752,OT,Storm Norton,Storm,Norton,,,Out,,,,2026-11-03,Out,
+2026,REG,REG,ATL,9,00-0039370,LB,JD Bertrand,JD,Bertrand,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: The Falcons placed Bertrand (undisclosed) on injured reserve Monday, Will McFadden of the team's official site reports."
+2026,REG,REG,ATL,9,00-0040577,LB,Jalon Walker,Jalon,Walker,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,ATL,9,00-0037808,LB,DeAngelo Malone,DeAngelo,Malone,,,Out,,,,2026-11-03,Out,"Aug 4: The Falcons placed Malone (undisclosed) on the reserve/PUP list Tuesday, Will McFadden of the team's official site reports."
+2026,REG,REG,BAL,9,00-0040074,PK,Tyler Loop,Tyler,Loop,,,Out,,,,2026-11-03,Injured Reserve,Nov 3: The Ravens placed Loop (groin) on injured reserve Tuesday.
+2026,REG,REG,BAL,9,00-0035993,QB,Tyler Huntley,Tyler,Huntley,,,Doubtful,,,,2026-11-03,Doubtful,"Nov 3: Ravens head coach Jesse Minter said Tuesday that Huntley (toe) could be a candidate for injured reserve, Sam Cohn of The Baltimore Sunreports."
+2026,REG,REG,BAL,9,00-0036302,S,Jaylinn Hawkins,Jaylinn,Hawkins,,,Questionable,,,,2026-11-03,Questionable,Nov 2: Hawkins (knee) was estimated as a non-participant on Monday's practice reports.
+2026,REG,REG,BAL,9,00-0039233,OT,Roger Rosengarten,Roger,Rosengarten,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,BAL,9,00-0036369,G,John Simpson,John,Simpson,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,BAL,9,00-0030070,DT,John Jenkins,John,Jenkins,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,BAL,9,00-0034796,QB,Lamar Jackson,Lamar,Jackson,,,Out,,,,2026-11-03,Out,Nov 1: Ravens head coach Jesse Minter said after Sunday's 36-10 loss to the Bills that Jackson will undergo surgery to address his right thumb injury and will b
+2026,REG,REG,BAL,9,00-0040888,RB,Adam Randall,Adam,Randall,,,Out,,,,2026-11-03,Injured Reserve,"Nov 1: Randall (neck) wasn't activated from injured reserve Saturday and won't be available for Sunday's game against the Bills, Jeff Zrebiec of The Athletic re"
+2026,REG,REG,BAL,9,00-0038505,LB,Tavius Robinson,Tavius,Robinson,,,Out,,,,2026-11-03,Injured Reserve,Oct 24: The Ravens placed Robinson (pectoral) on injured reserve Saturday.
+2026,REG,REG,BAL,9,00-0034798,TE,Durham Smythe,Durham,Smythe,,,Out,,,,2026-11-03,Injured Reserve,"Oct 7: The Ravens placed Smythe (Achilles) on their injured reserve list Wednesday, Ryan Mink of the Ravens' official site reports."
+2026,REG,REG,BAL,9,00-0033901,C,Ethan Pocic,Ethan,Pocic,,,Out,,,,2026-11-03,Injured Reserve,Oct 3: Baltimore placed Pocic (knee) on injured reserve Saturday.
+2026,REG,REG,BAL,9,00-0038629,G,Jovaughn Gwyn,Jovaughn,Gwyn,,,Out,,,,2026-11-03,Injured Reserve,Oct 3: The Ravens moved Gwyn (ankle) to injured reserve Saturday.
+2026,REG,REG,BAL,9,00-0040073,CB,Bilhal Kone,Bilhal,Kone,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,BAL,9,00-0036215,C,Danny Pinter,Danny,Pinter,,,Out,,,,2026-11-03,Injured Reserve,"Aug 26: Pinter (knee) was placed on injured reserve by the Ravens on Wednesday, Clifton Brown of the team's official website reports."
+2026,REG,REG,BAL,9,00-0040988,S,Jahquez Robinson,Jahquez,Robinson,,,Out,,,,2026-11-03,Injured Reserve,"Aug 19: Robinson (undisclosed) reverted to the Ravens' injured reserve list Wednesday, Aaron Wilson of KPRC 2 Houston reports."
+2026,REG,REG,BAL,9,00-0037327,QB,Skylar Thompson,Skylar,Thompson,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,BUF,9,00-0035667,DT,Greg Gaines,Greg,Gaines,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,BUF,9,00-0037034,CB,Dee Alford,Dee,Alford,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,BUF,9,00-0036976,OT,Spencer Brown,Spencer,Brown,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,BUF,9,00-0034827,WR,DJ Moore,DJ,Moore,,,Questionable,,,,2026-11-03,Questionable,"Nov 1: Moore indicated following Sunday's 36-10 win over the Ravens that he's okay in the wake of his late-game exit due to a knee issue, Cameron Wolfe of NFL N"
+2026,REG,REG,BUF,9,,WR,Joshua Palmer,Joshua,Palmer,,,Questionable,,,,2026-11-03,Questionable,Nov 1: Palmer (hamstring) has been ruled out for the rest of Sunday's game against the Ravens.
+2026,REG,REG,BUF,9,00-0038679,WR,Tyrell Shavers,Tyrell,Shavers,,,Out,,,,2026-11-03,Out,"Oct 28: The Bills designated Shavers (knee) to return from the reserve/PUP list Wednesday, but he will not play against the Ravens on Sunday, Cameron Wolfe of N"
+2026,REG,REG,BUF,9,00-0040192,CB,Jordan Hancock,Jordan,Hancock,,,Out,,,,2026-11-03,Injured Reserve,Sep 25: The Bills placed Hancock (hamstring) on injured reserve Friday.
+2026,REG,REG,BUF,9,00-0040197,CB,Dorian Strong,Dorian,Strong,,,Out,,,,2026-11-03,Out,Sep 8: nfi-r
+2026,REG,REG,BUF,9,00-0041091,DT,Zane Durant,Zane,Durant,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,CAR,9,00-0039344,RB,Jonathon Brooks,Jonathon,Brooks,,,Out,,,,2026-11-03,Injured Reserve,"Nov 3: Brooks (core) was seen working off to the side during the Panthers' unofficial practice Tuesday, Joe Person of The Athletic reports."
+2026,REG,REG,CAR,9,00-0040541,G,Torricelli Simpkins III,Torricelli,III,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,CAR,9,00-0036417,G,Damien Lewis,Damien,Lewis,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,CAR,9,00-0036903,DT,Bobby Brown III,Bobby,III,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,CAR,9,00-0041063,CB,Will Lee III,Will,III,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Lee (hamstring) is day to day but should have a chance to ""test"" his injury this week, Joe Person of The Athletic reports."
+2026,REG,REG,CAR,9,00-0036934,LB,Jaelan Phillips,Jaelan,Phillips,,,Questionable,,,,2026-11-03,Questionable,Nov 2: Panthers head coach Dave Canales said Monday that Phillips (hamstring) is trending in the right direction and considered day-to-day heading into Sunday's
+2026,REG,REG,CAR,9,00-0039342,WR,Xavier Legette,Xavier,Legette,,,Out,,,,2026-11-03,Injured Reserve,"Nov 2: Panthers head coach Dave Canales said Monday that Legette (knee) will ""potentially"" be designated for return from injured reserve this week, Joe Person o"
+2026,REG,REG,CAR,9,00-0039242,C,Corey Bullock,Corey,Bullock,,,Questionable,,,,2026-11-03,Questionable,"Oct 30: Bullock (quadriceps) exited Thursday's 27-19 loss to Green Bay and did not return, Sheena Quick of Fox Sports Radio 1340 reports."
+2026,REG,REG,CAR,9,00-0038101,CB,Akayleb Evans,Akayleb,Evans,,,Out,,,,2026-11-03,Injured Reserve,"Oct 29: Evans (triceps) was placed on injured reserve by the Panthers on Thursday, Darin Gantt of the team's official website reports."
+2026,REG,REG,CAR,9,00-0033284,OT,Taylor Moton,Taylor,Moton,,,Out,,,,2026-11-03,Injured Reserve,Oct 26: The Panthers placed Moton (lower leg) on injured reserve Monday.
+2026,REG,REG,CAR,9,00-0038791,LB,Thomas Incoom,Thomas,Incoom,,,Out,,,,2026-11-03,Injured Reserve,"Oct 24: The Panthers placed Incoom (calf) on injured reserve Saturday, Darin Gantt of the team's official site reports."
+2026,REG,REG,CAR,9,00-0040174,DT,Cam Jackson,Cam,Jackson,,,Out,,,,2026-11-03,Injured Reserve,"Oct 13: The Panthers placed Jackson (shoulder) on injured reserve Tuesday, Darin Gantt of the team's official site reports."
+2026,REG,REG,CAR,9,00-0037229,OT,Ikem Ekwonu,Ikem,Ekwonu,,,Out,,,,2026-11-03,Out,"Oct 5: Coach Dave Canales said Monday that Ekwonu (knee) is still a considerable time away from returning to action, Mike Kaye of ESPN reports."
+2026,REG,REG,CAR,9,00-0035277,CB,Mike Jackson,Mike,Jackson,,,Out,,,,2026-11-03,Injured Reserve,"Sep 30: Head coach Dave Canales said Wednesday that Jackson (groin) underwent core-muscle surgery and will be sidelined about eight weeks, Joe Person of The Ath"
+2026,REG,REG,CAR,9,00-0036944,CB,Jaycee Horn,Jaycee,Horn,,,Out,,,,2026-11-03,Injured Reserve,Sep 30: The Panthers placed Horn (quadriceps) on injured reserve Wednesday.
+2026,REG,REG,CAR,9,00-0036968,G,Brady Christensen,Brady,Christensen,,,Out,,,,2026-11-03,Injured Reserve,"Sep 1: The Panthers placed Christensen (hamstring) on injured reserve Tuesday, Darin Gantt of the team's official site reports."
+2026,REG,REG,CAR,9,00-0041047,WR,Chris Brazzell II,Chris,II,,,Out,,,,2026-11-03,Injured Reserve,Jul 31: The Panthers placed Brazzell (knee) on injured reserve Friday.
+2026,REG,REG,CAR,9,00-0040746,LB,Nic Scourton,Nic,Scourton,,,Out,,,,2026-11-03,Injured Reserve,Jul 24: The Panthers placed Scourton (knee) on injured reserve Friday.
+2026,REG,REG,CHI,9,00-0040236,RB,Kyle Monangai,Kyle,Monangai,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,CHI,9,00-0034320,DT,Kentavius Street,Kentavius,Street,,,Questionable,,,,2026-11-03,Questionable,Nov 2: Street (knee) will not return to Monday night's game against the Seahawks.
+2026,REG,REG,CHI,9,00-0031583,DE,Grady Jarrett,Grady,Jarrett,,,Questionable,,,,2026-11-03,Questionable,Nov 2: Jarrett (groin) is doubtful to return to Monday night's game against the Seahawks.
+2026,REG,REG,CHI,9,00-0041060,CB,Malik Muhammad II,Malik,II,,,Questionable,,,,2026-11-03,Questionable,Nov 2: Muhammad (toe) is inactive for Monday's game against the Seahawks.
+2026,REG,REG,CHI,9,00-0038136,S,Coby Bryant,Coby,Bryant,,,Out,,,,2026-11-03,Injured Reserve,"Oct 28: Coach Ben Johnson said Wednesday that Bryant (knee) will start running again in the ""near future,"" Courtney Cronin of ESPN.com reports."
+2026,REG,REG,CHI,9,00-0036290,TE,Cole Kmet,Cole,Kmet,,,Out,,,,2026-11-03,Injured Reserve,Oct 23: The Bears placed Kmet (knee) on injured reserve Friday.
+2026,REG,REG,CHI,9,00-0036480,DE,Dayo Odeyingbo,Dayo,Odeyingbo,,,Out,,,,2026-11-03,Injured Reserve,Oct 17: The Bears placed Odeyingbo (quadriceps) on injured reserve Saturday.
+2026,REG,REG,CHI,9,00-0037081,OT,Braxton Jones,Braxton,Jones,,,Out,,,,2026-11-03,Injured Reserve,Oct 3: The Bears placed Jones (knee) on injured reserve Saturday.
+2026,REG,REG,CHI,9,00-0037395,CB,Dallis Flowers,Dallis,Flowers,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,CHI,9,00-0041170,TE,Hayden Large,Hayden,Large,,,Out,,,,2026-11-03,Injured Reserve,Sep 1: The Bears placed Large (undisclosed) on injured reserve Tuesday.
+2026,REG,REG,CHI,9,00-0040167,LB,Ruben Hyppolite II,Ruben,II,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: Hyppolite (shoulder) reverted to Chicago's injured reserve Monday, per the NFL's transaction log."
+2026,REG,REG,CHI,9,00-0036634,LB,Tony Fields II,Tony,II,,,Out,,,,2026-11-03,Injured Reserve,Aug 31: The Bears placed Fields (undisclosed) on injured reserve Sunday with a designation to return.
+2026,REG,REG,CHI,9,00-0037329,RB,Brittain Brown,Brittain,Brown,,,Out,,,,2026-11-03,Injured Reserve,Aug 31: Brown (undisclosed) was placed on injured reserve by the Bears on Sunday.
+2026,REG,REG,CHI,9,00-0037544,LB,Nephi Sewell,Nephi,Sewell,,,Out,,,,2026-11-03,Injured Reserve,Aug 25: The Bears placed Sewell (concussion) on injured reserve Tuesday.
+2026,REG,REG,CHI,9,00-0037031,TE,Nikola Kalinic,Nikola,Kalinic,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,CIN,9,00-0041546,DE,Cashius Howell,Cashius,Howell,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,CIN,9,00-0036231,S,Kyle Dugger,Kyle,Dugger,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,CIN,9,00-0038549,CB,DJ Turner II,DJ,II,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Turner (ankle) is considered day-to-day, NFL reporter Jordan Schultz reported Monday."
+2026,REG,REG,CIN,9,00-0039752,DE,Cedric Johnson,Cedric,Johnson,,,Questionable,,,,2026-11-03,Questionable,Nov 1: Johnson (ankle) has been ruled out for the rest of Sunday's game against the Falcons.
+2026,REG,REG,CIN,9,00-0038619,WR,Andrei Iosivas,Andrei,Iosivas,,,Out,,,,2026-11-03,Injured Reserve,"Oct 29: Iosivas (thumb) is making good progress in his rehab, Mike Petraglia of CLNSCincy.com reports."
+2026,REG,REG,CIN,9,00-0039814,TE,Erick All Jr.,Erick,Jr.,,,Out,,,,2026-11-03,Injured Reserve,"Oct 28: Bengals head coach Zac Taylor confirmed Wednesday that All has been diagnosed with a torn ACL in his right knee and will require season-ending surgery, "
+2026,REG,REG,CIN,9,00-0034613,TE,Tanner Hudson,Tanner,Hudson,,,Out,,,,2026-11-03,Injured Reserve,Oct 19: Hudson (pectoral) was placed on injured reserve by the Bengals on Monday.
+2026,REG,REG,CIN,9,00-0039313,LB,Swayze Bozeman,Swayze,Bozeman,,,Out,,,,2026-11-03,Injured Reserve,"Oct 12: The Bengals placed Bozeman on injured reserve Monday due to a fractured forearm, Ben Baby of ESPN.com reports."
+2026,REG,REG,CIN,9,00-0034446,CB,Jalen Davis,Jalen,Davis,,,Out,,,,2026-11-03,Injured Reserve,Sep 29: The Bengals placed Davis (hamstring) on injured reserve Tuesday.
+2026,REG,REG,CIN,9,00-0041098,OT,Brian Parker II,Brian,II,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,CIN,9,00-0037307,CB,Ja'Sir Taylor,Ja'Sir,Taylor,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: The Bengals placed Taylor (undisclosed) on injured reserve Sunday with a designation to return, Geoff Hobson of the team's official site reports."
+2026,REG,REG,CLE,9,00-0037832,DT,Kalia Davis,Kalia,Davis,,,Out,,,,2026-11-03,Injured Reserve,"Oct 27: Davis (quadriceps) will spend the rest of the 2026 season on injured reserve after his 21-day practice window expired Tuesday, Aaron Wilson of KPRC 2 Ho"
+2026,REG,REG,CLE,9,00-0036953,G,Teven Jenkins,Teven,Jenkins,,,Out,,,,2026-11-03,Injured Reserve,Oct 24: The Browns placed Jenkins (back) on injured reserve Saturday.
+2026,REG,REG,CLE,9,00-0040466,RB,Raheim Sanders,Raheim,Sanders,,,Out,,,,2026-11-03,Injured Reserve,Oct 13: The Browns placed Sanders (hip) on injured reserve Tuesday.
+2026,REG,REG,CLE,9,00-0036915,LB,Jeremiah Owusu-Koramoah,Jeremiah,Owusu-Koramoah,,,Out,,,,2026-11-03,Out,
+2026,REG,REG,CLE,9,00-0039878,LB,Edefuan Ulofoshio,Edefuan,Ulofoshio,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: Ulofoshio (biceps) reverted to the Browns' IR on Monday, per the NFL's transaction log."
+2026,REG,REG,CLE,9,00-0039764,DT,Elijah Chatman,Elijah,Chatman,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: The Browns reverted Chatman (quadriceps) to IR on Monday, per the NFL's transaction log."
+2026,REG,REG,CLE,9,00-0041087,TE,Joe Royer,Joe,Royer,,,Out,,,,2026-11-03,Out,"Aug 30: The Browns placed Royer (personal) on the reserve/non-football illness list Sunday, Scott Petrak of the Elyria Chronicle-Telegram reports."
+2026,REG,REG,CLE,9,00-0037251,DE,Alex Wright,Alex,Wright,,,Out,,,,2026-11-03,Injured Reserve,"Aug 23: The Browns placed Wright on injured reserve Sunday due to a ruptured Achilles, Adam Schefter of ESPN reports."
+2026,REG,REG,CLE,9,00-0038105,CB,Damarri Mathis,Damarri,Mathis,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,DAL,9,00-0038625,LB,Dee Winters,Dee,Winters,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,DAL,9,00-0038547,TE,Luke Schoonmaker,Luke,Schoonmaker,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,DAL,9,00-0037801,WR,KaVontae Turpin,KaVontae,Turpin,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,DAL,9,00-0035227,S,P.J. Locke,P.J.,Locke,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Locke is in the league's concussion protocol after being injured in Sunday's 33-30 overtime loss to the Cardinals, Patrik Walker of the Cowboys' official"
+2026,REG,REG,DAL,9,00-0040865,S,Caleb Downs,Caleb,Downs,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Downs is in the league's concussion protocol after being injured in Sunday's 33-30 overtime loss to the Cardinals, Patrik Walker of the Cowboys' official"
+2026,REG,REG,DAL,9,00-0041537,LB,Malachi Lawrence,Malachi,Lawrence,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Lawrence suffered an ankle injury in Sunday's 33-30 overtime loss to the Cardinals, Patrik Walker of the Cowboys' official site reports."
+2026,REG,REG,DAL,9,00-0038041,TE,Jake Ferguson,Jake,Ferguson,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Head coach Brian Schottenheimer said Monday that Ferguson (ankle) has a chance to play Sunday at Indianapolis, Jon Machota of The Athletic reports."
+2026,REG,REG,DAL,9,00-0033093,DT,Jonathan Bullard,Jonathan,Bullard,,,Out,,,,2026-11-03,Injured Reserve,Oct 29: Bullard (calf) was designated to return from injured reserve by the Cowboys on Thursday.
+2026,REG,REG,DAL,9,00-0039352,LB,Marist Liufau,Marist,Liufau,,,Out,,,,2026-11-03,Injured Reserve,Oct 25: Liufau (forearm) has been downgraded from questionable to out ahead of Monday night's game against the Eagles.
+2026,REG,REG,DAL,9,00-0035705,S,Jalen Thompson,Jalen,Thompson,,,Out,,,,2026-11-03,Injured Reserve,"Sep 30: The Cowboys placed Thompson (hamstring) on injured reserve Wednesday, Tommy Yarrish of the Cowboys' official site reports."
+2026,REG,REG,DAL,9,00-0037563,RB,Malik Davis,Malik,Davis,,,Out,,,,2026-11-03,Injured Reserve,"Sep 12: The Cowboys placed Davis (hip) on injured reserve Saturday, Adam Schefter of ESPN reports."
+2026,REG,REG,DAL,9,00-0040875,CB,Devin Moore,Devin,Moore,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,DAL,9,00-0036295,C,Matt Hennessy,Matt,Hennessy,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,DAL,9,00-0040933,DT,Kelvin Gilliam Jr.,Kelvin,Jr.,,,Out,,,,2026-11-03,Injured Reserve,"Aug 25: Gilliam (triceps) reverted to Dallas' injured reserve Tuesday, Tommy Yarrish of the team's official site reports."
+2026,REG,REG,DAL,9,00-0038735,TE,Princeton Fant,Princeton,Fant,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,DEN,9,00-0036564,S,Talanoa Hufanga,Talanoa,Hufanga,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,DEN,9,00-0036221,S,Brandon Jones,Brandon,Jones,,,Questionable,,,,2026-11-03,Questionable,"Nov 1: Jones (hamstring) has been ruled out for the rest of Sunday's contest against the Chiefs, Parker Gabriel of The Denver Post reports."
+2026,REG,REG,DEN,9,00-0039371,CB,Kris Abrams-Draine,Kris,Abrams-Draine,,,Questionable,,,,2026-11-03,Questionable,"Nov 1: Abrams-Draine (ankle) is questionable to return to Sunday's contest versus the Chiefs, Parker Gabriel of The Denver Post reports."
+2026,REG,REG,DEN,9,00-0040730,RB,RJ Harvey,RJ,Harvey,,,Out,,,,2026-11-03,Injured Reserve,"Oct 31: The Broncos placed Harvey (knee) on injured reserve Saturday, Ian Rapoport of NFL Network reports."
+2026,REG,REG,DEN,9,00-0037085,RB,Tyler Badie,Tyler,Badie,,,Out,,,,2026-11-03,Injured Reserve,"Oct 24: The Broncos placed Badie (thumb) on injured reserve Saturday, Aric DiLalla of the team's official site reports."
+2026,REG,REG,DEN,9,00-0039809,LB,Jonah Elliss,Jonah,Elliss,,,Out,,,,2026-11-03,Injured Reserve,"Oct 24: The Broncos placed Elliss (ankle) on injured reserve Saturday, Aric DiLalla of the team's official site reports."
+2026,REG,REG,DEN,9,00-0040134,WR,Pat Bryant,Pat,Bryant,,,Out,,,,2026-11-03,Injured Reserve,Oct 9: Bryant (ankle) was placed on the Broncos' injured reserve Friday.
+2026,REG,REG,DEN,9,00-0039438,G,Nick Gargiulo,Nick,Gargiulo,,,Out,,,,2026-11-03,Out,"Aug 31: Gargiulo (knee) was moved to the reserve/PUP list by the Broncos on Sunday, Aric DiLalla of the team's official site reports."
+2026,REG,REG,DEN,9,00-0039568,OT,Frank Crum,Frank,Crum,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: Crum (undisclosed) was placed on injured reserve with a designation to return by the Broncos on Sunday, Aric DiLalla of the team's official site reports"
+2026,REG,REG,DEN,9,00-0040240,TE,Caleb Lohner,Caleb,Lohner,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: Lohner (lower body) was placed on injured reserve by the Broncos on Sunday with a designation to return, Aric DiLalla of the team's official website rep"
+2026,REG,REG,DEN,9,00-0039565,LB,Levelle Bailey,Levelle,Bailey,,,Out,,,,2026-11-03,Injured Reserve,"Aug 21: Bailey (leg) reverted to the Broncos' injured-reserve list Friday, Parker Gabriel of The Denver Post reports."
+2026,REG,REG,DEN,9,00-0037303,DE,Matt Henningsen,Matt,Henningsen,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,DEN,9,00-0035686,C,Michael Deiter,Michael,Deiter,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,DET,9,00-0037667,S,Kerby Joseph,Kerby,Joseph,,,Out,,,,2026-11-03,Out,"Nov 3: Lions head coach Dan Campbell said Tuesday that Joseph (knee) will not play in Week 9 against the Dolphins, but is expected to see scout-team reps, Nolan"
+2026,REG,REG,DET,9,00-0041442,LB,Jimmy Rolder,Jimmy,Rolder,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,DET,9,00-0034384,CB,D.J. Reed,D.J.,Reed,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Reed (hip) is not expected to practice Wednesday, Nolan Bianchi of The Detroit News reports."
+2026,REG,REG,DET,9,00-0038896,RB,Jacob Saylors,Jacob,Saylors,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Saylors (neck) is not expected to practice Wednesday, Nolan Bianchi of The Detroit News reports."
+2026,REG,REG,DET,9,00-0037297,C,Cade Mays,Cade,Mays,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Mays sustained a low-ankle sprain during Detroit's win over the Vikings on Sunday, Jeremy Fowler of ESPN reports."
+2026,REG,REG,DET,9,00-0039018,LB,Jack Campbell,Jack,Campbell,,,Doubtful,,,,2026-11-03,Doubtful,"Nov 2: The Lions announced Monday that ""preliminary indications are positive"" for Campbell (neck), who continues to rest and recover at a Detroit-area hospital."
+2026,REG,REG,DET,9,00-0039141,S,Brian Branch,Brian,Branch,,,Questionable,,,,2026-11-03,Questionable,Nov 1: Branch (concussion) has been ruled out for the rest of Sunday's game against the Vikings.
+2026,REG,REG,DET,9,00-0036335,LB,DJ Wonnum,DJ,Wonnum,,,Questionable,,,,2026-11-03,Questionable,Nov 1: Wonnum (concussion) has been ruled out for the rest of Sunday's game against the Vikings.
+2026,REG,REG,DET,9,00-0037197,RB,Isiah Pacheco,Isiah,Pacheco,,,Out,,,,2026-11-03,Injured Reserve,"Oct 30: Lions coach Dan Campbell said Friday that Pacheco (back) has a chance to return in late December, Justin Rogers of DetroitFootball.net reports."
+2026,REG,REG,DET,9,00-0036272,G,Ben Bartch,Ben,Bartch,,,Out,,,,2026-11-03,Injured Reserve,Oct 17: The Lions placed Bartch (foot) on injured reserve Friday.
+2026,REG,REG,DET,9,00-0035707,LB,Devin White,Devin,White,,,Out,,,,2026-11-03,Injured Reserve,Oct 16: The Lions placed White (forearm) on injured reserve Friday.
+2026,REG,REG,DET,9,00-0035544,WR,Tom Kennedy,Tom,Kennedy,,,Out,,,,2026-11-03,Injured Reserve,Oct 16: The Lions placed Kennedy (knee) on injured reserve Friday.
+2026,REG,REG,DET,9,00-0039660,S,Thomas Harper,Thomas,Harper,,,Out,,,,2026-11-03,Injured Reserve,Sep 26: The Lions placed Harper (ankle) on injured reserve Saturday.
+2026,REG,REG,DET,9,00-0034377,CB,Avonte Maddox,Avonte,Maddox,,,Out,,,,2026-11-03,Injured Reserve,Sep 22: The Lions placed Maddox (foot) on injured reserve Tuesday.
+2026,REG,REG,DET,9,00-0036926,DE,Payton Turner,Payton,Turner,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,DET,9,00-0039362,OT,Giovanni Manu,Giovanni,Manu,,,Out,,,,2026-11-03,Out,Aug 31: The Lions moved Manu (knee) to the reserve/non-football injury list Sunday.
+2026,REG,REG,DET,9,00-0037281,LB,Damone Clark,Damone,Clark,,,Out,,,,2026-11-03,Injured Reserve,Aug 25: Detroit placed Clark (undisclosed) on its injured reserve list Tuesday.
+2026,REG,REG,DET,9,00-0041446,WR,Kendrick Law,Kendrick,Law,,,Out,,,,2026-11-03,Injured Reserve,Jun 17: The Lions placed Law (knee) on the reserve/injured list Wednesday.
+2026,REG,REG,GB,9,00-0037076,G,Sean Rhyan,Sean,Rhyan,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,GB,9,00-0034431,LB,Zaire Franklin,Zaire,Franklin,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,GB,9,00-0039819,OT,Travis Glover,Travis,Glover,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,GB,9,00-0038124,WR,Christian Watson,Christian,Watson,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Packers passing game coordinator Jason Vrable said Monday that Watson (ribs) is sore but ""doing great,"" Matt Schneidman of The Athletic reports."
+2026,REG,REG,GB,9,00-0036932,DE,Micah Parsons,Micah,Parsons,,,Out,,,,2026-11-03,Out,"Nov 2: Head coach Matt LaFleur said Monday that the Packers' ""intention"" is for Parsons (knee) to resume practicing in Week 9, Weston Hodkiewicz of the team's o"
+2026,REG,REG,GB,9,00-0039817,C,Jacob Monk,Jacob,Monk,,,Out,,,,2026-11-03,Injured Reserve,Oct 26: The Packers placed Monk (quadriceps) on injured reserve Monday.
+2026,REG,REG,GB,9,00-0039144,TE,Luke Musgrave,Luke,Musgrave,,,Out,,,,2026-11-03,Out,"Oct 22: Packers head coach Matt Lafleur said Thursday it's ""tough to say"" whether Musgrave (neck) plays this season, Weston Hodkiewicz of the Packers' official "
+2026,REG,REG,GB,9,00-0037094,DT,Jonathan Ford,Jonathan,Ford,,,Out,,,,2026-11-03,Injured Reserve,Oct 17: The Packers placed Ford (calf) on injured reserve Saturday.
+2026,REG,REG,GB,9,00-0033109,DT,Javon Hargrave,Javon,Hargrave,,,Out,,,,2026-11-03,Injured Reserve,Oct 17: The Packers placed Hargrave (Achilles) on injured reserve Saturday.
+2026,REG,REG,GB,9,00-0038090,WR,Skyy Moore,Skyy,Moore,,,Out,,,,2026-11-03,Injured Reserve,Oct 17: The Packers placed Moore (ankle) on injured reserve Saturday.
+2026,REG,REG,GB,9,00-0038685,RB,Chris Brooks,Chris,Brooks,,,Out,,,,2026-11-03,Injured Reserve,Oct 10: The Packers placed Brooks (ankle) on injured reserve Saturday.
+2026,REG,REG,GB,9,00-0039850,LB,Edgerrin Cooper,Edgerrin,Cooper,,,Out,,,,2026-11-03,Injured Reserve,Oct 6: Cooper (Achilles) was placed on injured reserve by the Packers on Tuesday.
+2026,REG,REG,GB,9,00-0040016,DT,Warren Brinson,Warren,Brinson,,,Out,,,,2026-11-03,Injured Reserve,Oct 3: Green Bay placed Brinson (calf/groin) on injured reserve Saturday.
+2026,REG,REG,GB,9,00-0039146,WR,Jayden Reed,Jayden,Reed,,,Out,,,,2026-11-03,Injured Reserve,"Sep 30: The Packers are expected to place Reed (neck) on injured reserve Wednesday, Adam Schefter of ESPN reports."
+2026,REG,REG,GB,9,00-0037817,OT,Zach Bako-Bewele,Zach,Bako-Bewele,,,Out,,,,2026-11-03,Injured Reserve,"Sep 28: The Packers placed Bako-Bewele (knee) on injured reserve Monday, Adam Schefter of ESPN reports."
+2026,REG,REG,GB,9,00-0040012,DE,Collin Oliver,Collin,Oliver,,,Out,,,,2026-11-03,Injured Reserve,"Sep 1: Oliver is dealing with Achilles and calf injuries. and is considered week-to-week, Weston Hodkiewicz of the Packers' official site reports."
+2026,REG,REG,GB,9,00-0039936,TE,Thomas Yassmin,Thomas,Yassmin,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: Green Bay reverted Yassmin (undisclosed) to injured reserve Monday, per the NFL's transaction log."
+2026,REG,REG,GB,9,00-0040033,S,Johnathan Baldwin II,Johnathan,II,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,HOU,9,,S,Reed Blankenship,Reed,Blankenship,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Blankenship (concussion/hand) underwent surgery on his left hand in October, Jonathan M. Alexander of the Houston Chronicle reports."
+2026,REG,REG,HOU,9,,RB,David Montgomery,David,Montgomery,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Texans head coach DeMeco Ryans said Monday that he has ""no significant update"" on the status of Montgomery (groin) heading into a Week 9 matchup with the"
+2026,REG,REG,HOU,9,,WR,Jaylin Noel,Jaylin,Noel,,,Out,,,,2026-11-03,Injured Reserve,"Oct 28: Noel, who was placed on injured reserve earlier Wednesday, is expected to require surgery to address his toe injury and will miss the remainder of the s"
+2026,REG,REG,HOU,9,,S,Jalen Pitre,Jalen,Pitre,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,HOU,9,,OT,Blake Fisher,Blake,Fisher,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,HOU,9,,LB,Jake Hummel,Jake,Hummel,,,Out,,,,2026-11-03,Injured Reserve,"Oct 20: Hummel isn't expected to resume practicing this week while he continues to recover from groin surgery, Aaron Wilson of KPRC 2 Houston reports."
+2026,REG,REG,HOU,9,,CB,Jaylin Smith,Jaylin,Smith,,,Out,,,,2026-11-03,Injured Reserve,Oct 6: Smith (hamstring) was placed on injured reserve by the Texans on Tuesday.
+2026,REG,REG,HOU,9,,RB,British Brooks,British,Brooks,,,Out,,,,2026-11-03,Injured Reserve,Oct 2: Brooks (hamstring) was placed on injured reserve Friday.
+2026,REG,REG,HOU,9,,DT,Mario Edwards Jr.,Mario,Jr.,,,Out,,,,2026-11-03,Injured Reserve,Sep 30: The Texans placed Edwards on injured reserve Wednesday.
+2026,REG,REG,HOU,9,,WR,Jayden Higgins,Jayden,Higgins,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,HOU,9,,G,Sam Hagen,Sam,Hagen,,,Out,,,,2026-11-03,Injured Reserve,"Sep 1: The Texans placed Hagen (undisclosed) on injured reserve Tuesday, Greg Auman of Fox Sports reports."
+2026,REG,REG,HOU,9,,DE,Solomon Byrd,Solomon,Byrd,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: Byrd (ankle) reverted to the Texans' injured-reserve list Monday, per the NFL's transaction log."
+2026,REG,REG,HOU,9,,DE,Ali Gaye,Ali,Gaye,,,Out,,,,2026-11-03,Injured Reserve,Aug 31: The Texans placed Gaye (knee) on injured reserve Sunday.
+2026,REG,REG,HOU,9,,LB,E.J. Speed,E.J.,Speed,,,Out,,,,2026-11-03,Out,Aug 31: Speed (quadriceps) was moved to the reserve/PUP list by the Texans on Sunday.
+2026,REG,REG,HOU,9,,DE,Dylan Horton,Dylan,Horton,,,Out,,,,2026-11-03,Injured Reserve,"Aug 25: The Texans placed Horton (Achilles) on injured reserve Tuesday, Aaron Wilson of KPRC 2 Houston reports."
+2026,REG,REG,HOU,9,,LB,K.C. Ossai,K.C.,Ossai,,,Out,,,,2026-11-03,Injured Reserve,Aug 22: The Texans placed Ossai (undisclosed) on injured reserve Saturday.
+2026,REG,REG,HOU,9,,QB,Graham Mertz,Graham,Mertz,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,IND,9,00-0040139,CB,Justin Walley,Justin,Walley,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,IND,9,00-0039816,WR,Anthony Gould,Anthony,Gould,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,IND,9,00-0041518,LB,Bryce Boettcher,Bryce,Boettcher,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,IND,9,00-0037753,CB,Cam Taylor-Britt,Cam,Taylor-Britt,,,Out,,,,2026-11-03,Injured Reserve,"Oct 27: The Colts placed Taylor-Britt on injured reserve Tuesday due to a groin injury, Nathan Brown of The Indianapolis Star reports."
+2026,REG,REG,IND,9,00-0037664,WR,Alec Pierce,Alec,Pierce,,,Out,,,,2026-11-03,Injured Reserve,"Oct 26: Colts head coach Shane Steichen said Monday that Pierce (heel) will ""most likely not"" have his 21-day practice window opened in Week 8, Jake Arthur of R"
+2026,REG,REG,IND,9,00-0034825,DE,Arden Key,Arden,Key,,,Out,,,,2026-11-03,Injured Reserve,Oct 10: The Colts placed Key (hamstring) on injured reserve Saturday.
+2026,REG,REG,IND,9,00-0038107,DE,Micheal Clemons,Micheal,Clemons,,,Out,,,,2026-11-03,Injured Reserve,Sep 22: Clemons (toe) was placed on injured reserve by the Colts on Tuesday.
+2026,REG,REG,IND,9,00-0040853,TE,Carson Towt,Carson,Towt,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,IND,9,,TE,Sean McKeon,Sean,McKeon,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,IND,9,00-0035045,WR,D.J. Montgomery,D.J.,Montgomery,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: Montgomery (abdomen) was placed on injured reserve by the Colts on Sunday, JJ Stankevitz of the team's official website reports."
+2026,REG,REG,IND,9,00-0038585,CB,Cameron Mitchell,Cameron,Mitchell,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,JAX,9,00-0034960,WR,Jakobi Meyers,Jakobi,Meyers,,,Questionable,,,,2026-11-03,Questionable,Nov 3: Meyers (hamstring/ankle) was listed as a limited participant in Tuesday's practice.
+2026,REG,REG,JAX,9,00-0038611,RB,Chris Rodriguez Jr.,Chris,Jr.,,,Questionable,,,,2026-11-03,Questionable,Nov 3: Rodriguez (hand) was listed as a limited participant in Tuesday's practice.
+2026,REG,REG,JAX,9,00-0040719,RB,Bhayshul Tuten,Bhayshul,Tuten,,,Questionable,,,,2026-11-03,Questionable,Nov 3: The Jaguars listed Tuten (ankle/foot) as a non-participant in Tuesday's practice.
+2026,REG,REG,JAX,9,00-0038596,S,Antonio Johnson,Antonio,Johnson,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,JAX,9,00-0040326,LB,Branson Combs,Branson,Combs,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,JAX,9,00-0039353,CB,Jarrian Jones,Jarrian,Jones,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,JAX,9,00-0033038,S,Eric Murray,Eric,Murray,,,Out,,,,2026-11-03,Injured Reserve,"Nov 2: Jaguars head coach Liam Coen said Monday that Murray (elbow) will miss the remainder of the season, Demetrius Harvey of The Florida Times-Union reports."
+2026,REG,REG,JAX,9,00-0036262,DT,DaVon Hamilton,DaVon,Hamilton,,,Out,,,,2026-11-03,Injured Reserve,Nov 2: Jaguars coach Liam Coen confirmed Monday that Hamilton will miss the remainder of the season after suffering a torn quadriceps in Sunday's win over the C
+2026,REG,REG,JAX,9,00-0037235,DE,Travon Walker,Travon,Walker,,,Questionable,,,,2026-11-03,Questionable,Nov 1: Walker (ribs) is questionable to return to Sunday's game against the Colts.
+2026,REG,REG,JAX,9,00-0036327,G,Ezra Cleveland,Ezra,Cleveland,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,JAX,9,00-0038934,OT,Anton Harrison,Anton,Harrison,,,Out,,,,2026-11-03,Injured Reserve,"Oct 23: Harrison was diagnosed with a torn ACL while undergoing a procedure on his right knee Thursday, Ian Rapoport of NFL Network reports."
+2026,REG,REG,JAX,9,00-0040145,S,Caleb Ransaw,Caleb,Ransaw,,,Out,,,,2026-11-03,Injured Reserve,Oct 6: The Jaguars placed Ransaw (knee) on their injured reserve list Tuesday.
+2026,REG,REG,JAX,9,00-0040329,DE,B.J. Green II,B.J.,II,,,Out,,,,2026-11-03,Injured Reserve,Sep 16: The Jaguars placed Green (elbow) on injured reserve Wednesday.
+2026,REG,REG,JAX,9,00-0035062,C,Sam Mustipher,Sam,Mustipher,,,Out,,,,2026-11-03,Injured Reserve,Aug 31: The Jaguars placed Mustipher (undisclosed) on injured reserve Sunday.
+2026,REG,REG,JAX,9,00-0035112,G,Patrick Mekari,Patrick,Mekari,,,Out,,,,2026-11-03,Injured Reserve,Aug 31: The Jaguars placed Mekari (back) on injured reserve with a designation to return Sunday.
+2026,REG,REG,JAX,9,00-0041122,DE,Zach Durfee,Zach,Durfee,,,Out,,,,2026-11-03,Injured Reserve,"Aug 30: The Jaguars placed Durfee (upper body) on injured reserve Sunday with a designation to return, Matt Zenitz of CBSSports.com reports."
+2026,REG,REG,JAX,9,00-0041127,LB,Parker Hughes,Parker,Hughes,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,JAX,9,00-0040395,LB,Jared Bartlett,Jared,Bartlett,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,JAX,9,00-0041208,OT,Garrett DiGiorgio,Garrett,DiGiorgio,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,KC,9,00-0041543,CB,Mansoor Delane,Mansoor,Delane,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,KC,9,00-0041545,DT,Peter Woods,Peter,Woods,,,Questionable,,,,2026-11-03,Questionable,Nov 1: Woods (neck) has been ruled out for the rest of Sunday's contest against the Broncos.
+2026,REG,REG,KC,9,00-0036374,CB,L'Jarius Sneed,L'Jarius,Sneed,,,Out,,,,2026-11-03,Injured Reserve,Oct 31: The Chiefs placed Sneed (knee) on injured reserve Saturday.
+2026,REG,REG,KC,9,00-0040748,DT,Omarr Norman-Lott,Omarr,Norman-Lott,,,Out,,,,2026-11-03,Out,Oct 28: The Chiefs designated Norman-Lott (knee) to return from injured reserve Wednesday.
+2026,REG,REG,KC,9,00-0040078,RB,Brashard Smith,Brashard,Smith,,,Out,,,,2026-11-03,Injured Reserve,Oct 24: The Chiefs placed Smith (hamstring) on injured reserve Saturday.
+2026,REG,REG,KC,9,00-0040116,OT,Josh Simmons,Josh,Simmons,,,Out,,,,2026-11-03,Injured Reserve,Oct 22: The Chiefs placed Simmons (lower back) on injured reserve Thursday.
+2026,REG,REG,KC,9,00-0038104,WR,Tyquan Thornton,Tyquan,Thornton,,,Out,,,,2026-11-03,Injured Reserve,Oct 13: The Chiefs placed Thornton (ankle) on injured reserve Tuesday.
+2026,REG,REG,KC,9,00-0040120,WR,Jimmy Holiday,Jimmy,Holiday,,,Out,,,,2026-11-03,Injured Reserve,Aug 31: Holiday (undisclosed) was placed on injured reserve by the Chiefs on Sunday.
+2026,REG,REG,KC,9,00-0040953,WR,Jeff Caldwell,Jeff,Caldwell,,,Out,,,,2026-11-03,Injured Reserve,"Aug 25: Caldwell (knee) reverted to the Chiefs' injured reserve list Tuesday, Charles Goldman of AtoZSports.com reports."
+2026,REG,REG,KC,9,00-0037266,OT,Matt Waletzko,Matt,Waletzko,,,Out,,,,2026-11-03,Injured Reserve,"Aug 21: Waletzko (undisclosed) reverted from waivers to Kansas City's injured reserve list Friday, Aaron Wilson of KPRC 2 Houston reports."
+2026,REG,REG,KC,9,00-0040328,LB,Ethan Downs,Ethan,Downs,,,Out,,,,2026-11-03,Injured Reserve,"Jul 28: The Chiefs placed (Downs) knee on injured reserve Tuesday, Matt Derrick of ChiefsDigest.com reports."
+2026,REG,REG,KC,9,00-0040955,TE,John Michael Gyllenborg,John,Gyllenborg,,,Out,,,,2026-11-03,Injured Reserve,"Jul 28: The Chiefs placed Gyllenborg (knee) on injured reserve Tuesday, Matt Derrick of ChiefsDigest.com reports."
+2026,REG,REG,LV,9,00-0040641,CB,Darien Porter,Darien,Porter,,,Questionable,,,,2026-11-03,Questionable,Nov 1: Porter (groin) has been ruled out for the rest of Sunday's game against the Jets.
+2026,REG,REG,LV,9,00-0036922,DE,Patrick Johnson,Patrick,Johnson,,,Out,,,,2026-11-03,Injured Reserve,Oct 31: The Raiders placed Johnson (neck) on injured reserve Saturday.
+2026,REG,REG,LV,9,00-0040488,TE,Carter Runyon,Carter,Runyon,,,Out,,,,2026-11-03,Injured Reserve,"Oct 30: Runyon (foot) has been ruled out for Sunday's game against the Jets, Sam Warren of The Athletic reports."
+2026,REG,REG,LV,9,00-0041553,DE,Keyron Crawford,Keyron,Crawford,,,Out,,,,2026-11-03,Injured Reserve,"Aug 30: The Raiders placed Crawford (ankle) on injured reserve Sunday, Sam Warren of The Athletic reports."
+2026,REG,REG,LV,9,00-0039676,CB,Chigozie Anusiem,Chigozie,Anusiem,,,Out,,,,2026-11-03,Injured Reserve,"Aug 22: The Raiders placed Anusiem (knee) on injured reserve Saturday, Adam Schefter of ESPN reports."
+2026,REG,REG,LV,9,00-0041003,G,Justin Pickett,Justin,Pickett,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,LV,9,00-0039836,LB,Brennan Jackson,Brennan,Jackson,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,LV,9,00-0039244,RB,Chris Collier,Chris,Collier,,,Out,,,,2026-11-03,Injured Reserve,"Aug 2: Collier (undisclosed) reverted to injured reserve with the Raiders on Sunday, Sam Warren of The Athletic reports."
+2026,REG,REG,LAC,9,00-0041381,CB,Rodney Shelley,Rodney,Shelley,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,LAC,9,00-0034356,CB,Donte Jackson,Donte,Jackson,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,LAC,9,00-0037320,CB,Deane Leonard,Deane,Leonard,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,LAC,9,00-0036736,G,Kayode Awosika,Kayode,Awosika,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,LAC,9,00-0041550,WR,Brenen Thompson,Brenen,Thompson,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Thompson (quadriceps/hamstring) is not expected to practice this week, Noah Furtado of The Athletic reports."
+2026,REG,REG,LAC,9,00-0033885,TE,David Njoku,David,Njoku,,,Out,,,,2026-11-03,Injured Reserve,"Nov 2: Coach Jim Harbaugh said Monday that the Chargers likely will open the 21-day window for Njoku (fibula) this week, Alex Insdorf of BoltBeat.com reports."
+2026,REG,REG,LAC,9,00-0034790,S,Derwin James Jr.,Derwin,Jr.,,,Out,,,,2026-11-03,Injured Reserve,Oct 31: The Chargers placed James (hamstring) on injured reserve Saturday.
+2026,REG,REG,LAC,9,00-0032103,LB,Denzel Perryman,Denzel,Perryman,,,Out,,,,2026-11-03,Injured Reserve,"Oct 28: Head coach Jim Harbaugh said Wednesday that Perryman (undisclosed) is ""close"" to returning from injured reserve, Alex Insdorf of BoltBeat.com reports."
+2026,REG,REG,LAC,9,00-0035125,FB,Alec Ingold,Alec,Ingold,,,Out,,,,2026-11-03,Injured Reserve,Oct 15: The Chargers placed Ingold on injured reserve Thursday due to a shoulder injury.
+2026,REG,REG,LAC,9,00-0037241,G,Trevor Penning,Trevor,Penning,,,Out,,,,2026-11-03,Injured Reserve,Oct 10: The Chargers placed Penning (concussion) on injured reserve Saturday.
+2026,REG,REG,LAC,9,00-0037012,QB,Trey Lance,Trey,Lance,,,Out,,,,2026-11-03,Injured Reserve,Oct 10: The Chargers placed Lance (groin) on injured reserve Saturday.
+2026,REG,REG,LAC,9,00-0037009,OT,Rashawn Slater,Rashawn,Slater,,,Out,,,,2026-11-03,Injured Reserve,Oct 9: The Chargers placed Slater (ankle) on injured reserve Friday.
+2026,REG,REG,LAC,9,00-0035688,OT,Trey Pipkins III,Trey,III,,,Out,,,,2026-11-03,Injured Reserve,Sep 26: The Chargers placed Pipkins (knee) on injured reserve Saturday.
+2026,REG,REG,LAC,9,00-0041387,OT,Isaiah World,Isaiah,World,,,Out,,,,2026-11-03,Out,Sep 8: nfi-r
+2026,REG,REG,LAC,9,00-0036376,C,Tyler Biadasz,Tyler,Biadasz,,,Out,,,,2026-11-03,Injured Reserve,Aug 23: The Chargers placed Biadasz (knee) on injured reserve Sunday.
+2026,REG,REG,LA,9,00-0036244,TE,Colby Parkinson,Colby,Parkinson,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,LA,9,00-0032228,LS,Joe Cardona,Joe,Cardona,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,LA,9,00-0041415,RB,Dean Connors,Dean,Connors,,,Out,,,,2026-11-03,Injured Reserve,"Nov 2: Rams head coach Sean McVay said Monday that Connors sustained a broken hand in Sunday's 24-9 win over the Chargers and will require surgery, Nate Atkins "
+2026,REG,REG,LA,9,00-0036672,LB,Grant Stuard,Grant,Stuard,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Stuard is battling a hamstring injury, Nate Atkins of The Athletic reports."
+2026,REG,REG,LA,9,00-0026498,QB,Matthew Stafford,Matthew,Stafford,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Stafford left the locker room after Sunday's 24-9 win over the Chargers with a bag of ice wrapped on his right arm, and Rams coach Sean McVay acknowledge"
+2026,REG,REG,LA,9,00-0040737,TE,Terrance Ferguson,Terrance,Ferguson,,,Out,,,,2026-11-03,Injured Reserve,"Nov 2: Coach Sean McVay said Monday that it is ""looking more likely than not"" Ferguson (ankle) will practice this week, Sarah Barshop of ESPN.com reports."
+2026,REG,REG,LA,9,00-0033868,DE,Myles Garrett,Myles,Garrett,,,Out,,,,2026-11-03,Injured Reserve,"Nov 2: Coach Sean McVay indicated Monday that Garrett (knee) is on track to practice this week, Sarah Barshop of ESPN.com reports."
+2026,REG,REG,LA,9,00-0037191,CB,Trent McDuffie,Trent,McDuffie,,,Questionable,,,,2026-11-03,Questionable,"Nov 1: McDuffie (back) is questionable to return to Sunday's contest against the Chargers, Stu Jackson of the Rams' official site reports."
+2026,REG,REG,LA,9,00-0037195,CB,Jaylen Watson,Jaylen,Watson,,,Questionable,,,,2026-11-03,Questionable,"Nov 1: Watson (shoulder) has been ruled out for the rest of Sunday's contest against the Chargers, Adam Grosbard of The Orange County Register reports."
+2026,REG,REG,LA,9,00-0031381,WR,Davante Adams,Davante,Adams,,,Out,,,,2026-11-03,Injured Reserve,"Oct 28: Head coach Sean McVay said Wednesday that Adams had successful surgery on his left hamstring, and the Rams are hopeful that the wide receiver will be ab"
+2026,REG,REG,LA,9,00-0039138,DE,Kobie Turner,Kobie,Turner,,,Out,,,,2026-11-03,Injured Reserve,Oct 21: The Rams placed Turner (groin) on injured reserve Wednesday.
+2026,REG,REG,LA,9,00-0034234,DT,Poona Ford,Poona,Ford,,,Out,,,,2026-11-03,Injured Reserve,Oct 20: The Rams placed Ford (triceps) on injured reserve Tuesday.
+2026,REG,REG,LA,9,00-0038905,PK,Blake Grupe,Blake,Grupe,,,Out,,,,2026-11-03,Injured Reserve,Oct 19: Rams head coach Sean McVay announced Monday that Grupe will miss the remainder of the season after sustaining a torn ACL in Sunday's 18-16 loss to the C
+2026,REG,REG,LA,9,00-0037557,RB,Ronnie Rivers,Ronnie,Rivers,,,Out,,,,2026-11-03,Injured Reserve,Sep 23: The Rams placed Rivers (calf) on their injured reserve list Wednesday.
+2026,REG,REG,LA,9,00-0039784,G,Justin Dedich,Justin,Dedich,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: Dedich (undisclosed) was put on injured reserve with a designation to return by the Rams on Sunday, Cameron DaSilva of USA Today reports."
+2026,REG,REG,LA,9,00-0041414,QB,Matthew Caldwell,Matthew,Caldwell,,,Out,,,,2026-11-03,Injured Reserve,"Aug 29: The Rams placed Caldwell (undisclosed) on injured reserve Saturday, Aaron Wilson of KPRC 2 Houston reports."
+2026,REG,REG,LA,9,00-0041587,DE,Daniel Rickert,Daniel,Rickert,,,Out,,,,2026-11-03,Injured Reserve,"Aug 25: Rickert (knee) reverted to the Rams' injured reserve Tuesday, per the NFL's transaction log."
+2026,REG,REG,LA,9,00-0041429,LB,Eddie Walls III,Eddie,III,,,Out,,,,2026-11-03,Injured Reserve,"Jun 4: The Rams placed Walls (undisclosed) on their injured reserve list Thursday, Cameron DaSilva of USA Today reports."
+2026,REG,REG,MIA,9,00-0041521,OT,Kadyn Proctor,Kadyn,Proctor,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,MIA,9,00-0036682,DE,Malik Herring,Malik,Herring,,,Questionable,,,,2026-11-03,Questionable,Nov 1: Herring (neck) is questionable to return to Sunday's contest against New England.
+2026,REG,REG,MIA,9,00-0039040,RB,De'Von Achane,De'Von,Achane,,,Out,,,,2026-11-03,Injured Reserve,Sep 28: The Dolphins placed Achane (knee) on injured reserve Monday.
+2026,REG,REG,MIA,9,00-0034779,LB,Ronnie Harrison Jr.,Ronnie,Jr.,,,Out,,,,2026-11-03,Injured Reserve,Sep 19: The Dolphins placed Harrison (hamstring) on injured reserve Saturday.
+2026,REG,REG,MIA,9,00-0041526,LB,Trey Moore,Trey,Moore,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,MIA,9,00-0037549,CB,Darrell Baker Jr.,Darrell,Jr.,,,Out,,,,2026-11-03,Out,Aug 31: Baker (undisclosed) was moved to the reserve/PUP list by the Dolphins on Sunday.
+2026,REG,REG,MIA,9,00-0037078,TE,Cole Turner,Cole,Turner,,,Out,,,,2026-11-03,Injured Reserve,"Aug 27: Turner (undisclosed) reverted to the Dolphins' injured-reserve list Thursday, Aaron Wilson of KPRC 2 Houston reports."
+2026,REG,REG,MIA,9,00-0041136,DT,Rene Konga,Rene,Konga,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,MIN,9,00-0036616,OT,Christian Darrisaw,Christian,Darrisaw,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,MIN,9,00-0035228,QB,Kyler Murray,Kyler,Murray,,,Questionable,,,,2026-11-03,Questionable,Nov 2: Head coach Kevin O'Connell said Monday that Murray has a sore hamstring and will undergo a full evaluation as the Vikings look to determine the extent of
+2026,REG,REG,MIN,9,00-0037301,S,Theo Jackson,Theo,Jackson,,,Questionable,,,,2026-11-03,Questionable,Nov 1: Jackson (quadriceps) has been ruled out for the rest of Sunday's game against the Lions.
+2026,REG,REG,MIN,9,00-0040661,G,Donovan Jackson,Donovan,Jackson,,,Out,,,,2026-11-03,Injured Reserve,Oct 6: Jackson (knee) was placed on injured reserve by the Vikings on Tuesday.
+2026,REG,REG,MIN,9,00-0035249,TE,Josh Oliver,Josh,Oliver,,,Out,,,,2026-11-03,Injured Reserve,"Sep 29: The Vikings placed Oliver (biceps) on injured reserve Tuesday, Craig Peters of the team's official site reports."
+2026,REG,REG,MIN,9,00-0039237,C,Nick Samac,Nick,Samac,,,Out,,,,2026-11-03,Injured Reserve,"Sep 26: The Vikings placed Samac (knee) on injured reserve Saturday, Craig Peters of the team's official site reports."
+2026,REG,REG,MIN,9,00-0040492,LB,Tyler Batty,Tyler,Batty,,,Out,,,,2026-11-03,Injured Reserve,"Aug 30: The Vikings placed Batty (knee) on injured reserve Sunday, Tom Pelissero of Netflix reports."
+2026,REG,REG,MIN,9,00-0033872,LB,Jamal Adams,Jamal,Adams,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,NE,9,00-0033090,TE,Hunter Henry,Hunter,Henry,,,Questionable,,,,2026-11-03,Questionable,"Nov 3: Patriots head coach Mike Vrabel said Monday that he had no update on Henry's (foot) status heading into Sunday's game against the Packers, Karen Guregian"
+2026,REG,REG,NE,9,00-0040734,RB,TreVeyon Henderson,TreVeyon,Henderson,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,NE,9,00-0033555,WR,Mack Hollins,Mack,Hollins,,,Out,,,,2026-11-03,Injured Reserve,"Nov 2: Hollins (calf), who is eligible to be activated from IR this week, per Doug Kyed of the Boston Herald, could return to practice Wednesday, Evan Lazar of "
+2026,REG,REG,NE,9,00-0035676,WR,A.J. Brown,A.J.,Brown,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: When asked whether Brown (ankle/knee) might practice at some point this week, coach Mike Vrabel said Monday, ""We'll see,"" Doug Kyed of the Boston Herald "
+2026,REG,REG,NE,9,00-0041569,LB,Gabe Jacas,Gabe,Jacas,,,Questionable,,,,2026-11-03,Questionable,"Nov 1: Jacas (knee) is questionable to return to Sunday's contest against Miami, Doug Kyed of the Boston Herald reports."
+2026,REG,REG,NE,9,00-0036979,G,Alijah Vera-Tucker,Alijah,Vera-Tucker,,,Out,,,,2026-11-03,Injured Reserve,Oct 22: Vera-Tucker (hamstring) was placed on injured reserve by the Patriots on Thursday.
+2026,REG,REG,NE,9,00-0037816,WR,Romeo Doubs,Romeo,Doubs,,,Out,,,,2026-11-03,Injured Reserve,"Oct 19: Doubs (shoulder) is hopeful to return after the Patriots' Week 11 bye and isn't expected to face a long-term absence, Jeremy Fowler of ESPN.com reports."
+2026,REG,REG,NE,9,00-0036187,FB,Reggie Gilliam,Reggie,Gilliam,,,Out,,,,2026-11-03,Injured Reserve,"Oct 10: The Patriots placed Gilliam (ankle/knee) on injured reserve Saturday, Doug Kyed of the Boston Herald reports."
+2026,REG,REG,NE,9,00-0029685,G,Greg Van Roten,Greg,Roten,,,Out,,,,2026-11-03,Injured Reserve,Sep 29: The Patriots placed Van Roten (thigh) on injured reserve Tuesday.
+2026,REG,REG,NE,9,00-0041402,LB,Quintayvious Hutchins,Quintayvious,Hutchins,,,Out,,,,2026-11-03,Injured Reserve,Sep 25: Hutchins (knee) was placed on injured reserve Friday.
+2026,REG,REG,NE,9,00-0039692,S,Dell Pettus,Dell,Pettus,,,Out,,,,2026-11-03,Injured Reserve,Sep 23: The Patriots placed Pettus (ankle) on injured reserve Wednesday.
+2026,REG,REG,NE,9,00-0036198,G,Mike Onwenu,Mike,Onwenu,,,Out,,,,2026-11-03,Injured Reserve,Sep 22: The Patriots placed Onwenu (ankle) on injured reserve Tuesday.
+2026,REG,REG,NE,9,00-0041321,LB,Khalil Jacobs,Khalil,Jacobs,,,Out,,,,2026-11-03,Injured Reserve,Sep 1: The Patriots placed Jacobs (undisclosed) on injured reserve Monday.
+2026,REG,REG,NE,9,00-0034828,LB,Harold Landry III,Harold,III,,,Out,,,,2026-11-03,Out,Aug 31: Landry (undisclosed) was moved to the reserve/PUP list by the Patriots on Sunday.
+2026,REG,REG,NE,9,00-0041323,RB,Myles Montgomery,Myles,Montgomery,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,NE,9,00-0038720,TE,Julian Hill,Julian,Hill,,,Out,,,,2026-11-03,Injured Reserve,"Jun 1: The Patriots placed Hill (knee) on IR on Monday, Evan Lazar of the team's official site reports."
+2026,REG,REG,NO,9,,RB,Travis Etienne Jr.,Travis,Jr.,,,Out,,,,2026-11-03,Injured Reserve,"Nov 2: Head coach Kellen Moore said that Etienne (hamstring) will be evaluated Monday before the Saints make a determination whether he practices this week, Ros"
+2026,REG,REG,NO,9,,WR,Jordyn Tyson,Jordyn,Tyson,,,Out,,,,2026-11-03,Injured Reserve,"Nov 2: Saints head coach Kellen Moore said that the Saints will decide by Wednesday whether to open Tyson's (hamstring) 21-day practice window this week, Nick U"
+2026,REG,REG,NO,9,,G,Cesar Ruiz,Cesar,Ruiz,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,NO,9,,DT,Nathan Shepherd,Nathan,Shepherd,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,NO,9,,S,Justin Reid,Justin,Reid,,,Questionable,,,,2026-11-03,Questionable,Oct 25: Reid (concussion) has been ruled out for the remainder of Sunday's game against the Steelers in Paris.
+2026,REG,REG,NO,9,,RB,CJ Donaldson,CJ,Donaldson,,,Questionable,,,,2026-11-03,Questionable,Oct 25: Donaldson (shoulder) is questionable to return to Sunday's game against the Steelers in Paris.
+2026,REG,REG,NO,9,,OT,Kelvin Banks Jr.,Kelvin,Jr.,,,Out,,,,2026-11-03,Injured Reserve,"Sep 25: Banks (ankle) underwent surgery this week, Katherine Terrell of ESPN.com reports."
+2026,REG,REG,NO,9,,G,Dillon Radunz,Dillon,Radunz,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,NO,9,,WR,Mason Tipton,Mason,Tipton,,,Out,,,,2026-11-03,Out,Aug 31: Tipton (leg) was moved to the reserve/PUP list by the Saints on Sunday.
+2026,REG,REG,NO,9,,TE,Moliki Matavao,Moliki,Matavao,,,Out,,,,2026-11-03,Injured Reserve,"Aug 25: The Saints placed Matavao (knee) on injured reserve Tuesday, Mike Triplett of NewOrleans.Football reports."
+2026,REG,REG,NO,9,,RB,Ty Chandler,Ty,Chandler,,,Out,,,,2026-11-03,Injured Reserve,"Aug 25: The Saints placed Chandler (knee) on injured reserve Tuesday, Mike Triplett of NewOrleans.Football reports."
+2026,REG,REG,NO,9,,CB,Rejzohn Wright,Rejzohn,Wright,,,Out,,,,2026-11-03,Injured Reserve,Aug 24: Wright (hip) was put on injured reserve by the Saints on Monday.
+2026,REG,REG,NO,9,,DT,Bryan Bresee,Bryan,Bresee,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,NO,9,,OT,Nick Saldiveri,Nick,Saldiveri,,,Out,,,,2026-11-03,Out,May 13: New Orleans placed Saldiveri (knee) on its reserve/physically unable to perform list Tuesday.
+2026,REG,REG,NYG,9,,CB,Greg Newsome II,Greg,II,,,Questionable,,,,2026-11-03,Questionable,"Nov 3: The Giants signed Newsome (concussion) to a three-year $46 million extension with $32 million guaranteed, NFL reporter Jordan Schultz."
+2026,REG,REG,NYG,9,,TE,Theo Johnson,Theo,Johnson,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Johnson (neck) participated during practice Monday, Dan Duggan of The Athletic reports."
+2026,REG,REG,NYG,9,,RB,Cam Skattebo,Cam,Skattebo,,,Questionable,,,,2026-11-03,Questionable,Nov 2: Giants head coach John Harbaugh said that Skattebo (hamstring) is day-to-day and could end up being a game-time decision for Sunday's tilt with the Eagle
+2026,REG,REG,NYG,9,,RB,Tyrone Tracy Jr.,Tyrone,Jr.,,,Out,,,,2026-11-03,Injured Reserve,"Oct 27: The Giants placed Tracy (hamstring) on injured reserve Tuesday, Dan Salomone of the team's official site reports."
+2026,REG,REG,NYG,9,,OT,Marcus Mbow,Marcus,Mbow,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,NYG,9,,S,Jevon Holland,Jevon,Holland,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,NYG,9,,LB,Tremaine Edmunds,Tremaine,Edmunds,,,Out,,,,2026-11-03,Injured Reserve,"Oct 24: Edmunds (chest) was placed on injured reserve Saturday, Dan Duggan of The Athletic reports."
+2026,REG,REG,NYG,9,,WR,Braxton Berrios,Braxton,Berrios,,,Out,,,,2026-11-03,Injured Reserve,"Oct 14: Berrios (foot) underwent successful surgery Friday to repair a Lisfranc injury, Jordan Raanan of ESPN.com reports."
+2026,REG,REG,NYG,9,,DE,Chauncey Golston,Chauncey,Golston,,,Out,,,,2026-11-03,Injured Reserve,"Oct 10: The Giants placed Golston (neck) on injured reserve Saturday, Dan Salomone of the Giants' official site reports."
+2026,REG,REG,NYG,9,,QB,Jaxson Dart,Jaxson,Dart,,,Out,,,,2026-11-03,Injured Reserve,"Sep 30: Dart recently underwent surgery to repair the meniscus and MCL in his left knee, Dan Duggan of The Athletic reports."
+2026,REG,REG,NYG,9,,LB,Brian Burns,Brian,Burns,,,Out,,,,2026-11-03,Injured Reserve,"Sep 29: The Giants placed Burns (knee) on injured reserve Tuesday, Dan Salomone of the team's official site reports."
+2026,REG,REG,NYG,9,,DT,Roy Robertson-Harris,Roy,Robertson-Harris,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,NYG,9,,CB,Korie Black,Korie,Black,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: Black (undisclosed) was placed on injured reserve with a designation to return by the Giants on Monday, Dan Salomone and Matt Citak of the team's offici"
+2026,REG,REG,NYG,9,,WR,Calvin Austin III,Calvin,III,,,Out,,,,2026-11-03,Injured Reserve,"Aug 27: The Giants placed Austin (knee) on injured reserve Thursday, Patricia Traina of SI.com reports."
+2026,REG,REG,NYG,9,,CB,Jarrick Bernard-Converse,Jarrick,Bernard-Converse,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,NYG,9,,CB,Rico Payton,Rico,Payton,,,Out,,,,2026-11-03,Injured Reserve,"Jul 8: Payton (undisclosed) reverted to injured reserve Wednesday, Aaron Wilson of KPRC 2 Houston reports."
+2026,REG,REG,NYG,9,,WR,Gunner Olszewski,Gunner,Olszewski,,,Out,,,,2026-11-03,Injured Reserve,"Jun 1: Olszewski (Achilles) was placed on injured reserve by the Giants on Monday, Dan Salomone of the team's official site reports."
+2026,REG,REG,NYG,9,,CB,Thaddeus Dixon,Thaddeus,Dixon,,,Out,,,,2026-11-03,Injured Reserve,"May 14: Dixon tore his Achilles on Wednesday and was placed on injured reserve Thursday, Dan Salomone of the Giants' official site reports."
+2026,REG,REG,NYJ,9,00-0036885,CB,Tre Brown,Tre,Brown,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,NYJ,9,00-0038114,OT,Max Mitchell,Max,Mitchell,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,NYJ,9,00-0036902,DE,Joseph Ossai,Joseph,Ossai,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,NYJ,9,00-0041026,LB,David Bailey,David,Bailey,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,NYJ,9,00-0038120,RB,Breece Hall,Breece,Hall,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Hall (quadriceps) is considered ""good to go"" and is expected to return to action in next Sunday's game against the Chiefs, Ian Rapoport of NFL Network re"
+2026,REG,REG,NYJ,9,00-0039886,DT,T'Vondre Sweat,T'Vondre,Sweat,,,Out,,,,2026-11-03,Injured Reserve,"Oct 31: The Jets placed Sweat (knee) on injured reserve Saturday, Jeremy Fowler of ESPN.com reports."
+2026,REG,REG,NYJ,9,,LB,Kiko Mauigoa,Kiko,Mauigoa,,,Out,,,,2026-11-03,Injured Reserve,"Oct 24: The Jets placed Mauigoa (quadriceps) on injured reserve Saturday, Zack Rosenblatt of The Athletic reports."
+2026,REG,REG,NYJ,9,00-0039284,DE,Braiden McGregor,Braiden,McGregor,,,Out,,,,2026-11-03,Injured Reserve,"Oct 7: McGregor (pectoral) was placed on the Jets' injured reserve list Wednesday, Eric Allen of the team's official site reports."
+2026,REG,REG,NYJ,9,00-0040582,WR,Arian Smith,Arian,Smith,,,Out,,,,2026-11-03,Injured Reserve,"Sep 23: Smith (knee) underwent surgery Wednesday to repair a torn ACL and will miss the rest of the season, Antwan V. Staley of the New York Daily News reports."
+2026,REG,REG,NYJ,9,00-0033051,DT,David Onyemata,David,Onyemata,,,Out,,,,2026-11-03,Injured Reserve,"Sep 23: Onyemata (groin) underwent core-muscle surgery Wednesday, Antwan V. Staley of the New York Daily News reports."
+2026,REG,REG,NYJ,9,00-0037526,LB,Marcelino McCrary-Ball,Marcelino,McCrary-Ball,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,NYJ,9,00-0041120,S,VJ Payne,VJ,Payne,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,NYJ,9,00-0037431,DE,Kingsley Jonathan,Kingsley,Jonathan,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,NYJ,9,00-0040196,DE,Tyler Baron,Tyler,Baron,,,Out,,,,2026-11-03,Out,"Aug 31: The Jets moved Baron (knee) to the reserve/PUP list Sunday, Eric Allen and Amanda Vogt of the team's official site report."
+2026,REG,REG,NYJ,9,00-0041239,RB,Chip Trayanum,Chip,Trayanum,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: Trayanum (neck) was placed on injured reserve by the Jets on Sunday, Eric Allen &amp; Amanda Vogt of the team's official website report."
+2026,REG,REG,NYJ,9,00-0041097,G,Anez Cooper,Anez,Cooper,,,Out,,,,2026-11-03,Injured Reserve,"Aug 30: The Jets placed Cooper (shoulder) on injured reserve Sunday with a designation to return, Al Iannazzone of Newsday reports."
+2026,REG,REG,PHI,9,00-0038393,WR,Dontayvion Wicks,Dontayvion,Wicks,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,PHI,9,00-0036912,WR,DeVonta Smith,DeVonta,Smith,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,PHI,9,00-0032580,CB,Jonathan Jones,Jonathan,Jones,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,PHI,9,00-0040708,LB,Jihaad Campbell,Jihaad,Campbell,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,PHI,9,00-0037132,WR,Britain Covey,Britain,Covey,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,PHI,9,00-0036501,CB,Michael Carter II,Michael,II,,,Questionable,,,,2026-11-03,Questionable,Nov 1: Carter (abdomen) is questionable to return to Sunday night's contest against the Commanders.
+2026,REG,REG,PHI,9,00-0037258,RB,Dameon Pierce,Dameon,Pierce,,,Out,,,,2026-11-03,Injured Reserve,Oct 28: The Eagles placed Pierce (undisclosed) on injured reserve Wednesday
+2026,REG,REG,PHI,9,00-0030561,OT,Lane Johnson,Lane,Johnson,,,Out,,,,2026-11-03,Out,
+2026,REG,REG,PHI,9,00-0036389,QB,Jalen Hurts,Jalen,Hurts,,,Out,,,,2026-11-03,Injured Reserve,Oct 19: Hurts (calf) is expected to be held out of football activities for multiple months and miss the rest of the season after new imaging over the weekend re
+2026,REG,REG,PHI,9,00-0039746,RB,Will Shipley,Will,Shipley,,,Out,,,,2026-11-03,Injured Reserve,Oct 16: The Eagles placed Shipley (foot) on injured reserve Friday.
+2026,REG,REG,PHI,9,,LB,Chance Campbell,Chance,Campbell,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,PHI,9,00-0038555,RB,Tank Bigsby,Tank,Bigsby,,,Out,,,,2026-11-03,Injured Reserve,"Oct 6: The Eagles placed Bigsby (abdomen) on injured reserve Tuesday, Zach Berman of The Athletic reports."
+2026,REG,REG,PHI,9,00-0039267,S,Andre' Sam,Andre',Sam,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: Sam (foot) reverted to the Eagles' injured-reserve list Monday, Andrew DiCecco of InsideTheBirds.com reports."
+2026,REG,REG,PHI,9,00-0039236,WR,Johnny Wilson,Johnny,Wilson,,,Out,,,,2026-11-03,Injured Reserve,"Aug 22: Wilson (knee) reverted to Philadelphia's injured reserve Saturday, per the NFL's transaction log."
+2026,REG,REG,PHI,9,00-0040929,S,Tucker Large,Tucker,Large,,,Out,,,,2026-11-03,Out,"May 6: Large reverted to Philadelphia's reserve/non-football injury list Tuesday, Aaron Wilson of KPRC 2 Houston reports."
+2026,REG,REG,PIT,9,00-0040341,CB,Doneiko Slaughter,Doneiko,Slaughter,,,Out,,,,2026-11-03,Out,
+2026,REG,REG,PIT,9,00-0036862,WR,Ben Skowronek,Ben,Skowronek,,,Out,,,,2026-11-03,Out,
+2026,REG,REG,PIT,9,00-0036504,CB,Brandin Echols,Brandin,Echols,,,Out,,,,2026-11-03,Out,
+2026,REG,REG,PIT,9,00-0036252,WR,Michael Pittman Jr.,Michael,Jr.,,,Out,,,,2026-11-03,Injured Reserve,"Nov 2: Pittman (foot) said Monday that he resumed running last week as part of a program to return, but the wideout acknowledged that he's without a clear timel"
+2026,REG,REG,PIT,9,00-0034810,DT,Sebastian Joseph-Day,Sebastian,Joseph-Day,,,Out,,,,2026-11-03,Injured Reserve,"Oct 22: Joseph-Day (triceps) was placed on injured reserve by the Steelers on Thursday, Teresa Varley of the team's official website reports."
+2026,REG,REG,PIT,9,00-0039739,WR,Roman Wilson,Roman,Wilson,,,Out,,,,2026-11-03,Injured Reserve,"Oct 17: Wilson (finger) was placed on injured reserve Saturday, Ray Fittipaldo of the Pittsburgh Post-Gazette reports."
+2026,REG,REG,PIT,9,00-0040678,DT,Derrick Harmon,Derrick,Harmon,,,Out,,,,2026-11-03,Injured Reserve,"Oct 5: The Steelers placed Harmon (foot) on injured reserve Monday, Teresa Varley of the team's official site reports."
+2026,REG,REG,PIT,9,00-0041396,G,Gennings Dunker,Gennings,Dunker,,,Out,,,,2026-11-03,Injured Reserve,"Sep 26: The Steelers placed Dunker (knee) on injured reserve Saturday, Tom Pelissero of Netflix reports."
+2026,REG,REG,PIT,9,00-0036396,OT,Jack Driscoll,Jack,Driscoll,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: The Steelers placed Driscoll (undisclosed) on injured reserve Monday with a designation to return, Teresa Varley of the team's official site reports."
+2026,REG,REG,PIT,9,00-0040232,CB,Donte Kent,Donte,Kent,,,Out,,,,2026-11-03,Out,"Aug 31: The Steelers placed Kent (undisclosed) on the reserve/PUP list Monday, Teresa Varley of the team's official site reports."
+2026,REG,REG,PIT,9,00-0039389,DT,Logan Lee,Logan,Lee,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,PIT,9,00-0039626,WR,Cole Burgess,Cole,Burgess,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,PIT,9,00-0039883,CB,Daequan Hardy,Daequan,Hardy,,,Out,,,,2026-11-03,Injured Reserve,"May 5: Hardy (undisclosed) reverted to Pittsburgh's injured reserve Tuesday, Aaron Wilson of KPRC 2 Houston reports."
+2026,REG,REG,SF,9,,WR,De'Zhaun Stribling,De'Zhaun,Stribling,,,Out,,,,2026-11-03,Injured Reserve,"Nov 2: Stribling (ankle) was spotted Monday walking without crutches or a brace on his lower leg, Matt Barrows of The Athletic reports."
+2026,REG,REG,SF,9,,WR,Brandon Aiyuk,Brandon,Aiyuk,,,Out,,,,2026-11-03,Out,"Nov 2: Aiyuk is close to hiring new representation and is expected to file for reinstatement to the NFL in the near future, according to NFL reporter Jordan Sch"
+2026,REG,REG,SF,9,,S,Marques Sigle,Marques,Sigle,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,SF,9,,LB,Garret Wallow,Garret,Wallow,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,SF,9,,LB,Luke Gifford,Luke,Gifford,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,SF,9,,CB,Upton Stout,Upton,Stout,,,Questionable,,,,2026-11-03,Questionable,"Oct 26: Stout (shoulder) was only active as an emergency depth option during Sunday's loss to the Falcons, David Lombardi of SFStandard.com reported Monday."
+2026,REG,REG,SF,9,,DE,Nick Bosa,Nick,Bosa,,,Questionable,,,,2026-11-03,Questionable,"Oct 26: San Francisco head coach Kyle Shanahan said Monday that Bosa (knee) ""has a chance"" to return to action Nov. 8 versus the Raiders following a Week 8 bye,"
+2026,REG,REG,SF,9,,WR,Deebo Samuel Sr.,Deebo,Sr.,,,Questionable,,,,2026-11-03,Questionable,"Oct 26: Samuel (hamstring) has a chance to return following the 49ers' Week 8 bye, Matt Maiocco of NBC Sports Bay Area reports."
+2026,REG,REG,SF,9,,WR,Demarcus Robinson,Demarcus,Robinson,,,Out,,,,2026-11-03,Injured Reserve,"Oct 26: 49ers coach Kyle Shanahan reiterated Monday that Robinson (ankle) has a chance to return following the team's Week 8 bye, David Lombardi of SFStandard.c"
+2026,REG,REG,SF,9,,WR,Mike Evans,Mike,Evans,,,Questionable,,,,2026-11-03,Questionable,"Oct 26: Evans (Achilles) is expected to return after San Francisco's Week 8 bye, David Lombardi of SF Standard reports."
+2026,REG,REG,SF,9,,RB,Christian McCaffrey,Christian,McCaffrey,,,Questionable,,,,2026-11-03,Questionable,"Oct 26: McCaffrey is dealing with a mild hamstring strain rather than a quadriceps injury, and the 49ers believe he'll be ready following the team's Week 8 bye,"
+2026,REG,REG,SF,9,,LB,Nick Martin,Nick,Martin,,,Out,,,,2026-11-03,Injured Reserve,"Oct 12: Head coach Kyle Shanahan said Monday that Martin's (hamstring) status will be evaluated ""in these next couple of days,"" Nick Wagoner of ESPN.com reports"
+2026,REG,REG,SF,9,,DT,C.J. West,C.J.,West,,,Out,,,,2026-11-03,Injured Reserve,Sep 23: The 49ers placed West (undisclosed) on injured reserve Wednesday.
+2026,REG,REG,SF,9,,TE,Jake Tonges,Jake,Tonges,,,Out,,,,2026-11-03,Injured Reserve,"Sep 16: Tonges (knee) requires surgery for an MCL tear and is done for the season, Cam Inman reports."
+2026,REG,REG,SF,9,,DT,Alfred Collins,Alfred,Collins,,,Out,,,,2026-11-03,Injured Reserve,Sep 10: San Francisco placed Collins (knee) on injured reserve Thursday.
+2026,REG,REG,SF,9,,CB,Nate Hobbs,Nate,Hobbs,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,SF,9,,DT,Sam Okuayinonu,Sam,Okuayinonu,,,Out,,,,2026-11-03,Injured Reserve,"Sep 7: Okuayinonu broke his foot in practice last week and is set to have surgery to repair the issue, Matt Barrows of The Athletic reports."
+2026,REG,REG,SF,9,,OT,Nick Zakelj,Nick,Zakelj,,,Out,,,,2026-11-03,Injured Reserve,Aug 31: Zakelj (undisclosed) was placed on the 49ers' injured reserve Sunday.
+2026,REG,REG,SF,9,,OT,Austen Pleasants,Austen,Pleasants,,,Out,,,,2026-11-03,Injured Reserve,Aug 31: The 49ers placed Pleasants (knee) on injured reserve with a designation to return Sunday.
+2026,REG,REG,SF,9,,RB,Isaac Guerendo,Isaac,Guerendo,,,Out,,,,2026-11-03,Out,"Aug 30: Guerendo (pectoral) was placed on the reserve/PUP list Sunday, Jeremy Fowler of ESPN reports."
+2026,REG,REG,SF,9,,WR,Ricky Pearsall,Ricky,Pearsall,,,Out,,,,2026-11-03,Injured Reserve,"Aug 13: Pearsall announced Thursday in a post on his personal Instagram account that he underwent season-ending surgery to repair the PCL in his right knee, Dav"
+2026,REG,REG,SF,9,,DE,Mikail Kamara,Mikail,Kamara,,,Out,,,,2026-11-03,Injured Reserve,"Aug 3: Kamara (knee) reverted to the 49ers' injured reserve Monday, per the NFL's transaction log."
+2026,REG,REG,SF,9,,DE,Andrew Farmer II,Andrew,II,,,Out,,,,2026-11-03,Injured Reserve,"Jul 30: San Francisco placed Farmer (back) on its injured-reserve list Thursday, Aaron Wilson of KPRC 2 Houston reports."
+2026,REG,REG,SF,9,,S,Darrick Forrest,Darrick,Forrest,,,Out,,,,2026-11-03,Injured Reserve,May 28: San Francisco placed Forrest (undisclosed) on its injured reserve list Thursday.
+2026,REG,REG,SEA,9,00-0037545,WR,Rashid Shaheed,Rashid,Shaheed,,,Questionable,,,,2026-11-03,Questionable,"Nov 3: Seahawks head coach Mike Macdonald said Tuesday that Shaheed (knee) has a chance to play Sunday against the Cardinals, Brady Henderson of ESPN.com report"
+2026,REG,REG,SEA,9,00-0037745,RB,Velus Jones Jr.,Velus,Jr.,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,SEA,9,00-0037821,OT,Charles Cross,Charles,Cross,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,SEA,9,00-0031933,DT,Leonard Williams,Leonard,Williams,,,Questionable,,,,2026-11-03,Questionable,Nov 2: Williams sustained a stinger during Monday's game against the Bears and is questionable to return.
+2026,REG,REG,SEA,9,00-0038694,DT,Brandon Pili,Brandon,Pili,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Pili (back) is inactive for Monday night's game against the Bears, John Boyle of the Seahawks' official site reports."
+2026,REG,REG,SEA,9,00-0034350,LB,Uchenna Nwosu,Uchenna,Nwosu,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Nwosu (ankle) is inactive for Monday's clash with the Bears, John Boyle of the Seahawks' official site reports."
+2026,REG,REG,SEA,9,00-0035704,QB,Drew Lock,Drew,Lock,,,Questionable,,,,2026-11-03,Questionable,"Nov 2: Lock (coach's decision/elbow) is inactive for Monday's matchup with the Bears but serving as the team's emergency quarterback, John Boyle of the Seahawks"
+2026,REG,REG,SEA,9,00-0040739,TE,Elijah Arroyo,Elijah,Arroyo,,,Out,,,,2026-11-03,Injured Reserve,"Oct 23: Head coach Mike Macdonald told reporters Friday that Arroyo (shoulder) underwent surgery and will likely be out for the rest of the season, Curtis Crabt"
+2026,REG,REG,SEA,9,00-0040873,CB,Julian Neal,Julian,Neal,,,Out,,,,2026-11-03,Injured Reserve,"Oct 10: The Seahawks placed Neal (hamstring) on injured reserve Saturday, John Boyle of the team's official site reports."
+2026,REG,REG,SEA,9,00-0039903,CB,Terrion Arnold,Terrion,Arnold,,,Out,,,,2026-11-03,Out,Aug 29: Arnold signed a contract with the Seahawks on Saturday.
+2026,REG,REG,SEA,9,00-0040652,G,Mason Richman,Mason,Richman,,,Out,,,,2026-11-03,Injured Reserve,"Aug 25: The Seahawks placed Richman (leg) on injured reserve Tuesday, Brady Henderson of ESPN.com reports."
+2026,REG,REG,SEA,9,00-0041463,S,Bud Clark,Bud,Clark,,,Out,,,,2026-11-03,Injured Reserve,"Aug 25: The Seahawks placed Clark (ankle) on injured reserve Tuesday, Brady Henderson of ESPN.com reports."
+2026,REG,REG,SEA,9,00-0038752,WR,Jake Bobo,Jake,Bobo,,,Out,,,,2026-11-03,Injured Reserve,"Aug 22: The Seahawks placed Bobo (knee) on injured reserve Saturday, John Boyle of the team's official site reports."
+2026,REG,REG,SEA,9,00-0040649,FB,Robbie Ouzts,Robbie,Ouzts,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,TB,9,00-0040129,WR,Emeka Egbuka,Emeka,Egbuka,,,Questionable,,,,2026-11-03,Questionable,
+2026,REG,REG,TB,9,00-0039068,LB,Yaya Diaby,Yaya,Diaby,,,Out,,,,2026-11-03,Out,"Nov 2: Head coach Todd Bowles said that Diaby (knee) has been diagnosed with an MCL sprain and won't be available for Sunday's game against the Bears, Scott Smi"
+2026,REG,REG,TB,9,00-0039051,CB,Josh Hayes,Josh,Hayes,,,Out,,,,2026-11-03,Injured Reserve,"Oct 28: Hayes suffered a small setback in his recovery from a knee injury, Greg Auman of Fox Sports reports."
+2026,REG,REG,TB,9,00-0035942,LB,Christian Rozeboom,Christian,Rozeboom,,,Out,,,,2026-11-03,Injured Reserve,"Oct 22: Rozeboom (finger) was placed on injured reserve by the Buccaneers on Thursday, Scott Smith of the team's official website reports."
+2026,REG,REG,TB,9,00-0039855,WR,Jalen McMillan,Jalen,McMillan,,,Out,,,,2026-11-03,Injured Reserve,Sep 30: The Buccaneers placed McMillan (knee) on injured reserve Wednesday.
+2026,REG,REG,TB,9,00-0039877,LB,Mohamed Kamara,Mohamed,Kamara,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: Kamara (knee) reverted to the Buccaneers' injured reserve list Monday, per the NFL's transaction log."
+2026,REG,REG,TEN,9,00-0035889,P,Tommy Townsend,Tommy,Townsend,,,Out,,,,2026-11-03,Out,
+2026,REG,REG,TEN,9,00-0039032,RB,Tyjae Spears,Tyjae,Spears,,,Out,,,,2026-11-03,Out,
+2026,REG,REG,TEN,9,00-0041438,WR,Carnell Tate,Carnell,Tate,,,Out,,,,2026-11-03,Out,
+2026,REG,REG,TEN,9,00-0038407,CB,Jaylon Jones,Jaylon,Jones,,,Out,,,,2026-11-03,Out,
+2026,REG,REG,TEN,9,00-0039034,G,Peter Skoronski,Peter,Skoronski,,,Questionable,,,,2026-11-03,Questionable,Nov 1: Skoronski (hamstring) is questionable to return to Sunday's game against the Bengals.
+2026,REG,REG,TEN,9,00-0039731,OT,JC Latham,JC,Latham,,,Questionable,,,,2026-11-03,Questionable,"Nov 1: Latham (finger) is questionable to return to Sunday's game against the Bengals, Jim Wyatt of the Titans' official site reports."
+2026,REG,REG,TEN,9,00-0039430,LB,James Williams Sr.,James,Sr.,,,Questionable,,,,2026-11-03,Questionable,Nov 1: Williams (groin) has been ruled out for the rest of Sunday's game against the Bengals.
+2026,REG,REG,TEN,9,00-0040201,CB,Marcus Harris,Marcus,Harris,,,Questionable,,,,2026-11-03,Questionable,Nov 1: Harris (ankle) has been ruled out for the rest of Sunday's game against the Bengals.
+2026,REG,REG,TEN,9,00-0040503,LB,Dorian Mausi,Dorian,Mausi,,,Out,,,,2026-11-03,Injured Reserve,"Oct 31: Mausi (foot) has been ruled out for Sunday's game against the Bengals, Jim Wyatt of the Titans' official site reports."
+2026,REG,REG,TEN,9,00-0040190,G,Jackson Slater,Jackson,Slater,,,Out,,,,2026-11-03,Injured Reserve,"Sep 29: The Titans placed Slater (foot) on injured reserve Tuesday, Jim Wyatt of the team's official site reports."
+2026,REG,REG,TEN,9,00-0040881,G,Fernando Carmona,Fernando,Carmona,,,Out,,,,2026-11-03,Injured Reserve,"Sep 29: The Titans placed Carmona (ankle) on injured reserve Tuesday, Jim Wyatt of the team's official site reports."
+2026,REG,REG,TEN,9,00-0036511,LB,Milo Eifler,Milo,Eifler,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,TEN,9,00-0038703,S,Kendell Brooks,Kendell,Brooks,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: Brooks (undisclosed) reverted to Tennessee's injured reserve Monday, per the NFL's transaction log."
+2026,REG,REG,TEN,9,00-0033902,DE,Tanoh Kpassagnon,Tanoh,Kpassagnon,,,Out,,,,2026-11-03,Injured Reserve,"Aug 31: The Titans placed Kpassagnon (undisclosed) on injured reserve Monday, Jim Wyatt of the team's official site reports."
+2026,REG,REG,TEN,9,00-0039436,LB,Jaylen Harrell,Jaylen,Harrell,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,TEN,9,00-0040901,TE,Jaren Kanak,Jaren,Kanak,,,Out,,,,2026-11-03,Injured Reserve,
+2026,REG,REG,WAS,9,00-0034333,DT,Daron Payne,Daron,Payne,,,Out,,,,2026-11-03,Injured Reserve,"Nov 3: Payne (foot) was placed on injured reserve by the Commanders on Tuesday, Tashan Reed of The Washington Post reports."
+2026,REG,REG,WAS,9,00-0036260,DT,Javon Kinlaw,Javon,Kinlaw,,,Out,,,,2026-11-03,Injured Reserve,Nov 3: Kinlaw (knee) was placed on injured reserve by the Commanders on Tuesday.
+2026,REG,REG,WAS,9,00-0033955,RB,Jeremy McNichols,Jeremy,McNichols,,,Out,,,,2026-11-03,Injured Reserve,Nov 3: The Commanders placed McNichols (foot) on injured reserve Tuesday.
+2026,REG,REG,WAS,9,00-0039906,DT,Jer'Zhan Newton,Jer'Zhan,Newton,,,Out,,,,2026-11-03,Injured Reserve,Oct 31: Newton (pectoral) has been ruled out for Sunday's game against the Eagles.
+2026,REG,REG,WAS,9,00-0035659,WR,Terry McLaurin,Terry,McLaurin,,,Out,,,,2026-11-03,Injured Reserve,"Oct 30: McLaurin (knee) underwent surgery Friday to repair the torn patellar tendon in his left knee, Nicki Jhabvala of The Athletic reports."
+2026,REG,REG,WAS,9,00-0032380,OT,Laremy Tunsil,Laremy,Tunsil,,,Out,,,,2026-11-03,Injured Reserve,"Oct 28: Tunsil (triceps) could potentially return late in the season, Nicki Jhabvala of The Athletic reports."
+2026,REG,REG,WAS,9,00-0040164,WR,Jaylin Lane,Jaylin,Lane,,,Out,,,,2026-11-03,Injured Reserve,"Oct 21: Lane underwent surgery Oct. 9 to repair his fractured and dislocated ankle, and he is expected to be cleared for activities before OTAs, Tashan Reed of "
+2026,REG,REG,WAS,9,00-0039412,LB,Javontae Jean-Baptiste,Javontae,Jean-Baptiste,,,Out,,,,2026-11-03,Injured Reserve,Oct 19: The Commanders placed Jean-Baptiste (pectoral) on injured reserve Monday.
+2026,REG,REG,WAS,9,00-0040242,RB,Jacory Croskey-Merritt,Jacory,Croskey-Merritt,,,Out,,,,2026-11-03,Injured Reserve,Oct 19: The Commanders placed Croskey-Merritt (groin) on injured reserve Monday.
+2026,REG,REG,WAS,9,00-0037819,LB,Leo Chenal,Leo,Chenal,,,Out,,,,2026-11-03,Injured Reserve,Sep 29: The Commanders placed Chenal (neck) on injured reserve Tuesday.

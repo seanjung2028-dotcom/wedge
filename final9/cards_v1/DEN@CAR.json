@@ -1,0 +1,29 @@
+{
+ "game": "DEN @ CAR", "kick": "Sun 12:00 PM CT", "venue": "Charlotte, 64°F, clear, wind 6 mph",
+ "market": "DEN −2.5, total 44.5. Young 34.5 attempts / 21.5 completions; Nix 32.5 / 20.5. Hubbard 17.5 carries; Jonah Coleman 13.5.",
+ "lineup": "CAR is down guards Damien Lewis and Brady Christensen. C Corey Bullock and G Torricelli Simpkins III are questionable, RT Taylor Moton is out for the year, and RB Jonathon Brooks and WR Xavier Legette are out. Bryce Young is playing through a knee/ankle issue and scrambling on a career-low 2% of dropbacks. CAR fired DC Ejiro Evero; Todd Wash is the interim. DEN's backfield is a three-way split (Dobbins, Coleman, Harvey).",
+ "keys": [
+  {"team": "DEN", "take": "Young's time in the pocket. He's been pressured on 45.6% of dropbacks, second-most in the NFL.", "how": "A four-man rush that gets home (42.7% pressure rate, 3rd) against a line missing both starting guards and with tackles who have allowed the most pressures in the league.", "gives": "Checkdowns. DEN allows the most RB targets of any defense here (6.9 a game, 44 yards).", "counter": "Get the ball out to Hubbard and McMillan underneath, and run Hubbard (17 carries a game) to slow the rush."},
+  {"team": "CAR", "take": "Bo Nix's short game. He averages 3.9 air yards per completion, the league's lowest.", "how": "Rally and tackle with a new interim coordinator. CAR holds offenses to 6.4 yards per attempt.", "gives": "Red-zone touchdowns. CAR has allowed TDs on 16 of 20 trips (80%, worst in the NFL).", "counter": "DEN runs a committee and Nix scrambles. He ran for 73 against Arizona."}
+ ],
+ "scripts": {
+  "control": "DEN leads. CAR has to pass into the rush, and Young's last two such games went 163 yards (5 sacks) and 209 yards (6 sacks). Hubbard's carries shrink while his catches rise.",
+  "competitive": "CAR's two close games averaged 44.5 attempts. That raises Young's volume, but at 42.5% completions under pressure, volume doesn't turn into yards.",
+  "reversal": "CAR leads behind Hubbard on the ground (28 carries for 120 in the Philly win). Young throws less, so the under looks fine on volume, but he lost the pressure exposure the thesis depends on."
+ },
+ "plays": [
+  {"decision": "Lean", "line": "Bryce Young under 225 passing yards (No)", "price": 51, "cond": "Only at 51¢ or less, and stronger if C Corey Bullock is also inactive.", "why": "The most lopsided pressure matchup of the week: the No. 3 pressure defense against the No. 2 most-pressured QB, with two guards out and a QB who can't escape.", "support": "Sharp Football (Hribar, Nov 4): 42.7% DEN pressure, 45.6% Young pressured, Young 10 of 26 for 108 yards with 11 sacks when pressured over the last two games. DEN allows 58.7% completions (2nd).", "sample": "Young went under 225 in 2 of 7, and both were his last two games, the ones with heavy pressure. DEN held 4 of 8 QBs under 225.", "counter": "CAR throws 39 times a game, and our backtest says passing-yard overs are underpriced by about 5 points. Volume alone can get him there.", "loses": "CAR falls behind early and Young throws 45+ times, or CAR goes quick-game and DEN's rush never gets home.", "vs": "Preferred over Young under 1.5 TD (54¢), because his TD count rides on CAR's red-zone trips more than on the rush.", "est": [49, 59]},
+  {"decision": "Lean", "line": "Chuba Hubbard 3+ receptions (Yes)", "price": 56, "cond": "Only at 56¢ or less.", "why": "The answer to DEN's pressure is the back. Brooks is out, so the RB targets are Hubbard's.", "support": "DEN allows 6.9 RB targets a game, the most of any defense this week.", "sample": "3+ catches in 4 of 7, including 7 of 8 in Week 8 when Young was under siege. Lead backs facing DEN caught 3+ in 5 of 8 games.", "counter": "Hubbard had 1 catch in each of the two games where CAR ran 26–31 times.", "loses": "CAR leads and gives Hubbard 25 carries and 2 targets.", "vs": "Preferred over Hubbard 15+ receiving yards (58¢). The catch count is the cleaner checkdown proxy.", "est": [53, 63]}
+ ],
+ "likely": ["Hubbard 2+ rec (~79%)", "Hubbard 3+ rec (~58%)", "Young under 225 (~54%)"],
+ "value": ["Hubbard 3+ at 56¢ (needs 58%)", "Young under 225 at 51¢ (needs 53%)"],
+ "passed": [
+  {"name": "Bo Nix 15+ rush yds", "why": "He cleared 15 once in 8 games (the 75-yard outlier), and CAR's interim DC adds noise.", "move": "Nothing pregame."},
+  {"name": "Tetairoa McMillan 60+ rec yds", "why": "DEN is 2nd in completion rate allowed, and the pressure thesis argues against downfield yards.", "move": "A price under 45¢ on the No side would be a lean."},
+  {"name": "DEN running backs", "why": "A three-way committee with no stable share to project.", "move": "A beat report naming a lead back."}
+ ],
+ "sources": [
+  {"t": "Sharp Football Analysis — Hribar worksheet (Nov 4)", "u": "https://www.sharpfootballanalysis.com/?p=131985"},
+  {"t": "Panthers.com — Week 9 depth chart", "u": "https://www.panthers.com/news/panthers-release-depth-chart-ahead-of-week-9-of-the-2026-season"}
+ ]
+}

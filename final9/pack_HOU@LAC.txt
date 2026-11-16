@@ -1,0 +1,39 @@
+===== HOU@LAC | weather {'temp': 84, 'precip_prob': 0, 'precip_in': 0, 'wind': 2, 'gust': 3, 'code': 0, 'dome': True}
+consensus spread [['LAC', 6, -111], ['HOU', -6, -109]] total [['over', 40.5, -111], ['under', 40.5, -108]] ML [['HOU', -242], ['LAC', 200]] @ 2026-11-07T23:47:21.061Z
+   Pass Attempts Justin Herbert LAC 31.5 [[15, 31.5, -111, -117]]
+   Pass Attempts C.J. Stroud HOU 32.5 [[15, 32.5, -109, -115]]
+   Completions Justin Herbert LAC 18.5 [[15, 18.5, -114, -115]]
+   Completions C.J. Stroud HOU 21.5 [[15, 21.5, -113, -116]]
+   Rush Attempts Justin Herbert LAC 4.5 [[15, 4.5, -130, -107]]
+   Rush Attempts C.J. Stroud HOU 2.5 [[15, 2.5, -120, -110]]
+   Rush Attempts Emari Demercado HOU 2.5 [[15, 2.5, -170, 135]]
+   Rush Attempts Keaton Mitchell LAC 3.5 [[15, 3.5, -130, 100]]
+   Rush Attempts Kimani Vidal LAC 5.5 [[15, 5.5, -114, -115]]
+   Rush Attempts Omarion Hampton LAC 10.5 [[15, 10.5, -115, -115]]
+   Rush Attempts Woody Marks HOU 16.5 [[15, 16.5, -120, -114]]
+HOU O: g7 pf 23.6 att 35.3 cmp 22.9 sk 2.1 rush 23.6 drv 10.9 ppd 5.62 neuPass 57.4% 3rd 37.5% PA 21.2% oop 21.9% | att by script {'won8+': [34.0, 1], 'close': [31.6, 5], 'lost8+': [55.0, 1]}
+   logs: W1 vBUF 31-36 att 38 sk 3 ru 32 | W2 vCIN 6-20 att 55 sk 4 ru 18 | W3 vIND 17-19 att 27 sk 3 ru 21 | W4 vDAL 30-34 att 31 sk 2 ru 19 | W5 vTEN 26-3 att 34 sk 2 ru 25 | W6 vJAX 34-31 att 34 sk 0 ru 25 | W7 vNYG 21-27 att 28 sk 1 ru 25
+LAC D vs: pa 25.0 oppAtt 28.0 sk 1.7 oppRush 28.7 ypc 4.4 blitz 26.5% rushers 4.33 oopForced 17.7% box 6.6 QBrushYds/g 11.6 scr/g 1.0 20+pass/g 2.6 tgtAllowed {'WR': [15.6, 132.7], 'TE': [6.0, 52.4], 'RB': [5.1, 22.4]}
+   QB C.J. Stroud: g7 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 2.6 (10.8%) rush 11.4 | att 35.3 pyd 266.7 || W5:0/0-0 c6-5 a34-261 W6:0/0-0 c1-5 a34-312 W7:0/0-0 c2-4 a28-153
+   RB Woody Marks: g7 tgt 2.4 (7.4%) rec 2.0 ryd 13.4 | car 11.0 (46.1%) rush 38.7 || W5:4/4-23 c15-62 W6:2/3-25 c15-56 W7:1/1-15 c19-66
+   RB David Montgomery: g5 tgt 1.4 (4.1%) rec 1.4 ryd 13.4 | car 10.4 (44.4%) rush 27.6 || W3:2/2-15 c11-33 W4:0/0-19 c10-24 W5:0/0-0 c5-11
+   WR Nico Collins: g5 tgt 7.0 (22.4%) rec 4.8 ryd 65.8 | car 0.4 (1.6%) rush 2.4 || W5:5/7-56 c0-0 W6:3/5-74 c1-5 W7:2/5-6 c0-0
+   WR Xavier Hutchinson: g7 tgt 5.7 (17.3%) rec 3.0 ryd 36.9 | car 0.6 (2.4%) rush 2.3 || W5:4/5-65 c0-0 W6:2/3-10 c0-0 W7:3/6-17 c2-12
+   TE Dalton Schultz: g7 tgt 6.1 (18.6%) rec 4.7 ryd 46.0 | car 0.0 (0.0%) rush 0.0 || W5:3/4-30 c0-0 W6:4/6-33 c0-0 W7:5/6-45 c0-0
+   WR Marvin Harrison Jr.: g2 tgt 4.0 (13.3%) rec 2.0 ryd 20.0 | car 0.0 (0.0%) rush 0.0 || W6:3/4-34 c0-0 W7:1/4-6 c0-0
+   WR Jaylin Noel: g7 tgt 3.3 (10.0%) rec 2.7 ryd 47.3 | car 0.6 (2.4%) rush 3.7 || W5:5/5-41 c1-1 W6:4/4-107 c0-0 W7:2/2--3 c0-0
+   WR Kayshon Boutte: g7 tgt 3.3 (10.0%) rec 2.1 ryd 27.7 | car 0.0 (0.0%) rush 0.0 || W5:3/5-38 c0-0 W6:2/3-16 c0-0 W7:1/2-25 c0-0
+LAC O: g7 pf 14.1 att 30.3 cmp 18.7 sk 3.3 rush 27.7 drv 11.9 ppd 5.17 neuPass 37.5% 3rd 35.1% PA 25.4% oop 31.2% | att by script {'won8+': [nan, 0], 'close': [27.5, 2], 'lost8+': [31.4, 5]}
+   logs: W1 vARI 14-26 att 27 sk 3 ru 21 | W2 vLV 14-26 att 27 sk 3 ru 32 | W3 vBUF 16-24 att 34 sk 2 ru 28 | W4 vSEA 23-30 att 31 sk 4 ru 32 | W5 vDEN 17-23 att 24 sk 5 ru 34 | W6 vKC 6-22 att 37 sk 4 ru 22 | W8 vLA 9-24 att 32 sk 2 ru 25
+HOU D vs: pa 24.3 oppAtt 35.1 sk 3.0 oppRush 25.1 ypc 3.91 blitz 25.5% rushers 4.34 oopForced 16.4% box 6.78 QBrushYds/g 7.9 scr/g 1.0 20+pass/g 4.3 tgtAllowed {'WR': [21.9, 187.4], 'TE': [6.3, 46.0], 'RB': [5.7, 20.9]}
+   QB Justin Herbert: g7 tgt 0.1 (0.5%) rec 0.0 ryd 0.0 | car 4.7 (17.0%) rush 26.1 | att 30.3 pyd 199.7 || W5:0/0-0 c6-54 a24-121 W6:0/0-0 c5-26 a37-204 W8:0/0-0 c4-15 a32-257
+   RB Omarion Hampton: g7 tgt 1.9 (6.4%) rec 1.6 ryd 9.0 | car 12.7 (45.9%) rush 44.1 || W5:1/1-6 c14-33 W6:4/4-21 c7-18 W8:2/3-7 c9-20
+   RB Keaton Mitchell: g7 tgt 2.6 (8.8%) rec 2.1 ryd 9.9 | car 5.6 (20.1%) rush 20.7 || W5:3/4-18 c6-11 W6:0/1-0 c2-4 W8:3/3-17 c4-6
+   RB Kimani Vidal: g6 tgt 2.3 (7.9%) rec 1.5 ryd 8.3 | car 4.8 (16.8%) rush 22.0 || W5:1/2--1 c8-57 W6:3/4-19 c7-21 W8:2/2-7 c8-23
+   WR Tre Harris: g6 tgt 4.7 (16.7%) rec 3.0 ryd 42.7 | car 0.0 (0.0%) rush 0.0 || W4:3/5-60 c0-0 W5:2/4-16 c0-0 W8:3/3-31 c0-0
+   WR Quentin Johnston: g6 tgt 4.3 (14.2%) rec 2.0 ryd 33.7 | car 0.3 (1.2%) rush 0.5 || W4:1/2-44 c1--4 W6:1/3-57 c0-0 W8:4/4-37 c0-0
+   WR KeAndre Lambert-Smith: g2 tgt 4.5 (13.6%) rec 2.5 ryd 16.0 | car 0.0 (0.0%) rush 0.0 || W6:5/9-32 c0-0 W8:0/0-0 c0-0
+   TE David Njoku: g2 tgt 4.0 (15.1%) rec 3.0 ryd 33.5 | car 0.0 (0.0%) rush 0.0 || W1:5/5-58 c0-0 W2:1/3-9 c0-0
+   WR Ladd McConkey: g6 tgt 4.0 (13.1%) rec 2.8 ryd 47.7 | car 0.0 (0.0%) rush 0.0 || W4:0/2-0 c0-0 W6:1/1-17 c0-0 W8:4/6-86 c0-0
+INJ: HOU Reed Blankenship S Out; HOU David Montgomery RB Out; HOU Jaylin Noel WR Out; LAC Denzel Perryman LB Out; LAC Kendall Williamson S Out; LAC Deane Leonard CB Out; LAC Brenen Thompson WR Doubtful; LAC David Njoku TE Out; LAC Kayode Awosika G Doubtful; LAC Derwin James Jr. S Out; HOU David Montgomery RB Out; HOU Jaylin Noel WR Out; HOU Jaylin Noel WR Out; HOU Jake Hummel LB Out; HOU Jaylin Smith CB Out; HOU British Brooks RB Out; HOU Mario Edwards Jr. DT Out; HOU Jayden Higgins WR Out; HOU Sam Hagen G Out; HOU Solomon Byrd DE Out; HOU Ali Gaye DE Out; HOU E.J. Speed LB Out; HOU Dylan Horton DE Out; HOU K.C. Ossai LB Out; HOU Graham Mertz QB Out; LAC Alec Ingold FB Out; LAC Trevor Penning G Out; LAC Trey Lance QB Out; LAC Rashawn Slater OT Out; LAC Trey Pipkins III OT Out; LAC Isaiah World OT Out; LAC Tyler Biadasz C Out
+RH game lines 35-65c: Over 37.5 points 62/40; Over 38.5 points 59/42; Over 39.5 points 56/45; Over 40.5 points 52/50; Over 41.5 points 48/54; Over 42.5 points 45/56; Over 43.5 points 42/60; Over 44.5 points 39/63; Over 45.5 points 36/66; Houston wins by over 3.5 points 58/43; Houston wins by over 4.5 points 54/47; Houston wins by over 5.5 points 52/49; Houston wins by over 6.5 points 47/54; Houston wins by over 7.5 points 40/61; Houston wins by over 9.5 points 36/65

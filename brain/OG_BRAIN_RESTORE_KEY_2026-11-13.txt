@@ -1,0 +1,36 @@
+WEDGE OG BRAIN — RESTORE KEY
+
+Restore key: OG-BRAIN-2026-11-13-PRE-YOUTUBE
+
+Restore command:
+Restore OG-BRAIN-2026-11-13-PRE-YOUTUBE. Load the linked master prompt in full and use it as the active NFL research baseline. Set aside later OG Brain method changes and keep the YouTube experiment OFF. Preserve current factual evidence and refresh time-sensitive inputs before producing picks. Do not delete files, alter records, or execute wagers. Report whether the baseline was actually retrieved and loaded.
+
+PRIMARY RESTORE TARGET
+OG_Brain_Master_Prompt_Pre_YouTube_2026-11-13.md
+Library file ID: libfile_35310374f49c8191b9c4b87927696638
+Saved version: 0
+Link: https://chatgpt.com/library?file_id=libfile_35310374f49c8191b9c4b87927696638&account_id=personal
+SHA-256 of saved master prompt: 778cdf33720b26d105e957d0cfddfba8139dcfd9c9879141645763a275a1cfcf
+
+This is the consolidated 24-section baseline, including the later recovered matchup-first instructions and the scoped backup-QB exclusion. It is the primary target for restoring the process as documented at the creation of this key. Keep the target unchanged; put future experiments in separate files.
+
+SUPPORTING ORIGINAL-DOCUMENT BACKUP
+OG_Brain_Backup_Pre_YouTube_2026-11-13.zip
+Library file ID: libfile_aaab97a6d62c8191954af570061173e2
+Link: https://chatgpt.com/library?file_id=libfile_aaab97a6d62c8191954af570061173e2&account_id=personal
+This older archive contains the exact saved v2 playbook and original research prompt. It does not replace the consolidated master prompt as this key's primary restore target.
+
+HOW TO USE
+In this conversation, send the restore command above.
+In another chat, provide this key file AND the master prompt (paste or attach the master if the link cannot be opened). The short key alone does not give another chat access to the file.
+
+RESTORE CHECK
+1. Retrieve and read the entire primary master prompt. If the file cannot be accessed, request it; do not claim restoration from the key alone.
+2. Verify the SHA-256 when file tools are available. If the content has changed, locate the matching saved copy or request it. Do not silently use a different version.
+3. Apply this baseline instead of later experimental OG Brain instructions, subject to any new explicit user directions and the receiving chat's governing instructions.
+4. Keep the YouTube experiment OFF, confidence separate from value and staking, and all documented research and comparison checks active.
+5. Carry forward only relevant current assignment inputs. Refresh boards, personnel, weather, and other time-sensitive facts. Restore the methodology, not old prices or roster assumptions.
+6. Confirm restoration only after actually loading the baseline; identify any unavailable content.
+
+SCOPE
+This key restores the documented research instructions. It does not rewind conversation history, restore model internals or account settings, delete later files, or guarantee identical picks. No automatic cross-chat memory or file access is implied.

@@ -1,0 +1,391 @@
+{
+ "settled": 446,
+ "void": 0,
+ "pending": 0,
+ "nights": [
+  "2026-10-22",
+  "2026-10-23"
+ ],
+ "games": 14,
+ "screen": {
+  "n": 190,
+  "won": 90,
+  "win_pct": 47.4,
+  "avg_price": 50.2,
+  "roi": -5.7,
+  "profit_c": -544
+ },
+ "all": {
+  "n": 446,
+  "won": 179,
+  "win_pct": 40.1,
+  "avg_price": 49.7,
+  "roi": -19.3,
+  "profit_c": -4269
+ },
+ "model": {
+  "n": 119,
+  "won": 46,
+  "win_pct": 38.7,
+  "avg_price": 48.8,
+  "roi": -20.8,
+  "profit_c": -1207
+ },
+ "screen_model": {
+  "n": 72,
+  "won": 30,
+  "win_pct": 41.7,
+  "avg_price": 49.4,
+  "roi": -15.7,
+  "profit_c": -560
+ },
+ "screen_props": {
+  "n": 122,
+  "won": 52,
+  "win_pct": 42.6,
+  "avg_price": 50.2,
+  "roi": -15.1,
+  "profit_c": -928
+ },
+ "screen_team": {
+  "n": 68,
+  "won": 38,
+  "win_pct": 55.9,
+  "avg_price": 50.2,
+  "roi": 11.2,
+  "profit_c": 384
+ },
+ "props_all": {
+  "n": 274,
+  "won": 112,
+  "win_pct": 40.9,
+  "avg_price": 49.7,
+  "roi": -17.8,
+  "profit_c": -2419
+ },
+ "model_side_pct": 52.4,
+ "model_side_n": 254,
+ "brier": {
+  "price": 0.2483,
+  "wedger": 0.2489,
+  "hit20": 0.2725
+ },
+ "calibration": [
+  {
+   "lo": 35,
+   "hi": 40,
+   "n": 1,
+   "pred": 39.4,
+   "hit": 0.0
+  },
+  {
+   "lo": 40,
+   "hi": 45,
+   "n": 23,
+   "pred": 43.6,
+   "hit": 43.5
+  },
+  {
+   "lo": 45,
+   "hi": 50,
+   "n": 123,
+   "pred": 47.8,
+   "hit": 39.8
+  },
+  {
+   "lo": 50,
+   "hi": 55,
+   "n": 94,
+   "pred": 52.1,
+   "hit": 41.5
+  },
+  {
+   "lo": 55,
+   "hi": 60,
+   "n": 12,
+   "pred": 55.6,
+   "hit": 41.7
+  }
+ ],
+ "by_market": [
+  {
+   "market": "Rebounds",
+   "all": {
+    "n": 65,
+    "won": 30,
+    "win_pct": 46.2,
+    "avg_price": 49.2,
+    "roi": -6.2,
+    "profit_c": -197
+   },
+   "screen": {
+    "n": 23,
+    "won": 12,
+    "win_pct": 52.2,
+    "avg_price": 49.9,
+    "roi": 4.5,
+    "profit_c": 52
+   },
+   "model": {
+    "n": 25,
+    "won": 11,
+    "win_pct": 44.0,
+    "avg_price": 47.9,
+    "roi": -8.2,
+    "profit_c": -98
+   }
+  },
+  {
+   "market": "Team total",
+   "all": {
+    "n": 61,
+    "won": 21,
+    "win_pct": 34.4,
+    "avg_price": 50.0,
+    "roi": -31.1,
+    "profit_c": -947
+   },
+   "screen": {
+    "n": 23,
+    "won": 10,
+    "win_pct": 43.5,
+    "avg_price": 50.2,
+    "roi": -13.3,
+    "profit_c": -154
+   },
+   "model": {
+    "n": 0
+   }
+  },
+  {
+   "market": "Assists",
+   "all": {
+    "n": 59,
+    "won": 22,
+    "win_pct": 37.3,
+    "avg_price": 49.9,
+    "roi": -25.3,
+    "profit_c": -746
+   },
+   "screen": {
+    "n": 24,
+    "won": 11,
+    "win_pct": 45.8,
+    "avg_price": 50.6,
+    "roi": -9.4,
+    "profit_c": -114
+   },
+   "model": {
+    "n": 25,
+    "won": 9,
+    "win_pct": 36.0,
+    "avg_price": 49.2,
+    "roi": -26.8,
+    "profit_c": -330
+   }
+  },
+  {
+   "market": "Points",
+   "all": {
+    "n": 57,
+    "won": 24,
+    "win_pct": 42.1,
+    "avg_price": 50.2,
+    "roi": -16.1,
+    "profit_c": -461
+   },
+   "screen": {
+    "n": 32,
+    "won": 12,
+    "win_pct": 37.5,
+    "avg_price": 49.9,
+    "roi": -24.8,
+    "profit_c": -396
+   },
+   "model": {
+    "n": 21,
+    "won": 8,
+    "win_pct": 38.1,
+    "avg_price": 48.6,
+    "roi": -21.6,
+    "profit_c": -221
+   }
+  },
+  {
+   "market": "Spread",
+   "all": {
+    "n": 56,
+    "won": 27,
+    "win_pct": 48.2,
+    "avg_price": 49.2,
+    "roi": -2.1,
+    "profit_c": -57
+   },
+   "screen": {
+    "n": 26,
+    "won": 20,
+    "win_pct": 76.9,
+    "avg_price": 49.7,
+    "roi": 54.7,
+    "profit_c": 707
+   },
+   "model": {
+    "n": 0
+   }
+  },
+  {
+   "market": "Threes",
+   "all": {
+    "n": 54,
+    "won": 23,
+    "win_pct": 42.6,
+    "avg_price": 49.9,
+    "roi": -14.6,
+    "profit_c": -394
+   },
+   "screen": {
+    "n": 22,
+    "won": 9,
+    "win_pct": 40.9,
+    "avg_price": 51.0,
+    "roi": -19.9,
+    "profit_c": -223
+   },
+   "model": {
+    "n": 37,
+    "won": 15,
+    "win_pct": 40.5,
+    "avg_price": 49.6,
+    "roi": -18.3,
+    "profit_c": -335
+   }
+  },
+  {
+   "market": "Total",
+   "all": {
+    "n": 45,
+    "won": 14,
+    "win_pct": 31.1,
+    "avg_price": 49.8,
+    "roi": -37.6,
+    "profit_c": -842
+   },
+   "screen": {
+    "n": 16,
+    "won": 6,
+    "win_pct": 37.5,
+    "avg_price": 51.0,
+    "roi": -26.5,
+    "profit_c": -216
+   },
+   "model": {
+    "n": 0
+   }
+  },
+  {
+   "market": "Pts + Reb + Ast",
+   "all": {
+    "n": 39,
+    "won": 13,
+    "win_pct": 33.3,
+    "avg_price": 49.3,
+    "roi": -32.3,
+    "profit_c": -621
+   },
+   "screen": {
+    "n": 21,
+    "won": 8,
+    "win_pct": 38.1,
+    "avg_price": 49.9,
+    "roi": -23.6,
+    "profit_c": -247
+   },
+   "model": {
+    "n": 11,
+    "won": 3,
+    "win_pct": 27.3,
+    "avg_price": 47.5,
+    "roi": -42.6,
+    "profit_c": -223
+   }
+  },
+  {
+   "market": "Moneyline",
+   "all": {
+    "n": 10,
+    "won": 5,
+    "win_pct": 50.0,
+    "avg_price": 50.4,
+    "roi": -0.8,
+    "profit_c": -4
+   },
+   "screen": {
+    "n": 3,
+    "won": 2,
+    "win_pct": 66.7,
+    "avg_price": 51.0,
+    "roi": 30.7,
+    "profit_c": 47
+   },
+   "model": {
+    "n": 0
+   }
+  }
+ ],
+ "by_date": [
+  {
+   "date": "2026-10-22",
+   "all": {
+    "n": 53,
+    "won": 18,
+    "win_pct": 34.0,
+    "avg_price": 50.2,
+    "roi": -32.3,
+    "profit_c": -860
+   },
+   "screen": {
+    "n": 29,
+    "won": 14,
+    "win_pct": 48.3,
+    "avg_price": 49.9,
+    "roi": -3.2,
+    "profit_c": -47
+   },
+   "model": {
+    "n": 19,
+    "won": 7,
+    "win_pct": 36.8,
+    "avg_price": 49.6,
+    "roi": -25.7,
+    "profit_c": -242
+   }
+  },
+  {
+   "date": "2026-10-23",
+   "all": {
+    "n": 393,
+    "won": 161,
+    "win_pct": 41.0,
+    "avg_price": 49.6,
+    "roi": -17.5,
+    "profit_c": -3409
+   },
+   "screen": {
+    "n": 161,
+    "won": 76,
+    "win_pct": 47.2,
+    "avg_price": 50.3,
+    "roi": -6.1,
+    "profit_c": -497
+   },
+   "model": {
+    "n": 100,
+    "won": 39,
+    "win_pct": 39.0,
+    "avg_price": 48.6,
+    "roi": -19.8,
+    "profit_c": -965
+   }
+  }
+ ]
+}

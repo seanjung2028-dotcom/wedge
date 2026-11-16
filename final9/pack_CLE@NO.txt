@@ -1,0 +1,39 @@
+===== CLE@NO | weather {'temp': None, 'precip_prob': 0, 'precip_in': 0, 'wind': 0, 'gust': 0, 'code': 0, 'dome': True}
+consensus spread [['NO', -3, -116], ['CLE', 3, -103]] total [['under', 42.5, -112], ['over', 42.5, -108]] ML [['NO', -171], ['CLE', 140]] @ 2026-11-07T23:47:21.061Z
+   Pass Attempts Tyler Shough NO 34.5 [[15, 34.5, -104, -125]]
+   Pass Attempts Shedeur Sanders CLE 30.5 [[15, 30.5, -121, -105]]
+   Completions Tyler Shough NO 22.5 [[15, 22.5, -100, -120]]
+   Completions Shedeur Sanders CLE 18.5 [[15, 18.5, -119, -102]]
+   Rush Attempts Alvin Kamara NO 12.5 [[15, 12.5, -110, -120]]
+   Rush Attempts Kendre Miller NO 11.5 [[15, 11.5, 102, -130]]
+   Rush Attempts Audric Estime NO 7.5 [[15, 7.5, -106, -124]]
+   Rush Attempts Quinshon Judkins CLE 16.5 [[15, 16.5, -110, -120]]
+   Rush Attempts Tyler Shough NO 4.5 [[15, 4.5, 104, -134]]
+   Rush Attempts Dylan Sampson CLE 4.0 [[15, 4.5, 100, -130]]
+   Rush Attempts Shedeur Sanders CLE 3.0 [[15, 3.5, 100, -130]]
+CLE O: g8 pf 17.4 att 31.5 cmp 20.8 sk 4.1 rush 24.0 drv 11.9 ppd 5.02 neuPass 51.4% 3rd 32.4% PA 17.7% oop 24.5% | att by script {'won8+': [nan, 0], 'close': [31.5, 6], 'lost8+': [31.5, 2]}
+   logs: W1 vJAX 10-34 att 22 sk 5 ru 22 | W2 vTB 23-19 att 30 sk 2 ru 21 | W3 vCAR 21-18 att 31 sk 2 ru 28 | W4 vPIT 27-24 att 33 sk 2 ru 25 | W5 vNYJ 12-17 att 33 sk 8 ru 24 | W6 vBAL 13-10 att 26 sk 5 ru 29 | W7 vTEN 27-24 att 36 sk 1 ru 29 | W8 vPIT 6-27 att 41 sk 8 ru 14
+NO D vs: pa 27.7 oppAtt 32.9 sk 2.6 oppRush 27.6 ypc 5.11 blitz 34.1% rushers 4.41 oopForced 15.7% box 6.56 QBrushYds/g 19.1 scr/g 2.1 20+pass/g 3.6 tgtAllowed {'WR': [17.3, 143.6], 'TE': [9.0, 68.7], 'RB': [5.3, 37.7]}
+   QB Deshaun Watson: g8 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 6.4 (25.6%) rush 27.1 | att 31.1 pyd 225.8 || W6:0/0-0 c8-29 a26-164 W7:0/0-0 c3-19 a36-308 W8:0/0-0 c3-2 a39-324
+   RB Quinshon Judkins: g7 tgt 3.3 (10.4%) rec 3.0 ryd 19.1 | car 14.4 (59.4%) rush 48.9 || W5:3/4-6 c14-44 W7:1/1-8 c17-96 W8:2/2-24 c11-25
+   RB Audric Estimé: g1 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 9.0 (31.0%) rush 19.0 || W6:0/0-0 c9-19
+   WR KC Concepcion: g8 tgt 6.1 (19.8%) rec 4.1 ryd 44.0 | car 1.1 (4.5%) rush 4.2 || W6:4/6-37 c2-2 W7:8/10-129 c3-23 W8:3/4-37 c0-0
+   WR Denzel Boston: g8 tgt 6.6 (21.5%) rec 3.2 ryd 51.1 | car 0.0 (0.0%) rush 0.0 || W6:1/5-15 c0-0 W7:3/8-27 c0-0 W8:6/11-37 c0-0
+   TE Harold Fannin Jr.: g8 tgt 6.4 (20.6%) rec 4.4 ryd 51.4 | car 0.0 (0.0%) rush 0.0 || W6:1/3-9 c0-0 W7:6/9-91 c0-0 W8:10/12-154 c0-0
+   RB Dylan Sampson: g3 tgt 3.7 (11.3%) rec 3.0 ryd 31.3 | car 2.3 (10.6%) rush 17.3 || W1:0/0-0 c0-0 W7:3/3-32 c6-45 W8:6/8-62 c1-7
+   RB Raheim Sanders: g5 tgt 2.4 (8.2%) rec 2.2 ryd 14.8 | car 1.8 (7.1%) rush 8.6 || W3:4/5-34 c1-17 W4:2/2-7 c2-9 W5:1/1-1 c3-12
+   RB Jaleel McLaughlin: g5 tgt 1.2 (3.9%) rec 0.8 ryd 2.8 | car 2.2 (8.3%) rush 14.4 || W5:0/1-0 c0-0 W6:4/4-14 c9-41 W7:0/0-0 c0-0
+NO O: g7 pf 23.1 att 39.0 cmp 26.1 sk 2.1 rush 24.3 drv 10.9 ppd 6.03 neuPass 53.0% 3rd 43.4% PA 14.8% oop 14.8% | att by script {'won8+': [nan, 0], 'close': [39.5, 4], 'lost8+': [38.3, 3]}
+   logs: W1 vDET 30-31 att 56 sk 5 ru 25 | W2 vBAL 24-17 att 34 sk 3 ru 27 | W3 vLV 27-35 att 42 sk 2 ru 28 | W4 vATL 24-45 att 48 sk 2 ru 19 | W5 vMIN 13-23 att 25 sk 1 ru 17 | W6 vNYG 34-27 att 30 sk 0 ru 37 | W7 vPIT 10-16 att 38 sk 2 ru 17
+CLE D vs: pa 21.6 oppAtt 32.8 sk 2.6 oppRush 26.8 ypc 4.78 blitz 25.1% rushers 4.29 oopForced 16.8% box 6.4 QBrushYds/g 9.5 scr/g 1.1 20+pass/g 2.9 tgtAllowed {'WR': [18.0, 136.9], 'TE': [8.0, 59.2], 'RB': [4.8, 17.5]}
+   QB Tyler Shough: g7 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 3.4 (14.0%) rush 15.9 | att 39.0 pyd 245.9 || W5:0/0-0 c0-0 a25-96 W6:0/0-0 c5-32 a30-144 W7:0/0-0 c3-7 a38-278
+   RB Travis Etienne: g3 tgt 4.3 (10.5%) rec 3.7 ryd 17.0 | car 10.0 (37.5%) rush 42.7 || W1:7/9-32 c9-46 W2:2/2-6 c8-25 W3:2/2-13 c13-57
+   RB Kendre Miller: g6 tgt 2.2 (5.6%) rec 1.5 ryd 6.2 | car 9.5 (39.6%) rush 26.5 || W5:0/0-0 c10-30 W6:2/2-0 c20-70 W7:3/5-22 c8-6
+   RB Alvin Kamara: g6 tgt 4.5 (12.8%) rec 3.7 ryd 22.2 | car 6.8 (28.1%) rush 20.8 || W5:2/2--6 c3-12 W6:2/4-35 c7-34 W7:7/7-57 c6-5
+   WR Chris Olave: g7 tgt 10.1 (27.0%) rec 7.0 ryd 90.9 | car 0.0 (0.0%) rush 0.0 || W5:4/6-46 c0-0 W6:4/7-43 c0-0 W7:6/10-56 c0-0
+   WR Devaughn Vele: g7 tgt 6.9 (18.3%) rec 4.7 ryd 49.7 | car 0.0 (0.0%) rush 0.0 || W5:4/6-26 c0-0 W6:3/6-42 c0-0 W7:5/5-54 c0-0
+   TE Juwan Johnson: g7 tgt 5.3 (14.1%) rec 3.7 ryd 36.4 | car 0.0 (0.0%) rush 0.0 || W5:4/5-16 c0-0 W6:0/2-0 c0-0 W7:1/3-7 c0-0
+   RB CJ Donaldson: g6 tgt 1.0 (2.7%) rec 0.7 ryd 1.7 | car 2.8 (11.0%) rush 13.5 || W4:2/2-5 c3-18 W5:1/1-7 c4-13 W6:0/1-0 c6-39
+   WR Bryce Lance: g7 tgt 3.1 (8.4%) rec 1.3 ryd 11.1 | car 0.0 (0.0%) rush 0.0 || W5:0/3-0 c0-0 W6:2/4-9 c0-0 W7:2/2-12 c0-0
+INJ: CLE Deshaun Watson QB Questionable; CLE Maliek Collins DT Out; NO Jordyn Tyson WR Out; NO Kelvin Banks Jr. OT Out; NO Martin Emerson Jr. CB Questionable; NO CJ Donaldson RB Out; NO Asim Richards OT Questionable; NO Travis Etienne Jr. RB Out; NO Jordyn Tyson WR Out; NO Travis Etienne Jr. RB Out; CLE Kalia Davis DT Out; CLE Teven Jenkins G Out; CLE Raheim Sanders RB Out; CLE Jeremiah Owusu-Koramoah LB Out; CLE Edefuan Ulofoshio LB Out; CLE Elijah Chatman DT Out; CLE Joe Royer TE Out; CLE Alex Wright DE Out; CLE Damarri Mathis CB Out; NO Travis Etienne Jr. RB Out; NO Jordyn Tyson WR Out; NO Kelvin Banks Jr. OT Out; NO Dillon Radunz G Out; NO Mason Tipton WR Out; NO Moliki Matavao TE Out; NO Ty Chandler RB Out; NO Rejzohn Wright CB Out; NO Bryan Bresee DT Out; NO Nick Saldiveri OT Out; NO Martin Emerson CB Questionable; NO Asim Richards T Questionable; NO Kelvin Banks Jr. T Questionable; NO Jordyn Tyson WR Questionable; NO CJ Donaldson RB Out
+RH game lines 35-65c: Over 37.5 points 65/37; Over 38.5 points 63/39; Over 39.5 points 59/42; Over 40.5 points 56/45; Over 41.5 points 52/49; Over 42.5 points 49/52; Over 43.5 points 45/56; Over 44.5 points 42/59; Over 45.5 points 39/62; Over 46.5 points 35/66; New Orleans wins by over 1.5 points 58/43; New Orleans wins by over 2.5 points 56/45; New Orleans wins by over 3.5 points 49/53; New Orleans wins by over 4.5 points 46/56; New Orleans wins by over 5.5 points 44/58; New Orleans wins by over 6.5 points 40/62; New Orleans wins by over 7.5 points 35/67; Cleveland wins by over 1.5 points 38/63; Cleveland wins by over 2.5 points 36/65; CLE 40/62; NO 62/40

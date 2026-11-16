@@ -1,0 +1,33 @@
+STATUS|STATUS_FINAL|true|Final
+TEAM|BOS|home|107
+TEAM|NY|away|103
+P|NY|OG Anunoby|34|20|10|8|2|false
+P|NY|Karl-Anthony Towns|37|22|10|3|2|false
+P|NY|Josh Hart|36|10|12|5|2|false
+P|NY|Mikal Bridges|22|0|1|4|0|false
+P|NY|Jalen Brunson|37|19|2|4|2|false
+P|NY|Pacome Dadiet|--|0|0|0|0|false
+P|NY|Andre Drummond|7|2|2|0|0|false
+P|NY|James Wiseman|2|0|0|0|0|false
+P|NY|Jordan Clarkson|3|0|1|0|0|false
+P|NY|Landry Shamet|21|8|2|0|2|false
+P|NY|Jose Alvarado|11|2|2|2|0|false
+P|NY|Miles McBride|30|20|2|1|6|false
+P|NY|Mohamed Diawara||||||true
+P|NY|Tyler Kolek||||||true
+P|BOS|Paul George|34|15|7|2|3|false
+P|BOS|Jayson Tatum|37|36|9|7|3|false
+P|BOS|Mitchell Robinson|22|4|4|2|0|false
+P|BOS|Derrick White|33|12|4|6|2|false
+P|BOS|Jordan Walsh|20|5|3|0|1|false
+P|BOS|Sam Hauser|23|6|2|2|2|false
+P|BOS|Luka Garza|4|8|1|0|2|false
+P|BOS|Neemias Queta|22|15|6|1|1|false
+P|BOS|Payton Pritchard|30|4|1|4|1|false
+P|BOS|Baylor Scheierman|11|2|0|0|0|false
+P|BOS|Hugo Gonzalez|4|0|0|1|0|false
+P|BOS|Chris Cenac Jr.||||||true
+P|BOS|Mike Conley||||||true
+P|BOS|Ron Harper Jr.||||||true
+T|NY|36-80|16-40|15-21|12|44|27|18
+T|BOS|40-87|15-39|12-16|10|37|25|11

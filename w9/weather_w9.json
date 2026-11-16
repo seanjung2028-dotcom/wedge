@@ -1,0 +1,120 @@
+{
+ "DEN@CAR": {
+  "temp": 64,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 6,
+  "gust": 9,
+  "code": 0
+ },
+ "NYJ@KC": {
+  "temp": 60,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 5,
+  "gust": 8,
+  "code": 0
+ },
+ "DET@MIA": {
+  "temp": 84,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 5,
+  "gust": 8,
+  "code": 2
+ },
+ "NYG@PHI": {
+  "temp": 58,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 10,
+  "gust": 17,
+  "code": 2
+ },
+ "LA@WAS": {
+  "temp": 58,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 9,
+  "gust": 14,
+  "code": 0
+ },
+ "GB@NE": {
+  "temp": 55,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 9,
+  "gust": 14,
+  "code": 2
+ },
+ "LV@SF": {
+  "temp": 68,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 5,
+  "gust": 7,
+  "code": 2
+ },
+ "ARI@SEA": {
+  "temp": 57,
+  "precip_prob": 8,
+  "precip_in": 0,
+  "wind": 12,
+  "gust": 19,
+  "code": 3
+ },
+ "TB@CHI": {
+  "temp": 51,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 9,
+  "gust": 14,
+  "code": 0
+ },
+ "CIN@ATL": {
+  "temp": null,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 0,
+  "gust": 0,
+  "code": 0,
+  "dome": true
+ },
+ "DAL@IND": {
+  "temp": null,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 0,
+  "gust": 0,
+  "code": 0,
+  "dome": true
+ },
+ "CLE@NO": {
+  "temp": null,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 0,
+  "gust": 0,
+  "code": 0,
+  "dome": true
+ },
+ "HOU@LAC": {
+  "temp": 84,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 2,
+  "gust": 3,
+  "code": 0,
+  "dome": true
+ },
+ "BUF@MIN": {
+  "temp": null,
+  "precip_prob": 0,
+  "precip_in": 0,
+  "wind": 0,
+  "gust": 0,
+  "code": 0,
+  "dome": true
+ },
+ "_source": "Forecasts pulled Sat Nov 7 ~2:25 PM CT from Action Network's game-day forecasts (temp, wind, rain chance); gusts estimated at 1.6x wind. Domes / closed roofs: DAL @ IND, CLE @ NO, HOU @ LAC, BUF @ MIN; CIN @ ATL is in Madrid (Bernabeu, retractable roof) and treated as covered."
+}

@@ -1,0 +1,29 @@
+{
+ "game": "LAR @ WSH", "kick": "Sun 12:00 PM CT", "venue": "Landover, 58°F, clear, wind 9 mph (gusts 14)",
+ "market": "LAR −4.5, total 47.5. Stafford 33 attempts / 22.5 completions; Daniels 30.5 / 19.5 and 6.5 rushes. Kyren Williams 13.5 carries; Corum 11.5.",
+ "lineup": "LAR is without WR2 Davante Adams (out since Week 7), TE Terrance Ferguson (out) and CB Jaylen Watson (out); TE Colby Parkinson and WR Jordan Whittington are questionable. Daniels is healthy after missing Weeks 3–4. WAS has a new OC, David Blough, and Daniels has said he wants to avoid the hits that cost him 10 games in 2025.",
+ "keys": [
+  {"team": "WAS", "take": "Puka Nacua, who has had 34% and 48% target shares since Adams went down.", "how": "Blitz. WAS sends extra rushers on 43.6% of dropbacks, the most of any defense this week.", "gives": "Hot reads and quick slants, Nacua's routes. WAS allows 19.1 WR targets and 149 WR yards a game.", "counter": "Stafford gets it out to Nacua before the blitz arrives. In LAR's two wins without Adams he threw 25–29 times and Nacua still caught 8 and 11."},
+  {"team": "LAR", "take": "Daniels' legs.", "how": "Rush four and keep him in the pocket (LAR blitzes 29.3%). LAR forces QBs out of the pocket on only 19% of dropbacks.", "gives": "Time for Daniels to throw (300 yards against SF).", "counter": "Daniels scrambles when the coverage holds. Nearly all his rushing yards come from scrambles (7 of 8 runs in his 104-yard game)."}
+ ],
+ "scripts": {
+  "control": "LAR leads. Stafford's attempts fall to the 25–29 range, but Nacua's share rises without Adams. WAS throws, and Daniels' scrambles depend on whether LAR's rush flushes him.",
+  "competitive": "LAR's close games averaged 48 attempts, and Nacua's catch ceiling is in double digits (17 against BUF).",
+  "reversal": "WAS leads on the ground. Daniels slides early and protects himself, the opposite of a rushing-over game. Nacua's volume goes up as LAR chases."
+ },
+ "plays": [
+  {"decision": "Final", "line": "Jayden Daniels under 40 rushing yards (No)", "price": 55, "why": "His rushing has become scramble-only, the scrambles are falling, and the healthy version of Daniels is throwing first under a new OC.", "support": "Play-by-play: zero designed runs in his last two games (3 and 2 scrambles, for 11 and 23 yards). NFL.com (Shook, spring): Daniels wants to avoid the hits that cost him 10 games in 2025.", "sample": "40+ in 2 of 5 starts, both before Week 6 (69 against DAL, 104 against NYG on mostly scrambles).", "counter": "If LAR's rush flushes him, one 30-yard scramble cashes the Yes. WAS is the underdog, and chasing games are when he's run most.", "loses": "WAS trails and Daniels improvises (the NYG game: 7 scrambles), or one long run.", "vs": "Preferred over under 50 (No 69¢, needs 71%), which is safer but priced past what the sample supports.", "est": [58, 68]},
+  {"decision": "Final", "line": "Puka Nacua 8+ receptions (Yes)", "price": 56, "cond": "At 56¢ or less.", "why": "WAS's blitz-heavy plan meets a QB who has funneled 34–48% of his targets to one receiver since Adams went down.", "support": "WAS blitzes 43.6% (most here) and allows 19.1 WR targets a game. Nacua's share is 34% for the season and 48% last week.", "sample": "8+ catches in 4 of 6, including both games without Adams (8 and 11).", "counter": "LAR's wins came on 25–29 attempts, and a quiet blowout could leave him at 6 or 7.", "loses": "LAR leads by 14 at half and runs Kyren and Corum, or WAS doubles Nacua and forces Higbee to beat it.", "vs": "Beat 9+ (45¢, needs 47%), which has a higher ceiling but loses to a normal 8-catch game, and 7+ (71¢), which is too expensive.", "est": [58, 66]}
+ ],
+ "likely": ["Nacua 7+ rec (~74%)", "Daniels under 40 rush (~63%)", "Nacua 8+ rec (~62%)"],
+ "value": ["Daniels under 40 at 55¢ (needs 57%)", "Nacua 8+ at 56¢ (needs 58%)"],
+ "passed": [
+  {"name": "Matthew Stafford 275+ pass yds (34¢)", "why": "His volume swings with the script (25–29 attempts in wins, 51–54 in close games). At 34¢ the price is fair either way.", "move": "None pregame."},
+  {"name": "Kyren Williams 3+ rec (55¢)", "why": "WAS allows 6.9 RB targets a game, but Kyren has had 1–3 targets in each of the last three games.", "move": "Parkinson and Higbee limited, so backs run more of the hot routes."},
+  {"name": "WSH running backs", "why": "A Rachaad White / Ekeler / Croskey-Merritt split.", "move": "A beat report on the carry plan."}
+ ],
+ "sources": [
+  {"t": "TheRams.com — First look: Rams at Commanders", "u": "https://www.therams.com/news/first-look-rams-visit-commanders-in-week-9-2026-seeking-to-extend-win-streak-to-three-games"},
+  {"t": "NFL.com — Daniels loves Blough's offense, aims to avoid injury (Shook)", "u": "https://www.nfl.com/news/commanders-jayden-daniels-loves-new-offense-aims-to-avoid-injury"}
+ ]
+}

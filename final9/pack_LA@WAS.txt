@@ -1,0 +1,38 @@
+===== LA@WAS | weather {'temp': 58, 'precip_prob': 0, 'precip_in': 0, 'wind': 9, 'gust': 14, 'code': 0}
+consensus spread [['WAS', 4.5, -110], ['LA', -4.5, -110]] total [['over', 47.5, -112], ['under', 47.5, -108]] ML [['WAS', 191], ['LA', -235]] @ 2026-11-07T23:47:21.061Z
+   Pass Attempts Matthew Stafford LA 33.25 [[15, 33, -110, -119]]
+   Pass Attempts Jayden Daniels WAS 30.5 [[15, 30.5, -125, -109]]
+   Completions Matthew Stafford LA 22.5 [[15, 22.5, -104, -124]]
+   Completions Jayden Daniels WAS 19.5 [[15, 19.5, -115, -113]]
+   Rush Attempts Matthew Stafford LA 1.5 [[15, 1.5, 110, -140]]
+   Rush Attempts Austin Ekeler WAS 6.0 [[15, 6.5, 105, -135]]
+   Rush Attempts Rachaad White WAS 10.5 [[15, 10.5, -106, -125]]
+   Rush Attempts Kyren Williams LA 13.5 [[15, 13.5, -120, -110]]
+   Rush Attempts Jayden Daniels WAS 6.5 [[15, 6.5, 103, -133]]
+   Rush Attempts Blake Corum LA 11.5 [[15, 11.5, -105, -125]]
+LA O: g8 pf 24.2 att 38.2 cmp 25.8 sk 1.5 rush 25.6 drv 11.4 ppd 5.75 neuPass 59.8% 3rd 43.6% PA 26.1% oop 14.3% | att by script {'won8+': [28.3, 3], 'close': [48.2, 4], 'lost8+': [28.0, 1]}
+   logs: W1 vSF 7-27 att 28 sk 0 ru 28 | W2 vNYG 28-6 att 31 sk 1 ru 25 | W3 vDEN 26-30 att 55 sk 4 ru 23 | W4 vPHI 24-20 att 51 sk 1 ru 24 | W5 vBUF 34-37 att 54 sk 1 ru 23 | W6 vARI 16-18 att 33 sk 3 ru 20 | W7 vLV 35-21 att 29 sk 1 ru 35 | W8 vLAC 24-9 att 25 sk 1 ru 27
+WAS D vs: pa 26.0 oppAtt 36.0 sk 2.3 oppRush 25.0 ypc 4.0 blitz 43.6% rushers 4.58 oopForced 19.7% box 6.58 QBrushYds/g 23.9 scr/g 2.9 20+pass/g 3.4 tgtAllowed {'WR': [19.1, 149.0], 'TE': [8.0, 74.9], 'RB': [6.9, 34.7]}
+   QB Matthew Stafford: g8 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 1.8 (6.6%) rush 2.2 | att 37.9 pyd 268.2 || W6:0/0-0 c0-0 a33-222 W7:0/0-0 c3--3 a29-195 W8:0/0-0 c0-0 a25-157
+   RB Kyren Williams: g8 tgt 5.2 (14.2%) rec 4.1 ryd 30.2 | car 14.0 (52.6%) rush 68.5 || W6:3/6-17 c10-50 W7:2/2-22 c16-99 W8:1/1-3 c16-56
+   WR Puka Nacua: g6 tgt 12.3 (34.1%) rec 9.3 ryd 94.2 | car 0.8 (3.1%) rush 3.5 || W6:6/7-80 c0-0 W7:8/10-68 c2-10 W8:11/12-80 c0-0
+   RB Blake Corum: g8 tgt 1.9 (5.1%) rec 1.2 ryd 12.4 | car 9.4 (35.2%) rush 48.6 || W6:2/2-18 c9-42 W7:1/1-8 c17-93 W8:0/1-0 c11-73
+   WR Davante Adams: g6 tgt 8.2 (20.2%) rec 5.0 ryd 80.0 | car 0.0 (0.0%) rush 0.0 || W4:4/9-32 c0-0 W5:5/7-51 c0-0 W6:3/4-39 c0-0
+   TE Tyler Higbee: g7 tgt 4.9 (12.8%) rec 3.9 ryd 39.1 | car 0.0 (0.0%) rush 0.0 || W6:4/4-22 c0-0 W7:2/3-14 c0-0 W8:1/2-14 c0-0
+   TE Terrance Ferguson: g3 tgt 4.0 (11.3%) rec 2.3 ryd 21.0 | car 0.0 (0.0%) rush 0.0 || W1:0/1-0 c0-0 W2:6/9-54 c0-0 W3:1/2-9 c0-0
+   TE Colby Parkinson: g6 tgt 3.2 (8.6%) rec 2.3 ryd 17.2 | car 0.0 (0.0%) rush 0.0 || W5:1/2-3 c0-0 W6:5/6-31 c0-0 W7:5/6-48 c0-0
+   WR Konata Mumpfield: g7 tgt 3.0 (8.7%) rec 1.3 ryd 20.3 | car 0.0 (0.0%) rush 0.0 || W6:2/3-15 c0-0 W7:1/2-15 c0-0 W8:0/2-0 c0-0
+WAS O: g7 pf 22.7 att 32.7 cmp 19.9 sk 2.3 rush 26.9 drv 11.6 ppd 5.35 neuPass 47.5% 3rd 31.9% PA 22.0% oop 26.0% | att by script {'won8+': [29.0, 1], 'close': [32.5, 4], 'lost8+': [35.0, 2]}
+   logs: W1 vPHI 22-24 att 34 sk 1 ru 32 | W2 vDAL 20-37 att 33 sk 0 ru 32 | W3 vSEA 33-31 att 31 sk 2 ru 30 | W4 vIND 13-30 att 37 sk 2 ru 22 | W5 vNYG 27-27 att 25 sk 5 ru 29 | W6 vSF 17-23 att 40 sk 4 ru 16 | W8 vPHI 27-10 att 29 sk 2 ru 27
+LA D vs: pa 21.0 oppAtt 32.1 sk 1.5 oppRush 27.1 ypc 4.03 blitz 29.3% rushers 4.38 oopForced 19.0% box 6.69 QBrushYds/g 24.9 scr/g 2.0 20+pass/g 2.5 tgtAllowed {'WR': [15.9, 112.5], 'TE': [8.6, 45.8], 'RB': [6.8, 41.6]}
+   QB Athan Kaliakmanis: g1 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 3.0 (13.6%) rush 16.0 | att 33.0 pyd 186.0 || W4:0/0-0 c3-16 a33-186
+   QB Jayden Daniels: g5 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 5.4 (19.7%) rush 47.2 | att 29.0 pyd 195.2 || W5:0/0-0 c9-103 a25-199 W6:0/0-0 c4-10 a40-300 W8:0/0-0 c2-23 a29-217
+   QB Marcus Mariota: g3 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 2.3 (8.1%) rush 16.3 | att 17.0 pyd 113.3 || W2:0/0-0 c1-3 a16-111 W3:0/0-0 c5-11 a31-183 W4:0/0-0 c1-35 a4-46
+   RB Jacory Croskey-Merritt: g5 tgt 1.4 (4.6%) rec 1.0 ryd 8.0 | car 13.4 (45.3%) rush 47.8 || W3:1/1-7 c19-36 W4:2/4-35 c9-15 W5:0/0-0 c11-82
+   RB Rachaad White: g6 tgt 3.0 (10.1%) rec 2.7 ryd 14.7 | car 7.8 (27.8%) rush 33.3 || W5:1/1-2 c7-18 W6:4/5-30 c7-27 W8:2/3-5 c11-55
+   WR Stefon Diggs: g6 tgt 7.3 (23.0%) rec 4.5 ryd 42.0 | car 0.0 (0.0%) rush 0.0 || W4:5/9-35 c0-0 W6:6/7-44 c0-0 W8:3/6-38 c0-0
+   RB Jeremy McNichols: g2 tgt 0.5 (1.6%) rec 0.5 ryd 3.5 | car 5.0 (23.3%) rush 17.0 || W6:0/0-0 c5-13 W8:1/1-7 c5-21
+   WR Terry McLaurin: g5 tgt 5.4 (17.9%) rec 3.0 ryd 46.0 | car 0.0 (0.0%) rush 0.0 || W3:6/9-77 c0-0 W5:4/4-62 c0-0 W6:1/1-27 c0-0
+   RB Austin Ekeler: g4 tgt 1.2 (4.1%) rec 1.0 ryd 7.5 | car 4.0 (16.8%) rush 16.8 || W5:1/1-15 c3--1 W6:2/2-4 c1-3 W8:0/0-0 c8-36
+INJ: LA Jaylen Watson CB Out; LA Jordan Whittington WR Questionable; LA Terrance Ferguson TE Out; LA Colby Parkinson TE Questionable; LA Joe Cardona LS Doubtful; LA Kam Curl S Questionable; LA Trent McDuffie CB Questionable; LA Dean Connors RB Out; LA Grant Stuard LB Questionable; WAS Jer'Zhan Newton DT Questionable; WAS Dyami Brown WR Out; WAS Treylon Burks WR Out; WAS Daron Payne DT Out; WAS Jeremy McNichols RB Out; WAS Javon Kinlaw DT Out; WAS Terry McLaurin WR Out; WAS Laremy Tunsil OT Out; LA Davante Adams WR Out; WAS Jaylin Lane WR Out; LA Kobie Turner DE Out; LA Poona Ford DT Out; LA Blake Grupe PK Out; LA Justin Dedich G Out; LA Matthew Caldwell QB Out; LA Daniel Rickert DE Out; LA Eddie Walls III LB Out; WAS Javontae Jean-Baptiste LB Out; WAS Jacory Croskey-Merritt RB Out; WAS Leo Chenal LB Out
+RH game lines 35-65c: Over 44.5 points 62/39; Over 45.5 points 60/42; Over 46.5 points 57/44; Over 47.5 points 53/49; Over 48.5 points 50/51; Over 49.5 points 47/54; Over 50.5 points 43/58; Over 51.5 points 40/62; Over 52.5 points 37/65; Over 53.5 points 35/67; Los Angeles R wins by over 2.5 points 63/38; Los Angeles R wins by over 3.5 points 55/46; Los Angeles R wins by over 4.5 points 52/50; Los Angeles R wins by over 5.5 points 49/52; Los Angeles R wins by over 6.5 points 44/58; Los Angeles R wins by over 7.5 points 38/64

@@ -1,0 +1,478 @@
+{
+ "RB rushing yards": {
+  "n": 1947,
+  "d_raw": {
+   "n": 1947,
+   "slope": 0.103,
+   "r": 0.042
+  },
+  "d_resid": {
+   "n": 1947,
+   "slope": 0.155,
+   "r": 0.065
+  },
+  "d_same": {
+   "n": 1613,
+   "slope": 0.065,
+   "r": 0.049
+  },
+  "d_c_vol": {
+   "n": 1947,
+   "slope": 0.202,
+   "r": 0.064
+  },
+  "d_c_eff": {
+   "n": 1947,
+   "slope": 0.143,
+   "r": 0.037
+  },
+  "d_c_ybc": {
+   "n": 1947,
+   "slope": 0.187,
+   "r": 0.042
+  },
+  "d_c_yac": {
+   "n": 1947,
+   "slope": 0.042,
+   "r": 0.008
+  },
+  "d_c_xry": {
+   "n": 1933,
+   "slope": 0.196,
+   "r": 0.04
+  },
+  "d_c_ryoe": {
+   "n": 1933,
+   "slope": 0.021,
+   "r": 0.008
+  },
+  "d_last1": {
+   "n": 1947,
+   "slope": 0.029,
+   "r": 0.031
+  },
+  "vol_on_vol": {
+   "n": 1947,
+   "slope": 0.163,
+   "r": 0.067
+  },
+  "eff_on_eff": {
+   "n": 1947,
+   "slope": 0.025,
+   "r": 0.009
+  },
+  "oos_d_raw": {
+   "k": 0.183,
+   "mae_without": 25.49,
+   "mae_with": 25.56,
+   "gain_pct": -0.26
+  },
+  "oos_d_resid": {
+   "k": 0.249,
+   "mae_without": 25.49,
+   "mae_with": 25.52,
+   "gain_pct": -0.09
+  },
+  "oos_d_same": {
+   "k": 0.105,
+   "mae_without": 24.69,
+   "mae_with": 24.79,
+   "gain_pct": -0.41
+  }
+ },
+ "WR receiving yards": {
+  "n": 3778,
+  "d_raw": {
+   "n": 3778,
+   "slope": 0.007,
+   "r": 0.002
+  },
+  "d_resid": {
+   "n": 3778,
+   "slope": 0.034,
+   "r": 0.01
+  },
+  "d_same": {
+   "n": 3642,
+   "slope": -0.054,
+   "r": -0.026
+  },
+  "d_c_vol": {
+   "n": 3778,
+   "slope": 0.068,
+   "r": 0.016
+  },
+  "d_c_eff": {
+   "n": 3778,
+   "slope": -0.002,
+   "r": -0.0
+  },
+  "d_c_ybc": null,
+  "d_c_yac": null,
+  "d_c_xry": null,
+  "d_c_ryoe": null,
+  "d_last1": {
+   "n": 3778,
+   "slope": 0.005,
+   "r": 0.006
+  },
+  "vol_on_vol": {
+   "n": 3778,
+   "slope": 0.105,
+   "r": 0.033
+  },
+  "eff_on_eff": {
+   "n": 3778,
+   "slope": -0.002,
+   "r": -0.001
+  },
+  "oos_d_raw": {
+   "k": 0.051,
+   "mae_without": 25.9,
+   "mae_with": 25.93,
+   "gain_pct": -0.15
+  },
+  "oos_d_resid": {
+   "k": 0.105,
+   "mae_without": 25.9,
+   "mae_with": 25.93,
+   "gain_pct": -0.12
+  },
+  "oos_d_same": {
+   "k": -0.067,
+   "mae_without": 26.09,
+   "mae_with": 26.1,
+   "gain_pct": -0.06
+  }
+ },
+ "TE receiving yards": {
+  "n": 1465,
+  "d_raw": {
+   "n": 1465,
+   "slope": 0.118,
+   "r": 0.055
+  },
+  "d_resid": {
+   "n": 1465,
+   "slope": 0.128,
+   "r": 0.06
+  },
+  "d_same": {
+   "n": 1254,
+   "slope": 0.011,
+   "r": 0.008
+  },
+  "d_c_vol": {
+   "n": 1465,
+   "slope": 0.103,
+   "r": 0.037
+  },
+  "d_c_eff": {
+   "n": 1465,
+   "slope": 0.134,
+   "r": 0.043
+  },
+  "d_c_ybc": null,
+  "d_c_yac": null,
+  "d_c_xry": null,
+  "d_c_ryoe": null,
+  "d_last1": {
+   "n": 1465,
+   "slope": 0.007,
+   "r": 0.007
+  },
+  "vol_on_vol": {
+   "n": 1465,
+   "slope": 0.129,
+   "r": 0.06
+  },
+  "eff_on_eff": {
+   "n": 1465,
+   "slope": 0.09,
+   "r": 0.038
+  },
+  "oos_d_raw": {
+   "k": 0.052,
+   "mae_without": 20.96,
+   "mae_with": 20.93,
+   "gain_pct": 0.17
+  },
+  "oos_d_resid": {
+   "k": 0.067,
+   "mae_without": 20.96,
+   "mae_with": 20.87,
+   "gain_pct": 0.46
+  },
+  "oos_d_same": {
+   "k": -0.043,
+   "mae_without": 21.06,
+   "mae_with": 21.11,
+   "gain_pct": -0.27
+  }
+ },
+ "RB receiving yards": {
+  "n": 665,
+  "d_raw": {
+   "n": 665,
+   "slope": 0.184,
+   "r": 0.107
+  },
+  "d_resid": {
+   "n": 665,
+   "slope": 0.209,
+   "r": 0.121
+  },
+  "d_same": {
+   "n": 510,
+   "slope": 0.08,
+   "r": 0.068
+  },
+  "d_c_vol": {
+   "n": 665,
+   "slope": 0.164,
+   "r": 0.068
+  },
+  "d_c_eff": {
+   "n": 665,
+   "slope": 0.193,
+   "r": 0.09
+  },
+  "d_c_ybc": null,
+  "d_c_yac": null,
+  "d_c_xry": null,
+  "d_c_ryoe": null,
+  "d_last1": {
+   "n": 665,
+   "slope": 0.032,
+   "r": 0.032
+  },
+  "vol_on_vol": {
+   "n": 665,
+   "slope": 0.089,
+   "r": 0.044
+  },
+  "eff_on_eff": {
+   "n": 665,
+   "slope": 0.106,
+   "r": 0.061
+  },
+  "oos_d_raw": {
+   "k": 0.165,
+   "mae_without": 14.7,
+   "mae_with": 14.59,
+   "gain_pct": 0.75
+  },
+  "oos_d_resid": {
+   "k": 0.155,
+   "mae_without": 14.7,
+   "mae_with": 14.53,
+   "gain_pct": 1.12
+  },
+  "oos_d_same": {
+   "k": 0.057,
+   "mae_without": 14.96,
+   "mae_with": 14.8,
+   "gain_pct": 1.05
+  }
+ },
+ "WR receptions": {
+  "n": 3441,
+  "d_raw": {
+   "n": 3441,
+   "slope": 0.087,
+   "r": 0.031
+  },
+  "d_resid": {
+   "n": 3441,
+   "slope": 0.104,
+   "r": 0.033
+  },
+  "d_same": {
+   "n": 3314,
+   "slope": -0.005,
+   "r": -0.002
+  },
+  "d_c_vol": {
+   "n": 3441,
+   "slope": 0.08,
+   "r": 0.024
+  },
+  "d_c_eff": {
+   "n": 3441,
+   "slope": 0.067,
+   "r": 0.015
+  },
+  "d_c_ybc": null,
+  "d_c_yac": null,
+  "d_c_xry": null,
+  "d_c_ryoe": null,
+  "d_last1": {
+   "n": 3441,
+   "slope": 0.022,
+   "r": 0.024
+  },
+  "vol_on_vol": {
+   "n": 3441,
+   "slope": 0.114,
+   "r": 0.038
+  },
+  "eff_on_eff": {
+   "n": 3441,
+   "slope": 0.081,
+   "r": 0.028
+  },
+  "oos_d_raw": {
+   "k": 0.082,
+   "mae_without": 1.68,
+   "mae_with": 1.68,
+   "gain_pct": -0.05
+  },
+  "oos_d_resid": {
+   "k": 0.105,
+   "mae_without": 1.68,
+   "mae_with": 1.68,
+   "gain_pct": 0.09
+  },
+  "oos_d_same": {
+   "k": -0.04,
+   "mae_without": 1.69,
+   "mae_with": 1.69,
+   "gain_pct": -0.02
+  }
+ },
+ "QB passing yards": {
+  "n": 1187,
+  "d_raw": {
+   "n": 1187,
+   "slope": 0.172,
+   "r": 0.083
+  },
+  "d_resid": {
+   "n": 1187,
+   "slope": 0.226,
+   "r": 0.11
+  },
+  "d_same": {
+   "n": 947,
+   "slope": 0.101,
+   "r": 0.08
+  },
+  "d_c_vol": {
+   "n": 1187,
+   "slope": 0.186,
+   "r": 0.075
+  },
+  "d_c_eff": {
+   "n": 1187,
+   "slope": 0.197,
+   "r": 0.069
+  },
+  "d_c_ybc": null,
+  "d_c_yac": null,
+  "d_c_xry": null,
+  "d_c_ryoe": null,
+  "d_last1": {
+   "n": 1187,
+   "slope": 0.035,
+   "r": 0.033
+  },
+  "vol_on_vol": {
+   "n": 1187,
+   "slope": 0.168,
+   "r": 0.077
+  },
+  "eff_on_eff": {
+   "n": 1187,
+   "slope": 0.166,
+   "r": 0.084
+  },
+  "oos_d_raw": {
+   "k": 0.182,
+   "mae_without": 62.24,
+   "mae_with": 61.69,
+   "gain_pct": 0.89
+  },
+  "oos_d_resid": {
+   "k": 0.246,
+   "mae_without": 62.24,
+   "mae_with": 61.75,
+   "gain_pct": 0.8
+  },
+  "oos_d_same": {
+   "k": 0.11,
+   "mae_without": 63.5,
+   "mae_with": 63.5,
+   "gain_pct": -0.0
+  }
+ },
+ "_big_single_game": {
+  "RB rushing yards": {
+   "after_big_game": {
+    "n": 325,
+    "next_resid": 5.61
+   },
+   "otherwise": {
+    "n": 1622,
+    "next_resid": 2.34
+   },
+   "big_game_led_by_blocking": {
+    "n": 171,
+    "next_resid": 6.9
+   },
+   "big_game_led_by_runner": {
+    "n": 154,
+    "next_resid": 4.19
+   }
+  },
+  "WR receiving yards": {
+   "after_big_game": {
+    "n": 918,
+    "next_resid": 2.72
+   },
+   "otherwise": {
+    "n": 2860,
+    "next_resid": 3.07
+   }
+  },
+  "TE receiving yards": {
+   "after_big_game": {
+    "n": 175,
+    "next_resid": 4.3
+   },
+   "otherwise": {
+    "n": 1290,
+    "next_resid": 4.07
+   }
+  },
+  "RB receiving yards": {
+   "after_big_game": {
+    "n": 25,
+    "next_resid": 2.68
+   },
+   "otherwise": {
+    "n": 640,
+    "next_resid": -1.05
+   }
+  },
+  "WR receptions": {
+   "after_big_game": {
+    "n": 616,
+    "next_resid": 0.2
+   },
+   "otherwise": {
+    "n": 2825,
+    "next_resid": 0.02
+   }
+  },
+  "QB passing yards": {
+   "after_big_game": {
+    "n": 348,
+    "next_resid": 1.76
+   },
+   "otherwise": {
+    "n": 839,
+    "next_resid": -6.48
+   }
+  }
+ }
+}

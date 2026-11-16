@@ -1,0 +1,142 @@
+{
+ "n": 846,
+ "line_fit": {
+  "recyd": {
+   "n": 267,
+   "w_S": 0.3,
+   "w_L4": 0.131,
+   "w_C": 0.474,
+   "r2": 0.868,
+   "line_minus_S": -4.8,
+   "line_minus_L4": -5.69,
+   "line_minus_C": -1.85
+  },
+  "rec": {
+   "n": 148,
+   "w_S": 0.264,
+   "w_L4": 0.205,
+   "w_C": 0.488,
+   "r2": 0.861,
+   "line_minus_S": -0.21,
+   "line_minus_L4": -0.27,
+   "line_minus_C": 0.04
+  },
+  "rushyd": {
+   "n": 108,
+   "w_S": 0.312,
+   "w_L4": 0.232,
+   "w_C": 0.377,
+   "r2": 0.814,
+   "line_minus_S": -1.19,
+   "line_minus_L4": -0.89,
+   "line_minus_C": -1.27
+  },
+  "passyd": {
+   "n": 34,
+   "w_S": 0.611,
+   "w_L4": -0.015,
+   "w_C": 0.404,
+   "r2": 0.397,
+   "line_minus_S": -0.26,
+   "line_minus_L4": -4.83,
+   "line_minus_C": 6.99
+  }
+ },
+ "momentum_real": {
+  "all": {
+   "n": 557,
+   "hit": 44.3,
+   "price": 50.1,
+   "edge": -5.7
+  },
+  "L4 above season by 15%+": {
+   "n": 88,
+   "hit": 37.5,
+   "price": 50.2,
+   "edge": -12.7
+  },
+  "L4 within 15%": {
+   "n": 406,
+   "hit": 48.0,
+   "price": 50.1,
+   "edge": -2.1
+  },
+  "L4 below season by 15%+": {
+   "n": 63,
+   "hit": 30.2,
+   "price": 49.7,
+   "edge": -19.5
+  },
+  "volume up 15%+": {
+   "n": 69,
+   "hit": 37.7,
+   "price": 49.8,
+   "edge": -12.1
+  },
+  "volume down 15%+": {
+   "n": 33,
+   "hit": 36.4,
+   "price": 49.6,
+   "edge": -13.2
+  },
+  "efficiency up, volume flat": {
+   "n": 25,
+   "hit": 32.0,
+   "price": 50.9,
+   "edge": -18.9
+  },
+  "efficiency down, volume flat": {
+   "n": 32,
+   "hit": 28.1,
+   "price": 49.2,
+   "edge": -21.1
+  },
+  "snap share up 10+": {
+   "n": 10,
+   "hit": 80.0,
+   "price": 49.2,
+   "edge": 30.8
+  },
+  "snap share down 10+": {
+   "n": 0
+  },
+  "line above C (multi-season avg)": {
+   "n": 262,
+   "hit": 41.2,
+   "price": 49.8,
+   "edge": -8.5
+  },
+  "line below C": {
+   "n": 292,
+   "hit": 46.9,
+   "price": 50.4,
+   "edge": -3.5
+  },
+  "line above season avg": {
+   "n": 209,
+   "hit": 45.9,
+   "price": 49.3,
+   "edge": -3.3
+  },
+  "line below season avg": {
+   "n": 339,
+   "hit": 43.4,
+   "price": 50.6,
+   "edge": -7.2
+  }
+ },
+ "by_week": {
+  "6": {
+   "n": 257,
+   "hit": 45.9,
+   "price": 50.1,
+   "edge": -4.2
+  },
+  "7": {
+   "n": 300,
+   "hit": 43.0,
+   "price": 50.0,
+   "edge": -7.0
+  }
+ }
+}

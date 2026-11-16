@@ -1,0 +1,37 @@
+===== DEN@CAR | weather {'temp': 64, 'precip_prob': 0, 'precip_in': 0, 'wind': 6, 'gust': 9, 'code': 0}
+consensus spread [['CAR', 2.5, -100], ['DEN', -2.5, -120]] total [['over', 44.5, -111], ['under', 44.5, -109]] ML [['DEN', -145], ['CAR', 123]] @ 2026-11-07T23:47:21.061Z
+   Pass Attempts Bryce Young CAR 34.5 [[15, 34.5, -115, -106]]
+   Pass Attempts Bo Nix DEN 32.5 [[15, 32.5, -114, -115]]
+   Completions Bryce Young CAR 21.5 [[15, 21.5, -114, -119]]
+   Completions Bo Nix DEN 20.5 [[15, 20.5, -111, -118]]
+   Rush Attempts J.K. Dobbins DEN 7.5 [[15, 7.5, 101, -130]]
+   Rush Attempts Chuba Hubbard CAR 17.5 [[15, 17.5, 106, -125]]
+   Rush Attempts Bryce Young CAR 1.5 [[15, 1.5, -180, 140]]
+   Rush Attempts Bo Nix DEN 4.0 [[15, 3.5, -140, 110]]
+   Rush Attempts Jonah Coleman DEN 13.5 [[15, 13.5, -106, -115]]
+DEN O: g8 pf 21.5 att 31.2 cmp 18.6 sk 1.2 rush 23.6 drv 11.5 ppd 4.88 neuPass 54.8% 3rd 30.0% PA 22.1% oop 29.2% | att by script {'won8+': [29.0, 1], 'close': [30.2, 5], 'lost8+': [35.0, 2]}
+   logs: W1 vKC 10-31 att 28 sk 4 ru 14 | W2 vJAX 20-13 att 31 sk 0 ru 25 | W3 vLA 30-26 att 34 sk 1 ru 25 | W4 vSF 14-24 att 42 sk 0 ru 23 | W5 vLAC 23-17 att 27 sk 1 ru 29 | W6 vSEA 17-14 att 27 sk 2 ru 27 | W7 vARI 30-16 att 29 sk 1 ru 24 | W8 vKC 28-24 att 32 sk 1 ru 22
+CAR D vs: pa 27.6 oppAtt 34.4 sk 1.6 oppRush 28.6 ypc 4.95 blitz 38.7% rushers 4.42 oopForced 17.5% box 6.48 QBrushYds/g 21.3 scr/g 2.3 20+pass/g 2.0 tgtAllowed {'WR': [19.7, 146.0], 'TE': [7.6, 47.3], 'RB': [5.9, 26.6]}
+   QB Bo Nix: g8 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 4.0 (16.3%) rush 14.2 | att 31.2 pyd 186.6 || W6:0/0-0 c4-2 a27-107 W7:0/0-0 c7-73 a29-222 W8:0/0-0 c3-4 a32-222
+   RB J.K. Dobbins: g8 tgt 1.1 (4.0%) rec 1.0 ryd 3.4 | car 11.8 (48.0%) rush 38.2 || W6:3/3-5 c17-41 W7:0/0-0 c6-23 W8:0/0-0 c7-13
+   RB Jonah Coleman: g4 tgt 2.5 (9.1%) rec 2.2 ryd 24.2 | car 7.5 (32.6%) rush 33.5 || W2:3/3-19 c10-39 W7:2/2-15 c9-54 W8:4/5-63 c11-41
+   RB RJ Harvey: g6 tgt 4.7 (16.8%) rec 4.2 ryd 36.2 | car 4.0 (16.6%) rush 14.5 || W5:0/1-0 c3-7 W6:3/4-31 c6-25 W7:2/2-54 c3-6
+   WR Jaylen Waddle: g8 tgt 6.4 (22.7%) rec 3.6 ryd 39.4 | car 0.2 (1.0%) rush 2.9 || W6:4/7-24 c0-0 W7:4/7-48 c0-0 W8:3/6-39 c0-0
+   WR Courtland Sutton: g8 tgt 4.6 (16.4%) rec 2.5 ryd 27.6 | car 0.0 (0.0%) rush 0.0 || W6:2/3-19 c0-0 W7:3/5-45 c0-0 W8:4/4-53 c0-0
+   WR Pat Bryant: g4 tgt 3.0 (9.6%) rec 2.2 ryd 33.2 | car 0.2 (1.1%) rush 4.0 || W2:0/1-0 c1-16 W3:2/2-44 c0-0 W4:3/3-47 c0-0
+   TE Evan Engram: g8 tgt 3.1 (11.1%) rec 1.6 ryd 17.0 | car 0.0 (0.0%) rush 0.0 || W6:2/2-13 c0-0 W7:1/3-2 c0-0 W8:0/3-0 c0-0
+   WR Marvin Mims Jr.: g6 tgt 2.3 (8.5%) rec 1.5 ryd 15.3 | car 0.7 (2.8%) rush 4.2 || W6:2/4-13 c0-0 W7:2/2-53 c1-3 W8:2/3-10 c2-19
+CAR O: g7 pf 25.4 att 39.1 cmp 23.0 sk 3.3 rush 23.6 drv 11.7 ppd 5.63 neuPass 62.2% 3rd 38.5% PA 25.2% oop 19.7% | att by script {'won8+': [37.5, 2], 'close': [44.5, 2], 'lost8+': [36.7, 3]}
+   logs: W1 vCHI 37-59 att 38 sk 2 ru 22 | W2 vATL 34-3 att 36 sk 2 ru 21 | W3 vCLE 18-21 att 48 sk 3 ru 24 | W4 vDET 32-26 att 41 sk 3 ru 26 | W6 vPHI 25-14 att 39 sk 2 ru 31 | W7 vTB 13-43 att 31 sk 5 ru 18 | W8 vGB 19-27 att 41 sk 6 ru 23
+DEN D vs: pa 20.6 oppAtt 38.1 sk 2.9 oppRush 27.9 ypc 4.61 blitz 35.3% rushers 4.39 oopForced 19.7% box 6.62 QBrushYds/g 21.5 scr/g 2.1 20+pass/g 2.8 tgtAllowed {'WR': [19.2, 131.1], 'TE': [8.8, 68.1], 'RB': [6.9, 44.1]}
+   QB Bryce Young: g7 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 1.4 (5.9%) rush 4.9 | att 38.4 pyd 274.4 || W6:0/0-0 c3-6 a39-281 W7:0/0-0 c1-9 a27-163 W8:0/0-0 c0-0 a41-209
+   RB Chuba Hubbard: g7 tgt 3.7 (10.6%) rec 3.1 ryd 21.4 | car 16.9 (69.8%) rush 77.1 || W6:1/2-1 c28-120 W7:4/5-27 c7-33 W8:7/8-38 c22-81
+   WR Tetairoa McMillan: g7 tgt 9.3 (26.4%) rec 6.0 ryd 81.3 | car 0.0 (0.0%) rush 0.0 || W6:6/9-86 c0-0 W7:4/6-40 c0-0 W8:6/11-58 c0-0
+   WR Jalen Coker: g6 tgt 7.3 (21.3%) rec 4.5 ryd 60.7 | car 0.0 (0.0%) rush 0.0 || W6:6/13-97 c0-0 W7:1/4-9 c0-0 W8:2/5-36 c0-0
+   RB Jonathon Brooks: g2 tgt 1.5 (4.5%) rec 1.0 ryd 21.5 | car 4.5 (20.5%) rush 15.0 || W1:1/2-48 c4-14 W2:1/1--5 c5-16
+   RB AJ Dillon: g4 tgt 0.5 (1.4%) rec 0.5 ryd 0.8 | car 4.2 (17.9%) rush 10.8 || W2:0/0-0 c3--3 W3:1/1--2 c4-16 W4:1/1-5 c5-2
+   TE Darren Waller: g7 tgt 3.6 (10.2%) rec 2.1 ryd 29.9 | car 0.0 (0.0%) rush 0.0 || W6:0/2-0 c0-0 W7:1/2-50 c0-0 W8:1/2-11 c0-0
+   RB Trevor Etienne: g3 tgt 0.7 (2.0%) rec 0.7 ryd 5.7 | car 2.7 (10.8%) rush 2.7 || W6:0/0-0 c1--1 W7:2/2-17 c6-8 W8:0/0-0 c1-1
+   TE Tommy Tremble: g7 tgt 3.4 (9.8%) rec 2.4 ryd 22.1 | car 0.0 (0.0%) rush 0.0 || W6:4/4-46 c0-0 W7:1/2-8 c0-0 W8:1/3-19 c0-0
+INJ: CAR Brady Christensen G Out; CAR Damien Lewis G Out; CAR Will Lee III CB Out; CAR Jaelan Phillips LB Out; CAR Bobby Okereke LB Out; CAR Torricelli Simpkins III G Questionable; CAR Corey Bullock C Questionable; CAR Jonathon Brooks RB Out; CAR Xavier Legette WR Out; CAR Akayleb Evans CB Out; DEN Kris Abrams-Draine CB Out; DEN Eyioma Uwazurike DE Out; DEN Brandon Jones S Out; DEN Talanoa Hufanga S Questionable; DEN Dondrea Tillman LB Questionable; DEN Pat Bryant WR Out; DEN RJ Harvey RB Out; CAR Taylor Moton OT Out; CAR Thomas Incoom LB Out; CAR Cam Jackson DT Out; CAR Ikem Ekwonu OT Out; CAR Mike Jackson CB Out; CAR Jaycee Horn CB Out; CAR Chris Brazzell II WR Out; CAR Nic Scourton LB Out; DEN Tyler Badie RB Out; DEN Jonah Elliss LB Out; DEN Nick Gargiulo G Out; DEN Frank Crum OT Out; DEN Caleb Lohner TE Out; DEN Levelle Bailey LB Out; DEN Matt Henningsen DE Out; DEN Michael Deiter C Out
+RH game lines 35-65c: Carolina wins by over 1.5 points 41/61; Carolina wins by over 2.5 points 39/63; Denver wins by over 1.5 points 55/47; Denver wins by over 2.5 points 52/49; Denver wins by over 3.5 points 43/59; Denver wins by over 4.5 points 40/62; Denver wins by over 5.5 points 38/64; Over 40.5 points 64/37; Over 41.5 points 62/39; Over 42.5 points 59/42; Over 43.5 points 55/46; Over 44.5 points 52/50; Over 45.5 points 48/53; Over 46.5 points 45/56; Over 47.5 points 42/60; Over 48.5 points 40/62; Over 49.5 points 37/65; DEN 59/42; CAR 43/59

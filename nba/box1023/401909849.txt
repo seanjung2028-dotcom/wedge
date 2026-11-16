@@ -1,0 +1,35 @@
+STATUS|STATUS_FINAL|true|Final
+TEAM|NO|away|119
+TEAM|UTAH|home|120
+P|NO|Zion Williamson|33|23|5|2|0|false
+P|NO|Trey Murphy III|31|9|6|3|1|false
+P|NO|Yves Missi|9|6|1|0|0|false
+P|NO|Dejounte Murray|30|16|6|6|0|false
+P|NO|Jeremiah Fears|24|7|0|1|1|false
+P|NO|Herbert Jones|18|3|1|0|1|false
+P|NO|Karlo Matkovic|9|7|4|1|0|false
+P|NO|Derik Queen|29|12|7|2|1|false
+P|NO|Jordan Poole|19|12|2|2|1|false
+P|NO|Saddiq Bey|22|20|3|1|3|false
+P|NO|Bennedict Mathurin|15|4|2|0|0|false
+P|NO|Trendon Watford||||||true
+P|NO|DeAndre Jordan||||||true
+P|NO|Bryce McGowens||||||true
+P|NO|AJ Johnson||||||true
+P|UTAH|Lauri Markkanen|34|16|6|3|4|false
+P|UTAH|Jaren Jackson Jr.|33|24|10|3|2|false
+P|UTAH|Keyonte George|32|19|1|10|3|false
+P|UTAH|Ace Bailey|22|6|7|2|1|false
+P|UTAH|Darryn Peterson|30|15|3|1|1|false
+P|UTAH|Kyle Filipowski|8|0|1|0|0|false
+P|UTAH|Brice Sensabaugh|16|10|3|2|2|false
+P|UTAH|Jaxson Hayes|26|17|5|2|0|false
+P|UTAH|Svi Mykhailiuk|21|3|4|1|0|false
+P|UTAH|Isaiah Collier|18|10|2|7|0|false
+P|UTAH|Blake Hinson||||||true
+P|UTAH|Tony Bradley||||||true
+P|UTAH|Mo Bamba||||||true
+P|UTAH|Josh Okogie||||||true
+P|UTAH|Josh Green||||||true
+T|NO|44-87|8-26|23-27|9|37|18|15
+T|UTAH|41-84|13-35|25-33|14|42|31|18

@@ -1,0 +1,90 @@
+{
+ "game": "LV @ SF",
+ "kick": "Sun 3:25 PM CT",
+ "venue": "Santa Clara, 68°F, wind 5 mph",
+ "market": "SF −9.5, total 52. Purdy 30.5 attempts / 21.5 completions; Cousins 36.5 / 23.5. McCaffrey 13.5 carries; Kaelon Black 9.5; Jeanty 8.5.",
+ "lineup": "SF's receiver room is gutted: Brandon Aiyuk, Mike Evans, Christian Kirk, Deebo Samuel, Demarcus Robinson and De'Zhaun Stribling are all out, leaving Jordan Watkins, Brandin Cooks and Jacob Cowing. SF is coming off its bye. LV CB Darien Porter is questionable.",
+ "keys": [
+  {
+   "team": "LV",
+   "take": "Kittle and McCaffrey, now the only proven targets SF has.",
+   "how": "Play the underneath zones and make Watkins and Cooks win outside.",
+   "gives": "LV allows 5.4 yards per carry (worst here) and 163 WR yards a game, so it can't sell out against the run and the short passes at once.",
+   "counter": "SF runs McCaffrey and Black at that 5.4 and keeps throwing to Kittle anyway."
+  },
+  {
+   "team": "SF",
+   "take": "Brock Bowers, at 27.6% of LV's targets and 91 yards a game.",
+   "how": "SF's defense is the best here against TEs (43.6 yards a game) and allows 3.6 yards per carry.",
+   "gives": "Running backs underneath. SF allows 7.9 RB targets and 48.6 RB receiving yards a game, the most of any defense here.",
+   "counter": "Cousins checks down to Jeanty, whose carries have shrunk (2 and 8 the last two games) while his catches haven't."
+  }
+ ],
+ "scripts": {
+  "control": "SF leads, as expected. Purdy throws about 28 times (SF's wins averaged 28.7), so Kittle and McCaffrey share most of the targets. LV throws 40+ times, and Jeanty's receiving work grows as his carries shrink.",
+  "competitive": "Purdy's volume rises toward 30–35 and Kittle's catch ceiling opens (8 for 88 in the ATL loss).",
+  "reversal": "LV leads. SF throws 40 times (its one loss), Cousins hands off more, and Jeanty's catch volume falls."
+ },
+ "plays": [
+  {
+   "decision": "Lean",
+   "line": "George Kittle 6+ receptions (Yes)",
+   "price": 57,
+   "cond": "Becomes a final line at 53¢ or less.",
+   "why": "With six receivers out, SF's targets have nowhere to go but the TE and the back.",
+   "support": "Injury reports: Aiyuk, Evans, Kirk, Samuel, Robinson and Stribling are all out. Kittle's share was 26–28% before the injuries piled up.",
+   "sample": "6+ catches in 2 of 7 (6 and 8), with 5 in two others. This week's target pool has no precedent this year.",
+   "counter": "SF's control script keeps Purdy around 28 attempts, and McCaffrey takes the other half of the short targets.",
+   "loses": "SF leads big early and runs 35 times.",
+   "vs": "Preferred over 70+ yards (52¢). The catch count fits the target-pool thesis, and our backtest marks receiving-yard Yes prices as rich.",
+   "est": [
+    55,
+    65
+   ],
+   "side": "Yes",
+   "be": 59,
+   "payout": 1.75,
+   "books": 55.9,
+   "wedge": 55.0,
+   "base": 55.4,
+   "adj": 5,
+   "ticker": "KXNFLREC-26NOV08LVSF-SFGKITTLE85-6"
+  }
+ ],
+ "likely": [
+  "Kittle 5+ rec",
+  "Jeanty 4+ rec",
+  "Kittle 6+ rec"
+ ],
+ "value": [
+  "George Kittle 6+ receptions (Yes) at 57¢ (needs 59%, our number 55–65%)"
+ ],
+ "passed": [
+  {
+   "name": "Ashton Jeanty 40+ receiving yards (Yes) (46¢)",
+   "why": "Our number (42–52%) doesn't clear the 48% break-even after fees. The trailing script plus the defense that gives up the most RB receiving yards on the board points at LV's back.",
+   "move": "A price of 45¢ or less makes it a lean."
+  },
+  {
+   "name": "Christian McCaffrey 60+ rush (55¢)",
+   "why": "LV allows 5.4 yards per carry, but Black takes 8 carries a game and our backtest leans against rushing Yes prices.",
+   "move": "Black inactive."
+  },
+  {
+   "name": "Brock Bowers 70+ rec yds (57¢)",
+   "why": "He's 6 for 6 at 70+, but SF is the best TE defense here. His sample and this matchup disagree.",
+   "move": "None."
+  },
+  {
+   "name": "Jordan Watkins / SF depth WRs",
+   "why": "No sample in this role.",
+   "move": "First-half target split (live)."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Injury designations: NFL official report / ESPN (Fri–Sat)",
+   "u": "https://www.espn.com/nfl/injuries"
+  }
+ ]
+}

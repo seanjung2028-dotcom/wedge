@@ -1,0 +1,30 @@
+{
+ "game": "DET @ MIA", "kick": "Sun 12:00 PM CT", "venue": "Miami, 84°F, partly cloudy, wind 5 mph",
+ "market": "DET −6.5, total 49.5. Goff 31.5 attempts / 21.5 completions; Willis 27.5 / 17.5 and 5.5 rushes. Gibbs 20.5 carries; Ollie Gordon II 16.5.",
+ "lineup": "DET's defense is missing CB D.J. Reed, S Kerby Joseph and LBs Jack Campbell and DJ Wonnum. Amon-Ra St. Brown is questionable (ribs), C Cade Mays is out, Isiah Pacheco is out and Sione Vaki is questionable. MIA RBs Kaytron Allen and Jaylen Wright are questionable.",
+ "branches": "If Amon-Ra sits, Jameson Williams and LaPorta absorb his 31% share. If both Allen and Wright sit, Gordon's share of MIA carries rises from about 52%.",
+ "keys": [
+  {"team": "DET", "take": "MIA's ground game. MIA ran 39 times in its one-score win over the Jets.", "how": "Build a lead. Opponents run only 22.4 times a game against DET because they're usually chasing.", "gives": "The middle of the field. With Joseph and Campbell out, DET allows 97.7 TE yards a game (worst here) and 4.7 completions of 20+ yards a game.", "counter": "Willis to the TE and Willis scrambles. He's had five or more scrambles in four games."},
+  {"team": "MIA", "take": "Gibbs, who gets 78% of DET's carries and averages 110 rushing yards.", "how": "MIA's run defense is decent (4.18 yards per carry), but it gets worn down. Opponents run 27.7 times a game.", "gives": "Play-action shots to Jameson Williams.", "counter": "DET's control script. Gibbs averaged 25 carries in DET's five wins."}
+ ],
+ "scripts": {
+  "control": "DET leads (about a 75% favorite). MIA throws, as it did averaging 28.7 attempts in losses of 8+. Gordon's carries fall: 17 for 41 yards in the 24–10 loss to KC. Dulcich and Washington get the volume.",
+  "competitive": "MIA runs Gordon 20+ times and keeps the ball. This is the script that beats the Gordon under.",
+  "reversal": "MIA leads on Willis's legs. Gibbs' carries drop to his loss-game level (15–16 carries, 46–52 yards)."
+ },
+ "plays": [
+  {"decision": "Final", "line": "Ollie Gordon II under 70 rushing yards (No)", "price": 52, "why": "DET is a 6.5-point favorite, and teams facing DET run the fewest times in the league because they're behind. Gordon's yards depend on MIA leading.", "support": "Opponents average 22.4 rushes a game against DET (fewest here). Our backtest: rushing-yard Yes prices have come in about 8 points below price.", "sample": "Gordon cleared 70 in 3 of 6, and all 3 came with MIA within one score. In MIA's lone loss of 8+ with him as the lead back, he ran for 41.", "counter": "Allen and Wright questionable could push his carries past 20. He ran 9 times for 100 at MIN.", "loses": "MIA keeps it within a score into the fourth and leans on him (25 carries for 103 against the Jets).", "vs": "Beat the 75-yard No (57¢, needs 59%): extra cost for a 5-yard cushion.", "est": [58, 68]},
+  {"decision": "Final", "line": "Greg Dulcich 4+ receptions (Yes)", "price": 56, "cond": "At 56¢ or less.", "why": "The trailing script plus DET's missing middle defenders (Joseph, Campbell) points targets at MIA's TE.", "support": "DET allows 11.4 TE targets and 97.7 TE yards a game. TEs caught 4+ against them in 5 of 7 games (Kincaid 7, Sadiq 7, McBride 9, Kraft 4, Hockenson 4).", "sample": "Dulcich caught 4+ in each of the last 4 (5, 4, 5, 4) on a 19–24% target share. Overall 4 of 6.", "counter": "MIA throws only 26 times a game, and Washington (25% share) is the first read.", "loses": "MIA keeps it close and runs 35 times, so Willis throws 20 passes.", "vs": "Preferred over 40+ yards (51¢). Receptions fit the short-middle thesis, and our backtest marks receiving-yard Yes prices as rich.", "est": [58, 66]}
+ ],
+ "likely": ["Dulcich 3+ rec (~76%)", "Gordon under 70 (~63%)", "Dulcich 4+ rec (~62%)"],
+ "value": ["Gordon under 70 at 52¢ (needs 54%)", "Dulcich 4+ at 56¢ (needs 58%)"],
+ "passed": [
+  {"name": "Jahmyr Gibbs 100+ rush (50¢)", "why": "The control script helps (4 of 5 wins over 100), but MIA has held lead backs under 100 in 5 of 7, and our backtest leans against rushing Yes prices. The two cancel.", "move": "Vaki inactive plus a price under 46¢."},
+  {"name": "Malik Willis 30+ rush (51¢), either side", "why": "His results split into two clusters (39–74 yards or 2–11) with nothing in between. We can't estimate a probability for that.", "move": "Nothing pregame."},
+  {"name": "Amon-Ra St. Brown props", "why": "Questionable (ribs), and MIA allows the fewest WR targets of any defense here (12.4 a game).", "move": "Active and no snap limit reported."}
+ ],
+ "sources": [
+  {"t": "Pride of Detroit — Lions injuries hub", "u": "https://www.prideofdetroit.com/detroit-lions-injuries"},
+  {"t": "Lions inactives page (check 90 min before kickoff)", "u": "https://www.detroitlions.com/news/inactives-lions-vs-dolphins"}
+ ]
+}

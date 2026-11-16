@@ -1,0 +1,42 @@
+{
+ "KXNFLRECYDS": [
+  "If Mack Hollins records 100+ receiving yards in the New England vs Detroit Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+  "The following market refers to Mack Hollins in the New England vs Detroit Pro Football game originally scheduled for Nov 15, 2026. If Mack Hollins is active but does not appear in any live play, the market settles to the fair market price before game start. Once Mack Hollins appears in at least one live play, even if nullified by penalty, the market settles based on receiving yards recorded.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners."
+ ],
+ "KXNFLREC": [
+  "If Mack Hollins records 7+ receptions in the New England vs Detroit Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+  "The following market refers to Mack Hollins in the New England vs Detroit Pro Football game originally scheduled for Nov 15, 2026. If Mack Hollins is active but does not appear in any live play, the market settles to the fair market price before game start. Once Mack Hollins appears in at least one live play, even if nullified by penalty, the market settles based on receptions recorded.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners."
+ ],
+ "KXNFLRSHYDS": [
+  "If Alvin Kamara records 60+ rushing yards in the Carolina vs New Orleans professional football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+  "The following market refers to Alvin Kamara in the Carolina vs New Orleans professional football game originally scheduled for Nov 15, 2026. If Alvin Kamara is active but does not appear in any live play, the market settles to the fair market price before game start. Once Alvin Kamara appears in at least one live play, even if nullified by penalty, the market settles based on rushing yards recorded.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners."
+ ],
+ "KXNFLPASSYDS": [
+  "If Drew Lock records 325+ passing yards in the Seattle vs Las Vegas Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+  "The following market refers to Drew Lock in the Seattle vs Las Vegas Pro Football game originally scheduled for Nov 15, 2026. If Drew Lock is active but does not appear in any live play, the market settles to the fair market price before game start. Once Drew Lock appears in at least one live play, even if nullified by penalty, the market settles based on passing yards recorded.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners."
+ ],
+ "KXNFLPASSTDS": [
+  "If Drew Lock records 4+ passing touchdowns in the Seattle vs Las Vegas Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+  "The following market refers to Drew Lock in the Seattle vs Las Vegas Pro Football game originally scheduled for Nov 15, 2026. If Drew Lock is active but does not appear in any live play, the market settles to the fair market price before game start. Once Drew Lock appears in at least one live play, even if nullified by penalty, the market settles based on passing touchdowns recorded.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners."
+ ],
+ "KXNFLRRYDS": [
+  "If Tony Pollard records 120+ rushing and receiving yards combined in the Jacksonville vs Tennessee Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+  "The following market refers to Tony Pollard in the Jacksonville vs Tennessee Pro Football game originally scheduled for Nov 15, 2026. If Tony Pollard is active but does not appear in any live play, the market settles to the fair market price before game start. Once Tony Pollard appears in at least one live play, even if nullified by penalty, the market settles based on rushing and receiving yards combined recorded.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners."
+ ],
+ "KXNFLTD": [
+  "If Theo Wease Jr. scores at least 1+ touchdowns in the Los Angeles C vs Baltimore Pro Football game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+  "The following market refers to Theo Wease Jr. in the Los Angeles C vs Baltimore Pro Football game originally scheduled for Nov 16, 2026. If Theo Wease Jr. is active but never takes a snap, the market settles to the fair market price before game start. Once Theo Wease Jr. takes at least one snap, even if nullified by penalty, the market settles based on touchdowns scored. Touchdowns scored on fake punts or field goals by the offensive team do not count as a special teams touchdown.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners."
+ ],
+ "KXNFLSPREAD": [
+  "If Los Angeles C wins by more than 7.5 points in the Los Angeles C vs Baltimore Pro Football game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+  "Kalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners."
+ ],
+ "KXNFLTOTAL": [
+  "If Los Angeles C and Baltimore collectively score more than 59.5 points in the Los Angeles C vs Baltimore Pro Football game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+  "Kalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners."
+ ],
+ "KXNFLGAME": [
+  "If Los Angeles C wins the Los Angeles C vs Baltimore Pro Football game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+  "The following market refers to the team who wins the Los Angeles C vs Baltimore Pro Football game originally scheduled for Nov 16, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners."
+ ]
+}

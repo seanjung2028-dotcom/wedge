@@ -1,0 +1,33 @@
+STATUS|STATUS_FINAL|true|Final
+TEAM|LAC|away|117
+TEAM|LAL|home|125
+P|LAC|Derrick Jones Jr.|35|16|4|1|3|false
+P|LAC|Rui Hachimura|33|16|6|1|3|false
+P|LAC|Isaiah Jackson|28|6|6|3|0|false
+P|LAC|Kris Dunn|34|7|5|5|1|false
+P|LAC|Darius Garland|37|26|0|6|4|false
+P|LAC|Brook Lopez|20|22|4|0|2|false
+P|LAC|Kobe Sanders|19|5|3|5|1|false
+P|LAC|Gradey Dick|12|6|4|0|0|false
+P|LAC|Keaton Wagler|24|13|3|3|2|false
+P|LAC|Baba Miller||||||true
+P|LAC|Nick Martinelli||||||true
+P|LAC|Jalen Pickett||||||true
+P|LAC|Cam Christie||||||true
+P|LAL|Ziaire Williams|31|14|5|0|1|false
+P|LAL|Walker Kessler|35|22|8|3|0|false
+P|LAL|Matisse Thybulle|24|13|1|2|3|false
+P|LAL|Luka Doncic|37|23|6|7|2|false
+P|LAL|Austin Reaves|38|28|2|9|3|false
+P|LAL|Kevon Looney|5|0|1|0|0|false
+P|LAL|Sandro Mamukelashvili|24|7|5|2|1|false
+P|LAL|Collin Sexton|16|5|1|2|1|false
+P|LAL|Quentin Grimes|31|13|8|4|3|false
+P|LAL|Jarred Vanderbilt||||||true
+P|LAL|Arthur Kaluma||||||true
+P|LAL|Dalton Knecht||||||true
+P|LAL|AK Okereke||||||true
+P|LAL|Bronny James||||||true
+P|LAL|Jaden Hardy||||||true
+T|LAC|41-83|16-37|19-25|11|35|24|26
+T|LAL|46-79|14-32|19-25|8|37|29|21

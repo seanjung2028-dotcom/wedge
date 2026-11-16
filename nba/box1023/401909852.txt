@@ -1,0 +1,31 @@
+STATUS|STATUS_FINAL|true|End of 4th Quarter (regulation over, not tied)
+TEAM|POR|away|128
+TEAM|SAC|home|120
+P|POR|Toumani Camara|27|19|3|1|5|false
+P|POR|Deni Avdija|39|26|6|6|1|false
+P|POR|Donovan Clingan|19|8|10|3|0|false
+P|POR|Damian Lillard|33|19|5|2|2|false
+P|POR|Ja Morant|27|12|3|7|1|false
+P|POR|Robert Williams III|18|13|6|0|0|false
+P|POR|Micah Potter|--|0|0|0|0|false
+P|POR|Jrue Holiday|26|12|2|8|3|false
+P|POR|Vit Krejci|3|0|2|0|0|false
+P|POR|Scoot Henderson|21|4|1|2|0|false
+P|POR|Sidy Cissoko|26|15|7|1|2|false
+P|POR|John Tonje||||||true
+P|POR|Yang Hansen||||||true
+P|SAC|Domantas Sabonis|38|27|19|10|1|false
+P|SAC|De'Andre Hunter|26|4|7|1|0|false
+P|SAC|Keegan Murray|26|12|2|1|0|false
+P|SAC|Zach LaVine|39|22|5|1|3|false
+P|SAC|Darius Acuff Jr.|36|33|2|4|2|false
+P|SAC|Precious Achiuwa|25|14|6|1|0|false
+P|SAC|Malik Monk|12|0|1|2|0|false
+P|SAC|Daeqwon Plowden|20|3|0|0|1|false
+P|SAC|Nique Clifford|2|0|0|0|0|false
+P|SAC|Emanuel Sharp|14|5|0|1|1|false
+P|SAC|Leaky Black||||||true
+P|SAC|Alex Karaban||||||true
+P|SAC|Jonathan Mogbo||||||true
+T|POR|46-96|14-49|22-30|13|45|30|10
+T|SAC|42-91|8-30|28-30|10|42|21|14

@@ -1,0 +1,31 @@
+STATUS|STATUS_FINAL|true|Final
+TEAM|DAL|away|121
+TEAM|IND|home|105
+P|DAL|Daniel Gafford|15|4|3|5|0|false
+P|DAL|P.J. Washington|33|20|13|0|2|false
+P|DAL|Cooper Flagg|17|14|5|6|2|false
+P|DAL|Kyrie Irving|25|24|1|3|5|false
+P|DAL|Max Christie|38|16|4|4|2|false
+P|DAL|Naji Marshall|33|15|4|6|0|false
+P|DAL|Morez Johnson Jr.|17|8|6|0|0|false
+P|DAL|Tobi Lawal|1|0|0|0|0|false
+P|DAL|Zaccharie Risacher|32|11|6|1|1|false
+P|DAL|Sergio de Larrea|1|0|0|0|0|false
+P|DAL|Moussa Cisse|1|3|1|0|0|false
+P|DAL|Marcus Sasser|27|6|2|3|2|false
+P|DAL|Walter Clayton Jr.|1|0|1|0|0|false
+P|IND|Pascal Siakam|29|23|3|3|3|false
+P|IND|Jarace Walker|17|2|1|1|0|false
+P|IND|Ivica Zubac|24|9|11|2|0|false
+P|IND|Andrew Nembhard|32|16|2|5|1|false
+P|IND|Tyrese Haliburton|32|18|6|7|0|false
+P|IND|Larry Nance Jr.|1|0|0|0|0|false
+P|IND|Obi Toppin|25|13|5|1|0|false
+P|IND|Jalen Slawson|16|4|5|2|0|false
+P|IND|Jay Huff|5|0|2|0|0|false
+P|IND|Kelly Oubre Jr.|20|3|2|2|1|false
+P|IND|Aaron Nesmith|20|9|4|1|1|false
+P|IND|Kobe Brown|1|0|0|0|0|false
+P|IND|Quenton Jackson|17|8|1|3|1|false
+T|DAL|44-88|14-34|19-23|11|46|28|15
+T|IND|39-88|7-32|20-28|13|42|27|21

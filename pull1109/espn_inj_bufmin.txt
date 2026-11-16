@@ -1,0 +1,51 @@
+# ESPN injuries API, pulled Mon Nov 9 ~2:42 PM CT
+Bills | Alec Anderson | OT | Questionable | Ankle | Anderson (ankle) is questionable for Monday's tilt versus the Vikings. | 2026-11-08T02:09 | 
+Bills | Spencer Brown | OT | Active |  | Brown (back) does not have a designation for Monday's matchup in Minnesota. | 2026-11-08T02:05 | 
+Bills | Dion Dawkins | OT | Questionable | Ribs | Dawkins (ribs) is officially questionable to suit up against the Vikings in Week 9. | 2026-11-08T02:01 | 
+Bills | Tyrell Shavers | WR | Out | Knee - ACL | Shavers (knee) is listed as questionable ahead of Monday night's game against the Vikings, Maddy Glab of the Bills' official site reports. | 2026-11-07T21:01 | 
+Bills | Sam Franklin Jr. | S | Active |  |  | 2026-11-07T19:39 | 
+Bills | Keon Coleman | WR | Active |  | Coleman (shoulder) doesn't have a designation for Monday's contest in Minnesota. | 2026-11-07T19:30 | 
+Bills | DJ Moore | WR | Active |  | Moore (shoulder) doesn't have a designation for Monday's contest at Minnesota. | 2026-11-07T19:17 | 
+Bills | Joshua Palmer | WR | Out | Hamstring | Palmer (hamstring) has been ruled out for Monday's game in Minnesota, Maddy Glab of the Bills' official site reports. | 2026-11-07T18:51 | 
+Bills | Ty Johnson | RB | Active |  | Johnson (illness) was a full practice participant Friday. | 2026-11-06T22:03 | 
+Bills | Dalton Kincaid | TE | Active |  | Kincaid (chest) was a full participant in Friday's practice. | 2026-11-06T21:59 | 
+Bills | Dee Alford | CB | Active |  | Alford (ankle) was a full participant in Thursday's practice. | 2026-11-05T22:45 | 
+Bills | Jordan Hancock | CB | Injured Reserve | Hamstring | Hancock (hamstring) was designated to return from injured reserve by the Bills on Wednesday, Sal Capaccio of WGR Sports Radio 550 Buffalo reports. | 2026-11-05T03:59 | 
+Bills | Greg Gaines | DT | Questionable | Calf | questionable | 2026-11-03T13:03 | 
+Bills | Dawson Knox | TE | Active |  | Knox caught one of two targets for six yards in Sunday's 36-10 win over the Ravens. | 2026-11-03T03:28 | 
+Bills | Ray Davis | RB | Active |  | Davis rushed six times for 30 yards in Sunday's 36-10 win over the Ravens. | 2026-11-03T02:33 | 
+Bills | Tyler Bass | PK | Active |  | Bass made all three of his field-goal attempts as well as three PATs in the Bills' 36-10 win over the Ravens on Sunday. | 2026-11-03T01:37 | 
+Bills | Mike Danna | DE | Active |  |  | 2026-11-02T18:47 | 
+Bills | Skyler Bell | WR | Active |  |  | 2026-11-02T18:47 | 
+Bills | Jalon Kilgore | S | Active |  |  | 2026-11-02T18:47 | 
+Bills | Ar'maj Reed-Adams | G | Active |  |  | 2026-11-02T18:47 | 
+Bills | Greg Dortch | WR | Active |  | Dortch went without a target while logging four of the Bills' 82 snaps on offense in Sunday's 36-10 win over the Ravens. He returned one kickoff for 2 | 2026-11-02T15:08 | 
+Bills | Khalil Shakir | WR | Active |  | Shakir caught five of six targets for 64 yards in Sunday's 36-10 win over the Ravens. | 2026-11-02T03:06 | 
+Bills | James Cook III | RB | Active |  | Cook rushed 21 times for 80 yards and a touchdown while catching two of three targets for 21 yards in Sunday's 36-10 win over the Ravens. | 2026-11-01T22:30 | 
+Bills | Josh Allen | QB | Active |  | Allen completed 21 of 34 passes for 289 yards, two touchdowns and one interception in Sunday's 36-10 win over the Ravens. He added 30 rushing yards an | 2026-11-01T22:28 | 
+Bills | TJ Parker | LB | Active |  |  | 2026-11-01T16:33 | 
+Vikings | Odell Beckham Jr. | WR | Active |  | The Vikings are signing Beckham from the practice squad to the active roster, Tom Pelissero of NFL Network reports. | 2026-11-08T16:15 | 
+Vikings | Andrew Van Ginkel | LB | Active |  | Van Ginkel (chest) doesn't have a designation for Monday's matchup against the Bills, Craig Peters of the Vikings' official site reports. | 2026-11-07T23:02 | 
+Vikings | Demond Claiborne | RB | Out | Knee | Claiborne (knee) has been ruled out for Monday's battle against Buffalo, Craig Peters of the Vikings' official site reports. | 2026-11-07T22:56 | 
+Vikings | Jauan Jennings | WR | Out | Calf | Jennings (calf) has been ruled out for Monday's contest versus the Bills. | 2026-11-07T19:34 | 
+Vikings | Kyler Murray | QB | Out | Hamstring | Head coach Kevin O'Connell said Saturday that Murray (hamstring) has been ruled out for Monday's game versus the Bills. | 2026-11-07T19:24 | 
+Vikings | Christian Darrisaw | OT | Active |  | Darrisaw (shoulder) was a full practice participant Friday. | 2026-11-07T04:22 | 
+Vikings | Isaiah Rodgers | CB | Active |  |  | 2026-11-06T23:19 | 
+Vikings | Jake Golday | LB | Active |  |  | 2026-11-06T23:19 | 
+Vikings | Jay Ward | S | Questionable | Knee | questionable | 2026-11-05T22:32 | 
+Vikings | Max Brosmer | QB | Active |  | Brosmer is set to back up Carson Wentz against the Bills on Monday, as Kyler Murray (hamstring) won't play, Alec Lewis of The Athletic reports. | 2026-11-05T18:49 | 
+Vikings | Carson Wentz | QB | Active |  | Wentz is stated to start Monday night's game against the Bills, Ian Rapoport of NFL Network reports. | 2026-11-05T18:30 | 
+Vikings | DeeJay Dallas | RB | Active |  | Dallas was signed to the Vikings' active roster Wednesday, Craig Peters of the team's official website reports. | 2026-11-05T02:13 | 
+Vikings | Eric Wilson | LB | Active |  | Wilson registered 11 tackles, including 1.0 sacks, in Sunday's loss to Detroit. | 2026-11-04T05:53 | 
+Vikings | Joshua Metellus | S | Active |  | Metellus recorded 13 tackles (six solo) and a defensed pass in a Week 8 defeat against Detroit. | 2026-11-04T05:28 | 
+Vikings | Byron Murphy Jr. | CB | Active |  | Murphy registered 10 tackles (eight solo) in a loss to the Lions on Sunday. | 2026-11-04T05:19 | 
+Vikings | Blake Cashman | LB | Active |  | Cashman finished Sunday's loss to Detroit with 10 tackles (five solo). | 2026-11-04T05:12 | 
+Vikings | Will Reichard | PK | Active |  | Reichard missed his sole field-goal attempt and made his sole PAT in the Vikings' 19-15 loss to the Lions on Sunday. | 2026-11-03T03:50 | 
+Vikings | Elijah Williams | DE | Active |  |  | 2026-11-02T19:12 | 
+Vikings | Caleb Tiernan | OT | Active |  |  | 2026-11-02T19:12 | 
+Vikings | Charles Demmings | CB | Active |  |  | 2026-11-02T19:12 | 
+Vikings | Jakobe Thomas | S | Active |  |  | 2026-11-02T19:12 | 
+Vikings | T.J. Hockenson | TE | Active |  | Hockenson caught four of five targets for 58 yards and a touchdown in Sunday's 19-15 loss to the Lions. | 2026-11-02T03:25 | 
+Vikings | Jordan Addison | WR | Active |  | Addison caught three of eight targets for 66 yards in Sunday's 19-15 loss to the Lions. | 2026-11-02T02:41 | 
+Vikings | Aaron Jones Sr. | RB | Active |  | Jones rushed five times for 22 yards and brought in both targets for 18 yards in the Vikings' 19-15 loss to the Lions on Sunday. | 2026-11-02T01:12 | 
+Vikings | Jordan Mason | RB | Active |  | Mason rushed eight times for 20 yards in the Vikings' 19-15 loss to the Lions on Sunday. | 2026-11-02T01:06 | 

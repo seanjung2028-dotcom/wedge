@@ -1,0 +1,34 @@
+STATUS|STATUS_FINAL|true|Final
+TEAM|DET|away|128
+TEAM|MIA|home|111
+P|DET|Duncan Robinson|28|17|1|2|5|false
+P|DET|John Collins|29|23|7|1|5|false
+P|DET|Jalen Duren|10|4|6|3|0|false
+P|DET|Cade Cunningham|30|16|2|8|2|false
+P|DET|Ausar Thompson|19|4|3|4|0|false
+P|DET|Paul Reed|26|19|11|4|2|false
+P|DET|Tolu Smith|2|0|1|0|0|false
+P|DET|Ronald Holland II|22|8|5|4|0|false
+P|DET|Javonte Green|13|5|3|0|1|false
+P|DET|Kevin Huerter|20|5|6|2|1|false
+P|DET|Isaiah Joe|18|12|3|1|1|false
+P|DET|Daniss Jenkins|22|15|5|5|1|false
+P|DET|Taurean Prince||||||true
+P|DET|Chaz Lanier||||||true
+P|DET|Ebuka Okorie||||||true
+P|MIA|Giannis Antetokounmpo|33|36|12|5|1|false
+P|MIA|Andrew Wiggins|26|8|8|2|1|false
+P|MIA|Bam Adebayo|23|4|6|3|0|false
+P|MIA|Klay Thompson|24|6|2|2|2|false
+P|MIA|Davion Mitchell|33|18|2|5|3|false
+P|MIA|Bobby Portis|21|11|8|2|3|false
+P|MIA|Simone Fontecchio|3|0|1|0|0|false
+P|MIA|Myron Gardner|3|0|0|0|0|false
+P|MIA|Nikola Jovic|13|5|4|1|0|false
+P|MIA|Nick Richards|3|3|0|1|1|false
+P|MIA|Tim Hardaway Jr.|21|8|4|1|2|false
+P|MIA|Dru Smith|6|3|0|1|1|false
+P|MIA|Pelle Larsson|29|7|2|1|1|false
+P|MIA|Ryan Conwell|3|2|0|0|0|false
+T|DET|47-89|18-38|16-20|12|53|34|20
+T|MIA|39-102|15-51|18-28|18|49|24|12

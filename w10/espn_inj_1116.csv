@@ -1,0 +1,280 @@
+season,season_type,game_type,team,week,gsis_id,position,full_name,first_name,last_name,report_primary_injury,report_secondary_injury,report_status,practice_primary_injury,practice_secondary_injury,practice_status,date_modified,espn_status,espn_comment
+2026,REG,REG,ARI,10,00-0040137,LB,Jordan Burch,Jordan,Burch,Knee,,Questionable,,,,2026-11-15,Questionable,"Burch (knee) has been ruled out for the remainder of Sunday's tilt against the Rams, Josh Weinfuss of ESPN.com reports."
+2026,REG,REG,ARI,10,00-0041113,OT,Jayden Williams,Jayden,Williams,Knee,,Out,,,,2026-11-15,Out,"Williams (knee) has been ruled out for Sunday's game against the Rams, Darren Urban of the Cardinals' official site reports."
+2026,REG,REG,JAX,10,00-0041203,QB,Joey Aguilar,Joey,Aguilar,Coach's Decision,,Out,,,,2026-11-15,Out,"Aguilar (coach's decision) is inactive but will serve as the emergency third quarterback against the Rams on Sunday, Darren Urban of the Cardinals' official sit"
+2026,REG,REG,ARI,10,00-0038663,CB,Starling Thomas V,Starling,V,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,ARI,10,00-0038782,LB,Eku Leota,Eku,Leota,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,ARI,10,00-0035258,C,Hjalte Froholdt,Hjalte,Froholdt,Concussion,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,ARI,10,00-0038571,G,Jon Gaines II,Jon,II,Ankle,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,ARI,10,00-0035289,QB,Gardner Minshew II,Gardner,II,Elbow,,Out,,,,2026-11-15,Injured Reserve,"Minshew suffered a torn UCL in his right throwing elbow last Sunday at Seattle and is slated to undergo season-ending surgery, Adam Schefter of ESPN reports."
+2026,REG,REG,ARI,10,00-0037804,DT,Zachary Carter,Zachary,Carter,Knee,,Out,,,,2026-11-14,Injured Reserve,"Carter (knee) has been ruled out ahead of Sunday's game against the Rams, Zach Gershman of the Cardinals' official site reports."
+2026,REG,REG,ATL,10,00-0037238,WR,Drake London,Drake,London,Concussion,,Questionable,,,,2026-11-15,Questionable,"London is being evaluated for a possible concussion during Sunday's game against the Chiefs, Tori McElhaney of the Falcons' official site reports."
+2026,REG,REG,ATL,10,00-0027973,QB,Andy Dalton,Andy,Dalton,Coach's Decision,,Out,,,,2026-11-15,Out,Dalton is inactive for Sunday's game against the Chiefs but was designated as his team's emergency third quarterback.
+2026,REG,REG,ATL,10,00-0041469,CB,Avieon Terrell,Avieon,Terrell,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,ATL,10,00-0040687,OL,Cameron Williams,Cameron,Williams,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,ATL,10,00-0041194,QB,Jack Strand,Jack,Strand,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,ATL,10,00-0040077,CB,Robert Longerbeam,Robert,Longerbeam,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,ATL,10,00-0041044,WR,Zachariah Branch,Zachariah,Branch,Hamstring,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,ATL,10,00-0036990,LB,Divine Deablo,Divine,Deablo,Forearm,,Out,,,,2026-11-14,Out,"Deablo (forearm) was downgraded from doubtful to out Saturday ahead of Sunday's clash against Kansas City, Tori McElhaney of the Falcons' official site reports."
+2026,REG,REG,ATL,10,00-0037746,RB,Brian Robinson Jr.,Brian,Jr.,Hamstring,,Out,,,,2026-11-07,Injured Reserve,"Robinson (hamstring) was placed on injured reserve Saturday, Marc Raimondi of ESPN.com reports."
+2026,REG,REG,BAL,10,00-0040888,RB,Adam Randall,Adam,Randall,Neck,,Out,,,,2026-11-14,Injured Reserve,"Randall (neck), who remains on IR, has been tagged as questionable to face the Chargers on Monday."
+2026,REG,REG,BAL,10,00-0036302,S,Jaylinn Hawkins,Jaylinn,Hawkins,Knee,,Out,,,,2026-11-14,Out,Hawkins (knee) has been ruled out for Monday's game against the Chargers.
+2026,REG,REG,BAL,10,00-0034796,QB,Lamar Jackson,Lamar,Jackson,Thumb,,Out,,,,2026-11-13,Injured Reserve,"Jackson (thumb) is ""doing well"" and is expected to be out for ""6-to-10 weeks,"" per head coach Jesse Minter."
+2026,REG,REG,BUF,10,00-0038557,LB,Dorian Williams,Dorian,Williams,Calf,,Questionable,,,,2026-11-15,Questionable,Williams (calf) is questionable to return to Sunday's game against the Jets.
+2026,REG,REG,BUF,10,00-0037034,CB,Dee Alford,Dee,Alford,Concussion,,Questionable,,,,2026-11-15,Questionable,Alford (concussion) has been ruled out for the remainder of Sunday's game against the Jets.
+2026,REG,REG,BUF,10,00-0037288,CB,Christian Benford,Christian,Benford,Groin,,Questionable,,,,2026-11-15,Questionable,Benford (groin) has been ruled out for the rest of Sunday's game against the Jets.
+2026,REG,REG,BUF,10,00-0041128,G,Ar'maj Reed-Adams,Ar'maj,Reed-Adams,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,BUF,10,00-0041086,S,Jalon Kilgore,Jalon,Kilgore,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,BUF,10,00-0041548,OT,Jude Bowry,Jude,Bowry,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,BUF,10,,DE,Mike Danna,Mike,Danna,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,BUF,10,00-0035667,DT,Greg Gaines,Greg,Gaines,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,BUF,10,00-0038679,WR,Tyrell Shavers,Tyrell,Shavers,Knee - ACL,,Out,,,,2026-11-14,Out,"The Bills did not activate Shavers (knee) from the reserve/PUP list, and he will not be available for Sunday's game against the Jets."
+2026,REG,REG,BUF,10,00-0036679,QB,Shane Buechele,Shane,Buechele,Coach's Decision,,Out,,,,2026-11-14,Out,The Bills elevated Buechele from the practice squad to the active roster Saturday.
+2026,REG,REG,CAR,10,00-0041149,QB,Haynes King,Haynes,King,Coach's Decision,,Out,,,,2026-11-15,Out,"King (coach's decision) is inactive but will serve as the emergency third quarterback against the Saints on Sunday, Darin Gantt of the Panthers' official site r"
+2026,REG,REG,CAR,10,00-0041063,CB,Will Lee III,Will,III,Hamstring,,Out,,,,2026-11-15,Out,"Lee (hamstring) is inactive for Sunday's game against the Saints, Darin Gantt of the Panthers' official site reports."
+2026,REG,REG,CAR,10,00-0039356,TE,Ja'Tavion Sanders,Ja'Tavion,Sanders,Coach's Decision,,Out,,,,2026-11-15,Out,"Sanders (coach's decision) is inactive for Sunday's game against the Saints, Darin Gantt of the Panthers' official site reports."
+2026,REG,REG,CAR,10,00-0035687,LB,Bobby Okereke,Bobby,Okereke,Foot,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,CAR,10,00-0041071,C,Sam Hecht,Sam,Hecht,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,CAR,10,00-0036265,RB,AJ Dillon,AJ,Dillon,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,CAR,10,00-0040458,DT,TeRah Edwards,TeRah,Edwards,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,CAR,10,00-0036968,G,Brady Christensen,Brady,Christensen,Hamstring,,Out,,,,2026-11-14,Injured Reserve,"Christensen (hamstring) has been downgraded to out for Sunday's game against the Saints, Joe Person of The Athletic reports."
+2026,REG,REG,CAR,10,00-0035277,CB,Mike Jackson,Mike,Jackson,Groin,,Out,,,,2026-11-14,Injured Reserve,"Jackson (groin) has been downgraded from doubtful to out for Sunday's game against the Saints, Joe Person of The Athletic reports."
+2026,REG,REG,CAR,10,00-0039344,RB,Jonathon Brooks,Jonathon,Brooks,Groin,,Out,,,,2026-11-14,Injured Reserve,"Brooks (groin) has been downgraded from doubtful to out for Sunday's game against the Saints, Joe Person of The Athletic reports."
+2026,REG,REG,CAR,10,00-0036944,CB,Jaycee Horn,Jaycee,Horn,Quadriceps,,Out,,,,2026-11-09,Injured Reserve,"Head coach Dave Canales plans to take ""the next two days"" to discuss Horn (quadriceps), Mike Kaye of ESPN.com reports."
+2026,REG,REG,CHI,10,,WR,Luther Burden III,Luther,III,Concussion,,Questionable,,,,2026-11-09,Questionable,"Burden has a concussion, head coach Ben Johnson revealed after Sunday's 27-24 win over the Buccaneers, Courtney Cronin of ESPN.com reports."
+2026,REG,REG,CHI,10,,CB,Tyrique Stevenson Sr.,Tyrique,Sr.,Hand,,Questionable,,,,2026-11-09,Questionable,Stevenson exited Sunday night's game against the Bucs with a hand injury and is questionable to return.
+2026,REG,REG,CHI,10,,CB,Malik Muhammad II,Malik,II,Toe,,Out,,,,2026-11-09,Out,Muhammad (toe) is inactive for Sunday night's contest against Tampa Bay.
+2026,REG,REG,CHI,10,,RB,Kyle Monangai,Kyle,Monangai,Toe,,Out,,,,2026-11-09,Out,Monangai (thumb/toe) is inactive for Sunday's contest against the Buccaneers.
+2026,REG,REG,CHI,10,,RB,Zavier Scott,Zavier,Scott,Wrist,,Out,,,,2026-11-05,Injured Reserve,The Bears placed Scott (wrist) on injured reserve Thursday.
+2026,REG,REG,CHI,10,,DT,Kentavius Street,Kentavius,Street,Knee,,Out,,,,2026-11-05,Injured Reserve,"The Bears placed Street (knee) on injured reserve Wednesday, Adam Jahns of AllCHGO.com reports."
+2026,REG,REG,CHI,10,,OT,Braxton Jones,Braxton,Jones,Knee,,Out,,,,2026-11-05,Injured Reserve,"Jones (knee) is out for the rest of the season, Brad Biggs of the Chicago Tribune reports."
+2026,REG,REG,CIN,10,00-0034754,LB,Oren Burks,Oren,Burks,Groin,,Questionable,,,,2026-11-16,Questionable,"Burks (groin) will not return to Sunday night's game against the Steelers, Jay Morrison of SI.com reports."
+2026,REG,REG,CIN,10,00-0035702,G,Dalton Risner,Dalton,Risner,Knee,,Questionable,,,,2026-11-16,Questionable,Risner (knee) will not return to Sunday night's game against the Steelers.
+2026,REG,REG,CIN,10,00-0040015,OT,Myles Hinton,Myles,Hinton,Illness,,Out,,,,2026-11-16,Out,Hinton (illness) is inactive for Sunday's Week 10 matchup against the Steelers.
+2026,REG,REG,CIN,10,00-0041118,DT,Landon Robinson,Landon,Robinson,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,CIN,10,00-0041062,C,Connor Lew,Connor,Lew,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,CIN,10,00-0036231,S,Kyle Dugger,Kyle,Dugger,Quadriceps,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,CIN,10,00-0038619,WR,Andrei Iosivas,Andrei,Iosivas,Thumb,,Out,,,,2026-11-14,Injured Reserve,Iosivas (thumb) has been downgraded from doubtful to out for Sunday's game against the Steelers.
+2026,REG,REG,CIN,10,00-0041098,OT,Brian Parker II,Brian,II,Knee,,Out,,,,2026-11-12,Injured Reserve,The Bengals opened Parker's (undisclosed) 21-day practice window Thursday.
+2026,REG,REG,CIN,10,00-0034446,CB,Jalen Davis,Jalen,Davis,Hamstring,,Out,,,,2026-11-12,Injured Reserve,The Bengals designated Davis (hamstring) to return from injured reserve Thursday.
+2026,REG,REG,CIN,10,00-0041546,DE,Cashius Howell,Cashius,Howell,Wrist,,Out,,,,2026-11-04,Injured Reserve,Howell (wrist) was placed on injured reserve by the Bengals on Tuesday.
+2026,REG,REG,CLE,10,00-0040704,QB,Dillon Gabriel,Dillon,Gabriel,Coach's Decision,,Out,,,,2026-11-15,Out,Gabriel (coach's decision) is inactive for Sunday's game against the Texans but will serve as the Browns' emergency third quarterback.
+2026,REG,REG,CLE,10,00-0038715,S,Ronnie Hickman,Ronnie,Hickman,Concussion,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,CLE,10,00-0036287,CB,Noah Igbinoghene,Noah,Igbinoghene,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,CLE,10,00-0041075,LB,Justin Jefferson,Justin,Jefferson,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,CLE,10,00-0041073,C,Parker Brailsford,Parker,Brailsford,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,CLE,10,00-0041092,QB,Taylen Green,Taylen,Green,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,CLE,10,00-0031595,FB,Michael Burton,Michael,Burton,Calf,,Out,,,,2026-11-14,Injured Reserve,"The Browns placed Burton (calf) on injured reserve Saturday, Chris Easterling of the Akron Beacon Journal reports."
+2026,REG,REG,DAL,10,00-0040007,G,Tyler Booker,Tyler,Booker,Ankle,,Questionable,,,,2026-11-16,Questionable,"Booker hurt his ankle during Sunday's loss to San Francisco and is slated for X-rays and an MRI, Calvin Watkins of The Dallas Morning News reports."
+2026,REG,REG,DAL,10,00-0037275,CB,DaRon Bland,DaRon,Bland,Ankle,,Questionable,,,,2026-11-16,Questionable,"Bland (ankle) will undergo X-rays and an MRI, Calvin Watkins of The Dallas Morning News reports."
+2026,REG,REG,DAL,10,00-0037578,S,Juanyeh Thomas,Juanyeh,Thomas,Ribs,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,DAL,10,00-0039062,WR,Jonathan Mingo,Jonathan,Mingo,Ankle,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,DAL,10,00-0037842,CB,Derion Kendrick,Derion,Kendrick,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,DAL,10,00-0035227,S,P.J. Locke,P.J.,Locke,Concussion,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,DAL,10,00-0040017,OT,Ajani Cornelius,Ajani,Cornelius,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,DAL,10,00-0040725,LB,Donovan Ezeiruaku,Donovan,Ezeiruaku,Ankle,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,DAL,10,00-0038041,TE,Jake Ferguson,Jake,Ferguson,Knee,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,DAL,10,00-0037120,RB,Tyler Goodson,Tyler,Goodson,Knee - ACL + MCL,,Out,,,,2026-11-14,Injured Reserve,"The Cowboys placed Goodson (knee) on injured reserve Saturday, Tommy Yarrish of the team's official site reports."
+2026,REG,REG,DEN,10,,S,Brandon Jones,Brandon,Jones,Hamstring,,Out,,,,2026-11-09,Out,out
+2026,REG,REG,DEN,10,,S,Talanoa Hufanga,Talanoa,Hufanga,Ankle,,Out,,,,2026-11-09,Out,out
+2026,REG,REG,DEN,10,,CB,Kris Abrams-Draine,Kris,Abrams-Draine,Ankle,,Out,,,,2026-11-09,Out,out
+2026,REG,REG,DEN,10,,WR,Jaylen Waddle,Jaylen,Waddle,Concussion,,Questionable,,,,2026-11-08,Questionable,"Waddle (concussion) has been ruled out for the remainder of Sunday's game against the Panthers, Parker Gabriel of The Denver Post reports."
+2026,REG,REG,DEN,10,,CB,Riley Moss,Riley,Moss,Concussion,,Questionable,,,,2026-11-08,Questionable,"Moss (concussion) has been ruled out for the remainder of Sunday's game against the Panthers, Parker Gabriel of The Denver Post reports."
+2026,REG,REG,DEN,10,,DE,Eyioma Uwazurike,Eyioma,Uwazurike,Shoulder,,Out,,,,2026-11-08,Injured Reserve,"The Broncos placed Uwazurike (shoulder) on injured reserve Saturday, Aric DiLalla of the team's official site reports."
+2026,REG,REG,DET,10,00-0037236,DE,Aidan Hutchinson,Aidan,Hutchinson,Knee - ACL,,Out,,,,2026-11-16,Out,"Hutchison is expected to miss the remainder of the season after an initial MRI on his injured right knee Monday revealed a torn ACL, Ian Rapoport of NFL Network"
+2026,REG,REG,DET,10,00-0039396,DT,Mekhi Wingo,Mekhi,Wingo,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,DET,10,00-0036716,LB,Amen Ogbongbemiga,Amen,Ogbongbemiga,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,DET,10,00-0034384,CB,D.J. Reed,D.J.,Reed,Hip,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,DET,10,00-0040761,DE,Ahmed Hassanein,Ahmed,Hassanein,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,DET,10,00-0037297,C,Cade Mays,Cade,Mays,Ankle,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,DET,10,00-0041445,CB,Keith Abney II,Keith,II,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,DET,10,00-0037667,S,Kerby Joseph,Kerby,Joseph,Knee,,Out,,,,2026-11-12,Out,Joseph (knee) did not travel to Munich with the Lions and is ruled out for Sunday's matchup against the Patriots.
+2026,REG,REG,DET,10,00-0039018,LB,Jack Campbell,Jack,Campbell,Neck,,Out,,,,2026-11-07,Injured Reserve,The Lions moved Campbell (neck) to injured reserve Saturday.
+2026,REG,REG,DET,10,00-0041442,LB,Jimmy Rolder,Jimmy,Rolder,Hamstring,,Out,,,,2026-11-04,Injured Reserve,Rolder (hamstring) was placed on injured reserve Tuesday.
+2026,REG,REG,GB,10,00-0037091,WR,Bo Melton,Bo,Melton,Thigh,,Questionable,,,,2026-11-15,Questionable,"Melton (thigh) has been ruled out for the rest of Sunday's game against the Vikings, Rob Demovsky of ESPN.com reports."
+2026,REG,REG,GB,10,00-0038090,WR,Skyy Moore,Skyy,Moore,Ankle,,Questionable,,,,2026-11-15,Questionable,"Moore (ankle) has been ruled out for the rest of Sunday's game against the Vikings, Rob Demovsky of ESPN.com reports."
+2026,REG,REG,GB,10,00-0041470,CB,Brandon Cisse,Brandon,Cisse,Ribs,,Questionable,,,,2026-11-15,Questionable,Cisse (ribs) is questionable to return to Sunday's game against the Vikings.
+2026,REG,REG,GB,10,00-0029592,G,Kevin Zeitler,Kevin,Zeitler,Ankle,,Out,,,,2026-11-15,Out,"Zeitler (ankle/triceps) is inactive for Sunday's game against the Vikings, Mike Spofford of the Packers' official site reports."
+2026,REG,REG,GB,10,00-0034431,LB,Zaire Franklin,Zaire,Franklin,Shin,,Out,,,,2026-11-15,Out,Franklin (shin) is inactive for Sunday's game against the Vikings.
+2026,REG,REG,GB,10,00-0038098,RB,Pierre Strong Jr.,Pierre,Jr.,Coach's Decision,,Out,,,,2026-11-15,Out,Strong (coach's decision) is inactive for Sunday's game against the Vikings.
+2026,REG,REG,GB,10,00-0037076,G,Sean Rhyan,Sean,Rhyan,Ankle,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,GB,10,00-0035700,RB,Josh Jacobs,Josh,Jacobs,Finger,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,GB,10,00-0039272,G,Donovan Jennings,Donovan,Jennings,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,GB,10,00-0038589,TE,Josh Whyle,Josh,Whyle,Concussion,,Out,,,,2026-11-14,Injured Reserve,Green Bay placed Whyle (concussion) on injured reserve Saturday.
+2026,REG,REG,HOU,10,00-0035685,RB,David Montgomery,David,Montgomery,Groin,,Out,,,,2026-11-16,Out,"Texans head coach DeMeco Ryans said Sunday that he's ""not certain"" if Montgomery (groin) will be able to play Thursday against Indianapolis, DJ Bien-Aime of ESP"
+2026,REG,REG,HOU,10,00-0040583,RB,Woody Marks,Woody,Marks,Concussion,,Doubtful,,,,2026-11-15,Doubtful,"Coach DeMeco Ryans acknowledged after Sunday's 27-24 loss to the Browns that Marks (concussion) is unlikely to play in Thursday night's game against the Colts, "
+2026,REG,REG,HOU,10,00-0034399,G,Wyatt Teller,Wyatt,Teller,Illness,,Out,,,,2026-11-15,Out,Teller (illness) is inactive for Sunday's game against the Browns.
+2026,REG,REG,HOU,10,00-0041532,G,Keylan Rutledge,Keylan,Rutledge,Neck,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,HOU,10,00-0039849,WR,Marvin Harrison Jr.,Marvin,Jr.,Hamstring,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,HOU,10,00-0031565,DE,Danielle Hunter,Danielle,Hunter,Hamstring,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,HOU,10,00-0036556,TE,Brevin Jordan,Brevin,Jordan,Finger,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,HOU,10,00-0035166,LB,Azeez Al-Shaair,Azeez,Al-Shaair,Groin,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,HOU,10,00-0040149,CB,Jaylin Smith,Jaylin,Smith,Hamstring,,Out,,,,2026-11-12,Injured Reserve,The Texans designated Smith (hamstring) to return from injured reserve Wednesday.
+2026,REG,REG,IND,10,00-0037190,CB,Sauce Gardner,Sauce,Gardner,Calf,,Questionable,,,,2026-11-15,Questionable,"Gardner (calf) is questionable to return to Sunday's game against the Dolphins, Jake Arthur of Roundtable.io reports."
+2026,REG,REG,IND,10,00-0034573,CB,Charvarius Ward,Charvarius,Ward,Shin,,Questionable,,,,2026-11-15,Questionable,Ward (shin) is questionable to return against the Dolphins on Sunday.
+2026,REG,REG,IND,10,00-0037757,OT,Bernhard Raimann,Bernhard,Raimann,Concussion,,Questionable,,,,2026-11-15,Questionable,"Raimann has entered the league's concussion protocol and has been ruled out for the rest of Sunday's game against the Dolphins, James Boyd of The Athletic repor"
+2026,REG,REG,IND,10,00-0040206,QB,Riley Leonard,Riley,Leonard,Coach's Decision,,Out,,,,2026-11-15,Out,Leonard (coach's decision) is inactive but will serve as the Colts' emergency third quarterback against the Dolphins on Sunday.
+2026,REG,REG,IND,10,00-0032753,LS,Luke Rhodes,Luke,Rhodes,Hamstring,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,IND,10,00-0035674,DT,Jerry Tillery,Jerry,Tillery,Calf,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,IND,10,00-0040163,OT,Jalen Travis,Jalen,Travis,Knee,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,IND,10,00-0039377,LB,Jaylon Carlies,Jaylon,Carlies,Neck,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,IND,10,00-0036298,LB,Akeem Davis-Gaither,Akeem,Davis-Gaither,Knee,,Out,,,,2026-11-14,Injured Reserve,The Colts placed Davis-Gaither (knee) on injured reserve Saturday.
+2026,REG,REG,IND,10,00-0033217,TE,Mo Alie-Cox,Mo,Alie-Cox,Groin,,Out,,,,2026-11-14,Injured Reserve,The Colts placed Alie-Cox (groin) on injured reserve Saturday.
+2026,REG,REG,IND,10,00-0038394,TE,Will Mallory,Will,Mallory,Hamstring,,Out,,,,2026-11-14,Out,Mallory (hamstring) has been downgraded from questionable to out for Sunday's game against the Dolphins.
+2026,REG,REG,IND,10,00-0037664,WR,Alec Pierce,Alec,Pierce,Heel,,Out,,,,2026-11-11,Injured Reserve,"When asked Wednesday whether Pierce (heel) has a chance to return from IR this season, Colts head coach Shane Steichen was noncommittal, James Boyd of The Athle"
+2026,REG,REG,JAX,10,00-0036985,C,Robert Hainsey,Robert,Hainsey,Knee,,Questionable,,,,2026-11-15,Questionable,Hainsey (knee) is questionable to return to Sunday's game against the Titans.
+2026,REG,REG,JAX,10,00-0040342,DE,Danny Striggow,Danny,Striggow,Concussion,,Questionable,,,,2026-11-15,Questionable,Striggow is being evaluated for a possible concussion and is questionable to return to Sunday's game against the Titans.
+2026,REG,REG,JAX,10,00-0041106,WR,CJ Williams,CJ,Williams,Coach's Decision,,Out,,,,2026-11-15,Out,Williams (coach's decision) is inactive for Sunday's game against the Titans.
+2026,REG,REG,JAX,10,00-0041059,DE,Wesley Williams,Wesley,Williams,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,JAX,10,00-0041045,DT,Albert Regis,Albert,Regis,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,ATL,10,00-0034675,S,Jessie Bates III,Jessie,III,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,JAX,10,00-0040329,DE,B.J. Green II,B.J.,II,Forearm,,Out,,,,2026-11-14,Injured Reserve,"Green (forearm) has been ruled out ahead of Sunday's game against the Titans, Michael DiRocco of ESPN.com reports."
+2026,REG,REG,KC,10,00-0039824,TE,Jared Wiley,Jared,Wiley,Ankle,,Out,,,,2026-11-15,Out,"Wiley suffered a fractured ankle in the Chiefs' 35-13 victory over the Falcons on Sunday, Matt Derrick of ChiefsDigest.com reports."
+2026,REG,REG,KC,10,00-0036660,G,Trey Smith,Trey,Smith,Concussion,,Questionable,,,,2026-11-15,Questionable,Smith (concussion) has been ruled out for the remainder of Sunday's game against the Falcons.
+2026,REG,REG,KC,10,00-0040906,QB,Garrett Nussmeier,Garrett,Nussmeier,Coach's Decision,,Out,,,,2026-11-15,Out,Nussmeier (coach's decision) is inactive but will serve as the Chiefs' emergency third quarterback against the Falcons on Sunday.
+2026,REG,REG,KC,10,00-0040959,RB,Jaydn Ott,Jaydn,Ott,Hamstring,,Out,,,,2026-11-15,Out,"Ott (hamstring) has been ruled out for Sunday's game against the Falcons, Matt McMullen of the Chiefs' official site reports."
+2026,REG,REG,KC,10,00-0041545,DT,Peter Woods,Peter,Woods,Neck,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,KC,10,00-0038489,FB,Ben VanSumeren,Ben,VanSumeren,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,KC,10,00-0036557,OT,Jaylon Moore,Jaylon,Moore,Ankle,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,KC,10,00-0040093,CB,Melvin Smith Jr.,Melvin,Jr.,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,KC,10,00-0038134,RB,Kenneth Walker III,Kenneth,III,Groin,,Out,,,,2026-11-15,Out,"Walker (groin), who won't play Sunday in Atlanta, is expected to ""be able to go"" next Sunday against the Cardinals, Ian Rapoport of NFL Network reports."
+2026,REG,REG,LV,10,00-0039338,TE,Brock Bowers,Brock,Bowers,Ankle,,Questionable,,,,2026-11-16,Questionable,"Bowers, who will undergo additional testing Monday, isn't believed to have suffered a major ankle injury in Sunday's 21-13 loss to the Seahawks, Ian Rapoport of"
+2026,REG,REG,LV,10,00-0036479,DE,Kwity Paye,Kwity,Paye,Neck,,Questionable,,,,2026-11-15,Questionable,Paye (neck) is questionable to return to Sunday's game against the Seahawks.
+2026,REG,REG,LV,10,00-0040894,WR,Malik Benson,Malik,Benson,Coach's Decision,,Out,,,,2026-11-15,Out,Benson (coach's decision) is inactive for Sunday's game against the Seahawks.
+2026,REG,REG,LV,10,00-0037262,DT,Thomas Booker IV,Thomas,IV,Ankle,,Out,,,,2026-11-15,Out,Booker (ankle) is inactive for Sunday's game against the Seahawks.
+2026,REG,REG,LV,10,00-0040581,WR,Dont'e Thornton Jr.,Dont'e,Jr.,Back,,Out,,,,2026-11-15,Out,Thornton (back) is inactive for Sunday's game against the Seahawks.
+2026,REG,REG,LV,10,00-0037461,S,Tristin McCollum,Tristin,McCollum,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,LV,10,00-0040883,S,Dalton Johnson,Dalton,Johnson,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,LV,10,00-0040650,G,Bryce Cabeldue,Bryce,Cabeldue,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,LAC,10,00-0039915,WR,Ladd McConkey,Ladd,McConkey,Back,,Out,,,,2026-11-15,Out,McConkey (back) won't travel to Baltimore with the Chargers for Monday's game against the Ravens and has been downgraded from questionable to out for Week 10 ac
+2026,REG,REG,LAC,10,00-0040212,G,Branson Taylor,Branson,Taylor,Ankle,,Out,,,,2026-11-15,Out,Taylor (ankle) has been ruled out for Monday's clash against the Ravens.
+2026,REG,REG,LAC,10,00-0035688,OT,Trey Pipkins III,Trey,III,Knee,,Out,,,,2026-11-15,Injured Reserve,"Pipkins (knee), who is on injured reserve, has been deemed questionable for Monday's matchup against the Ravens."
+2026,REG,REG,LAC,10,00-0036736,G,Kayode Awosika,Kayode,Awosika,Lower Leg,,Questionable,,,,2026-11-15,Questionable,Awosika (fibula) is questionable for Monday's matchup against the Ravens.
+2026,REG,REG,LAC,10,00-0038414,S,Kendall Williamson,Kendall,Williamson,Calf,,Out,,,,2026-11-15,Out,Williamson (calf) has been ruled out for Monday's matchup against the Ravens.
+2026,REG,REG,LAC,10,00-0040065,CB,Isas Waxter,Isas,Waxter,Ankle,,Out,,,,2026-11-15,Out,Waxter (ankle) has been ruled out for Monday's battle against Baltimore.
+2026,REG,REG,LAC,10,00-0039835,DT,Justin Eboigbe,Justin,Eboigbe,Ankle,,Questionable,,,,2026-11-14,Questionable,Eboigbe (ankle) is questionable to suit up Monday against Baltimore.
+2026,REG,REG,LAC,10,00-0032103,LB,Denzel Perryman,Denzel,Perryman,Pectoral,,Out,,,,2026-11-14,Injured Reserve,"Perryman (pectoral), who is on IR, is officially questionable to suit up against Baltimore on Monday."
+2026,REG,REG,LAC,10,00-0033885,TE,David Njoku,David,Njoku,Lower Leg,,Out,,,,2026-11-14,Injured Reserve,Njoku (fibula) is listed as questionable for Monday's game against the Ravens.
+2026,REG,REG,LAC,10,00-0041550,WR,Brenen Thompson,Brenen,Thompson,Hamstring,,Doubtful,,,,2026-11-14,Doubtful,doubtful
+2026,REG,REG,LA,10,00-0034114,C,Coleman Shelton,Coleman,Shelton,Hamstring,,Questionable,,,,2026-11-15,Questionable,Shelton (hamstring) has been ruled out for the remainder of Sunday's game against the Cardinals.
+2026,REG,REG,LA,10,00-0039830,C,Dylan McMahon,Dylan,McMahon,Knee,,Questionable,,,,2026-11-15,Questionable,McMahon (knee) has been ruled out for the remainder of Sunday's game against the Cardinals.
+2026,REG,REG,LA,10,00-0032228,LS,Joe Cardona,Joe,Cardona,Ankle,,Out,,,,2026-11-15,Out,Cardona (ankle) is inactive for Sunday's game against Arizona.
+2026,REG,REG,LA,10,00-0041568,QB,Ty Simpson,Ty,Simpson,Coach's Decision,,Out,,,,2026-11-15,Out,Simpson (coach's decision) is inactive but will serve as the Rams' emergency third quarterback in Sunday's game against the Cardinals.
+2026,REG,REG,LA,10,00-0041394,OT,Keagen Trost,Keagen,Trost,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,LA,10,00-0041421,LB,Darryl Peterson III,Darryl,III,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,LA,10,00-0040923,S,Maximus Pulley,Maximus,Pulley,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,LA,10,00-0039061,DE,Desjuan Johnson,Desjuan,Johnson,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,LA,10,00-0039058,G,Steve Avila,Steve,Avila,Hamstring,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,LA,10,00-0031381,WR,Davante Adams,Davante,Adams,Hamstring,,Out,,,,2026-11-15,Injured Reserve,"According to Ian Rapoport of NFL Network and ESPN,  Adams (hamstring) is believed to be targeting a return to action Nov. 25 against the Packers."
+2026,REG,REG,LA,10,00-0039075,WR,Puka Nacua,Puka,Nacua,Knee - MCL,,Out,,,,2026-11-15,Injured Reserve,"Nacua (knee/toe) has an expected return date of ""mid-December,"" Ian Rapoport of NFL Network reports."
+2026,REG,REG,MIA,10,00-0039485,C,Andrew Meyer,Andrew,Meyer,Undisclosed,,Questionable,,,,2026-11-15,Questionable,Meyer (stinger) is questionable to return to Sunday's matchup against Indianapolis.
+2026,REG,REG,MIA,10,00-0040248,DT,Zeek Biggers,Zeek,Biggers,Knee,,Questionable,,,,2026-11-15,Questionable,"Biggers (knee) has been ruled out for the rest of Sunday's game against the Colts, Barry Jackson of the Miami Herald reports."
+2026,REG,REG,MIA,10,00-0041525,WR,Chris Bell,Chris,Bell,Knee,,Out,,,,2026-11-15,Out,Bell (knee) is inactive for Sunday's Week 10 matchup against the Colts.
+2026,REG,REG,MIA,10,00-0039863,OT,Caedan Wallace,Caedan,Wallace,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,MIA,10,00-0038728,WR,Jared Wayne,Jared,Wayne,Quadriceps,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,MIA,10,00-0041077,TE,Justin Joly,Justin,Joly,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,MIA,10,00-0036171,C,Aaron Brewer,Aaron,Brewer,Concussion,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,MIA,10,00-0039390,CB,Marcellas Dial Jr.,Marcellas,Jr.,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,MIA,10,00-0037549,CB,Darrell Baker Jr.,Darrell,Jr.,Knee,,Out,,,,2026-11-15,Out,Baker (knee) was not activated from the reserve/PUP list ahead of Sunday's clash against Indianapolis.
+2026,REG,REG,MIA,10,00-0038128,QB,Malik Willis,Malik,Willis,Abdomen,,Out,,,,2026-11-11,Injured Reserve,"The Dolphins hope Willis (abdomen) will return this year but haven't ruled out season-ending surgery, Joe Schad of The Palm Beach Post reports."
+2026,REG,REG,MIN,10,00-0035272,LB,Andrew Van Ginkel,Andrew,Ginkel,Quadriceps,,Questionable,,,,2026-11-15,Questionable,Van Ginkel (quadriceps) is questionable to return to Sunday's game against the Packers.
+2026,REG,REG,MIN,10,00-0039710,WR,Jeshaun Jones,Jeshaun,Jones,Shoulder,,Questionable,,,,2026-11-15,Questionable,Jones (shoulder) is questionable to return to Sunday's game against the Packers.
+2026,REG,REG,MIN,10,00-0039718,LB,Bo Richter,Bo,Richter,Foot,,Questionable,,,,2026-11-15,Questionable,Richter (foot) has been ruled out for the rest of Sunday's game against the Packers.
+2026,REG,REG,MIN,10,00-0040494,QB,Max Brosmer,Max,Brosmer,Coach's Decision,,Out,,,,2026-11-15,Out,Brosmer (coach's decision) is inactive but will serve as the Vikings' emergency third quarterback against the Packers on Sunday.
+2026,REG,REG,MIN,10,00-0038994,WR,Jordan Addison,Jordan,Addison,Thumb,,Out,,,,2026-11-15,Out,"Addison (thumb) is inactive for Sunday's game at Green Bay, Tom Pelissero of Netflix reports."
+2026,REG,REG,MIN,10,00-0035229,TE,T.J. Hockenson,T.J.,Hockenson,Wrist,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,MIN,10,00-0040173,DE,Tyrion Ingram-Dawkins,Tyrion,Ingram-Dawkins,Ankle,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,MIN,10,00-0036259,WR,Jauan Jennings,Jauan,Jennings,Calf,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,MIN,10,00-0035276,LB,Blake Cashman,Blake,Cashman,Concussion,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,MIN,10,00-0035228,QB,Kyler Murray,Kyler,Murray,Hamstring,,Out,,,,2026-11-14,Out,"The Vikings are hopeful that Murray (hamstring) will be available to play Week 12 against the Falcons, Tom Pelissero of Netflix reports."
+2026,REG,REG,NE,10,00-0039851,QB,Drake Maye,Drake,Maye,Ankle,,Doubtful,,,,2026-11-16,Doubtful,"The Patriots are concerned that Maye fractured his ankle during Sunday's 35-10 loss to the Lions in Munich, Adam Schefter of ESPN reports."
+2026,REG,REG,NE,10,00-0035676,WR,A.J. Brown,A.J.,Brown,Hamstring,,Questionable,,,,2026-11-16,Questionable,"Brown (hamstring) was spotted walking around with a limp in the locker room following Sunday's 35-10 loss to the Lions in Munich, Andrew Callahan of the Boston "
+2026,REG,REG,NE,10,00-0035678,DE,Dre'Mont Jones,Dre'Mont,Jones,Undisclosed,,Questionable,,,,2026-11-15,Questionable,Jones (cramps) is questionable to return to Sunday's game against the Lions in Munich.
+2026,REG,REG,NE,10,00-0034720,LB,Robert Spillane,Robert,Spillane,Illness,,Questionable,,,,2026-11-15,Questionable,Spillane (illness) is questionable to return to Sunday's game against the Lions in Munich.
+2026,REG,REG,NE,10,00-0037205,S,Brenden Schooler,Brenden,Schooler,Hamstring,,Out,,,,2026-11-15,Out,Schooler (hamstring) is inactive for Sunday's contest against the Patriots in Munich.
+2026,REG,REG,NE,10,00-0039828,OL,Walter Rouse,Walter,Rouse,Concussion,,Out,,,,2026-11-15,Out,Rouse is inactive for Sunday's game against the Lions in Munich due to a concussion.
+2026,REG,REG,NE,10,00-0041123,QB,Behren Morton,Behren,Morton,Coach's Decision,,Out,,,,2026-11-15,Out,Morton (coach's decision) is inactive but available as the emergency third quarterback for Sunday's game against the Lions in Munich.
+2026,REG,REG,NE,10,00-0037413,C,Ben Brown,Ben,Brown,Knee,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,NE,10,00-0041103,OT,Dametrious Crownover,Dametrious,Crownover,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,NE,10,00-0034778,CB,Carlton Davis III,Carlton,III,Knee,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,NE,10,00-0040734,RB,TreVeyon Henderson,TreVeyon,Henderson,Illness,,Out,,,,2026-11-14,Injured Reserve,"Henderson (illness) was placed on injured reserve Saturday, Mike Reiss of ESPN.com reports."
+2026,REG,REG,NO,10,00-0038601,OT,Asim Richards,Asim,Richards,Knee,,Questionable,,,,2026-11-15,Questionable,"Richards (knee) is questionable to return to Sunday's game against Carolina, Jeff Nowak of WWL Radio reports."
+2026,REG,REG,NO,10,00-0036927,LB,Pete Werner,Pete,Werner,Hamstring,,Questionable,,,,2026-11-15,Questionable,"Werner (hamstring) has been ruled out for the rest of Sunday's game against the Panthers, Jeff Nowak of WWL Radio reports."
+2026,REG,REG,NO,10,00-0037013,QB,Zach Wilson,Zach,Wilson,Coach's Decision,,Out,,,,2026-11-15,Out,Wilson (coach's decision) is inactive but will serve as the Saints' emergency third quarterback against the Panthers on Sunday.
+2026,REG,REG,NO,10,,CB,Mike Reid,Mike,Reid,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,NO,10,00-0035242,C,Erik McCoy,Erik,McCoy,Biceps,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,NO,10,00-0041326,RB,CJ Donaldson,CJ,Donaldson,Shoulder,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,NO,10,00-0039388,LB,Jaylan Ford,Jaylan,Ford,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,NO,10,00-0039339,OT,Taliese Fuaga,Taliese,Fuaga,Knee,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,NO,10,00-0041390,DT,Christen Miller,Christen,Miller,Knee,,Out,,,,2026-11-15,Injured Reserve,The Saints placed Miller (knee) on injured reserve Saturday.
+2026,REG,REG,NYG,10,00-0036502,S,Jason Pinnock,Jason,Pinnock,Back,,Questionable,,,,2026-11-13,Questionable,"Pinnock (back) is questionable to return to Thursday night's contest against the Commanders, Dan Duggan of The Athletic reports."
+2026,REG,REG,NYG,10,00-0036280,LB,Malik Harrison,Malik,Harrison,Groin,,Out,,,,2026-11-13,Out,"Harrison (groin) is inactive for Thursday's game against Washington, Dan Salomone of the Giants' official site reports."
+2026,REG,REG,NYG,10,00-0040471,CB,Nikko Reed,Nikko,Reed,Coach's Decision,,Out,,,,2026-11-12,Out,inactive
+2026,REG,REG,NYG,10,00-0037138,G,Josh Sills,Josh,Sills,Coach's Decision,,Out,,,,2026-11-12,Out,inactive
+2026,REG,REG,NYG,10,,DT,CJ Okoye,CJ,Okoye,Coach's Decision,,Out,,,,2026-11-12,Out,inactive
+2026,REG,REG,NYG,10,00-0041101,OT,J.C. Davis,J.C.,Davis,Coach's Decision,,Out,,,,2026-11-12,Out,inactive
+2026,REG,REG,NYG,10,00-0040225,TE,Thomas Fidone II,Thomas,II,Coach's Decision,,Out,,,,2026-11-12,Out,inactive
+2026,REG,REG,NYG,10,00-0036937,CB,Paulson Adebo,Paulson,Adebo,Coach's Decision,,Out,,,,2026-11-12,Out,inactive
+2026,REG,REG,NYJ,10,00-0041511,WR,Omar Cooper Jr.,Omar,Jr.,Ankle,,Questionable,,,,2026-11-16,Questionable,"Jets head coach Aaron Glenn said that Cooper (ankle) will undergo imaging Monday, Eric Allen of the team's official site reports."
+2026,REG,REG,NYJ,10,00-0030565,QB,Geno Smith,Geno,Smith,Ankle,,Questionable,,,,2026-11-16,Questionable,"Jets head coach Aaron Glenn said after Sunday's 31-12 loss to the Bills that Smith, who departed the contest due to an ankle injury, will have his status for We"
+2026,REG,REG,NYJ,10,00-0037255,G,Dylan Parham,Dylan,Parham,Knee,,Questionable,,,,2026-11-15,Questionable,Parham (knee) is questionable to return to Sunday's game against the Bills.
+2026,REG,REG,NYJ,10,00-0039372,CB,Jarvis Brownlee Jr.,Jarvis,Jr.,Illness,,Out,,,,2026-11-15,Out,Brownlee (illness) is inactive for Sunday's game against the Bills.
+2026,REG,REG,NYJ,10,00-0033375,WR,Tim Patrick,Tim,Patrick,Coach's Decision,,Out,,,,2026-11-15,Out,Patrick (coach's decision) is inactive for Sunday's game against the Bills.
+2026,REG,REG,NYJ,10,00-0037755,TE,Jelani Woods,Jelani,Woods,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,NYJ,10,00-0039347,LB,Trevin Wallace,Trevin,Wallace,Groin,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,NYJ,10,00-0039447,DE,Nate Lynn,Nate,Lynn,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,PHI,10,,WR,Dontayvion Wicks,Dontayvion,Wicks,Ankle,,Out,,,,2026-11-09,Out,out
+2026,REG,REG,CAR,10,00-0041153,WR,DeVonta Smith,DeVonta,Smith,Hamstring,,Out,,,,2026-11-09,Out,out
+2026,REG,REG,PHI,10,,CB,Jonathan Jones,Jonathan,Jones,Hamstring,,Out,,,,2026-11-09,Out,out
+2026,REG,REG,PHI,10,,WR,Britain Covey,Britain,Covey,Knee,,Out,,,,2026-11-09,Out,out
+2026,REG,REG,PHI,10,,LB,Jihaad Campbell,Jihaad,Campbell,Hamstring,,Out,,,,2026-11-09,Out,out
+2026,REG,REG,TEN,10,00-0036924,CB,Michael Carter II,Michael,II,Abdomen,,Out,,,,2026-11-09,Out,out
+2026,REG,REG,PHI,10,,LB,Zack Baun,Zack,Baun,Back,,Questionable,,,,2026-11-08,Questionable,Baun (back) is questionable to return to Sunday's contest against the Giants.
+2026,REG,REG,PIT,10,00-0039358,G,Mason McCormick,Mason,McCormick,Ankle,,Questionable,,,,2026-11-16,Questionable,"McCormick suffered an ankle injury in Sunday night's game against the Bengals and will not return, Nick Farabaugh of PennLive.com reports."
+2026,REG,REG,PIT,10,00-0040203,QB,Will Howard,Will,Howard,Coach's Decision,,Out,,,,2026-11-16,Out,Howard (coach's decision) is inactive and serving as Pittsburgh's emergency third quarterback Sunday night versus Cincinnati.
+2026,REG,REG,PIT,10,00-0041490,RB,Eli Heidenreich,Eli,Heidenreich,Coach's Decision,,Out,,,,2026-11-16,Out,inactive
+2026,REG,REG,PIT,10,00-0035239,CB,Sean Murphy-Bunting,Sean,Murphy-Bunting,Coach's Decision,,Out,,,,2026-11-16,Out,inactive
+2026,REG,REG,PIT,10,00-0041565,QB,Drew Allar,Drew,Allar,Coach's Decision,,Out,,,,2026-11-16,Out,inactive
+2026,REG,REG,PIT,10,00-0034277,S,DeShon Elliott,DeShon,Elliott,Knee,,Out,,,,2026-11-15,Out,Elliott suffered a pregame knee injury and has been ruled out for Sunday's Week 10 matchup against the Bengals.
+2026,REG,REG,PIT,10,00-0036252,WR,Michael Pittman Jr.,Michael,Jr.,Foot,,Out,,,,2026-11-12,Injured Reserve,"Pittman (foot) is warmed up with his teammates Thursday, though he remains on IR and wasn't wearing a helmet, Nick Farabaugh of PennLive.com reports."
+2026,REG,REG,SF,10,00-0031236,WR,Brandin Cooks,Brandin,Cooks,Coach's Decision,,Out,,,,2026-11-15,Out,Cooks (coach's decision) is inactive for Sunday's game against the Cowboys.
+2026,REG,REG,SF,10,00-0040589,QB,Kurtis Rourke,Kurtis,Rourke,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,SF,10,00-0039435,LB,Tatum Bethune,Tatum,Bethune,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,SF,10,00-0041090,OT,Enrique Cruz Jr.,Enrique,Jr.,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,SF,10,00-0031408,WR,Mike Evans,Mike,Evans,Achilles,,Out,,,,2026-11-15,Out,"Evans (Achilles) has a chance to return to action next Sunday against the Vikings, Mike Garafolo of NFL Network reports."
+2026,REG,REG,SF,10,00-0040711,DT,C.J. West,C.J.,West,Knee,,Out,,,,2026-11-15,Injured Reserve,"West (knee) won't be activated from IR ahead of Sunday's Week 10 clash against the Cowboys, David Lombardi of SFStandard.com reports."
+2026,REG,REG,SF,10,00-0036871,CB,Nate Hobbs,Nate,Hobbs,Groin,,Out,,,,2026-11-15,Injured Reserve,"The 49ers aren't activating Hobbs (adductor) ahead of Sunday's tilt against Dallas, David Lombardi of SFStandard.com reports."
+2026,REG,REG,SF,10,00-0041557,DT,Gracen Halton,Gracen,Halton,Ankle,,Out,,,,2026-11-14,Injured Reserve,"Halton recently underwent surgery to repair a broken leg and dislocated ankle that he suffered during the 49ers' Week 9 win over the Raiders, Adam Schefter of E"
+2026,REG,REG,SEA,10,00-0039299,RB,George Holani,George,Holani,Knee,,Questionable,,,,2026-11-15,Questionable,Holani (knee) has been ruled out for the remainder of Sunday's game against the Seahawks.
+2026,REG,REG,SEA,10,00-0032387,DT,Jarran Reed,Jarran,Reed,Toe,,Questionable,,,,2026-11-15,Questionable,Reed is doubtful to return to Sunday's game against Las Vegas due to a toe injury.
+2026,REG,REG,SEA,10,00-0037812,OT,Abraham Lucas,Abraham,Lucas,Ankle,,Questionable,,,,2026-11-15,Questionable,Lucas (ankle) is doubtful to return to Sunday's game against the Raiders.
+2026,REG,REG,SEA,10,00-0038797,RB,Emanuel Wilson,Emanuel,Wilson,Coach's Decision,,Out,,,,2026-11-15,Out,Wilson (coach's decision) is inactive for Sunday's game at Arizona.
+2026,REG,REG,SEA,10,00-0031933,DT,Leonard Williams,Leonard,Williams,Shoulder,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,SEA,10,00-0034342,G,Quenton Nelson,Quenton,Nelson,Knee,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,SEA,10,00-0041382,CB,Avery Smith,Avery,Smith,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,SEA,10,00-0037821,OT,Charles Cross,Charles,Cross,Ankle,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,SEA,10,00-0034869,QB,Sam Darnold,Sam,Darnold,Quadriceps,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,SEA,10,00-0040904,DT,Deven Eastern,Deven,Eastern,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,TB,10,,QB,Baker Mayfield,Baker,Mayfield,Foot,,Questionable,,,,2026-11-15,Questionable,Mayfield's availability for next Sunday's game against the Lions is in question due to an injury he sustained to his foot and ankle area during the Buccaneers' 
+2026,REG,REG,TB,10,,LB,Yaya Diaby,Yaya,Diaby,Knee - MCL,,Out,,,,2026-11-09,Out,out
+2026,REG,REG,TB,10,,WR,Jalen McMillan,Jalen,McMillan,Knee - PCL,,Out,,,,2026-11-09,Injured Reserve,"Head coach Todd Bowles suggested Monday that McMillan (knee) isn't likely to immediately return to action following the Buccaneers' Week 10 bye, Rick Stroud of "
+2026,REG,REG,TB,10,,S,Antoine Winfield Jr.,Antoine,Jr.,Ankle,,Questionable,,,,2026-11-09,Questionable,Winfield (ankle) has been ruled out for the rest of Sunday night's contest against the Bears.
+2026,REG,REG,TEN,10,00-0041438,WR,Carnell Tate,Carnell,Tate,Shoulder,,Out,,,,2026-11-16,Out,"Titans head coach Robert Saleh said Monday that he's hopeful that Tate (shoulder) will return to action Week 11 versus the Cowboys, Jim Wyatt of the team's offi"
+2026,REG,REG,TEN,10,00-0038117,WR,Wan'Dale Robinson,Wan'Dale,Robinson,Ankle,,Questionable,,,,2026-11-15,Questionable,Robinson is questionable to return to Sunday's game against the Jaguars due to an ankle injury.
+2026,REG,REG,TEN,10,00-0037155,S,Tony Adams,Tony,Adams,Concussion,,Questionable,,,,2026-11-15,Questionable,Adams has entered the league's concussion protocol and has been ruled out for the rest of Sunday's game against the Jaguars.
+2026,REG,REG,TEN,10,00-0040886,RB,Nicholas Singleton,Nicholas,Singleton,Coach's Decision,,Out,,,,2026-11-15,Out,Singleton (coach's decision) is inactive for Sunday's game against the Jaguars.
+2026,REG,REG,TEN,10,00-0041479,LB,Anthony Hill Jr.,Anthony,Jr.,Neck,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,TEN,10,00-0038407,CB,Jaylon Jones,Jaylon,Jones,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,TEN,10,00-0040892,DT,Jackie Marshall,Jackie,Marshall,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,TEN,10,00-0035672,LB,Cody Barton,Cody,Barton,Concussion,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,TEN,10,00-0040512,OT,Brandon Crenshaw-Dickson,Brandon,Crenshaw-Dickson,Coach's Decision,,Out,,,,2026-11-15,Out,inactive
+2026,REG,REG,TEN,10,00-0035889,P,Tommy Townsend,Tommy,Townsend,Knee,,Out,,,,2026-11-15,Injured Reserve,"The Titans placed Townsend (knee/Achilles) on IR on Saturday, Jim Wyatt of the Titans' official site reports."
+2026,REG,REG,TEN,10,00-0039034,G,Peter Skoronski,Peter,Skoronski,Hamstring,,Out,,,,2026-11-14,Injured Reserve,"The Titans placed Skoronski (hamstring) on injured reserve Saturday, Jim Wyatt of the team's official site reports."
+2026,REG,REG,TEN,10,00-0039430,LB,James Williams Sr.,James,Sr.,Groin,,Out,,,,2026-11-10,Injured Reserve,"The Titans placed Williams (groin) on injured reserve Monday, Jim Wyatt of the Titans' official site reports."
+2026,REG,REG,WAS,10,00-0041117,QB,Athan Kaliakmanis,Athan,Kaliakmanis,Coach's Decision,,Out,,,,2026-11-12,Out,Kaliakmanis (coach's decision) is inactive for Thursday's game against the Giants but will serve as the team's emergency quarterback.
+2026,REG,REG,WAS,10,00-0034780,CB,Isaac Yiadom,Isaac,Yiadom,Coach's Decision,,Out,,,,2026-11-12,Out,inactive
+2026,REG,REG,WAS,10,00-0041183,G,Tanoa Togiai,Tanoa,Togiai,Coach's Decision,,Out,,,,2026-11-12,Out,inactive
+2026,REG,REG,WAS,10,00-0040314,DT,Ricky Barber,Ricky,Barber,Coach's Decision,,Out,,,,2026-11-12,Out,inactive
+2026,REG,REG,WAS,10,00-0033082,G,Lucas Patrick,Lucas,Patrick,Concussion,,Out,,,,2026-11-12,Out,"Patrick (concussion) is out for Thursday's game against the Giants, Zach Selby of the Commanders' official site reports."
+2026,REG,REG,WAS,10,00-0039686,TE,Colson Yankoff,Colson,Yankoff,Knee,,Out,,,,2026-11-11,Out,"Commanders head coach Dan Quinn ruled out Yankoff (knee) for Thursday night's games against the Giants, Ben Standig of The Team 980 Washington D.C. reports."
+2026,REG,REG,WAS,10,00-0036626,WR,Dyami Brown,Dyami,Brown,Calf,,Out,,,,2026-11-07,Injured Reserve,The Commanders placed Brown (calf) on injured reserve Saturday.

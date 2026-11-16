@@ -1,0 +1,38 @@
+===== LV@SF | weather {'temp': 68, 'precip_prob': 0, 'precip_in': 0, 'wind': 5, 'gust': 7, 'code': 2}
+consensus spread [['SF', -9.5, -111], ['LV', 9.5, -109]] total [['over', 52, -109], ['under', 52, -110]] ML [['SF', -482], ['LV', 369]] @ 2026-11-07T23:47:21.061Z
+   Pass Attempts Kirk Cousins LV 36.5 [[15, 36.5, -111, -115]]
+   Pass Attempts Brock Purdy SF 30.5 [[15, 30.5, -120, -119]]
+   Completions Kirk Cousins LV 23.5 [[15, 23.5, -108, -121]]
+   Completions Brock Purdy SF 21.5 [[15, 21.5, -117, -116]]
+   Rush Attempts Kirk Cousins LV 1.0 [[15, 1.5, 150, -190]]
+   Rush Attempts Christian McCaffrey SF 13.5 [[15, 13.5, -133, 105]]
+   Rush Attempts Brock Purdy SF 3.5 [[15, 3.5, -135, 105]]
+   Rush Attempts Ashton Jeanty LV 8.5 [[15, 8.5, -123, -105]]
+   Rush Attempts Kaelon Black SF 9.5 [[15, 9.5, -113, -114]]
+   Rush Attempts Mike Washington LV 9.5 [[15, 9.5, -108, -125]]
+LV O: g8 pf 27.6 att 36.4 cmp 23.2 sk 1.4 rush 24.6 drv 11.4 ppd 5.48 neuPass 52.8% 3rd 42.6% PA 24.8% oop 12.2% | att by script {'won8+': [30.7, 3], 'close': [39.7, 3], 'lost8+': [40.0, 2]}
+   logs: W1 vMIA 27-13 att 30 sk 0 ru 34 | W2 vLAC 26-14 att 29 sk 2 ru 26 | W3 vNO 35-27 att 33 sk 3 ru 25 | W4 vKC 27-30 att 52 sk 0 ru 26 | W5 vNE 17-45 att 36 sk 3 ru 18 | W6 vBUF 30-33 att 41 sk 0 ru 20 | W7 vLA 21-35 att 44 sk 2 ru 17 | W8 vNYJ 38-33 att 26 sk 1 ru 31
+SF D vs: pa 19.9 oppAtt 35.4 sk 2.1 oppRush 25.0 ypc 3.6 blitz 31.7% rushers 4.34 oopForced 23.5% box 6.63 QBrushYds/g 6.7 scr/g 1.3 20+pass/g 2.0 tgtAllowed {'WR': [17.4, 131.7], 'TE': [7.9, 43.6], 'RB': [7.9, 48.6]}
+   QB Kirk Cousins: g8 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 2.5 (9.7%) rush 0.9 | att 35.4 pyd 265.5 || W6:0/0-0 c0-0 a41-313 W7:0/0-0 c3-6 a44-295 W8:0/0-0 c5-3 a26-247
+   RB Ashton Jeanty: g8 tgt 6.0 (17.2%) rec 4.6 ryd 47.0 | car 13.5 (52.2%) rush 42.1 || W6:4/6-36 c10-22 W7:8/8-61 c8-15 W8:3/4-64 c2-9
+   TE Brock Bowers: g6 tgt 10.2 (27.6%) rec 6.8 ryd 91.2 | car 0.0 (0.0%) rush 0.0 || W6:4/9-70 c0-0 W7:6/8-73 c0-0 W8:7/10-92 c0-0
+   QB Fernando Mendoza: g1 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 1.0 (5.6%) rush 3.0 | att 8.0 pyd 48.0 || W5:0/0-0 c1-3 a8-48
+   RB Mike Washington Jr.: g8 tgt 0.8 (2.2%) rec 0.4 ryd 1.4 | car 8.1 (31.4%) rush 34.8 || W6:1/1-7 c9-43 W7:0/1-0 c6-27 W8:0/0-0 c25-83
+   WR Tre Tucker: g8 tgt 6.0 (17.2%) rec 3.6 ryd 59.2 | car 0.2 (1.0%) rush -0.8 || W6:5/7-97 c0-0 W7:5/12-103 c0-0 W8:0/1-0 c0-0
+   TE Michael Mayer: g8 tgt 5.4 (15.4%) rec 4.5 ryd 43.9 | car 0.0 (0.0%) rush 0.0 || W6:7/9-95 c0-0 W7:3/3-32 c0-0 W8:5/6-53 c0-0
+   WR Jalen Nailor: g6 tgt 4.0 (12.3%) rec 2.0 ryd 18.8 | car 0.0 (0.0%) rush 0.0 || W6:1/4-9 c0-0 W7:2/5-14 c0-0 W8:4/4-38 c0-0
+   WR Cody White: g7 tgt 2.7 (7.5%) rec 1.1 ryd 16.0 | car 0.0 (0.0%) rush 0.0 || W5:2/4-44 c0-0 W6:0/2-0 c0-0 W7:1/3-4 c0-0
+SF O: g7 pf 28.1 att 30.1 cmp 20.9 sk 1.0 rush 26.3 drv 10.0 ppd 5.74 neuPass 51.2% 3rd 50.0% PA 21.6% oop 22.4% | att by script {'won8+': [28.7, 3], 'close': [28.3, 3], 'lost8+': [40.0, 1]}
+   logs: W1 vLA 27-7 att 34 sk 0 ru 30 | W2 vMIA 35-13 att 22 sk 0 ru 25 | W3 vARI 36-30 att 27 sk 0 ru 22 | W4 vDEN 24-14 att 30 sk 0 ru 33 | W5 vSEA 32-29 att 29 sk 3 ru 22 | W6 vWAS 23-17 att 29 sk 2 ru 29 | W7 vATL 20-29 att 40 sk 2 ru 23
+LV D vs: pa 28.8 oppAtt 31.8 sk 2.2 oppRush 27.4 ypc 5.4 blitz 27.3% rushers 4.3 oopForced 25.2% box 6.43 QBrushYds/g 14.4 scr/g 1.6 20+pass/g 3.1 tgtAllowed {'WR': [17.5, 163.0], 'TE': [8.6, 55.8], 'RB': [4.1, 32.0]}
+   QB Brock Purdy: g7 tgt 0.0 (0.0%) rec 0.0 ryd 0.0 | car 4.6 (16.8%) rush 23.0 | att 30.1 pyd 249.7 || W5:0/0-0 c5-6 a29-189 W6:0/0-0 c5-28 a29-264 W7:0/0-0 c2-5 a40-288
+   RB Christian McCaffrey: g7 tgt 6.0 (20.5%) rec 4.9 ryd 35.9 | car 12.0 (44.0%) rush 55.6 || W5:3/3-15 c11-68 W6:9/10-53 c16-64 W7:6/7-61 c7-39
+   RB Kaelon Black: g7 tgt 0.9 (2.9%) rec 0.4 ryd 0.6 | car 8.1 (29.8%) rush 33.3 || W5:0/0-0 c6-16 W6:1/1-3 c8-34 W7:1/3--4 c12-63
+   TE George Kittle: g7 tgt 6.6 (22.4%) rec 4.9 ryd 60.7 | car 0.0 (0.0%) rush 0.0 || W5:5/6-24 c0-0 W6:5/8-69 c0-0 W7:8/10-88 c0-0
+   WR Mike Evans: g6 tgt 6.5 (23.5%) rec 4.5 ryd 70.0 | car 0.0 (0.0%) rush 0.0 || W4:5/8-76 c0-0 W5:7/10-113 c0-0 W6:3/5-94 c0-0
+   WR Deebo Samuel Sr.: g5 tgt 4.0 (14.6%) rec 3.2 ryd 41.2 | car 1.8 (6.5%) rush 15.6 || W3:0/0-80 c2-14 W4:5/6-26 c3-44 W5:2/3-21 c2-4
+   WR Jordan Watkins: g3 tgt 3.0 (9.6%) rec 2.0 ryd 46.0 | car 0.0 (0.0%) rush 0.0 || W3:2/2-60 c0-0 W6:1/1-22 c0-0 W7:3/6-56 c0-0
+   WR Brandin Cooks: g4 tgt 2.0 (6.5%) rec 0.8 ryd 8.2 | car 0.0 (0.0%) rush 0.0 || W5:1/2-7 c0-0 W6:1/2-13 c0-0 W7:1/3-13 c0-0
+   WR Jacob Cowing: g7 tgt 1.4 (4.9%) rec 0.6 ryd 6.7 | car 0.3 (1.0%) rush 1.7 || W5:1/2-9 c0-0 W6:0/0-0 c0-0 W7:3/5-38 c1-10
+INJ: LV Thomas Booker IV DT Out; LV Darien Porter CB Questionable; SF Brandon Aiyuk WR Out; SF Nate Hobbs CB Out; SF Demarcus Robinson WR Out; SF Mike Evans WR Out; SF Christian Kirk WR Out; SF Deebo Samuel Sr. WR Out; SF Siran Neal S Questionable; SF De'Zhaun Stribling WR Out; SF Upton Stout CB Questionable; LV Patrick Johnson DE Out; LV Carter Runyon TE Out; SF Brandon Aiyuk WR Out; SF De'Zhaun Stribling WR Out; SF Demarcus Robinson WR Out; LV Keyron Crawford DE Out; LV Chigozie Anusiem CB Out; LV Justin Pickett G Out; LV Brennan Jackson LB Out; LV Chris Collier RB Out; SF De'Zhaun Stribling WR Out; SF Brandon Aiyuk WR Out; SF Demarcus Robinson WR Out; SF Nick Martin LB Out; SF C.J. West DT Out; SF Jake Tonges TE Out; SF Alfred Collins DT Out; SF Nate Hobbs CB Out; SF Sam Okuayinonu DT Out; SF Nick Zakelj OT Out; SF Austen Pleasants OT Out; SF Isaac Guerendo RB Out; SF Ricky Pearsall WR Out; SF Mikail Kamara DE Out; SF Andrew Farmer II DE Out; SF Darrick Forrest S Out; SF Mike Evans WR Out; SF Demarcus Robinson WR Questionable; SF Siran Neal S Questionable; SF Christian Kirk WR Out; SF Deebo Samuel Sr. WR Out; SF Nate Hobbs CB Questionable; SF Upton Stout CB Questionable
+RH game lines 35-65c: San Francisco wins by over 6.5 points 63/38; San Francisco wins by over 7.5 points 57/45; San Francisco wins by over 9.5 points 51/51; San Francisco wins by over 10.5 points 47/55; San Francisco wins by over 13.5 points 40/61; San Francisco wins by over 14.5 points 36/66; Over 47.5 points 65/37; Over 48.5 points 62/40; Over 49.5 points 59/42; Over 50.5 points 57/45; Over 51.5 points 51/50; Over 52.5 points 49/52; Over 53.5 points 46/55; Over 54.5 points 42/59; Over 55.5 points 39/63; Over 56.5 points 38/64

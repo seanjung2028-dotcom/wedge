@@ -1,0 +1,36 @@
+STATUS|STATUS_FINAL|true|0.0 - 4th Quarter (clock expired)
+TEAM|MEM|away|111
+TEAM|GS|home|108
+T|MEM|40-86|15-39|16-22|18|47|27|26
+T|GS|34-83|14-41|26-29|18|41|23|19
+P|MEM|Cameron Boozer|37|25|13|6|4|false
+P|MEM|GG Jackson|15|2|4|1|0|false
+P|MEM|Jaylen Wells|25|17|4|3|4|false
+P|MEM|Zach Edey|22|8|10|3|0|false
+P|MEM|Ty Jerome|31|28|2|5|3|false
+P|MEM|Jerami Grant|26|6|0|3|1|false
+P|MEM|Kris Murray|13|0|3|1|0|false
+P|MEM|Isaiah Stewart|16|4|2|0|0|false
+P|MEM|Quinten Post|20|2|1|1|0|false
+P|MEM|Scotty Pippen Jr.|17|8|6|3|0|false
+P|MEM|Cam Spencer|17|11|2|1|3|false
+P|MEM|Olivier-Maxence Prosper||||||true
+P|MEM|Taylor Hendricks||||||true
+P|MEM|Karim Lopez||||||true
+P|MEM|Micah Peavy||||||true
+P|MEM|Jahmai Mashack||||||true
+P|MEM|Walter Clayton Jr.||||||true
+P|GS|Draymond Green|31|5|4|6|1|false
+P|GS|Graham Ike|12|10|2|1|2|false
+P|GS|Yaxel Lendeborg|37|18|13|6|1|false
+P|GS|Stephen Curry|30|24|3|4|3|false
+P|GS|Brandin Podziemski|33|18|2|3|2|false
+P|GS|Georges Niang|13|4|3|0|0|false
+P|GS|Gui Santos|20|5|4|2|1|false
+P|GS|Al Horford|19|3|5|0|1|false
+P|GS|Gary Payton II|11|7|2|0|1|false
+P|GS|De'Anthony Melton|20|10|1|0|2|false
+P|GS|Brandon Williams|9|4|2|1|0|false
+P|GS|Will Richard|3|0|0|0|0|false
+P|GS|Malevy Leons||||||true
+P|GS|LJ Cryer||||||true
