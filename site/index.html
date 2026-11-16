@@ -7,7 +7,7 @@
 <meta name="description" content="Wedge screens NFL prediction-market lines, prices them with its own model and posts a weekly card of final lines and leans, with a graded record.">
 <link rel="icon" type="image/png" href="assets/img/wedger-tri.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="wg.css">
+<link rel="stylesheet" href="wg.css?v=2646ff13a5">
 <style>
 :root{--color-bg:#ffffff;--color-fg:#1f1e1d;--color-fg-muted:#6b6a68;--color-border-line:#e5e3df;--color-panel:#faf9f7;--color-ok:#2e7d4f;--color-warn:#b26a00;--color-bad:#c0392b;
 --cds-border:#dedcd8;--cds-chart-grid:#ecebe8;--cds-chart-muted:#c9c7c2;--cds-chart-reference:#8a8883;--cds-chart-status-critical:#d0453a;--cds-surface-popover:#fff;--cds-text-secondary:#6b6a68;--cds-shadow-popover:0 4px 16px rgba(0,0,0,.12);--cds-dur-slow:.2s;--cds-font-size-body:14px;--cds-font-size-caption:12px;--cds-font-size-heading:18px;--cds-font-size-title:26px;--cds-font-weight-medium:500;
@@ -17,13 +17,14 @@
 --cds-border:#3d3c39;--cds-chart-grid:#33322f;--cds-chart-muted:#55534f;--cds-chart-reference:#8f8d88;--cds-chart-status-critical:#e05a4e;--cds-surface-popover:#2c2b29;--cds-text-secondary:#a3a19c;--cds-shadow-popover:0 4px 16px rgba(0,0,0,.5);}}
 html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-anthropic-sans);font-size:14px}
 .rs-card{background:var(--color-panel)} .dash-skeleton{opacity:.6}
-#wz-boot{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#151614;color:#e9e7e1;font:500 14px/1.4 system-ui,sans-serif;z-index:9999;letter-spacing:.02em}
+#wz-boot{position:fixed;inset:0;display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:0 24px;text-align:center;background:#151614;color:#e9e7e1;font:500 14px/1.4 system-ui,sans-serif;z-index:9999;letter-spacing:.02em}
+#wz-boot-sub{color:#9a9890;font-weight:400;font-size:13px;min-height:1.4em}
 </style>
-<script src="vendor/d3.min.js"></script>
-<script src="runtime.js"></script>
+<script src="vendor/d3.min.js?v=6d64bd2f09"></script>
+<script src="runtime.js?v=53e37a00fa"></script>
 </head>
 <body>
-<div id="wz-boot" role="status">Loading this week’s card…</div>
+<div id="wz-boot" role="status"><div id="wz-boot-msg">Loading this week’s card…</div><div id="wz-boot-sub"></div></div>
 <noscript><p style="padding:24px">Wedge needs JavaScript to draw the board and the card.</p></noscript>
 <div id="dash-root">
 <div class="wg-paper">
@@ -982,6 +983,9 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
 </div>
 </div>
 </div>
-<script>WedgeRuntime.boot(['final.js', 'brain.js', 'wg.js']);</script>
+<script>
+if (window.WedgeRuntime && window.d3) WedgeRuntime.boot('data/wedge-data.json?v=f43bdf61f4', ['final.js?v=cdd658d7fe', 'brain.js?v=d35f09fedd', 'wg.js?v=e5b364f6d2']);
+else { document.getElementById('wz-boot-msg').textContent = 'Wedge couldn’t load this week’s card.'; document.getElementById('wz-boot-sub').innerHTML = 'Check your connection, then <a href="" style="color:inherit">reload the page</a>.'; }
+</script>
 </body>
 </html>

@@ -9,7 +9,7 @@ It is the same page the dashboard artifact serves (v2/out: index.html, wg.js, wg
     so the certify boxes never show; the record is updated by rebuilding and pushing.
 Run after every site update:  python3 /home/claude/wedger/v2/build_site.py
 """
-import json, os, re, shutil, sys
+import hashlib, json, os, re, shutil, sys
 W = '/home/claude/wedger/'; R = W + 'rh/'; OUT = W + 'site/'; SRC = W + 'v2/out/'
 DS = {'lines': 'inband_w10.csv', 'lines_all': 'lines_all_w10.csv', 'props': 'props_cat_w10.csv', 'defense': 'defense_w10.csv', 'atd': 'atd_w10.csv',
       'results': 'results_w6_w10.csv', 'hist_perms': 'hist_perms.csv', 'hist_lines': 'hist_lines.csv', 'sit': W + 'v2/data/sit_w10_v2.csv',
@@ -83,17 +83,35 @@ RUNTIME = r"""/* Wedge standalone runtime: stands in for the dashboard runtime a
   var user = { isOwner: function () { return Promise.resolve(false); }, id: function () { return Promise.resolve(null); }, me: function () { return Promise.resolve(null); } };
   window.claude = { use: function (n) { return Promise.resolve(n === 'db' ? db : n === 'user' ? user : null); } };
 
-  var getText = function (u) { return fetch(u, { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error(u + ' ' + r.status); return r.text(); }); };
+  // One versioned, compressed bundle: { ds: {id: csv text}, certs, analysts }. Shows progress while it downloads.
+  var getBundle = function (u, onProgress) {
+    return fetch(u).then(function (r) {
+      if (!r.ok) throw new Error(u + ' ' + r.status);
+      if (!r.body || !r.body.getReader || !window.TextDecoder) return r.text();
+      var rd = r.body.getReader(), dec = new TextDecoder(), parts = [], got = 0;
+      var pump = function () { return rd.read().then(function (x) {
+        if (x.done) { parts.push(dec.decode()); return parts.join(''); }
+        got += x.value.length; parts.push(dec.decode(x.value, { stream: true })); onProgress(got); return pump();
+      }); };
+      return pump();
+    }).then(JSON.parse);
+  };
   var loadScript = function (src) { return new Promise(function (res, rej) { var s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = function () { rej(new Error(src)); }; document.body.appendChild(s); }); };
-  window.WedgeRuntime = { boot: function (scripts) {
-    var veil = document.getElementById('wz-boot');
-    ready = Promise.all([getText('data/certs.json'), getText('data/analysts.json')]).then(function (t) {
-      store['wedger/certs'] = JSON.parse(t[0]); store['wedger/analysts'] = JSON.parse(t[1]);
-    });
-    return Promise.all(IDS.map(function (id) { return getText('data/' + id + '.csv').then(function (t) { raw[id] = d3.csvParse(t); }); }))
-      .then(function () { booted = true; return scripts.reduce(function (p, s) { return p.then(function () { return loadScript(s); }); }, Promise.resolve()); })
-      .then(function () { subs.forEach(function (f) { try { f(); } catch (e) { console.error(e); } }); if (veil) veil.remove(); })
-      .catch(function (e) { console.error(e); if (veil) veil.textContent = 'Wedge couldn’t load its data. Refresh to try again.'; });
+  var resolveReady;
+  ready = new Promise(function (r) { resolveReady = r; });
+  window.WedgeRuntime = { boot: function (bundle, scripts) {
+    var veil = document.getElementById('wz-boot'), msg = document.getElementById('wz-boot-msg') || veil, sub = document.getElementById('wz-boot-sub');
+    var slow = setTimeout(function () { if (sub) sub.textContent = 'Still loading. This can take a moment on a slow connection.'; }, 8000);
+    var fail = function (e) { console.error(e); clearTimeout(slow); if (msg) msg.textContent = 'Wedge couldn’t load this week’s card.'; if (sub) sub.innerHTML = 'Check your connection, then <a href="" style="color:inherit">reload the page</a>.'; };
+    return getBundle(bundle, function (n) { if (sub && n > 150000) sub.textContent = (n / 1e6).toFixed(1) + ' MB loaded'; })
+      .then(function (b) {
+        store['wedger/certs'] = b.certs; store['wedger/analysts'] = b.analysts; resolveReady();
+        IDS.forEach(function (id) { raw[id] = d3.csvParse(b.ds[id] || ''); });
+        booted = true;
+        return scripts.reduce(function (p, s) { return p.then(function () { return loadScript(s); }); }, Promise.resolve());
+      })
+      .then(function () { clearTimeout(slow); subs.forEach(function (f) { try { f(); } catch (e) { console.error(e); } }); if (veil) veil.remove(); })
+      .catch(fail);
   } };
 })();
 """
@@ -115,14 +133,19 @@ def main():
         open(OUT + f, 'w').write(fix(open(SRC + f).read()))
     for k in used:
         src, dst = A[k]; shutil.copy2(src, OUT + dst)
-    tot = 0
+    # All data in one JSON file: Cloudflare compresses JSON (it serves .csv uncompressed), and it's one request instead of 28.
+    tot = 0; ds = {}
     for k, v in DS.items():
-        p = v if v.startswith('/') else R + v; shutil.copy2(p, OUT + 'data/' + k + '.csv'); tot += os.path.getsize(p)
-    json.dump({'picks': json.load(open(CERTS))['picks']}, open(OUT + 'data/certs.json', 'w'))
+        p = v if v.startswith('/') else R + v; ds[k] = open(p, encoding='utf-8').read(); tot += os.path.getsize(p)
     a = json.load(open(ANALYSTS)); a = a.get('data', a)
-    json.dump(a, open(OUT + 'data/analysts.json', 'w'), ensure_ascii=False)
+    bundle = json.dumps({'ds': ds, 'certs': {'picks': json.load(open(CERTS))['picks']}, 'analysts': a}, ensure_ascii=False, separators=(',', ':'))
+    open(OUT + 'data/wedge-data.json', 'w', encoding='utf-8').write(bundle)
     shutil.copy2('/opt/npm-tools/node_modules/d3/dist/d3.min.js', OUT + 'vendor/d3.min.js')
     open(OUT + 'runtime.js', 'w').write(RUNTIME.replace('__IDS__', json.dumps(list(DS))))
+    # Versioned URLs: the browser can cache each file, and a new build is picked up immediately (the page itself is never cached).
+    ver = lambda f: f + '?v=' + hashlib.sha1(open(OUT + f, 'rb').read()).hexdigest()[:10]
+    V = {f: ver(f) for f in ('vendor/d3.min.js', 'runtime.js', 'final.js', 'brain.js', 'wg.js', 'data/wedge-data.json')}
+    links = links.replace('href="wg.css"', 'href="' + ver('wg.css') + '"')
     html = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -137,18 +160,22 @@ def main():
 @media (prefers-color-scheme: dark){{:root{{{DARK}}}}}
 html,body{{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-anthropic-sans);font-size:14px}}
 .rs-card{{background:var(--color-panel)}} .dash-skeleton{{opacity:.6}}
-#wz-boot{{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#151614;color:#e9e7e1;font:500 14px/1.4 system-ui,sans-serif;z-index:9999;letter-spacing:.02em}}
+#wz-boot{{position:fixed;inset:0;display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:0 24px;text-align:center;background:#151614;color:#e9e7e1;font:500 14px/1.4 system-ui,sans-serif;z-index:9999;letter-spacing:.02em}}
+#wz-boot-sub{{color:#9a9890;font-weight:400;font-size:13px;min-height:1.4em}}
 </style>
-<script src="vendor/d3.min.js"></script>
-<script src="runtime.js"></script>
+<script src="{V['vendor/d3.min.js']}"></script>
+<script src="{V['runtime.js']}"></script>
 </head>
 <body>
-<div id="wz-boot" role="status">Loading this week’s card…</div>
+<div id="wz-boot" role="status"><div id="wz-boot-msg">Loading this week’s card…</div><div id="wz-boot-sub"></div></div>
 <noscript><p style="padding:24px">Wedge needs JavaScript to draw the board and the card.</p></noscript>
 <div id="dash-root">
 {body.strip()}
 </div>
-<script>WedgeRuntime.boot(['final.js', 'brain.js', 'wg.js']);</script>
+<script>
+if (window.WedgeRuntime && window.d3) WedgeRuntime.boot('{V['data/wedge-data.json']}', ['{V['final.js']}', '{V['brain.js']}', '{V['wg.js']}']);
+else {{ document.getElementById('wz-boot-msg').textContent = 'Wedge couldn’t load this week’s card.'; document.getElementById('wz-boot-sub').innerHTML = 'Check your connection, then <a href="" style="color:inherit">reload the page</a>.'; }}
+</script>
 </body>
 </html>
 """
@@ -157,8 +184,16 @@ html,body{{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);f
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: SAMEORIGIN
+/
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache
 /data/*
-  Cache-Control: public, max-age=300, must-revalidate
+  Cache-Control: public, max-age=31536000, immutable
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 /vendor/*

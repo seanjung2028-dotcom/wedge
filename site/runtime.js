@@ -33,16 +33,34 @@
   var user = { isOwner: function () { return Promise.resolve(false); }, id: function () { return Promise.resolve(null); }, me: function () { return Promise.resolve(null); } };
   window.claude = { use: function (n) { return Promise.resolve(n === 'db' ? db : n === 'user' ? user : null); } };
 
-  var getText = function (u) { return fetch(u, { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error(u + ' ' + r.status); return r.text(); }); };
+  // One versioned, compressed bundle: { ds: {id: csv text}, certs, analysts }. Shows progress while it downloads.
+  var getBundle = function (u, onProgress) {
+    return fetch(u).then(function (r) {
+      if (!r.ok) throw new Error(u + ' ' + r.status);
+      if (!r.body || !r.body.getReader || !window.TextDecoder) return r.text();
+      var rd = r.body.getReader(), dec = new TextDecoder(), parts = [], got = 0;
+      var pump = function () { return rd.read().then(function (x) {
+        if (x.done) { parts.push(dec.decode()); return parts.join(''); }
+        got += x.value.length; parts.push(dec.decode(x.value, { stream: true })); onProgress(got); return pump();
+      }); };
+      return pump();
+    }).then(JSON.parse);
+  };
   var loadScript = function (src) { return new Promise(function (res, rej) { var s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = function () { rej(new Error(src)); }; document.body.appendChild(s); }); };
-  window.WedgeRuntime = { boot: function (scripts) {
-    var veil = document.getElementById('wz-boot');
-    ready = Promise.all([getText('data/certs.json'), getText('data/analysts.json')]).then(function (t) {
-      store['wedger/certs'] = JSON.parse(t[0]); store['wedger/analysts'] = JSON.parse(t[1]);
-    });
-    return Promise.all(IDS.map(function (id) { return getText('data/' + id + '.csv').then(function (t) { raw[id] = d3.csvParse(t); }); }))
-      .then(function () { booted = true; return scripts.reduce(function (p, s) { return p.then(function () { return loadScript(s); }); }, Promise.resolve()); })
-      .then(function () { subs.forEach(function (f) { try { f(); } catch (e) { console.error(e); } }); if (veil) veil.remove(); })
-      .catch(function (e) { console.error(e); if (veil) veil.textContent = 'Wedge couldn’t load its data. Refresh to try again.'; });
+  var resolveReady;
+  ready = new Promise(function (r) { resolveReady = r; });
+  window.WedgeRuntime = { boot: function (bundle, scripts) {
+    var veil = document.getElementById('wz-boot'), msg = document.getElementById('wz-boot-msg') || veil, sub = document.getElementById('wz-boot-sub');
+    var slow = setTimeout(function () { if (sub) sub.textContent = 'Still loading. This can take a moment on a slow connection.'; }, 8000);
+    var fail = function (e) { console.error(e); clearTimeout(slow); if (msg) msg.textContent = 'Wedge couldn’t load this week’s card.'; if (sub) sub.innerHTML = 'Check your connection, then <a href="" style="color:inherit">reload the page</a>.'; };
+    return getBundle(bundle, function (n) { if (sub && n > 150000) sub.textContent = (n / 1e6).toFixed(1) + ' MB loaded'; })
+      .then(function (b) {
+        store['wedger/certs'] = b.certs; store['wedger/analysts'] = b.analysts; resolveReady();
+        IDS.forEach(function (id) { raw[id] = d3.csvParse(b.ds[id] || ''); });
+        booted = true;
+        return scripts.reduce(function (p, s) { return p.then(function () { return loadScript(s); }); }, Promise.resolve());
+      })
+      .then(function () { clearTimeout(slow); subs.forEach(function (f) { try { f(); } catch (e) { console.error(e); } }); if (veil) veil.remove(); })
+      .catch(fail);
   } };
 })();
