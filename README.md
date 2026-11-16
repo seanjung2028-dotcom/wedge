@@ -29,7 +29,7 @@ This is a working snapshot from Week 10 of the 2026 season, exported from the se
    - `bt/results_w10.py` writes the record file, `rh/results_w6_w10.csv`.
    - Certified picks are the `wedger/certs` document; `rh/certs_seed.json` is the local copy.
 
-## Standalone website
+## Standalone website (live at https://wedgepicks.com)
 
 `site/` is the same site as the dashboard artifact, packaged as plain static files that any host can serve on your own domain. It is read-only: nobody signs in, and the certify boxes never show.
 
@@ -42,7 +42,7 @@ This is a working snapshot from Week 10 of the 2026 season, exported from the se
 - **Rebuild:** run `python3 v2/build_site.py` after every site update, then sync. It reads the last built page in `v2/out/`, the dataset CSVs, `rh/certs_seed.json` and `rh/analysts_seed.json`.
 - **Preview locally:** `python3 -m http.server -d site 8000`, then open http://localhost:8000. Opening `index.html` straight from disk won't load the data, because browsers block `fetch` from `file://`.
 - **Host:**
-  - Connect this repo to Netlify or Cloudflare Pages. There's no build command, and the output directory is `site`. `netlify.toml` already sets this for Netlify.
+  - Live on Cloudflare Pages (project `wedgepicks`, branch `main`, no build command, output directory `site`). `netlify.toml` covers Netlify if the site ever moves.
   - Each push to `main` redeploys.
   - Add the custom domain in the host's dashboard, then point the domain's DNS at the host.
 

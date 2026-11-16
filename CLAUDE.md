@@ -1,6 +1,8 @@
 # Wedge repo
 
-This repo mirrors the Wedge workspace (the weekly NFL pipeline, model, research checks and site source). The live site is a dashboard artifact; this repo is its code and records.
+This repo mirrors the Wedge workspace (the weekly NFL pipeline, model, research checks and site source). The site is a dashboard artifact; this repo is its code and records.
+
+The public site is **https://wedgepicks.com** (and www). It's the Cloudflare Pages project `wedgepicks`, connected to this repo: production branch `main`, no build command, output directory `site`. Every push to `main` redeploys it, and `wedgepicks.pages.dev` is the same deploy. The domain is registered at Namecheap, and its DNS is on Cloudflare (two proxied CNAMEs, `@` and `www`, both pointing to `wedgepicks.pages.dev`).
 
 **Standing instruction from the owner:** every time the site is updated (new prices, settled results, card changes, record changes, code changes), sync this repo and push to `main` in the same turn.
 
