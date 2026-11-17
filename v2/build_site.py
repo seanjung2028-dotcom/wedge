@@ -18,7 +18,7 @@ DS = {'lines': 'inband_w11.csv', 'lines_all': 'lines_all_w11.csv', 'props': 'pro
       'nba_outlook': '../nba/nba_outlook.csv', 'nba_ctx': '../nba/nba_ctx.csv', 'pick_prices': 'pick_prices_w7.csv', 'nba_results': '../nba/nba_results.csv',
       'proj': 'proj_w11.csv', 'bt_weeks': 'bt_weeks.csv', 'bt_props': 'bt_props.csv', 'mom_summary': 'mom_summary.csv', 'team_mom': 'team_mom.csv',
       'defhist': 'defhist_w11.csv', 'cats': 'cats.csv', 'research': 'research.csv', 'inj': W + 'v2/data/inj_w11.csv',
-      'card_bt': 'card_bt.csv', 'card_bt_sum': 'card_bt_sum.csv', 'final_record': 'final_record.csv'}
+      'card_bt': 'card_bt.csv', 'card_bt_sum': 'card_bt_sum.csv', 'final_record': 'final_record.csv', 'frec': 'frec.csv'}
 def ds_path(k, v):
     f = v if v.startswith('/') else R + v
     if os.path.exists(f): return f
@@ -284,7 +284,7 @@ def main():
     a = json.load(open(ANALYSTS)); a = a.get('data', a)
     full = json.dumps({'ds': ds, 'certs': {'picks': certs}, 'analysts': a}, ensure_ascii=False, separators=(',', ':'))
     rec, pub_certs = public_record(ds['results'], set(certs))
-    pub = json.dumps({'ds': {'results': rec}, 'certs': {'picks': pub_certs}, 'analysts': {'order': a.get('order', []), 'picks': {}}}, ensure_ascii=False, separators=(',', ':'))
+    pub = json.dumps({'ds': {'results': rec, 'frec': ds['frec']}, 'certs': {'picks': pub_certs}, 'analysts': {'order': a.get('order', []), 'picks': {}}}, ensure_ascii=False, separators=(',', ':'))
     T1 = f'p/t1/{hx(full)[:16]}/data.json'; protect(T1, full, 'application/json; charset=utf-8', 1)
     put('data/public.json', pub)
     # the card: Inner Circle gets it whole; everyone else gets the games and scores only

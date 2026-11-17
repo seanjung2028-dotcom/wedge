@@ -111,4 +111,5 @@ row = {'key': 'final_record', 'label': 'Final lines · Weeks 1–10', 'group': '
        'win_pct': round(100 * w_ / n, 1), 'avg_price': round(cost / n, 1), 'needed': round(cost / n + FEE, 1), 'ours': None, 'profit_c': int(prof), 'roi_pct': round(100 * prof / cost, 1),
        'added': int((REC.source == 'Added').sum()), 'thru': int(REC.week.max())}
 SUM = pd.concat([SUM, pd.DataFrame([row])], ignore_index=True); SUM.to_csv(W + 'rh/card_bt_sum.csv', index=False)
+pd.DataFrame([{k: row[k] for k in ('wins', 'losses', 'win_pct', 'roi_pct', 'profit_c', 'thru')}]).to_csv(W + 'rh/frec.csv', index=False)   # Home's headline numbers (public)
 print('final record', f"{w_}-{n - w_}", row['win_pct'], f"{row['roi_pct']:+}%", REC.groupby('source').outcome.value_counts().unstack(fill_value=0).to_dict('index'))

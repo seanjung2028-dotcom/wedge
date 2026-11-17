@@ -24,7 +24,7 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
 #wz-boot-sub{color:#9a9890;font-weight:400;font-size:13px;min-height:1.4em}
 </style>
 <script src="vendor/d3.min.js?v=6d64bd2f09"></script>
-<script src="runtime.js?v=635cdac81b"></script>
+<script src="runtime.js?v=2a8e6f94f7"></script>
 </head>
 <body>
 <div id="wz-boot" role="status"><div id="wz-boot-msg">Loading this week’s card…</div><div id="wz-boot-sub"></div></div>
@@ -38,10 +38,10 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
     <div class="wz-bar">
       <button type="button" class="wz-logo" data-go="lobby" aria-label="Wedge home"><img class="v2-logo-l" src="assets/img/wordmark_light.png" alt="Wedge" width="112" height="40"><img class="v2-logo-i" src="assets/img/wordmark_ink.png" alt="" width="112" height="40" aria-hidden="true"></button>
       <div class="wz-bar-r">
-        <div class="wg-record" id="wg-record" data-source="results" role="status" aria-label="Wedge record">
-        <span class="wg-record-label"><i aria-hidden="true"></i>Certified hit rate</span>
+        <div class="wg-record" id="wg-record" data-source="frec" role="status" aria-label="Final-line record">
+        <span class="wg-record-label"><i aria-hidden="true"></i>Final-line hit rate</span>
         <div class="wg-record-main"><span class="wg-record-pct">—</span><span class="wg-record-frac"></span></div>
-        <span class="wg-record-sub">Certified picks, settled</span>
+        <span class="wg-record-sub">Final lines, settled</span>
       </div>
         <button type="button" class="wz-btn wz-btn-ghost wz-btn-sm" id="wz-login">Log in</button>
         <button type="button" class="wz-btn wz-btn-g wz-btn-sm" id="wz-signup">Sign up</button>
@@ -101,13 +101,13 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
       </div>
       <div class="pf-proof" data-source="results" aria-label="Track record">
         <div class="pf-blob" aria-hidden="true"></div><div class="pf-cross" aria-hidden="true"></div>
-        <span class="pf-label">Certified hit rate · Week 11</span>
+        <span class="pf-label" data-wz="frec-label">Final-line hit rate · incl. backtest</span>
         <div class="pf-big" data-wz="cert-pct">—</div>
         <div class="v2-proof-row">
-          <span class="v2-ps"><b data-wz="cert-wl">—</b>certified</span>
+          <span class="v2-ps"><b data-wz="cert-wl">—</b>final lines</span>
           <span class="v2-ps v2-ps-net"><b data-wz="cert-profit">—</b>net</span>
         </div>
-        <button type="button" class="wz-btn wz-btn-w" data-go="analysts">See the record ↗</button>
+        <button type="button" class="wz-btn wz-btn-w" data-go="results">See the record ↗</button>
       </div>
     </section>
 
@@ -1046,8 +1046,8 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
 </div>
 </div>
 <script>
-window.WEDGE_PREVIEWS = {"research": "assets/locked/research.webp?v=1ea15b8e24", "final": "assets/locked/final.webp?v=0ffecaea19", "thesis": "assets/locked/thesis.webp?v=98ea13916e", "charts": "assets/locked/charts.webp?v=1adf59a188", "analysts": "assets/locked/analysts.webp?v=b14c8a3941", "results": "assets/locked/results.webp?v=58a67ecca1", "nba": "assets/locked/nba.webp?v=6505f66f1d", "nba-charts": "assets/locked/nba-charts.webp?v=9b2d4eb364", "nba-results": "assets/locked/nba-results.webp?v=2038018a48"};
-if (window.WedgeRuntime && window.d3) WedgeRuntime.boot({"pub": "data/public.json?v=847d8b9092", "t1": "/p/t1/f5676fc82f88a12a/data.json", "fin": ["/p/t2/6b052cfb21a4fa5d/final.js", "data/final-public.js?v=17c8591440"], "brain": ["/p/t2/6b052cfb21a4fa5d/brain.js", "data/brain-public.js?v=1f36a01405"], "wg": "wg.js?v=cab1c0f5c9"});
+window.WEDGE_PREVIEWS = {"research": "assets/locked/research.webp?v=1ea15b8e24", "final": "assets/locked/final.webp?v=0ffecaea19", "thesis": "assets/locked/thesis.webp?v=98ea13916e", "charts": "assets/locked/charts.webp?v=1adf59a188", "analysts": "assets/locked/analysts.webp?v=b14c8a3941", "results": "assets/locked/results.webp?v=6bd8f92064", "nba": "assets/locked/nba.webp?v=6505f66f1d", "nba-charts": "assets/locked/nba-charts.webp?v=9b2d4eb364", "nba-results": "assets/locked/nba-results.webp?v=4a01d0b0ee"};
+if (window.WedgeRuntime && window.d3) WedgeRuntime.boot({"pub": "data/public.json?v=2b2a425a46", "t1": "/p/t1/83ddf097ff13e6fe/data.json", "fin": ["/p/t2/6b052cfb21a4fa5d/final.js", "data/final-public.js?v=17c8591440"], "brain": ["/p/t2/6b052cfb21a4fa5d/brain.js", "data/brain-public.js?v=1f36a01405"], "wg": "wg.js?v=3fa26d1d3e"});
 else { document.getElementById('wz-boot-msg').textContent = 'Wedge couldn’t load this week’s card.'; document.getElementById('wz-boot-sub').innerHTML = 'Check your connection, then <a href="" style="color:inherit">reload the page</a>.'; }
 </script>
 </body>

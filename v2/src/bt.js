@@ -17,28 +17,23 @@
     }
     const list = $('#results-frec-list');
     if (P.status !== 'ok') { list.replaceChildren(); return; }
-    const TAG = { Backtest: 'Backtest', Added: 'Added', 'Week 10 card': 'Card' };
-    const add = P.data.filter((x) => x.source === 'Added').map((x) => Number(x.week));
-    $('#frec-note').textContent = 'Weeks 2–9: this week’s card rules, backtested (Weeks 7–9 at the real Robinhood prices, Weeks 2–6 on lines rebuilt from box scores; four backtested lines left out). ' +
-      'Week 10 on: the card’s final lines as certified.' + (add.length ? ` Plus ${add.length} Wedge picks from Weeks ${Math.min(...add)}–${Math.max(...add)}, added by hand (tagged Added).` : '') + ' Net: one contract each at the price, before fees.';
+    $('#frec-note').textContent = 'Includes backtested lines and picks added by hand. Net: one contract each at the price, before fees.';
     const out = [];
     for (let wk = 1; wk <= thru; wk++) {
       const rows = P.data.filter((x) => Number(x.week) === wk);
       const w = rows.filter((x) => x.outcome === 'Won').length;
-      const srcs = [...new Set(rows.map((x) => TAG[x.source] || x.source))];
       const head = el('div', 'v2-frec-wk');
-      head.append(el('b', null, 'Week ' + wk), el('span', null, rows.length ? `${srcs.join(' + ')} · ${w}–${rows.length - w}` : (wk === 1 ? 'No games before it' : 'No final line')));
+      head.append(el('b', null, 'Week ' + wk), el('span', null, rows.length ? `${w}–${rows.length - w}` : (wk === 1 ? 'No games before it' : 'No final line')));
       out.push(head);
       for (const x of rows) {
         const row = el('div', 'pf-pick v2-frec-pick');
         const mid = el('div'); const sm = el('small');
-        sm.append(el('i', 'v2-frec-tag' + (x.source === 'Backtest' ? '' : ' is-' + (x.source === 'Added' ? 'add' : 'card')), TAG[x.source] || x.source),
-          document.createTextNode(`${x.game} · ${x.price}¢${x.mid !== '' && x.mid != null ? ' · ours ' + Math.round(Number(x.mid)) + '%' : ''} · ${x.result.replace(/^W\d+: /, '')}`));
+        sm.append(document.createTextNode(`${x.game} · ${x.price}¢${x.mid !== '' && x.mid != null ? ' · ours ' + Math.round(Number(x.mid)) + '%' : ''} · ${x.result.replace(/^W\d+: /, '')}`));
         mid.append(el('b', null, x.line), sm);
         const pc = Number(x.profit_c);
         const chip = el('span', 'wz-chip ' + (x.outcome === 'Won' ? 'pos' : 'neg'), `${x.outcome} ${pc > 0 ? '+' : '−'}${Math.abs(pc)}¢`);
         row.append(wzHelmet(x.team, false), mid, chip);
-        row.setAttribute('aria-label', `Week ${wk}, ${x.source}: ${x.line} at ${x.price} cents, ${x.outcome.toLowerCase()}, ${pc > 0 ? 'plus' : 'minus'} ${Math.abs(pc)} cents`);
+        row.setAttribute('aria-label', `Week ${wk}: ${x.line} at ${x.price} cents, ${x.outcome.toLowerCase()}, ${pc > 0 ? 'plus' : 'minus'} ${Math.abs(pc)} cents`);
         out.push(row);
       }
     }
