@@ -10,7 +10,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="wg.css?v=ceca1440fe">
+<link rel="stylesheet" href="wg.css?v=ceca1440fe85">
 <style>
 :root{--color-bg:#ffffff;--color-fg:#1f1e1d;--color-fg-muted:#6b6a68;--color-border-line:#e5e3df;--color-panel:#faf9f7;--color-ok:#2e7d4f;--color-warn:#b26a00;--color-bad:#c0392b;
 --cds-border:#dedcd8;--cds-chart-grid:#ecebe8;--cds-chart-muted:#c9c7c2;--cds-chart-reference:#8a8883;--cds-chart-status-critical:#d0453a;--cds-surface-popover:#fff;--cds-text-secondary:#6b6a68;--cds-shadow-popover:0 4px 16px rgba(0,0,0,.12);--cds-dur-slow:.2s;--cds-font-size-body:14px;--cds-font-size-caption:12px;--cds-font-size-heading:18px;--cds-font-size-title:26px;--cds-font-weight-medium:500;
@@ -23,8 +23,8 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
 #wz-boot{position:fixed;inset:0;display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:0 24px;text-align:center;background:#151614;color:#e9e7e1;font:500 14px/1.4 system-ui,sans-serif;z-index:9999;letter-spacing:.02em}
 #wz-boot-sub{color:#9a9890;font-weight:400;font-size:13px;min-height:1.4em}
 </style>
-<script src="vendor/d3.min.js?v=6d64bd2f09"></script>
-<script src="runtime.js?v=2a8e6f94f7"></script>
+<script src="vendor/d3.min.js?v=6d64bd2f0944"></script>
+<script src="runtime.js?v=2a8e6f94f70c"></script>
 </head>
 <body>
 <div id="wz-boot" role="status"><div id="wz-boot-msg">Loading this week’s card…</div><div id="wz-boot-sub"></div></div>
@@ -1085,8 +1085,8 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
 </div>
 </div>
 <script>
-window.WEDGE_PREVIEWS = {"research": "assets/locked/research.webp?v=1ea15b8e24", "final": "assets/locked/final.webp?v=53105ebfd3", "thesis": "assets/locked/thesis.webp?v=98ea13916e", "charts": "assets/locked/charts.webp?v=1adf59a188", "analysts": "assets/locked/analysts.webp?v=b14c8a3941", "results": "assets/locked/results.webp?v=e7e723fe46", "nba": "assets/locked/nba.webp?v=6505f66f1d", "nba-charts": "assets/locked/nba-charts.webp?v=9b2d4eb364", "nba-results": "assets/locked/nba-results.webp?v=a6c396f2b9"};
-if (window.WedgeRuntime && window.d3) WedgeRuntime.boot({"pub": "data/public.json?v=755731c1ae", "t1": "/p/t1/491bbd933889379b/data.json", "fin": ["/p/t2/139e0b8c3f55359e/final.js", "data/final-public.js?v=17c8591440"], "brain": ["/p/t2/139e0b8c3f55359e/brain.js", "data/brain-public.js?v=1d56c88e9c"], "wg": "wg.js?v=5b90deda94"});
+window.WEDGE_PREVIEWS = {"research": "assets/locked/research.webp?v=1ea15b8e24", "final": "assets/locked/final.webp?v=53105ebfd3", "thesis": "assets/locked/thesis.webp?v=98ea13916e", "charts": "assets/locked/charts.webp?v=1adf59a188", "analysts": "assets/locked/analysts.webp?v=b14c8a3941", "results": "assets/locked/results.webp?v=e7e723fe46", "nba": "assets/locked/nba.webp?v=6505f66f1d", "nba-charts": "assets/locked/nba-charts.webp?v=9b2d4eb364", "nba-results": "assets/locked/nba-results.webp?v=4a01d0b0ee"};
+if (window.WedgeRuntime && window.d3) WedgeRuntime.boot({"pub": "data/public.json?v=66fabc943a99", "t1": "/p/t1/491bbd933889379b/data.json", "fin": ["/p/t2/139e0b8c3f55359e/final.js", "data/final-public.js?v=17c8591440bb"], "brain": ["/p/t2/139e0b8c3f55359e/brain.js", "data/brain-public.js?v=1d56c88e9cd5"], "wg": "wg.js?v=5b90deda94d9"});
 else { document.getElementById('wz-boot-msg').textContent = 'Wedge couldn’t load this week’s card.'; document.getElementById('wz-boot-sub').innerHTML = 'Check your connection, then <a href="" style="color:inherit">reload the page</a>.'; }
 </script>
 </body>

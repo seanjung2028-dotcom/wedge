@@ -300,7 +300,9 @@ def main():
     open(OUT + 'runtime.js', 'w').write(RUNTIME.replace('__IDS__', json.dumps(list(DS))))
     favicons()
     # Versioned URLs: the browser can cache each file, and a new build is picked up immediately (the page itself is never cached).
-    ver = lambda f: f + '?v=' + hx(open(OUT + f, 'rb').read())[:10]
+    # Cloudflare's edge keeps a versioned file 10 minutes at most (_headers): if a first request for a new version reaches an edge
+    # still serving the previous deploy, the stale copy can't outlive that. Browsers keep the year-long cache.
+    ver = lambda f: f + '?v=' + hx(open(OUT + f, 'rb').read())[:12]
     boot = {'pub': ver('data/public.json'), 't1': '/' + T1, 'fin': ['/' + T2 + 'final.js', ver('data/final-public.js')],
             'brain': ['/' + T2 + 'brain.js', ver('data/brain-public.js')], 'wg': ver('wg.js')}
     links = links.replace('href="wg.css"', 'href="' + ver('wg.css') + '"')
@@ -360,14 +362,19 @@ else {{ document.getElementById('wz-boot-msg').textContent = 'Wedge couldn’t l
   Cache-Control: no-cache
 /data/*
   Cache-Control: public, max-age=31536000, immutable
+  Cloudflare-CDN-Cache-Control: max-age=600
 /*.js
   Cache-Control: public, max-age=31536000, immutable
+  Cloudflare-CDN-Cache-Control: max-age=600
 /*.css
   Cache-Control: public, max-age=31536000, immutable
+  Cloudflare-CDN-Cache-Control: max-age=600
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+  Cloudflare-CDN-Cache-Control: max-age=600
 /vendor/*
   Cache-Control: public, max-age=31536000, immutable
+  Cloudflare-CDN-Cache-Control: max-age=600
 /p/*
   X-Robots-Tag: noindex
 """)
