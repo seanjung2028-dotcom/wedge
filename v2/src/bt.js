@@ -17,7 +17,7 @@
     }
     const list = $('#results-frec-list');
     if (P.status !== 'ok') { list.replaceChildren(); return; }
-    $('#frec-note').textContent = 'Includes backtested lines and picks added by hand. Net: one contract each at the price, before fees.';
+    $('#frec-note').textContent = 'Backtested, brainstormed, and settled.';
     const out = [];
     for (let wk = 1; wk <= thru; wk++) {
       const rows = P.data.filter((x) => Number(x.week) === wk);
