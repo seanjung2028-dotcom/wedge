@@ -1,0 +1,73 @@
+{
+ "folds": {
+  "7": 15,
+  "8": 60,
+  "9": 250
+ },
+ "cleared_lines": 371,
+ "by_src_week": [
+  {
+   "src": "check",
+   "week": 7,
+   "Conditional lean": 37,
+   "Final line": 8,
+   "Pass": 96
+  },
+  {
+   "src": "check",
+   "week": 8,
+   "Conditional lean": 13,
+   "Final line": 12,
+   "Pass": 35
+  },
+  {
+   "src": "real",
+   "week": 7,
+   "Conditional lean": 40,
+   "Final line": 8,
+   "Pass": 108
+  },
+  {
+   "src": "real",
+   "week": 8,
+   "Conditional lean": 7,
+   "Final line": 5,
+   "Pass": 33
+  },
+  {
+   "src": "rebuilt",
+   "week": 2,
+   "Conditional lean": 46,
+   "Final line": 12,
+   "Pass": 55
+  },
+  {
+   "src": "rebuilt",
+   "week": 3,
+   "Conditional lean": 23,
+   "Final line": 14,
+   "Pass": 85
+  },
+  {
+   "src": "rebuilt",
+   "week": 4,
+   "Conditional lean": 47,
+   "Final line": 6,
+   "Pass": 61
+  },
+  {
+   "src": "rebuilt",
+   "week": 5,
+   "Conditional lean": 37,
+   "Final line": 8,
+   "Pass": 73
+  },
+  {
+   "src": "rebuilt",
+   "week": 6,
+   "Conditional lean": 41,
+   "Final line": 7,
+   "Pass": 65
+  }
+ ]
+}

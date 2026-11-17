@@ -483,6 +483,9 @@ s, js = _r10.apply(s, js)
 # ---- round 11: Week 11
 _sp11 = _ilu.spec_from_file_location('r11_week11', V + 'r11_week11.py'); _r11 = _ilu.module_from_spec(_sp11); _sp11.loader.exec_module(_r11)
 s, js = _r11.apply(s, js)
+# ---- round 12: Results shows the card rules backtested on Weeks 1-9 beside the live card
+_sp12 = _ilu.spec_from_file_location('r12_backtest', V + 'r12_backtest.py'); _r12 = _ilu.module_from_spec(_sp12); _sp12.loader.exec_module(_r12)
+s, js = _r12.apply(s, js)
 s = s.replace('@@JS@@', '<script>' + js + '</script>')
 s = s.replace('<title>Wedge', '<title>Wedge')
 open(V + 'index_full.html', 'w').write(s)
