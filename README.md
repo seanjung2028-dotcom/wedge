@@ -28,6 +28,11 @@ This is a working snapshot from Week 10 of the 2026 season, exported from the se
    - `bt/settle_w10.py` (Thursday) and `bt/settle_w10s.py` (Sunday) grade every posted line from the box scores.
    - `bt/results_w10.py` writes the record file, `rh/results_w6_w10.csv`.
    - Certified picks are the `wedger/certs` document; `rh/certs_seed.json` is the local copy.
+   - `python3 bt/card_bt/summary.py` refreshes the card records on Results (backtest vs. live card) from every graded `finalNN/final_wNN.json`.
+8. **Card backtest, Weeks 1–9** (`bt/card_bt/`, shown on Results):
+   - `pool_real.py`: Weeks 7–9 real Robinhood main lines from the record, with point-in-time lens features.
+   - `pool_rebuilt.py`: Weeks 2–6 lines rebuilt from box scores the way the books set them (fit and checked on the real Week 7–9 lines; `rebuild_check.json`). Robinhood kept no prop prices before Week 7.
+   - `card_bt.py`: the Week 11 card rules (v6 range, the checks, one line per player, four per game, the card mix), with v6 refit without the week for Weeks 7–9. Writes `rh/card_bt.csv` and `rh/card_bt_sum.csv` through `summary.py`.
 
 ## Website and memberships (live at https://wedgepicks.com)
 
