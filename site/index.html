@@ -10,7 +10,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="wg.css?v=0f40a32342">
+<link rel="stylesheet" href="wg.css?v=ceca1440fe">
 <style>
 :root{--color-bg:#ffffff;--color-fg:#1f1e1d;--color-fg-muted:#6b6a68;--color-border-line:#e5e3df;--color-panel:#faf9f7;--color-ok:#2e7d4f;--color-warn:#b26a00;--color-bad:#c0392b;
 --cds-border:#dedcd8;--cds-chart-grid:#ecebe8;--cds-chart-muted:#c9c7c2;--cds-chart-reference:#8a8883;--cds-chart-status-critical:#d0453a;--cds-surface-popover:#fff;--cds-text-secondary:#6b6a68;--cds-shadow-popover:0 4px 16px rgba(0,0,0,.12);--cds-dur-slow:.2s;--cds-font-size-body:14px;--cds-font-size-caption:12px;--cds-font-size-heading:18px;--cds-font-size-title:26px;--cds-font-weight-medium:500;
@@ -66,6 +66,10 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
         <button type="button" class="wg-dd-item" role="menuitem" data-page="charts">Charts &amp; Trends</button>
         <button type="button" class="wg-dd-item" role="menuitem" data-page="analysts">Analysts</button>
         <button type="button" class="wg-dd-item" role="menuitem" data-page="results">Results</button>
+        <div class="wg-dd-sep" role="separator"></div>
+        <div class="wg-dd-label" aria-hidden="true">Live</div>
+        <button type="button" class="wg-dd-item" role="menuitem" data-page="shop">Line Shopping</button>
+        <button type="button" class="wg-dd-item" role="menuitem" data-page="ask">Analyst</button>
       </div>
     </div>
     <div class="wg-dd" id="nba-dd">
@@ -207,7 +211,7 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
   <!-- ============ ALL LINES (original screen) ============ -->
   <div class="rs-page v2-research v2-open" id="research" hidden>
   <header class="wx-band"><span class="wx-label"><i class="wx-dot" aria-hidden="true"></i>NFL / Week 11</span><h2>Research.</h2><p class="v2-cta">Select any line to open its file</p></header>
-  <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button></nav>
+  <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button><span class="v2-sn-g">Live</span><button type="button" class="v2-sn" data-page="shop"><i>07</i>Line Shopping</button><button type="button" class="v2-sn" data-page="ask"><i>08</i>Analyst</button></nav>
   <div class="v2-seg" role="tablist" aria-label="Research view">
     <button type="button" role="tab" class="v2-seg-b" id="v2-rv-lines" aria-selected="true" data-view="lines">Every line</button>
     <button type="button" role="tab" class="v2-seg-b" id="v2-rv-proj" aria-selected="false" data-view="proj" tabindex="-1">Projections before the lines post</button>
@@ -379,12 +383,12 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
 
   <div class="rs-page v2-open" id="final" hidden>
     <header class="wx-band"><span class="wx-label"><i class="wx-dot" aria-hidden="true"></i>NFL / Week 11</span><h2>The Winning Edge.</h2></header>
-  <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button></nav>
+  <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button><span class="v2-sn-g">Live</span><button type="button" class="v2-sn" data-page="shop"><i>07</i>Line Shopping</button><button type="button" class="v2-sn" data-page="ask"><i>08</i>Analyst</button></nav>
     <div id="fc-root"><p class="wx-empty">Loading the final card…</p></div>
   </div>
 <div class="rs-page v2-thesis v2-open" id="thesis" hidden>
   <header class="wx-band"><span class="wx-label"><i class="wx-dot" aria-hidden="true"></i>NFL / Week 11 · The Winning Edge</span><h2>Thesis.</h2><p hidden><span id="v2-th-when"></span></p></header>
-  <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button></nav>
+  <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button><span class="v2-sn-g">Live</span><button type="button" class="v2-sn" data-page="shop"><i>07</i>Line Shopping</button><button type="button" class="v2-sn" data-page="ask"><i>08</i>Analyst</button></nav>
   <div class="wx-tabs v2-th-tabs" role="tablist" id="v2-th-tabs" aria-label="Games"></div>
   <div id="v2-th-root"><p class="wx-empty">Loading the thesis…</p></div>
 </div>
@@ -707,7 +711,7 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
   <!-- ============ ANALYSTS ============ -->
   <div class="rs-page v2-open" id="analysts" hidden>
   <header class="wx-band"><span class="wx-label"><i class="wx-dot" aria-hidden="true"></i>NFL / Database</span><h2>Analysts.</h2></header>
-  <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button></nav>
+  <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button><span class="v2-sn-g">Live</span><button type="button" class="v2-sn" data-page="shop"><i>07</i>Line Shopping</button><button type="button" class="v2-sn" data-page="ask"><i>08</i>Analyst</button></nav>
     <section class="wg-board" id="an-board" data-source="results lines" aria-label="Analyst standings"></section>
     <div class="pf-row v2-an-row"><button type="button" class="wz-link" data-go="apply">Apply to be an analyst</button></div>
     
@@ -758,7 +762,7 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
   <!-- ============ WEEK 6 RESULTS ============ -->
   <div class="rs-page v2-open" id="results" hidden>
     <header class="wx-band"><span class="wx-label"><i class="wx-dot" aria-hidden="true"></i>Settled</span><h2>Results.</h2></header>
-  <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button></nav>
+  <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button><span class="v2-sn-g">Live</span><button type="button" class="v2-sn" data-page="shop"><i>07</i>Line Shopping</button><button type="button" class="v2-sn" data-page="ask"><i>08</i>Analyst</button></nav>
     <section class="v2-frec" id="results-frec" aria-label="Final-line record">
       <div class="v2-frec-list" id="results-frec-list" aria-label="Every final line, week by week"></div>
       <div class="pf-proof v2-frec-proof">
@@ -835,9 +839,44 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
   
 
   <!-- ============ CHARTS ============ -->
-  <div class="rs-page v2-open" id="charts" hidden>
+  <div class="rs-page v2-open v2-tool" id="shop" hidden>
+  <header class="wx-band"><span class="wx-label"><i class="wx-dot" aria-hidden="true"></i>NFL / Live</span><h2>Line Shopping.</h2><p class="v2-cta">Every receiving and rushing line, priced after fees</p></header>
+  <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button><span class="v2-sn-g">Live</span><button type="button" class="v2-sn" data-page="shop"><i>07</i>Line Shopping</button><button type="button" class="v2-sn" data-page="ask"><i>08</i>Analyst</button></nav>
+  <section class="v2-sh" aria-label="Line Shopping">
+    <div class="v2-sh-watch" id="shop-watch" hidden></div>
+    <div class="v2-sh-games" id="shop-games" role="group" aria-label="Game"></div>
+    <div class="v2-sh-ctl">
+      <label class="v2-sh-search"><span class="wg-visually-hidden">Search players or lines</span><input type="search" id="shop-q" placeholder="Search a player or line" autocomplete="off"></label>
+      <label><span class="wg-visually-hidden">Stat</span><select id="shop-stat"><option value="">All stats</option><option value="rec">Receptions</option><option value="recyd">Receiving yards</option><option value="rushyd">Rushing yards</option><option value="rryd">Rush + rec yards</option></select></label>
+      <label><span class="wg-visually-hidden">Side</span><select id="shop-side"><option value="yes">Yes · over</option><option value="no">No · under</option></select></label>
+      <label class="v2-sh-size">Contracts <input type="number" id="shop-size" value="10" min="1" max="500" inputmode="numeric"></label>
+    </div>
+    <p class="v2-sh-status" id="shop-status" role="status">Reading Kalshi’s prices…</p>
+    <div class="v2-sh-grid">
+      <div class="v2-sh-list" id="shop-list" aria-label="Lines"></div>
+      <div class="v2-sh-side" id="shop-detail" aria-live="polite"><p class="v2-sh-empty">Pick a line to compare every platform.</p></div>
+    </div>
+    <p class="v2-tool-fine">Prices: Kalshi’s public market data, read live. Robinhood’s NFL props trade on Kalshi’s book, so they’re priced here with Robinhood’s fees. DraftKings, FanDuel, BetMGM, Fanatics and Caesars need a licensed odds feed, which isn’t connected yet. Estimated value is an estimate, not a promise, and assumes holding to settlement. 21+. Gambling problem? Call 1-800-GAMBLER.</p>
+  </section>
+</div>
+<div class="rs-page v2-open v2-tool" id="ask" hidden>
+  <header class="wx-band"><span class="wx-label"><i class="wx-dot" aria-hidden="true"></i>NFL / Live</span><h2>Analyst.</h2><p class="v2-cta">Ask about a player, a line or a price</p></header>
+  <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button><span class="v2-sn-g">Live</span><button type="button" class="v2-sn" data-page="shop"><i>07</i>Line Shopping</button><button type="button" class="v2-sn" data-page="ask"><i>08</i>Analyst</button></nav>
+  <section class="v2-ak" aria-label="Analyst">
+    <p class="v2-ak-note" id="ask-note" role="status" hidden></p>
+    <div class="v2-ak-log" id="ask-log" aria-live="polite"></div>
+    <div class="v2-ak-start" id="ask-start"></div>
+    <form class="v2-ak-form" id="ask-form">
+      <label for="ask-q" class="wg-visually-hidden">Your question</label>
+      <textarea id="ask-q" rows="2" maxlength="2000" placeholder="Ask about a player, a line or a price"></textarea>
+      <div class="v2-ak-actions"><button type="button" class="wz-link" id="ask-clear" hidden>New conversation</button><button type="submit" class="wz-btn wz-btn-g" id="ask-go">Ask ↗</button></div>
+    </form>
+    <p class="v2-tool-fine">Answers come only from Wedge’s data and live Kalshi prices, and every number is checked against them before it’s shown. Wedge doesn’t price in-game situations or two outcomes together. Estimates, not promises. 21+. Gambling problem? Call 1-800-GAMBLER.</p>
+  </section>
+</div>
+<div class="rs-page v2-open" id="charts" hidden>
     <header class="wx-band"><span class="wx-label"><i class="wx-dot" aria-hidden="true"></i>Weeks 1–8</span><h2>Charts &amp; trends.</h2></header>
-  <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button></nav>
+  <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button><span class="v2-sn-g">Live</span><button type="button" class="v2-sn" data-page="shop"><i>07</i>Line Shopping</button><button type="button" class="v2-sn" data-page="ask"><i>08</i>Analyst</button></nav>
 
 
     <section class="rs-card" id="ch-cats">
@@ -1046,8 +1085,8 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
 </div>
 </div>
 <script>
-window.WEDGE_PREVIEWS = {"research": "assets/locked/research.webp?v=1ea15b8e24", "final": "assets/locked/final.webp?v=53105ebfd3", "thesis": "assets/locked/thesis.webp?v=98ea13916e", "charts": "assets/locked/charts.webp?v=1adf59a188", "analysts": "assets/locked/analysts.webp?v=b14c8a3941", "results": "assets/locked/results.webp?v=e7e723fe46", "nba": "assets/locked/nba.webp?v=6505f66f1d", "nba-charts": "assets/locked/nba-charts.webp?v=9b2d4eb364", "nba-results": "assets/locked/nba-results.webp?v=4a01d0b0ee"};
-if (window.WedgeRuntime && window.d3) WedgeRuntime.boot({"pub": "data/public.json?v=339b923ee5", "t1": "/p/t1/491bbd933889379b/data.json", "fin": ["/p/t2/139e0b8c3f55359e/final.js", "data/final-public.js?v=17c8591440"], "brain": ["/p/t2/139e0b8c3f55359e/brain.js", "data/brain-public.js?v=1d56c88e9c"], "wg": "wg.js?v=bb5dd8a330"});
+window.WEDGE_PREVIEWS = {"research": "assets/locked/research.webp?v=1ea15b8e24", "final": "assets/locked/final.webp?v=53105ebfd3", "thesis": "assets/locked/thesis.webp?v=98ea13916e", "charts": "assets/locked/charts.webp?v=1adf59a188", "analysts": "assets/locked/analysts.webp?v=b14c8a3941", "results": "assets/locked/results.webp?v=e7e723fe46", "nba": "assets/locked/nba.webp?v=6505f66f1d", "nba-charts": "assets/locked/nba-charts.webp?v=9b2d4eb364", "nba-results": "assets/locked/nba-results.webp?v=a6c396f2b9"};
+if (window.WedgeRuntime && window.d3) WedgeRuntime.boot({"pub": "data/public.json?v=755731c1ae", "t1": "/p/t1/491bbd933889379b/data.json", "fin": ["/p/t2/139e0b8c3f55359e/final.js", "data/final-public.js?v=17c8591440"], "brain": ["/p/t2/139e0b8c3f55359e/brain.js", "data/brain-public.js?v=1d56c88e9c"], "wg": "wg.js?v=5b90deda94"});
 else { document.getElementById('wz-boot-msg').textContent = 'Wedge couldn’t load this week’s card.'; document.getElementById('wz-boot-sub').innerHTML = 'Check your connection, then <a href="" style="color:inherit">reload the page</a>.'; }
 </script>
 </body>

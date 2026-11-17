@@ -9,7 +9,7 @@ It is the same page the dashboard artifact serves (v2/out: index.html, wg.js, wg
     so the certify boxes never show; the record is updated by rebuilding and pushing.
 Run after every site update:  python3 /home/claude/wedger/v2/build_site.py
 """
-import hashlib, json, os, re, shutil, sys
+import hashlib, json, os, re, shutil, subprocess, sys
 W = '/home/claude/wedger/'; R = W + 'rh/'; OUT = W + 'site/'; SRC = W + 'v2/out/'
 P16 = 'pub1116/'   # static datasets as published Mon Nov 16 (used when the workspace copy is missing)
 DS = {'lines': 'inband_w11.csv', 'lines_all': 'lines_all_w11.csv', 'props': 'props_cat_w11.csv', 'defense': 'defense_w11.csv', 'atd': 'atd_w11.csv',
@@ -255,6 +255,8 @@ def write_manifest():
 
 def main():
     fast = '--fast' in sys.argv   # skip the blurred previews (keeps the last ones)
+    # the live tools' server data (lib/gen: Wedge's lens on each priced rung, the card, game logs); never served from site/
+    subprocess.run([sys.executable, '/home/claude/wedger/v2/build_live.py'], check=True)
     keep_pv = {}
     if fast and os.path.exists(OUT + 'assets/locked'):
         shutil.copytree(OUT + 'assets/locked', '/tmp/wedge_pv_keep', dirs_exist_ok=True)

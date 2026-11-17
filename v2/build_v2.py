@@ -495,6 +495,9 @@ s, js = _r14.apply(s, js)
 # ---- round 15: the research file in brushed metal
 _sp15 = _ilu.spec_from_file_location('r15_folder', V + 'r15_folder.py'); _r15 = _ilu.module_from_spec(_sp15); _sp15.loader.exec_module(_r15)
 s, js = _r15.apply(s, js)
+# ---- round 16: Line Shopping and Analyst, the two live tools under NFL
+_sp16 = _ilu.spec_from_file_location('r16_tools', V + 'r16_tools.py'); _r16 = _ilu.module_from_spec(_sp16); _sp16.loader.exec_module(_r16)
+s, js = _r16.apply(s, js)
 s = s.replace('@@JS@@', '<script>' + js + '</script>')
 s = s.replace('<title>Wedge', '<title>Wedge')
 open(V + 'index_full.html', 'w').write(s)
