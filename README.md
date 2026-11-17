@@ -33,6 +33,10 @@ This is a working snapshot from Week 10 of the 2026 season, exported from the se
    - `pool_real.py`: Weeks 7–9 real Robinhood main lines from the record, with point-in-time lens features.
    - `pool_rebuilt.py`: Weeks 2–6 lines rebuilt from box scores the way the books set them (fit and checked on the real Week 7–9 lines; `rebuild_check.json`). Robinhood kept no prop prices before Week 7.
    - `card_bt.py`: the Week 11 card rules (v6 range, the checks, one line per player, four per game, the card mix), with v6 refit without the week for Weeks 7–9. Writes `rh/card_bt.csv` and `rh/card_bt_sum.csv` through `summary.py`. Results shows the final-line record (Weeks 1–9) at the top; `EXCLUDE` in `summary.py` lists the four lines the owner left out (noted on the page). `ADDED` lists Wedge picks the owner added to it by hand, and the Week 10 card's certified finals follow; together they are `rh/final_record.csv`.
+9. **Model tests, Nov 17** (`bt/next_steps/`, all on the 1,314 settled Weeks 7–10 main lines at real prices, each week scored by a model that never saw it; `common.py` is the shared harness):
+   - `calib.py` (confidence): held out, final lines already win about as often as they say (62% stated, 63–68% won). No correction is applied.
+   - `terms.py` (football terms, one at a time): only receiving blitz split × pass attempts faced beat both the market and the formula. `adopt.py` fits it on top of the live weights (held fixed) and writes `bt/cal_v6_terms.json`, which `lens/v6.py` reads. The product is held to ±1.5.
+   - `sim.py` (game simulation: carries × yards per carry, targets × catch rate × yards per catch, settings from 2025): loses to the market on its own and adds nothing to it. Not used.
 
 ## Website and memberships (live at https://wedgepicks.com)
 
