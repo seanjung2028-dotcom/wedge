@@ -6,6 +6,7 @@ import json, sys, math
 import numpy as np
 sys.path.insert(0, '/home/claude/wedger/lens'); import core
 W = '/home/claude/wedger/'
+WEEK = 11   # the week being priced; tables use every game before it (was a hard-coded 10 in each default)
 CAL = json.load(open(W + 'bt/cal_v6.json'))
 COLS = CAL['cols']; GL = CAL['group_levels']; B = np.array(CAL['boot'])
 COEF = np.array([CAL['coef'][f'grp.{g}'] for g in GL] + [CAL['coef'][c] for c in COLS])
@@ -13,18 +14,21 @@ FAM = CAL['families']; GRP = CAL['groups']
 LABEL = {'dvp': 'What the defense allows', 'overlap': 'Where the targets go', 'look': 'Against the blitz', 'volume': 'Volume the defense faces',
          'comp': 'Comparable defenses', 'consist': 'Consistency at this line', 'dir': 'Run direction', 'box': 'Box count'}
 _T = {}
-def tables(week=10, dl=W + 'dl18/'):
+def tables(week=None, dl=W + 'dl18/'):
+    week = WEEK if week is None else week
     if week not in _T:
         live, st, pos = core.load(dl); _T[week] = (core.Tables(live, st, pos, week), st)
     return _T[week]
-def pid_of(name, team, week=10):
+def pid_of(name, team, week=None):
+    week = WEEK if week is None else week
     T, st = tables(week); k = core.nn(name)
     s = st[(st.nn == k) & (st.week < week)].sort_values('week')
     if not len(s): return None
     s2 = s[s.team == team]
     return (s2 if len(s2) else s).iloc[-1].player_id
 lg = lambda p: math.log(p / (1 - p)); sg = lambda z: 1 / (1 + math.exp(-z))
-def detail(name, team, opp, stat, line, mid_c, week=10):
+def detail(name, team, opp, stat, line, mid_c, week=None):
+    week = WEEK if week is None else week
     """-> dict(p, lo, hi, feats, contrib) in percent; p = market mid if the stat isn't moved or the player isn't found."""
     mid = min(max(mid_c / 100, 0.01), 0.99)
     out = {'p': 100 * mid, 'lo': 100 * mid, 'hi': 100 * mid, 'feats': {}, 'contrib': {}, 'moved': False}
@@ -46,10 +50,11 @@ def detail(name, team, opp, stat, line, mid_c, week=10):
     out.update({'p': 100 * p, 'lo': float(100 * np.percentile(ps, 10)), 'hi': float(100 * np.percentile(ps, 90)),
                 'feats': {k: round(v, 3) for k, v in f.items() if f'{fam}.{k}' in cols}, 'contrib': contrib, 'moved': True})
     return out
-def prob(name, team, opp, stat, line, mid_c, week=10): return detail(name, team, opp, stat, line, mid_c, week)['p']
+def prob(name, team, opp, stat, line, mid_c, week=None): return detail(name, team, opp, stat, line, mid_c, week)['p']
 import re as _re
 FIXG = {'LA': 'LAR', 'WAS': 'WSH', 'JAC': 'JAX'}
-def detail_game(name, game, stat, line, mid_c, week=10):
+def detail_game(name, game, stat, line, mid_c, week=None):
+    week = WEEK if week is None else week
     """Same as detail(), finding the player's team from the game ('AWY @ HOM')."""
     a, h = [FIXG.get(t, t) for t in game.split(' @ ')]
     T, st = tables(week); k = core.nn(name)

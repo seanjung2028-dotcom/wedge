@@ -19,6 +19,7 @@ for n, x in files.items():
     open(V + 'out/' + n, 'w').write(x)
     json.dump({'text': x}, open(V + 'db/' + n.replace('.', '_') + '.json', 'w'), ensure_ascii=False)
     print(n, 'bytes', len(x.encode()), 'doc', len(json.dumps({'text': x}, ensure_ascii=False).encode()))
+if not os.path.exists(B + 'rh/index_emu.html'): print('no emulator template; skipped index_emu.html'); raise SystemExit
 tpl = open(B + 'rh/index_emu.html').read()
 i = tpl.index('new Map(Object.entries(') + len('new Map(Object.entries('); j = tpl.index('));\nconst S95')
 open(V + 'index_emu.html', 'w').write(tpl[:i] + json.dumps(files).replace('</', '<\\/') + tpl[j:])

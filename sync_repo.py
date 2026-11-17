@@ -6,11 +6,11 @@ store snapshots, harness pages or images; files over 2 MB are skipped (except th
 import os, re, shutil, subprocess, sys, tempfile
 SRC = '/home/claude/wedger'; REPO = '/home/claude/wedge'
 EXD = re.compile(r'^(dl\d+|nflverse_dl\d*|nba_dl\d*|bak_.*|dbsnap.*|dbw|brand|artifact-files|ref|mnf_out|thu_posted|photos/(raw|sheets|web)|harness/(w8|s|anim)|nfl8'
-                 r'|v2/(db.*|data|h|v1db)|rh/[^/]+|pull\d+/[^/]*_out|tools|site_protected|\.wrangler)(/|$)')
+                 r'|v2/(db.*|data|h|v1db)|rh/[^/]+|pull\d+/[^/]*_out|tools|site_protected|nfl|\.wrangler)(/|$)')
 KEEP_EXT = {'.py', '.js', '.css', '.sh', '.md', '.json', '.csv', '.txt'}
 HTML_OK = {'rh/index_full.html', 'v2/out/index.html'}
 SKIP = {'picklog/pick_log_nov8_12.md', 'kx_1023.json', 'blobs_1022.json', 'dash_skill_hits.txt', 'js_calls.txt', 'w7_old_keys.json'}
-RH_DATA_OK = {'results_w6_w10.csv', 'certs_seed.json', 'analysts_seed.json', 'weather_w10.json'}   # rh/ keeps code plus these records
+RH_DATA_OK = {'results_w6_w10.csv', 'results_w6_w11.csv', 'weather_w11.json', 'certs_seed.json', 'analysts_seed.json', 'weather_w10.json'}   # rh/ keeps code plus these records
 REPO_ONLY = {'README.md', '.gitignore', 'CLAUDE.md'}
 MAXB = 2 * 1024 * 1024
 SITE_MAXB = 50 * 1024 * 1024   # site/ is the standalone website: every file goes, whatever its type

@@ -11,12 +11,19 @@ Run after every site update:  python3 /home/claude/wedger/v2/build_site.py
 """
 import hashlib, json, os, re, shutil, sys
 W = '/home/claude/wedger/'; R = W + 'rh/'; OUT = W + 'site/'; SRC = W + 'v2/out/'
-DS = {'lines': 'inband_w10.csv', 'lines_all': 'lines_all_w10.csv', 'props': 'props_cat_w10.csv', 'defense': 'defense_w10.csv', 'atd': 'atd_w10.csv',
-      'results': 'results_w6_w10.csv', 'hist_perms': 'hist_perms.csv', 'hist_lines': 'hist_lines.csv', 'sit': W + 'v2/data/sit_w10_v2.csv',
-      'outlook': 'outlook_w10.csv', 'nflctx': 'nflctx_w10.csv', 'nba_lines': '../nba/nba_lines.csv', 'nba_sit': '../nba/nba_sit.csv',
+P16 = 'pub1116/'   # static datasets as published Mon Nov 16 (used when the workspace copy is missing)
+DS = {'lines': 'inband_w11.csv', 'lines_all': 'lines_all_w11.csv', 'props': 'props_cat_w11.csv', 'defense': 'defense_w11.csv', 'atd': 'atd_w11.csv',
+      'results': 'results_w6_w11.csv', 'hist_perms': 'hist_perms.csv', 'hist_lines': 'hist_lines.csv', 'sit': W + 'v2/data/sit_w11_v2.csv',
+      'outlook': 'outlook_w11.csv', 'nflctx': 'nflctx_w11.csv', 'nba_lines': '../nba/nba_lines.csv', 'nba_sit': '../nba/nba_sit.csv',
       'nba_outlook': '../nba/nba_outlook.csv', 'nba_ctx': '../nba/nba_ctx.csv', 'pick_prices': 'pick_prices_w7.csv', 'nba_results': '../nba/nba_results.csv',
-      'proj': 'proj_w10.csv', 'bt_weeks': 'bt_weeks.csv', 'bt_props': 'bt_props.csv', 'mom_summary': 'mom_summary.csv', 'team_mom': 'team_mom.csv',
-      'defhist': 'defhist_w10.csv', 'cats': 'cats.csv', 'research': 'research.csv', 'inj': W + 'v2/data/inj_w10.csv'}
+      'proj': 'proj_w11.csv', 'bt_weeks': 'bt_weeks.csv', 'bt_props': 'bt_props.csv', 'mom_summary': 'mom_summary.csv', 'team_mom': 'team_mom.csv',
+      'defhist': 'defhist_w11.csv', 'cats': 'cats.csv', 'research': 'research.csv', 'inj': W + 'v2/data/inj_w11.csv'}
+def ds_path(k, v):
+    f = v if v.startswith('/') else R + v
+    if os.path.exists(f): return f
+    alt = R + P16 + k + '.csv'
+    return alt if os.path.exists(alt) else f
+PUB = '/home/claude/wedge/site/'   # repo clone's published site (asset fallback)
 CERTS = R + 'certs_seed.json'          # local copy of the live wedger/certs doc (refresh it whenever certs change)
 ANALYSTS = R + 'analysts_seed.json'    # local copy of the live wedger/analysts doc
 
@@ -29,7 +36,7 @@ def assets():
         m[v] = (W + 'brand/' + f, 'assets/img/' + f)
     FF = {'archivo': 'archivo-latin-wght-normal', 'geist400': 'geist-sans-latin-400-normal', 'geist500': 'geist-sans-latin-500-normal', 'geist600': 'geist-sans-latin-600-normal',
           'geist700': 'geist-sans-latin-700-normal', 'mono400': 'geist-mono-latin-400-normal', 'mono500': 'geist-mono-latin-500-normal', 'archivowide': 'archivo-latin-wdth-normal'}
-    for k, v in json.load(open(W + 'brand/font_blobs.json')).items():
+    for k, v in (json.load(open(W + 'brand/font_blobs.json')) if os.path.exists(W + 'brand/font_blobs.json') else {}).items():
         m[v] = (W + 'brand/fonts/' + FF[k] + '.woff2', 'assets/fonts/' + FF[k] + '.woff2')
     for v, f in (('cb3e379850ce2f3eab2050b2876e9f7f', 'kodchasan-500'), ('28e26ef48c0a46a1b873963434da73e9', 'kodchasan-600'), ('97527b50379fa5df66d261f6a12986a4', 'handlee')):
         m[v] = (W + 'brand/fonts/' + f + '.woff2', 'assets/fonts/' + f + '.woff2')
@@ -38,6 +45,12 @@ def assets():
         m[v] = (W + 'helm/out/' + k + '.webp', 'assets/helmets/' + k + '.webp')
     for k, v in json.load(open(W + 'photos/blob_map.json')).items():
         m[v] = (W + 'photos/web/' + k + '.jpg', 'assets/players/' + k + '.jpg')
+    # sources missing from the workspace (brand/, helm/out, photos/web) fall back to the last published copy
+    if os.path.exists(W + 'v2/blob_paths.json'):
+        for v, dst in json.load(open(W + 'v2/blob_paths.json')).items():
+            if v not in m or not os.path.exists(m[v][0]): m[v] = (PUB + dst, dst)
+    for v, (src, dst) in list(m.items()):
+        if not os.path.exists(src) and os.path.exists(PUB + dst): m[v] = (PUB + dst, dst)
     return m
 
 LIGHT = """--color-bg:#ffffff;--color-fg:#1f1e1d;--color-fg-muted:#6b6a68;--color-border-line:#e5e3df;--color-panel:#faf9f7;--color-ok:#2e7d4f;--color-warn:#b26a00;--color-bad:#c0392b;
@@ -265,7 +278,7 @@ def main():
     # data: Research gets everything; the public bundle is just the settled certified record (the headline numbers)
     tot = 0; ds = {}
     for k, v in DS.items():
-        p = v if v.startswith('/') else R + v; ds[k] = open(p, encoding='utf-8').read(); tot += os.path.getsize(p)
+        p = ds_path(k, v); ds[k] = open(p, encoding='utf-8').read(); tot += os.path.getsize(p)
     certs = json.load(open(CERTS))['picks']
     a = json.load(open(ANALYSTS)); a = a.get('data', a)
     full = json.dumps({'ds': ds, 'certs': {'picks': certs}, 'analysts': a}, ensure_ascii=False, separators=(',', ':'))

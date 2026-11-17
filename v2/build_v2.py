@@ -480,6 +480,9 @@ s, js = _r9.apply(s, js)
 # ---- round 10: wedgepicks.com membership (Subscribe, sign-in, members-only pages) and spacing fixes
 _sp10 = _ilu.spec_from_file_location('r10_site', V + 'r10_site.py'); _r10 = _ilu.module_from_spec(_sp10); _sp10.loader.exec_module(_r10)
 s, js = _r10.apply(s, js)
+# ---- round 11: Week 11
+_sp11 = _ilu.spec_from_file_location('r11_week11', V + 'r11_week11.py'); _r11 = _ilu.module_from_spec(_sp11); _sp11.loader.exec_module(_r11)
+s, js = _r11.apply(s, js)
 s = s.replace('@@JS@@', '<script>' + js + '</script>')
 s = s.replace('<title>Wedge', '<title>Wedge')
 open(V + 'index_full.html', 'w').write(s)
