@@ -59,6 +59,32 @@ This is a working snapshot from Week 10 of the 2026 season, exported from the se
 - **Test locally:** `npm i wrangler@4` in a scratch folder, then from the repo root run `wrangler pages dev site --kv WEDGE --binding WEDGE_GATING=on --binding SESSION_SECRET=test --binding ANALYST_EMAILS=you@example.com`. Without an email key, sign-in shows the code on the page (local only).
 - **Host:** Cloudflare Pages project `wedgepicks`, branch `main`, no build command, output directory `site`. Pages builds `functions/` automatically. Each push to `main` redeploys.
 
+## Live tools: Line Shopping and Analyst (Nov 17)
+
+Two pages under NFL > Live. Both are open to every visitor; the server decides what each plan sees.
+
+- **Line Shopping** (`#shop`):
+  - Every open Kalshi receptions, receiving-yards, rushing-yards and rush + rec yards line in a game, both sides, read live from Kalshi's public API (Cloudflare caches prices for 10 seconds and price history for 2 minutes).
+  - Each line shows what one contract costs after fees on Kalshi (taker fee, rounded up on the order) and on Robinhood (which trades NFL props on Kalshi's book: commission up to 1¢ plus up to 1¢ exchange fee), the depth at the ask and the average fill for the chosen number of contracts, the ladder of thresholds, 72 hours of Kalshi prices and Kalshi's settlement rules.
+  - DraftKings, FanDuel, BetMGM, Fanatics and Caesars are listed as "No feed". Their prices need a licensed odds feed; none is connected.
+  - Inner Circle and up (or everyone while `WEDGE_GATING` is off) also get Wedge's number on the live price: the card build's lens moves applied to the live Kalshi middle, with the 10th–90th percentile range, the gap to the best price, the estimated value per contract and the card's call. Others see prices only.
+  - Watched lines are kept in the visitor's browser only.
+- **Analyst** (`#ask`):
+  - Questions go to `/api/v1/ask`, which runs Claude (`claude-sonnet-5-5` by default) with seven tools: `find_lines`, `get_line`, `get_player_games`, `get_card`, `get_record`, `explain_method` and `answer`.
+  - Every number in an answer must appear in a tool result or the visitor's question. If one doesn't, the model gets one retry; after that the answer is replaced with a "couldn't verify" message.
+  - It won't price in-game situations or two outcomes together, never quotes sportsbooks, and treats tool text as data. Wedge's numbers and the card need Inner Circle; recent graded lines need Research.
+  - The conversation lives in the visitor's tab (sessionStorage). Nothing is stored on the server except the daily rate-limit counters in KV.
+- **Files:**
+  - `v2/src/shop.js`, `v2/src/ask.js`, `v2/src/tools.css`, added to the page by `v2/r16_tools.py`.
+  - `functions/api/v1/shop/{games,board,market}.js`, `functions/api/v1/ask.js`.
+  - `lib/live.js` (Kalshi reads, fees, Wedge on the live price), `lib/analyst.js` (prompt, tools, number check), `lib/gate.js` (plan level).
+  - `lib/gen/live.js` and `lib/gen/logs.js`: the server's copy of this week's lens moves, card and game logs, written by `v2/build_live.py` (run by `build_site.py`). They are bundled into the functions, never served from `site/`.
+- **Settings** (same place as above):
+  - `ANTHROPIC_API_KEY` (secret, required; without it the Analyst page says it isn't switched on yet).
+  - `WEDGE_ANALYST` (`off` turns the Analyst off without removing the key).
+  - `ANALYST_MODEL` (default `claude-sonnet-5-5`), `ANTHROPIC_VERSION` (default `2023-06-01`).
+  - `ANALYST_PER_IP_DAY` (default 25 questions per visitor per day) and `ANALYST_TOTAL_DAY` (default 400 a day for the whole site). Both need the `WEDGE` KV binding; without it there is no limit.
+
 ## The model
 
 - **Wedge % (v6):** see `lens/v6.py` and `lens/core.py`.
