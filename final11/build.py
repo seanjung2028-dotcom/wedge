@@ -62,6 +62,10 @@ def explain(k, stat, name, team, opp, pid, feats):
     if k == 'look':
         bl = T.P.get(pid, {}).get('bl', 0.0)
         return f"{opp} blitzes on {pc(D.blitz)} of dropbacks ({rankw('blitz', opp)}; league {pc(T.lg_blitz)}); his target share runs {abs(100 * bl):.0f}% {'higher' if bl > 0 else 'lower'} against the blitz."
+    if k == 'look_x_volume':
+        bl = T.P.get(pid, {}).get('bl', 0.0)
+        return (f"The two together: his target share runs {abs(100 * bl):.0f}% {'higher' if bl > 0 else 'lower'} against the blitz, and {opp} blitzes on {pc(D.blitz)} of dropbacks "
+                f"while facing {D.pass_att:.1f} pass attempts a game ({rank('pass_att', opp)}). On held-out weeks this pairing beat both the market and the lens without it.")
     if k == 'volume':
         if stat in ('rushyd', 'rryd'): return f"{opp} faces {D.rush_att:.1f} rush attempts a game ({rank('rush_att', opp)})."
         return f"{opp} faces {D.pass_att:.1f} pass attempts a game ({rank('pass_att', opp)}). In the backtest, receiving overs against heavy-volume defenses cleared less often than priced."

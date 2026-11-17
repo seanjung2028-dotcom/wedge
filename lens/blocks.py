@@ -26,6 +26,11 @@ def backtest_rows():
     W_ = [('Run direction (rushing)', cal['rush.dir']), ('Yards per carry allowed (rushing)', cal['rush.dvp']), ('Light boxes (rushing)', cal['rush.box']),
           ('Pass attempts the defense faces (receiving)', cal['recv.volume']), ('Position yards allowed (receiving)', cal['recv.dvp']), ('Blitz split (receiving)', cal['recv.look'])]
     for lab, v in W_: rows.append([f'Weight: {lab}', f'{v:+.3f} per unit', 'toward the over' if v > 0 else 'toward the under'])
+    import os
+    if os.path.exists(W + 'bt/cal_v6_terms.json'):
+        for t in json.load(open(W + 'bt/cal_v6_terms.json'))['terms']:
+            if t['name'] == 'look_x_volume':
+                rows.append(['Weight: Blitz split × pass attempts faced (receiving, added Nov 17)', f"{t['coef']:+.3f} per unit", 'toward the over' if t['coef'] > 0 else 'toward the under'])
     return rows
 def side(off, de, week):
     L, S, pos, T = _data(week)

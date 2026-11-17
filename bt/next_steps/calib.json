@@ -1,0 +1,1826 @@
+{
+ "lowo": {
+  "params": {
+   "7": {
+    "shrink": 1.5,
+    "recalibrate": [
+     -0.041,
+     1.297,
+     1.306
+    ],
+    "pick-aware": 1.45,
+    "pick_sides": 127
+   },
+   "8": {
+    "shrink": 0.85,
+    "recalibrate": [
+     -0.127,
+     0.796,
+     0.862
+    ],
+    "pick-aware": 0.9,
+    "pick_sides": 477
+   },
+   "9": {
+    "shrink": 1.15,
+    "recalibrate": [
+     -0.071,
+     1.238,
+     1.067
+    ],
+    "pick-aware": 1.5,
+    "pick_sides": 103
+   },
+   "10": {
+    "shrink": 1.35,
+    "recalibrate": [
+     -0.145,
+     1.035,
+     1.187
+    ],
+    "pick-aware": 1.45,
+    "pick_sides": 141
+   }
+  },
+  "models": {
+   "none": {
+    "n": 1314,
+    "logloss": 0.68997,
+    "brier": 0.24776,
+    "w7": 0.68918,
+    "w8": 0.70201,
+    "w9": 0.68576,
+    "w10": 0.68508,
+    "vs_current": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "vs_market": [
+     0.0002,
+     -0.00463,
+     0.00517
+    ],
+    "card": {
+     "Final line": {
+      "n": 19,
+      "stated": 62.2,
+      "won": 68.4,
+      "gap": 6.2,
+      "z": 0.56,
+      "mkt": 51.0,
+      "roi": 32.8
+     },
+     "Conditional lean": {
+      "n": 19,
+      "stated": 55.9,
+      "won": 68.4,
+      "gap": 12.5,
+      "z": 1.1,
+      "mkt": 50.1,
+      "roi": 35.3
+     }
+    },
+    "all_cleared": {
+     "Final line": {
+      "n": 35,
+      "stated": 61.9,
+      "won": 62.9,
+      "gap": 1.0,
+      "z": 0.12,
+      "mkt": 51.3,
+      "roi": 21.4
+     },
+     "Conditional lean": {
+      "n": 48,
+      "stated": 55.7,
+      "won": 54.2,
+      "gap": -1.5,
+      "z": -0.21,
+      "mkt": 50.8,
+      "roi": 5.5
+     }
+    },
+    "finals": [
+     {
+      "week": 7,
+      "game": "DEN @ ARI",
+      "player": "Tyler Allgeier",
+      "stat": "rushyd",
+      "k": 30,
+      "side": "Yes",
+      "price": 53.0,
+      "mkt": 52.5,
+      "stated": 58.2,
+      "win": 0
+     },
+     {
+      "week": 7,
+      "game": "IND @ MIN",
+      "player": "Aaron Jones Sr.",
+      "stat": "rushyd",
+      "k": 40,
+      "side": "Yes",
+      "price": 50.0,
+      "mkt": 49.5,
+      "stated": 59.9,
+      "win": 0
+     },
+     {
+      "week": 7,
+      "game": "LAR @ LV",
+      "player": "Kyren Williams",
+      "stat": "rushyd",
+      "k": 70,
+      "side": "Yes",
+      "price": 49.0,
+      "mkt": 48.5,
+      "stated": 58.2,
+      "win": 1
+     },
+     {
+      "week": 7,
+      "game": "KC @ SEA",
+      "player": "Velus Jones Jr.",
+      "stat": "rushyd",
+      "k": 10,
+      "side": "No",
+      "price": 51.0,
+      "mkt": 50.5,
+      "stated": 57.6,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "IND @ JAX",
+      "player": "Bhayshul Tuten",
+      "stat": "rryd",
+      "k": 80,
+      "side": "Yes",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 71.8,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "IND @ JAX",
+      "player": "Chris Rodriguez Jr.",
+      "stat": "rushyd",
+      "k": 30,
+      "side": "Yes",
+      "price": 49.0,
+      "mkt": 48.5,
+      "stated": 58.5,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "KC @ DEN",
+      "player": "Kenneth Walker III",
+      "stat": "rushyd",
+      "k": 90,
+      "side": "Yes",
+      "price": 48.0,
+      "mkt": 47.5,
+      "stated": 67.9,
+      "win": 0
+     },
+     {
+      "week": 8,
+      "game": "LAC @ LAR",
+      "player": "Kyren Williams",
+      "stat": "rushyd",
+      "k": 60,
+      "side": "Yes",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 61.2,
+      "win": 0
+     },
+     {
+      "week": 8,
+      "game": "NE @ MIA",
+      "player": "Drake Maye",
+      "stat": "rushyd",
+      "k": 25,
+      "side": "Yes",
+      "price": 48.0,
+      "mkt": 47.5,
+      "stated": 59.7,
+      "win": 0
+     },
+     {
+      "week": 8,
+      "game": "NE @ MIA",
+      "player": "Rhamondre Stevenson",
+      "stat": "rryd",
+      "k": 80,
+      "side": "Yes",
+      "price": 48.0,
+      "mkt": 47.5,
+      "stated": 56.9,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "CHI @ SEA",
+      "player": "Caleb Williams",
+      "stat": "rushyd",
+      "k": 25,
+      "side": "No",
+      "price": 51.0,
+      "mkt": 50.5,
+      "stated": 74.0,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "CHI @ SEA",
+      "player": "D'Andre Swift",
+      "stat": "rushyd",
+      "k": 60,
+      "side": "No",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 72.6,
+      "win": 0
+     },
+     {
+      "week": 9,
+      "game": "LV @ SF",
+      "player": "Brock Purdy",
+      "stat": "rushyd",
+      "k": 15,
+      "side": "Yes",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 61.1,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "CAR @ NO",
+      "player": "Chuba Hubbard",
+      "stat": "rushyd",
+      "k": 80,
+      "side": "Yes",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 57.2,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "CAR @ NO",
+      "player": "Tyler Shough",
+      "stat": "rushyd",
+      "k": 15,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 60.1,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Brock Purdy",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 64.3,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Christian McCaffrey",
+      "stat": "rushyd",
+      "k": 60,
+      "side": "Yes",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 62.3,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "PIT @ CIN",
+      "player": "Samaje Perine",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "No",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 62.1,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Dak Prescott",
+      "stat": "rushyd",
+      "k": 10,
+      "side": "No",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 58.5,
+      "win": 1
+     }
+    ]
+   },
+   "shrink": {
+    "n": 1314,
+    "logloss": 0.68867,
+    "brier": 0.24733,
+    "w7": 0.68868,
+    "w8": 0.69811,
+    "w9": 0.68514,
+    "w10": 0.68447,
+    "vs_current": [
+     -0.0013,
+     -0.00254,
+     -0.00014
+    ],
+    "vs_market": [
+     -0.0011,
+     -0.00628,
+     0.00349
+    ],
+    "card": {
+     "Final line": {
+      "n": 18,
+      "stated": 63.2,
+      "won": 66.7,
+      "gap": 3.5,
+      "z": 0.31,
+      "mkt": 51.1,
+      "roi": 29.2
+     },
+     "Conditional lean": {
+      "n": 22,
+      "stated": 56.3,
+      "won": 72.7,
+      "gap": 16.4,
+      "z": 1.55,
+      "mkt": 50.5,
+      "roi": 42.6
+     }
+    },
+    "all_cleared": {
+     "Final line": {
+      "n": 37,
+      "stated": 62.3,
+      "won": 62.2,
+      "gap": -0.1,
+      "z": -0.01,
+      "mkt": 51.2,
+      "roi": 20.2
+     },
+     "Conditional lean": {
+      "n": 49,
+      "stated": 55.9,
+      "won": 59.2,
+      "gap": 3.3,
+      "z": 0.46,
+      "mkt": 50.9,
+      "roi": 15.2
+     }
+    },
+    "finals": [
+     {
+      "week": 7,
+      "game": "DEN @ ARI",
+      "player": "Tyler Allgeier",
+      "stat": "rushyd",
+      "k": 30,
+      "side": "Yes",
+      "price": 53.0,
+      "mkt": 52.5,
+      "stated": 61.0,
+      "win": 0
+     },
+     {
+      "week": 7,
+      "game": "IND @ MIN",
+      "player": "Aaron Jones Sr.",
+      "stat": "rushyd",
+      "k": 40,
+      "side": "Yes",
+      "price": 50.0,
+      "mkt": 49.5,
+      "stated": 64.8,
+      "win": 0
+     },
+     {
+      "week": 7,
+      "game": "LAR @ LV",
+      "player": "Kyren Williams",
+      "stat": "rushyd",
+      "k": 70,
+      "side": "Yes",
+      "price": 49.0,
+      "mkt": 48.5,
+      "stated": 62.9,
+      "win": 1
+     },
+     {
+      "week": 7,
+      "game": "KC @ SEA",
+      "player": "Velus Jones Jr.",
+      "stat": "rushyd",
+      "k": 10,
+      "side": "No",
+      "price": 51.0,
+      "mkt": 50.5,
+      "stated": 61.1,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "IND @ JAX",
+      "player": "Bhayshul Tuten",
+      "stat": "rryd",
+      "k": 80,
+      "side": "Yes",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 69.4,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "KC @ DEN",
+      "player": "Kenneth Walker III",
+      "stat": "rushyd",
+      "k": 90,
+      "side": "Yes",
+      "price": 48.0,
+      "mkt": 47.5,
+      "stated": 65.1,
+      "win": 0
+     },
+     {
+      "week": 8,
+      "game": "NE @ MIA",
+      "player": "Drake Maye",
+      "stat": "rushyd",
+      "k": 25,
+      "side": "Yes",
+      "price": 48.0,
+      "mkt": 47.5,
+      "stated": 57.9,
+      "win": 0
+     },
+     {
+      "week": 8,
+      "game": "NE @ MIA",
+      "player": "Rhamondre Stevenson",
+      "stat": "rryd",
+      "k": 80,
+      "side": "Yes",
+      "price": 48.0,
+      "mkt": 47.5,
+      "stated": 55.5,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "CHI @ SEA",
+      "player": "Caleb Williams",
+      "stat": "rushyd",
+      "k": 25,
+      "side": "No",
+      "price": 51.0,
+      "mkt": 50.5,
+      "stated": 70.9,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "CHI @ SEA",
+      "player": "D'Andre Swift",
+      "stat": "rushyd",
+      "k": 60,
+      "side": "No",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 69.8,
+      "win": 0
+     },
+     {
+      "week": 9,
+      "game": "LV @ SF",
+      "player": "Brock Purdy",
+      "stat": "rushyd",
+      "k": 15,
+      "side": "Yes",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 62.5,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "CAR @ NO",
+      "player": "Chuba Hubbard",
+      "stat": "rushyd",
+      "k": 80,
+      "side": "Yes",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 59.1,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "CAR @ NO",
+      "player": "Tyler Shough",
+      "stat": "rushyd",
+      "k": 15,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 62.0,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "PIT @ CIN",
+      "player": "Rico Dowdle",
+      "stat": "rushyd",
+      "k": 30,
+      "side": "Yes",
+      "price": 51.0,
+      "mkt": 50.5,
+      "stated": 57.0,
+      "win": 0
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Brock Purdy",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 67.5,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Christian McCaffrey",
+      "stat": "rushyd",
+      "k": 60,
+      "side": "Yes",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 65.2,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "PIT @ CIN",
+      "player": "Samaje Perine",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "No",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 64.9,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Dak Prescott",
+      "stat": "rushyd",
+      "k": 10,
+      "side": "No",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 60.9,
+      "win": 1
+     }
+    ]
+   },
+   "recalibrate": {
+    "n": 1314,
+    "logloss": 0.68952,
+    "brier": 0.24778,
+    "w7": 0.68717,
+    "w8": 0.7015,
+    "w9": 0.68352,
+    "w10": 0.68821,
+    "vs_current": [
+     -0.00045,
+     -0.00316,
+     0.00236
+    ],
+    "vs_market": [
+     -0.00024,
+     -0.00555,
+     0.00496
+    ],
+    "card": {
+     "Final line": {
+      "n": 12,
+      "stated": 63.2,
+      "won": 58.3,
+      "gap": -4.9,
+      "z": -0.35,
+      "mkt": 51.8,
+      "roi": 11.6
+     },
+     "Conditional lean": {
+      "n": 18,
+      "stated": 55.3,
+      "won": 61.1,
+      "gap": 5.8,
+      "z": 0.5,
+      "mkt": 49.9,
+      "roi": 21.1
+     }
+    },
+    "all_cleared": {
+     "Final line": {
+      "n": 65,
+      "stated": 60.4,
+      "won": 58.5,
+      "gap": -2.0,
+      "z": -0.33,
+      "mkt": 51.6,
+      "roi": 12.2
+     },
+     "Conditional lean": {
+      "n": 131,
+      "stated": 55.5,
+      "won": 49.6,
+      "gap": -5.8,
+      "z": -1.35,
+      "mkt": 51.2,
+      "roi": -3.9
+     }
+    },
+    "finals": [
+     {
+      "week": 7,
+      "game": "DEN @ ARI",
+      "player": "Tyler Allgeier",
+      "stat": "rushyd",
+      "k": 30,
+      "side": "Yes",
+      "price": 53.0,
+      "mkt": 52.5,
+      "stated": 59.7,
+      "win": 0
+     },
+     {
+      "week": 7,
+      "game": "IND @ MIN",
+      "player": "Aaron Jones Sr.",
+      "stat": "rushyd",
+      "k": 40,
+      "side": "Yes",
+      "price": 50.0,
+      "mkt": 49.5,
+      "stated": 61.8,
+      "win": 0
+     },
+     {
+      "week": 7,
+      "game": "LAR @ LV",
+      "player": "Kyren Williams",
+      "stat": "rushyd",
+      "k": 65,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 66.2,
+      "win": 1
+     },
+     {
+      "week": 7,
+      "game": "KC @ SEA",
+      "player": "Velus Jones Jr.",
+      "stat": "rushyd",
+      "k": 10,
+      "side": "No",
+      "price": 51.0,
+      "mkt": 50.5,
+      "stated": 60.9,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "IND @ JAX",
+      "player": "Bhayshul Tuten",
+      "stat": "rryd",
+      "k": 80,
+      "side": "Yes",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 66.2,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "KC @ DEN",
+      "player": "Kenneth Walker III",
+      "stat": "rushyd",
+      "k": 90,
+      "side": "Yes",
+      "price": 48.0,
+      "mkt": 47.5,
+      "stated": 62.9,
+      "win": 0
+     },
+     {
+      "week": 8,
+      "game": "NE @ MIA",
+      "player": "Drake Maye",
+      "stat": "rushyd",
+      "k": 25,
+      "side": "Yes",
+      "price": 48.0,
+      "mkt": 47.5,
+      "stated": 55.4,
+      "win": 0
+     },
+     {
+      "week": 8,
+      "game": "CHI @ SEA",
+      "player": "Caleb Williams",
+      "stat": "rushyd",
+      "k": 25,
+      "side": "No",
+      "price": 51.0,
+      "mkt": 50.5,
+      "stated": 73.6,
+      "win": 1
+     },
+     {
+      "week": 9,
+      "game": "HOU @ LAC",
+      "player": "Omarion Hampton",
+      "stat": "rryd",
+      "k": 50,
+      "side": "No",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 61.4,
+      "win": 0
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Brock Purdy",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 62.8,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Christian McCaffrey",
+      "stat": "rushyd",
+      "k": 60,
+      "side": "Yes",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 60.6,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "PIT @ CIN",
+      "player": "Samaje Perine",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "No",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 67.0,
+      "win": 1
+     }
+    ]
+   },
+   "pick-aware": {
+    "n": 1314,
+    "logloss": 0.68857,
+    "brier": 0.24722,
+    "w7": 0.68869,
+    "w8": 0.69936,
+    "w9": 0.6839,
+    "w10": 0.68437,
+    "vs_current": [
+     -0.00139,
+     -0.00266,
+     -0.00018
+    ],
+    "vs_market": [
+     -0.00119,
+     -0.00684,
+     0.00365
+    ],
+    "card": {
+     "Final line": {
+      "n": 20,
+      "stated": 63.3,
+      "won": 70.0,
+      "gap": 6.7,
+      "z": 0.62,
+      "mkt": 51.0,
+      "roi": 36.1
+     },
+     "Conditional lean": {
+      "n": 22,
+      "stated": 56.9,
+      "won": 68.2,
+      "gap": 11.3,
+      "z": 1.07,
+      "mkt": 50.8,
+      "roi": 33.0
+     }
+    },
+    "all_cleared": {
+     "Final line": {
+      "n": 40,
+      "stated": 62.5,
+      "won": 62.5,
+      "gap": -0.0,
+      "z": -0.0,
+      "mkt": 51.2,
+      "roi": 20.9
+     },
+     "Conditional lean": {
+      "n": 56,
+      "stated": 55.8,
+      "won": 55.4,
+      "gap": -0.4,
+      "z": -0.06,
+      "mkt": 50.7,
+      "roi": 8.2
+     }
+    },
+    "finals": [
+     {
+      "week": 7,
+      "game": "DEN @ ARI",
+      "player": "Tyler Allgeier",
+      "stat": "rushyd",
+      "k": 30,
+      "side": "Yes",
+      "price": 53.0,
+      "mkt": 52.5,
+      "stated": 60.7,
+      "win": 0
+     },
+     {
+      "week": 7,
+      "game": "IND @ MIN",
+      "player": "Aaron Jones Sr.",
+      "stat": "rushyd",
+      "k": 40,
+      "side": "Yes",
+      "price": 50.0,
+      "mkt": 49.5,
+      "stated": 64.3,
+      "win": 0
+     },
+     {
+      "week": 7,
+      "game": "LAR @ LV",
+      "player": "Kyren Williams",
+      "stat": "rushyd",
+      "k": 70,
+      "side": "Yes",
+      "price": 49.0,
+      "mkt": 48.5,
+      "stated": 62.5,
+      "win": 1
+     },
+     {
+      "week": 7,
+      "game": "KC @ SEA",
+      "player": "Velus Jones Jr.",
+      "stat": "rushyd",
+      "k": 10,
+      "side": "No",
+      "price": 51.0,
+      "mkt": 50.5,
+      "stated": 60.7,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "IND @ JAX",
+      "player": "Bhayshul Tuten",
+      "stat": "rryd",
+      "k": 80,
+      "side": "Yes",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 70.2,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "IND @ JAX",
+      "player": "Chris Rodriguez Jr.",
+      "stat": "rushyd",
+      "k": 30,
+      "side": "Yes",
+      "price": 49.0,
+      "mkt": 48.5,
+      "stated": 57.5,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "KC @ DEN",
+      "player": "Kenneth Walker III",
+      "stat": "rushyd",
+      "k": 90,
+      "side": "Yes",
+      "price": 48.0,
+      "mkt": 47.5,
+      "stated": 66.1,
+      "win": 0
+     },
+     {
+      "week": 8,
+      "game": "NE @ MIA",
+      "player": "Drake Maye",
+      "stat": "rushyd",
+      "k": 25,
+      "side": "Yes",
+      "price": 48.0,
+      "mkt": 47.5,
+      "stated": 58.5,
+      "win": 0
+     },
+     {
+      "week": 8,
+      "game": "NE @ MIA",
+      "player": "Rhamondre Stevenson",
+      "stat": "rryd",
+      "k": 80,
+      "side": "Yes",
+      "price": 48.0,
+      "mkt": 47.5,
+      "stated": 55.9,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "CHI @ SEA",
+      "player": "Caleb Williams",
+      "stat": "rushyd",
+      "k": 25,
+      "side": "No",
+      "price": 51.0,
+      "mkt": 50.5,
+      "stated": 72.0,
+      "win": 1
+     },
+     {
+      "week": 8,
+      "game": "CHI @ SEA",
+      "player": "D'Andre Swift",
+      "stat": "rushyd",
+      "k": 60,
+      "side": "No",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 70.8,
+      "win": 0
+     },
+     {
+      "week": 9,
+      "game": "LV @ SF",
+      "player": "Brock Purdy",
+      "stat": "rushyd",
+      "k": 15,
+      "side": "Yes",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 65.7,
+      "win": 1
+     },
+     {
+      "week": 9,
+      "game": "TB @ CHI",
+      "player": "Caleb Williams",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "No",
+      "price": 51.0,
+      "mkt": 50.5,
+      "stated": 59.9,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "CAR @ NO",
+      "player": "Chuba Hubbard",
+      "stat": "rushyd",
+      "k": 80,
+      "side": "Yes",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 59.7,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "CAR @ NO",
+      "player": "Tyler Shough",
+      "stat": "rushyd",
+      "k": 15,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 62.5,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "PIT @ CIN",
+      "player": "Rico Dowdle",
+      "stat": "rushyd",
+      "k": 30,
+      "side": "Yes",
+      "price": 51.0,
+      "mkt": 50.5,
+      "stated": 57.4,
+      "win": 0
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Brock Purdy",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 68.4,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Christian McCaffrey",
+      "stat": "rushyd",
+      "k": 60,
+      "side": "Yes",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 66.0,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "PIT @ CIN",
+      "player": "Samaje Perine",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "No",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 65.7,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Dak Prescott",
+      "stat": "rushyd",
+      "k": 10,
+      "side": "No",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 61.6,
+      "win": 1
+     }
+    ]
+   }
+  },
+  "market": {
+   "n": 1314,
+   "logloss": 0.68977,
+   "brier": 0.24831,
+   "w7": 0.69248,
+   "w8": 0.68562,
+   "w9": 0.69115,
+   "w10": 0.6891
+  },
+  "reliability": [
+   {
+    "stated": 40.6,
+    "won": 33.3,
+    "n": 132
+   },
+   {
+    "stated": 44.7,
+    "won": 43.5,
+    "n": 131
+   },
+   {
+    "stated": 46.2,
+    "won": 45.8,
+    "n": 131
+   },
+   {
+    "stated": 47.5,
+    "won": 39.4,
+    "n": 132
+   },
+   {
+    "stated": 48.7,
+    "won": 45.0,
+    "n": 131
+   },
+   {
+    "stated": 49.8,
+    "won": 51.1,
+    "n": 131
+   },
+   {
+    "stated": 51.0,
+    "won": 45.5,
+    "n": 132
+   },
+   {
+    "stated": 52.2,
+    "won": 58.0,
+    "n": 131
+   },
+   {
+    "stated": 53.8,
+    "won": 50.4,
+    "n": 131
+   },
+   {
+    "stated": 58.4,
+    "won": 56.1,
+    "n": 132
+   }
+  ]
+ },
+ "forward": {
+  "params": {
+   "9": {
+    "shrink": 0.6,
+    "recalibrate": [
+     0.007,
+     1.556,
+     0.991
+    ],
+    "pick-aware": 1.0,
+    "pick_sides": 0
+   },
+   "10": {
+    "shrink": 1.5,
+    "recalibrate": [
+     -0.089,
+     1.261,
+     1.232
+    ],
+    "pick-aware": 1.5,
+    "pick_sides": 58
+   }
+  },
+  "models": {
+   "none": {
+    "n": 700,
+    "logloss": 0.68751,
+    "brier": 0.24719,
+    "w9": 0.68972,
+    "w10": 0.68508,
+    "vs_current": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "vs_market": [
+     -0.00266,
+     -0.00586,
+     0.0003
+    ],
+    "card": {
+     "Final line": {
+      "n": 6,
+      "stated": 60.7,
+      "won": 100.0,
+      "gap": 39.3,
+      "z": 1.97,
+      "mkt": 53.2,
+      "roi": 86.3
+     },
+     "Conditional lean": {
+      "n": 3,
+      "stated": 55.7,
+      "won": 0.0,
+      "gap": -55.7,
+      "z": -1.94,
+      "mkt": 50.8,
+      "roi": -100.0
+     }
+    },
+    "all_cleared": {
+     "Final line": {
+      "n": 12,
+      "stated": 59.7,
+      "won": 91.7,
+      "gap": 32.0,
+      "z": 2.26,
+      "mkt": 52.8,
+      "roi": 71.9
+     },
+     "Conditional lean": {
+      "n": 6,
+      "stated": 57.3,
+      "won": 33.3,
+      "gap": -24.0,
+      "z": -1.19,
+      "mkt": 52.5,
+      "roi": -37.1
+     }
+    },
+    "finals": [
+     {
+      "week": 10,
+      "game": "CAR @ NO",
+      "player": "Chuba Hubbard",
+      "stat": "rushyd",
+      "k": 80,
+      "side": "Yes",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 57.2,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "CAR @ NO",
+      "player": "Tyler Shough",
+      "stat": "rushyd",
+      "k": 15,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 60.1,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Brock Purdy",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 64.3,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Christian McCaffrey",
+      "stat": "rushyd",
+      "k": 60,
+      "side": "Yes",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 62.3,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "PIT @ CIN",
+      "player": "Samaje Perine",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "No",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 62.1,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Dak Prescott",
+      "stat": "rushyd",
+      "k": 10,
+      "side": "No",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 58.5,
+      "win": 1
+     }
+    ]
+   },
+   "shrink": {
+    "n": 700,
+    "logloss": 0.68744,
+    "brier": 0.24717,
+    "w9": 0.69027,
+    "w10": 0.68433,
+    "vs_current": [
+     -7e-05,
+     -0.00155,
+     0.00141
+    ],
+    "vs_market": [
+     -0.00273,
+     -0.00744,
+     0.00161
+    ],
+    "card": {
+     "Final line": {
+      "n": 7,
+      "stated": 63.4,
+      "won": 85.7,
+      "gap": 22.3,
+      "z": 1.23,
+      "mkt": 52.8,
+      "roi": 60.9
+     },
+     "Conditional lean": {
+      "n": 2,
+      "stated": 55.0,
+      "won": 50.0,
+      "gap": -5.0,
+      "z": -0.14,
+      "mkt": 50.5,
+      "roi": -2.0
+     }
+    },
+    "all_cleared": {
+     "Final line": {
+      "n": 14,
+      "stated": 62.2,
+      "won": 78.6,
+      "gap": 16.4,
+      "z": 1.27,
+      "mkt": 52.3,
+      "roi": 48.8
+     },
+     "Conditional lean": {
+      "n": 7,
+      "stated": 57.2,
+      "won": 57.1,
+      "gap": -0.1,
+      "z": -0.0,
+      "mkt": 51.9,
+      "roi": 9.0
+     }
+    },
+    "finals": [
+     {
+      "week": 10,
+      "game": "CAR @ NO",
+      "player": "Chuba Hubbard",
+      "stat": "rushyd",
+      "k": 80,
+      "side": "Yes",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 60.0,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "CAR @ NO",
+      "player": "Tyler Shough",
+      "stat": "rushyd",
+      "k": 15,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 62.8,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "PIT @ CIN",
+      "player": "Rico Dowdle",
+      "stat": "rushyd",
+      "k": 30,
+      "side": "Yes",
+      "price": 51.0,
+      "mkt": 50.5,
+      "stated": 57.7,
+      "win": 0
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Brock Purdy",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 68.8,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Christian McCaffrey",
+      "stat": "rushyd",
+      "k": 60,
+      "side": "Yes",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 66.4,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "PIT @ CIN",
+      "player": "Samaje Perine",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "No",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 66.1,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Dak Prescott",
+      "stat": "rushyd",
+      "k": 10,
+      "side": "No",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 61.9,
+      "win": 1
+     }
+    ]
+   },
+   "recalibrate": {
+    "n": 700,
+    "logloss": 0.6885,
+    "brier": 0.24769,
+    "w9": 0.69072,
+    "w10": 0.68606,
+    "vs_current": [
+     0.00099,
+     -0.00103,
+     0.00308
+    ],
+    "vs_market": [
+     -0.00167,
+     -0.00493,
+     0.00185
+    ],
+    "card": {
+     "Final line": {
+      "n": 7,
+      "stated": 63.2,
+      "won": 100.0,
+      "gap": 36.8,
+      "z": 2.02,
+      "mkt": 54.5,
+      "roi": 81.8
+     },
+     "Conditional lean": {
+      "n": 5,
+      "stated": 56.8,
+      "won": 40.0,
+      "gap": -16.8,
+      "z": -0.76,
+      "mkt": 52.9,
+      "roi": -25.1
+     }
+    },
+    "all_cleared": {
+     "Final line": {
+      "n": 23,
+      "stated": 61.1,
+      "won": 78.3,
+      "gap": 17.2,
+      "z": 1.7,
+      "mkt": 53.4,
+      "roi": 45.3
+     },
+     "Conditional lean": {
+      "n": 31,
+      "stated": 56.5,
+      "won": 35.5,
+      "gap": -21.0,
+      "z": -2.37,
+      "mkt": 53.0,
+      "roi": -33.7
+     }
+    },
+    "finals": [
+     {
+      "week": 9,
+      "game": "LAR @ WSH",
+      "player": "Rachaad White",
+      "stat": "rushyd",
+      "k": 40,
+      "side": "No",
+      "price": 56.0,
+      "mkt": 55.5,
+      "stated": 59.4,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "CAR @ NO",
+      "player": "Tyler Shough",
+      "stat": "rushyd",
+      "k": 15,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 60.3,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "CAR @ NO",
+      "player": "Chuba Hubbard",
+      "stat": "rryd",
+      "k": 100,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 59.6,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Brock Purdy",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 65.5,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Christian McCaffrey",
+      "stat": "rushyd",
+      "k": 60,
+      "side": "Yes",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 63.0,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "PIT @ CIN",
+      "player": "Samaje Perine",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "No",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 66.8,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Javonte Williams",
+      "stat": "rushyd",
+      "k": 65,
+      "side": "No",
+      "price": 56.0,
+      "mkt": 55.5,
+      "stated": 67.7,
+      "win": 1
+     }
+    ]
+   },
+   "pick-aware": {
+    "n": 700,
+    "logloss": 0.68715,
+    "brier": 0.24703,
+    "w9": 0.68972,
+    "w10": 0.68433,
+    "vs_current": [
+     -0.00036,
+     -0.00182,
+     0.00105
+    ],
+    "vs_market": [
+     -0.00302,
+     -0.00771,
+     0.0013
+    ],
+    "card": {
+     "Final line": {
+      "n": 7,
+      "stated": 63.4,
+      "won": 85.7,
+      "gap": 22.3,
+      "z": 1.23,
+      "mkt": 52.8,
+      "roi": 60.9
+     },
+     "Conditional lean": {
+      "n": 2,
+      "stated": 55.0,
+      "won": 50.0,
+      "gap": -5.0,
+      "z": -0.14,
+      "mkt": 50.5,
+      "roi": -2.0
+     }
+    },
+    "all_cleared": {
+     "Final line": {
+      "n": 14,
+      "stated": 62.2,
+      "won": 78.6,
+      "gap": 16.4,
+      "z": 1.27,
+      "mkt": 52.3,
+      "roi": 48.8
+     },
+     "Conditional lean": {
+      "n": 7,
+      "stated": 57.2,
+      "won": 57.1,
+      "gap": -0.1,
+      "z": -0.0,
+      "mkt": 51.9,
+      "roi": 9.0
+     }
+    },
+    "finals": [
+     {
+      "week": 10,
+      "game": "CAR @ NO",
+      "player": "Chuba Hubbard",
+      "stat": "rushyd",
+      "k": 80,
+      "side": "Yes",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 60.0,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "CAR @ NO",
+      "player": "Tyler Shough",
+      "stat": "rushyd",
+      "k": 15,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 62.8,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "PIT @ CIN",
+      "player": "Rico Dowdle",
+      "stat": "rushyd",
+      "k": 30,
+      "side": "Yes",
+      "price": 51.0,
+      "mkt": 50.5,
+      "stated": 57.7,
+      "win": 0
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Brock Purdy",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "Yes",
+      "price": 55.0,
+      "mkt": 54.5,
+      "stated": 68.8,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Christian McCaffrey",
+      "stat": "rushyd",
+      "k": 60,
+      "side": "Yes",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 66.4,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "PIT @ CIN",
+      "player": "Samaje Perine",
+      "stat": "rushyd",
+      "k": 20,
+      "side": "No",
+      "price": 54.0,
+      "mkt": 53.5,
+      "stated": 66.1,
+      "win": 1
+     },
+     {
+      "week": 10,
+      "game": "SF @ DAL",
+      "player": "Dak Prescott",
+      "stat": "rushyd",
+      "k": 10,
+      "side": "No",
+      "price": 52.0,
+      "mkt": 51.5,
+      "stated": 61.9,
+      "win": 1
+     }
+    ]
+   }
+  },
+  "market": {
+   "n": 700,
+   "logloss": 0.69017,
+   "brier": 0.24851,
+   "w9": 0.69115,
+   "w10": 0.6891
+  },
+  "reliability": [
+   {
+    "stated": 43.1,
+    "won": 38.6,
+    "n": 70
+   },
+   {
+    "stated": 45.2,
+    "won": 41.4,
+    "n": 70
+   },
+   {
+    "stated": 46.3,
+    "won": 47.1,
+    "n": 70
+   },
+   {
+    "stated": 47.5,
+    "won": 48.6,
+    "n": 70
+   },
+   {
+    "stated": 48.6,
+    "won": 40.0,
+    "n": 70
+   },
+   {
+    "stated": 49.5,
+    "won": 54.3,
+    "n": 70
+   },
+   {
+    "stated": 50.6,
+    "won": 48.6,
+    "n": 70
+   },
+   {
+    "stated": 51.8,
+    "won": 42.9,
+    "n": 70
+   },
+   {
+    "stated": 53.1,
+    "won": 47.1,
+    "n": 70
+   },
+   {
+    "stated": 56.1,
+    "won": 64.3,
+    "n": 70
+   }
+  ]
+ }
+}

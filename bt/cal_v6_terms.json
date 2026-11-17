@@ -1,0 +1,113 @@
+{
+ "note": "Extra lens terms on top of bt/cal_v6.json (live weights held fixed). Each term = coef * feature a * feature b on its family.",
+ "terms": [
+  {
+   "name": "look_x_volume",
+   "family": "recv",
+   "a": "look",
+   "b": "volume",
+   "label": "Blitz split x pass volume",
+   "clip": 1.5,
+   "coef": 0.4026,
+   "boot": [
+    0.5329,
+    0.4475,
+    0.2804,
+    0.409,
+    0.3723,
+    0.4993,
+    0.6203,
+    -0.0042,
+    0.1602,
+    0.4353,
+    0.1206,
+    0.3387,
+    0.3856,
+    0.2171,
+    0.5469,
+    0.4232,
+    0.3442,
+    0.1715,
+    0.4306,
+    0.402,
+    0.2745,
+    0.5843,
+    0.6333,
+    0.2391,
+    0.1939,
+    0.3362,
+    0.4286,
+    0.2058,
+    0.6904,
+    0.4684,
+    0.4118,
+    0.1918,
+    0.5458,
+    0.3026,
+    0.0045,
+    0.2848,
+    0.1977,
+    0.3767,
+    0.5491,
+    0.244
+   ],
+   "lambda": 3,
+   "n": 1314,
+   "weeks": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "evidence": {
+    "leave_one_week_out": {
+     "logloss": 0.68912,
+     "vs_current": [
+      -0.00084,
+      -0.00229,
+      0.00037
+     ],
+     "vs_market": [
+      -0.00064,
+      -0.00593,
+      0.00453
+     ],
+     "term_weight_by_week": {
+      "7": 0.0872,
+      "8": 0.1181,
+      "9": 0.0347,
+      "10": 0.0353
+     }
+    },
+    "forward": {
+     "logloss": 0.68988,
+     "vs_current": [
+      -0.0007,
+      -0.00151,
+      0.0
+     ],
+     "vs_market": [
+      0.00102,
+      -0.00532,
+      0.00802
+     ]
+    },
+    "week10_live_check": {
+     "fit_weeks": [
+      7,
+      8,
+      9
+     ],
+     "lambda": 3,
+     "weight": 0.3514,
+     "week10_lines": 333,
+     "week10_logloss": {
+      "market": 0.6891,
+      "live_v6": 0.69191,
+      "live_v6_plus_term": 0.68954
+     }
+    }
+   }
+  }
+ ]
+}

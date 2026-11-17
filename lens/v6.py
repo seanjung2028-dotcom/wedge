@@ -1,6 +1,7 @@
 """Wedge % v6: the market's own number (mid of bid and ask) moved by the matchup lens, with weights fit on every settled
 Robinhood player prop from Weeks 7-9 (10,123 lines) and kept only where they beat the market out of sample.
 Receiving and rushing lines move; passing, TD and interception lines stay at the market (the lens didn't beat it there).
+Receiving lines also carry one extra term from bt/cal_v6_terms.json (blitz split x pass volume, added Tue Nov 17).
 Range = 10th-90th percentile across 40 refits on resampled games."""
 import json, sys, math
 import numpy as np
@@ -13,6 +14,11 @@ COEF = np.array([CAL['coef'][f'grp.{g}'] for g in GL] + [CAL['coef'][c] for c in
 FAM = CAL['families']; GRP = CAL['groups']
 LABEL = {'dvp': 'What the defense allows', 'overlap': 'Where the targets go', 'look': 'Against the blitz', 'volume': 'Volume the defense faces',
          'comp': 'Comparable defenses', 'consist': 'Consistency at this line', 'dir': 'Run direction', 'box': 'Box count'}
+# extra terms (Tue Nov 17, bt/next_steps): coef * feature a * feature b on one family, on top of the weights above, which stay fixed.
+# Kept only because each beat the market and the formula without it on held-out weeks (bt/next_steps/terms.py, adopt.py).
+import os as _os
+TERMS = json.load(open(W + 'bt/cal_v6_terms.json'))['terms'] if _os.path.exists(W + 'bt/cal_v6_terms.json') else []
+for _t in TERMS: LABEL[_t['name']] = {'look_x_volume': 'Blitz split meets pass volume'}.get(_t['name'], _t['label'])
 _T = {}
 def tables(week=None, dl=W + 'dl18/'):
     week = WEEK if week is None else week
@@ -42,8 +48,12 @@ def detail(name, team, opp, stat, line, mid_c, week=None):
     x = np.zeros(len(GL) + len(COLS)); x[GL.index(g)] = 1.0
     for i, c in enumerate(COLS):
         if c.startswith(fam + '.'): x[len(GL) + i] = f.get(c.split('.')[1], 0.0)
-    z0 = lg(mid); p = sg(z0 + x @ COEF); ps = np.array([sg(z0 + x @ b) for b in B])
-    contrib = {}
+    z0 = lg(mid); ex, exB, contrib = 0.0, np.zeros(len(B)), {}
+    for t in TERMS:
+        if t['family'] != fam: continue
+        v = float(np.clip(f.get(t['a'], 0.0) * f.get(t['b'], 0.0), -t['clip'], t['clip']))
+        ex += t['coef'] * v; exB += np.array(t['boot']) * v; contrib[t['name']] = round(100 * (sg(z0 + t['coef'] * v) - mid), 2)
+    p = sg(z0 + x @ COEF + ex); ps = np.array([sg(z0 + x @ b + e) for b, e in zip(B, exB)])
     for i, c in enumerate(COLS):
         if c.startswith(fam + '.'):
             k = c.split('.')[1]; contrib[k] = round(100 * (sg(z0 + COEF[len(GL) + i] * x[len(GL) + i]) - mid), 2)
