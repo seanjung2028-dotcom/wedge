@@ -3,7 +3,7 @@ FR001,2,Backtest,LV @ LAC,LAC,Justin Herbert under 30 rushing yards (No),47,57.4
 FR002,3,Backtest,NYJ @ DET,NYJ,Breece Hall under 25 receiving yards (No),55,62.9,Won,W3: 23 rec yds,45
 FR003,4,Backtest,DAL @ HOU,DAL,Javonte Williams under 70 rush + rec yards (No),52,60.3,Lost,W4: 83 rush + rec yds,-52
 FR004,4,Backtest,DET @ CAR,DET,Jahmyr Gibbs 90+ rushing yards (Yes),50,62.0,Lost,W4: 46 rush yds,-50
-FR005,5,Added,NYG @ WAS,NYG,Malik Nabers 5+ receptions (Yes),67,,Won,W5: 11 rec,33
+FR005,5,Added,NYG @ WSH,NYG,Malik Nabers 5+ receptions (Yes),67,,Won,W5: 11 rec,33
 FR006,5,Backtest,HOU @ TEN,TEN,Tyjae Spears under 25 rushing yards (No),52,61.2,Won,W5: 0 rush yds,48
 FR007,5,Backtest,MIN @ NO,MIN,Aaron Jones 70+ rushing yards (Yes),49,58.5,Won,W5: 113 rush yds,51
 FR008,6,Added,BUF @ LV,LV,Ashton Jeanty 4+ receptions (Yes),51,,Won,W6: 4 rec,49

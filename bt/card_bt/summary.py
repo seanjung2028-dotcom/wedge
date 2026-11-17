@@ -81,7 +81,7 @@ ADDED = [(6, 'HOU @ JAX', 'Xavier Hutchinson: Over 1.5 Receptions'), (6, 'WSH @ 
          (7, 'PIT @ NO', 'Jaylen Warren: Over 14.5 Receiving Yards'), (7, 'NE @ CHI', 'Rhamondre Stevenson: Over 2.5 Receptions'),
          (7, 'CIN @ BAL', 'Chase Brown: Over 39.5 Rush Yards'), (9, 'CIN @ ATL', 'Tee Higgins: Over 4.5 Receptions'),
          (9, 'CLE @ NO', 'Chris Olave: Over 5.5 Receptions'),
-         (5, 'NYG @ WAS', 'Malik Nabers: Over 4.5 Receptions', {'price': 67})]   # the first NYG-WSH game (owner, Nov 17); 67c = the 1.49x slip; not in the Week 6+ record file
+         (5, 'NYG @ WSH', 'Malik Nabers: Over 4.5 Receptions', {'price': 67})]   # the first NYG-WSH game (owner, Nov 17); 67c = the 1.49x slip; not in the Week 6+ record file
 CARD10 = [(10,) + tuple(k.split('|')[1:2]) + (k.split('|')[3],) for k in json.load(open(W + 'certs10/keys_w10_finals.json'))]
 RR = pd.read_csv(W + 'rh/results_w6_w11.csv', low_memory=False)
 ST = pd.read_csv(W + 'dl19/stats_player_week_2026.csv', low_memory=False); ST = ST[ST.season_type == 'REG'].copy()
