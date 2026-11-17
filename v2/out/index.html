@@ -730,120 +730,22 @@
   <div class="rs-page v2-open" id="results" hidden>
     <header class="wx-band"><span class="wx-label"><i class="wx-dot" aria-hidden="true"></i>Settled</span><h2>Results.</h2></header>
   <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button></nav>
-    <section class="rs-tiles" id="results-tiles">
-      <div class="rs-card" data-bt="final_bt">
-        <div class="rs-tile-label">Final lines · backtest</div>
-        <div class="rs-tile-num dash-skeleton">—</div>
-        <div class="rs-tile-note">&nbsp;</div>
-      </div>
-      <div class="rs-card" data-bt="lean_bt">
-        <div class="rs-tile-label">Conditional leans · backtest</div>
-        <div class="rs-tile-num dash-skeleton">—</div>
-        <div class="rs-tile-note">&nbsp;</div>
-      </div>
-      <div class="rs-card" data-bt="final_live">
-        <div class="rs-tile-label">Final lines · live card</div>
-        <div class="rs-tile-num dash-skeleton">—</div>
-        <div class="rs-tile-note">&nbsp;</div>
-      </div>
-      <div class="rs-card" data-bt="lean_live">
-        <div class="rs-tile-label">Conditional leans · live card</div>
-        <div class="rs-tile-num dash-skeleton">—</div>
-        <div class="rs-tile-note">&nbsp;</div>
-      </div>
-    </section>
-
-    <section class="rs-card" id="results-bt">
-      <div class="pf-head v2-head"><div><span class="pf-label">01 / Backtest</span><h2 class="pf-h2 v2-h2">The card, backtested.</h2></div></div>
-      <p class="rs-note">This week’s card rules, run on Weeks 1–9 and graded on how each line settled. Weeks 7–9 use the real Robinhood prices, with the model refit without the week being tested. Robinhood didn’t keep prop prices before Week 7, so Weeks 2–6 use lines rebuilt from box scores the way the books set them. Week 1 had no earlier games to read. “Ours” is our number for the side we took; “Needed” is the price plus the 2¢ fee. Return: one contract each, before fees.</p>
-      <div class="rs-tablebox" style="max-height: none;">
-        <table class="rs-table v2-bt-table" id="results-bt-compare">
-          <thead><tr>
-            <th><button data-k="label">Group</button></th>
-            <th class="num"><button data-k="wins">Won</button></th>
-            <th class="num"><button data-k="losses">Lost</button></th>
-            <th class="rs-barcell"><button data-k="win_pct">Win %</button></th>
-            <th class="num"><button data-k="ours" title="Our number for the side we took, averaged">Ours</button></th>
-            <th class="num"><button data-k="needed" title="Price plus the 2¢ fee: the win rate a line needs to break even">Needed</button></th>
-            <th class="num"><button data-k="avg_price">Avg price ¢</button></th>
-            <th class="num"><button data-k="roi_pct">Return</button></th>
-          </tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="rs-card" id="results-bt-week">
-      <div class="pf-head v2-head"><div><span class="pf-label">02 / By week</span><h2 class="pf-h2 v2-h2">Week by week.</h2></div></div>
-      <div class="rs-controls">
-        <select class="bt-w-tier" aria-label="Which calls"><option value="final">Final lines</option><option value="lean">Conditional leans</option></select>
-      </div>
-      <div class="rs-tablebox" style="max-height: none;">
-        <table class="rs-table v2-bt-table" id="results-bt-weeks">
-          <thead><tr>
-            <th><button data-k="week">Week</button></th>
-            <th><button data-k="src">Prices</button></th>
-            <th class="num"><button data-k="wins">Won</button></th>
-            <th class="num"><button data-k="losses">Lost</button></th>
-            <th class="rs-barcell"><button data-k="win_pct">Win %</button></th>
-            <th class="num"><button data-k="ours">Ours</button></th>
-            <th class="num"><button data-k="needed">Needed</button></th>
-            <th class="num"><button data-k="roi_pct">Return</button></th>
-          </tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="rs-card" id="results-bt-checks">
-      <div class="pf-head v2-head"><div><span class="pf-label">03 / Checks</span><h2 class="pf-h2 v2-h2">Overs, unders and checks.</h2></div></div>
-      <p class="rs-note">The card keeps about one under for every three overs; the unders it leaves off are graded here too. Week 9 sets the backtest beside the card we posted that week, before v6. The rebuilt lines are checked on Weeks 7–9, where the real prices exist.</p>
-      <div class="rs-tablebox" style="max-height: none;">
-        <table class="rs-table v2-bt-table" id="results-bt-sides">
-          <thead><tr>
-            <th><button data-k="label">Group</button></th>
-            <th class="num"><button data-k="wins">Won</button></th>
-            <th class="num"><button data-k="losses">Lost</button></th>
-            <th class="rs-barcell"><button data-k="win_pct">Win %</button></th>
-            <th class="num"><button data-k="ours" title="Our number for the side we took, averaged">Ours</button></th>
-            <th class="num"><button data-k="needed" title="Price plus the 2¢ fee: the win rate a line needs to break even">Needed</button></th>
-            <th class="num"><button data-k="avg_price">Avg price ¢</button></th>
-            <th class="num"><button data-k="roi_pct">Return</button></th>
-          </tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="rs-card" id="results-bt-list">
-      <div class="pf-head v2-head"><div><span class="pf-label">04 / Every pick</span><h2 class="pf-h2 v2-h2">Every backtested pick.</h2></div></div>
-      <div class="rs-controls">
-        <select class="bt-p-week" aria-label="Week"><option value="">All weeks</option></select>
-        <select class="bt-p-tier" aria-label="Which calls"><option value="">Final lines and leans</option><option value="Final line">Final lines</option><option value="Conditional lean">Conditional leans</option></select>
-        <select class="bt-p-outcome" aria-label="Outcome"><option value="">Won and lost</option><option>Won</option><option>Lost</option></select>
-        <input type="search" class="bt-p-search" placeholder="Search player, team, line…" aria-label="Search backtested picks">
-        <span class="rs-count bt-p-count"></span>
-      </div>
-      <div class="rs-tablebox">
-        <table class="rs-table" id="results-bt-picks">
-          <thead><tr>
-            <th><button data-k="week">Week</button></th>
-            <th><button data-k="game">Game</button></th>
-            <th><button data-k="line">Line</button></th>
-            <th class="num"><button data-k="price">Price ¢</button></th>
-            <th class="rs-barcell"><button data-k="mid">Ours</button></th>
-            <th class="num rs-hide-narrow"><button data-k="needed">Needed</button></th>
-            <th><button data-k="outcome">Outcome</button></th>
-            <th class="rs-hide-narrow"><button data-k="result">Result</button></th>
-            <th class="num"><button data-k="profit_c">Profit ¢</button></th>
-          </tr></thead>
-          <tbody></tbody>
-        </table>
+    <section class="v2-frec" id="results-frec" aria-label="Final-line record">
+      <div class="v2-frec-list" id="results-frec-list" aria-label="Every final line, week by week"></div>
+      <div class="pf-proof v2-frec-proof">
+        <div class="pf-blob" aria-hidden="true"></div>
+        <span class="pf-label">Final lines · Weeks 1–9</span>
+        <div class="pf-big dash-skeleton" id="frec-pct">—</div>
+        <div class="v2-frec-stats">
+          <span class="v2-ps v2-frec-wl"><b id="frec-wl">—</b>record</span>
+          <span class="v2-ps v2-ps-net v2-frec-net"><b id="frec-net">—</b>net</span>
+        </div>
+        <p class="v2-frec-note">This week’s card rules, backtested and graded on how each line settled. Weeks 7–9 at the real Robinhood prices; Weeks 2–6 on lines rebuilt from box scores (Robinhood kept no prop prices before Week 7). Four lines are left out of this record. Net: one contract each at the price, before fees.</p>
       </div>
     </section>
 
     <section class="rs-card" id="results-summary">
-      <div class="pf-head v2-head"><div><span class="pf-label">05 / Week 6</span><h2 class="pf-h2 v2-h2">Record by group.</h2></div></div>
+      <div class="pf-head v2-head"><div><span class="pf-label">01 / Week 6</span><h2 class="pf-h2 v2-h2">Record by group.</h2></div></div>
       <p class="rs-note">Week 6, 45–55¢ lines. Return: one Yes each, before fees.</p>
       <div class="rs-tablebox" style="max-height: none;">
         <table class="rs-table" id="results-summary-table" data-source="w6_summary" data-row-key="segment">
@@ -861,7 +763,7 @@
     </section>
 
     <section class="rs-card" id="results-lines">
-      <div class="pf-head v2-head"><div><span class="pf-label">06 / The record</span><h2 class="pf-h2 v2-h2">Every line, settled.</h2></div></div>
+      <div class="pf-head v2-head"><div><span class="pf-label">02 / The record</span><h2 class="pf-h2 v2-h2">Every line, settled.</h2></div></div>
       <p class="rs-note">Every Week 7–8 line, settled from box scores.</p>
       <div class="rs-controls">
         <select class="rr-week" aria-label="Week"><option value="8">Week 8</option><option value="7">Week 7</option><option value="6">Week 6</option></select>

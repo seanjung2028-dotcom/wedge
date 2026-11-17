@@ -5,6 +5,12 @@ import json, math, os
 import numpy as np, pandas as pd
 W = '/home/claude/wedger/'; FEE = 2.0
 CARD = pd.read_pickle(W + 'bt/card_bt/card.pkl')
+# the owner's call (Tue Nov 17): these four backtested final lines are left out of the record (the page notes it)
+EXCLUDE = {(5, 'Drake Maye 35+ rushing yards (Yes)'), (5, 'TreVeyon Henderson 50+ rushing yards (Yes)'),
+           (6, 'Najee Harris 35+ rushing yards (Yes)'), (7, 'Aaron Jones Sr. 60+ rush + rec yards (Yes)')}
+_x = [(w, l) in EXCLUDE for w, l in zip(CARD.week, CARD.line)]
+assert sum(_x) == len(EXCLUDE), f'excluded {sum(_x)} of {len(EXCLUDE)}'
+CARD = CARD[[not v for v in _x]].copy()
 # ---------------- the live card, settled (Week 10 onward, v6) and the Week 9 card as posted (before v6)
 def live(path, wk, label):
     F = json.load(open(W + path)); out = []
@@ -59,7 +65,7 @@ PK['prices'] = np.where(PK.src == 'real', 'Real price', 'Rebuilt line')
 PK = PK.sort_values(['week', 'decision', 'game', 'line'], ascending=[True, False, True, True]).reset_index(drop=True)
 PK['id'] = [f'BT{i + 1:03d}' for i in range(len(PK))]
 PK['est'] = [f"{lo:.0f}–{hi:.0f}%" for lo, hi in zip(PK.lo, PK.hi)]
-PK[['id', 'week', 'prices', 'game', 'decision', 'line', 'side', 'price', 'be', 'mkt', 'lo', 'mid', 'hi', 'est', 'outcome', 'result', 'profit']].rename(columns={'profit': 'profit_c', 'be': 'needed'}).to_csv(W + 'rh/card_bt.csv', index=False)
+PK[['id', 'week', 'prices', 'game', 'team', 'decision', 'line', 'side', 'price', 'be', 'mkt', 'lo', 'mid', 'hi', 'est', 'outcome', 'result', 'profit']].rename(columns={'profit': 'profit_c', 'be': 'needed'}).to_csv(W + 'rh/card_bt.csv', index=False)
 SUM.to_csv(W + 'rh/card_bt_sum.csv', index=False)
 pd.set_option('display.width', 220)
 print(SUM[['key', 'wins', 'losses', 'win_pct', 'avg_price', 'needed', 'ours', 'profit_c', 'roi_pct']].to_string())

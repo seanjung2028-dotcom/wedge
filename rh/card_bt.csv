@@ -1,99 +1,95 @@
-id,week,prices,game,decision,line,side,price,needed,mkt,lo,mid,hi,est,outcome,result,profit_c
-BT001,2,Rebuilt line,LV @ LAC,Final line,Justin Herbert under 30 rushing yards (No),No,47,49.0,46.5,52.8,57.4,62.6,53–63%,Won,W2: 2 rush yds,53.0
-BT002,2,Rebuilt line,MIN @ CHI,Conditional lean,D'Andre Swift under 15 receiving yards (No),No,55,57.0,54.5,57.0,60.5,62.9,57–63%,Lost,W2: 54 rec yds,-55.0
-BT003,3,Rebuilt line,NYJ @ DET,Final line,Breece Hall under 25 receiving yards (No),No,55,57.0,54.5,58.8,62.9,65.6,59–66%,Won,W3: 23 rec yds,45.0
-BT004,3,Rebuilt line,CIN @ PIT,Conditional lean,Jaylen Warren under 50 rushing yards (No),No,51,53.0,50.5,53.0,57.2,59.8,53–60%,Lost,W3: 127 rush yds,-51.0
-BT005,4,Rebuilt line,DAL @ HOU,Final line,Javonte Williams under 70 rush + rec yards (No),No,52,54.0,51.5,57.4,60.3,64.2,57–64%,Lost,W4: 83 rush + rec yds,-52.0
-BT006,4,Rebuilt line,DET @ CAR,Final line,Jahmyr Gibbs 90+ rushing yards (Yes),Yes,50,52.0,49.5,56.5,62.0,67.0,56–67%,Lost,W4: 46 rush yds,-50.0
-BT007,4,Rebuilt line,ARI @ NYG,Conditional lean,Darnell Mooney 30+ receiving yards (Yes),Yes,53,55.0,52.5,54.1,56.5,58.4,54–58%,Lost,W4: 0 rec yds,-53.0
-BT008,4,Rebuilt line,ARI @ NYG,Conditional lean,Isaiah Likely 25+ receiving yards (Yes),Yes,53,55.0,52.5,54.7,56.9,58.6,55–59%,Won,W4: 66 rec yds,47.0
-BT009,4,Rebuilt line,ARI @ NYG,Conditional lean,Jeremiyah Love 55+ rushing yards (Yes),Yes,50,52.0,49.5,49.3,53.9,57.0,49–57%,Won,W4: 63 rush yds,50.0
-BT010,4,Rebuilt line,ARI @ NYG,Conditional lean,Malachi Fields 20+ receiving yards (Yes),Yes,47,49.0,46.5,48.7,51.3,54.2,49–54%,Won,W4: 52 rec yds,53.0
-BT011,4,Rebuilt line,DAL @ HOU,Conditional lean,David Montgomery 40+ rushing yards (Yes),Yes,54,56.0,53.5,54.4,59.1,62.4,54–62%,Lost,W4: 24 rush yds,-54.0
-BT012,4,Rebuilt line,DEN @ SF,Conditional lean,Christian McCaffrey 60+ rushing yards (Yes),Yes,51,53.0,50.5,51.5,56.7,59.7,52–60%,Lost,W4: 52 rush yds,-51.0
-BT013,4,Rebuilt line,DEN @ SF,Conditional lean,Deebo Samuel Sr. under 4 receptions (No),No,54,56.0,53.5,54.5,57.4,59.5,54–60%,Lost,W4: 5 rec,-54.0
-BT014,4,Rebuilt line,DEN @ SF,Conditional lean,Kaelon Black 40+ rushing yards (Yes),Yes,50,52.0,49.5,50.5,55.8,58.7,50–59%,Lost,W4: 13 rush yds,-50.0
-BT015,4,Rebuilt line,DEN @ SF,Conditional lean,Mike Evans under 5 receptions (No),No,60,62.0,59.5,60.6,63.4,65.3,61–65%,Lost,W4: 5 rec,-60.0
-BT016,4,Rebuilt line,DET @ CAR,Conditional lean,Darren Waller under 30 receiving yards (No),No,55,57.0,54.5,50.3,58.3,64.1,50–64%,Lost,W4: 36 rec yds,-55.0
-BT017,4,Rebuilt line,DET @ CAR,Conditional lean,Tetairoa McMillan under 55 receiving yards (No),No,53,55.0,52.5,52.9,57.9,61.8,53–62%,Lost,W4: 192 rec yds,-53.0
-BT018,4,Rebuilt line,JAX @ CIN,Conditional lean,Bhayshul Tuten 60+ rush + rec yards (Yes),Yes,51,53.0,50.5,52.5,55.6,59.9,52–60%,Won,W4: 91 rush + rec yds,49.0
-BT019,4,Rebuilt line,JAX @ CIN,Conditional lean,Chase Brown 15+ receiving yards (Yes),Yes,47,49.0,46.5,48.2,50.7,52.4,48–52%,Won,W4: 71 rec yds,53.0
-BT020,4,Rebuilt line,JAX @ CIN,Conditional lean,Samaje Perine 10+ receiving yards (Yes),Yes,45,47.0,44.5,46.1,48.6,50.2,46–50%,Lost,W4: 0 rec yds,-45.0
-BT021,4,Rebuilt line,JAX @ CIN,Conditional lean,Tee Higgins 60+ receiving yards (Yes),Yes,52,54.0,51.5,53.2,55.6,57.2,53–57%,Won,W4: 157 rec yds,48.0
-BT022,4,Rebuilt line,NE @ BUF,Conditional lean,Hunter Henry under 30 receiving yards (No),No,51,53.0,50.5,52.3,54.3,55.7,52–56%,Lost,W4: 62 rec yds,-51.0
-BT023,4,Rebuilt line,PIT @ CLE,Conditional lean,Harold Fannin Jr. 35+ receiving yards (Yes),Yes,53,55.0,52.5,53.4,56.0,58.1,53–58%,Lost,W4: 27 rec yds,-53.0
-BT024,4,Rebuilt line,PIT @ CLE,Conditional lean,KC Concepcion 4+ receptions (Yes),Yes,56,58.0,55.5,56.5,59.0,60.9,56–61%,Won,W4: 5 rec,44.0
-BT025,4,Rebuilt line,PIT @ CLE,Conditional lean,Quinshon Judkins 3+ receptions (Yes),Yes,48,50.0,47.5,49.2,51.6,53.5,49–54%,Won,W4: 6 rec,52.0
-BT026,4,Rebuilt line,PIT @ CLE,Conditional lean,Raheim Sanders 10+ receiving yards (Yes),Yes,51,53.0,50.5,52.5,54.9,56.6,52–57%,Lost,W4: 7 rec yds,-51.0
-BT027,4,Rebuilt line,TEN @ BAL,Conditional lean,Mark Andrews 4+ receptions (Yes),Yes,50,52.0,49.5,49.8,52.6,55.1,50–55%,Won,W4: 5 rec,50.0
-BT028,4,Rebuilt line,TEN @ BAL,Conditional lean,Rashod Bateman 30+ receiving yards (Yes),Yes,47,49.0,46.5,47.7,49.9,51.4,48–51%,Won,W4: 46 rec yds,53.0
-BT029,4,Rebuilt line,TEN @ BAL,Conditional lean,Tyjae Spears under 10 receiving yards (No),No,47,49.0,46.5,46.5,50.0,52.8,46–53%,Won,W4: -1 rec yds,53.0
-BT030,5,Rebuilt line,HOU @ TEN,Final line,Tyjae Spears under 25 rushing yards (No),No,52,54.0,51.5,57.4,61.2,64.8,57–65%,Won,W5: 0 rush yds,48.0
-BT031,5,Rebuilt line,LV @ NE,Final line,Drake Maye 35+ rushing yards (Yes),Yes,53,55.0,52.5,58.9,62.6,67.9,59–68%,Lost,W5: 25 rush yds,-53.0
-BT032,5,Rebuilt line,LV @ NE,Final line,TreVeyon Henderson 50+ rushing yards (Yes),Yes,52,54.0,51.5,57.9,61.6,67.1,58–67%,Lost,W5: 22 rush yds,-52.0
-BT033,5,Rebuilt line,MIN @ NO,Final line,Aaron Jones 70+ rushing yards (Yes),Yes,49,51.0,48.5,54.0,58.5,62.1,54–62%,Won,W5: 113 rush yds,51.0
-BT034,5,Rebuilt line,CIN @ MIA,Conditional lean,Chase Brown 20+ receiving yards (Yes),Yes,48,50.0,47.5,49.3,51.9,53.6,49–54%,Won,W5: 21 rec yds,52.0
-BT035,5,Rebuilt line,CIN @ MIA,Conditional lean,Ollie Gordon II 40+ rushing yards (Yes),Yes,52,54.0,51.5,52.6,55.2,58.3,53–58%,Won,W5: 88 rush yds,48.0
-BT036,5,Rebuilt line,CLE @ NYJ,Conditional lean,Quinshon Judkins 50+ rushing yards (Yes),Yes,51,53.0,50.5,51.5,53.7,54.9,52–55%,Lost,W5: 44 rush yds,-51.0
-BT037,5,Rebuilt line,DEN @ LAC,Conditional lean,Justin Herbert 30+ rushing yards (Yes),Yes,48,50.0,47.5,49.5,53.7,56.3,50–56%,Won,W5: 54 rush yds,52.0
-BT038,5,Rebuilt line,DEN @ LAC,Conditional lean,Keaton Mitchell 35+ rushing yards (Yes),Yes,48,50.0,47.5,49.5,53.7,56.1,50–56%,Lost,W5: 11 rush yds,-48.0
-BT039,5,Rebuilt line,DEN @ LAC,Conditional lean,Kimani Vidal 25+ rushing yards (Yes),Yes,52,54.0,51.5,53.5,57.7,60.3,54–60%,Won,W5: 57 rush yds,48.0
-BT040,5,Rebuilt line,DEN @ LAC,Conditional lean,Omarion Hampton 60+ rushing yards (Yes),Yes,51,53.0,50.5,52.4,56.6,59.1,52–59%,Lost,W5: 33 rush yds,-51.0
-BT041,5,Rebuilt line,DET @ ARI,Conditional lean,Amon-Ra St. Brown 7+ receptions (Yes),Yes,56,58.0,55.5,56.0,59.1,61.8,56–62%,Lost,W5: 6 rec,-56.0
-BT042,5,Rebuilt line,DET @ ARI,Conditional lean,Kendrick Bourne under 30 receiving yards (No),No,54,56.0,53.5,52.4,58.3,62.5,52–62%,Lost,W5: 70 rec yds,-54.0
-BT043,5,Rebuilt line,DET @ ARI,Conditional lean,Sam LaPorta 5+ receptions (Yes),Yes,53,55.0,52.5,54.7,57.2,59.0,55–59%,Won,W5: 5 rec,47.0
-BT044,5,Rebuilt line,IND @ PIT,Conditional lean,Jonathan Taylor 3+ receptions (Yes),Yes,45,47.0,44.5,46.3,48.4,49.9,46–50%,Won,W5: 3 rec,55.0
-BT045,5,Rebuilt line,IND @ PIT,Conditional lean,Josh Downs 40+ receiving yards (Yes),Yes,49,51.0,48.5,49.9,51.8,53.6,50–54%,Won,W5: 47 rec yds,51.0
-BT046,5,Rebuilt line,NYG @ WSH,Conditional lean,Jacory Croskey-Merritt 45+ rushing yards (Yes),Yes,50,52.0,49.5,49.7,54.0,56.9,50–57%,Won,W5: 82 rush yds,50.0
-BT047,5,Rebuilt line,NYG @ WSH,Conditional lean,Najee Harris under 40 rushing yards (No),No,50,52.0,49.5,51.3,53.3,55.4,51–55%,Won,W5: 9 rush yds,50.0
-BT048,5,Rebuilt line,PHI @ JAX,Conditional lean,Bhayshul Tuten 60+ rushing yards (Yes),Yes,48,50.0,47.5,47.8,50.9,54.2,48–54%,Won,W5: 72 rush yds,52.0
-BT049,5,Rebuilt line,PHI @ JAX,Conditional lean,Chris Rodriguez Jr. 35+ rushing yards (Yes),Yes,49,51.0,48.5,48.8,51.9,55.2,49–55%,Lost,W5: 5 rush yds,-49.0
-BT050,5,Rebuilt line,SF @ SEA,Conditional lean,Brock Purdy under 30 rushing yards (No),No,46,48.0,45.5,47.9,51.4,54.4,48–54%,Won,W5: 6 rush yds,54.0
-BT051,5,Rebuilt line,SF @ SEA,Conditional lean,Christian McCaffrey under 60 rushing yards (No),No,52,54.0,51.5,53.9,57.4,60.3,54–60%,Lost,W5: 68 rush yds,-52.0
-BT052,5,Rebuilt line,SF @ SEA,Conditional lean,Kaelon Black under 35 rushing yards (No),No,51,53.0,50.5,53.0,56.4,59.3,53–59%,Won,W5: 16 rush yds,49.0
-BT053,6,Rebuilt line,HOU @ JAX,Final line,C.J. Stroud under 20 rushing yards (No),No,49,51.0,48.5,54.1,59.7,63.7,54–64%,Won,W6: 5 rush yds,51.0
-BT054,6,Rebuilt line,NO @ NYG,Final line,Najee Harris 35+ rushing yards (Yes),Yes,51,53.0,50.5,55.1,59.5,62.8,55–63%,Lost,W6: 2 rush yds,-51.0
-BT055,6,Rebuilt line,ARI @ LAR,Conditional lean,Tyler Higbee 4+ receptions (Yes),Yes,58,60.0,57.5,59.5,61.7,63.2,60–63%,Won,W6: 4 rec,42.0
-BT056,6,Rebuilt line,BUF @ LV,Conditional lean,Brock Bowers under 7 receptions (No),No,50,52.0,49.5,51.9,55.2,58.2,52–58%,Won,W6: 4 rec,50.0
-BT057,6,Rebuilt line,BUF @ LV,Conditional lean,Michael Mayer under 4 receptions (No),No,54,56.0,53.5,55.9,59.2,62.3,56–62%,Lost,W6: 7 rec,-54.0
-BT058,6,Rebuilt line,DAL @ GB,Conditional lean,Matthew Golden 4+ receptions (Yes),Yes,54,56.0,53.5,55.5,57.8,59.6,56–60%,Won,W6: 6 rec,46.0
-BT059,6,Rebuilt line,DAL @ GB,Conditional lean,Tucker Kraft 4+ receptions (Yes),Yes,52,54.0,51.5,53.4,55.8,58.4,53–58%,Won,W6: 5 rec,48.0
-BT060,6,Rebuilt line,LAC @ KC,Conditional lean,Keaton Mitchell under 35 rushing yards (No),No,54,56.0,53.5,54.3,57.9,60.0,54–60%,Won,W6: 4 rush yds,46.0
-BT061,6,Rebuilt line,LAC @ KC,Conditional lean,Kenneth Walker III 3+ receptions (Yes),Yes,54,56.0,53.5,53.9,56.6,58.7,54–59%,Lost,W6: 2 rec,-54.0
-BT062,6,Rebuilt line,LAC @ KC,Conditional lean,Omarion Hampton under 60 rushing yards (No),No,53,55.0,52.5,53.3,56.9,59.1,53–59%,Won,W6: 18 rush yds,47.0
-BT063,6,Rebuilt line,LAC @ KC,Conditional lean,Travis Kelce 45+ receiving yards (Yes),Yes,53,55.0,52.5,53.9,56.0,57.7,54–58%,Won,W6: 53 rec yds,47.0
-BT064,6,Rebuilt line,NO @ NYG,Conditional lean,Cam Skattebo 70+ rush + rec yards (Yes),Yes,50,52.0,49.5,51.8,56.1,58.9,52–59%,Lost,W6: 0 rush + rec yds,-50.0
-BT065,6,Rebuilt line,NO @ NYG,Conditional lean,Isaiah Likely 5+ receptions (Yes),Yes,56,58.0,55.5,56.3,58.7,60.4,56–60%,Won,W6: 6 rec,44.0
-BT066,6,Rebuilt line,NO @ NYG,Conditional lean,Kendre Miller 30+ rushing yards (Yes),Yes,46,48.0,45.5,46.9,51.0,53.8,47–54%,Won,W6: 70 rush yds,54.0
-BT067,6,Rebuilt line,SEA @ DEN,Conditional lean,Emanuel Wilson 50+ rushing yards (Yes),Yes,53,55.0,52.5,52.8,57.0,59.5,53–60%,Won,W6: 52 rush yds,47.0
-BT068,6,Rebuilt line,TEN @ IND,Conditional lean,Josh Downs 40+ receiving yards (Yes),Yes,49,51.0,48.5,50.0,52.2,53.7,50–54%,Won,W6: 40 rec yds,51.0
-BT069,7,Real price,IND @ MIN,Final line,Aaron Jones Sr. 60+ rush + rec yards (Yes),Yes,49,51.0,48.5,53.8,61.9,71.5,54–72%,Lost,W7: 26 rush + rec yds,-49.0
-BT070,7,Real price,KC @ SEA,Final line,Velus Jones Jr. under 10 rushing yards (No),No,51,53.0,50.5,57.9,63.8,69.5,58–70%,Won,W7: 8 rush yds,49.0
-BT071,7,Real price,LAR @ LV,Final line,Kyren Williams 70+ rushing yards (Yes),Yes,49,51.0,48.5,57.0,66.3,72.9,57–73%,Won,W7: 99 rush yds,51.0
-BT072,7,Real price,CLE @ TEN,Conditional lean,Tony Pollard 70+ rushing yards (Yes),Yes,50,52.0,49.5,50.5,57.6,61.7,50–62%,Won,W7: 129 rush yds,50.0
-BT073,7,Real price,DEN @ ARI,Conditional lean,Marvin Mims Jr. 2+ receptions (Yes),Yes,53,55.0,52.5,53.0,57.6,63.1,53–63%,Won,W7: 2 rec,47.0
-BT074,7,Real price,DEN @ ARI,Conditional lean,RJ Harvey 25+ receiving yards (Yes),Yes,51,53.0,50.5,49.8,54.5,59.0,50–59%,Won,W7: 54 rec yds,49.0
-BT075,7,Real price,DEN @ ARI,Conditional lean,Tyler Allgeier 30+ rushing yards (Yes),Yes,53,55.0,52.5,54.4,60.2,65.2,54–65%,Lost,W7: 19 rush yds,-53.0
-BT076,7,Real price,GB @ DET,Conditional lean,Christian Watson under 70 receiving yards (No),No,46,48.0,45.5,45.8,54.2,63.0,46–63%,Won,W7: 57 rec yds,54.0
-BT077,7,Real price,GB @ DET,Conditional lean,Matthew Golden under 70 receiving yards (No),No,46,48.0,45.5,46.6,54.7,63.8,47–64%,Won,W7: 39 rec yds,54.0
-BT078,7,Real price,GB @ DET,Conditional lean,Savion Williams under 25 receiving yards (No),No,52,54.0,51.5,52.5,60.5,69.0,52–69%,Lost,W7: 47 rec yds,-52.0
-BT079,7,Real price,GB @ DET,Conditional lean,Tucker Kraft under 50 receiving yards (No),No,47,49.0,46.5,46.2,55.1,65.2,46–65%,Won,W7: 48 rec yds,53.0
-BT080,7,Real price,IND @ MIN,Conditional lean,Jonathan Taylor 15+ receiving yards (Yes),Yes,53,55.0,52.5,52.2,56.1,60.0,52–60%,Won,W7: 15 rec yds,47.0
-BT081,7,Real price,KC @ SEA,Conditional lean,Xavier Worthy 50+ receiving yards (Yes),Yes,51,53.0,50.5,50.2,54.8,60.0,50–60%,Lost,W7: 11 rec yds,-51.0
-BT082,7,Real price,LAR @ LV,Conditional lean,Brock Bowers 70+ receiving yards (Yes),Yes,52,54.0,51.5,51.3,54.8,58.8,51–59%,Won,W7: 73 rec yds,48.0
-BT083,7,Real price,LAR @ LV,Conditional lean,Michael Mayer 4+ receptions (Yes),Yes,51,53.0,50.5,50.9,54.1,57.7,51–58%,Lost,W7: 3 rec,-51.0
-BT084,7,Real price,LAR @ LV,Conditional lean,Tre Tucker 4+ receptions (Yes),Yes,46,48.0,45.5,44.2,48.7,53.7,44–54%,Won,W7: 5 rec,54.0
-BT085,7,Real price,MIA @ NYJ,Conditional lean,Garrett Wilson 70+ receiving yards (Yes),Yes,45,47.0,44.5,44.7,49.3,54.6,45–55%,Lost,W7: 26 rec yds,-45.0
-BT086,7,Real price,NE @ CHI,Conditional lean,DeMario Douglas 4+ receptions (Yes),Yes,48,50.0,47.5,49.9,55.3,61.4,50–61%,Lost,W7: 3 rec,-48.0
-BT087,7,Real price,NE @ CHI,Conditional lean,Drake Maye 30+ rushing yards (Yes),Yes,48,50.0,47.5,46.6,54.8,64.8,47–65%,Lost,W7: 26 rush yds,-48.0
-BT088,7,Real price,NE @ CHI,Conditional lean,Rhamondre Stevenson 40+ rushing yards (Yes),Yes,55,57.0,54.5,53.9,61.7,70.9,54–71%,Lost,W7: 22 rush yds,-55.0
-BT089,7,Real price,SF @ ATL,Conditional lean,Christian McCaffrey under 6 receptions (No),No,48,50.0,47.5,48.4,55.5,62.7,48–63%,Lost,W7: 6 rec,-48.0
-BT090,8,Real price,CHI @ SEA,Final line,Caleb Williams under 25 rushing yards (No),No,51,53.0,50.5,55.2,58.6,62.3,55–62%,Won,W8: 1 rush yds,49.0
-BT091,8,Real price,KC @ DEN,Final line,Kenneth Walker III 90+ rushing yards (Yes),Yes,48,50.0,47.5,51.5,52.8,54.4,52–54%,Lost,W8: 69 rush yds,-48.0
-BT092,8,Real price,CHI @ SEA,Conditional lean,Jadarian Price under 30 rushing yards (No),No,54,56.0,53.5,52.3,56.6,60.3,52–60%,Won,W8: 29 rush yds,46.0
-BT093,8,Real price,CLE @ PIT,Conditional lean,Jaylen Warren 70+ rushing yards (Yes),Yes,46,48.0,45.5,45.7,49.5,52.0,46–52%,Won,W8: 143 rush yds,54.0
-BT094,8,Real price,IND @ JAX,Conditional lean,Bhayshul Tuten 80+ rush + rec yards (Yes),Yes,54,56.0,53.5,54.2,57.5,60.8,54–61%,Won,W8: 159 rush + rec yds,46.0
-BT095,8,Real price,IND @ JAX,Conditional lean,Chris Rodriguez Jr. 30+ rushing yards (Yes),Yes,49,51.0,48.5,49.6,53.0,56.5,50–56%,Won,W8: 41 rush yds,51.0
-BT096,8,Real price,KC @ DEN,Conditional lean,Jonah Coleman under 40 rushing yards (No),No,52,54.0,51.5,54.0,57.5,60.7,54–61%,Lost,W8: 41 rush yds,-52.0
-BT097,8,Real price,LAC @ LAR,Conditional lean,Kyren Williams 60+ rushing yards (Yes),Yes,52,54.0,51.5,53.6,56.3,58.1,54–58%,Lost,W8: 56 rush yds,-52.0
-BT098,8,Real price,NE @ MIA,Conditional lean,Rhamondre Stevenson 80+ rush + rec yards (Yes),Yes,48,50.0,47.5,49.7,50.7,51.8,50–52%,Won,W8: 90 rush + rec yds,52.0
+id,week,prices,game,team,decision,line,side,price,needed,mkt,lo,mid,hi,est,outcome,result,profit_c
+BT001,2,Rebuilt line,LV @ LAC,LAC,Final line,Justin Herbert under 30 rushing yards (No),No,47,49.0,46.5,52.8,57.4,62.6,53–63%,Won,W2: 2 rush yds,53.0
+BT002,2,Rebuilt line,MIN @ CHI,CHI,Conditional lean,D'Andre Swift under 15 receiving yards (No),No,55,57.0,54.5,57.0,60.5,62.9,57–63%,Lost,W2: 54 rec yds,-55.0
+BT003,3,Rebuilt line,NYJ @ DET,NYJ,Final line,Breece Hall under 25 receiving yards (No),No,55,57.0,54.5,58.8,62.9,65.6,59–66%,Won,W3: 23 rec yds,45.0
+BT004,3,Rebuilt line,CIN @ PIT,PIT,Conditional lean,Jaylen Warren under 50 rushing yards (No),No,51,53.0,50.5,53.0,57.2,59.8,53–60%,Lost,W3: 127 rush yds,-51.0
+BT005,4,Rebuilt line,DAL @ HOU,DAL,Final line,Javonte Williams under 70 rush + rec yards (No),No,52,54.0,51.5,57.4,60.3,64.2,57–64%,Lost,W4: 83 rush + rec yds,-52.0
+BT006,4,Rebuilt line,DET @ CAR,DET,Final line,Jahmyr Gibbs 90+ rushing yards (Yes),Yes,50,52.0,49.5,56.5,62.0,67.0,56–67%,Lost,W4: 46 rush yds,-50.0
+BT007,4,Rebuilt line,ARI @ NYG,NYG,Conditional lean,Darnell Mooney 30+ receiving yards (Yes),Yes,53,55.0,52.5,54.1,56.5,58.4,54–58%,Lost,W4: 0 rec yds,-53.0
+BT008,4,Rebuilt line,ARI @ NYG,NYG,Conditional lean,Isaiah Likely 25+ receiving yards (Yes),Yes,53,55.0,52.5,54.7,56.9,58.6,55–59%,Won,W4: 66 rec yds,47.0
+BT009,4,Rebuilt line,ARI @ NYG,ARI,Conditional lean,Jeremiyah Love 55+ rushing yards (Yes),Yes,50,52.0,49.5,49.3,53.9,57.0,49–57%,Won,W4: 63 rush yds,50.0
+BT010,4,Rebuilt line,ARI @ NYG,NYG,Conditional lean,Malachi Fields 20+ receiving yards (Yes),Yes,47,49.0,46.5,48.7,51.3,54.2,49–54%,Won,W4: 52 rec yds,53.0
+BT011,4,Rebuilt line,DAL @ HOU,HOU,Conditional lean,David Montgomery 40+ rushing yards (Yes),Yes,54,56.0,53.5,54.4,59.1,62.4,54–62%,Lost,W4: 24 rush yds,-54.0
+BT012,4,Rebuilt line,DEN @ SF,SF,Conditional lean,Christian McCaffrey 60+ rushing yards (Yes),Yes,51,53.0,50.5,51.5,56.7,59.7,52–60%,Lost,W4: 52 rush yds,-51.0
+BT013,4,Rebuilt line,DEN @ SF,SF,Conditional lean,Deebo Samuel Sr. under 4 receptions (No),No,54,56.0,53.5,54.5,57.4,59.5,54–60%,Lost,W4: 5 rec,-54.0
+BT014,4,Rebuilt line,DEN @ SF,SF,Conditional lean,Kaelon Black 40+ rushing yards (Yes),Yes,50,52.0,49.5,50.5,55.8,58.7,50–59%,Lost,W4: 13 rush yds,-50.0
+BT015,4,Rebuilt line,DEN @ SF,SF,Conditional lean,Mike Evans under 5 receptions (No),No,60,62.0,59.5,60.6,63.4,65.3,61–65%,Lost,W4: 5 rec,-60.0
+BT016,4,Rebuilt line,DET @ CAR,CAR,Conditional lean,Darren Waller under 30 receiving yards (No),No,55,57.0,54.5,50.3,58.3,64.1,50–64%,Lost,W4: 36 rec yds,-55.0
+BT017,4,Rebuilt line,DET @ CAR,CAR,Conditional lean,Tetairoa McMillan under 55 receiving yards (No),No,53,55.0,52.5,52.9,57.9,61.8,53–62%,Lost,W4: 192 rec yds,-53.0
+BT018,4,Rebuilt line,JAX @ CIN,JAX,Conditional lean,Bhayshul Tuten 60+ rush + rec yards (Yes),Yes,51,53.0,50.5,52.5,55.6,59.9,52–60%,Won,W4: 91 rush + rec yds,49.0
+BT019,4,Rebuilt line,JAX @ CIN,CIN,Conditional lean,Chase Brown 15+ receiving yards (Yes),Yes,47,49.0,46.5,48.2,50.7,52.4,48–52%,Won,W4: 71 rec yds,53.0
+BT020,4,Rebuilt line,JAX @ CIN,CIN,Conditional lean,Samaje Perine 10+ receiving yards (Yes),Yes,45,47.0,44.5,46.1,48.6,50.2,46–50%,Lost,W4: 0 rec yds,-45.0
+BT021,4,Rebuilt line,JAX @ CIN,CIN,Conditional lean,Tee Higgins 60+ receiving yards (Yes),Yes,52,54.0,51.5,53.2,55.6,57.2,53–57%,Won,W4: 157 rec yds,48.0
+BT022,4,Rebuilt line,NE @ BUF,NE,Conditional lean,Hunter Henry under 30 receiving yards (No),No,51,53.0,50.5,52.3,54.3,55.7,52–56%,Lost,W4: 62 rec yds,-51.0
+BT023,4,Rebuilt line,PIT @ CLE,CLE,Conditional lean,Harold Fannin Jr. 35+ receiving yards (Yes),Yes,53,55.0,52.5,53.4,56.0,58.1,53–58%,Lost,W4: 27 rec yds,-53.0
+BT024,4,Rebuilt line,PIT @ CLE,CLE,Conditional lean,KC Concepcion 4+ receptions (Yes),Yes,56,58.0,55.5,56.5,59.0,60.9,56–61%,Won,W4: 5 rec,44.0
+BT025,4,Rebuilt line,PIT @ CLE,CLE,Conditional lean,Quinshon Judkins 3+ receptions (Yes),Yes,48,50.0,47.5,49.2,51.6,53.5,49–54%,Won,W4: 6 rec,52.0
+BT026,4,Rebuilt line,PIT @ CLE,CLE,Conditional lean,Raheim Sanders 10+ receiving yards (Yes),Yes,51,53.0,50.5,52.5,54.9,56.6,52–57%,Lost,W4: 7 rec yds,-51.0
+BT027,4,Rebuilt line,TEN @ BAL,BAL,Conditional lean,Mark Andrews 4+ receptions (Yes),Yes,50,52.0,49.5,49.8,52.6,55.1,50–55%,Won,W4: 5 rec,50.0
+BT028,4,Rebuilt line,TEN @ BAL,BAL,Conditional lean,Rashod Bateman 30+ receiving yards (Yes),Yes,47,49.0,46.5,47.7,49.9,51.4,48–51%,Won,W4: 46 rec yds,53.0
+BT029,4,Rebuilt line,TEN @ BAL,TEN,Conditional lean,Tyjae Spears under 10 receiving yards (No),No,47,49.0,46.5,46.5,50.0,52.8,46–53%,Won,W4: -1 rec yds,53.0
+BT030,5,Rebuilt line,HOU @ TEN,TEN,Final line,Tyjae Spears under 25 rushing yards (No),No,52,54.0,51.5,57.4,61.2,64.8,57–65%,Won,W5: 0 rush yds,48.0
+BT031,5,Rebuilt line,MIN @ NO,MIN,Final line,Aaron Jones 70+ rushing yards (Yes),Yes,49,51.0,48.5,54.0,58.5,62.1,54–62%,Won,W5: 113 rush yds,51.0
+BT032,5,Rebuilt line,CIN @ MIA,CIN,Conditional lean,Chase Brown 20+ receiving yards (Yes),Yes,48,50.0,47.5,49.3,51.9,53.6,49–54%,Won,W5: 21 rec yds,52.0
+BT033,5,Rebuilt line,CIN @ MIA,MIA,Conditional lean,Ollie Gordon II 40+ rushing yards (Yes),Yes,52,54.0,51.5,52.6,55.2,58.3,53–58%,Won,W5: 88 rush yds,48.0
+BT034,5,Rebuilt line,CLE @ NYJ,CLE,Conditional lean,Quinshon Judkins 50+ rushing yards (Yes),Yes,51,53.0,50.5,51.5,53.7,54.9,52–55%,Lost,W5: 44 rush yds,-51.0
+BT035,5,Rebuilt line,DEN @ LAC,LAC,Conditional lean,Justin Herbert 30+ rushing yards (Yes),Yes,48,50.0,47.5,49.5,53.7,56.3,50–56%,Won,W5: 54 rush yds,52.0
+BT036,5,Rebuilt line,DEN @ LAC,LAC,Conditional lean,Keaton Mitchell 35+ rushing yards (Yes),Yes,48,50.0,47.5,49.5,53.7,56.1,50–56%,Lost,W5: 11 rush yds,-48.0
+BT037,5,Rebuilt line,DEN @ LAC,LAC,Conditional lean,Kimani Vidal 25+ rushing yards (Yes),Yes,52,54.0,51.5,53.5,57.7,60.3,54–60%,Won,W5: 57 rush yds,48.0
+BT038,5,Rebuilt line,DEN @ LAC,LAC,Conditional lean,Omarion Hampton 60+ rushing yards (Yes),Yes,51,53.0,50.5,52.4,56.6,59.1,52–59%,Lost,W5: 33 rush yds,-51.0
+BT039,5,Rebuilt line,DET @ ARI,DET,Conditional lean,Amon-Ra St. Brown 7+ receptions (Yes),Yes,56,58.0,55.5,56.0,59.1,61.8,56–62%,Lost,W5: 6 rec,-56.0
+BT040,5,Rebuilt line,DET @ ARI,ARI,Conditional lean,Kendrick Bourne under 30 receiving yards (No),No,54,56.0,53.5,52.4,58.3,62.5,52–62%,Lost,W5: 70 rec yds,-54.0
+BT041,5,Rebuilt line,DET @ ARI,DET,Conditional lean,Sam LaPorta 5+ receptions (Yes),Yes,53,55.0,52.5,54.7,57.2,59.0,55–59%,Won,W5: 5 rec,47.0
+BT042,5,Rebuilt line,IND @ PIT,IND,Conditional lean,Jonathan Taylor 3+ receptions (Yes),Yes,45,47.0,44.5,46.3,48.4,49.9,46–50%,Won,W5: 3 rec,55.0
+BT043,5,Rebuilt line,IND @ PIT,IND,Conditional lean,Josh Downs 40+ receiving yards (Yes),Yes,49,51.0,48.5,49.9,51.8,53.6,50–54%,Won,W5: 47 rec yds,51.0
+BT044,5,Rebuilt line,NYG @ WSH,WSH,Conditional lean,Jacory Croskey-Merritt 45+ rushing yards (Yes),Yes,50,52.0,49.5,49.7,54.0,56.9,50–57%,Won,W5: 82 rush yds,50.0
+BT045,5,Rebuilt line,NYG @ WSH,NYG,Conditional lean,Najee Harris under 40 rushing yards (No),No,50,52.0,49.5,51.3,53.3,55.4,51–55%,Won,W5: 9 rush yds,50.0
+BT046,5,Rebuilt line,PHI @ JAX,JAX,Conditional lean,Bhayshul Tuten 60+ rushing yards (Yes),Yes,48,50.0,47.5,47.8,50.9,54.2,48–54%,Won,W5: 72 rush yds,52.0
+BT047,5,Rebuilt line,PHI @ JAX,JAX,Conditional lean,Chris Rodriguez Jr. 35+ rushing yards (Yes),Yes,49,51.0,48.5,48.8,51.9,55.2,49–55%,Lost,W5: 5 rush yds,-49.0
+BT048,5,Rebuilt line,SF @ SEA,SF,Conditional lean,Brock Purdy under 30 rushing yards (No),No,46,48.0,45.5,47.9,51.4,54.4,48–54%,Won,W5: 6 rush yds,54.0
+BT049,5,Rebuilt line,SF @ SEA,SF,Conditional lean,Christian McCaffrey under 60 rushing yards (No),No,52,54.0,51.5,53.9,57.4,60.3,54–60%,Lost,W5: 68 rush yds,-52.0
+BT050,5,Rebuilt line,SF @ SEA,SF,Conditional lean,Kaelon Black under 35 rushing yards (No),No,51,53.0,50.5,53.0,56.4,59.3,53–59%,Won,W5: 16 rush yds,49.0
+BT051,6,Rebuilt line,HOU @ JAX,HOU,Final line,C.J. Stroud under 20 rushing yards (No),No,49,51.0,48.5,54.1,59.7,63.7,54–64%,Won,W6: 5 rush yds,51.0
+BT052,6,Rebuilt line,ARI @ LAR,LAR,Conditional lean,Tyler Higbee 4+ receptions (Yes),Yes,58,60.0,57.5,59.5,61.7,63.2,60–63%,Won,W6: 4 rec,42.0
+BT053,6,Rebuilt line,BUF @ LV,LV,Conditional lean,Brock Bowers under 7 receptions (No),No,50,52.0,49.5,51.9,55.2,58.2,52–58%,Won,W6: 4 rec,50.0
+BT054,6,Rebuilt line,BUF @ LV,LV,Conditional lean,Michael Mayer under 4 receptions (No),No,54,56.0,53.5,55.9,59.2,62.3,56–62%,Lost,W6: 7 rec,-54.0
+BT055,6,Rebuilt line,DAL @ GB,GB,Conditional lean,Matthew Golden 4+ receptions (Yes),Yes,54,56.0,53.5,55.5,57.8,59.6,56–60%,Won,W6: 6 rec,46.0
+BT056,6,Rebuilt line,DAL @ GB,GB,Conditional lean,Tucker Kraft 4+ receptions (Yes),Yes,52,54.0,51.5,53.4,55.8,58.4,53–58%,Won,W6: 5 rec,48.0
+BT057,6,Rebuilt line,LAC @ KC,LAC,Conditional lean,Keaton Mitchell under 35 rushing yards (No),No,54,56.0,53.5,54.3,57.9,60.0,54–60%,Won,W6: 4 rush yds,46.0
+BT058,6,Rebuilt line,LAC @ KC,KC,Conditional lean,Kenneth Walker III 3+ receptions (Yes),Yes,54,56.0,53.5,53.9,56.6,58.7,54–59%,Lost,W6: 2 rec,-54.0
+BT059,6,Rebuilt line,LAC @ KC,LAC,Conditional lean,Omarion Hampton under 60 rushing yards (No),No,53,55.0,52.5,53.3,56.9,59.1,53–59%,Won,W6: 18 rush yds,47.0
+BT060,6,Rebuilt line,LAC @ KC,KC,Conditional lean,Travis Kelce 45+ receiving yards (Yes),Yes,53,55.0,52.5,53.9,56.0,57.7,54–58%,Won,W6: 53 rec yds,47.0
+BT061,6,Rebuilt line,NO @ NYG,NYG,Conditional lean,Cam Skattebo 70+ rush + rec yards (Yes),Yes,50,52.0,49.5,51.8,56.1,58.9,52–59%,Lost,W6: 0 rush + rec yds,-50.0
+BT062,6,Rebuilt line,NO @ NYG,NYG,Conditional lean,Isaiah Likely 5+ receptions (Yes),Yes,56,58.0,55.5,56.3,58.7,60.4,56–60%,Won,W6: 6 rec,44.0
+BT063,6,Rebuilt line,NO @ NYG,NO,Conditional lean,Kendre Miller 30+ rushing yards (Yes),Yes,46,48.0,45.5,46.9,51.0,53.8,47–54%,Won,W6: 70 rush yds,54.0
+BT064,6,Rebuilt line,SEA @ DEN,SEA,Conditional lean,Emanuel Wilson 50+ rushing yards (Yes),Yes,53,55.0,52.5,52.8,57.0,59.5,53–60%,Won,W6: 52 rush yds,47.0
+BT065,6,Rebuilt line,TEN @ IND,IND,Conditional lean,Josh Downs 40+ receiving yards (Yes),Yes,49,51.0,48.5,50.0,52.2,53.7,50–54%,Won,W6: 40 rec yds,51.0
+BT066,7,Real price,KC @ SEA,SEA,Final line,Velus Jones Jr. under 10 rushing yards (No),No,51,53.0,50.5,57.9,63.8,69.5,58–70%,Won,W7: 8 rush yds,49.0
+BT067,7,Real price,LAR @ LV,LAR,Final line,Kyren Williams 70+ rushing yards (Yes),Yes,49,51.0,48.5,57.0,66.3,72.9,57–73%,Won,W7: 99 rush yds,51.0
+BT068,7,Real price,CLE @ TEN,TEN,Conditional lean,Tony Pollard 70+ rushing yards (Yes),Yes,50,52.0,49.5,50.5,57.6,61.7,50–62%,Won,W7: 129 rush yds,50.0
+BT069,7,Real price,DEN @ ARI,DEN,Conditional lean,Marvin Mims Jr. 2+ receptions (Yes),Yes,53,55.0,52.5,53.0,57.6,63.1,53–63%,Won,W7: 2 rec,47.0
+BT070,7,Real price,DEN @ ARI,DEN,Conditional lean,RJ Harvey 25+ receiving yards (Yes),Yes,51,53.0,50.5,49.8,54.5,59.0,50–59%,Won,W7: 54 rec yds,49.0
+BT071,7,Real price,DEN @ ARI,ARI,Conditional lean,Tyler Allgeier 30+ rushing yards (Yes),Yes,53,55.0,52.5,54.4,60.2,65.2,54–65%,Lost,W7: 19 rush yds,-53.0
+BT072,7,Real price,GB @ DET,GB,Conditional lean,Christian Watson under 70 receiving yards (No),No,46,48.0,45.5,45.8,54.2,63.0,46–63%,Won,W7: 57 rec yds,54.0
+BT073,7,Real price,GB @ DET,GB,Conditional lean,Matthew Golden under 70 receiving yards (No),No,46,48.0,45.5,46.6,54.7,63.8,47–64%,Won,W7: 39 rec yds,54.0
+BT074,7,Real price,GB @ DET,GB,Conditional lean,Savion Williams under 25 receiving yards (No),No,52,54.0,51.5,52.5,60.5,69.0,52–69%,Lost,W7: 47 rec yds,-52.0
+BT075,7,Real price,GB @ DET,GB,Conditional lean,Tucker Kraft under 50 receiving yards (No),No,47,49.0,46.5,46.2,55.1,65.2,46–65%,Won,W7: 48 rec yds,53.0
+BT076,7,Real price,IND @ MIN,IND,Conditional lean,Jonathan Taylor 15+ receiving yards (Yes),Yes,53,55.0,52.5,52.2,56.1,60.0,52–60%,Won,W7: 15 rec yds,47.0
+BT077,7,Real price,KC @ SEA,KC,Conditional lean,Xavier Worthy 50+ receiving yards (Yes),Yes,51,53.0,50.5,50.2,54.8,60.0,50–60%,Lost,W7: 11 rec yds,-51.0
+BT078,7,Real price,LAR @ LV,LV,Conditional lean,Brock Bowers 70+ receiving yards (Yes),Yes,52,54.0,51.5,51.3,54.8,58.8,51–59%,Won,W7: 73 rec yds,48.0
+BT079,7,Real price,LAR @ LV,LV,Conditional lean,Michael Mayer 4+ receptions (Yes),Yes,51,53.0,50.5,50.9,54.1,57.7,51–58%,Lost,W7: 3 rec,-51.0
+BT080,7,Real price,LAR @ LV,LV,Conditional lean,Tre Tucker 4+ receptions (Yes),Yes,46,48.0,45.5,44.2,48.7,53.7,44–54%,Won,W7: 5 rec,54.0
+BT081,7,Real price,MIA @ NYJ,NYJ,Conditional lean,Garrett Wilson 70+ receiving yards (Yes),Yes,45,47.0,44.5,44.7,49.3,54.6,45–55%,Lost,W7: 26 rec yds,-45.0
+BT082,7,Real price,NE @ CHI,NE,Conditional lean,DeMario Douglas 4+ receptions (Yes),Yes,48,50.0,47.5,49.9,55.3,61.4,50–61%,Lost,W7: 3 rec,-48.0
+BT083,7,Real price,NE @ CHI,NE,Conditional lean,Drake Maye 30+ rushing yards (Yes),Yes,48,50.0,47.5,46.6,54.8,64.8,47–65%,Lost,W7: 26 rush yds,-48.0
+BT084,7,Real price,NE @ CHI,NE,Conditional lean,Rhamondre Stevenson 40+ rushing yards (Yes),Yes,55,57.0,54.5,53.9,61.7,70.9,54–71%,Lost,W7: 22 rush yds,-55.0
+BT085,7,Real price,SF @ ATL,SF,Conditional lean,Christian McCaffrey under 6 receptions (No),No,48,50.0,47.5,48.4,55.5,62.7,48–63%,Lost,W7: 6 rec,-48.0
+BT086,8,Real price,CHI @ SEA,CHI,Final line,Caleb Williams under 25 rushing yards (No),No,51,53.0,50.5,55.2,58.6,62.3,55–62%,Won,W8: 1 rush yds,49.0
+BT087,8,Real price,KC @ DEN,KC,Final line,Kenneth Walker III 90+ rushing yards (Yes),Yes,48,50.0,47.5,51.5,52.8,54.4,52–54%,Lost,W8: 69 rush yds,-48.0
+BT088,8,Real price,CHI @ SEA,SEA,Conditional lean,Jadarian Price under 30 rushing yards (No),No,54,56.0,53.5,52.3,56.6,60.3,52–60%,Won,W8: 29 rush yds,46.0
+BT089,8,Real price,CLE @ PIT,PIT,Conditional lean,Jaylen Warren 70+ rushing yards (Yes),Yes,46,48.0,45.5,45.7,49.5,52.0,46–52%,Won,W8: 143 rush yds,54.0
+BT090,8,Real price,IND @ JAX,JAX,Conditional lean,Bhayshul Tuten 80+ rush + rec yards (Yes),Yes,54,56.0,53.5,54.2,57.5,60.8,54–61%,Won,W8: 159 rush + rec yds,46.0
+BT091,8,Real price,IND @ JAX,JAX,Conditional lean,Chris Rodriguez Jr. 30+ rushing yards (Yes),Yes,49,51.0,48.5,49.6,53.0,56.5,50–56%,Won,W8: 41 rush yds,51.0
+BT092,8,Real price,KC @ DEN,DEN,Conditional lean,Jonah Coleman under 40 rushing yards (No),No,52,54.0,51.5,54.0,57.5,60.7,54–61%,Lost,W8: 41 rush yds,-52.0
+BT093,8,Real price,LAC @ LAR,LAR,Conditional lean,Kyren Williams 60+ rushing yards (Yes),Yes,52,54.0,51.5,53.6,56.3,58.1,54–58%,Lost,W8: 56 rush yds,-52.0
+BT094,8,Real price,NE @ MIA,NE,Conditional lean,Rhamondre Stevenson 80+ rush + rec yards (Yes),Yes,48,50.0,47.5,49.7,50.7,51.8,50–52%,Won,W8: 90 rush + rec yds,52.0
