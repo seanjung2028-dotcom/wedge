@@ -1,41 +1,42 @@
-key,label,group,src,week,tier,wins,losses,win_pct,avg_price,needed,ours,profit_c,roi_pct
-final_bt,"Final lines · backtest, Weeks 1–9",compare,backtest,,final,8,3,72.7,50.3,52.3,60.3,247,44.7
-final_real,"Final lines · Weeks 7–9, real prices",compare,real,,final,3,1,75.0,49.8,51.8,60.4,101,50.8
-final_rebuilt,"Final lines · Weeks 1–6, rebuilt lines",compare,rebuilt,,final,5,2,71.4,50.6,52.6,60.3,146,41.2
-final_live,"Final lines · live card, since Week 10",compare,live,,final,6,3,66.7,53.4,55.4,60.2,119,24.7
-lean_bt,"Conditional leans · backtest, Weeks 1–9",compare,backtest,,lean,48,35,57.8,50.9,52.9,55.3,577,13.7
-lean_real,"Conditional leans · Weeks 7–9, real prices",compare,real,,lean,14,11,56.0,50.0,52.0,55.2,150,12.0
-lean_rebuilt,"Conditional leans · Weeks 1–6, rebuilt lines",compare,rebuilt,,lean,34,24,58.6,51.3,53.3,55.3,427,14.4
-lean_live,"Conditional leans · live card, since Week 10",compare,live,,lean,3,4,42.9,51.9,53.9,56.0,-63,-17.4
-final_bt_Yes,Final lines · backtest overs,side,backtest,,final,2,2,50.0,49.0,51.0,59.9,4,2.0
-final_bt_No,Final lines · backtest unders,side,backtest,,final,6,1,85.7,51.0,53.0,60.6,243,68.1
-lean_bt_Yes,Conditional leans · backtest overs,side,backtest,,lean,37,22,62.7,50.6,52.6,54.7,712,23.8
-lean_bt_No,Conditional leans · backtest unders,side,backtest,,lean,11,13,45.8,51.5,53.5,56.6,-135,-10.9
-final_mixcut,Final lines · unders left off for the card mix,side,backtest,,final,25,8,75.8,49.9,51.9,57.4,854,51.9
-lean_mixcut,Conditional leans · unders left off for the card mix,side,backtest,,lean,24,18,57.1,51.1,53.1,55.1,253,11.8
-w1_final,Week 1 · final lines,week,rebuilt,1,final,0,0,,,,,0,
-w1_lean,Week 1 · conditional leans,week,rebuilt,1,lean,0,0,,,,,0,
-w2_final,Week 2 · final lines,week,rebuilt,2,final,1,0,100.0,47.0,49.0,57.4,53,112.8
-w2_lean,Week 2 · conditional leans,week,rebuilt,2,lean,0,1,0.0,55.0,57.0,60.5,-55,-100.0
-w3_final,Week 3 · final lines,week,rebuilt,3,final,1,0,100.0,55.0,57.0,62.9,45,81.8
-w3_lean,Week 3 · conditional leans,week,rebuilt,3,lean,0,1,0.0,51.0,53.0,57.2,-51,-100.0
-w4_final,Week 4 · final lines,week,rebuilt,4,final,0,2,0.0,51.0,53.0,61.1,-102,-100.0
-w4_lean,Week 4 · conditional leans,week,rebuilt,4,lean,11,12,47.8,51.2,53.2,55.0,-78,-6.6
-w5_final,Week 5 · final lines,week,rebuilt,5,final,2,0,100.0,50.5,52.5,59.9,99,98.0
-w5_lean,Week 5 · conditional leans,week,rebuilt,5,lean,12,7,63.2,50.2,52.2,54.3,247,25.9
-w6_final,Week 6 · final lines,week,rebuilt,6,final,1,0,100.0,49.0,51.0,59.7,51,104.1
-w6_lean,Week 6 · conditional leans,week,rebuilt,6,lean,11,3,78.6,52.6,54.6,56.6,364,49.5
-w7_final,Week 7 · final lines,week,real,7,final,2,0,100.0,50.0,52.0,65.0,100,100.0
-w7_lean,Week 7 · conditional leans,week,real,7,lean,9,9,50.0,49.7,51.7,55.5,5,0.6
-w8_final,Week 8 · final lines,week,real,8,final,1,1,50.0,49.5,51.5,55.7,1,1.0
-w8_lean,Week 8 · conditional leans,week,real,8,lean,5,2,71.4,50.7,52.7,54.4,145,40.8
-w9_final,Week 9 · final lines,week,real,9,final,0,0,,,,,0,
-w9_lean,Week 9 · conditional leans,week,real,9,lean,0,0,,,,,0,
-w10_final,Week 10 · final lines (live card),week,live,10,final,6,3,66.7,53.4,55.4,60.2,119,24.7
-w10_lean,Week 10 · conditional leans (live card),week,live,10,lean,3,4,42.9,51.9,53.9,56.0,-63,-17.4
-p9_final,"Week 9 · final lines, card as posted (before v6)",check,posted9,9,final,1,3,25.0,47.8,49.8,53.8,-91,-47.6
-b9_final,"Week 9 · final lines, backtest",check,real,9,final,0,0,,,,,0,
-c79_final,Weeks 7–9 · final lines on rebuilt lines (check),check,check,,final,4,2,66.7,50.2,52.2,61.6,99,32.9
-p9_lean,"Week 9 · conditional leans, card as posted (before v6)",check,posted9,9,lean,10,11,47.6,47.6,49.6,51.2,1,0.1
-b9_lean,"Week 9 · conditional leans, backtest",check,real,9,lean,0,0,,,,,0,
-c79_lean,Weeks 7–9 · conditional leans on rebuilt lines (check),check,check,,lean,15,11,57.7,50.0,52.0,55.4,200,15.4
+key,label,group,src,week,tier,wins,losses,win_pct,avg_price,needed,ours,profit_c,roi_pct,added,thru
+final_bt,"Final lines · backtest, Weeks 1–9",compare,backtest,,final,8,3,72.7,50.3,52.3,60.3,247,44.7,,
+final_real,"Final lines · Weeks 7–9, real prices",compare,real,,final,3,1,75.0,49.8,51.8,60.4,101,50.8,,
+final_rebuilt,"Final lines · Weeks 1–6, rebuilt lines",compare,rebuilt,,final,5,2,71.4,50.6,52.6,60.3,146,41.2,,
+final_live,"Final lines · live card, since Week 10",compare,live,,final,6,3,66.7,53.4,55.4,60.2,119,24.7,,
+lean_bt,"Conditional leans · backtest, Weeks 1–9",compare,backtest,,lean,48,35,57.8,50.9,52.9,55.3,577,13.7,,
+lean_real,"Conditional leans · Weeks 7–9, real prices",compare,real,,lean,14,11,56.0,50.0,52.0,55.2,150,12.0,,
+lean_rebuilt,"Conditional leans · Weeks 1–6, rebuilt lines",compare,rebuilt,,lean,34,24,58.6,51.3,53.3,55.3,427,14.4,,
+lean_live,"Conditional leans · live card, since Week 10",compare,live,,lean,3,4,42.9,51.9,53.9,56.0,-63,-17.4,,
+final_bt_Yes,Final lines · backtest overs,side,backtest,,final,2,2,50.0,49.0,51.0,59.9,4,2.0,,
+final_bt_No,Final lines · backtest unders,side,backtest,,final,6,1,85.7,51.0,53.0,60.6,243,68.1,,
+lean_bt_Yes,Conditional leans · backtest overs,side,backtest,,lean,37,22,62.7,50.6,52.6,54.7,712,23.8,,
+lean_bt_No,Conditional leans · backtest unders,side,backtest,,lean,11,13,45.8,51.5,53.5,56.6,-135,-10.9,,
+final_mixcut,Final lines · unders left off for the card mix,side,backtest,,final,25,8,75.8,49.9,51.9,57.4,854,51.9,,
+lean_mixcut,Conditional leans · unders left off for the card mix,side,backtest,,lean,24,18,57.1,51.1,53.1,55.1,253,11.8,,
+w1_final,Week 1 · final lines,week,rebuilt,1,final,0,0,,,,,0,,,
+w1_lean,Week 1 · conditional leans,week,rebuilt,1,lean,0,0,,,,,0,,,
+w2_final,Week 2 · final lines,week,rebuilt,2,final,1,0,100.0,47.0,49.0,57.4,53,112.8,,
+w2_lean,Week 2 · conditional leans,week,rebuilt,2,lean,0,1,0.0,55.0,57.0,60.5,-55,-100.0,,
+w3_final,Week 3 · final lines,week,rebuilt,3,final,1,0,100.0,55.0,57.0,62.9,45,81.8,,
+w3_lean,Week 3 · conditional leans,week,rebuilt,3,lean,0,1,0.0,51.0,53.0,57.2,-51,-100.0,,
+w4_final,Week 4 · final lines,week,rebuilt,4,final,0,2,0.0,51.0,53.0,61.1,-102,-100.0,,
+w4_lean,Week 4 · conditional leans,week,rebuilt,4,lean,11,12,47.8,51.2,53.2,55.0,-78,-6.6,,
+w5_final,Week 5 · final lines,week,rebuilt,5,final,2,0,100.0,50.5,52.5,59.9,99,98.0,,
+w5_lean,Week 5 · conditional leans,week,rebuilt,5,lean,12,7,63.2,50.2,52.2,54.3,247,25.9,,
+w6_final,Week 6 · final lines,week,rebuilt,6,final,1,0,100.0,49.0,51.0,59.7,51,104.1,,
+w6_lean,Week 6 · conditional leans,week,rebuilt,6,lean,11,3,78.6,52.6,54.6,56.6,364,49.5,,
+w7_final,Week 7 · final lines,week,real,7,final,2,0,100.0,50.0,52.0,65.0,100,100.0,,
+w7_lean,Week 7 · conditional leans,week,real,7,lean,9,9,50.0,49.7,51.7,55.5,5,0.6,,
+w8_final,Week 8 · final lines,week,real,8,final,1,1,50.0,49.5,51.5,55.7,1,1.0,,
+w8_lean,Week 8 · conditional leans,week,real,8,lean,5,2,71.4,50.7,52.7,54.4,145,40.8,,
+w9_final,Week 9 · final lines,week,real,9,final,0,0,,,,,0,,,
+w9_lean,Week 9 · conditional leans,week,real,9,lean,0,0,,,,,0,,,
+w10_final,Week 10 · final lines (live card),week,live,10,final,6,3,66.7,53.4,55.4,60.2,119,24.7,,
+w10_lean,Week 10 · conditional leans (live card),week,live,10,lean,3,4,42.9,51.9,53.9,56.0,-63,-17.4,,
+p9_final,"Week 9 · final lines, card as posted (before v6)",check,posted9,9,final,1,3,25.0,47.8,49.8,53.8,-91,-47.6,,
+b9_final,"Week 9 · final lines, backtest",check,real,9,final,0,0,,,,,0,,,
+c79_final,Weeks 7–9 · final lines on rebuilt lines (check),check,check,,final,4,2,66.7,50.2,52.2,61.6,99,32.9,,
+p9_lean,"Week 9 · conditional leans, card as posted (before v6)",check,posted9,9,lean,10,11,47.6,47.6,49.6,51.2,1,0.1,,
+b9_lean,"Week 9 · conditional leans, backtest",check,real,9,lean,0,0,,,,,0,,,
+c79_lean,Weeks 7–9 · conditional leans on rebuilt lines (check),check,check,,lean,15,11,57.7,50.0,52.0,55.4,200,15.4,,
+final_record,Final lines · Weeks 1–10,record,record,,final,26,6,81.2,53.3,55.3,,894,52.4,12.0,10.0

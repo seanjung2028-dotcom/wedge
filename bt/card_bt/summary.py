@@ -69,3 +69,46 @@ PK[['id', 'week', 'prices', 'game', 'team', 'decision', 'line', 'side', 'price',
 SUM.to_csv(W + 'rh/card_bt_sum.csv', index=False)
 pd.set_option('display.width', 220)
 print(SUM[['key', 'wins', 'losses', 'win_pct', 'avg_price', 'needed', 'ours', 'profit_c', 'roi_pct']].to_string())
+
+# ---------------- the final-line record on Results (Tue Nov 17, the owner's call) ----------------
+# backtested finals (above, four left out) + Wedge picks added by hand as final lines + the Week 10 card's final lines as
+# certified (certs10/keys_w10_finals.json). Prices, outcomes and profit come from the record (rh/results_w6_w11.csv).
+import re, sys
+sys.path.insert(0, W + 'lens'); import core
+ADDED = [(6, 'HOU @ JAX', 'Xavier Hutchinson: Over 1.5 Receptions'), (6, 'WSH @ SF', 'Brock Purdy: Over 19.5 Rush Yards'),
+         (6, 'WSH @ SF', 'Christian McCaffrey: Over 5.5 Receptions'), (6, 'LAC @ KC', 'Kenneth Walker: Over 89.5 Rush Yards'),
+         (6, 'BUF @ LV', 'Ashton Jeanty: Over 3.5 Receptions'), (7, 'NE @ CHI', "D'Andre Swift: Over 2.5 Receptions"),
+         (7, 'PIT @ NO', 'Jaylen Warren: Over 14.5 Receiving Yards'), (7, 'NE @ CHI', 'Rhamondre Stevenson: Over 2.5 Receptions'),
+         (7, 'CIN @ BAL', 'Chase Brown: Over 39.5 Rush Yards'), (9, 'CIN @ ATL', 'Tee Higgins: Over 4.5 Receptions'),
+         (9, 'CLE @ NO', 'Chris Olave: Over 5.5 Receptions'), (10, 'WSH @ NYG', 'Malik Nabers: Over 4.5 Receptions')]
+CARD10 = [(10,) + tuple(k.split('|')[1:2]) + (k.split('|')[3],) for k in json.load(open(W + 'certs10/keys_w10_finals.json'))]
+RR = pd.read_csv(W + 'rh/results_w6_w11.csv', low_memory=False)
+ST = pd.read_csv(W + 'dl19/stats_player_week_2026.csv', low_memory=False); ST = ST[ST.season_type == 'REG'].copy()
+ST['nn'] = ST.player_display_name.map(core.nn); ST['team'] = ST.team.map(core.fx)
+MW = {'Receptions': ('receptions', 'receptions', 'rec'), 'Rush Yards': ('rushing yards', 'rushing_yards', 'rush yds'), 'Receiving Yards': ('receiving yards', 'receiving_yards', 'rec yds')}
+F10 = {p['line']: p for c in json.load(open(W + 'final10/final_w10.json'))['cards'] for p in c['plays']}
+def rec_row(wk, game, contract, source):
+    x = RR[(RR.week == wk) & (RR.game == game) & (RR.contract == contract)]
+    assert len(x) >= 1, (wk, game, contract); x = x.iloc[0]
+    m = re.match(r"(.+?): (Over|Under) ([\d.]+) (Receptions|Rush Yards|Receiving Yards)$", contract)
+    name, ou, ln, mk = m.group(1), m.group(2), float(m.group(3)), m.group(4); k = int(ln + 0.5); word, col, unit = MW[mk]
+    a, h = game.split(' @ '); s = ST[(ST.week == wk) & (ST.nn == core.nn(name)) & ST.team.isin([a, h])]
+    actual = float(s.iloc[0][col]) if len(s) else 0.0
+    won = actual > ln if ou == 'Over' else actual < ln
+    assert won == (x.outcome == 'Won'), (contract, actual, x.outcome)
+    line = f"{name} {k}+ {word} (Yes)" if ou == 'Over' else f"{name} under {k} {word} (No)"
+    f = F10.get(line) if source == 'Week 10 card' else None
+    return {'week': wk, 'source': source, 'game': game, 'team': s.iloc[0].team if len(s) else '', 'line': line, 'price': int(x.yes_price),
+            'mid': f['mid'] if f and f.get('price') == int(x.yes_price) else None, 'outcome': x.outcome, 'result': f"W{wk}: {int(actual)} {unit}", 'profit_c': int(x.profit_c)}
+REC = [{'week': r.week, 'source': 'Backtest', 'game': r.game, 'team': r.team, 'line': r.line, 'price': int(r.price), 'mid': r.mid, 'outcome': r.outcome,
+        'result': r.result, 'profit_c': int(r.profit)} for r in PK[PK.decision == 'Final line'].itertuples()]
+REC += [rec_row(w, g, c, 'Added') for w, g, c in ADDED] + [rec_row(w, g, c, 'Week 10 card') for w, g, c in CARD10]
+REC = pd.DataFrame(REC); REC['k'] = REC.groupby(['week', 'line']).line.transform('size'); assert (REC.k == 1).all(), 'duplicate line'
+REC = REC.drop(columns='k').sort_values(['week', 'source', 'game', 'line']).reset_index(drop=True); REC.insert(0, 'id', [f'FR{i + 1:03d}' for i in range(len(REC))])
+REC.to_csv(W + 'rh/final_record.csv', index=False)
+n = len(REC); w_ = int((REC.outcome == 'Won').sum()); cost = float(REC.price.sum()); prof = float(REC.profit_c.sum())
+row = {'key': 'final_record', 'label': 'Final lines · Weeks 1–10', 'group': 'record', 'src': 'record', 'week': '', 'tier': 'final', 'wins': w_, 'losses': n - w_,
+       'win_pct': round(100 * w_ / n, 1), 'avg_price': round(cost / n, 1), 'needed': round(cost / n + FEE, 1), 'ours': None, 'profit_c': int(prof), 'roi_pct': round(100 * prof / cost, 1),
+       'added': int((REC.source == 'Added').sum()), 'thru': int(REC.week.max())}
+SUM = pd.concat([SUM, pd.DataFrame([row])], ignore_index=True); SUM.to_csv(W + 'rh/card_bt_sum.csv', index=False)
+print('final record', f"{w_}-{n - w_}", row['win_pct'], f"{row['roi_pct']:+}%", REC.groupby('source').outcome.value_counts().unstack(fill_value=0).to_dict('index'))

@@ -1,18 +1,18 @@
-"""Round 12 (Tue Nov 17): the top of Results is the final-line record, Weeks 1-9 backtested with this week's card rules
-(bt/card_bt/; four lines left out at the owner's call, noted on the page). Like Home's record: the hit rate biggest,
+"""Round 12 (Tue Nov 17): the top of Results is the final-line record: Weeks 1-9 backtested with this week's card rules
+(bt/card_bt/; four lines left out) plus Wedge picks added by hand, then the card's certified finals (all noted on the page). Like Home's record: the hit rate biggest,
 the record medium, the net small; every final line, week by week, on the left. The Week 6 tiles give way to it."""
 V = '/home/claude/wedger/v2/'
 HERO = '''    <section class="v2-frec" id="results-frec" aria-label="Final-line record">
       <div class="v2-frec-list" id="results-frec-list" aria-label="Every final line, week by week"></div>
       <div class="pf-proof v2-frec-proof">
         <div class="pf-blob" aria-hidden="true"></div>
-        <span class="pf-label">Final lines · Weeks 1–9</span>
+        <span class="pf-label" id="frec-label">Final lines</span>
         <div class="pf-big dash-skeleton" id="frec-pct">—</div>
         <div class="v2-frec-stats">
           <span class="v2-ps v2-frec-wl"><b id="frec-wl">—</b>record</span>
           <span class="v2-ps v2-ps-net v2-frec-net"><b id="frec-net">—</b>net</span>
         </div>
-        <p class="v2-frec-note">This week’s card rules, backtested and graded on how each line settled. Weeks 7–9 at the real Robinhood prices; Weeks 2–6 on lines rebuilt from box scores (Robinhood kept no prop prices before Week 7). Four lines are left out of this record. Net: one contract each at the price, before fees.</p>
+        <p class="v2-frec-note" id="frec-note"></p>
       </div>
     </section>'''
 CSS = '''
@@ -32,6 +32,9 @@ CSS = '''
 .wg-paper .v2-open .v2-frec-pick { grid-template-columns: auto minmax(0, 1fr) auto; }
 .wg-paper .v2-open .v2-frec-pick .wz-helm { width: 44px; height: auto; }
 .wg-paper .v2-open .v2-frec-pick b { display: block; line-height: 1.35; }
+.wg-paper .v2-open .v2-frec-tag { display: inline-block; margin-right: 7px; padding: 0 6px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; font: 600 10px/1.6 var(--wx-mono); letter-spacing: .06em; text-transform: uppercase; font-style: normal; color: var(--pf-muted); }
+.wg-paper .v2-open .v2-frec-tag.is-add { border-color: rgba(255,255,255,.34); color: #f6f7f8; }
+.wg-paper .v2-open .v2-frec-tag.is-card { border-color: var(--wg-green); color: var(--wg-green); }
 @media (max-width: 860px) {
   .wg-paper .v2-open .v2-frec { grid-template-columns: minmax(0, 1fr); }
   .wg-paper .v2-open .v2-frec-proof { position: relative; top: 0; order: -1; }

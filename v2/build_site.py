@@ -18,7 +18,7 @@ DS = {'lines': 'inband_w11.csv', 'lines_all': 'lines_all_w11.csv', 'props': 'pro
       'nba_outlook': '../nba/nba_outlook.csv', 'nba_ctx': '../nba/nba_ctx.csv', 'pick_prices': 'pick_prices_w7.csv', 'nba_results': '../nba/nba_results.csv',
       'proj': 'proj_w11.csv', 'bt_weeks': 'bt_weeks.csv', 'bt_props': 'bt_props.csv', 'mom_summary': 'mom_summary.csv', 'team_mom': 'team_mom.csv',
       'defhist': 'defhist_w11.csv', 'cats': 'cats.csv', 'research': 'research.csv', 'inj': W + 'v2/data/inj_w11.csv',
-      'card_bt': 'card_bt.csv', 'card_bt_sum': 'card_bt_sum.csv'}
+      'card_bt': 'card_bt.csv', 'card_bt_sum': 'card_bt_sum.csv', 'final_record': 'final_record.csv'}
 def ds_path(k, v):
     f = v if v.startswith('/') else R + v
     if os.path.exists(f): return f

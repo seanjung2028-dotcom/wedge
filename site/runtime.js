@@ -1,7 +1,7 @@
 /* Wedge standalone runtime: stands in for the dashboard runtime and the shared store (read-only). */
 (function () {
   'use strict';
-  var IDS = ["lines", "lines_all", "props", "defense", "atd", "results", "hist_perms", "hist_lines", "sit", "outlook", "nflctx", "nba_lines", "nba_sit", "nba_outlook", "nba_ctx", "pick_prices", "nba_results", "proj", "bt_weeks", "bt_props", "mom_summary", "team_mom", "defhist", "cats", "research", "inj", "card_bt", "card_bt_sum"];
+  var IDS = ["lines", "lines_all", "props", "defense", "atd", "results", "hist_perms", "hist_lines", "sit", "outlook", "nflctx", "nba_lines", "nba_sit", "nba_outlook", "nba_ctx", "pick_prices", "nba_results", "proj", "bt_weeks", "bt_props", "mom_summary", "team_mom", "defhist", "cats", "research", "inj", "card_bt", "card_bt_sum", "final_record"];
   var raw = {}, calcs = {}, subs = [], booted = false;
   window.dash = {
     colors: ['#2a6fdb', '#e07b39', '#7a5cc4', '#3aa17e'],

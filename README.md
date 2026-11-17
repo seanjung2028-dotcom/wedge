@@ -32,7 +32,7 @@ This is a working snapshot from Week 10 of the 2026 season, exported from the se
 8. **Card backtest, Weeks 1–9** (`bt/card_bt/`, shown on Results):
    - `pool_real.py`: Weeks 7–9 real Robinhood main lines from the record, with point-in-time lens features.
    - `pool_rebuilt.py`: Weeks 2–6 lines rebuilt from box scores the way the books set them (fit and checked on the real Week 7–9 lines; `rebuild_check.json`). Robinhood kept no prop prices before Week 7.
-   - `card_bt.py`: the Week 11 card rules (v6 range, the checks, one line per player, four per game, the card mix), with v6 refit without the week for Weeks 7–9. Writes `rh/card_bt.csv` and `rh/card_bt_sum.csv` through `summary.py`. Results shows the final-line record (Weeks 1–9) at the top; `EXCLUDE` in `summary.py` lists the four lines the owner left out (noted on the page).
+   - `card_bt.py`: the Week 11 card rules (v6 range, the checks, one line per player, four per game, the card mix), with v6 refit without the week for Weeks 7–9. Writes `rh/card_bt.csv` and `rh/card_bt_sum.csv` through `summary.py`. Results shows the final-line record (Weeks 1–9) at the top; `EXCLUDE` in `summary.py` lists the four lines the owner left out (noted on the page). `ADDED` lists Wedge picks the owner added to it by hand, and the Week 10 card's certified finals follow; together they are `rh/final_record.csv`.
 
 ## Website and memberships (live at https://wedgepicks.com)
 
