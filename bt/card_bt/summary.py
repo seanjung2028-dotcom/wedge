@@ -80,21 +80,23 @@ ADDED = [(6, 'HOU @ JAX', 'Xavier Hutchinson: Over 1.5 Receptions'), (6, 'WSH @ 
          (6, 'BUF @ LV', 'Ashton Jeanty: Over 3.5 Receptions'), (7, 'NE @ CHI', "D'Andre Swift: Over 2.5 Receptions"),
          (7, 'PIT @ NO', 'Jaylen Warren: Over 14.5 Receiving Yards'), (7, 'NE @ CHI', 'Rhamondre Stevenson: Over 2.5 Receptions'),
          (7, 'CIN @ BAL', 'Chase Brown: Over 39.5 Rush Yards'), (9, 'CIN @ ATL', 'Tee Higgins: Over 4.5 Receptions'),
-         (9, 'CLE @ NO', 'Chris Olave: Over 5.5 Receptions'), (10, 'WSH @ NYG', 'Malik Nabers: Over 4.5 Receptions')]
+         (9, 'CLE @ NO', 'Chris Olave: Over 5.5 Receptions'),
+         (5, 'NYG @ WAS', 'Malik Nabers: Over 4.5 Receptions', {'price': 67})]   # the first NYG-WSH game (owner, Nov 17); 67c = the 1.49x slip; not in the Week 6+ record file
 CARD10 = [(10,) + tuple(k.split('|')[1:2]) + (k.split('|')[3],) for k in json.load(open(W + 'certs10/keys_w10_finals.json'))]
 RR = pd.read_csv(W + 'rh/results_w6_w11.csv', low_memory=False)
 ST = pd.read_csv(W + 'dl19/stats_player_week_2026.csv', low_memory=False); ST = ST[ST.season_type == 'REG'].copy()
 ST['nn'] = ST.player_display_name.map(core.nn); ST['team'] = ST.team.map(core.fx)
 MW = {'Receptions': ('receptions', 'receptions', 'rec'), 'Rush Yards': ('rushing yards', 'rushing_yards', 'rush yds'), 'Receiving Yards': ('receiving yards', 'receiving_yards', 'rec yds')}
 F10 = {p['line']: p for c in json.load(open(W + 'final10/final_w10.json'))['cards'] for p in c['plays']}
-def rec_row(wk, game, contract, source):
+def rec_row(wk, game, contract, source, man=None):
     x = RR[(RR.week == wk) & (RR.game == game) & (RR.contract == contract)]
-    assert len(x) >= 1, (wk, game, contract); x = x.iloc[0]
+    assert len(x) >= 1 or man, (wk, game, contract); x = x.iloc[0] if len(x) else None
     m = re.match(r"(.+?): (Over|Under) ([\d.]+) (Receptions|Rush Yards|Receiving Yards)$", contract)
     name, ou, ln, mk = m.group(1), m.group(2), float(m.group(3)), m.group(4); k = int(ln + 0.5); word, col, unit = MW[mk]
     a, h = game.split(' @ '); s = ST[(ST.week == wk) & (ST.nn == core.nn(name)) & ST.team.isin([a, h])]
     actual = float(s.iloc[0][col]) if len(s) else 0.0
     won = actual > ln if ou == 'Over' else actual < ln
+    if x is None: x = pd.Series({'yes_price': man['price'], 'outcome': 'Won' if won else 'Lost', 'profit_c': (100 - man['price']) if won else -man['price']})
     assert won == (x.outcome == 'Won'), (contract, actual, x.outcome)
     line = f"{name} {k}+ {word} (Yes)" if ou == 'Over' else f"{name} under {k} {word} (No)"
     f = F10.get(line) if source == 'Week 10 card' else None
@@ -102,7 +104,7 @@ def rec_row(wk, game, contract, source):
             'mid': f['mid'] if f and f.get('price') == int(x.yes_price) else None, 'outcome': x.outcome, 'result': f"W{wk}: {int(actual)} {unit}", 'profit_c': int(x.profit_c)}
 REC = [{'week': r.week, 'source': 'Backtest', 'game': r.game, 'team': r.team, 'line': r.line, 'price': int(r.price), 'mid': r.mid, 'outcome': r.outcome,
         'result': r.result, 'profit_c': int(r.profit)} for r in PK[PK.decision == 'Final line'].itertuples()]
-REC += [rec_row(w, g, c, 'Added') for w, g, c in ADDED] + [rec_row(w, g, c, 'Week 10 card') for w, g, c in CARD10]
+REC += [rec_row(*a_[:3], 'Added', *a_[3:]) for a_ in ADDED] + [rec_row(w, g, c, 'Week 10 card') for w, g, c in CARD10]
 REC = pd.DataFrame(REC); REC['k'] = REC.groupby(['week', 'line']).line.transform('size'); assert (REC.k == 1).all(), 'duplicate line'
 REC = REC.drop(columns='k').sort_values(['week', 'source', 'game', 'line']).reset_index(drop=True); REC.insert(0, 'id', [f'FR{i + 1:03d}' for i in range(len(REC))])
 REC.to_csv(W + 'rh/final_record.csv', index=False)
