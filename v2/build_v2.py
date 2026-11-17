@@ -492,6 +492,9 @@ s, js = _r13.apply(s, js)
 # ---- round 14: The Winning Edge drops the run-on numbers line under each play
 _sp14 = _ilu.spec_from_file_location('r14_tidy', V + 'r14_tidy.py'); _r14 = _ilu.module_from_spec(_sp14); _sp14.loader.exec_module(_r14)
 s, js = _r14.apply(s, js)
+# ---- round 15: the research file in brushed metal
+_sp15 = _ilu.spec_from_file_location('r15_folder', V + 'r15_folder.py'); _r15 = _ilu.module_from_spec(_sp15); _sp15.loader.exec_module(_r15)
+s, js = _r15.apply(s, js)
 s = s.replace('@@JS@@', '<script>' + js + '</script>')
 s = s.replace('<title>Wedge', '<title>Wedge')
 open(V + 'index_full.html', 'w').write(s)
