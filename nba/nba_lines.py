@@ -9,10 +9,11 @@ sys.path.insert(0, '/home/claude/wedger/nba')
 import nba_model as M
 
 D = '/home/claude/wedger/nba/'
-TODAY = '2026-10-24'
-PRICED_AT = 'Fri Oct 23, 11:41 PM CT'
+TODAY = '2026-11-18'
+PRICED_AT = 'Wed Nov 18, 2:05 PM CT'
+SLATE = ('2026-11-18', '2026-11-18')   # CT dates of the games on the board
 X = pd.read_pickle(D + 'nba_logs.pkl'); L, T = X['logs'], X['team']
-KX = json.load(open(D + 'kalshi_nba_1023pm.json'))['out']
+KX = json.load(open(D + 'kalshi_nba_1118.json'))['out']   # built by pull1118/convert.py from the browser pulls
 SCH = pd.read_parquet(D + 'nba_schedule_2027.parquet')
 FIX = {'GS': 'GSW', 'NY': 'NYK', 'SA': 'SAS', 'NO': 'NOP', 'UTAH': 'UTA', 'WSH': 'WAS', 'PHO': 'PHX'}
 fx = lambda t: FIX.get(t, t)
@@ -20,31 +21,8 @@ NICK = {'ATL': 'Hawks', 'BOS': 'Celtics', 'BKN': 'Nets', 'CHA': 'Hornets', 'CHI'
         'DET': 'Pistons', 'GSW': 'Warriors', 'HOU': 'Rockets', 'IND': 'Pacers', 'LAC': 'Clippers', 'LAL': 'Lakers', 'MEM': 'Grizzlies', 'MIA': 'Heat',
         'MIL': 'Bucks', 'MIN': 'Timberwolves', 'NOP': 'Pelicans', 'NYK': 'Knicks', 'OKC': 'Thunder', 'ORL': 'Magic', 'PHI': '76ers', 'PHX': 'Suns',
         'POR': 'Trail Blazers', 'SAC': 'Kings', 'SAS': 'Spurs', 'TOR': 'Raptors', 'UTA': 'Jazz', 'WAS': 'Wizards'}
-# injury report (CBS Sports, Fri Oct 23 morning) for tonight's teams; CLE, PHI, DEN, OKC carried from Thursday's report.
-# 'Out' = out for the season or expected out through at least tonight; 'GTD' = game-time decision. Initials are resolved against box scores.
-INJ_RAW = {'CLE': {'Jarrett Allen': 'GTD', 'Khalifa Diop': 'Out', "Nae'Qwan Tomlin": 'Out'},
-       'PHI': {'Dean Wade': 'GTD', 'Tacko Fall': 'Out', 'Dom Barlow': 'Out'},
-       'DEN': {'Julian Strawther': 'Out', 'Spencer Jones': 'GTD'},
-       'OKC': {'Nikola Topic': 'Out', 'Thomas Sorber': 'Out', 'Otega Oweh': 'Out'},
-       'BOS': {'Devin Carter': 'Out'}, 'ATL': {'Mouhamed Gueye': 'Out', 'Henri Veesaar': 'Out'},
-       'CHA': {'Grant Williams': 'Out', 'Kon Knueppel': 'Out', 'Coby White': 'Out', 'Kylan Boswell': 'Out'},
-       'DAL': {'Santi Aldama': 'Out', 'Dereck Lively II': 'Out', 'Tarik Biberovic': 'Out', 'Caleb Martin': 'Out', 'Jett Howard': 'GTD'},
-       'DET': {'Taurean Prince': 'GTD'},
-       'IND': {'Ben Sheppard': 'GTD', 'T.J. McConnell': 'Out', 'Aaron Nesmith': 'GTD', 'Johnny Furphy': 'Out'},
-       'MIN': {'Donte DiVincenzo': 'Out'},
-       'ORL': {'Anthony Black': 'Out', 'Jonathan Isaac': 'Out', 'Izaiyah Nelson': 'Out', 'Noah Penda': 'Out'},
-       'TOR': {'Nate Bittle': 'Out'},
-       'WAS': {'AJ Dybantsa': 'Out', 'Felix Okpara': 'GTD', 'Jamir Watkins': 'Out', 'Tristan Vukcevic': 'Out'},
-       'HOU': {'R. Sheppard': 'GTD', 'S. Adams': 'GTD'},
-       'SAS': {'T. Harris': 'Out', 'K. Johnson': 'GTD', 'D. Fox': 'GTD', 'J. Quaintance': 'Out'},
-       'UTA': {'T. Alexander': 'Out', 'T. Bradley': 'GTD', 'J. Nurkic': 'Out'},
-       'MEM': {'C. Coward': 'GTD', 'I. Stewart': 'GTD'},
-       'GSW': {'B. Podziemski': 'GTD', 'C. Bassey': 'GTD', 'K. Porzingis': 'Out', 'J. Butler': 'Out', 'M. Moody': 'Out'},
-       'LAC': {'B. Beal': 'Out', 'B. Ingram': 'Out', 'J. Miller': 'Out', 'Y. Konan Niederhauser': 'Out', 'M. Strus': 'Out'},
-       'LAL': {'C. Carr': 'Out', 'J. LaRavia': 'GTD', 'A. Thiero': 'Out'},
-       'POR': {'C. Youngblood': 'Out', 'B. Carlson': 'Out', 'S. Sharpe': 'Out'},
-       'SAC': {'M. Monk': 'GTD', 'B. Simmons': 'Out', 'D. Cardwell': 'Out', 'M. Raynaud': 'Out'},
-       'CHI': {'J. Hawkins': 'GTD', 'J. Giddey': 'GTD', 'D. Swain': 'GTD', 'Z. Collins': 'GTD', 'N. Claxton': 'Out'}}
+# injury report (ESPN, Wed Nov 18 2:08 PM CT) for tonight's teams: 'Out' = out tonight; 'GTD' = day-to-day (game-time decision).
+INJ_RAW = json.load(open(D + 'pull1118/espn_inj_nba.json'))['inj']
 def _resolve(team, nm):
     """'K. Porzingis' -> the full name of the player on that team in the box scores (latest team), else the initials as given."""
     m = re.match(r'^([A-Z])\. (.+)$', nm)
@@ -70,7 +48,7 @@ def kick_label(t):
 GAMES = {}
 for r in SCH.itertuples(index=False):
     c = ct(r.t)
-    if not ('2026-10-24' <= c.strftime('%Y-%m-%d') <= '2026-10-27'): continue
+    if not (SLATE[0] <= c.strftime('%Y-%m-%d') <= SLATE[1]): continue
     key = f'{r.away} @ {r.home}'
     GAMES[(c.strftime('%y%b%d').upper(), r.away + r.home)] = {'key': key, 'away': r.away, 'home': r.home, 't': r.t, 'kick': kick_label(r.t),
                                                              'venue': r.venue_full_name, 'date': c.strftime('%Y-%m-%d')}
@@ -168,7 +146,10 @@ for g in GAMES.values():
 
 # ---------------- sportsbook prices for the same players (Action Network, DraftKings / FanDuel / BetRivers / BetMGM ...) ----------------
 from scipy.optimize import brentq
-AN = json.load(open(D + 'an_cur_1023.json'))['d']
+import os
+# Action Network book lines are pulled per slate; none were pulled for Nov 18, so Wedge % falls back to the Robinhood mid.
+AN_FILE = D + 'an_cur_1118.json'
+AN = json.load(open(AN_FILE))['d'] if os.path.exists(AN_FILE) else {}
 MK5 = {'pts': 'pts', 'reb': 'reb', 'ast': 'ast', '3pm': '3pm', 'pra': 'pra'}
 BOOKS = {}
 for ds, day in AN.items():
@@ -382,7 +363,7 @@ for g in GAMES.values():
     extra.append([f"{g['away']} {lab(ra)}", f"{g['home']} {lab(rh)}"])
     outs = []
     for t in (g['away'], g['home']):
-        o = [f"{nm.split(' ')[-1]} ({s})" for nm, s in INJ.get(t, {}).items()]
+        o = [f"{[w for w in nm.split(' ') if w not in ('Jr.', 'Sr.', 'II', 'III', 'IV')][-1]} ({s})" for nm, s in INJ.get(t, {}).items()]
         if o: outs.append(f"{t}: " + ', '.join(o))
     if outs: extra.append(['Injury report', ' · '.join(outs)])
     det = {'away': g['away'], 'home': g['home'], 'venue': g['venue'], 'extra': extra}

@@ -498,6 +498,9 @@ s, js = _r15.apply(s, js)
 # ---- round 16: Line Shopping and Analyst, the two live tools under NFL
 _sp16 = _ilu.spec_from_file_location('r16_tools', V + 'r16_tools.py'); _r16 = _ilu.module_from_spec(_sp16); _sp16.loader.exec_module(_r16)
 s, js = _r16.apply(s, js)
+# round 17: the NBA board's copy names the current slate
+_sp17 = _ilu.spec_from_file_location('r17_nba', V + 'r17_nba.py'); _r17 = _ilu.module_from_spec(_sp17); _sp17.loader.exec_module(_r17)
+s, js = _r17.apply(s, js)
 s = s.replace('@@JS@@', '<script>' + js + '</script>')
 s = s.replace('<title>Wedge', '<title>Wedge')
 open(V + 'index_full.html', 'w').write(s)

@@ -64,13 +64,13 @@ nr61,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Full game,Total,Over 225.5 points
 nr62,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Full game,Total,Over 227.5 points,,,49,50.0,No,,,,,Lost,-49,"ATL 128, CHA 81",Fri Oct 23 ~9:30 AM CT
 nr63,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Full game,Total,Over 229.5 points,,,45,50.0,No,,,,,Lost,-45,"ATL 128, CHA 81",Thu Oct 22 ~11:05 AM CT
 nr64,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Player props,Assists,Brandon Miller: 4+ assists,Brandon Miller,ast,52,35.0,No,50.5,-1.5,52.2,No,Lost,-52,0 ast,Fri Oct 23 ~9:30 AM CT
-nr65,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Player props,Assists,CJ McCollum: 4+ assists,CJ McCollum,ast,45,65.0,Yes,45.5,0.5,42.8,Yes,Lost,-45,2 ast,Fri Oct 23 ~9:30 AM CT
+nr65,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Player props,Assists,CJ McCollum: 4+ assists,CJ McCollum,ast,45,65.0,Yes,45.5,0.5,42.8,Yes,Lost,-45,1 ast,Fri Oct 23 ~9:30 AM CT
 nr66,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Player props,Assists,Naz Reid: 4+ assists,Naz Reid,ast,48,15.0,No,47.8,-0.2,50.4,No,Lost,-48,2 ast,Fri Oct 23 ~9:30 AM CT
 nr67,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Player props,Points,Brandon Miller: 25+ points,Brandon Miller,pts,51,15.0,No,49.6,-1.4,52.5,No,Lost,-51,6 pts,Fri Oct 23 ~9:30 AM CT
 nr68,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Player props,Points,Grayson Allen: 15+ points,Grayson Allen,pts,51,55.0,Yes,50.1,-0.9,50.1,No,Lost,-51,11 pts,Fri Oct 23 ~9:30 AM CT
 nr69,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Player props,Points,Nickeil Alexander-Walker: 20+ points,Nickeil Alexander-Walker,pts,45,80.0,Yes,47.3,2.3,44.2,Yes,Lost,-45,14 pts,Fri Oct 23 ~9:30 AM CT
 nr70,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Player props,Pts + Reb + Ast,"Brandon Miller: 35+ points, rebounds and assists",Brandon Miller,pra,47,20.0,No,46.2,-0.8,48.0,No,Lost,-47,8 PRA,Fri Oct 23 ~9:30 AM CT
-nr71,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Player props,Pts + Reb + Ast,"CJ McCollum: 25+ points, rebounds and assists",CJ McCollum,pra,45,65.0,Yes,44.3,-0.7,41.6,No,Lost,-45,16 PRA,Fri Oct 23 ~9:30 AM CT
+nr71,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Player props,Pts + Reb + Ast,"CJ McCollum: 25+ points, rebounds and assists",CJ McCollum,pra,45,65.0,Yes,44.3,-0.7,41.6,No,Lost,-45,15 PRA,Fri Oct 23 ~9:30 AM CT
 nr72,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Player props,Pts + Reb + Ast,"Nickeil Alexander-Walker: 25+ points, rebounds and assists",Nickeil Alexander-Walker,pra,54,80.0,Yes,53.7,-0.3,52.4,No,Lost,-54,22 PRA,Fri Oct 23 ~9:30 AM CT
 nr73,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Player props,Rebounds,Brandon Miller: 6+ rebounds,Brandon Miller,reb,45,45.0,No,45.4,0.4,44.3,Yes,Lost,-45,2 reb,Fri Oct 23 ~9:30 AM CT
 nr74,2026-10-23,ATL @ CHA,2026-10-23T23:00:00Z,Player props,Rebounds,Jalen Johnson: 10+ rebounds,Jalen Johnson,reb,53,50.0,No,53.2,0.2,53.6,Yes,Lost,-53,7 reb,Fri Oct 23 ~9:30 AM CT
@@ -158,7 +158,7 @@ nr155,2026-10-23,DET @ MIA,2026-10-24T00:00:00Z,Full game,Total,Over 233.5 point
 nr156,2026-10-23,DET @ MIA,2026-10-24T00:00:00Z,Full game,Total,Over 235.5 points,,,51,60.0,Yes,,,,,Won,49,"DET 128, MIA 111",Fri Oct 23 ~9:30 AM CT
 nr157,2026-10-23,DET @ MIA,2026-10-24T00:00:00Z,Full game,Total,Over 237.5 points,,,46,52.5,Yes,,,,,Won,54,"DET 128, MIA 111",Fri Oct 23 ~9:30 AM CT
 nr158,2026-10-23,DET @ MIA,2026-10-24T00:00:00Z,Full game,Total,Over 239.5 points,,,46,47.5,No,,,,,Lost,-46,"DET 128, MIA 111",Thu Oct 22 ~11:05 AM CT
-nr159,2026-10-23,DET @ MIA,2026-10-24T00:00:00Z,Player props,Assists,Ausar Thompson: 4+ assists,Ausar Thompson,ast,53,55.0,Yes,49.6,-3.4,50.0,No,Won,47,4 ast,Thu Oct 22 ~11:05 AM CT
+nr159,2026-10-23,DET @ MIA,2026-10-24T00:00:00Z,Player props,Assists,Ausar Thompson: 4+ assists,Ausar Thompson,ast,53,55.0,Yes,49.6,-3.4,50.0,No,Won,47,5 ast,Thu Oct 22 ~11:05 AM CT
 nr160,2026-10-23,DET @ MIA,2026-10-24T00:00:00Z,Player props,Assists,Bam Adebayo: 4+ assists,Bam Adebayo,ast,45,50.0,No,44.1,-0.9,42.8,No,Lost,-45,3 ast,Thu Oct 22 ~11:05 AM CT
 nr161,2026-10-23,DET @ MIA,2026-10-24T00:00:00Z,Player props,Assists,Bobby Portis: 2+ assists,Bobby Portis,ast,51,25.0,No,48.8,-2.2,49.5,No,Won,49,2 ast,Fri Oct 23 ~9:30 AM CT
 nr162,2026-10-23,DET @ MIA,2026-10-24T00:00:00Z,Player props,Assists,Cade Cunningham: 10+ assists,Cade Cunningham,ast,47,60.0,Yes,48.1,1.1,46.4,Yes,Lost,-47,8 ast,Fri Oct 23 ~9:30 AM CT
@@ -201,7 +201,7 @@ nr198,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Assists,Alperen Sen
 nr199,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Assists,De'Aaron Fox: 6+ assists,De'Aaron Fox,ast,47,65.0,Yes,45.8,-1.2,43.3,No,Won,53,9 ast,Thu Oct 22 ~11:05 AM CT
 nr200,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Assists,Fred VanVleet: 8+ assists,Fred VanVleet,ast,47,100.0,No,,,42.5,,Lost,-47,5 ast,Thu Oct 22 ~11:05 AM CT
 nr201,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Assists,Jabari Smith Jr.: 2+ assists,Jabari Smith Jr.,ast,52,60.0,Yes,51.5,-0.5,51.3,No,Lost,-52,1 ast,Fri Oct 23 ~9:30 AM CT
-nr202,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Assists,Kevin Durant: 4+ assists,Kevin Durant,ast,53,75.0,Yes,53.4,0.4,53.1,Yes,Won,47,6 ast,Fri Oct 23 ~9:30 AM CT
+nr202,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Assists,Kevin Durant: 4+ assists,Kevin Durant,ast,53,75.0,Yes,53.4,0.4,53.1,Yes,Won,47,5 ast,Fri Oct 23 ~9:30 AM CT
 nr203,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Points,Alperen Sengun: 20+ points,Alperen Sengun,pts,50,45.0,No,45.8,-4.2,44.7,No,Won,50,29 pts,Thu Oct 22 ~11:05 AM CT
 nr204,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Points,De'Aaron Fox: 15+ points,De'Aaron Fox,pts,48,60.0,Yes,49.2,1.2,47.8,Yes,Won,52,19 pts,Fri Oct 23 ~9:30 AM CT
 nr205,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Points,Jabari Smith Jr.: 15+ points,Jabari Smith Jr.,pts,48,80.0,Yes,47.4,-0.6,45.5,No,Lost,-48,7 pts,Fri Oct 23 ~9:30 AM CT
@@ -211,7 +211,7 @@ nr208,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Points,Victor Wemba
 nr209,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Pts + Reb + Ast,"Alperen Sengun: 35+ points, rebounds and assists",Alperen Sengun,pra,51,45.0,No,47.5,-3.5,46.8,No,Won,49,43 PRA,Thu Oct 22 ~11:05 AM CT
 nr210,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Pts + Reb + Ast,"Amen Thompson: 30+ points, rebounds and assists",Amen Thompson,pra,55,60.0,Yes,47.7,-7.3,45.8,No,Won,45,34 PRA,Thu Oct 22 ~11:05 AM CT
 nr211,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Pts + Reb + Ast,"De'Aaron Fox: 25+ points, rebounds and assists",De'Aaron Fox,pra,49,65.0,Yes,47.3,-1.7,45.0,No,Won,51,32 PRA,Thu Oct 22 ~11:05 AM CT
-nr212,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Pts + Reb + Ast,"Kevin Durant: 35+ points, rebounds and assists",Kevin Durant,pra,45,55.0,Yes,46.5,1.5,44.3,Yes,Lost,-45,33 PRA,Fri Oct 23 ~9:30 AM CT
+nr212,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Pts + Reb + Ast,"Kevin Durant: 35+ points, rebounds and assists",Kevin Durant,pra,45,55.0,Yes,46.5,1.5,44.3,Yes,Lost,-45,32 PRA,Fri Oct 23 ~9:30 AM CT
 nr213,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Pts + Reb + Ast,"Stephon Castle: 30+ points, rebounds and assists",Stephon Castle,pra,45,65.0,Yes,46.1,1.1,44.6,Yes,Lost,-45,27 PRA,Fri Oct 23 ~9:30 AM CT
 nr214,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Pts + Reb + Ast,"Victor Wembanyama: 40+ points, rebounds and assists",Victor Wembanyama,pra,50,55.0,Yes,49.4,-0.6,49.7,No,Won,50,40 PRA,Fri Oct 23 ~9:30 AM CT
 nr215,2026-10-23,HOU @ SAS,2026-10-24T01:30:00Z,Player props,Rebounds,Alperen Sengun: 10+ rebounds,Alperen Sengun,reb,46,35.0,No,46.4,0.4,46.0,Yes,Lost,-46,7 reb,Fri Oct 23 ~9:30 AM CT
@@ -275,8 +275,8 @@ nr272,2026-10-23,MEM @ GSW,2026-10-24T02:00:00Z,Player props,Points,Stephen Curr
 nr273,2026-10-23,MEM @ GSW,2026-10-24T02:00:00Z,Player props,Points,Yaxel Lendeborg: 15+ points,Yaxel Lendeborg,pts,54,0.0,No,,,53.1,,Won,46,18 pts,Fri Oct 23 ~9:30 AM CT
 nr274,2026-10-23,MEM @ GSW,2026-10-24T02:00:00Z,Player props,Pts + Reb + Ast,"Cameron Boozer: 30+ points, rebounds and assists",Cameron Boozer,pra,51,0.0,No,,,47.8,,Won,49,44 PRA,Fri Oct 23 ~9:30 AM CT
 nr275,2026-10-23,MEM @ GSW,2026-10-24T02:00:00Z,Player props,Rebounds,Brandin Podziemski: 6+ rebounds,Brandin Podziemski,reb,45,45.0,No,45.9,0.9,44.6,Yes,Lost,-45,2 reb,Fri Oct 23 ~9:30 AM CT
-nr276,2026-10-23,MEM @ GSW,2026-10-24T02:00:00Z,Player props,Rebounds,Draymond Green: 6+ rebounds,Draymond Green,reb,49,35.0,No,48.8,-0.2,49.3,No,Lost,-49,4 reb,Fri Oct 23 ~9:30 AM CT
-nr277,2026-10-23,MEM @ GSW,2026-10-24T02:00:00Z,Player props,Rebounds,Stephen Curry: 4+ rebounds,Stephen Curry,reb,45,30.0,No,46.7,1.7,47.0,Yes,Lost,-45,3 reb,Fri Oct 23 ~9:30 AM CT
+nr276,2026-10-23,MEM @ GSW,2026-10-24T02:00:00Z,Player props,Rebounds,Draymond Green: 6+ rebounds,Draymond Green,reb,49,35.0,No,48.8,-0.2,49.3,No,Lost,-49,5 reb,Fri Oct 23 ~9:30 AM CT
+nr277,2026-10-23,MEM @ GSW,2026-10-24T02:00:00Z,Player props,Rebounds,Stephen Curry: 4+ rebounds,Stephen Curry,reb,45,30.0,No,46.7,1.7,47.0,Yes,Lost,-45,2 reb,Fri Oct 23 ~9:30 AM CT
 nr278,2026-10-23,MEM @ GSW,2026-10-24T02:00:00Z,Player props,Rebounds,Ty Jerome: 4+ rebounds,Ty Jerome,reb,51,31.2,No,49.6,-1.4,50.5,No,Lost,-51,2 reb,Fri Oct 23 ~9:30 AM CT
 nr279,2026-10-23,MEM @ GSW,2026-10-24T02:00:00Z,Player props,Rebounds,Zach Edey: 10+ rebounds,Zach Edey,reb,47,58.3,Yes,50.0,3.0,48.8,Yes,Won,53,10 reb,Fri Oct 23 ~9:30 AM CT
 nr280,2026-10-23,MEM @ GSW,2026-10-24T02:00:00Z,Player props,Threes,Jaylen Wells: 2+ threes,Jaylen Wells,3pm,53,75.0,Yes,55.4,2.4,56.8,Yes,Won,47,4 3PM,Fri Oct 23 ~9:30 AM CT
@@ -407,13 +407,13 @@ nr404,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Assists,Keegan Murr
 nr405,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Assists,Toumani Camara: 2+ assists,Toumani Camara,ast,53,65.0,Yes,54.0,1.0,53.3,Yes,Lost,-53,1 ast,Fri Oct 23 ~9:30 AM CT
 nr406,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Points,Damian Lillard: 20+ points,Damian Lillard,pts,49,100.0,No,,,49.8,,Lost,-49,19 pts,Fri Oct 23 ~9:30 AM CT
 nr407,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Points,Zach LaVine: 20+ points,Zach LaVine,pts,48,30.0,No,47.4,-0.6,48.5,No,Won,52,22 pts,Fri Oct 23 ~9:30 AM CT
-nr408,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Pts + Reb + Ast,"Deni Avdija: 35+ points, rebounds and assists",Deni Avdija,pra,45,55.0,Yes,47.3,2.3,45.2,Yes,Won,55,38 PRA,Fri Oct 23 ~9:30 AM CT
+nr408,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Pts + Reb + Ast,"Deni Avdija: 35+ points, rebounds and assists",Deni Avdija,pra,45,55.0,Yes,47.3,2.3,45.2,Yes,Won,55,39 PRA,Fri Oct 23 ~9:30 AM CT
 nr409,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Pts + Reb + Ast,"Zach LaVine: 25+ points, rebounds and assists",Zach LaVine,pra,54,35.0,No,51.7,-2.3,53.9,No,Won,46,28 PRA,Fri Oct 23 ~9:30 AM CT
 nr410,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Rebounds,Damian Lillard: 4+ rebounds,Damian Lillard,reb,45,0.0,No,,,45.0,,Won,55,5 reb,Fri Oct 23 ~9:30 AM CT
 nr411,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Rebounds,De'Andre Hunter: 4+ rebounds,De'Andre Hunter,reb,55,40.0,No,53.7,-1.3,55.3,No,Won,45,7 reb,Fri Oct 23 ~9:30 AM CT
-nr412,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Rebounds,Donovan Clingan: 12+ rebounds,Donovan Clingan,reb,47,55.0,Yes,48.3,1.3,47.6,Yes,Lost,-47,10 reb,Fri Oct 23 ~9:30 AM CT
+nr412,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Rebounds,Donovan Clingan: 12+ rebounds,Donovan Clingan,reb,47,55.0,Yes,48.3,1.3,47.6,Yes,Lost,-47,11 reb,Fri Oct 23 ~9:30 AM CT
 nr413,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Rebounds,Ja Morant: 4+ rebounds,Ja Morant,reb,48,40.0,No,47.1,-0.9,46.9,No,Lost,-48,3 reb,Fri Oct 23 ~9:30 AM CT
-nr414,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Rebounds,Jrue Holiday: 4+ rebounds,Jrue Holiday,reb,51,65.0,Yes,51.4,0.4,49.6,Yes,Lost,-51,2 reb,Fri Oct 23 ~9:30 AM CT
+nr414,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Rebounds,Jrue Holiday: 4+ rebounds,Jrue Holiday,reb,51,65.0,Yes,51.4,0.4,49.6,Yes,Lost,-51,1 reb,Fri Oct 23 ~9:30 AM CT
 nr415,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Threes,De'Andre Hunter: 2+ threes,De'Andre Hunter,3pm,47,55.0,Yes,47.7,0.7,47.0,Yes,Lost,-47,0 3PM,Fri Oct 23 ~9:30 AM CT
 nr416,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Threes,Deni Avdija: 2+ threes,Deni Avdija,3pm,52,35.0,No,51.6,-0.4,51.7,No,Lost,-52,1 3PM,Fri Oct 23 ~9:30 AM CT
 nr417,2026-10-23,POR @ SAC,2026-10-24T02:00:00Z,Player props,Threes,Jrue Holiday: 2+ threes,Jrue Holiday,3pm,48,60.0,Yes,51.6,3.6,49.9,Yes,Won,52,3 3PM,Fri Oct 23 ~9:30 AM CT
@@ -445,3 +445,98 @@ nr442,2026-10-23,TOR @ WAS,2026-10-23T23:00:00Z,Player props,Rebounds,Collin Mur
 nr443,2026-10-23,TOR @ WAS,2026-10-23T23:00:00Z,Player props,Rebounds,Scottie Barnes: 8+ rebounds,Scottie Barnes,reb,45,25.0,No,46.6,1.6,46.0,Yes,Won,55,14 reb,Fri Oct 23 ~9:30 AM CT
 nr444,2026-10-23,TOR @ WAS,2026-10-23T23:00:00Z,Player props,Threes,Immanuel Quickley: 3+ threes,Immanuel Quickley,3pm,48,50.0,No,49.6,1.6,49.4,Yes,Lost,-48,0 3PM,Fri Oct 23 ~9:30 AM CT
 nr445,2026-10-23,TOR @ WAS,2026-10-23T23:00:00Z,Player props,Threes,RJ Barrett: 2+ threes,RJ Barrett,3pm,51,40.0,No,50.5,-0.5,50.5,No,Lost,-51,1 3PM,Fri Oct 23 ~9:30 AM CT
+nr446,2026-10-24,BKN @ CLE,2026-10-24T23:30:00Z,Full game,Spread,Cleveland wins by over 10.5 points,,,52,25.0,No,,,,,Lost,-52,"BKN 121, CLE 125",Fri Oct 23 ~11:40 PM CT
+nr447,2026-10-24,BKN @ CLE,2026-10-24T23:30:00Z,Full game,Spread,Cleveland wins by over 11.5 points,,,48,25.0,No,,,,,Lost,-48,"BKN 121, CLE 125",Fri Oct 23 ~11:40 PM CT
+nr448,2026-10-24,BKN @ CLE,2026-10-24T23:30:00Z,Full game,Team total,Brooklyn over 109.5 points,,,55,20.0,No,,,,,Won,45,"BKN 121, CLE 125",Fri Oct 23 ~11:40 PM CT
+nr449,2026-10-24,BKN @ CLE,2026-10-24T23:30:00Z,Full game,Team total,Brooklyn over 111.5 points,,,47,20.0,No,,,,,Won,53,"BKN 121, CLE 125",Fri Oct 23 ~11:40 PM CT
+nr450,2026-10-24,BKN @ CLE,2026-10-24T23:30:00Z,Full game,Team total,Cleveland over 121.5 points,,,50,45.0,No,,,,,Won,50,"BKN 121, CLE 125",Fri Oct 23 ~11:40 PM CT
+nr451,2026-10-24,BKN @ CLE,2026-10-24T23:30:00Z,Full game,Team total,Cleveland over 125.5 points,,,46,25.0,No,,,,,Lost,-46,"BKN 121, CLE 125",Fri Oct 23 ~11:40 PM CT
+nr452,2026-10-24,BKN @ CLE,2026-10-24T23:30:00Z,Full game,Total,Over 229.5 points,,,55,47.5,No,,,,,Won,45,"BKN 121, CLE 125",Fri Oct 23 ~11:40 PM CT
+nr453,2026-10-24,BKN @ CLE,2026-10-24T23:30:00Z,Full game,Total,Over 231.5 points,,,51,47.5,No,,,,,Won,49,"BKN 121, CLE 125",Fri Oct 23 ~11:40 PM CT
+nr454,2026-10-24,BKN @ CLE,2026-10-24T23:30:00Z,Full game,Total,Over 233.5 points,,,46,42.5,No,,,,,Won,54,"BKN 121, CLE 125",Fri Oct 23 ~11:40 PM CT
+nr455,2026-10-24,GSW @ PHX,2026-10-25T02:00:00Z,Full game,Spread,Phoenix wins by over 6.5 points,,,54,40.0,No,,,,,Won,46,"GSW 122, PHX 131",Fri Oct 23 ~11:40 PM CT
+nr456,2026-10-24,GSW @ PHX,2026-10-25T02:00:00Z,Full game,Spread,Phoenix wins by over 7.5 points,,,51,40.0,No,,,,,Won,49,"GSW 122, PHX 131",Fri Oct 23 ~11:40 PM CT
+nr457,2026-10-24,GSW @ PHX,2026-10-25T02:00:00Z,Full game,Spread,Phoenix wins by over 8.5 points,,,47,40.0,No,,,,,Won,53,"GSW 122, PHX 131",Fri Oct 23 ~11:40 PM CT
+nr458,2026-10-24,GSW @ PHX,2026-10-25T02:00:00Z,Full game,Team total,Golden State over 110.5 points,,,48,45.0,No,,,,,Won,52,"GSW 122, PHX 131",Fri Oct 23 ~11:40 PM CT
+nr459,2026-10-24,GSW @ PHX,2026-10-25T02:00:00Z,Full game,Team total,Golden State over 112.5 points,,,47,40.0,No,,,,,Won,53,"GSW 122, PHX 131",Fri Oct 23 ~11:40 PM CT
+nr460,2026-10-24,GSW @ PHX,2026-10-25T02:00:00Z,Full game,Team total,Phoenix over 116.5 points,,,51,40.0,No,,,,,Won,49,"GSW 122, PHX 131",Fri Oct 23 ~11:40 PM CT
+nr461,2026-10-24,GSW @ PHX,2026-10-25T02:00:00Z,Full game,Team total,Phoenix over 118.5 points,,,48,40.0,No,,,,,Won,52,"GSW 122, PHX 131",Fri Oct 23 ~11:40 PM CT
+nr462,2026-10-24,GSW @ PHX,2026-10-25T02:00:00Z,Full game,Total,Over 223.5 points,,,55,60.0,Yes,,,,,Won,45,"GSW 122, PHX 131",Fri Oct 23 ~11:40 PM CT
+nr463,2026-10-24,GSW @ PHX,2026-10-25T02:00:00Z,Full game,Total,Over 225.5 points,,,50,55.0,Yes,,,,,Won,50,"GSW 122, PHX 131",Fri Oct 23 ~11:40 PM CT
+nr464,2026-10-24,GSW @ PHX,2026-10-25T02:00:00Z,Full game,Total,Over 227.5 points,,,46,52.5,Yes,,,,,Won,54,"GSW 122, PHX 131",Fri Oct 23 ~11:40 PM CT
+nr465,2026-10-24,HOU @ ATL,2026-10-25T00:30:00Z,Full game,Moneyline,Atlanta wins,,,54,75.0,Yes,,,,,Lost,-54,"HOU 121, ATL 114",Fri Oct 23 ~11:40 PM CT
+nr466,2026-10-24,HOU @ ATL,2026-10-25T00:30:00Z,Full game,Moneyline,Houston wins,,,49,70.0,Yes,,,,,Won,51,"HOU 121, ATL 114",Fri Oct 23 ~11:40 PM CT
+nr467,2026-10-24,HOU @ ATL,2026-10-25T00:30:00Z,Full game,Spread,Atlanta wins by over 1.5 points,,,51,70.0,Yes,,,,,Lost,-51,"HOU 121, ATL 114",Fri Oct 23 ~11:40 PM CT
+nr468,2026-10-24,HOU @ ATL,2026-10-25T00:30:00Z,Full game,Spread,Atlanta wins by over 2.5 points,,,52,70.0,Yes,,,,,Lost,-52,"HOU 121, ATL 114",Fri Oct 23 ~11:40 PM CT
+nr469,2026-10-24,HOU @ ATL,2026-10-25T00:30:00Z,Full game,Spread,Atlanta wins by over 3.5 points,,,47,70.0,Yes,,,,,Lost,-47,"HOU 121, ATL 114",Fri Oct 23 ~11:40 PM CT
+nr470,2026-10-24,HOU @ ATL,2026-10-25T00:30:00Z,Full game,Spread,Houston wins by over 1.5 points,,,46,60.0,Yes,,,,,Won,54,"HOU 121, ATL 114",Fri Oct 23 ~11:40 PM CT
+nr471,2026-10-24,HOU @ ATL,2026-10-25T00:30:00Z,Full game,Team total,Atlanta over 116.5 points,,,50,70.0,Yes,,,,,Lost,-50,"HOU 121, ATL 114",Fri Oct 23 ~11:40 PM CT
+nr472,2026-10-24,HOU @ ATL,2026-10-25T00:30:00Z,Full game,Team total,Atlanta over 118.5 points,,,45,65.0,Yes,,,,,Lost,-45,"HOU 121, ATL 114",Fri Oct 23 ~11:40 PM CT
+nr473,2026-10-24,HOU @ ATL,2026-10-25T00:30:00Z,Full game,Team total,Houston over 115.5 points,,,52,65.0,Yes,,,,,Won,48,"HOU 121, ATL 114",Fri Oct 23 ~11:40 PM CT
+nr474,2026-10-24,HOU @ ATL,2026-10-25T00:30:00Z,Full game,Team total,Houston over 117.5 points,,,45,50.0,No,,,,,Won,55,"HOU 121, ATL 114",Fri Oct 23 ~11:40 PM CT
+nr475,2026-10-24,HOU @ ATL,2026-10-25T00:30:00Z,Full game,Total,Over 230.5 points,,,52,55.0,Yes,,,,,Won,48,"HOU 121, ATL 114",Fri Oct 23 ~11:40 PM CT
+nr476,2026-10-24,HOU @ ATL,2026-10-25T00:30:00Z,Full game,Total,Over 232.5 points,,,47,50.0,No,,,,,Won,53,"HOU 121, ATL 114",Fri Oct 23 ~11:40 PM CT
+nr477,2026-10-24,MIA @ CHA,2026-10-24T22:00:00Z,Full game,Moneyline,Charlotte wins,,,47,65.0,Yes,,,,,Won,53,"MIA 110, CHA 115",Fri Oct 23 ~9:30 AM CT
+nr478,2026-10-24,MIA @ CHA,2026-10-24T22:00:00Z,Full game,Moneyline,Miami wins,,,55,45.0,No,,,,,Lost,-55,"MIA 110, CHA 115",Fri Oct 23 ~9:30 AM CT
+nr479,2026-10-24,MIA @ CHA,2026-10-24T22:00:00Z,Full game,Spread,Miami wins by over 2.5 points,,,55,40.0,No,,,,,Lost,-55,"MIA 110, CHA 115",Fri Oct 23 ~11:40 PM CT
+nr480,2026-10-24,MIA @ CHA,2026-10-24T22:00:00Z,Full game,Spread,Miami wins by over 3.5 points,,,51,40.0,No,,,,,Lost,-51,"MIA 110, CHA 115",Fri Oct 23 ~11:40 PM CT
+nr481,2026-10-24,MIA @ CHA,2026-10-24T22:00:00Z,Full game,Spread,Miami wins by over 4.5 points,,,47,40.0,No,,,,,Lost,-47,"MIA 110, CHA 115",Fri Oct 23 ~11:40 PM CT
+nr482,2026-10-24,MIA @ CHA,2026-10-24T22:00:00Z,Full game,Team total,Charlotte over 115.5 points,,,49,45.0,No,,,,,Lost,-49,"MIA 110, CHA 115",Fri Oct 23 ~11:40 PM CT
+nr483,2026-10-24,MIA @ CHA,2026-10-24T22:00:00Z,Full game,Team total,Charlotte over 117.5 points,,,45,35.0,No,,,,,Lost,-45,"MIA 110, CHA 115",Fri Oct 23 ~11:40 PM CT
+nr484,2026-10-24,MIA @ CHA,2026-10-24T22:00:00Z,Full game,Team total,Miami over 118.5 points,,,49,55.0,Yes,,,,,Lost,-49,"MIA 110, CHA 115",Fri Oct 23 ~11:40 PM CT
+nr485,2026-10-24,MIA @ CHA,2026-10-24T22:00:00Z,Full game,Team total,Miami over 120.5 points,,,45,45.0,No,,,,,Lost,-45,"MIA 110, CHA 115",Fri Oct 23 ~11:40 PM CT
+nr486,2026-10-24,MIA @ CHA,2026-10-24T22:00:00Z,Full game,Total,Over 232.5 points,,,51,47.5,No,,,,,Lost,-51,"MIA 110, CHA 115",Fri Oct 23 ~11:40 PM CT
+nr487,2026-10-24,MIA @ CHA,2026-10-24T22:00:00Z,Full game,Total,Over 234.5 points,,,47,45.0,No,,,,,Lost,-47,"MIA 110, CHA 115",Fri Oct 23 ~11:40 PM CT
+nr488,2026-10-24,MIL @ PHI,2026-10-24T23:30:00Z,Full game,Spread,Philadelphia wins by over 12.5 points,,,52,20.0,No,,,,,Lost,-52,"MIL 116, PHI 127",Fri Oct 23 ~11:40 PM CT
+nr489,2026-10-24,MIL @ PHI,2026-10-24T23:30:00Z,Full game,Spread,Philadelphia wins by over 13.5 points,,,48,20.0,No,,,,,Lost,-48,"MIL 116, PHI 127",Fri Oct 23 ~11:40 PM CT
+nr490,2026-10-24,MIL @ PHI,2026-10-24T23:30:00Z,Full game,Team total,Milwaukee over 109.5 points,,,53,50.0,No,,,,,Won,47,"MIL 116, PHI 127",Fri Oct 23 ~11:40 PM CT
+nr491,2026-10-24,MIL @ PHI,2026-10-24T23:30:00Z,Full game,Team total,Milwaukee over 111.5 points,,,45,45.0,No,,,,,Won,55,"MIL 116, PHI 127",Fri Oct 23 ~11:40 PM CT
+nr492,2026-10-24,MIL @ PHI,2026-10-24T23:30:00Z,Full game,Team total,Milwaukee over 113.5 points,,,45,35.0,No,,,,,Won,55,"MIL 116, PHI 127",Fri Oct 23 ~11:40 PM CT
+nr493,2026-10-24,MIL @ PHI,2026-10-24T23:30:00Z,Full game,Team total,Philadelphia over 123.5 points,,,49,30.0,No,,,,,Won,51,"MIL 116, PHI 127",Fri Oct 23 ~11:40 PM CT
+nr494,2026-10-24,MIL @ PHI,2026-10-24T23:30:00Z,Full game,Team total,Philadelphia over 125.5 points,,,46,30.0,No,,,,,Won,54,"MIL 116, PHI 127",Fri Oct 23 ~11:40 PM CT
+nr495,2026-10-24,MIL @ PHI,2026-10-24T23:30:00Z,Full game,Total,Over 232.5 points,,,49,37.5,No,,,,,Won,51,"MIL 116, PHI 127",Fri Oct 23 ~11:40 PM CT
+nr496,2026-10-24,MIL @ PHI,2026-10-24T23:30:00Z,Full game,Total,Over 234.5 points,,,46,32.5,No,,,,,Won,54,"MIL 116, PHI 127",Fri Oct 23 ~11:40 PM CT
+nr497,2026-10-24,NOP @ DEN,2026-10-25T01:00:00Z,Full game,Spread,Denver wins by over 10.5 points,,,55,35.0,No,,,,,Lost,-55,"NOP 135, DEN 141",Fri Oct 23 ~11:40 PM CT
+nr498,2026-10-24,NOP @ DEN,2026-10-25T01:00:00Z,Full game,Spread,Denver wins by over 11.5 points,,,51,35.0,No,,,,,Lost,-51,"NOP 135, DEN 141",Fri Oct 23 ~11:40 PM CT
+nr499,2026-10-24,NOP @ DEN,2026-10-25T01:00:00Z,Full game,Spread,Denver wins by over 12.5 points,,,48,35.0,No,,,,,Lost,-48,"NOP 135, DEN 141",Fri Oct 23 ~11:40 PM CT
+nr500,2026-10-24,NOP @ DEN,2026-10-25T01:00:00Z,Full game,Spread,Denver wins by over 13.5 points,,,45,30.0,No,,,,,Lost,-45,"NOP 135, DEN 141",Fri Oct 23 ~11:40 PM CT
+nr501,2026-10-24,NOP @ DEN,2026-10-25T01:00:00Z,Full game,Team total,Denver over 124.5 points,,,55,70.0,Yes,,,,,Won,45,"NOP 135, DEN 141",Fri Oct 23 ~11:40 PM CT
+nr502,2026-10-24,NOP @ DEN,2026-10-25T01:00:00Z,Full game,Team total,Denver over 126.5 points,,,49,55.0,Yes,,,,,Won,51,"NOP 135, DEN 141",Fri Oct 23 ~11:40 PM CT
+nr503,2026-10-24,NOP @ DEN,2026-10-25T01:00:00Z,Full game,Team total,Denver over 128.5 points,,,46,40.0,No,,,,,Won,54,"NOP 135, DEN 141",Fri Oct 23 ~11:40 PM CT
+nr504,2026-10-24,NOP @ DEN,2026-10-25T01:00:00Z,Full game,Team total,New Orleans over 115.5 points,,,49,55.0,Yes,,,,,Won,51,"NOP 135, DEN 141",Fri Oct 23 ~11:40 PM CT
+nr505,2026-10-24,NOP @ DEN,2026-10-25T01:00:00Z,Full game,Total,Over 237.5 points,,,51,52.5,Yes,,,,,Won,49,"NOP 135, DEN 141",Fri Oct 23 ~11:40 PM CT
+nr506,2026-10-24,NOP @ DEN,2026-10-25T01:00:00Z,Full game,Total,Over 239.5 points,,,48,50.0,No,,,,,Won,52,"NOP 135, DEN 141",Fri Oct 23 ~11:40 PM CT
+nr507,2026-10-24,SAS @ DAL,2026-10-25T00:00:00Z,Full game,Spread,San Antonio wins by over 10.5 points,,,54,60.0,Yes,,,,,Won,46,"SAS 122, DAL 106",Fri Oct 23 ~11:40 PM CT
+nr508,2026-10-24,SAS @ DAL,2026-10-25T00:00:00Z,Full game,Spread,San Antonio wins by over 11.5 points,,,52,55.0,Yes,,,,,Won,48,"SAS 122, DAL 106",Fri Oct 23 ~11:40 PM CT
+nr509,2026-10-24,SAS @ DAL,2026-10-25T00:00:00Z,Full game,Spread,San Antonio wins by over 12.5 points,,,47,55.0,Yes,,,,,Won,53,"SAS 122, DAL 106",Fri Oct 23 ~11:40 PM CT
+nr510,2026-10-24,SAS @ DAL,2026-10-25T00:00:00Z,Full game,Spread,San Antonio wins by over 13.5 points,,,45,45.0,No,,,,,Won,55,"SAS 122, DAL 106",Fri Oct 23 ~11:40 PM CT
+nr511,2026-10-24,SAS @ DAL,2026-10-25T00:00:00Z,Full game,Team total,Dallas over 110.5 points,,,52,65.0,Yes,,,,,Lost,-52,"SAS 122, DAL 106",Fri Oct 23 ~11:40 PM CT
+nr512,2026-10-24,SAS @ DAL,2026-10-25T00:00:00Z,Full game,Team total,Dallas over 112.5 points,,,47,55.0,Yes,,,,,Lost,-47,"SAS 122, DAL 106",Fri Oct 23 ~11:40 PM CT
+nr513,2026-10-24,SAS @ DAL,2026-10-25T00:00:00Z,Full game,Team total,San Antonio over 122.5 points,,,49,55.0,Yes,,,,,Lost,-49,"SAS 122, DAL 106",Fri Oct 23 ~11:40 PM CT
+nr514,2026-10-24,SAS @ DAL,2026-10-25T00:00:00Z,Full game,Team total,San Antonio over 124.5 points,,,47,50.0,No,,,,,Lost,-47,"SAS 122, DAL 106",Fri Oct 23 ~11:40 PM CT
+nr515,2026-10-24,SAS @ DAL,2026-10-25T00:00:00Z,Full game,Total,Over 230.5 points,,,53,62.5,Yes,,,,,Lost,-53,"SAS 122, DAL 106",Fri Oct 23 ~11:40 PM CT
+nr516,2026-10-24,SAS @ DAL,2026-10-25T00:00:00Z,Full game,Total,Over 232.5 points,,,49,60.0,Yes,,,,,Lost,-49,"SAS 122, DAL 106",Fri Oct 23 ~11:40 PM CT
+nr517,2026-10-24,SAS @ DAL,2026-10-25T00:00:00Z,Full game,Total,Over 234.5 points,,,46,57.5,Yes,,,,,Lost,-46,"SAS 122, DAL 106",Fri Oct 23 ~11:40 PM CT
+nr518,2026-10-24,WAS @ CHI,2026-10-25T00:00:00Z,Full game,Moneyline,Chicago wins,,,48,30.0,No,,,,,Lost,-48,"WAS 124, CHI 120",Fri Oct 23 ~11:40 PM CT
+nr519,2026-10-24,WAS @ CHI,2026-10-25T00:00:00Z,Full game,Moneyline,Washington wins,,,53,10.0,No,,,,,Won,47,"WAS 124, CHI 120",Fri Oct 23 ~11:40 PM CT
+nr520,2026-10-24,WAS @ CHI,2026-10-25T00:00:00Z,Full game,Spread,Chicago wins by over 1.5 points,,,46,30.0,No,,,,,Lost,-46,"WAS 124, CHI 120",Fri Oct 23 ~11:40 PM CT
+nr521,2026-10-24,WAS @ CHI,2026-10-25T00:00:00Z,Full game,Spread,Washington wins by over 1.5 points,,,51,10.0,No,,,,,Won,49,"WAS 124, CHI 120",Fri Oct 23 ~11:40 PM CT
+nr522,2026-10-24,WAS @ CHI,2026-10-25T00:00:00Z,Full game,Spread,Washington wins by over 2.5 points,,,47,10.0,No,,,,,Won,53,"WAS 124, CHI 120",Fri Oct 23 ~11:40 PM CT
+nr523,2026-10-24,WAS @ CHI,2026-10-25T00:00:00Z,Full game,Team total,Chicago over 121.5 points,,,53,50.0,No,,,,,Lost,-53,"WAS 124, CHI 120",Fri Oct 23 ~11:40 PM CT
+nr524,2026-10-24,WAS @ CHI,2026-10-25T00:00:00Z,Full game,Team total,Chicago over 123.5 points,,,45,50.0,No,,,,,Lost,-45,"WAS 124, CHI 120",Fri Oct 23 ~11:40 PM CT
+nr525,2026-10-24,WAS @ CHI,2026-10-25T00:00:00Z,Full game,Team total,Chicago over 125.5 points,,,47,45.0,No,,,,,Lost,-47,"WAS 124, CHI 120",Fri Oct 23 ~11:40 PM CT
+nr526,2026-10-24,WAS @ CHI,2026-10-25T00:00:00Z,Full game,Team total,Washington over 122.5 points,,,51,30.0,No,,,,,Won,49,"WAS 124, CHI 120",Fri Oct 23 ~11:40 PM CT
+nr527,2026-10-24,WAS @ CHI,2026-10-25T00:00:00Z,Full game,Total,Over 242.5 points,,,54,55.0,Yes,,,,,Won,46,"WAS 124, CHI 120",Fri Oct 23 ~11:40 PM CT
+nr528,2026-10-24,WAS @ CHI,2026-10-25T00:00:00Z,Full game,Total,Over 244.5 points,,,50,42.5,No,,,,,Lost,-50,"WAS 124, CHI 120",Fri Oct 23 ~11:40 PM CT
+nr529,2026-10-24,WAS @ CHI,2026-10-25T00:00:00Z,Full game,Total,Over 246.5 points,,,45,42.5,No,,,,,Lost,-45,"WAS 124, CHI 120",Fri Oct 23 ~11:40 PM CT
+nr530,2026-10-25,DET @ PHI,2026-10-25T23:30:00Z,Full game,Moneyline,Detroit wins,,,45,80.0,Yes,,,,,Won,55,"DET 106, PHI 93",Thu Oct 22 ~11:05 AM CT
+nr531,2026-10-25,MEM @ SAC,2026-10-26T01:00:00Z,Full game,Moneyline,Memphis wins,,,53,15.0,No,,,,,Won,47,"MEM 123, SAC 112",Fri Oct 23 ~9:30 AM CT
+nr532,2026-10-25,MEM @ SAC,2026-10-26T01:00:00Z,Full game,Moneyline,Sacramento wins,,,49,40.0,No,,,,,Lost,-49,"MEM 123, SAC 112",Fri Oct 23 ~9:30 AM CT
+nr533,2026-10-26,IND @ MIL,2026-10-27T00:00:00Z,Full game,Moneyline,Milwaukee wins,,,48,25.0,No,,,,,Won,52,"IND 102, MIL 110",Fri Oct 23 ~11:40 PM CT
+nr534,2026-10-26,MEM @ UTA,2026-10-27T01:00:00Z,Full game,Moneyline,Memphis wins,,,48,20.0,No,,,,,Won,52,"MEM 110, UTA 105",Fri Oct 23 ~11:40 PM CT
+nr535,2026-10-26,MEM @ UTA,2026-10-27T01:00:00Z,Full game,Moneyline,Utah wins,,,55,20.0,No,,,,,Lost,-55,"MEM 110, UTA 105",Fri Oct 23 ~11:40 PM CT
+nr536,2026-10-26,MIN @ CLE,2026-10-26T23:00:00Z,Full game,Moneyline,Cleveland wins,,,47,65.0,Yes,,,,,Won,53,"MIN 125, CLE 127",Fri Oct 23 ~11:40 PM CT
+nr537,2026-10-26,MIN @ CLE,2026-10-26T23:00:00Z,Full game,Moneyline,Minnesota wins,,,53,55.0,Yes,,,,,Lost,-53,"MIN 125, CLE 127",Fri Oct 23 ~11:40 PM CT
+nr538,2026-10-26,WAS @ CHA,2026-10-26T23:00:00Z,Full game,Moneyline,Charlotte wins,,,50,65.0,Yes,,,,,Won,50,"WAS 103, CHA 110",Fri Oct 23 ~11:40 PM CT
+nr539,2026-10-26,WAS @ CHA,2026-10-26T23:00:00Z,Full game,Moneyline,Washington wins,,,52,10.0,No,,,,,Lost,-52,"WAS 103, CHA 110",Fri Oct 23 ~11:40 PM CT
+nr540,2026-10-27,POR @ LAL,2026-10-28T03:00:00Z,Full game,Moneyline,Portland wins,,,47,70.0,Yes,,,,,Won,53,"POR 136, LAL 129",Fri Oct 23 ~11:40 PM CT

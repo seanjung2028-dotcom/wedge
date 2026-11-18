@@ -1,27 +1,31 @@
 {
- "settled": 446,
+ "settled": 541,
  "void": 0,
  "pending": 0,
  "nights": [
   "2026-10-22",
-  "2026-10-23"
+  "2026-10-23",
+  "2026-10-24",
+  "2026-10-25",
+  "2026-10-26",
+  "2026-10-27"
  ],
- "games": 14,
+ "games": 29,
  "screen": {
-  "n": 190,
-  "won": 90,
-  "win_pct": 47.4,
+  "n": 224,
+  "won": 110,
+  "win_pct": 49.1,
   "avg_price": 50.2,
-  "roi": -5.7,
-  "profit_c": -544
+  "roi": -2.1,
+  "profit_c": -238
  },
  "all": {
-  "n": 446,
-  "won": 179,
-  "win_pct": 40.1,
-  "avg_price": 49.7,
-  "roi": -19.3,
-  "profit_c": -4269
+  "n": 541,
+  "won": 231,
+  "win_pct": 42.7,
+  "avg_price": 49.6,
+  "roi": -14.0,
+  "profit_c": -3755
  },
  "model": {
   "n": 119,
@@ -48,12 +52,12 @@
   "profit_c": -928
  },
  "screen_team": {
-  "n": 68,
-  "won": 38,
-  "win_pct": 55.9,
-  "avg_price": 50.2,
-  "roi": 11.2,
-  "profit_c": 384
+  "n": 102,
+  "won": 58,
+  "win_pct": 56.9,
+  "avg_price": 50.1,
+  "roi": 13.5,
+  "profit_c": 690
  },
  "props_all": {
   "n": 274,
@@ -109,6 +113,50 @@
  ],
  "by_market": [
   {
+   "market": "Team total",
+   "all": {
+    "n": 94,
+    "won": 40,
+    "win_pct": 42.6,
+    "avg_price": 49.4,
+    "roi": -13.9,
+    "profit_c": -647
+   },
+   "screen": {
+    "n": 33,
+    "won": 14,
+    "win_pct": 42.4,
+    "avg_price": 50.0,
+    "roi": -15.2,
+    "profit_c": -251
+   },
+   "model": {
+    "n": 0
+   }
+  },
+  {
+   "market": "Spread",
+   "all": {
+    "n": 81,
+    "won": 37,
+    "win_pct": 45.7,
+    "avg_price": 49.4,
+    "roi": -7.5,
+    "profit_c": -299
+   },
+   "screen": {
+    "n": 33,
+    "won": 24,
+    "win_pct": 72.7,
+    "avg_price": 49.8,
+    "roi": 46.2,
+    "profit_c": 758
+   },
+   "model": {
+    "n": 0
+   }
+  },
+  {
    "market": "Rebounds",
    "all": {
     "n": 65,
@@ -136,22 +184,22 @@
    }
   },
   {
-   "market": "Team total",
+   "market": "Total",
    "all": {
-    "n": 61,
-    "won": 21,
-    "win_pct": 34.4,
-    "avg_price": 50.0,
-    "roi": -31.1,
-    "profit_c": -947
+    "n": 65,
+    "won": 27,
+    "win_pct": 41.5,
+    "avg_price": 49.7,
+    "roi": -16.5,
+    "profit_c": -533
    },
    "screen": {
-    "n": 23,
-    "won": 10,
-    "win_pct": 43.5,
-    "avg_price": 50.2,
-    "roi": -13.3,
-    "profit_c": -154
+    "n": 25,
+    "won": 12,
+    "win_pct": 48.0,
+    "avg_price": 50.9,
+    "roi": -5.7,
+    "profit_c": -72
    },
    "model": {
     "n": 0
@@ -212,28 +260,6 @@
    }
   },
   {
-   "market": "Spread",
-   "all": {
-    "n": 56,
-    "won": 27,
-    "win_pct": 48.2,
-    "avg_price": 49.2,
-    "roi": -2.1,
-    "profit_c": -57
-   },
-   "screen": {
-    "n": 26,
-    "won": 20,
-    "win_pct": 76.9,
-    "avg_price": 49.7,
-    "roi": 54.7,
-    "profit_c": 707
-   },
-   "model": {
-    "n": 0
-   }
-  },
-  {
    "market": "Threes",
    "all": {
     "n": 54,
@@ -258,28 +284,6 @@
     "avg_price": 49.6,
     "roi": -18.3,
     "profit_c": -335
-   }
-  },
-  {
-   "market": "Total",
-   "all": {
-    "n": 45,
-    "won": 14,
-    "win_pct": 31.1,
-    "avg_price": 49.8,
-    "roi": -37.6,
-    "profit_c": -842
-   },
-   "screen": {
-    "n": 16,
-    "won": 6,
-    "win_pct": 37.5,
-    "avg_price": 51.0,
-    "roi": -26.5,
-    "profit_c": -216
-   },
-   "model": {
-    "n": 0
    }
   },
   {
@@ -312,20 +316,20 @@
   {
    "market": "Moneyline",
    "all": {
-    "n": 10,
-    "won": 5,
-    "win_pct": 50.0,
-    "avg_price": 50.4,
-    "roi": -0.8,
-    "profit_c": -4
+    "n": 27,
+    "won": 15,
+    "win_pct": 55.6,
+    "avg_price": 50.3,
+    "roi": 10.5,
+    "profit_c": 143
    },
    "screen": {
-    "n": 3,
-    "won": 2,
-    "win_pct": 66.7,
-    "avg_price": 51.0,
-    "roi": 30.7,
-    "profit_c": 47
+    "n": 11,
+    "won": 8,
+    "win_pct": 72.7,
+    "avg_price": 49.5,
+    "roi": 46.8,
+    "profit_c": 255
    },
    "model": {
     "n": 0
@@ -385,6 +389,94 @@
     "avg_price": 48.6,
     "roi": -19.8,
     "profit_c": -965
+   }
+  },
+  {
+   "date": "2026-10-24",
+   "all": {
+    "n": 84,
+    "won": 45,
+    "win_pct": 53.6,
+    "avg_price": 49.3,
+    "roi": 8.7,
+    "profit_c": 361
+   },
+   "screen": {
+    "n": 29,
+    "won": 16,
+    "win_pct": 55.2,
+    "avg_price": 50.1,
+    "roi": 10.2,
+    "profit_c": 148
+   },
+   "model": {
+    "n": 0
+   }
+  },
+  {
+   "date": "2026-10-25",
+   "all": {
+    "n": 3,
+    "won": 2,
+    "win_pct": 66.7,
+    "avg_price": 49.0,
+    "roi": 36.1,
+    "profit_c": 53
+   },
+   "screen": {
+    "n": 1,
+    "won": 1,
+    "win_pct": 100.0,
+    "avg_price": 45.0,
+    "roi": 122.2,
+    "profit_c": 55
+   },
+   "model": {
+    "n": 0
+   }
+  },
+  {
+   "date": "2026-10-26",
+   "all": {
+    "n": 7,
+    "won": 4,
+    "win_pct": 57.1,
+    "avg_price": 50.4,
+    "roi": 13.3,
+    "profit_c": 47
+   },
+   "screen": {
+    "n": 3,
+    "won": 2,
+    "win_pct": 66.7,
+    "avg_price": 50.0,
+    "roi": 33.3,
+    "profit_c": 50
+   },
+   "model": {
+    "n": 0
+   }
+  },
+  {
+   "date": "2026-10-27",
+   "all": {
+    "n": 1,
+    "won": 1,
+    "win_pct": 100.0,
+    "avg_price": 47.0,
+    "roi": 112.8,
+    "profit_c": 53
+   },
+   "screen": {
+    "n": 1,
+    "won": 1,
+    "win_pct": 100.0,
+    "avg_price": 47.0,
+    "roi": 112.8,
+    "profit_c": 53
+   },
+   "model": {
+    "n": 0
    }
   }
  ]
