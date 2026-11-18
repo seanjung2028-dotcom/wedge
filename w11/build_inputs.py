@@ -19,7 +19,10 @@ CITY = {'ARI': 'Arizona', 'LAR': 'Los Angeles R', 'BAL': 'Baltimore', 'CLE': 'Cl
         'MIA': 'Miami', 'CIN': 'Cincinnati', 'DET': 'Detroit', 'DEN': 'Denver', 'SEA': 'Seattle'}
 KXC = {'JAX': 'JAC', 'WSH': 'WAS'}            # Kalshi's codes
 SLUG = lambda s: s.lower().replace(' ', '-')
-KG = json.load(open(S + 'pull1117/kalshi_games_w11.json')); KP = json.load(open(S + 'pull1117/kalshi_props_w11.json'))
+import os
+PULL = os.environ.get('W11_PULL', 'pull1117')   # the evening re-pull is pull1117pm; game lines fall back to the morning pull when it has none
+KG = json.load(open(S + PULL + '/kalshi_games_w11.json') if os.path.exists(S + PULL + '/kalshi_games_w11.json') else open(S + 'pull1117/kalshi_games_w11.json'))
+KP = json.load(open(S + PULL + '/kalshi_props_w11.json'))
 AT = KG['at']
 g = pd.read_csv(D + 'games.csv'); w11 = g[(g.season == 2026) & (g.week == 11)]
 q = collections.defaultdict(list)
