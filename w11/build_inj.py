@@ -17,7 +17,8 @@ rw = pd.read_csv(S + 'dl18/roster_weekly_2026.csv', low_memory=False); rw = rw[r
 by_name = {(nn(r.full_name), r.team): r for r in rw.itertuples(index=False)}
 by_name1 = {}
 for r in rw.itertuples(index=False): by_name1.setdefault(nn(r.full_name), r)
-E = json.load(open(S + 'pull1117/espn_inj_w11.json'))
+import os
+E = json.load(open(S + os.environ.get('W11_INJ', 'pull1117') + '/espn_inj_w11.json'))   # Wed Nov 18 re-pull: W11_INJ=pull1118
 MAP = {'Injured Reserve': 'Out', 'Out': 'Out', 'Doubtful': 'Doubtful', 'Questionable': 'Questionable'}
 rows, miss = [], 0
 for line in E['rows']:
