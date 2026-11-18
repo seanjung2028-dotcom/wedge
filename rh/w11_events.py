@@ -28,7 +28,9 @@ CITY = {'ARI': 'Arizona', 'LAR': 'Los Angeles R', 'BAL': 'Baltimore', 'CLE': 'Cl
         'TEN': 'Tennessee', 'IND': 'Indianapolis', 'SF': 'San Francisco', 'WSH': 'Washington', 'MIN': 'Minnesota',
         'MIA': 'Miami', 'CIN': 'Cincinnati', 'DET': 'Detroit', 'DEN': 'Denver', 'SEA': 'Seattle'}
 FIX = {'LA': 'LAR', 'WAS': 'WSH', 'JAC': 'JAX'}
-BOOK = {49: 'Caesars', 68: 'DraftKings', 69: 'FanDuel', 71: 'BetRivers', 75: 'BetMGM', 15: 'Books consensus'}
+BOOK = {49: 'Caesars', 68: 'DraftKings', 69: 'FanDuel', 71: 'BetRivers', 75: 'BetMGM', 15: 'Books consensus',
+        # Action Network's Illinois book ids (Wed Nov 18 pull)
+        1538: 'DraftKings', 270: 'FanDuel', 282: 'BetMGM', 279: 'Caesars', 262: 'BetRivers', 3646: 'Hard Rock', 3915: 'bet365', 2990: 'Fanatics'}
 
 def norm(n):
     n = unicodedata.normalize('NFKD', str(n)).encode('ascii', 'ignore').decode().lower().replace('.', '').replace("'", '').replace('-', ' ')
@@ -113,9 +115,11 @@ for ser, rows in kx['series'].items():
 st = pd.concat([pd.read_csv(B + '../nflverse_dl3/stats_player_week_2025.csv', low_memory=False), pd.read_csv(N + 'stats_player_week_2026.csv', low_memory=False)], ignore_index=True)
 st = st[(st['season_type'] == 'REG') & ~((st['season'] == 2026) & (st['week'] > 10))]
 st['nm'] = st['player_display_name'].map(norm)
-HCOL = {'Receiving Yards': 'receiving_yards', 'Rush Yards': 'rushing_yards', 'Pass Yards': 'passing_yards'}
+st['rr_yards'] = st['rushing_yards'].fillna(0) + st['receiving_yards'].fillna(0)
+HCOL = {'Receiving Yards': 'receiving_yards', 'Rush Yards': 'rushing_yards', 'Pass Yards': 'passing_yards', 'Rush + Rec Yards': 'rr_yards'}
 CV_PRIOR = {('Receiving Yards', 'WR'): 0.70, ('Receiving Yards', 'TE'): 0.75, ('Receiving Yards', 'RB'): 0.95,
-            ('Rush Yards', 'RB'): 0.55, ('Rush Yards', 'QB'): 0.85, ('Rush Yards', 'WR'): 1.2, ('Pass Yards', 'QB'): 0.28}
+            ('Rush Yards', 'RB'): 0.55, ('Rush Yards', 'QB'): 0.85, ('Rush Yards', 'WR'): 1.2, ('Pass Yards', 'QB'): 0.28,
+            ('Rush + Rec Yards', 'RB'): 0.50, ('Rush + Rec Yards', 'WR'): 0.65, ('Rush + Rec Yards', 'TE'): 0.70, ('Rush + Rec Yards', 'QB'): 0.80}
 
 def player_cv(player, label, pos):
     prior = CV_PRIOR.get((label, pos), 0.8)
@@ -134,6 +138,7 @@ MARKET = {'Receiving Yards': ('Receiving Yards', 'Receiving Yards', 'gamma', 5),
           'Receptions': ('Receptions', 'Receptions', 'poisson', 1),
           'Rush Yards': ('Rushing Yards', 'Rush Yards', 'gamma', 5),
           'Pass Yards': ('Passing Yards', 'Pass Yards', 'gamma', 25),
+          'Rush + Rec Yards': ('Rushing + Receiving Yards', 'Rush+Receiving Yards', 'gamma', 5),
           'Pass TDs': ('Passing Touchdowns', 'Pass TDs', 'poisson', 1),
           'Interceptions': ('Interceptions', 'Interceptions', 'poisson', 1),
           'Anytime Touchdown': ('Anytime Touchdown', None, None, None)}

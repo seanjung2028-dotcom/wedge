@@ -92,7 +92,9 @@ for ser, blob in KP['q'].items():
         SERIES[ser].append([ev, f'{ev}-{tail}', sub, k - 0.5, f'{int(f[2]) / 100:.4f}', f'{int(f[3]) / 100:.4f}', f'{int(f[4]) / 100:.4f}', '0.0000', '0.00', 'active'])
 json.dump({'at': KP['at'], 'series': SERIES}, open(R + 'kalshi_props_w11.json', 'w'))
 print('props', {k: len(v) for k, v in SERIES.items()})
-json.dump({'rows': [], 'picks': {}, 'glines': [], 'at': AT}, open(R + 'an_w11.json', 'w'))   # no sportsbook prop rows this week
+# sportsbook props and game lines (Action Network, Illinois books) when the pull has them; pull1118/an_convert.py builds the file
+AN_SRC = S + PULL + '/an_w11.json'
+json.dump(json.load(open(AN_SRC)) if os.path.exists(AN_SRC) else {'rows': [], 'picks': {}, 'glines': [], 'at': AT}, open(R + 'an_w11.json', 'w'))
 # ESPN-style results file from nflverse (Weeks 1-9)
 pbp = pd.read_csv(D + 'play_by_play_2026.csv', usecols=['game_id', 'week', 'qtr', 'home_team', 'away_team', 'total_home_score', 'total_away_score', 'season_type'], low_memory=False)
 pbp = pbp[pbp['season_type'] == 'REG']

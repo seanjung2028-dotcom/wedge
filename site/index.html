@@ -10,7 +10,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="wg.css?v=ceca1440fe85">
+<link rel="stylesheet" href="wg.css?v=69647607728c">
 <style>
 :root{--color-bg:#ffffff;--color-fg:#1f1e1d;--color-fg-muted:#6b6a68;--color-border-line:#e5e3df;--color-panel:#faf9f7;--color-ok:#2e7d4f;--color-warn:#b26a00;--color-bad:#c0392b;
 --cds-border:#dedcd8;--cds-chart-grid:#ecebe8;--cds-chart-muted:#c9c7c2;--cds-chart-reference:#8a8883;--cds-chart-status-critical:#d0453a;--cds-surface-popover:#fff;--cds-text-secondary:#6b6a68;--cds-shadow-popover:0 4px 16px rgba(0,0,0,.12);--cds-dur-slow:.2s;--cds-font-size-body:14px;--cds-font-size-caption:12px;--cds-font-size-heading:18px;--cds-font-size-title:26px;--cds-font-weight-medium:500;
@@ -220,7 +220,7 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
     
     <section class="rs-card" id="lines-card">
       <div class="pf-head v2-head"><div><span class="pf-label">01 / Week 11 board</span><h2 class="pf-h2 v2-h2">Every line.</h2></div></div>
-      <p class="rs-note">Every Week 11 line at any price (switch to 45–55¢ in the first menu), updated Tue Nov 17 at 6:23 AM CT. Where Robinhood has no line yet, the price comes from the sportsbooks. Hit rate is how often the line came true in his 2026 games; Wedge % is our chance it comes true this week; Bear · Base · Bull is our projection for that player and stat. Select any line to open its file: the bull, the bear and the base, the injury report, and the game script. ★ marks a high-scoring game. Thursday's JAX @ BAL is final, so its lines are off the board. Out: Sam Darnold, David Montgomery, A.J. Brown, Mike Evans, DeVonta Smith, Garrett Wilson (Sun) and Kyler Murray (Mon).</p>
+      <p class="rs-note">Every Week 11 line at any price (switch to 45–55¢ in the first menu). Kalshi prices checked Wed Nov 18 at 1:51 PM CT; where Robinhood has no line yet, the price comes from eight sportsbooks, checked at 2:46 PM CT. Hit rate is how often the line came true in his 2026 games; Wedge % is our chance it comes true this week; Bear · Base · Bull is our projection for that player and stat. Select any line to open its file: the bull, the bear and the base, the injury report, and the game script. ★ marks a high-scoring game. Injury designations: ESPN, Wed Nov 18; lines for players ruled out are off the board.</p>
       <p class="rs-note rl-every-note" hidden>Every Week 11 line Wedge priced, at any price: Robinhood's own contracts and the Robinhood-style rungs priced from the sportsbooks, each with its 2026 hit rate. Inside 45–55¢ the columns are the same as the main screen. Outside it, Wedge % applies the same market shifts (fit on lines priced 40–60¢), so read it as a rough guide; reads are only made inside 45–55¢. Rows without an outlook show Wedge % as plain text.</p>
       <div class="rs-controls">
         <select class="rs-show" aria-label="Which lines">
@@ -385,6 +385,7 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
     <header class="wx-band"><span class="wx-label"><i class="wx-dot" aria-hidden="true"></i>NFL / Week 11</span><h2>The Winning Edge.</h2></header>
   <nav class="v2-subnav" aria-label="NFL pages"><span class="v2-sn-g">Week 11</span><button type="button" class="v2-sn" data-page="research"><i>01</i>Research</button><button type="button" class="v2-sn" data-page="final"><i>02</i>The Winning Edge</button><button type="button" class="v2-sn" data-page="thesis"><i>03</i>Thesis</button><span class="v2-sn-g">Database</span><button type="button" class="v2-sn" data-page="charts"><i>04</i>Charts &amp; Trends</button><button type="button" class="v2-sn" data-page="analysts"><i>05</i>Analysts</button><button type="button" class="v2-sn" data-page="results"><i>06</i>Results</button><span class="v2-sn-g">Live</span><button type="button" class="v2-sn" data-page="shop"><i>07</i>Line Shopping</button><button type="button" class="v2-sn" data-page="ask"><i>08</i>Analyst</button></nav>
     <div id="fc-root"><p class="wx-empty">Loading the final card…</p></div>
+    <section class="v2-early" id="fc-early" aria-label="Early lines, priced from the sportsbooks" hidden></section>
   </div>
 <div class="rs-page v2-thesis v2-open" id="thesis" hidden>
   <header class="wx-band"><span class="wx-label"><i class="wx-dot" aria-hidden="true"></i>NFL / Week 11 · The Winning Edge</span><h2>Thesis.</h2><p hidden><span id="v2-th-when"></span></p></header>
@@ -1085,8 +1086,8 @@ html,body{margin:0;padding:0;background:var(--color-bg);color:var(--color-fg);fo
 </div>
 </div>
 <script>
-window.WEDGE_PREVIEWS = {"research": "assets/locked/research.webp?v=76aa3b0f2b", "final": "assets/locked/final.webp?v=4b44ff26f2", "thesis": "assets/locked/thesis.webp?v=cf5a705262", "charts": "assets/locked/charts.webp?v=1adf59a188", "analysts": "assets/locked/analysts.webp?v=b14c8a3941", "results": "assets/locked/results.webp?v=e7e723fe46", "nba": "assets/locked/nba.webp?v=a2398f24a6", "nba-charts": "assets/locked/nba-charts.webp?v=9b2d4eb364", "nba-results": "assets/locked/nba-results.webp?v=595e95fb7a"};
-if (window.WedgeRuntime && window.d3) WedgeRuntime.boot({"pub": "data/public.json?v=7c8b094c747b", "t1": "/p/t1/0c8c62eec2488865/data.json", "fin": ["/p/t2/0be76dee960e1c81/final.js", "data/final-public.js?v=f63ae2143a96"], "brain": ["/p/t2/0be76dee960e1c81/brain.js", "data/brain-public.js?v=6a8262115c37"], "wg": "wg.js?v=5b90deda94d9"});
+window.WEDGE_PREVIEWS = {"research": "assets/locked/research.webp?v=a2b924fce6", "final": "assets/locked/final.webp?v=4977566590", "thesis": "assets/locked/thesis.webp?v=cf5a705262", "charts": "assets/locked/charts.webp?v=1adf59a188", "analysts": "assets/locked/analysts.webp?v=b14c8a3941", "results": "assets/locked/results.webp?v=e7e723fe46", "nba": "assets/locked/nba.webp?v=a2398f24a6", "nba-charts": "assets/locked/nba-charts.webp?v=9b2d4eb364", "nba-results": "assets/locked/nba-results.webp?v=2e9fdaebaa"};
+if (window.WedgeRuntime && window.d3) WedgeRuntime.boot({"pub": "data/public.json?v=21915269d178", "t1": "/p/t1/f57231acbe0a867d/data.json", "fin": ["/p/t2/758c2fa0e2a42aa3/final.js", "data/final-public.js?v=f63ae2143a96"], "brain": ["/p/t2/758c2fa0e2a42aa3/brain.js", "data/brain-public.js?v=5a018c3e149e"], "wg": "wg.js?v=1879919ff95a"});
 else { document.getElementById('wz-boot-msg').textContent = 'Wedge couldn’t load this week’s card.'; document.getElementById('wz-boot-sub').innerHTML = 'Check your connection, then <a href="" style="color:inherit">reload the page</a>.'; }
 </script>
 </body>

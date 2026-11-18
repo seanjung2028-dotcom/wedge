@@ -83,11 +83,15 @@ for ser, rows in KP['series'].items():
     if not stat: continue
     for ev, tick, sub, strike, ya, yb, na, last, vol, st_ in rows:
         code = ev.split('-')[1][7:]; LAD[(code, sub.split(':')[0].strip(), stat)].append((int(strike + 0.5), round(100 * float(ya)), round(100 * float(yb)), round(100 * float(na)), tick))
+# expected Kalshi ladders from the sportsbooks, for player markets Kalshi hasn't listed yet (final11/book_ladders.py)
+import book_ladders as BL
+# only where 3+ books post a two-sided line: the calibration was fit on multi-book players, and one book's line is too thin to price a ladder
+EARLY = {k: [r_[:5] for r_ in v] for k, v in BL.LAD.items() if k[2] in WORD and k not in LAD and ((BL.META.get(k) or {}).get('det') or {}).get('n', 0) >= 3}
 GAMES = {}
 for r in g.itertuples(index=False):
     a, h = fx(r.away_team), fx(r.home_team); code = {'JAX': 'JAC', 'WSH': 'WAS'}.get(a, a) + {'JAX': 'JAC', 'WSH': 'WAS'}.get(h, h); GAMES[code] = (a, h)
 res = collections.defaultdict(list)
-for (code, name, stat), rungs in LAD.items():
+for (code, name, stat), rungs, early in [(k_, v_, False) for k_, v_ in LAD.items()] + [(k_, v_, True) for k_, v_ in EARLY.items()]:
     if code not in GAMES: continue
     a, h = GAMES[code]; game = f'{a} @ {h}'
     pid = None
@@ -126,7 +130,8 @@ for (code, name, stat), rungs in LAD.items():
     lea = sorted([x for x in rows if x['call'] == 'Conditional lean'], key=lambda x: (x['side'] != 'Yes', -x['edge_mid'], -x['edge_lo']))
     pick = (fin or lea or [None])[0]
     close = sorted(rows, key=lambda x: -x['edge_mid'])[0]
-    res[game].append({'name': name, 'team': team, 'opp': opp, 'pid': pid, 'stat': stat, 'status': stt, 'rows': rows, 'pick': pick, 'close': close, 'logs': L})
+    res[game].append({'name': name, 'team': team, 'opp': opp, 'pid': pid, 'stat': stat, 'status': stt, 'rows': rows, 'pick': pick, 'close': close, 'logs': L,
+                      'early': early, 'books': BL.META.get((code, name, stat), {}).get('det') if early else None})
 # --- write-ups
 def thr(x, stat, short=False): return (f"{x['k']}+ " if x['side'] == 'Yes' else f"under {x['k']} ") + (SHORT if short else WORD)[stat]
 def ledger(o, x):
@@ -141,7 +146,7 @@ def slope_shift(o, x):
     ks = np.array([a for a, _ in rr]); ps = np.array([b for _, b in rr]); sl = abs(np.polyfit(ks, ps, 1)[0]) or 1.0
     dp = (x['mid'] - x['mkt']) if x['side'] == 'Yes' else (x['mkt'] - x['mid'])
     v = dp / sl; return round(v, 1) if o['stat'] == 'rec' else round(v)
-CARDS, CSV = [], []
+CARDS, CSV, ECSV = [], [], []
 FRI = {}   # no earlier Week 11 card to revise yet (first card of the week)
 SATB = {'games': {}, 'plays': {}}
 from datetime import datetime as _dt, timezone as _tz
@@ -223,9 +228,9 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
     for t in (a, h):
         ii = INJ[(INJ.team.map(fx) == t) & INJ.position.isin(['QB', 'RB', 'WR', 'TE']) & INJ.report_status.isin(['Out', 'Doubtful', 'Questionable'])]
         if len(ii): lineup.append(f"{t}: " + '; '.join(f"{x.full_name} ({x.position}) {x.report_status.lower()}" for x in ii.itertuples(index=False)))
-    plays, passed = [], []
+    plays, passed, eplays, epassed = [], [], [], []
     for o in sorted(res.get(game, []), key=lambda o: -(o['pick']['edge_mid'] if o['pick'] else o['close']['edge_mid'])):
-        x = o['pick']
+        x = o['pick']; PL, PS, CS = (eplays, epassed, ECSV) if o['early'] else (plays, passed, CSV)
         if x:
             lg_ = ledger(o, x); top = [l for l in lg_ if l['pts'] > 0][:2]; neg = [l for l in lg_ if l['pts'] < 0][:1]
             why = ' '.join(l['text'] for l in top) or 'The lens nets in this direction.'
@@ -237,7 +242,7 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
             vs = (f"Beat {thr(alt[0], o['stat'])} ({alt[0]['side']} {alt[0]['ask']}¢, needs {alt[0]['be']}%, ours {alt[0]['lo']:.0f}–{alt[0]['hi']:.0f}%): "
                   f"{'this one clears by more' if x['edge_mid'] >= alt[0]['edge_mid'] else 'this one is likelier'}.") if alt else ''
             pts = round(sum(l['pts'] for l in lg_), 1)
-            plays.append({'decision': x['call'], 'player': o['name'], 'line': f"{o['name']} {thr(x, o['stat'])} ({x['side']})", 'thr': thr(x, o['stat']), 'side': x['side'],
+            pl_ = {'decision': x['call'], 'player': o['name'], 'line': f"{o['name']} {thr(x, o['stat'])} ({x['side']})", 'thr': thr(x, o['stat']), 'side': x['side'],
                           'price': x['ask'], 'payout': x['pays'], 'be': x['be'], 'mkt': x['mkt'], 'est': [round(x['lo']), round(x['hi'])], 'lo': x['lo'], 'mid': x['mid'], 'hi': x['hi'],
                           'edge_lo': x['edge_lo'], 'edge_mid': x['edge_mid'], 'platform': 'Robinhood (Kalshi contract)', 'checked': AT, 'ticker': x['tick'],
                           'why': why, 'support': f"{o['name']}'s last games: {vals}." if vals else '', 'sample': f"{'Hit' if x['side'] == 'Yes' else 'Stayed under'} in {x['n_hit']} of {x['n']} games this season ({vals}).",
@@ -248,17 +253,23 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
                           'alts': BR.alts(x, o, res[game], thr, WORD[o['stat']]), 'objection': BR.objection({**x, '_lens': lg_}, o, WORD[o['stat']]), 'miss': BR.miss_path(x, o),
                           'change': BR.change(x, o, cond), '_stat': o['stat'], '_team': o['team'], '_qb': T.pos.get(o['pid'], '') == 'QB',
                           'ladder': [{'t': thr(y, o['stat'], True), 'side': y['side'], 'ask': y['ask'], 'pays': y['pays'], 'be': y['be'], 'mkt': y['mkt'], 'lo': y['lo'], 'mid': y['mid'], 'hi': y['hi'],
-                                      'hits': f"{y['n_hit']}/{y['n']}", 'call': y['call'], 'tag': 'card' if y is x else ''} for y in sorted(o['rows'], key=lambda y: (y['side'], y['k']))]})
-            CSV.append({'game': game, 'decision': x['call'], 'line': plays[-1]['line'], 'side': x['side'], 'price': x['ask'], 'payout': x['pays'], 'breakeven': x['be'], 'market_mid': x['mkt'],
-                        'our_lo': x['lo'], 'our_mid': x['mid'], 'our_hi': x['hi'], 'edge_lo': x['edge_lo'], 'edge_mid': x['edge_mid'], 'evidence_pts': pts, 'shift': plays[-1]['shift'],
+                                      'hits': f"{y['n_hit']}/{y['n']}", 'call': y['call'], 'tag': 'card' if y is x else ''} for y in sorted(o['rows'], key=lambda y: (y['side'], y['k']))]}
+            if o['early']:
+                bk_ = o['books'] or {}; cap_ = int(math.floor(x['lo'] - FEE - 0.5))
+                pl_.update({'early': True, 'platform': 'Not on Kalshi yet: expected price from the sportsbooks', 'books': bk_,
+                            'cond': (f"Only if {o['name']} plays ({o['status'].lower()}). " if o['status'] == 'Questionable' else '') +
+                                    (f"Final if Kalshi lists it at {cap_}¢ or less." if x['call'] == 'Final line' else f"A lean; final if Kalshi lists it at {cap_}¢ or less.")})
+            PL.append(pl_)
+            CS.append({'game': game, 'decision': x['call'], 'line': pl_['line'], 'side': x['side'], 'price': x['ask'], 'payout': x['pays'], 'breakeven': x['be'], 'market_mid': x['mkt'],
+                        'our_lo': x['lo'], 'our_mid': x['mid'], 'our_hi': x['hi'], 'edge_lo': x['edge_lo'], 'edge_mid': x['edge_mid'], 'evidence_pts': pts, 'shift': pl_['shift'],
                         'condition': cond, 'ticker': x['tick'], 'checked': AT, 'result': '', 'grade_read': '', 'grade_price': ''})
         else:
             y = o['close']; lg_ = ledger(o, y)
             nt = y.get('note') or ''
             mv = nt if nt else f"A price of {int(math.floor(y['mid'] - FEE - 0.5))}¢ or less on {thr(y, o['stat'])} ({y['side']}) makes it a lean."
-            passed.append({'name': f"{o['name']} {WORD[o['stat']]}", 'why': f"Closest rung: {thr(y, o['stat'])} ({y['side']} {y['ask']}¢, needs {y['be']}%, ours {y['lo']:.0f}–{y['hi']:.0f}%).",
+            PS.append({'name': f"{o['name']} {WORD[o['stat']]}", 'why': f"Closest rung: {thr(y, o['stat'])} ({y['side']} {y['ask']}¢, needs {y['be']}%, ours {y['lo']:.0f}–{y['hi']:.0f}%).",
                            'move': mv, 'thesis': True, 'lens': lg_})
-            CSV.append({'game': game, 'decision': 'Pass', 'line': f"{o['name']} {thr(y, o['stat'])} ({y['side']})", 'side': y['side'], 'price': y['ask'], 'payout': y['pays'], 'breakeven': y['be'],
+            CS.append({'game': game, 'decision': 'Pass', 'line': f"{o['name']} {thr(y, o['stat'])} ({y['side']})", 'side': y['side'], 'price': y['ask'], 'payout': y['pays'], 'breakeven': y['be'],
                         'market_mid': y['mkt'], 'our_lo': y['lo'], 'our_mid': y['mid'], 'our_hi': y['hi'], 'edge_lo': y['edge_lo'], 'edge_mid': y['edge_mid'], 'evidence_pts': round(sum(l['pts'] for l in lg_), 1),
                         'shift': '', 'condition': mv, 'ticker': y['tick'], 'checked': AT, 'result': '', 'grade_read': '', 'grade_price': ''})
     for p in plays:   # research pass: news that supports or defeats each line's key assumption
@@ -284,7 +295,20 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
             if row['line'] == p['line'] and row['game'] == game: row['decision'] = 'Pass'; row['condition'] = 'Same read as a line already on the card'
     plays = keep
     passed = passed[:8]
-    nprops = len(res.get(game, []))
+    for p in eplays:
+        rs = BR.RESEARCH.get((game, p['line']))
+        if rs and rs.get('decision') and rs['decision'] != p['decision']: p['decision'] = rs['decision']; p['cond'] = rs['why']
+    eplays = [p for p in eplays if p['decision'] != 'Pass']
+    eplays.sort(key=lambda p: (p['decision'] != 'Final line', p['side'] != 'Yes', -(p['edge_lo'] if p['decision'] == 'Final line' else p['edge_mid'])))
+    seen = {p['player'] for p in plays}; ekeep = []
+    for p in eplays:
+        if p['player'] in seen or len(ekeep) >= 4:
+            epassed.insert(0, {'name': p['line'], 'why': f"Clears at the expected price ({p['price']}¢, needs {p['be']}%, ours {p['est'][0]}–{p['est'][1]}%), but rides the same read as a line already listed.", 'move': 'Left off to avoid stacking one game’s read.'})
+            continue
+        seen.add(p['player']); ekeep.append(p)
+    eplays = ekeep
+    neprops = len([o for o in res.get(game, []) if o['early']])
+    nprops = len([o for o in res.get(game, []) if not o['early']])
     # keys and scripts from the lens tables
     def key_for(off, de):
         D = T.D.loc[de]
@@ -309,6 +333,7 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
                                      ('Nothing clears break-even after fees yet.' if nprops else 'Player ladders for this game open later in the week; the lens tables are ready for them.'))
     qok, qt = BR.QB.get(game, (True, ''))
     card['brain'] = {'qb': {'ok': qok, 't': qt}, 'interaction': BR.interaction(plays) if plays else [], 'coverage': coverage(game, nprops), 'revisions': revisions(game, plays, res.get(game, []))}
+    card['early'] = eplays; card['early_n'] = neprops; card['early_passed'] = [{k: v for k, v in x_.items() if k != 'lens'} for x_ in epassed[:6]]
     CARDS.append(card)
 MIX = {}
 LIVE = [c for c in CARDS if c.get('status') != 'Final' and c['game'] not in LOCKED]
@@ -325,6 +350,16 @@ for tier, ek in (('Final line', 'edge_lo'), ('Conditional lean', 'edge_mid')):
                                'move': 'Left off only to keep the card near one under for every three overs.', 'thesis': True, 'lens': p['lens']})
         for row in CSV:
             if row['line'] == p['line'] and row['game'] == c['game']: row['decision'] = 'Pass'; row['condition'] = 'Left off for the card mix (about one under per three overs); still clears on its own numbers'
+# early (book-priced) lines follow the same mix: about one under for every three overs
+for tier, ek in (('Final line', 'edge_lo'), ('Conditional lean', 'edge_mid')):
+    P_ = [(c, p) for c in LIVE for p in c.get('early', []) if p['decision'] == tier]
+    O_ = [x for x in P_ if x[1]['side'] == 'Yes']; U_ = sorted([x for x in P_ if x[1]['side'] == 'No'], key=lambda x: -x[1][ek])
+    allow = max(1, math.ceil(len(O_) / BR.RATIO)) if U_ else 0
+    MIX['early ' + tier] = {'overs': len(O_), 'unders_cleared': len(U_), 'unders_kept': min(allow, len(U_))}
+    for c, p in U_[allow:]:
+        c['early'].remove(p)
+        c['early_passed'].insert(0, {'name': p['line'], 'why': f"Clears as an early {tier.lower()} at the expected price ({p['side']} {p['price']}¢, needs {p['be']}%, ours {p['est'][0]}–{p['est'][1]}%).",
+                                     'move': 'Left off only to keep the list near one under for every three overs.'})
 for c in LIVE:
     pl = c['plays']
     c['likely'] = [f"{p['line']} ({p['price']}¢): ours {p['mid']:.0f}%, needs {p['be']}%" for p in sorted(pl, key=lambda p: -p['mid'])[:3]]
@@ -347,10 +382,18 @@ for c in CARDS:
         i = next((j for j, x in enumerate(lad) if x['tag'] == 'card'), 0)
         p['ladder'] = lad[max(0, i - 3): i + 4]
     c['passed'] = [{k: v for k, v in x.items() if k != 'lens'} for x in c['passed'][:6]]
+    for p in c.get('early', []):
+        lad = [x for x in p['ladder'] if x['side'] == p['side']]
+        i = next((j for j, x in enumerate(lad) if x['tag'] == 'card'), 0)
+        p['ladder'] = lad[max(0, i - 3): i + 4]
+        for k in ('chain', 'checks', 'log', 'alts', 'objection', 'miss', 'change', '_stat', '_team', '_qb', 'research'): p.pop(k, None)
 F = {'at': AT, 'books_at': AT, 'week': 11, 'cards': CARDS, 'model': 'v6', 'backtest': {k: REP[k] for k in ('all', 'w7', 'w8', 'w9', 'band40_60') if k in REP},
      'graded': {'thru': '', **{k: [sum(p['result']['outcome'] == 'Won' for c in CARDS for p in c['plays'] if p.get('result') and p['decision'] == d),
                                                       sum(p['result']['outcome'] == 'Lost' for c in CARDS for p in c['plays'] if p.get('result') and p['decision'] == d),
                                                       sum(p['result']['profit_c'] for c in CARDS for p in c['plays'] if p.get('result') and p['decision'] == d)] for k, d in (('final', 'Final line'), ('lean', 'Conditional lean'))}},
+     'early': {'at': BL.AN['at'], 'books': sorted(set(BL.AN.get('books', {}).values())), 'cal': BL.CAL,
+               'assessed': sum(c.get('early_n', 0) for c in CARDS), 'ladders': len(EARLY),
+               'final': sum(p['decision'] == 'Final line' for c in CARDS for p in c.get('early', [])), 'lean': sum(p['decision'] == 'Conditional lean' for c in CARDS for p in c.get('early', []))},
      'lens_how': LH.get('how'), 'lens_check': LH.get('check'), 'lens_check_title': LH.get('check_title'), 'lens_check_head': LH.get('check_head'), 'lens_thru': LH.get('thru')}
 BRAIN = {'at': AT, 'plays': {}, 'games': {}}
 for c in CARDS:
@@ -378,7 +421,10 @@ json.dump(BRAIN, open(W + 'final11/brain_w11.json', 'w'), ensure_ascii=False, de
 json.dump(F, open(W + 'final11/final_w11.json', 'w'), ensure_ascii=False, default=float, separators=(',', ':'))
 with open(W + 'final11/final_w11.csv', 'w', newline='') as f:
     w = csv.DictWriter(f, fieldnames=list(CSV[0].keys())); w.writeheader(); w.writerows(CSV)
-print('final lines', nF, 'leans', nL, 'csv rows', len(CSV))
+with open(W + 'final11/early_w11.csv', 'w', newline='') as f:
+    w = csv.DictWriter(f, fieldnames=list(ECSV[0].keys())); w.writeheader(); w.writerows(ECSV)
+print('final lines', nF, 'leans', nL, 'csv rows', len(CSV), '| early (book-priced):', F['early']['final'], 'final', F['early']['lean'], 'leans from', F['early']['assessed'], 'player markets')
 for c in CARDS:
     print(f"{c['game']:10s} plays {len(c['plays'])} passed {len(c['passed'])}")
     for p in c['plays']: print('   ', p['decision'][:5], p['line'], p['price'], 'needs', p['be'], 'ours', p['lo'], p['mid'], p['hi'], p.get('tier'))
+    for p in c.get('early', []): print('    EARLY', p['decision'][:5], p['line'], p['price'], 'needs', p['be'], 'ours', p['lo'], p['mid'], p['hi'], '| books', (p.get('books') or {}).get('line'), (p.get('books') or {}).get('n'))

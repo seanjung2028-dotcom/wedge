@@ -501,6 +501,9 @@ s, js = _r16.apply(s, js)
 # round 17: the NBA board's copy names the current slate
 _sp17 = _ilu.spec_from_file_location('r17_nba', V + 'r17_nba.py'); _r17 = _ilu.module_from_spec(_sp17); _sp17.loader.exec_module(_r17)
 s, js = _r17.apply(s, js)
+# round 18: early lines (book-priced) below the card
+_sp18 = _ilu.spec_from_file_location('r18_early', V + 'r18_early.py'); _r18 = _ilu.module_from_spec(_sp18); _sp18.loader.exec_module(_r18)
+s, js = _r18.apply(s, js)
 s = s.replace('@@JS@@', '<script>' + js + '</script>')
 s = s.replace('<title>Wedge', '<title>Wedge')
 open(V + 'index_full.html', 'w').write(s)
