@@ -9,11 +9,11 @@ sys.path.insert(0, '/home/claude/wedger/nba')
 import nba_model as M
 
 D = '/home/claude/wedger/nba/'
-TODAY = '2026-11-18'
-PRICED_AT = 'Wed Nov 18, 2:05 PM CT'
-SLATE = ('2026-11-18', '2026-11-18')   # CT dates of the games on the board
+TODAY = '2026-11-19'
+PRICED_AT = 'Thu Nov 19, 6:15 AM CT'
+SLATE = ('2026-11-19', '2026-11-19')   # CT dates of the games on the board
 X = pd.read_pickle(D + 'nba_logs.pkl'); L, T = X['logs'], X['team']
-KX = json.load(open(D + 'kalshi_nba_1118.json'))['out']   # built by pull1118/convert.py from the browser pulls
+KX = json.load(open(D + 'kalshi_nba_1119.json'))['out']   # Thu Nov 19 browser pull (pull1119/kalshi_nba_raw.json)
 SCH = pd.read_parquet(D + 'nba_schedule_2027.parquet')
 FIX = {'GS': 'GSW', 'NY': 'NYK', 'SA': 'SAS', 'NO': 'NOP', 'UTAH': 'UTA', 'WSH': 'WAS', 'PHO': 'PHX'}
 fx = lambda t: FIX.get(t, t)
@@ -21,8 +21,8 @@ NICK = {'ATL': 'Hawks', 'BOS': 'Celtics', 'BKN': 'Nets', 'CHA': 'Hornets', 'CHI'
         'DET': 'Pistons', 'GSW': 'Warriors', 'HOU': 'Rockets', 'IND': 'Pacers', 'LAC': 'Clippers', 'LAL': 'Lakers', 'MEM': 'Grizzlies', 'MIA': 'Heat',
         'MIL': 'Bucks', 'MIN': 'Timberwolves', 'NOP': 'Pelicans', 'NYK': 'Knicks', 'OKC': 'Thunder', 'ORL': 'Magic', 'PHI': '76ers', 'PHX': 'Suns',
         'POR': 'Trail Blazers', 'SAC': 'Kings', 'SAS': 'Spurs', 'TOR': 'Raptors', 'UTA': 'Jazz', 'WAS': 'Wizards'}
-# injury report (ESPN, Wed Nov 18 2:08 PM CT) for tonight's teams: 'Out' = out tonight; 'GTD' = day-to-day (game-time decision).
-INJ_RAW = json.load(open(D + 'pull1118/espn_inj_nba.json'))['inj']
+# injury report (ESPN, Thu Nov 19 6:15 AM CT) for tonight's teams: 'Out' = out tonight; 'GTD' = day-to-day (game-time decision).
+INJ_RAW = json.load(open(D + 'pull1119/espn_inj_nba.json'))['inj']
 def _resolve(team, nm):
     """'K. Porzingis' -> the full name of the player on that team in the box scores (latest team), else the initials as given."""
     m = re.match(r'^([A-Z])\. (.+)$', nm)
@@ -147,8 +147,8 @@ for g in GAMES.values():
 # ---------------- sportsbook prices for the same players (Action Network, DraftKings / FanDuel / BetRivers / BetMGM ...) ----------------
 from scipy.optimize import brentq
 import os
-# Action Network book lines are pulled per slate; none were pulled for Nov 18, so Wedge % falls back to the Robinhood mid.
-AN_FILE = D + 'an_cur_1118.json'
+# Action Network book lines are pulled per slate; none were pulled for Nov 19, so Wedge % falls back to the Robinhood mid.
+AN_FILE = D + 'an_cur_1119.json'
 AN = json.load(open(AN_FILE))['d'] if os.path.exists(AN_FILE) else {}
 MK5 = {'pts': 'pts', 'reb': 'reb', 'ast': 'ast', '3pm': '3pm', 'pra': 'pra'}
 BOOKS = {}

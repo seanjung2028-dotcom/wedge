@@ -1,10 +1,10 @@
-"""Round 17 (Wed Nov 18): the NBA board moves to the current slate.
-The NBA copy written for the Oct 24-27 board now names the Nov 18 slate, its pricing time and its injury source.
+"""Round 17 (Wed Nov 18; slate moved to Thu Nov 19): the NBA board names the current slate.
+The NBA copy written for the Oct 24-27 board now names the current slate, its pricing time and its injury source.
 Change SLATE_* below (and nba/nba_lines.py) when the board moves to another slate."""
-SLATE_TILE = 'Robinhood, Wed Nov 18'
-SLATE_NOTE = "Robinhood NBA lines for Wed Nov 18, priced at 2:05 PM CT. Hit rate: last 20 games. Wedge %: ours. Books % is blank: book lines weren't pulled for this slate."
-SLATE_GAMES = "for Wed Nov 18's 12 games:"
-SLATE_INJ = 'Injuries: ESPN injury report, Wed Nov 18 at 2:08 PM CT.'
+SLATE_TILE = 'Robinhood, Thu Nov 19'
+SLATE_NOTE = "Robinhood NBA lines for Thu Nov 19, priced at 6:15 AM CT. Hit rate: last 20 games. Wedge %: ours. Books % is blank: book lines weren't pulled for this slate."
+SLATE_GAMES = "for Thu Nov 19's 4 games:"
+SLATE_INJ = 'Injuries: ESPN injury report, Thu Nov 19 at 6:15 AM CT.'
 SWAPS = [
     ('Robinhood, Sat Oct 24 – Tue Oct 27', SLATE_TILE),
     ("Robinhood NBA lines, Oct 24–27. Hit rate: last 20 games. Books %: sportsbooks' chance. Wedge %: ours.", SLATE_NOTE),

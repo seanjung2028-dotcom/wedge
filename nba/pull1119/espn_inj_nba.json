@@ -1,0 +1,51 @@
+{
+"at": "2026-11-19T12:15:55.228Z",
+"src": "ESPN injury report",
+"inj": {
+"GSW": {
+"Al Horford": "GTD",
+"Brandon Williams": "Out",
+"Stephen Curry": "Out",
+"Kristaps Porzingis": "Out",
+"Moses Moody": "Out",
+"Jimmy Butler III": "Out"
+},
+"LAC": {
+"Brandon Ingram": "Out",
+"Bradley Beal": "Out",
+"Jordan Miller": "Out"
+},
+"MEM": {
+"GG Jackson": "Out",
+"Isaiah Stewart": "GTD",
+"Ty Jerome": "GTD",
+"Scotty Pippen Jr.": "Out",
+"Richie Saunders": "Out"
+},
+"MIL": {
+"Ryan Rollins": "GTD",
+"Ousmane Dieng": "Out"
+},
+"MIN": {
+"Zyon Pullin": "GTD",
+"Jonathan Kuminga": "GTD",
+"Jaylen Clark": "Out",
+"Anthony Edwards": "Out",
+"Donte DiVincenzo": "Out"
+},
+"POR": {
+"Robert Williams III": "Out",
+"Deni Avdija": "GTD",
+"Toumani Camara": "GTD",
+"Chris Youngblood": "GTD",
+"Vit Krejci": "Out",
+"Ja Morant": "Out",
+"Shaedon Sharpe": "Out"
+},
+"SAS": {
+"Dylan Harper": "Out",
+"Tobias Harris": "Out",
+"Jayden Quaintance": "Out"
+}
+}
+}

@@ -11,13 +11,14 @@ QB = {
     # Wed Nov 18 (ESPN injury report, 1:52 PM CT), same rule as Week 10: a replacement starter for an injured starter leaves the game off
     'TEN @ DAL': (True, 'Cam Ward (TEN) and Dak Prescott (DAL) start; neither is on the injury report (ESPN, Wed Nov 18).'),
     'CIN @ WSH': (True, 'Joe Burrow (CIN) and Jayden Daniels (WSH) start; neither is on the injury report (ESPN, Wed Nov 18).'),
-    'TB @ DET': (False, 'Tampa Bay looks set to start Jalon Daniels: Baker Mayfield (foot) is questionable after missing Wednesday’s practice (Todd Bowles, via ESPN), and Kalshi and nine sportsbooks now price Daniels, not Mayfield, as the passer. Back on if Mayfield is cleared.'),
+    'TB @ DET': (False, 'Tampa Bay looks set to start Jalon Daniels: Baker Mayfield (foot) is questionable after missing Wednesday’s practice (Todd Bowles, via ESPN), and as of Thursday morning Kalshi and nine sportsbooks still price Daniels, not Mayfield, as the passer. Back on if Mayfield is cleared.'),
     'NYJ @ LAC': (True, 'Justin Herbert (LAC) starts. Geno Smith (NYJ, ankle) is questionable and was limited Wednesday (Aaron Glenn, via ESPN): the game stays on only if he starts.'),
     'MIA @ BUF': (False, 'Miami starts a backup: Malik Willis (abdomen) is on injured reserve (ESPN, Wed Nov 18); Kyle McCord started in his place in Week 10.'),
     'MIN @ SF': (False, 'Minnesota starts Kirk Cousins again: Kyler Murray (hamstring) is out and missed Wednesday’s practice (Kevin Seifert, ESPN).'),
     'JAX @ NYG': (True, 'Trevor Lawrence (JAX) and J.J. McCarthy (NYG, the starter since Week 6) start; neither is on the injury report (ESPN, Wed Nov 18).'),
     'LV @ DEN': (True, 'Fernando Mendoza, named the Raiders’ starter last week, makes his second start; Denver’s starter is not on the injury report (ESPN, Wed Nov 18).'),
     'ARI @ KC': (False, 'Arizona starts Carson Beck: Gardner Minshew (elbow) had season-ending surgery and is on injured reserve (ESPN, Wed Nov 18).'),
+    'PIT @ PHI': (False, 'Philadelphia starts a backup: Jalen Hurts is on reserve (nflverse roster), Joe Milton III started in Week 9, and Kalshi and the books price Milton as the passer.'),
     'BAL @ CAR': (False, 'Baltimore starts a backup: Lamar Jackson (thumb) is on injured reserve (ESPN, Wed Nov 18), with a Week 16 return the hope.'),
 }
 OVERS_NOTE = 'In testing, the model’s overs that passed these same checks broke even (36 picks, Weeks 7–9), while its unders won in each week.'
