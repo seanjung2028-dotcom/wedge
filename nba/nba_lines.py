@@ -10,11 +10,11 @@ import nba_model as M
 
 D = '/home/claude/wedger/nba/'
 TODAY = '2026-11-21'
-PRICED_AT = 'Sat Nov 21, 10:04 AM CT'
+PRICED_AT = 'Sat Nov 21, 12:07 PM CT'
 SLATE = ('2026-11-21', '2026-11-21')   # CT dates of the games on the board
-NOT_BEFORE = pd.Timestamp('2026-11-21T11:30:00-06:00')   # Sat morning board: all six games (MIL @ PHI tips at noon CT)
+NOT_BEFORE = pd.Timestamp('2026-11-21T13:00:00-06:00')   # Sat noon board: the five evening games (MIL @ PHI tipped at noon CT)
 X = pd.read_pickle(D + 'nba_logs.pkl'); L, T = X['logs'], X['team']
-KX = json.load(open(D + 'kalshi_nba_1121.json'))['out']   # Sat Nov 21 10:04 AM CT browser pull (pull1121/kalshi_nba_raw.json)
+KX = json.load(open(D + 'kalshi_nba_1121b.json'))['out']   # Sat Nov 21 12:07 PM CT browser pull (pull1121b/kalshi_nba_raw.json)
 SCH = pd.read_parquet(D + 'nba_schedule_2027.parquet')
 FIX = {'GS': 'GSW', 'NY': 'NYK', 'SA': 'SAS', 'NO': 'NOP', 'UTAH': 'UTA', 'WSH': 'WAS', 'PHO': 'PHX'}
 fx = lambda t: FIX.get(t, t)
@@ -22,8 +22,8 @@ NICK = {'ATL': 'Hawks', 'BOS': 'Celtics', 'BKN': 'Nets', 'CHA': 'Hornets', 'CHI'
         'DET': 'Pistons', 'GSW': 'Warriors', 'HOU': 'Rockets', 'IND': 'Pacers', 'LAC': 'Clippers', 'LAL': 'Lakers', 'MEM': 'Grizzlies', 'MIA': 'Heat',
         'MIL': 'Bucks', 'MIN': 'Timberwolves', 'NOP': 'Pelicans', 'NYK': 'Knicks', 'OKC': 'Thunder', 'ORL': 'Magic', 'PHI': '76ers', 'PHX': 'Suns',
         'POR': 'Trail Blazers', 'SAC': 'Kings', 'SAS': 'Spurs', 'TOR': 'Raptors', 'UTA': 'Jazz', 'WAS': 'Wizards'}
-# injury report (ESPN, Sat Nov 21 10:04 AM CT) for tonight's teams: 'Out' = out tonight; 'GTD' = day-to-day (game-time decision).
-INJ_RAW = json.load(open(D + 'pull1121/espn_inj_nba.json'))['inj']
+# injury report (ESPN, Sat Nov 21 12:07 PM CT) for tonight's teams: 'Out' = out tonight; 'GTD' = day-to-day (game-time decision).
+INJ_RAW = json.load(open(D + 'pull1121b/espn_inj_nba.json'))['inj']
 def _resolve(team, nm):
     """'K. Porzingis' -> the full name of the player on that team in the box scores (latest team), else the initials as given."""
     m = re.match(r'^([A-Z])\. (.+)$', nm)

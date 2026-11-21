@@ -172,6 +172,48 @@ def interaction(plays):
 # ---- research pass on the finalists (Sat Nov 14, ~8:30 PM CT): news that supports or defeats each line's key assumption
 ESPN = {'t': 'ESPN NFL injury report (team and beat-reporter notes), Sat Nov 14', 'u': INJ_URL}
 RESEARCH = {   # Week 11 news checks (Tue Nov 17 ~6:40 AM CT). Searches turned up only 2025 coverage of both quarterbacks, which doesn't count.
+    # ---- OG Brain challenge pass on the Sunday/Monday finalists (Sat Nov 21 ~12:30 PM CT; baseline OG-BRAIN-2026-11-13-PRE-YOUTUBE, SHA-256 verified):
+    # each line's strongest objection, its full 2026 log at the exact threshold, the books' main line, and current news. Calls change only on evidence.
+    ('CIN @ WSH', 'Jayden Daniels 25+ rushing yards (Yes)'): {
+        'notes': ['Books set his rushing line at 36.5–42.5 yards (most at 40.5–41.5), well above 25, and he carries no designation (ESPN, Sat Nov 21).',
+                  'Against it: he reached 25 in 4 of 7 games this season and only 1 of his last 4 (10, 23, 16, 28 yards). Jacory Croskey-Merritt is expected back from IR, which can shift some carries away from designed QB runs.',
+                  'Kept as a final line: the books and Kalshi both price well past 25, and nothing in the injury news points to fewer runs.'],
+        'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 12:05 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('CIN @ WSH', 'Chase Brown under 30 receiving yards (No)'): {
+        'notes': ['The books’ receiving-yards line sits at 24.5–28.5, below 30. He stayed under 30 in 6 of 9 games.',
+                  'Against it: his receiving role is growing. He caught 8 of 9 targets in Week 10 (21% target share) and had 46 and 39 yards in two of his last three games (DraftSharks, Nov 16). Washington has allowed the ninth-fewest points to running backs (same source).',
+                  'Kept as a final line; the miss path is another 8-target game.'],
+        'src': [{'t': 'DraftSharks, Chase Brown’s receiving role powers Week 10 breakout (Nov 16, 2026)', 'u': 'https://www.draftsharks.com/fantasy-football-news/84272/chase-browns-receiving-role-powers-week-10-breakout'}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('NO @ CHI', 'Alvin Kamara 2+ receptions (Yes)'): {
+        'notes': ['2+ catches in 7 of 8 games; the books price 3+ catches as a slight favorite. Not on the injury report.',
+                  'Against it: his carries have fallen to 2–9 a game, so a smaller overall role is the risk. Rain is likely at Soldier Field.'],
+        'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 12:05 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('TB @ DET', 'Emeka Egbuka under 40 receiving yards (No)'): {
+        'notes': ['Under 40 in 4 of 7 games; the books’ line is 45.5–46.5, so this is a close call priced near the market.',
+                  'Against it: with Mike Evans gone and Jalen McMillan on IR he is the main target (16 targets in Week 6).',
+                  'Only stands if Baker Mayfield plays: if Jalon Daniels starts, the backup-QB rule takes this game off.'],
+        'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 12:05 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('JAX @ NYG', 'Nate Boerkircher 2+ receptions (Yes)'): {
+        'notes': ['Full 2026 log: 2+ catches in 3 of 8 games (38%), below the 45% this price needs.',
+                  'He is the second tight end behind Brenton Strange, who is healthy and draws 2–8 targets a game, and rookie Tanner Koziol has taken 1–2 targets in each of the last three games. No news points to a bigger role (Jaguars injury report, Fri Nov 20).'],
+        'src': [{'t': 'Giants.com, injury report statuses for Giants vs. Jaguars, Week 11 (Nov 20, 2026)', 'u': 'https://www.giants.com/news/injury-report-statuses-for-giants-vs-jaguars-week-11'}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}],
+        'decision': 'Pass', 'why': 'Research pass: the full log (2+ catches in 3 of 8 games) sits below the 45% needed, and his role behind Brenton Strange has not grown.'},
+    ('JAX @ NYG', 'Nate Boerkircher 10+ receiving yards (Yes)'): {
+        'notes': ['Replaces his 2+ receptions after the research pass. One catch usually decides 10+ yards for him, and he reached 10 in 5 of 8 games (15, 20, 31, 61 and 12 yards).',
+                  'Against it: he is the second tight end with 1–3 targets a game, so a zero-catch game (Week 3) or one short catch (8 and 9 yards in two games) misses. The books’ line is 11.5, so this is near even money.'],
+        'src': [{'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('JAX @ NYG', 'Devin Singletary under 15 rushing yards (No)'): {
+        'notes': ['Cam Skattebo (hamstring) practiced fully all week and has no game status (Giants injury report, Fri Nov 20). With Skattebo active, Singletary ran for 16, 9, 14 and 3 yards. The books’ line is 10.5–11.5.',
+                  'Against it: the two games Skattebo missed (Weeks 7 and 9) Singletary ran for 41 and 31. A setback for Skattebo during the game is the miss path.'],
+        'src': [{'t': 'Giants.com, injury report statuses for Giants vs. Jaguars, Week 11 (Nov 20, 2026)', 'u': 'https://www.giants.com/news/injury-report-statuses-for-giants-vs-jaguars-week-11'}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('LV @ DEN', 'Marvin Mims Jr. 10+ receiving yards (Yes)'): {
+        'notes': ['10+ yards in 4 of 7 games he played. He is not on the injury report.',
+                  'Against it: one or two targets a game, so a single missed connection decides it (0 yards in Week 9).'],
+        'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 12:05 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('LV @ DEN', 'Courtland Sutton 3+ receptions (Yes)'): {
+        'notes': ['3+ catches in 5 of 9 games, including 3, 4 and 5 in his last three. The books price 4+ catches as an underdog, so 3+ sits near two in three.',
+                  'Against it: Denver spreads targets; he was held to 1–2 catches in four of his first six games.'],
+        'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 12:05 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
     ('IND @ HOU', 'C.J. Stroud 10+ rushing yards (Yes)'): {
         'notes': ['ESPN’s injury report (Tue Nov 17) lists Stroud as active with no designation. He ran 3 times for 20 yards in Sunday’s 27–24 loss at Cleveland.',
                   'Thursday game: the first practice reports post Monday through Wednesday. Re-check before kickoff.'],
