@@ -1,5 +1,5 @@
 {
- "settled": 977,
+ "settled": 1071,
  "void": 23,
  "pending": 0,
  "nights": [
@@ -10,71 +10,72 @@
   "2026-10-26",
   "2026-10-27",
   "2026-11-18",
-  "2026-11-19"
+  "2026-11-19",
+  "2026-11-20"
  ],
- "games": 45,
+ "games": 48,
  "screen": {
-  "n": 373,
-  "won": 181,
-  "win_pct": 48.5,
+  "n": 418,
+  "won": 203,
+  "win_pct": 48.6,
   "avg_price": 50.3,
-  "roi": -3.6,
-  "profit_c": -675
+  "roi": -3.5,
+  "profit_c": -727
  },
  "all": {
-  "n": 977,
-  "won": 453,
-  "win_pct": 46.4,
+  "n": 1071,
+  "won": 498,
+  "win_pct": 46.5,
   "avg_price": 49.6,
-  "roi": -6.6,
-  "profit_c": -3186
+  "roi": -6.3,
+  "profit_c": -3340
  },
  "model": {
-  "n": 200,
-  "won": 85,
+  "n": 228,
+  "won": 97,
   "win_pct": 42.5,
-  "avg_price": 48.0,
-  "roi": -11.4,
-  "profit_c": -1099
+  "avg_price": 47.9,
+  "roi": -11.2,
+  "profit_c": -1223
  },
  "screen_model": {
-  "n": 99,
-  "won": 42,
-  "win_pct": 42.4,
-  "avg_price": 49.1,
-  "roi": -13.5,
-  "profit_c": -657
+  "n": 115,
+  "won": 50,
+  "win_pct": 43.5,
+  "avg_price": 49.0,
+  "roi": -11.2,
+  "profit_c": -632
  },
  "screen_props": {
-  "n": 213,
-  "won": 98,
-  "win_pct": 46.0,
+  "n": 242,
+  "won": 112,
+  "win_pct": 46.3,
   "avg_price": 50.4,
-  "roi": -8.8,
-  "profit_c": -944
+  "roi": -8.1,
+  "profit_c": -993
  },
  "screen_team": {
-  "n": 160,
-  "won": 83,
-  "win_pct": 51.9,
+  "n": 176,
+  "won": 91,
+  "win_pct": 51.7,
   "avg_price": 50.2,
-  "roi": 3.3,
-  "profit_c": 269
+  "roi": 3.0,
+  "profit_c": 266
  },
  "props_all": {
-  "n": 570,
-  "won": 262,
-  "win_pct": 46.0,
+  "n": 637,
+  "won": 296,
+  "win_pct": 46.5,
   "avg_price": 49.6,
-  "roi": -7.4,
-  "profit_c": -2085
+  "roi": -6.3,
+  "profit_c": -1992
  },
- "model_side_pct": 52.9,
- "model_side_n": 550,
+ "model_side_pct": 54.8,
+ "model_side_n": 617,
  "brier": {
-  "price": 0.248,
-  "wedger": 0.2481,
-  "hit20": 0.2692
+  "price": 0.2472,
+  "wedger": 0.2474,
+  "hit20": 0.2677
  },
  "calibration": [
   {
@@ -87,23 +88,23 @@
   {
    "lo": 40,
    "hi": 45,
-   "n": 43,
+   "n": 45,
    "pred": 43.8,
-   "hit": 37.2
+   "hit": 35.6
   },
   {
    "lo": 45,
    "hi": 50,
-   "n": 291,
+   "n": 330,
    "pred": 47.5,
-   "hit": 45.7
+   "hit": 44.5
   },
   {
    "lo": 50,
    "hi": 55,
-   "n": 201,
+   "n": 227,
    "pred": 51.9,
-   "hit": 49.3
+   "hit": 52.4
   },
   {
    "lo": 55,
@@ -117,42 +118,20 @@
   {
    "market": "Team total",
    "all": {
-    "n": 147,
-    "won": 73,
-    "win_pct": 49.7,
-    "avg_price": 49.5,
-    "roi": 0.2,
-    "profit_c": 17
+    "n": 158,
+    "won": 77,
+    "win_pct": 48.7,
+    "avg_price": 49.6,
+    "roi": -1.8,
+    "profit_c": -138
    },
    "screen": {
-    "n": 53,
-    "won": 24,
-    "win_pct": 45.3,
-    "avg_price": 50.2,
-    "roi": -9.9,
-    "profit_c": -263
-   },
-   "model": {
-    "n": 0
-   }
-  },
-  {
-   "market": "Spread",
-   "all": {
-    "n": 127,
-    "won": 54,
-    "win_pct": 42.5,
-    "avg_price": 49.4,
-    "roi": -13.9,
-    "profit_c": -869
-   },
-   "screen": {
-    "n": 48,
-    "won": 30,
-    "win_pct": 62.5,
-    "avg_price": 49.5,
-    "roi": 26.2,
-    "profit_c": 622
+    "n": 59,
+    "won": 28,
+    "win_pct": 47.5,
+    "avg_price": 50.3,
+    "roi": -5.6,
+    "profit_c": -167
    },
    "model": {
     "n": 0
@@ -161,155 +140,177 @@
   {
    "market": "Rebounds",
    "all": {
-    "n": 124,
-    "won": 56,
-    "win_pct": 45.2,
+    "n": 139,
+    "won": 62,
+    "win_pct": 44.6,
     "avg_price": 49.1,
-    "roi": -8.0,
-    "profit_c": -489
+    "roi": -9.2,
+    "profit_c": -630
    },
    "screen": {
-    "n": 45,
-    "won": 23,
-    "win_pct": 51.1,
-    "avg_price": 49.6,
-    "roi": 3.0,
-    "profit_c": 67
+    "n": 51,
+    "won": 26,
+    "win_pct": 51.0,
+    "avg_price": 49.7,
+    "roi": 2.5,
+    "profit_c": 63
    },
    "model": {
-    "n": 47,
-    "won": 20,
-    "win_pct": 42.6,
+    "n": 54,
+    "won": 22,
+    "win_pct": 40.7,
     "avg_price": 47.4,
-    "roi": -10.3,
-    "profit_c": -230
+    "roi": -14.0,
+    "profit_c": -357
+   }
+  },
+  {
+   "market": "Spread",
+   "all": {
+    "n": 135,
+    "won": 58,
+    "win_pct": 43.0,
+    "avg_price": 49.4,
+    "roi": -13.0,
+    "profit_c": -863
+   },
+   "screen": {
+    "n": 51,
+    "won": 32,
+    "win_pct": 62.7,
+    "avg_price": 49.5,
+    "roi": 26.8,
+    "profit_c": 676
+   },
+   "model": {
+    "n": 0
    }
   },
   {
    "market": "Points",
    "all": {
-    "n": 117,
-    "won": 52,
-    "win_pct": 44.4,
-    "avg_price": 49.8,
-    "roi": -10.7,
-    "profit_c": -622
+    "n": 132,
+    "won": 60,
+    "win_pct": 45.5,
+    "avg_price": 49.7,
+    "roi": -8.6,
+    "profit_c": -563
    },
    "screen": {
-    "n": 49,
-    "won": 20,
-    "win_pct": 40.8,
+    "n": 54,
+    "won": 22,
+    "win_pct": 40.7,
     "avg_price": 50.4,
-    "roi": -19.0,
-    "profit_c": -468
+    "roi": -19.1,
+    "profit_c": -521
    },
    "model": {
-    "n": 41,
-    "won": 19,
-    "win_pct": 46.3,
-    "avg_price": 47.9,
-    "roi": -3.2,
-    "profit_c": -62
+    "n": 47,
+    "won": 21,
+    "win_pct": 44.7,
+    "avg_price": 47.8,
+    "roi": -6.6,
+    "profit_c": -148
    }
   },
   {
    "market": "Threes",
    "all": {
-    "n": 112,
-    "won": 54,
-    "win_pct": 48.2,
+    "n": 127,
+    "won": 61,
+    "win_pct": 48.0,
     "avg_price": 49.8,
-    "roi": -3.1,
-    "profit_c": -173
+    "roi": -3.5,
+    "profit_c": -221
    },
    "screen": {
-    "n": 43,
-    "won": 20,
-    "win_pct": 46.5,
-    "avg_price": 51.0,
-    "roi": -8.8,
-    "profit_c": -194
+    "n": 49,
+    "won": 22,
+    "win_pct": 44.9,
+    "avg_price": 50.9,
+    "roi": -11.8,
+    "profit_c": -293
    },
    "model": {
-    "n": 53,
-    "won": 24,
-    "win_pct": 45.3,
+    "n": 58,
+    "won": 26,
+    "win_pct": 44.8,
     "avg_price": 48.7,
-    "roi": -7.0,
-    "profit_c": -182
-   }
-  },
-  {
-   "market": "Pts + Reb + Ast",
-   "all": {
-    "n": 109,
-    "won": 52,
-    "win_pct": 47.7,
-    "avg_price": 49.7,
-    "roi": -4.0,
-    "profit_c": -217
-   },
-   "screen": {
-    "n": 41,
-    "won": 20,
-    "win_pct": 48.8,
-    "avg_price": 50.5,
-    "roi": -3.4,
-    "profit_c": -70
-   },
-   "model": {
-    "n": 19,
-    "won": 7,
-    "win_pct": 36.8,
-    "avg_price": 46.8,
-    "roi": -21.3,
-    "profit_c": -190
+    "roi": -7.9,
+    "profit_c": -222
    }
   },
   {
    "market": "Assists",
    "all": {
-    "n": 108,
-    "won": 48,
-    "win_pct": 44.4,
-    "avg_price": 49.9,
-    "roi": -10.8,
-    "profit_c": -584
+    "n": 122,
+    "won": 56,
+    "win_pct": 45.9,
+    "avg_price": 49.8,
+    "roi": -7.8,
+    "profit_c": -477
    },
    "screen": {
-    "n": 35,
-    "won": 15,
-    "win_pct": 42.9,
-    "avg_price": 50.8,
-    "roi": -15.7,
-    "profit_c": -279
+    "n": 43,
+    "won": 20,
+    "win_pct": 46.5,
+    "avg_price": 50.6,
+    "roi": -8.0,
+    "profit_c": -174
    },
    "model": {
-    "n": 40,
-    "won": 15,
-    "win_pct": 37.5,
-    "avg_price": 48.4,
-    "roi": -22.5,
-    "profit_c": -435
+    "n": 46,
+    "won": 18,
+    "win_pct": 39.1,
+    "avg_price": 48.3,
+    "roi": -18.9,
+    "profit_c": -420
+   }
+  },
+  {
+   "market": "Pts + Reb + Ast",
+   "all": {
+    "n": 117,
+    "won": 57,
+    "win_pct": 48.7,
+    "avg_price": 49.6,
+    "roi": -1.7,
+    "profit_c": -101
+   },
+   "screen": {
+    "n": 45,
+    "won": 22,
+    "win_pct": 48.9,
+    "avg_price": 50.4,
+    "roi": -3.0,
+    "profit_c": -68
+   },
+   "model": {
+    "n": 23,
+    "won": 10,
+    "win_pct": 43.5,
+    "avg_price": 46.8,
+    "roi": -7.1,
+    "profit_c": -76
    }
   },
   {
    "market": "Total",
    "all": {
-    "n": 101,
-    "won": 46,
-    "win_pct": 45.5,
-    "avg_price": 50.0,
-    "roi": -8.8,
-    "profit_c": -445
+    "n": 107,
+    "won": 48,
+    "win_pct": 44.9,
+    "avg_price": 49.9,
+    "roi": -10.1,
+    "profit_c": -541
    },
    "screen": {
-    "n": 43,
-    "won": 18,
-    "win_pct": 41.9,
-    "avg_price": 51.1,
-    "roi": -18.1,
-    "profit_c": -398
+    "n": 48,
+    "won": 19,
+    "win_pct": 39.6,
+    "avg_price": 51.0,
+    "roi": -22.4,
+    "profit_c": -549
    },
    "model": {
     "n": 0
@@ -318,20 +319,20 @@
   {
    "market": "Moneyline",
    "all": {
-    "n": 32,
-    "won": 18,
-    "win_pct": 56.2,
-    "avg_price": 50.1,
-    "roi": 12.2,
-    "profit_c": 196
+    "n": 34,
+    "won": 19,
+    "win_pct": 55.9,
+    "avg_price": 50.2,
+    "roi": 11.4,
+    "profit_c": 194
    },
    "screen": {
-    "n": 16,
-    "won": 11,
-    "win_pct": 68.8,
-    "avg_price": 49.5,
-    "roi": 38.9,
-    "profit_c": 308
+    "n": 18,
+    "won": 12,
+    "win_pct": 66.7,
+    "avg_price": 49.7,
+    "roi": 34.2,
+    "profit_c": 306
    },
    "model": {
     "n": 0
@@ -533,6 +534,33 @@
     "avg_price": 46.6,
     "roi": 7.3,
     "profit_c": 34
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "all": {
+    "n": 94,
+    "won": 45,
+    "win_pct": 47.9,
+    "avg_price": 49.5,
+    "roi": -3.3,
+    "profit_c": -154
+   },
+   "screen": {
+    "n": 45,
+    "won": 22,
+    "win_pct": 48.9,
+    "avg_price": 50.0,
+    "roi": -2.3,
+    "profit_c": -52
+   },
+   "model": {
+    "n": 28,
+    "won": 12,
+    "win_pct": 42.9,
+    "avg_price": 47.3,
+    "roi": -9.4,
+    "profit_c": -124
    }
   }
  ]
