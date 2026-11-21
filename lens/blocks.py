@@ -1,6 +1,6 @@
 """Thesis-page lens block for one game: both offenses against both defenses, from 2026 games before the week.
 lens_block(away, home, week) -> {how, thru, sides: [...], check, check_title, check_head, verdict}"""
-import json, sys
+import json, sys, math, os
 import numpy as np, pandas as pd
 sys.path.insert(0, '/home/claude/wedger/lens'); import core
 W = '/home/claude/wedger/'
@@ -31,6 +31,16 @@ def backtest_rows():
         for t in json.load(open(W + 'bt/cal_v6_terms.json'))['terms']:
             if t['name'] == 'look_x_volume':
                 rows.append(['Weight: Blitz split × pass attempts faced (receiving, added Nov 17)', f"{t['coef']:+.3f} per unit", 'toward the over' if t['coef'] > 0 else 'toward the under'])
+    if os.path.exists(W + 'bt/next_steps/brain_terms.json'):   # Sat Nov 21: the research checks tried as numbers in the lens
+        bt_ = json.load(open(W + 'bt/next_steps/brain_terms.json')); won = [n for n, r in bt_['terms'].items() if r['pass']]
+        rows.append([f"Research checks as numbers (role trend, script, close games, recent form, late work; Weeks 7-10, Nov 21)",
+                     'none beat the current number in both held-out tests' if not won else 'adopted: ' + ', '.join(won),
+                     'kept as pass/fail checks on each line' if not won else 'added to the lens'])
+    if os.path.exists(W + 'bt/brain_blend.json'):   # Sat Nov 21: the two projections joined through cos^2 / sin^2 weights, 1,000 fits averaged
+        bb = json.load(open(W + 'bt/brain_blend.json')); w = math.sin(bb['params'][0]) ** 2; L, F = bb['heldout']['lowo'], bb['heldout']['fwd']
+        rows.append([f"Two projections, one number: lens × cos²θ + research projection × sin²θ (θ averaged over {bb['runs']:,} fits, Nov 21)",
+                     f"θ = {bb['params'][0]:.3f}, so the research projection carries {100 * w:.0f}%",
+                     f"held out: {L['vs_v6'][0] * 1000:+.2f} log loss ×1000 vs the lens leaving a week out, {F['vs_v6'][0] * 1000:+.2f} forward; in use since Nov 21"])
     return rows
 def side(off, de, week):
     L, S, pos, T = _data(week)

@@ -37,6 +37,8 @@ This is a working snapshot from Week 10 of the 2026 season, exported from the se
    - `calib.py` (confidence): held out, final lines already win about as often as they say (62% stated, 63–68% won). No correction is applied.
    - `terms.py` (football terms, one at a time): only receiving blitz split × pass attempts faced beat both the market and the formula. `adopt.py` fits it on top of the live weights (held fixed) and writes `bt/cal_v6_terms.json`, which `lens/v6.py` reads. The product is held to ±1.5.
    - `sim.py` (game simulation: carries × yards per carry, targets × catch rate × yards per catch, settings from 2025): loses to the market on its own and adds nothing to it. Not used.
+   - `brain_terms.py` (Nov 21, the research checks as numbers: role trend, script, close games, recent form, late work): none beat the formula in both held-out tests, so they stay pass/fail checks.
+   - `brain_blend.py` (Nov 21, the owner's spec: two projections joined nonlinearly, 1,000 fits averaged): projection 1 is v6 (itself held out by week), projection 2 is the research method's number for the exact line (his hit rate at the threshold over all 2026 games, expected-script games, one-score games and his last 3, shrunk to the mid with 6 games). Forms tried: `cos²θ·p1 + sin²θ·p2`, `logit p1 + a·sin(logit p2 − logit p1)` and a scaled sine. Each fit was repeated on 1,000 game-bootstrap resamples and the parameters averaged. The trig blend did best: θ = 0.224, so p2 carries 5%. Held out it is a near-wash: log loss −0.00036 vs v6 leaving a week out (90% interval −0.0015 to +0.0007), +0.0007 forward, and the held-out card was 14–8 on finals vs 13–6 for v6. Adopted at the owner's direction on Nov 21: `bt/brain_blend.json` is read by `lens/v6.py`, which applies it to p, lo and hi; delete that file to go back to v6 alone. Report: `bt/next_steps/brain_blend_report.json`.
 
 ## Website and memberships (live at https://wedgepicks.com)
 
@@ -90,6 +92,7 @@ Two pages under NFL > Live. Both are open to every visitor; the server decides w
 - **Wedge % (v6):** see `lens/v6.py` and `lens/core.py`.
   - It starts from the market midpoint, then moves receiving and rushing lines by backtested matchup features: what the defense allows, where the targets go, the blitz split, run direction, box count, volume, comparable defenses and consistency at the number.
   - Passing, TD and interception lines stay at the market.
+  - Since Nov 21, receiving and rushing lines are then joined with the research projection for the exact line (`research_p` in `lens/v6.py`; weight from `bt/brain_blend.json`, about 5%).
   - Weights live in `bt/cal_v6.json` and the out-of-sample report in `bt/rep_v6.json`, both fit with `bt/fit_v6.py`.
 - **Research checks:** see `brain/gates.py` and `final10/brain_layer.py`.
   - A line must clear on price and pass several checks before it can be a final:

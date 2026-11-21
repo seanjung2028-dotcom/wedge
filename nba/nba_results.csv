@@ -1093,3 +1093,31 @@ nr1090,2026-11-20,SAC @ LAL,2026-11-21T03:00:00Z,Player props,Threes,Keegan Murr
 nr1091,2026-11-20,SAC @ LAL,2026-11-21T03:00:00Z,Player props,Threes,Luka Dončić: 5+ threes,Luka Dončić,3pm,48,65.0,Yes,48.1,0.1,,Yes,Lost,-48,2 3PM,Fri Nov 20 ~6:20 PM CT
 nr1092,2026-11-20,SAC @ LAL,2026-11-21T03:00:00Z,Player props,Threes,Malik Monk: 2+ threes,Malik Monk,3pm,48,35.0,No,47.3,-0.7,,No,Lost,-48,0 3PM,Fri Nov 20 ~6:20 PM CT
 nr1093,2026-11-20,SAC @ LAL,2026-11-21T03:00:00Z,Player props,Threes,Zach LaVine: 3+ threes,Zach LaVine,3pm,48,50.0,No,48.3,0.3,,Yes,Lost,-48,2 3PM,Fri Nov 20 ~6:20 PM CT
+nr1094,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Full game,Spread,Philadelphia wins by over 10.5 points,,,52,30.0,No,,,,,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1095,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Full game,Spread,Philadelphia wins by over 11.5 points,,,48,15.0,No,,,,,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1096,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Full game,Team total,Milwaukee over 108.5 points,,,52,50.0,No,,,,,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1097,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Full game,Team total,Milwaukee over 110.5 points,,,45,45.0,No,,,,,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1098,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Full game,Team total,Philadelphia over 119.5 points,,,54,40.0,No,,,,,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1099,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Full game,Team total,Philadelphia over 121.5 points,,,46,35.0,No,,,,,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1100,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Full game,Total,Over 227.5 points,,,53,50.0,No,,,,,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1101,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Full game,Total,Over 229.5 points,,,49,47.5,No,,,,,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1102,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Assists,Ryan Rollins: 4+ assists,Ryan Rollins,ast,52,70.0,Yes,52.7,0.7,,Yes,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1103,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Assists,Tyrese Maxey: 6+ assists,Tyrese Maxey,ast,50,40.0,No,50.7,0.7,,Yes,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1104,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Points,Myles Turner: 10+ points,Myles Turner,pts,48,50.0,No,48.6,0.6,,Yes,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1105,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Points,Tyler Herro: 20+ points,Tyler Herro,pts,54,45.0,No,51.8,-2.2,,No,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1106,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Points,Tyrese Maxey: 25+ points,Tyrese Maxey,pts,51,60.0,Yes,51.7,0.7,,Yes,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1107,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Points,VJ Edgecombe: 15+ points,VJ Edgecombe,pts,50,40.0,No,49.7,-0.3,,No,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1108,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Pts + Reb + Ast,"Brayden Burries: 20+ points, rebounds and assists",Brayden Burries,pra,51,31.2,No,49.9,-1.1,,No,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1109,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Pts + Reb + Ast,"Jaime Jaquez Jr.: 20+ points, rebounds and assists",Jaime Jaquez Jr.,pra,55,70.0,Yes,54.1,-0.9,,No,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1110,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Pts + Reb + Ast,"Joel Embiid: 40+ points, rebounds and assists",Joel Embiid,pra,45,30.0,No,44.7,-0.3,,No,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1111,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Pts + Reb + Ast,"Kyle Kuzma: 20+ points, rebounds and assists",Kyle Kuzma,pra,45,60.0,Yes,46.6,1.6,,Yes,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1112,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Pts + Reb + Ast,"Tyrese Maxey: 35+ points, rebounds and assists",Tyrese Maxey,pra,49,55.0,Yes,50.3,1.3,,Yes,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1113,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Pts + Reb + Ast,"VJ Edgecombe: 25+ points, rebounds and assists",VJ Edgecombe,pra,54,50.0,No,52.3,-1.7,,No,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1114,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Rebounds,Nate Ament: 4+ rebounds,Nate Ament,reb,55,35.7,No,52.0,-3.0,,No,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1115,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Rebounds,Tyrese Maxey: 4+ rebounds,Tyrese Maxey,reb,48,50.0,No,48.6,0.6,,Yes,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1116,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Threes,Anfernee Simons: 3+ threes,Anfernee Simons,3pm,51,40.0,No,48.9,-2.1,,No,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1117,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Threes,Kyle Kuzma: 2+ threes,Kyle Kuzma,3pm,49,40.0,No,47.2,-1.8,,No,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1118,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Threes,Myles Turner: 2+ threes,Myles Turner,3pm,51,35.0,No,50.7,-0.3,,No,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1119,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Threes,Ryan Rollins: 2+ threes,Ryan Rollins,3pm,50,50.0,No,49.2,-0.8,,No,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1120,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Threes,Tyler Herro: 3+ threes,Tyler Herro,3pm,49,55.0,Yes,48.3,-0.7,,No,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT
+nr1121,2026-11-21,MIL @ PHI,2026-11-21T18:00:00Z,Player props,Threes,Tyrese Maxey: 3+ threes,Tyrese Maxey,3pm,53,50.0,No,53.0,0.0,,No,Pending,,awaiting final box score,Sat Nov 21 ~10:04 AM CT

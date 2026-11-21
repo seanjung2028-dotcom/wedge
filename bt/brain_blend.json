@@ -1,0 +1,68 @@
+{
+ "note": "Two-brain join on top of Wedge % v6 (lens/v6.py applies it to p, lo and hi of receiving and rushing lines).",
+ "form": "trig blend",
+ "params": [
+  0.22402
+ ],
+ "prior_games": 6,
+ "runs": 1000,
+ "p2": "hit rate at the exact line pooled over all 2026 games, expected-script games, one-score games and the last 3 games, shrunk to the mid with 6 games",
+ "heldout": {
+  "lowo": {
+   "lines": 1314,
+   "logloss": 0.68961,
+   "v6_logloss": 0.68997,
+   "market_logloss": 0.68977,
+   "vs_v6": [
+    -0.00036,
+    -0.00154,
+    0.00069
+   ],
+   "vs_market": [
+    -0.00015,
+    -0.00459,
+    0.00424
+   ],
+   "avg_params_by_week": {
+    "7": [
+     0.1772
+    ],
+    "8": [
+     0.2091
+    ],
+    "9": [
+     0.2741
+    ],
+    "10": [
+     0.1961
+    ]
+   }
+  },
+  "fwd": {
+   "lines": 700,
+   "logloss": 0.6882,
+   "v6_logloss": 0.68751,
+   "market_logloss": 0.69017,
+   "vs_v6": [
+    0.00069,
+    -0.00258,
+    0.00429
+   ],
+   "vs_market": [
+    -0.00197,
+    -0.00601,
+    0.00243
+   ],
+   "avg_params_by_week": {
+    "9": [
+     0.4713
+    ],
+    "10": [
+     0.1851
+    ]
+   }
+  }
+ },
+ "beats_v6_both": false,
+ "made": "Sat Nov 21, 2026"
+}

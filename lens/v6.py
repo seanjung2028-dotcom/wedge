@@ -33,7 +33,7 @@ def pid_of(name, team, week=None):
     s2 = s[s.team == team]
     return (s2 if len(s2) else s).iloc[-1].player_id
 lg = lambda p: math.log(p / (1 - p)); sg = lambda z: 1 / (1 + math.exp(-z))
-def detail(name, team, opp, stat, line, mid_c, week=None):
+def detail(name, team, opp, stat, line, mid_c, week=None, margin=None):
     week = WEEK if week is None else week
     """-> dict(p, lo, hi, feats, contrib) in percent; p = market mid if the stat isn't moved or the player isn't found."""
     mid = min(max(mid_c / 100, 0.01), 0.99)
@@ -57,9 +57,53 @@ def detail(name, team, opp, stat, line, mid_c, week=None):
     for i, c in enumerate(COLS):
         if c.startswith(fam + '.'):
             k = c.split('.')[1]; contrib[k] = round(100 * (sg(z0 + COEF[len(GL) + i] * x[len(GL) + i]) - mid), 2)
-    out.update({'p': 100 * p, 'lo': float(100 * np.percentile(ps, 10)), 'hi': float(100 * np.percentile(ps, 90)),
+    lo_, hi_ = float(np.percentile(ps, 10)), float(np.percentile(ps, 90))
+    out.update({'p': 100 * p, 'lo': 100 * lo_, 'hi': 100 * hi_,
                 'feats': {k: round(v, 3) for k, v in f.items() if f'{fam}.{k}' in cols}, 'contrib': contrib, 'moved': True})
+    if BLEND:   # the two-brain join (bt/next_steps/brain_blend.py): p = cos^2(t) * lens + sin^2(t) * research projection, on p, lo and hi
+        r = research_p(pid, team, opp, stat, line, mid, week, margin)
+        if r is not None:
+            w = math.sin(BLEND['params'][0]) ** 2; q = r['p2']
+            pb, lb, hb = (1 - w) * p + w * q, (1 - w) * lo_ + w * q, (1 - w) * hi_ + w * q
+            contrib['research'] = round(100 * (pb - p), 2)
+            out.update({'p': 100 * pb, 'lo': 100 * min(lb, hb), 'hi': 100 * max(lb, hb), 'p_lens': 100 * p, 'research': {**r, 'p2': round(100 * q, 1), 'w': round(w, 4)}})
     return out
+# ---------------- projection 2, the research method's number for the exact line (same definition as the 1,000-run test)
+BLEND = json.load(open(W + 'bt/brain_blend.json')) if _os.path.exists(W + 'bt/brain_blend.json') else None
+if BLEND and BLEND.get('form') != 'trig blend': BLEND = None
+LABEL['research'] = 'Research projection'
+_CTX, _RP, _GM = {}, {}, None
+def _ctx(week):
+    if week not in _CTX:
+        import pandas as pd; sys.path.insert(0, W + 'brain'); import gates
+        dl = W + 'dl19/'
+        st = pd.read_csv(dl + 'stats_player_week_2026.csv', low_memory=False)
+        pbp = pd.read_csv(dl + 'play_by_play_2026.csv.gz', low_memory=False, usecols=['week', 'qtr', 'rusher_player_id', 'receiver_player_id', 'rushing_yards', 'receiving_yards'])
+        _CTX[week] = (gates, gates.Ctx(st, pbp, pd.read_csv(dl + 'games.csv'), week))
+    return _CTX[week]
+_UN = {'LAR': 'LA', 'WSH': 'WAS', 'JAC': 'JAX'}
+def _margin(team, week):
+    """his team's expected margin from nflverse's line for the week (the test's source), when the caller doesn't pass the card's"""
+    global _GM
+    if _GM is None:
+        import pandas as pd; g = pd.read_csv(W + 'dl22/games.csv'); _GM = g[(g.season == 2026) & (g.game_type == 'REG')]
+    t = _UN.get(team, team); g = _GM[(_GM.week == week) & ((_GM.home_team == t) | (_GM.away_team == t))]
+    if not len(g): return 0.0
+    g = g.iloc[0]; return float(g.spread_line) if g.home_team == t else -float(g.spread_line)
+def research_p(pid, team, opp, stat, line, mid, week, margin=None):
+    """hit rate at this threshold pooled over his 2026 games before the week, games in the script the spread points to, one-score
+    games and his last 3 games, shrunk to the market mid with 6 games of weight (bt/brain_blend.json)."""
+    week = WEEK if week is None else week; k = int(round(line + 0.5)); em = _margin(team, week) if margin is None else float(margin)
+    key = (pid, team, stat, k, week, round(em, 1))
+    if key not in _RP:
+        gates, C = _ctx(week); c = gates.check(C, pid, _UN.get(team, team), stat, k, 'Yes', em)
+        g = c['LOG']['games']; h_a, n_a = sum(1 for _, v, _ in g if v >= k), len(g)
+        bk = c['SCRIPT']['buckets']; ls = c['SCRIPT']['likely']
+        h_s, n_s = bk.get(ls, [0, 0]); h_c, n_c = bk.get('close', [0, 0]); g3 = g[-3:]; h_3, n_3 = sum(1 for _, v, _ in g3 if v >= k), len(g3)
+        _RP[key] = {'h': h_a + h_s + h_c + h_3, 'n': n_a + n_s + n_c + n_3, 'all': [h_a, n_a], 'script': [h_s, n_s, ls], 'close': [h_c, n_c], 'last3': [h_3, n_3]}
+    r = dict(_RP[key]); a = BLEND.get('prior_games', 6)
+    r['p2'] = min(max((r['h'] + a * mid) / (r['n'] + a), 0.01), 0.99)
+    return r
 def prob(name, team, opp, stat, line, mid_c, week=None): return detail(name, team, opp, stat, line, mid_c, week)['p']
 import re as _re
 FIXG = {'LA': 'LAR', 'WAS': 'WSH', 'JAC': 'JAX'}

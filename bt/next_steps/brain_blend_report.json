@@ -1,0 +1,249 @@
+{
+ "n": 1314,
+ "runs": 1000,
+ "p2_mean_n_games": 15.2,
+ "p2_vs_market_alone": {
+  "logloss_p2": 0.73993,
+  "logloss_market": 0.68977
+ },
+ "forms": {
+  "trig blend": {
+   "lowo": {
+    "lines": 1314,
+    "logloss": 0.68961,
+    "v6_logloss": 0.68997,
+    "market_logloss": 0.68977,
+    "vs_v6": [
+     -0.00036,
+     -0.00154,
+     0.00069
+    ],
+    "vs_market": [
+     -0.00015,
+     -0.00459,
+     0.00424
+    ],
+    "avg_params_by_week": {
+     "7": [
+      0.1772
+     ],
+     "8": [
+      0.2091
+     ],
+     "9": [
+      0.2741
+     ],
+     "10": [
+      0.1961
+     ]
+    }
+   },
+   "fwd": {
+    "lines": 700,
+    "logloss": 0.6882,
+    "v6_logloss": 0.68751,
+    "market_logloss": 0.69017,
+    "vs_v6": [
+     0.00069,
+     -0.00258,
+     0.00429
+    ],
+    "vs_market": [
+     -0.00197,
+     -0.00601,
+     0.00243
+    ],
+    "avg_params_by_week": {
+     "9": [
+      0.4713
+     ],
+     "10": [
+      0.1851
+     ]
+    }
+   },
+   "beats_v6_both": false
+  },
+  "sine pull": {
+   "lowo": {
+    "lines": 1314,
+    "logloss": 0.69014,
+    "v6_logloss": 0.68997,
+    "market_logloss": 0.68977,
+    "vs_v6": [
+     0.00017,
+     -0.0001,
+     0.00047
+    ],
+    "vs_market": [
+     0.00038,
+     -0.00447,
+     0.00532
+    ],
+    "avg_params_by_week": {
+     "7": [
+      -0.0398
+     ],
+     "8": [
+      0.0112
+     ],
+     "9": [
+      -0.0122
+     ],
+     "10": [
+      -0.0147
+     ]
+    }
+   },
+   "fwd": {
+    "lines": 700,
+    "logloss": 0.68807,
+    "v6_logloss": 0.68751,
+    "market_logloss": 0.69017,
+    "vs_v6": [
+     0.00055,
+     -0.00129,
+     0.00255
+    ],
+    "vs_market": [
+     -0.00211,
+     -0.00581,
+     0.00135
+    ],
+    "avg_params_by_week": {
+     "9": [
+      0.1377
+     ],
+     "10": [
+      -0.0133
+     ]
+    }
+   },
+   "beats_v6_both": false
+  },
+  "scaled sine": {
+   "lowo": {
+    "lines": 1314,
+    "logloss": 0.69931,
+    "v6_logloss": 0.68997,
+    "market_logloss": 0.68977,
+    "vs_v6": [
+     0.00935,
+     0.00224,
+     0.01651
+    ],
+    "vs_market": [
+     0.00955,
+     0.00021,
+     0.01704
+    ],
+    "avg_params_by_week": {
+     "7": [
+      0.355,
+      1.067
+     ],
+     "8": [
+      0.6583,
+      0.7688
+     ],
+     "9": [
+      0.4578,
+      0.8229
+     ],
+     "10": [
+      0.6296,
+      0.8597
+     ]
+    }
+   },
+   "fwd": {
+    "lines": 700,
+    "logloss": 0.69776,
+    "v6_logloss": 0.68751,
+    "market_logloss": 0.69017,
+    "vs_v6": [
+     0.01024,
+     -0.00324,
+     0.0235
+    ],
+    "vs_market": [
+     0.00758,
+     -0.00467,
+     0.01987
+    ],
+    "avg_params_by_week": {
+     "9": [
+      1.2399,
+      0.4113
+     ],
+     "10": [
+      0.6462,
+      0.7783
+     ]
+    }
+   },
+   "beats_v6_both": false
+  }
+ },
+ "chosen": "trig blend",
+ "final": {
+  "form": "trig blend",
+  "params_mean": [
+   0.22402
+  ],
+  "params_p10_p90": [
+   [
+    0.0,
+    0.43779
+   ]
+  ],
+  "runs": 1000,
+  "fit_on": "all 1,314 settled Weeks 7-10 lines, v6 held out by week",
+  "move_vs_v6_pts": {
+   "median_abs": 0.52,
+   "p90_abs": 1.28
+  }
+ },
+ "card_heldout": {
+  "v6": {
+   "Final line": {
+    "n": 19,
+    "stated": 62.2,
+    "won": 68.4,
+    "gap": 6.2,
+    "z": 0.56,
+    "mkt": 51.0,
+    "roi": 32.8
+   },
+   "Conditional lean": {
+    "n": 19,
+    "stated": 55.9,
+    "won": 68.4,
+    "gap": 12.5,
+    "z": 1.1,
+    "mkt": 50.1,
+    "roi": 35.3
+   }
+  },
+  "combined": {
+   "Final line": {
+    "n": 22,
+    "stated": 61.2,
+    "won": 63.6,
+    "gap": 2.4,
+    "z": 0.24,
+    "mkt": 50.8,
+    "roi": 24.1
+   },
+   "Conditional lean": {
+    "n": 18,
+    "stated": 56.2,
+    "won": 66.7,
+    "gap": 10.4,
+    "z": 0.89,
+    "mkt": 50.4,
+    "roi": 30.9
+   }
+  }
+ }
+}

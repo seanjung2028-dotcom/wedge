@@ -29,7 +29,7 @@ season,season_type,game_type,team,week,gsis_id,position,full_name,first_name,las
 2026,REG,REG,CHI,11,,WR,Zavion Thomas,Zavion,Thomas,Ankle - Not Specified,,Questionable,,,,2026-11-20,Questionable,Thomas (ankle) is listed as questionable for Sunday's matchup against the Saints.
 2026,REG,REG,CHI,11,,RB,Zavier Scott,Zavier,Scott,Wrist - Not Specified,,Out,,,,2026-11-05,Injured Reserve,The Bears placed Scott (wrist) on injured reserve Thursday.
 2026,REG,REG,CHI,11,,DT,Kentavius Street,Kentavius,Street,Knee - Not Specified,,Out,,,,2026-11-05,Injured Reserve,"The Bears placed Street (knee) on injured reserve Wednesday, Adam Jahns of AllCHGO.com rep"
-2026,REG,REG,CIN,11,00-0034754,LB,Oren Burks,Oren,Burks,Groin - Not Specified,,Out,,,,2026-11-21,Out,out
+2026,REG,REG,CIN,11,00-0034754,LB,Oren Burks,Oren,Burks,Groin - Not Specified,,Out,,,,2026-11-21,Injured Reserve,ir
 2026,REG,REG,CIN,11,00-0035702,G,Dalton Risner,Dalton,Risner,Knee - Not Specified,,Out,,,,2026-11-21,Out,out
 2026,REG,REG,CIN,11,00-0039313,LB,Swayze Bozeman,Swayze,Bozeman,Forearm - Fracture,,Out,,,,2026-11-20,Injured Reserve,The Bengals designated Bozeman (forearm) for return from injured reserve Thursday.
 2026,REG,REG,CIN,11,,CB,Dax Hill,Dax,Hill,Illness - Not Specified,,Questionable,,,,2026-11-20,Questionable,"Hill (illness) did not participate in practice Thursday, Paul Dehner Jr. of The Athletic r"
@@ -84,7 +84,6 @@ season,season_type,game_type,team,week,gsis_id,position,full_name,first_name,las
 2026,REG,REG,MIA,11,00-0039390,CB,Marcellas Dial Jr.,Marcellas,Jr.,Toe - Not Specified,,Questionable,,,,2026-11-20,Questionable,questionable
 2026,REG,REG,MIA,11,00-0038728,WR,Jared Wayne,Jared,Wayne,Quadriceps - Not Specified,,Out,,,,2026-11-20,Out,"Wayne (quadriceps) has been ruled out for Sunday's game against the Bills, David Furones o"
 2026,REG,REG,MIA,11,00-0040182,S,Dante Trader Jr.,Dante,Jr.,Shoulder - Not Specified,,Doubtful,,,,2026-11-20,Doubtful,"Trader (shoulder/groin) is doubtful for Sunday's game against the Bills, Barry Jackson of "
-2026,REG,REG,MIA,11,00-0037549,CB,Darrell Baker Jr.,Darrell,Jr.,Knee - Not Specified,,Out,,,,2026-11-19,Out,"Baker (knee) was a full participant at practice Wednesday, David Furones of the South Flor"
 2026,REG,REG,MIA,11,00-0040175,DT,Jordan Phillips,Jordan,Phillips,Biceps - Surgery,,Out,,,,2026-11-18,Injured Reserve,"Phillips underwent surgery on his injured bicep Wednesday, David Furones of the South Flor"
 2026,REG,REG,MIA,11,00-0040248,DT,Zeek Biggers,Zeek,Biggers,Knee - Meniscus - Surgery,,Out,,,,2026-11-18,Injured Reserve,Biggers (knee) was placed on injured reserve by the Dolphins on Tuesday.
 2026,REG,REG,MIA,11,00-0038128,QB,Malik Willis,Malik,Willis,Abdomen - Not Specified,,Out,,,,2026-11-16,Injured Reserve,Head coach Jeff Hafley said Monday that Willis (groin/core) has not undergone surgery and 

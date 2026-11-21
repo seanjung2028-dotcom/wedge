@@ -107,8 +107,9 @@ for (code, name, stat), rungs, early in [(k_, v_, False) for k_, v_ in LAD.items
     rows = []
     rungs = sorted(set(rungs))
     two = [x for x in rungs if x[2] > 0 and x[1] > 0 and x[1] - x[2] <= 8 and x[0] >= (2 if stat == 'rec' else 10)]   # skip zero-catch / under-10-yard rungs
+    em = CON[game]['home_margin'] if team == h else -CON[game]['home_margin']
     for k, ya, yb, na, tick in two:
-        mid = (ya + yb) / 2; d = v6.detail(name, team, opp, stat, k - 0.5, mid)
+        mid = (ya + yb) / 2; d = v6.detail(name, team, opp, stat, k - 0.5, mid, margin=em)
         if not d['moved']: continue
         for side in ('Yes', 'No'):
             ask = ya if side == 'Yes' else na
@@ -120,7 +121,6 @@ for (code, name, stat), rungs, early in [(k_, v_, False) for k_, v_ in LAD.items
                          'edge_lo': round(lo - be, 1), 'edge_mid': round(p - be, 1), 'tick': tick, 'd': d})
     if not rows: continue
     L = logs(pid, stat)
-    em = CON[game]['home_margin'] if team == h else -CON[game]['home_margin']
     for x in rows:
         x['chk'] = BR.run_checks(game, pid, team, stat, x['k'], x['side'], em)
         x['call'], x['note'] = BR.decide(x)
@@ -134,11 +134,19 @@ for (code, name, stat), rungs, early in [(k_, v_, False) for k_, v_ in LAD.items
                       'early': early, 'books': BL.META.get((code, name, stat), {}).get('det') if early else None})
 # --- write-ups
 def thr(x, stat, short=False): return (f"{x['k']}+ " if x['side'] == 'Yes' else f"under {x['k']} ") + (SHORT if short else WORD)[stat]
+def research_text(d, x):
+    """the research method's own number for the exact line, and the weight the 1,000-run average gives it"""
+    r = d.get('research') or {}; k = x['k']; a, s_, c_, l3 = r.get('all', [0, 0]), r.get('script', [0, 0, 'close']), r.get('close', [0, 0]), r.get('last3', [0, 0])
+    p2 = r.get('p2', 50.0) if x['side'] == 'Yes' else 100 - r.get('p2', 50.0)
+    sc = {'control': 'games his team won by 8+', 'trail': 'games his team lost by 8+', 'close': 'one-score games'}[s_[2]]
+    return (f"The research method's own number for {k}+: he got there in {a[0]} of {a[1]} games this season, {s_[0]} of {s_[1]} in {sc} (the script the spread points to)"
+            + (f", {c_[0]} of {c_[1]} in one-score games" if s_[2] != 'close' else '') + f" and {l3[0]} of his last {l3[1]}. Pooled and shrunk to the price with 6 games of weight, "
+            + f"that is {p2:.0f}% for this side. Averaged over 1,000 fits, it carries {100 * r.get('w', 0):.0f}% of the number and the lens the rest.")
 def ledger(o, x):
     d = x['d']; sgn = 1 if x['side'] == 'Yes' else -1; out = []
     for k, c in sorted(d['contrib'].items(), key=lambda kv: -abs(kv[1])):
         if abs(c) < 0.15: continue
-        out.append({'step': v6.LABEL.get(k, k), 'pts': round(sgn * c, 1), 'text': explain(k, o['stat'], o['name'], o['team'], o['opp'], o['pid'], d['feats'])})
+        out.append({'step': v6.LABEL.get(k, k), 'pts': round(sgn * c, 1), 'text': research_text(d, x) if k == 'research' else explain(k, o['stat'], o['name'], o['team'], o['opp'], o['pid'], d['feats'])})
     return out
 def slope_shift(o, x):
     rr = sorted({(r['k'], r['mkt'] if r['side'] == 'Yes' else 100 - r['mkt']) for r in o['rows']})
@@ -149,8 +157,8 @@ def slope_shift(o, x):
 CARDS, CSV, ECSV = [], [], []
 # the last card posted (Thu Nov 19, Kalshi checked 6:04 AM CT; bt/w11_thu_board/): what changed since, per game
 THU = {c['game']: c for c in json.load(open(W + 'bt/w11_thu_board/final_w11.json'))['cards']}
-# the last card posted before this one (Sat Nov 21, Kalshi checked 10:01 AM CT; bt/w11_sat_board/): the revisions table compares against it
-FRI = {c['game']: c for c in json.load(open(W + 'bt/w11_sat_board/final_w11.json'))['cards'] if c['game'] != 'IND @ HOU'}
+# the last card posted before this one (Sat Nov 21, Kalshi checked 12:05 PM CT; bt/w11_sat12_board/): the revisions table compares against it
+FRI = {c['game']: c for c in json.load(open(W + 'bt/w11_sat12_board/final_w11.json'))['cards'] if c['game'] != 'IND @ HOU'}
 SATB = {'games': {}, 'plays': {}}
 from datetime import datetime as _dt, timezone as _tz
 from zoneinfo import ZoneInfo as _ZI
@@ -212,10 +220,10 @@ def grade(c, x):
 for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
     a, h = fx(r.away_team), fx(r.home_team); game = f'{a} @ {h}'
     if game not in DONE and kicked(r) and game in FRI:
-        c0 = json.loads(json.dumps(FRI[game])); c0['locked'] = 'Kicked off before this price check: the card stays as published Sat Nov 21, 10:01 AM CT.'
+        c0 = json.loads(json.dumps(FRI[game])); c0['locked'] = 'Kicked off before this price check: the card stays as published Sat Nov 21, 12:05 PM CT.'
         c0['market'] = c0['locked'] + ' ' + c0.get('market', '')
         CARDS.append(c0); LOCKED.add(game)
-        for row in csv.DictReader(open(W + 'bt/w11_sat_board/final_w11.csv')):
+        for row in csv.DictReader(open(W + 'bt/w11_sat12_board/final_w11.csv')):
             if row['game'] == game: CSV.append(row)
         continue
     if game in DONE:

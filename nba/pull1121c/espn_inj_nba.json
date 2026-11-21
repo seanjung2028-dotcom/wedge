@@ -1,0 +1,172 @@
+{
+"at": "2026-11-21T18:44:44.690Z",
+"src": "ESPN injury report",
+"inj": {
+"ATL": {
+"Kingston Flemings": "Out",
+"Jock Landale": "Out",
+"Asa Newell": "Out",
+"CJ McCollum": "Out",
+"Mouhamed Gueye": "Out",
+"Henri Veesaar": "Out"
+},
+"BOS": {
+"Jayson Tatum": "GTD",
+"Derrick White": "GTD"
+},
+"BKN": {
+"Nolan Traore": "GTD",
+"Grant Nelson": "GTD"
+},
+"CHA": {
+"Grant Williams": "GTD",
+"Grayson Allen": "GTD",
+"Kon Knueppel": "Out",
+"Dennis Schroder": "Out"
+},
+"CHI": {
+"Jalen Smith": "GTD",
+"Tobe Awaka": "Out",
+"Caleb Wilson": "Out"
+},
+"CLE": {
+"Jaylon Tyson": "Out",
+"Nae'Qwan Tomlin": "Out",
+"Evan Mobley": "Out"
+},
+"DAL": {
+"Tobi Lawal": "Out",
+"P.J. Washington": "GTD",
+"Walter Clayton Jr.": "GTD",
+"Dereck Lively II": "Out",
+"Sergio de Larrea": "Out",
+"Tarik Biberovic": "Out"
+},
+"DEN": {
+"Julian Strawther": "Out"
+},
+"DET": {
+"Ebuka Okorie": "GTD",
+"Ronald Holland II": "Out",
+"Taurean Prince": "Out",
+"Ugonna Onyenso": "GTD",
+"Duncan Robinson": "Out",
+"Jalen Duren": "Out"
+},
+"GSW": {
+"Draymond Green": "GTD",
+"Brandon Williams": "Out",
+"Stephen Curry": "Out",
+"Kristaps Porzingis": "Out",
+"Moses Moody": "Out",
+"Jimmy Butler III": "Out"
+},
+"HOU": {
+"Clint Capela": "Out"
+},
+"IND": {
+"T.J. McConnell": "GTD",
+"Tyrese Haliburton": "Out",
+"Johnny Furphy": "Out",
+"Ben Sheppard": "Out"
+},
+"LAC": {
+"Brandon Ingram": "Out",
+"Bradley Beal": "Out",
+"Jordan Miller": "Out"
+},
+"LAL": {
+"Austin Reaves": "Out"
+},
+"MEM": {
+"Jerami Grant": "Out",
+"Javon Small": "Out",
+"Cameron Boozer": "Out",
+"Ty Jerome": "GTD",
+"GG Jackson": "Out",
+"Scotty Pippen Jr.": "Out",
+"Richie Saunders": "Out"
+},
+"MIA": {
+"Myron Gardner": "GTD"
+},
+"MIL": {
+"Ousmane Dieng": "Out"
+},
+"MIN": {
+"Jaylen Clark": "Out",
+"Anthony Edwards": "Out",
+"Donte DiVincenzo": "Out"
+},
+"NOP": {
+"Trey Murphy III": "Out",
+"Trendon Watford": "Out",
+"Bryce McGowens": "Out",
+"Bennedict Mathurin": "Out",
+"Dejounte Murray": "Out"
+},
+"NYK": {
+"OG Anunoby": "GTD",
+"Karl-Anthony Towns": "GTD",
+"Jordan Clarkson": "Out"
+},
+"OKC": {
+"Nikola Topic": "GTD",
+"Alex Caruso": "GTD",
+"Thomas Sorber": "Out",
+"Cason Wallace": "Out",
+"Chet Holmgren": "Out",
+"Jalen Williams": "Out"
+},
+"ORL": {
+"Izaiyah Nelson": "Out",
+"Jonathan Isaac": "Out",
+"Noah Penda": "Out",
+"Paolo Banchero": "Out"
+},
+"PHI": {
+"Dean Wade": "Out",
+"Adem Bona": "Out",
+"Jaylen Brown": "Out",
+"Ariel Hukporti": "Out"
+},
+"PHX": {
+"Ryan Dunn": "GTD",
+"Mark Williams": "Out"
+},
+"POR": {
+"Chris Youngblood": "Out",
+"Deni Avdija": "GTD",
+"Vit Krejci": "Out",
+"Ja Morant": "Out",
+"Shaedon Sharpe": "Out"
+},
+"SAC": {
+"Precious Achiuwa": "GTD",
+"Maxime Raynaud": "Out",
+"Ben Simmons": "Out"
+},
+"SAS": {
+"Dylan Harper": "Out",
+"Tobias Harris": "Out",
+"Jayden Quaintance": "Out"
+},
+"TOR": {
+"Collin Murray-Boyles": "GTD",
+"Kawhi Leonard": "Out",
+"RJ Barrett": "Out",
+"Nate Bittle": "Out"
+},
+"UTA": {
+"Jusuf Nurkic": "Out",
+"Lauri Markkanen": "Out",
+"Jaren Jackson Jr.": "Out"
+},
+"WAS": {
+"Tristan Vukcevic": "Out",
+"Reece Beekman": "Out",
+"Justin Champagnie": "Out",
+"Jamir Watkins": "Out"
+}
+}
+}

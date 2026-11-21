@@ -222,4 +222,31 @@ RESEARCH = {   # Week 11 news checks (Tue Nov 17 ~6:40 AM CT). Searches turned u
         'notes': ['ESPN’s injury report (Tue Nov 17) lists Jones as active with no designation. He ran 5 times for 9 yards in Sunday’s 24–22 win over Miami.',
                   'Thursday game: the first practice reports post Monday through Wednesday. Re-check before kickoff.'],
         'src': [{'t': 'ESPN NFL injuries, Tue Nov 17', 'u': INJ_URL}]},
+    # Sat Nov 21 ~12:50 PM CT: research pass on the lines new to the card at the 12:33 PM prices
+    ('CIN @ WSH', 'Chase Brown under 25 receiving yards (No)'): {
+        'notes': ['Moved down from under 30 at the new prices. He stayed under 25 in 6 of 9 games, and the books’ line sits at 24.5–28.5.',
+                  'Against it: the receiving role is growing. He went over 25 in two of his last three games (46 and 39 yards) and caught 8 of 9 targets in Week 10 (DraftSharks, Nov 16).',
+                  'Kept as a final line; the miss path is another 8-target game.'],
+        'src': [{'t': 'DraftSharks, Chase Brown’s receiving role powers Week 10 breakout (Nov 16, 2026)', 'u': 'https://www.draftsharks.com/fantasy-football-news/84272/chase-browns-receiving-role-powers-week-10-breakout'}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('NO @ CHI', 'Chris Olave 6+ receptions (Yes)'): {
+        'notes': ['6+ catches in 6 of 9 games, and he is not on the injury report. Chicago’s nickel corner Kyler Gordon (shoulder) is out.',
+                  'Against it: Week 10 was his smallest role of the year (4 targets) while rookie Jordyn Tyson drew 13. Rain is likely at Soldier Field (93% chance).'],
+        'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 12:39 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('TB @ DET', 'Bucky Irving under 50 rushing yards (No)'): {
+        'notes': ['Under 50 in 3 of 9 games. Tampa Bay is a 5.5-point underdog in Detroit, a script that usually trims carries. Baker Mayfield (foot) is questionable; the game stays on only if he is active.',
+                  'Against it: his last three games went for 106, 170 and 97 yards on 20–27 carries, so the under needs his role to shrink.'],
+        'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 12:39 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('NYJ @ LAC', 'Kimani Vidal 20+ rushing yards (Yes)'): {
+        'notes': ['20+ rushing yards in 5 of 8 games, but almost all of them came while the Chargers rotated three backs.',
+                  'Omarion Hampton took over in Week 10: 22 carries to Vidal’s 2 (0 yards). Before that Hampton led the backfield with a 43% carry share in Week 9 and Vidal had 26% (DraftSharks, Nov 9).'],
+        'src': [{'t': 'DraftSharks, Omarion Hampton takes back control, but does it matter? (Nov 9, 2026)', 'u': 'https://www.draftsharks.com/fantasy-football-news/84121/omarion-hampton-takes-back-control-but-does-it-matter'}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}],
+        'decision': 'Pass', 'why': 'Research pass: Omarion Hampton took 22 of the backs’ carries in Week 10 to Vidal’s 2, so 20+ yards needs a rotation the last game didn’t show.'},
+    ('LV @ DEN', 'Marvin Mims Jr. 2+ receptions (Yes)'): {
+        'notes': ['Replaces his 10+ receiving yards at the new prices. 2+ catches in 4 of 7 games he played (1–4 targets a game). He is not on the injury report, and Denver’s tight end Caleb Lohner is out.',
+                  'Against it: a small role, so one missed target decides it; he caught 1 pass in Week 9.'],
+        'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 12:39 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('LV @ DEN', 'Ashton Jeanty under 5 receptions (No)'): {
+        'notes': ['Under 5 catches in 6 of 10 games (3, 5 and 4 in his last three).',
+                  'Against it: Brock Bowers (ankle) is questionable after leaving Week 10 early and drawing 2 targets; if he sits, more of the short targets could go to Jeanty (ClutchPoints, Nov 19).'],
+        'src': [{'t': 'ClutchPoints, Raiders news: Brock Bowers injury update is crucial for Broncos clash (Nov 19, 2026)', 'u': 'https://clutchpoints.com/nfl/las-vegas-raiders/raiders-news-brock-bowers-injury-update-is-crucial-for-broncos-clash'}, {'t': 'ESPN NFL injuries, Sat Nov 21 12:39 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
 }

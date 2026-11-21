@@ -19,9 +19,9 @@ def apply(s, js):
        '    <section class="v2-early" id="fc-early" aria-label="Early lines, priced from the sportsbooks" hidden></section>\n')
     # the Research note: Saturday noon's price checks, the books' role, and no leftover Week 9 lines
     sr("Every Week 11 line at any price (switch to 45–55¢ in the first menu), updated Tue Nov 17 at 6:23 AM CT. Where Robinhood has no line yet, the price comes from the sportsbooks.",
-       "Every Week 11 line at any price (switch to 45–55¢ in the first menu). Kalshi prices checked Sat Nov 21 at 12:05 PM CT; where Robinhood has no line yet, the price comes from eight sportsbooks, checked at 12:05 PM CT.")
+       "Every Week 11 line at any price (switch to 45–55¢ in the first menu). Kalshi prices checked Sat Nov 21 at 12:33 PM CT; where Robinhood has no line yet, the price comes from eight sportsbooks, checked at 12:38 PM CT.")
     sr("★ marks a high-scoring game. Thursday's JAX @ BAL is final, so its lines are off the board. Out: Sam Darnold, David Montgomery, A.J. Brown, Mike Evans, DeVonta Smith, Garrett Wilson (Sun) and Kyler Murray (Mon).",
-       "★ marks a high-scoring game. Thursday's IND @ HOU is final (HOU 26, IND 3), so its lines are off the board. Injury designations: ESPN, Sat Nov 21 at 12:05 PM CT (Friday’s final designations plus Saturday’s news); lines for players ruled out are off the board.")
+       "★ marks a high-scoring game. Thursday's IND @ HOU is final (HOU 26, IND 3), so its lines are off the board. Injury designations: ESPN, Sat Nov 21 at 12:39 PM CT (Friday’s final designations plus Saturday’s news); lines for players ruled out are off the board.")
     k = s.rindex('</style>'); s = s[:k] + open(V + 'src/early.css').read() + s[k:]
     jr('  // ---------------- render ----------------', open(V + 'src/early.js').read() + '\n  // ---------------- render ----------------')
     jr("    if (id === 'final') requestAnimationFrame(() => fcRender());\n",
