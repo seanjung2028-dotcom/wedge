@@ -147,7 +147,9 @@ def slope_shift(o, x):
     dp = (x['mid'] - x['mkt']) if x['side'] == 'Yes' else (x['mkt'] - x['mid'])
     v = dp / sl; return round(v, 1) if o['stat'] == 'rec' else round(v)
 CARDS, CSV, ECSV = [], [], []
-FRI = {}   # no earlier Week 11 card to revise yet (first card of the week)
+# the last card posted (Thu Nov 19, Kalshi checked 6:04 AM CT; bt/w11_thu_board/): what changed since, per game
+THU = {c['game']: c for c in json.load(open(W + 'bt/w11_thu_board/final_w11.json'))['cards']}
+FRI = {g_: c_ for g_, c_ in THU.items() if g_ != 'IND @ HOU'}
 SATB = {'games': {}, 'plays': {}}
 from datetime import datetime as _dt, timezone as _tz
 from zoneinfo import ZoneInfo as _ZI
@@ -188,10 +190,10 @@ def revisions(game, plays, cand):
         out.append({'line': p['line'], 'was': p['decision'], 'now': 'Pass', 'v': 'Pass', 'why': why})
     return out
 # games already played keep the card as it was posted before kickoff, graded (Thu Nov 12 6:44 PM CT card for WSH @ NYG)
-PRIOR = {}   # nothing played yet this week
+PRIOR = {'IND @ HOU': THU['IND @ HOU']}   # Thursday night, graded from the card as posted Thu Nov 19 (6:04 AM CT prices)
 SUNB = {'games': {}, 'plays': {}}
-ST10 = pd.read_csv(W + 'dl20/stats_player_week_2026.csv', low_memory=False); ST10 = ST10[(ST10.week == 11) & (ST10.season_type == 'REG')]
-G10 = pd.read_csv(W + 'dl20/games.csv'); G10 = G10[(G10.season == 2026) & (G10.week == 11) & G10.home_score.notna()]
+ST10 = pd.read_csv(W + 'dl22/stats_player_week_2026.csv', low_memory=False); ST10 = ST10[(ST10.week == 11) & (ST10.season_type == 'REG')]
+G10 = pd.read_csv(W + 'dl22/games.csv'); G10 = G10[(G10.season == 2026) & (G10.week == 11) & G10.home_score.notna()]
 DONE = {f"{fx(x.away_team)} @ {fx(x.home_team)}": x for x in G10.itertuples(index=False)}
 def grade(c, x):
     c = json.loads(json.dumps(c)); a, h = c['game'].split(' @ ')
@@ -209,15 +211,15 @@ def grade(c, x):
 for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
     a, h = fx(r.away_team), fx(r.home_team); game = f'{a} @ {h}'
     if game not in DONE and kicked(r) and game in FRI:
-        c0 = json.loads(json.dumps(FRI[game])); c0['locked'] = 'Kicked off before this price check: the card stays as published Sat Nov 14, 8:02 PM CT.'
+        c0 = json.loads(json.dumps(FRI[game])); c0['locked'] = 'Kicked off before this price check: the card stays as published Thu Nov 19, 6:04 AM CT.'
         c0['market'] = c0['locked'] + ' ' + c0.get('market', '')
         CARDS.append(c0); LOCKED.add(game)
-        for row in csv.DictReader(open(W + 'pull1114/sat_out/final_w10.csv')):
+        for row in csv.DictReader(open(W + 'bt/w11_thu_board/final_w11.csv')):
             if row['game'] == game: CSV.append(row)
         continue
     if game in DONE:
         gc = grade(PRIOR[game], DONE[game]); CARDS.append(gc); RES = {p['line']: p['result'] for p in gc['plays']}
-        for row in csv.DictReader(open(W + ('pull1112/thu_out/final_w10.csv' if game == 'WSH @ NYG' else 'pull1115/sun_out/final_w10.csv'))):
+        for row in csv.DictReader(open(W + 'bt/w11_thu_board/final_w11.csv')):
             if row['game'] == game:
                 rr = RES.get(row['line']); row['result'] = f"{rr['outcome']} ({rr['text']}, {rr['profit_c']:+d}¢)" if rr else row['result']; CSV.append(row)
         continue
@@ -388,7 +390,7 @@ for c in CARDS:
         p['ladder'] = lad[max(0, i - 3): i + 4]
         for k in ('chain', 'checks', 'log', 'alts', 'objection', 'miss', 'change', '_stat', '_team', '_qb', 'research'): p.pop(k, None)
 F = {'at': AT, 'books_at': AT, 'week': 11, 'cards': CARDS, 'model': 'v6', 'backtest': {k: REP[k] for k in ('all', 'w7', 'w8', 'w9', 'band40_60') if k in REP},
-     'graded': {'thru': '', **{k: [sum(p['result']['outcome'] == 'Won' for c in CARDS for p in c['plays'] if p.get('result') and p['decision'] == d),
+     'graded': {'thru': 'Thursday', **{k: [sum(p['result']['outcome'] == 'Won' for c in CARDS for p in c['plays'] if p.get('result') and p['decision'] == d),
                                                       sum(p['result']['outcome'] == 'Lost' for c in CARDS for p in c['plays'] if p.get('result') and p['decision'] == d),
                                                       sum(p['result']['profit_c'] for c in CARDS for p in c['plays'] if p.get('result') and p['decision'] == d)] for k, d in (('final', 'Final line'), ('lean', 'Conditional lean'))}},
      'early': {'at': BL.AN['at'], 'books': sorted(set(BL.AN.get('books', {}).values())), 'cal': BL.CAL,

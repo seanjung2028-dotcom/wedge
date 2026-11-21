@@ -25,6 +25,11 @@ for line in E['rows']:
     team_name, name, pos, status, typ, ret, short, date = line.split('|')
     ab = NICK.get(team_name.split(' ')[-1], '')
     if status not in MAP: continue
+    # Fri Nov 20: a player on IR whose return window is open shows "Injured Reserve" on ESPN even when the team lists him for the game;
+    # ESPN's own note says so ("is listed as questionable for Sunday's game"), and Kalshi lists his ladders. Use the game designation.
+    if status == 'Injured Reserve' and (date or '') >= '2026-11-19':
+        if re.search(r'\bquestionable\b', short, re.I): status = 'Questionable'
+        elif re.search(r'\bdoubtful\b', short, re.I): status = 'Doubtful'
     r = by_name.get((nn(name), ab)) or by_name1.get(nn(name))
     if r is None: miss += 1
     rows.append({'season': 2026, 'season_type': 'REG', 'game_type': 'REG', 'team': (r.team if r is not None else ab), 'week': 11,

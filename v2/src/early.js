@@ -43,8 +43,8 @@
     list.sort((a, b) => (a[1].decision !== 'Final line') - (b[1].decision !== 'Final line') || b[1].edge_mid - a[1].edge_mid);
     const head = el('header', 'v2-ea-head');
     head.append(el('span', 'v2-ea-k', 'Early lines · not on Kalshi yet'),
-      el('h3', null, list.length ? `${E.final} early final line${E.final === 1 ? '' : 's'} and ${E.lean} early lean${E.lean === 1 ? '' : 's'}` : 'Nothing clears at the expected prices yet'),
-      el('p', 'v2-ea-lede', `Kalshi hasn’t listed ${E.assessed} player markets on this slate yet, mostly receptions and rush + rec yards. `
+      el('h3', null, list.length ? [E.final ? `${E.final} early final line${E.final === 1 ? '' : 's'}` : '', E.lean ? `${E.lean} early lean${E.lean === 1 ? '' : 's'}` : ''].filter(Boolean).join(' and ') : 'Nothing clears at the expected prices yet'),
+      el('p', 'v2-ea-lede', `Kalshi hasn’t listed ${E.assessed} player markets on this slate yet, mostly receptions. `
         + `We priced each one from ${E.books.length} sportsbooks (${E.books.join(', ')}), checked ${fcTime(E.at)}, moved it onto Kalshi’s scale and ran it through the same final-lines process as the card. `
         + 'The price is where we expect the rung to open, not a quote you can trade. Each line names the most it can cost and still hold.'));
     const stats = el('div', 'v2-ea-stats');

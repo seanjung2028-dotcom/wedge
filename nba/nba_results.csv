@@ -884,3 +884,118 @@ nr881,2026-11-18,WAS @ TOR,2026-11-19T00:30:00Z,Player props,Rebounds,Bilal Coul
 nr882,2026-11-18,WAS @ TOR,2026-11-19T00:30:00Z,Player props,Rebounds,Collin Murray-Boyles: 8+ rebounds,Collin Murray-Boyles,reb,45,25.0,No,43.1,-1.9,,No,Lost,-45,2 reb,Wed Nov 18 ~2:05 PM CT
 nr883,2026-11-18,WAS @ TOR,2026-11-19T00:30:00Z,Player props,Threes,Ja'Kobe Walter: 3+ threes,Ja'Kobe Walter,3pm,50,50.0,No,48.8,-1.2,,No,Won,50,3 3PM,Wed Nov 18 ~2:05 PM CT
 nr884,2026-11-18,WAS @ TOR,2026-11-19T00:30:00Z,Player props,Threes,Tre Johnson: 2+ threes,Tre Johnson,3pm,50,40.0,No,50.0,0.0,,No,Lost,-50,0 3PM,Wed Nov 18 ~2:05 PM CT
+nr885,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Full game,Spread,Memphis wins by over 6.5 points,,,54,40.0,No,,,,,Won,46,"GSW 98, MEM 126",Thu Nov 19 ~6:15 AM CT
+nr886,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Full game,Spread,Memphis wins by over 7.5 points,,,50,40.0,No,,,,,Won,50,"GSW 98, MEM 126",Thu Nov 19 ~6:15 AM CT
+nr887,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Full game,Spread,Memphis wins by over 8.5 points,,,46,40.0,No,,,,,Won,54,"GSW 98, MEM 126",Thu Nov 19 ~6:15 AM CT
+nr888,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Full game,Team total,Golden State over 109.5 points,,,53,65.0,Yes,,,,,Lost,-53,"GSW 98, MEM 126",Thu Nov 19 ~6:15 AM CT
+nr889,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Full game,Team total,Golden State over 111.5 points,,,46,55.0,Yes,,,,,Lost,-46,"GSW 98, MEM 126",Thu Nov 19 ~6:15 AM CT
+nr890,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Full game,Team total,Memphis over 116.5 points,,,55,65.0,Yes,,,,,Won,45,"GSW 98, MEM 126",Thu Nov 19 ~6:15 AM CT
+nr891,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Full game,Team total,Memphis over 118.5 points,,,48,55.0,Yes,,,,,Won,52,"GSW 98, MEM 126",Thu Nov 19 ~6:15 AM CT
+nr892,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Full game,Total,Over 227.5 points,,,52,55.0,Yes,,,,,Lost,-52,"GSW 98, MEM 126",Thu Nov 19 ~6:15 AM CT
+nr893,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Full game,Total,Over 229.5 points,,,47,52.5,Yes,,,,,Lost,-47,"GSW 98, MEM 126",Thu Nov 19 ~6:15 AM CT
+nr894,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Player props,Assists,Cedric Coward: 4+ assists,Cedric Coward,ast,53,45.0,No,51.3,-1.7,,No,Won,47,4 ast,Thu Nov 19 ~6:15 AM CT
+nr895,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Player props,Assists,Charles Bassey: 2+ assists,Charles Bassey,ast,49,15.0,No,44.6,-4.4,,No,Lost,-49,1 ast,Thu Nov 19 ~6:15 AM CT
+nr896,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Player props,Assists,Jaylen Wells: 2+ assists,Jaylen Wells,ast,54,40.0,No,50.3,-3.7,,No,Lost,-54,0 ast,Thu Nov 19 ~6:15 AM CT
+nr897,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Player props,Points,Cameron Boozer: 20+ points,Cameron Boozer,pts,47,26.7,No,42.7,-4.3,,No,Lost,-47,16 pts,Thu Nov 19 ~6:15 AM CT
+nr898,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Player props,Points,Cedric Coward: 15+ points,Cedric Coward,pts,52,60.0,Yes,50.6,-1.4,,No,Won,48,19 pts,Thu Nov 19 ~6:15 AM CT
+nr899,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Player props,Points,Jaylen Wells: 10+ points,Jaylen Wells,pts,55,55.0,Yes,53.4,-1.6,,No,Won,45,22 pts,Thu Nov 19 ~6:15 AM CT
+nr900,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Player props,Points,Zach Edey: 10+ points,Zach Edey,pts,47,55.0,Yes,46.8,-0.2,,No,Void,0,did not play,Thu Nov 19 ~6:15 AM CT
+nr901,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Gui Santos: 15+ points, rebounds and assists",Gui Santos,pra,50,60.0,Yes,48.8,-1.2,,No,Lost,-50,11 PRA,Thu Nov 19 ~6:15 AM CT
+nr902,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Jaylen Wells: 15+ points, rebounds and assists",Jaylen Wells,pra,53,50.0,No,51.8,-1.2,,No,Won,47,29 PRA,Thu Nov 19 ~6:15 AM CT
+nr903,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Player props,Rebounds,Cedric Coward: 8+ rebounds,Cedric Coward,reb,47,45.0,No,45.2,-1.8,,No,Lost,-47,4 reb,Thu Nov 19 ~6:15 AM CT
+nr904,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Player props,Rebounds,Charles Bassey: 8+ rebounds,Charles Bassey,reb,46,30.0,No,45.3,-0.7,,No,Won,54,13 reb,Thu Nov 19 ~6:15 AM CT
+nr905,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Player props,Rebounds,Zach Edey: 8+ rebounds,Zach Edey,reb,51,65.0,Yes,51.2,0.2,,Yes,Void,0,did not play,Thu Nov 19 ~6:15 AM CT
+nr906,2026-11-19,GSW @ MEM,2026-11-20T01:00:00Z,Player props,Threes,Brandin Podziemski: 3+ threes,Brandin Podziemski,3pm,48,45.0,No,46.4,-1.6,,No,Lost,-48,0 3PM,Thu Nov 19 ~6:15 AM CT
+nr907,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Full game,Spread,San Antonio wins by over 14.5 points,,,53,40.0,No,,,,,Lost,-53,"LAC 112, SAS 124",Thu Nov 19 ~6:15 AM CT
+nr908,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Full game,Spread,San Antonio wins by over 15.5 points,,,50,35.0,No,,,,,Lost,-50,"LAC 112, SAS 124",Thu Nov 19 ~6:15 AM CT
+nr909,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Full game,Spread,San Antonio wins by over 16.5 points,,,46,30.0,No,,,,,Lost,-46,"LAC 112, SAS 124",Thu Nov 19 ~6:15 AM CT
+nr910,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Full game,Team total,Los Angeles C over 104.5 points,,,53,70.0,Yes,,,,,Won,47,"LAC 112, SAS 124",Thu Nov 19 ~6:15 AM CT
+nr911,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Full game,Team total,Los Angeles C over 106.5 points,,,45,70.0,Yes,,,,,Won,55,"LAC 112, SAS 124",Thu Nov 19 ~6:15 AM CT
+nr912,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Full game,Team total,San Antonio over 120.5 points,,,53,50.0,No,,,,,Won,47,"LAC 112, SAS 124",Thu Nov 19 ~6:15 AM CT
+nr913,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Full game,Team total,San Antonio over 122.5 points,,,46,35.0,No,,,,,Won,54,"LAC 112, SAS 124",Thu Nov 19 ~6:15 AM CT
+nr914,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Full game,Total,Over 225.5 points,,,53,50.0,No,,,,,Won,47,"LAC 112, SAS 124",Thu Nov 19 ~6:15 AM CT
+nr915,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Full game,Total,Over 227.5 points,,,48,50.0,No,,,,,Won,52,"LAC 112, SAS 124",Thu Nov 19 ~6:15 AM CT
+nr916,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Assists,Brook Lopez: 2+ assists,Brook Lopez,ast,48,45.0,No,47.5,-0.5,,No,Won,52,4 ast,Thu Nov 19 ~6:15 AM CT
+nr917,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Assists,Julian Champagnie: 2+ assists,Julian Champagnie,ast,50,50.0,No,48.4,-1.6,,No,Lost,-50,1 ast,Thu Nov 19 ~6:15 AM CT
+nr918,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Assists,Kris Dunn: 4+ assists,Kris Dunn,ast,47,55.0,Yes,47.2,0.2,,Yes,Lost,-47,2 ast,Thu Nov 19 ~6:15 AM CT
+nr919,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Assists,Stephon Castle: 8+ assists,Stephon Castle,ast,46,35.0,No,46.0,-0.0,,No,Won,54,12 ast,Thu Nov 19 ~6:15 AM CT
+nr920,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Assists,Victor Wembanyama: 4+ assists,Victor Wembanyama,ast,45,45.0,No,45.3,0.3,,Yes,Lost,-45,3 ast,Thu Nov 19 ~6:15 AM CT
+nr921,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Points,Darius Garland: 20+ points,Darius Garland,pts,51,50.0,No,50.2,-0.8,,No,Won,49,23 pts,Thu Nov 19 ~6:15 AM CT
+nr922,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Points,De'Aaron Fox: 15+ points,De'Aaron Fox,pts,55,45.0,No,53.6,-1.4,,No,Lost,-55,10 pts,Thu Nov 19 ~6:15 AM CT
+nr923,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Points,Derrick Jones Jr.: 10+ points,Derrick Jones Jr.,pts,49,60.0,Yes,48.4,-0.6,,No,Lost,-49,8 pts,Thu Nov 19 ~6:15 AM CT
+nr924,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Points,Victor Wembanyama: 30+ points,Victor Wembanyama,pts,50,50.0,No,47.9,-2.1,,No,Won,50,32 pts,Thu Nov 19 ~6:15 AM CT
+nr925,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Brook Lopez: 20+ points, rebounds and assists",Brook Lopez,pra,48,55.0,Yes,45.7,-2.3,,No,Won,52,30 PRA,Thu Nov 19 ~6:15 AM CT
+nr926,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Darius Garland: 30+ points, rebounds and assists",Darius Garland,pra,53,45.0,No,50.2,-2.8,,No,Lost,-53,28 PRA,Thu Nov 19 ~6:15 AM CT
+nr927,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Derrick Jones Jr.: 15+ points, rebounds and assists",Derrick Jones Jr.,pra,54,60.0,Yes,52.4,-1.6,,No,Lost,-54,11 PRA,Thu Nov 19 ~6:15 AM CT
+nr928,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Devin Vassell: 20+ points, rebounds and assists",Devin Vassell,pra,47,50.0,No,45.5,-1.5,,No,Won,53,23 PRA,Thu Nov 19 ~6:15 AM CT
+nr929,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Keldon Johnson: 20+ points, rebounds and assists",Keldon Johnson,pra,50,45.0,No,47.3,-2.7,,No,Lost,-50,18 PRA,Thu Nov 19 ~6:15 AM CT
+nr930,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Max Strus: 15+ points, rebounds and assists",Max Strus,pra,48,68.4,Yes,47.5,-0.5,,No,Won,52,27 PRA,Thu Nov 19 ~6:15 AM CT
+nr931,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Rui Hachimura: 20+ points, rebounds and assists",Rui Hachimura,pra,48,50.0,No,44.0,-4.0,,No,Won,52,26 PRA,Thu Nov 19 ~6:15 AM CT
+nr932,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Stephon Castle: 30+ points, rebounds and assists",Stephon Castle,pra,50,45.0,No,47.7,-2.3,,No,Won,50,39 PRA,Thu Nov 19 ~6:15 AM CT
+nr933,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Victor Wembanyama: 45+ points, rebounds and assists",Victor Wembanyama,pra,52,50.0,No,48.6,-3.4,,No,Won,48,46 PRA,Thu Nov 19 ~6:15 AM CT
+nr934,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Rebounds,Derrick Jones Jr.: 4+ rebounds,Derrick Jones Jr.,reb,54,70.0,Yes,52.6,-1.4,,No,Lost,-54,2 reb,Thu Nov 19 ~6:15 AM CT
+nr935,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Rebounds,Julian Champagnie: 6+ rebounds,Julian Champagnie,reb,46,35.0,No,45.2,-0.8,,No,Lost,-46,4 reb,Thu Nov 19 ~6:15 AM CT
+nr936,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Rebounds,Max Strus: 4+ rebounds,Max Strus,reb,49,63.2,Yes,48.9,-0.1,,No,Won,51,5 reb,Thu Nov 19 ~6:15 AM CT
+nr937,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Rebounds,Victor Wembanyama: 12+ rebounds,Victor Wembanyama,reb,55,55.0,Yes,53.0,-2.0,,No,Lost,-55,11 reb,Thu Nov 19 ~6:15 AM CT
+nr938,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Threes,Brook Lopez: 2+ threes,Brook Lopez,3pm,46,40.0,No,46.2,0.2,,Yes,Won,54,5 3PM,Thu Nov 19 ~6:15 AM CT
+nr939,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Threes,Darius Garland: 3+ threes,Darius Garland,3pm,45,45.0,No,44.7,-0.3,,No,Won,55,3 3PM,Thu Nov 19 ~6:15 AM CT
+nr940,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Threes,Devin Vassell: 2+ threes,Devin Vassell,3pm,55,45.0,No,53.5,-1.5,,No,Lost,-55,1 3PM,Thu Nov 19 ~6:15 AM CT
+nr941,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Threes,Keldon Johnson: 1+ threes,Keldon Johnson,3pm,53,35.0,No,50.4,-2.6,,No,Lost,-53,0 3PM,Thu Nov 19 ~6:15 AM CT
+nr942,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Threes,Kris Dunn: 1+ threes,Kris Dunn,3pm,50,55.0,Yes,50.2,0.2,,Yes,Won,50,1 3PM,Thu Nov 19 ~6:15 AM CT
+nr943,2026-11-19,LAC @ SAS,2026-11-20T01:00:00Z,Player props,Threes,Stephon Castle: 2+ threes,Stephon Castle,3pm,52,60.0,Yes,50.4,-1.6,,No,Won,48,2 3PM,Thu Nov 19 ~6:15 AM CT
+nr944,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Full game,Moneyline,Minnesota wins,,,50,70.0,Yes,,,,,Lost,-50,"NYK 102, MIN 99",Thu Nov 19 ~6:15 AM CT
+nr945,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Full game,Moneyline,New York wins,,,52,65.0,Yes,,,,,Won,48,"NYK 102, MIN 99",Thu Nov 19 ~6:15 AM CT
+nr946,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Full game,Spread,Minnesota wins by over 1.5 points,,,46,65.0,Yes,,,,,Lost,-46,"NYK 102, MIN 99",Thu Nov 19 ~6:15 AM CT
+nr947,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Full game,Spread,New York wins by over 1.5 points,,,49,65.0,Yes,,,,,Won,51,"NYK 102, MIN 99",Thu Nov 19 ~6:15 AM CT
+nr948,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Full game,Spread,New York wins by over 2.5 points,,,46,65.0,Yes,,,,,Won,54,"NYK 102, MIN 99",Thu Nov 19 ~6:15 AM CT
+nr949,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Full game,Team total,Minnesota over 108.5 points,,,50,80.0,Yes,,,,,Lost,-50,"NYK 102, MIN 99",Thu Nov 19 ~6:15 AM CT
+nr950,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Full game,Team total,New York over 108.5 points,,,52,55.0,Yes,,,,,Lost,-52,"NYK 102, MIN 99",Thu Nov 19 ~6:15 AM CT
+nr951,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Full game,Total,Over 215.5 points,,,54,52.5,Yes,,,,,Lost,-54,"NYK 102, MIN 99",Thu Nov 19 ~6:15 AM CT
+nr952,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Full game,Total,Over 217.5 points,,,49,52.5,Yes,,,,,Lost,-49,"NYK 102, MIN 99",Thu Nov 19 ~6:15 AM CT
+nr953,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Full game,Total,Over 219.5 points,,,46,50.0,No,,,,,Lost,-46,"NYK 102, MIN 99",Thu Nov 19 ~6:15 AM CT
+nr954,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Assists,Jalen Brunson: 6+ assists,Jalen Brunson,ast,55,55.0,Yes,53.9,-1.1,,No,Won,45,7 ast,Thu Nov 19 ~6:15 AM CT
+nr955,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Assists,Josh Hart: 4+ assists,Josh Hart,ast,46,35.0,No,47.5,1.5,,Yes,Lost,-46,2 ast,Thu Nov 19 ~6:15 AM CT
+nr956,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Assists,Karl-Anthony Towns: 4+ assists,Karl-Anthony Towns,ast,54,50.0,No,51.8,-2.2,,No,Won,46,4 ast,Thu Nov 19 ~6:15 AM CT
+nr957,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Points,LaMelo Ball: 20+ points,LaMelo Ball,pts,48,50.0,No,46.7,-1.3,,No,Lost,-48,15 pts,Thu Nov 19 ~6:15 AM CT
+nr958,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Points,Landry Shamet: 10+ points,Landry Shamet,pts,45,40.0,No,45.4,0.4,,Yes,Won,55,10 pts,Thu Nov 19 ~6:15 AM CT
+nr959,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Points,Mikal Bridges: 10+ points,Mikal Bridges,pts,52,45.0,No,51.5,-0.5,,No,Lost,-52,8 pts,Thu Nov 19 ~6:15 AM CT
+nr960,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Jaden McDaniels: 25+ points, rebounds and assists",Jaden McDaniels,pra,53,70.0,Yes,52.1,-0.9,,No,Lost,-53,22 PRA,Thu Nov 19 ~6:15 AM CT
+nr961,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"LaMelo Ball: 30+ points, rebounds and assists",LaMelo Ball,pra,54,55.0,Yes,50.0,-4.0,,No,Won,46,31 PRA,Thu Nov 19 ~6:15 AM CT
+nr962,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Rebounds,Jaden McDaniels: 6+ rebounds,Jaden McDaniels,reb,48,75.0,Yes,46.8,-1.2,,No,Lost,-48,4 reb,Thu Nov 19 ~6:15 AM CT
+nr963,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Rebounds,Jonathan Kuminga: 6+ rebounds,Jonathan Kuminga,reb,48,50.0,No,48.9,0.9,,Yes,Lost,-48,3 reb,Thu Nov 19 ~6:15 AM CT
+nr964,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Threes,Jaden McDaniels: 2+ threes,Jaden McDaniels,3pm,46,50.0,No,45.7,-0.3,,No,Won,54,4 3PM,Thu Nov 19 ~6:15 AM CT
+nr965,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Threes,Jalen Brunson: 3+ threes,Jalen Brunson,3pm,48,55.0,Yes,48.1,0.1,,Yes,Won,52,4 3PM,Thu Nov 19 ~6:15 AM CT
+nr966,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Threes,Karl-Anthony Towns: 2+ threes,Karl-Anthony Towns,3pm,53,60.0,Yes,52.0,-1.0,,No,Won,47,2 3PM,Thu Nov 19 ~6:15 AM CT
+nr967,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Threes,LaMelo Ball: 4+ threes,LaMelo Ball,3pm,53,65.0,Yes,49.6,-3.4,,No,Lost,-53,3 3PM,Thu Nov 19 ~6:15 AM CT
+nr968,2026-11-19,NYK @ MIN,2026-11-20T01:00:00Z,Player props,Threes,Landry Shamet: 2+ threes,Landry Shamet,3pm,55,65.0,Yes,54.6,-0.4,,No,Won,45,2 3PM,Thu Nov 19 ~6:15 AM CT
+nr969,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Full game,Spread,Portland wins by over 10.5 points,,,49,40.0,No,,,,,Lost,-49,"POR 124, MIL 114",Thu Nov 19 ~6:15 AM CT
+nr970,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Full game,Spread,Portland wins by over 11.5 points,,,46,40.0,No,,,,,Lost,-46,"POR 124, MIL 114",Thu Nov 19 ~6:15 AM CT
+nr971,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Full game,Spread,Portland wins by over 9.5 points,,,54,50.0,No,,,,,Won,46,"POR 124, MIL 114",Thu Nov 19 ~6:15 AM CT
+nr972,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Full game,Team total,Milwaukee over 108.5 points,,,50,50.0,No,,,,,Won,50,"POR 124, MIL 114",Thu Nov 19 ~6:15 AM CT
+nr973,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Full game,Team total,Milwaukee over 110.5 points,,,46,45.0,No,,,,,Won,54,"POR 124, MIL 114",Thu Nov 19 ~6:15 AM CT
+nr974,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Full game,Team total,Portland over 118.5 points,,,54,40.0,No,,,,,Won,46,"POR 124, MIL 114",Thu Nov 19 ~6:15 AM CT
+nr975,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Full game,Team total,Portland over 120.5 points,,,46,35.0,No,,,,,Won,54,"POR 124, MIL 114",Thu Nov 19 ~6:15 AM CT
+nr976,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Full game,Total,Over 227.5 points,,,53,50.0,No,,,,,Won,47,"POR 124, MIL 114",Thu Nov 19 ~6:15 AM CT
+nr977,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Full game,Total,Over 229.5 points,,,48,42.5,No,,,,,Won,52,"POR 124, MIL 114",Thu Nov 19 ~6:15 AM CT
+nr978,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Assists,Deni Avdija: 6+ assists,Deni Avdija,ast,51,60.0,Yes,49.9,-1.1,,No,Void,0,did not play,Thu Nov 19 ~6:15 AM CT
+nr979,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Assists,Jaime Jaquez Jr.: 4+ assists,Jaime Jaquez Jr.,ast,46,50.0,No,46.6,0.6,,Yes,Lost,-46,2 ast,Thu Nov 19 ~6:15 AM CT
+nr980,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Assists,Toumani Camara: 2+ assists,Toumani Camara,ast,53,35.0,No,50.7,-2.3,,No,Won,47,4 ast,Thu Nov 19 ~6:15 AM CT
+nr981,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Points,Deni Avdija: 25+ points,Deni Avdija,pts,48,55.0,Yes,46.9,-1.1,,No,Void,0,did not play,Thu Nov 19 ~6:15 AM CT
+nr982,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Points,Myles Turner: 10+ points,Myles Turner,pts,46,50.0,No,46.1,0.1,,Yes,Void,0,did not play,Thu Nov 19 ~6:15 AM CT
+nr983,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Points,Tyler Herro: 20+ points,Tyler Herro,pts,55,50.0,No,51.6,-3.4,,No,Lost,-55,19 pts,Thu Nov 19 ~6:15 AM CT
+nr984,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Brayden Burries: 20+ points, rebounds and assists",Brayden Burries,pra,48,26.7,No,46.1,-1.9,,No,Won,52,20 PRA,Thu Nov 19 ~6:15 AM CT
+nr985,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Kyle Kuzma: 20+ points, rebounds and assists",Kyle Kuzma,pra,53,60.0,Yes,50.8,-2.2,,No,Void,0,did not play,Thu Nov 19 ~6:15 AM CT
+nr986,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Sidy Cissoko: 15+ points, rebounds and assists",Sidy Cissoko,pra,47,20.0,No,43.7,-3.3,,No,Won,53,21 PRA,Thu Nov 19 ~6:15 AM CT
+nr987,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Toumani Camara: 20+ points, rebounds and assists",Toumani Camara,pra,55,45.0,No,51.6,-3.4,,No,Won,45,28 PRA,Thu Nov 19 ~6:15 AM CT
+nr988,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Pts + Reb + Ast,"Tyler Herro: 30+ points, rebounds and assists",Tyler Herro,pra,47,45.0,No,43.3,-3.7,,No,Lost,-47,26 PRA,Thu Nov 19 ~6:15 AM CT
+nr989,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Rebounds,Damian Lillard: 4+ rebounds,Damian Lillard,reb,50,28.6,No,46.6,-3.4,,No,Won,50,6 reb,Thu Nov 19 ~6:15 AM CT
+nr990,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Rebounds,Deni Avdija: 8+ rebounds,Deni Avdija,reb,46,30.0,No,44.9,-1.1,,No,Void,0,did not play,Thu Nov 19 ~6:15 AM CT
+nr991,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Rebounds,Myles Turner: 6+ rebounds,Myles Turner,reb,45,50.0,No,44.6,-0.4,,No,Void,0,did not play,Thu Nov 19 ~6:15 AM CT
+nr992,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Rebounds,Sidy Cissoko: 4+ rebounds,Sidy Cissoko,reb,54,35.0,No,49.8,-4.2,,No,Won,46,5 reb,Thu Nov 19 ~6:15 AM CT
+nr993,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Threes,Damian Lillard: 4+ threes,Damian Lillard,3pm,45,42.9,No,45.8,0.8,,Yes,Won,55,5 3PM,Thu Nov 19 ~6:15 AM CT
+nr994,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Threes,Kyle Kuzma: 2+ threes,Kyle Kuzma,3pm,50,40.0,No,48.2,-1.8,,No,Void,0,did not play,Thu Nov 19 ~6:15 AM CT
+nr995,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Threes,Myles Turner: 2+ threes,Myles Turner,3pm,50,35.0,No,49.2,-0.8,,No,Void,0,did not play,Thu Nov 19 ~6:15 AM CT
+nr996,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Threes,Scoot Henderson: 2+ threes,Scoot Henderson,3pm,51,40.0,No,48.2,-2.8,,No,Won,49,5 3PM,Thu Nov 19 ~6:15 AM CT
+nr997,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Threes,Sidy Cissoko: 2+ threes,Sidy Cissoko,3pm,45,30.0,No,43.5,-1.5,,No,Lost,-45,1 3PM,Thu Nov 19 ~6:15 AM CT
+nr998,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Threes,Toumani Camara: 3+ threes,Toumani Camara,3pm,48,60.0,Yes,46.5,-1.5,,No,Won,52,4 3PM,Thu Nov 19 ~6:15 AM CT
+nr999,2026-11-19,POR @ MIL,2026-11-20T01:00:00Z,Player props,Threes,Tyler Herro: 3+ threes,Tyler Herro,3pm,47,55.0,Yes,45.4,-1.6,,No,Won,53,4 3PM,Thu Nov 19 ~6:15 AM CT
