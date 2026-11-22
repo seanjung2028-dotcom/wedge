@@ -8,4 +8,6 @@ def apply(s, js):
         c = js.count(a); assert c == n, f'r20 js: {a[:70]!r} found {c}'; js = js.replace(a, b)
     jr("if (when) when.textContent = 'Prices checked ' + fcTime(F.at) + (F.mnf_at ? ' · BUF @ MIN re-checked ' + fcTime(F.mnf_at) : '');",
        "if (when) when.textContent = (F.draft ? F.draft + ' · ' : '') + 'Prices checked ' + fcTime(F.at) + (F.recheck_at ? ' · card lines re-checked ' + fcTime(F.recheck_at) : '') + (F.mnf_at ? ' · BUF @ MIN re-checked ' + fcTime(F.mnf_at) : '');")
+    jr("s1.append(v2Head(1, 'Final lines', 'This week’s final lines.', null));",
+       "s1.append(v2Head(1, 'Final lines', 'This week’s final lines.', (v2F() || {}).draft ? `${v2F().draft}: finals and leans as of ${fcTime(v2F().at)}. Leans below; each one names what it needs.` : null));")
     return s, js
