@@ -12,7 +12,7 @@ QB = {
     'TEN @ DAL': (True, 'Cam Ward (TEN) and Dak Prescott (DAL) start; neither is on the injury report (ESPN, Fri Nov 20).'),
     'CIN @ WSH': (True, 'Joe Burrow (CIN) and Jayden Daniels (WSH) start; neither is on the injury report (ESPN, Fri Nov 20).'),
     # Sat Nov 21 (ESPN, 10:02 AM CT): Mayfield expected to start; the game is on, conditional on him being active (as NYJ @ LAC was on Wednesday)
-    'TB @ DET': (True, 'Baker Mayfield (foot) is questionable but set to start: barring a setback he is good to go Sunday, wearing an orthotic and new cleats (FantasyPros, Sat Nov 21), with Jalon Daniels as the backup. The game stays on only if Mayfield is active.'),
+    'TB @ DET': (True, 'Baker Mayfield (foot) is questionable but slated to play Sunday, per Ian Rapoport (ESPN injury report, Sun Nov 22), wearing an orthotic and new cleats (FantasyPros, Sat Nov 21); Jalon Daniels is the backup. The game stays on only if Mayfield is active.'),
     'NYJ @ LAC': (True, 'Justin Herbert (LAC) and Geno Smith (NYJ) start: Smith (ankle), limited earlier in the week, carries no designation on Friday’s final report (ESPN, Fri Nov 20).'),
     'MIA @ BUF': (False, 'Miami starts a backup: Malik Willis (abdomen) is on injured reserve (ESPN, Fri Nov 20); Kyle McCord started in his place in Week 10.'),
     'MIN @ SF': (False, 'Minnesota starts Kirk Cousins again: Kyler Murray (hamstring) was ruled out Friday for the Sunday night game in Mexico City (ESPN, Fri Nov 20).'),
@@ -248,7 +248,9 @@ RESEARCH = {   # Week 11 news checks (Tue Nov 17 ~6:40 AM CT). Searches turned u
     ('LV @ DEN', 'Ashton Jeanty under 5 receptions (No)'): {
         'notes': ['Under 5 catches in 6 of 10 games (3, 5 and 4 in his last three).',
                   'Against it: Brock Bowers (ankle) is questionable after leaving Week 10 early and drawing 2 targets; if he sits, more of the short targets could go to Jeanty (ClutchPoints, Nov 19).'],
-        'src': [{'t': 'ClutchPoints, Raiders news: Brock Bowers injury update is crucial for Broncos clash (Nov 19, 2026)', 'u': 'https://clutchpoints.com/nfl/las-vegas-raiders/raiders-news-brock-bowers-injury-update-is-crucial-for-broncos-clash'}, {'t': 'ESPN NFL injuries, Sat Nov 21 12:39 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+        'src': [{'t': 'NBC Sports (Rotoworld), Schefter: not a lot of optimism that Bowers plays (Nov 22, 2026)', 'u': 'https://www.nbcsports.com/fantasy/football/player-news/2026-11-22/schefter-not-a-lot-of-optimism-that-bowers-plays'}, {'t': 'ClutchPoints, Raiders news: Brock Bowers injury update is crucial for Broncos clash (Nov 19, 2026)', 'u': 'https://clutchpoints.com/nfl/las-vegas-raiders/raiders-news-brock-bowers-injury-update-is-crucial-for-broncos-clash'}, {'t': 'ESPN NFL injuries, Sat Nov 21 12:39 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}],
+        'decision': 'Pass', 'why': 'Research pass: Brock Bowers is unlikely to play (Schefter, Sun Nov 22), which frees up 8–10 short targets a game, and Jeanty is the likeliest to catch more of them, so the under no longer holds.'},
+
     # Sat Nov 21 ~11:10 PM CT: research pass on the lines new to the card at the 10:56 PM prices
     ('TB @ DET', 'Bucky Irving under 60 rushing yards (No)'): {
         'notes': ['Moved up from under 50 at the new prices. He stayed under 60 in 3 of 9 games (33%); this price needs 47%.',
@@ -277,6 +279,27 @@ RESEARCH = {   # Week 11 news checks (Tue Nov 17 ~6:40 AM CT). Searches turned u
         'notes': ['Under 50 in 5 of 7 games he played (71%), above the 56% this price needs. Chris Godwin is back (3–8 targets since Week 6) and Cade Otton drew 8 targets in Week 9, so the targets are spread out. Egbuka is not on the injury report.',
                   'Against it: he drew 16 targets in Week 6, and Tampa Bay is a 5.5-point underdog, so it may throw more than usual. Baker Mayfield is set to play (FantasyPros, Sat Nov 21).'],
         'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 10:57 PM CT', 'u': INJ_URL}, {'t': 'FantasyPros, Baker Mayfield (foot) to play Sunday barring setback (Nov 21, 2026)', 'u': 'https://www.fantasypros.com/nfl/news/621671/baker-mayfield-foot-to-play-sunday-barring-setback.php'}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    # Sun Nov 22 ~10:45 AM CT: research pass on the final draft (Kalshi 10:32 AM CT, sportsbooks 10:32 AM, ESPN injuries 10:31 AM)
+    ('TEN @ DAL', 'Gunnar Helm 2+ receptions (Yes)'): {
+        'notes': ['2+ catches in 6 of 8 games (75%), close to the 77% this price needs, and in each of his last three games (3, 5 and 4 catches on 4–9 targets).',
+                  'For it: Wan’Dale Robinson is on injured reserve for the season and Tyjae Spears went to IR Saturday, so there are targets to replace. Carnell Tate (shoulder) is expected to play (ESPN, Sun Nov 22).'],
+        'src': [{'t': 'ESPN NFL injuries, Sun Nov 22 10:31 AM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('TB @ DET', 'Jared Goff under 10 rushing yards (No)'): {
+        'notes': ['Under 10 rushing yards in all 9 games (0–4 carries, 7 yards at most).',
+                  'Against it: an 85¢ price leaves little room, and one long scramble beats it.'],
+        'src': [{'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('NYJ @ LAC', 'Kimani Vidal 10+ receiving yards (Yes)'): {
+        'notes': ['10+ receiving yards in 4 of 8 games (50%), above the 44% this price needs, and he kept 2–4 targets a game even after Omarion Hampton took over the carries in Week 10.',
+                  'For it: tight end Charlie Kolar (concussion) is questionable and may not play (NBC Sports, Nov 20). Against it: a small role, so one or two catches decide it.'],
+        'src': [{'t': 'NBC Sports (Rotoworld), Charlie Kolar (concussion) questionable for Wk 11 (Nov 20, 2026)', 'u': 'https://www.nbcsports.com/fantasy/football/player-news/2026-11-20/charlie-kolar-concussion-questionable-for-wk-11'}, {'t': 'ESPN NFL injuries, Sun Nov 22 10:31 AM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('LV @ DEN', 'Jalen Nailor under 15 receiving yards (No)'): {
+        'notes': ['Under 15 in 5 of 8 games on 3–5 targets a game.',
+                  'Against it: Brock Bowers is unlikely to play (Schefter), which frees up about 8–10 targets a game; NBC Sports expects Michael Mayer to get most of them.'],
+        'src': [{'t': 'NBC Sports (Rotoworld), Schefter: not a lot of optimism that Bowers plays (Nov 22, 2026)', 'u': 'https://www.nbcsports.com/fantasy/football/player-news/2026-11-22/schefter-not-a-lot-of-optimism-that-bowers-plays'}, {'t': 'ESPN NFL injuries, Sun Nov 22 10:31 AM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('TB @ DET', 'Cade Otton under 40 receiving yards (No)'): {
+        'notes': ['Under 40 in 7 of 8 games (88%), well above the 67% this price needs; his one bigger game was 56 yards in Week 3. He is not on the injury report.',
+                  'Against it: he drew a season-high 8 targets in Week 9, and Baker Mayfield is slated to play (ESPN, Sun Nov 22).'],
+        'src': [{'t': 'ESPN NFL injuries, Sun Nov 22 10:31 AM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
 }
 # Sat Nov 21 night: research that holds for every rung of a player's side (keyed by game, player, side), used when no line-level entry matches
 RESEARCH_PLAYER = {
