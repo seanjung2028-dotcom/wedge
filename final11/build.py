@@ -157,8 +157,8 @@ def slope_shift(o, x):
 CARDS, CSV, ECSV = [], [], []
 # the last card posted (Thu Nov 19, Kalshi checked 6:04 AM CT; bt/w11_thu_board/): what changed since, per game
 THU = {c['game']: c for c in json.load(open(W + 'bt/w11_thu_board/final_w11.json'))['cards']}
-# the last card posted before this one (Sat Nov 21, Kalshi checked 12:05 PM CT; bt/w11_sat12_board/): the revisions table compares against it
-FRI = {c['game']: c for c in json.load(open(W + 'bt/w11_sat12_board/final_w11.json'))['cards'] if c['game'] != 'IND @ HOU'}
+# the last card posted before this one (Sat Nov 21, Kalshi checked 12:33 PM CT; bt/w11_sat1233_board/): the revisions table compares against it
+FRI = {c['game']: c for c in json.load(open(W + 'bt/w11_sat1233_board/final_w11.json'))['cards'] if c['game'] != 'IND @ HOU'}
 SATB = {'games': {}, 'plays': {}}
 from datetime import datetime as _dt, timezone as _tz
 from zoneinfo import ZoneInfo as _ZI
@@ -220,10 +220,10 @@ def grade(c, x):
 for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
     a, h = fx(r.away_team), fx(r.home_team); game = f'{a} @ {h}'
     if game not in DONE and kicked(r) and game in FRI:
-        c0 = json.loads(json.dumps(FRI[game])); c0['locked'] = 'Kicked off before this price check: the card stays as published Sat Nov 21, 12:05 PM CT.'
+        c0 = json.loads(json.dumps(FRI[game])); c0['locked'] = 'Kicked off before this price check: the card stays as published Sat Nov 21, 12:33 PM CT.'
         c0['market'] = c0['locked'] + ' ' + c0.get('market', '')
         CARDS.append(c0); LOCKED.add(game)
-        for row in csv.DictReader(open(W + 'bt/w11_sat12_board/final_w11.csv')):
+        for row in csv.DictReader(open(W + 'bt/w11_sat1233_board/final_w11.csv')):
             if row['game'] == game: CSV.append(row)
         continue
     if game in DONE:
@@ -284,7 +284,7 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
                         'market_mid': y['mkt'], 'our_lo': y['lo'], 'our_mid': y['mid'], 'our_hi': y['hi'], 'edge_lo': y['edge_lo'], 'edge_mid': y['edge_mid'], 'evidence_pts': round(sum(l['pts'] for l in lg_), 1),
                         'shift': '', 'condition': mv, 'ticker': y['tick'], 'checked': AT, 'result': '', 'grade_read': '', 'grade_price': ''})
     for p in plays:   # research pass: news that supports or defeats each line's key assumption
-        rs = BR.RESEARCH.get((game, p['line']))
+        rs = BR.RESEARCH.get((game, p['line'])) or getattr(BR, 'RESEARCH_PLAYER', {}).get((game, p['player'], p['side']))
         if not rs: continue
         p['research'] = {'notes': rs.get('notes', []), 'src': rs.get('src', [])}
         if rs.get('decision') and rs['decision'] != p['decision']:
@@ -307,7 +307,7 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
     plays = keep
     passed = passed[:8]
     for p in eplays:
-        rs = BR.RESEARCH.get((game, p['line']))
+        rs = BR.RESEARCH.get((game, p['line'])) or getattr(BR, 'RESEARCH_PLAYER', {}).get((game, p['player'], p['side']))
         if rs and rs.get('decision') and rs['decision'] != p['decision']: p['decision'] = rs['decision']; p['cond'] = rs['why']
     eplays = [p for p in eplays if p['decision'] != 'Pass']
     eplays.sort(key=lambda p: (p['decision'] != 'Final line', p['side'] != 'Yes', -(p['edge_lo'] if p['decision'] == 'Final line' else p['edge_mid'])))

@@ -12,13 +12,13 @@ QB = {
     'TEN @ DAL': (True, 'Cam Ward (TEN) and Dak Prescott (DAL) start; neither is on the injury report (ESPN, Fri Nov 20).'),
     'CIN @ WSH': (True, 'Joe Burrow (CIN) and Jayden Daniels (WSH) start; neither is on the injury report (ESPN, Fri Nov 20).'),
     # Sat Nov 21 (ESPN, 10:02 AM CT): Mayfield expected to start; the game is on, conditional on him being active (as NYJ @ LAC was on Wednesday)
-    'TB @ DET': (True, 'Baker Mayfield (foot) is questionable but expected to start: Todd Bowles said Friday he is trending in the right direction, ESPN reports he will be under center with Jalon Daniels as the backup, and eight sportsbooks now price Mayfield as the passer (Kalshi’s passing ladder still names Daniels). Jared Goff (DET) is not on the injury report. The game stays on only if Mayfield is active.'),
+    'TB @ DET': (True, 'Baker Mayfield (foot) is questionable but set to start: barring a setback he is good to go Sunday, wearing an orthotic and new cleats (FantasyPros, Sat Nov 21), with Jalon Daniels as the backup. The game stays on only if Mayfield is active.'),
     'NYJ @ LAC': (True, 'Justin Herbert (LAC) and Geno Smith (NYJ) start: Smith (ankle), limited earlier in the week, carries no designation on Friday’s final report (ESPN, Fri Nov 20).'),
     'MIA @ BUF': (False, 'Miami starts a backup: Malik Willis (abdomen) is on injured reserve (ESPN, Fri Nov 20); Kyle McCord started in his place in Week 10.'),
     'MIN @ SF': (False, 'Minnesota starts Kirk Cousins again: Kyler Murray (hamstring) was ruled out Friday for the Sunday night game in Mexico City (ESPN, Fri Nov 20).'),
     'JAX @ NYG': (True, 'Trevor Lawrence (JAX) and J.J. McCarthy (NYG, the starter since Week 6) start; neither is on the injury report (ESPN, Fri Nov 20).'),
     'LV @ DEN': (True, 'Fernando Mendoza, named the Raiders’ starter last week, makes his second start; Bo Nix (DEN) is not on the injury report (ESPN, Fri Nov 20).'),
-    'ARI @ KC': (False, 'Arizona starts a backup either way: Carson Beck (back) missed Friday’s practice and is questionable, and Mike LaFleur said the team will prepare as if Josh Johnson starts; Gardner Minshew (elbow) is on injured reserve (ESPN, Sat Nov 21).'),
+    'ARI @ KC': (False, 'Arizona starts a backup: Carson Beck (back) was ruled out Saturday (ESPN, Sat Nov 21), so Josh Johnson starts; Gardner Minshew (elbow) is on injured reserve.'),
     'PIT @ PHI': (False, 'Philadelphia starts a backup: Jalen Hurts is on reserve (nflverse roster), Joe Milton III started in Week 9, and Kalshi and the books price Milton as the passer.'),
     'BAL @ CAR': (False, 'Baltimore starts a backup: Lamar Jackson (thumb) is on injured reserve (ESPN, Fri Nov 20), with a Week 16 return the hope.'),
     'NO @ CHI': (True, 'Tyler Shough (NO) and Caleb Williams (CHI) start; neither is on the injury report (ESPN, Fri Nov 20).'),
@@ -249,4 +249,38 @@ RESEARCH = {   # Week 11 news checks (Tue Nov 17 ~6:40 AM CT). Searches turned u
         'notes': ['Under 5 catches in 6 of 10 games (3, 5 and 4 in his last three).',
                   'Against it: Brock Bowers (ankle) is questionable after leaving Week 10 early and drawing 2 targets; if he sits, more of the short targets could go to Jeanty (ClutchPoints, Nov 19).'],
         'src': [{'t': 'ClutchPoints, Raiders news: Brock Bowers injury update is crucial for Broncos clash (Nov 19, 2026)', 'u': 'https://clutchpoints.com/nfl/las-vegas-raiders/raiders-news-brock-bowers-injury-update-is-crucial-for-broncos-clash'}, {'t': 'ESPN NFL injuries, Sat Nov 21 12:39 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    # Sat Nov 21 ~11:10 PM CT: research pass on the lines new to the card at the 10:56 PM prices
+    ('TB @ DET', 'Bucky Irving under 60 rushing yards (No)'): {
+        'notes': ['Moved up from under 50 at the new prices. He stayed under 60 in 3 of 9 games (33%); this price needs 47%.',
+                  'His role has grown: 20–27 carries and 97–170 yards in each of his last three games. Baker Mayfield is set to play (FantasyPros, Sat Nov 21).'],
+        'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 10:57 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}],
+        'decision': 'Pass', 'why': 'Research pass: he stayed under 60 in only 3 of 9 games, below the 47% this price needs, and his last three games went for 97 yards or more on 20–27 carries.'},
+    ('JAX @ NYG', 'Cam Skattebo under 70 rushing yards (No)'): {
+        'notes': ['He stayed under 70 in 4 of 7 games he played (57%); this price needs 70%.',
+                  'Back from a three-game absence, he took 18 of the backs’ 19 carries in Week 10 (78 yards); Devin Singletary had 1.'],
+        'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 10:57 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}],
+        'decision': 'Pass', 'why': 'Research pass: he stayed under 70 in 4 of 7 games, well below the 70% this price needs, and he is the lead back again (18 of 19 carries in Week 10).'},
+    ('NYJ @ LAC', 'Keaton Mitchell 2+ receptions (Yes)'): {
+        'notes': ['2+ catches in 5 of 9 games (56%), at or above the 54% this price needs; he drew 3–4 targets in Weeks 8 and 9.',
+                  'Against it: Omarion Hampton took over the backfield in Week 10 (22 carries) and Mitchell drew 1 target. For it: tight end Charlie Kolar (concussion) is questionable and may not play, which can push more short throws to the backs (NBC Sports, Nov 20).'],
+        'src': [{'t': 'NBC Sports (Rotoworld), Charlie Kolar (concussion) questionable for Wk 11 (Nov 20, 2026)', 'u': 'https://www.nbcsports.com/fantasy/football/player-news/2026-11-20/charlie-kolar-concussion-questionable-for-wk-11'}, {'t': 'ESPN NFL injuries, Sat Nov 21 10:57 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    ('NYJ @ LAC', 'Charlie Kolar 15+ receiving yards (Yes)'): {
+        'notes': ['15+ yards in 6 of 7 games, but he is questionable with a concussion.'],
+        'src': [{'t': 'NBC Sports (Rotoworld), Charlie Kolar (concussion) questionable for Wk 11 (Nov 20, 2026)', 'u': 'https://www.nbcsports.com/fantasy/football/player-news/2026-11-20/charlie-kolar-concussion-questionable-for-wk-11'}, {'t': 'ESPN NFL injuries, Sat Nov 21 10:57 PM CT', 'u': INJ_URL}],
+        'decision': 'Pass', 'why': 'Research pass: he is still in the concussion protocol after a limited practice on Friday only, and NBC Sports would be surprised if he played on the short week.'},
+    ('TB @ DET', 'Cade Otton under 30 receiving yards (No)'): {
+        'notes': ['He stayed under 30 in 5 of 8 games (62%), above the 51% this price needs; he is not on the injury report.',
+                  'Against it: he drew a season-high 8 targets in Week 9 (25 yards), and Baker Mayfield is set to play (FantasyPros, Sat Nov 21).'],
+        'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 10:57 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+}
+# Sat Nov 21 night: research that holds for every rung of a player's side (keyed by game, player, side), used when no line-level entry matches
+RESEARCH_PLAYER = {
+    ('TB @ DET', 'Bucky Irving', 'No'): {
+        'notes': ['Every under on Irving runs into his recent role: 20–27 carries and 97–170 rushing yards in each of his last three games.'],
+        'src': [{'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}],
+        'decision': 'Pass', 'why': 'Research pass: his full log sits well below what an under on him needs here (3 of 9 under 60 rushing, 3 of 9 under 90 rush + receiving), and his role has grown over his last three games.'},
+    ('NYJ @ LAC', 'Charlie Kolar', 'Yes'): {
+        'notes': ['He is questionable with a concussion and still in the protocol.'],
+        'src': [{'t': 'NBC Sports (Rotoworld), Charlie Kolar (concussion) questionable for Wk 11 (Nov 20, 2026)', 'u': 'https://www.nbcsports.com/fantasy/football/player-news/2026-11-20/charlie-kolar-concussion-questionable-for-wk-11'}],
+        'decision': 'Pass', 'why': 'Research pass: he is still in the concussion protocol after a limited practice on Friday only, and NBC Sports would be surprised if he played on the short week.'},
 }

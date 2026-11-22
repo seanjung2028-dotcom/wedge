@@ -30,6 +30,8 @@ for line in E['rows']:
     if status == 'Injured Reserve' and (date or '') >= '2026-11-19':
         if re.search(r'\bquestionable\b', short, re.I): status = 'Questionable'
         elif re.search(r'\bdoubtful\b', short, re.I): status = 'Doubtful'
+        # Sat Nov 21 night: a player the team is set to activate for the game ("slated to be activated ... in time to play") counts as questionable
+        elif re.search(r'\b(slated|set|expected) to be activated\b', short, re.I) and not re.search(r'\bnot (slated|set|expected) to be activated\b', short, re.I): status = 'Questionable'
     r = by_name.get((nn(name), ab)) or by_name1.get(nn(name))
     if r is None: miss += 1
     rows.append({'season': 2026, 'season_type': 'REG', 'game_type': 'REG', 'team': (r.team if r is not None else ab), 'week': 11,
