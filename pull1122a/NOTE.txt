@@ -1,0 +1,1 @@
+Sun Nov 22 ~10:10 AM CT: the card lines and their ladders re-checked one by one on Kalshi's public API (the browser pull was unavailable); every other rung is the Sat Nov 21 10:56 PM CT pull.

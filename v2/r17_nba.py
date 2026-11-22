@@ -2,7 +2,7 @@
 The NBA copy written for the Oct 24-27 board now names the current slate, its pricing time and its injury source.
 Change SLATE_* below (and nba/nba_lines.py) when the board moves to another slate."""
 SLATE_TILE = 'Robinhood, Sun Nov 22'
-SLATE_NOTE = "Robinhood NBA lines for Sun Nov 22’s seven games, priced Sat Nov 21 at 11:00 PM CT. Player lines are up for DET @ ATL only so far; the other six games have game lines. Hit rate: last 20 games. Wedge %: ours. Books % is blank: book lines weren't pulled for this slate."
+SLATE_NOTE = "Robinhood NBA lines for Sun Nov 22’s seven games, priced Sat Nov 21 at 11:00 PM CT. At that check Kalshi had player lines for DET @ ATL only; the other six games have game lines. Prices weren't re-pulled Sunday morning. Hit rate: last 20 games. Wedge %: ours. Books % is blank: book lines weren't pulled for this slate."
 SLATE_GAMES = "for Sun Nov 22's 7 games:"
 SLATE_INJ = 'Injuries: ESPN injury report, Sat Nov 21 at 11:00 PM CT.'
 SWAPS = [

@@ -5,7 +5,7 @@ props (Weeks 7-9) and kept only where they beat the market out of sample (receiv
 10th-90th percentile across 40 refits on resampled games. Needs = ask + 2c fees.
   Final line: the low end of our number beats Needs by 0.5+.   Conditional lean: the middle does.   Pass: neither.
 Writes final11/final_w11.json, final11/final_w11.csv and the game lens blocks."""
-import json, csv, math, re, sys, collections
+import json, csv, math, os, re, sys, collections
 import numpy as np, pandas as pd
 W = '/home/claude/wedger/'
 sys.path.insert(0, W + 'lens'); import core, v6, blocks
@@ -157,8 +157,8 @@ def slope_shift(o, x):
 CARDS, CSV, ECSV = [], [], []
 # the last card posted (Thu Nov 19, Kalshi checked 6:04 AM CT; bt/w11_thu_board/): what changed since, per game
 THU = {c['game']: c for c in json.load(open(W + 'bt/w11_thu_board/final_w11.json'))['cards']}
-# the last card posted before this one (Sat Nov 21, Kalshi checked 12:33 PM CT; bt/w11_sat1233_board/): the revisions table compares against it
-FRI = {c['game']: c for c in json.load(open(W + 'bt/w11_sat1233_board/final_w11.json'))['cards'] if c['game'] != 'IND @ HOU'}
+# the last card posted before this one (Sat Nov 21, Kalshi checked 10:56 PM CT; bt/w11_sat23_board/): the revisions table compares against it
+FRI = {c['game']: c for c in json.load(open(W + 'bt/w11_sat23_board/final_w11.json'))['cards'] if c['game'] != 'IND @ HOU'}
 SATB = {'games': {}, 'plays': {}}
 from datetime import datetime as _dt, timezone as _tz
 from zoneinfo import ZoneInfo as _ZI
@@ -220,10 +220,10 @@ def grade(c, x):
 for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
     a, h = fx(r.away_team), fx(r.home_team); game = f'{a} @ {h}'
     if game not in DONE and kicked(r) and game in FRI:
-        c0 = json.loads(json.dumps(FRI[game])); c0['locked'] = 'Kicked off before this price check: the card stays as published Sat Nov 21, 12:33 PM CT.'
+        c0 = json.loads(json.dumps(FRI[game])); c0['locked'] = 'Kicked off before this price check: the card stays as published Sat Nov 21, 10:56 PM CT.'
         c0['market'] = c0['locked'] + ' ' + c0.get('market', '')
         CARDS.append(c0); LOCKED.add(game)
-        for row in csv.DictReader(open(W + 'bt/w11_sat1233_board/final_w11.csv')):
+        for row in csv.DictReader(open(W + 'bt/w11_sat23_board/final_w11.csv')):
             if row['game'] == game: CSV.append(row)
         continue
     if game in DONE:
@@ -406,6 +406,9 @@ F = {'at': AT, 'books_at': AT, 'week': 11, 'cards': CARDS, 'model': 'v6', 'backt
                'assessed': sum(c.get('early_n', 0) for c in CARDS), 'ladders': len(EARLY),
                'final': sum(p['decision'] == 'Final line' for c in CARDS for p in c.get('early', [])), 'lean': sum(p['decision'] == 'Conditional lean' for c in CARDS for p in c.get('early', []))},
      'lens_how': LH.get('how'), 'lens_check': LH.get('check'), 'lens_check_title': LH.get('check_title'), 'lens_check_head': LH.get('check_head'), 'lens_thru': LH.get('thru')}
+# Sun Nov 22: the final draft of the Week 11 card (W11_DRAFT='Final draft', W11_RECHECK_AT=<UTC time the card lines' Kalshi prices were re-checked>)
+if os.environ.get('W11_DRAFT'): F['draft'] = os.environ['W11_DRAFT']
+if os.environ.get('W11_RECHECK_AT'): F['recheck_at'] = os.environ['W11_RECHECK_AT']
 BRAIN = {'at': AT, 'plays': {}, 'games': {}}
 for c in CARDS:
     if c.get('status') == 'Final':

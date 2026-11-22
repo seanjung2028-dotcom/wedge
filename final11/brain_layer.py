@@ -185,9 +185,9 @@ RESEARCH = {   # Week 11 news checks (Tue Nov 17 ~6:40 AM CT). Searches turned u
                   'Kept as a final line; the miss path is another 8-target game.'],
         'src': [{'t': 'DraftSharks, Chase Brown’s receiving role powers Week 10 breakout (Nov 16, 2026)', 'u': 'https://www.draftsharks.com/fantasy-football-news/84272/chase-browns-receiving-role-powers-week-10-breakout'}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
     ('NO @ CHI', 'Alvin Kamara 2+ receptions (Yes)'): {
-        'notes': ['2+ catches in 7 of 8 games; the books price 3+ catches as a slight favorite. Not on the injury report.',
-                  'Against it: his carries have fallen to 2–9 a game, so a smaller overall role is the risk. Rain is likely at Soldier Field.'],
-        'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 12:05 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+        'notes': ['Sun Nov 22 morning: Kalshi’s price fell from 75¢ to 69¢ overnight with no injury news, which moves this line up to a final. He has 2+ catches in 7 of 8 games and drew 4 targets in each of his last two. He is not on the injury report.',
+                  'Against it: his carries fell to 2 in Week 10, his reps were managed in practice over a back issue earlier this month, and Travis Etienne shares the backfield (NBC Sports). Rain is likely at Soldier Field (73%).'],
+        'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 10:57 PM CT', 'u': INJ_URL}, {'t': 'NBC Sports, Alvin Kamara player news', 'u': 'https://www.nbcsports.com/nfl/alvin-kamara/5460/news'}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
     ('TB @ DET', 'Emeka Egbuka under 40 receiving yards (No)'): {
         'notes': ['Under 40 in 4 of 7 games; the books’ line is 45.5–46.5, so this is a close call priced near the market.',
                   'Against it: with Mike Evans gone and Jalen McMillan on IR he is the main target (16 targets in Week 6).',
@@ -272,6 +272,11 @@ RESEARCH = {   # Week 11 news checks (Tue Nov 17 ~6:40 AM CT). Searches turned u
         'notes': ['He stayed under 30 in 5 of 8 games (62%), above the 51% this price needs; he is not on the injury report.',
                   'Against it: he drew a season-high 8 targets in Week 9 (25 yards), and Baker Mayfield is set to play (FantasyPros, Sat Nov 21).'],
         'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 10:57 PM CT', 'u': INJ_URL}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
+    # Sun Nov 22 ~10:20 AM CT: research pass on the lines new to the final draft
+    ('TB @ DET', 'Emeka Egbuka under 50 receiving yards (No)'): {
+        'notes': ['Under 50 in 5 of 7 games he played (71%), above the 56% this price needs. Chris Godwin is back (3–8 targets since Week 6) and Cade Otton drew 8 targets in Week 9, so the targets are spread out. Egbuka is not on the injury report.',
+                  'Against it: he drew 16 targets in Week 6, and Tampa Bay is a 5.5-point underdog, so it may throw more than usual. Baker Mayfield is set to play (FantasyPros, Sat Nov 21).'],
+        'src': [{'t': 'ESPN NFL injuries, Sat Nov 21 10:57 PM CT', 'u': INJ_URL}, {'t': 'FantasyPros, Baker Mayfield (foot) to play Sunday barring setback (Nov 21, 2026)', 'u': 'https://www.fantasypros.com/nfl/news/621671/baker-mayfield-foot-to-play-sunday-barring-setback.php'}, {'t': 'nflverse player stats, 2026 Weeks 1–10', 'u': 'https://github.com/nflverse/nflverse-data/releases/tag/stats_player'}]},
 }
 # Sat Nov 21 night: research that holds for every rung of a player's side (keyed by game, player, side), used when no line-level entry matches
 RESEARCH_PLAYER = {
