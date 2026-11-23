@@ -10,6 +10,12 @@ import numpy as np, pandas as pd
 W = '/home/claude/wedger/'
 sys.path.insert(0, W + 'lens'); import core, v6, blocks
 sys.path.insert(0, W + 'final11'); import brain_layer as BR
+# pick rules: v1 (edge over the price, Weeks 7-11, the default here) or v2 (chance first, brain/rules.py, from Week 12).
+# WEDGE_RULES=v2 WEDGE_OUT=<folder/> runs Week 11's board under v2 without touching the posted card (bt/w11_likely/build/).
+RULES = os.environ.get('WEDGE_RULES', 'v1'); V2 = RULES == 'v2'
+OUTD = os.environ.get('WEDGE_OUT', W + 'final11/')
+if V2: sys.path.insert(0, W + 'brain'); import rules as RV
+BACKUP = getattr(BR, 'BACKUP', {})
 T, ST = v6.tables(11)
 KP = json.load(open(W + 'rh/kalshi_props_w11.json')); AT = KP['at']
 CON = json.load(open(W + 'rh/rh_w11_consensus.json'))['consensus']
@@ -123,13 +129,20 @@ for (code, name, stat), rungs, early in [(k_, v_, False) for k_, v_ in LAD.items
     L = logs(pid, stat)
     for x in rows:
         x['chk'] = BR.run_checks(game, pid, team, stat, x['k'], x['side'], em)
-        x['call'], x['note'] = BR.decide(x)
+        if V2:   # the quarterback row becomes information: a backup starter is a research factor, not an exclusion
+            x['chk']['QB'] = {'pass': True, 'note': x['chk']['QB']['note'], 'info': True}
+            x['call'], x['note'] = RV.decide(x, stat, BACKUP.get(team), stt)
+        else: x['call'], x['note'] = BR.decide(x)
         hits = [v for _, v, _ in L if (v >= x['k'] if x['side'] == 'Yes' else v < x['k'])]; x['n_hit'], x['n'] = len(hits), len(L)
     # within a tier, an over that clears is preferred to an under that clears (card mix: about one under per three overs)
     fin = sorted([x for x in rows if x['call'] == 'Final line'], key=lambda x: (x['side'] != 'Yes', -x['edge_lo'], -x['edge_mid']))
     lea = sorted([x for x in rows if x['call'] == 'Conditional lean'], key=lambda x: (x['side'] != 'Yes', -x['edge_mid'], -x['edge_lo']))
     pick = (fin or lea or [None])[0]
     close = sorted(rows, key=lambda x: -x['edge_mid'])[0]
+    if V2:   # chance first: his likeliest final, else his likeliest lean
+        fin = sorted([x for x in rows if x['call'] == 'Final line'], key=RV.key, reverse=True)
+        lea = sorted([x for x in rows if x['call'] == 'Conditional lean'], key=RV.key, reverse=True)
+        pick = (fin or lea or [None])[0]; close = RV.closest(rows)
     res[game].append({'name': name, 'team': team, 'opp': opp, 'pid': pid, 'stat': stat, 'status': stt, 'rows': rows, 'pick': pick, 'close': close, 'logs': L,
                       'early': early, 'books': BL.META.get((code, name, stat), {}).get('det') if early else None})
 # --- write-ups
@@ -187,13 +200,14 @@ def revisions(game, plays, cand):
         if same:
             out.append({'line': p['line'], 'was': p['decision'], 'now': same[0]['decision'], 'v': 'Replace', 'why': f"Now {same[0]['line']} at {same[0]['price']}¢: the price moved along his ladder."}); continue
         why = ''
-        if not BR.QB.get(game, (True,))[0]: why = 'Game left off: a backup quarterback starts.'
+        if not BR.QB.get(game, (True,))[0] and not V2: why = 'Game left off: a backup quarterback starts.'
         else:
             for o in cand:
                 if o['name'] != p['player']: continue
                 for y in o['rows']:
                     if f"{o['name']} {thr(y, o['stat'])} ({y['side']})" == p['line']:
                         why = y['note'] or (f"Price moved: needs {y['be']}%, ours {y['lo']:.0f}–{y['hi']:.0f}%." if y['edge_mid'] < 0.5 else 'Same read as a line already on the card.')
+                        if V2: why = y['note'] or (RV.passed_move(y) if y['call'] == 'Pass' else 'Same player or game limit: another line took the slot.')
                 if not why: why = 'That rung is no longer listed or tradable.'
             if not why: why = 'He is no longer on the board (ruled out or no ladder).'
         out.append({'line': p['line'], 'was': p['decision'], 'now': 'Pass', 'v': 'Pass', 'why': why})
@@ -252,6 +266,11 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
             alt = sorted([y for y in o['rows'] if (y['k'], y['side']) != (x['k'], x['side']) and y['call'] != 'Pass'], key=lambda y: -y['edge_mid'])
             vs = (f"Beat {thr(alt[0], o['stat'])} ({alt[0]['side']} {alt[0]['ask']}¢, needs {alt[0]['be']}%, ours {alt[0]['lo']:.0f}–{alt[0]['hi']:.0f}%): "
                   f"{'this one clears by more' if x['edge_mid'] >= alt[0]['edge_mid'] else 'this one is likelier'}.") if alt else ''
+            if V2:
+                cond = RV.cond(x, x['call'], x['note'])
+                oth = [y for y in o['rows'] if (y['k'], y['side']) != (x['k'], x['side'])]; ins = [y for y in oth if y['ask'] <= RV.CAP]
+                alt = sorted([y for y in ins if y['call'] != 'Pass'] or ins or oth, key=RV.key, reverse=True)
+                vs = RV.vs(x, alt[0] if alt else None, thr(x, o['stat']), thr(alt[0], o['stat']) if alt else '')
             pts = round(sum(l['pts'] for l in lg_), 1)
             pl_ = {'decision': x['call'], 'player': o['name'], 'line': f"{o['name']} {thr(x, o['stat'])} ({x['side']})", 'thr': thr(x, o['stat']), 'side': x['side'],
                           'price': x['ask'], 'payout': x['pays'], 'be': x['be'], 'mkt': x['mkt'], 'est': [round(x['lo']), round(x['hi'])], 'lo': x['lo'], 'mid': x['mid'], 'hi': x['hi'],
@@ -265,11 +284,16 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
                           'change': BR.change(x, o, cond), '_stat': o['stat'], '_team': o['team'], '_qb': T.pos.get(o['pid'], '') == 'QB',
                           'ladder': [{'t': thr(y, o['stat'], True), 'side': y['side'], 'ask': y['ask'], 'pays': y['pays'], 'be': y['be'], 'mkt': y['mkt'], 'lo': y['lo'], 'mid': y['mid'], 'hi': y['hi'],
                                       'hits': f"{y['n_hit']}/{y['n']}", 'call': y['call'], 'tag': 'card' if y is x else ''} for y in sorted(o['rows'], key=lambda y: (y['side'], y['k']))]}
+            if V2:   # chance-first extras: the separate price read, alternatives by chance, the QB row as information
+                pl_['value'] = RV.value(x); pl_['alts'] = RV.alts(x, o, res[game], thr)
+                for ck in pl_['checks']:
+                    if ck['k'] == BR.LBL['QB']: ck['info'] = True
             if o['early']:
                 bk_ = o['books'] or {}; cap_ = int(math.floor(x['lo'] - FEE - 0.5))
                 pl_.update({'early': True, 'platform': 'Not on Kalshi yet: expected price from the sportsbooks', 'books': bk_,
                             'cond': (f"Only if {o['name']} plays ({o['status'].lower()}). " if o['status'] == 'Questionable' else '') +
                                     (f"Final if Kalshi lists it at {cap_}¢ or less." if x['call'] == 'Final line' else f"A lean; final if Kalshi lists it at {cap_}¢ or less.")})
+                if V2: pl_['cond'] = (f"Final if Kalshi lists it at {RV.CAP}¢ or less." if x['call'] == 'Final line' else f"A lean while it is not on Kalshi. {x['note']}".strip())
             PL.append(pl_)
             CS.append({'game': game, 'decision': x['call'], 'line': pl_['line'], 'side': x['side'], 'price': x['ask'], 'payout': x['pays'], 'breakeven': x['be'], 'market_mid': x['mkt'],
                         'our_lo': x['lo'], 'our_mid': x['mid'], 'our_hi': x['hi'], 'edge_lo': x['edge_lo'], 'edge_mid': x['edge_mid'], 'evidence_pts': pts, 'shift': pl_['shift'],
@@ -278,8 +302,10 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
             y = o['close']; lg_ = ledger(o, y)
             nt = y.get('note') or ''
             mv = nt if nt else f"A price of {int(math.floor(y['mid'] - FEE - 0.5))}¢ or less on {thr(y, o['stat'])} ({y['side']}) makes it a lean."
+            if V2: mv = (nt + ' ' if nt else '') + RV.passed_move(y)
             PS.append({'name': f"{o['name']} {WORD[o['stat']]}", 'why': f"Closest rung: {thr(y, o['stat'])} ({y['side']} {y['ask']}¢, needs {y['be']}%, ours {y['lo']:.0f}–{y['hi']:.0f}%).",
                            'move': mv, 'thesis': True, 'lens': lg_})
+            if V2: PS[-1]['kind'] = RV.kind(y)
             CS.append({'game': game, 'decision': 'Pass', 'line': f"{o['name']} {thr(y, o['stat'])} ({y['side']})", 'side': y['side'], 'price': y['ask'], 'payout': y['pays'], 'breakeven': y['be'],
                         'market_mid': y['mkt'], 'our_lo': y['lo'], 'our_mid': y['mid'], 'our_hi': y['hi'], 'edge_lo': y['edge_lo'], 'edge_mid': y['edge_mid'], 'evidence_pts': round(sum(l['pts'] for l in lg_), 1),
                         'shift': '', 'condition': mv, 'ticker': y['tick'], 'checked': AT, 'result': '', 'grade_read': '', 'grade_price': ''})
@@ -292,25 +318,34 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
             for row in CSV:
                 if row['line'] == p['line'] and row['game'] == game: row['decision'] = rs['decision']; row['condition'] = rs['why']
     for p in [p for p in plays if p['decision'] == 'Pass']:
-        passed.insert(0, {'name': p['line'], 'why': p['cond'], 'move': 'Re-check if the news changes.', 'thesis': True, 'lens': p['lens']}); plays.remove(p)
+        passed.insert(0, {'name': p['line'], 'why': p['cond'], 'move': 'Re-check if the news changes.', 'thesis': True, 'lens': p['lens'], **({'kind': 'research'} if V2 else {})}); plays.remove(p)
     plays.sort(key=lambda p: (p['decision'] != 'Final line', p['side'] != 'Yes', -(p['edge_lo'] if p['decision'] == 'Final line' else p['edge_mid'])))
     # one line per player, four per game: the rest go to the passed list so one game's read isn't stacked
     seen, keep, cut = set(), [], []
     for p in plays:
         if p['player'] in seen or len(keep) >= 4: cut.append(p); continue
         seen.add(p['player']); keep.append(p)
+    if V2:   # same limit, best chance first, no over/under preference
+        keep, cut = RV.card(plays)
+        for p in cut:
+            passed.insert(0, {'name': p['line'], 'why': f"Also makes the card’s bar ({p['price']}¢, needs {p['be']}%, ours {p['est'][0]}–{p['est'][1]}%), but it would be a second line on {p['player']} or a fifth in this game.",
+                              'move': 'Left off by the card limit: one line per player, four per game.', 'thesis': True, 'lens': p['lens'], 'kind': 'limit'})
+            for row in CSV:
+                if row['line'] == p['line'] and row['game'] == game: row['decision'] = 'Pass'; row['condition'] = 'Card limit: one line per player, four per game'
+        cut = []
     for p in cut:
         passed.insert(0, {'name': p['line'], 'why': f"Also clears at our middle ({p['price']}¢, needs {p['be']}%, ours {p['est'][0]}–{p['est'][1]}%), but it rides the same read as a line already on the card.",
                           'move': 'Left off to avoid stacking one game’s read.', 'thesis': True, 'lens': p['lens']})
         for row in CSV:
             if row['line'] == p['line'] and row['game'] == game: row['decision'] = 'Pass'; row['condition'] = 'Same read as a line already on the card'
     plays = keep
-    passed = passed[:8]
+    passed = RV.order_passed(passed) if V2 else passed[:8]
     for p in eplays:
         rs = BR.RESEARCH.get((game, p['line'])) or getattr(BR, 'RESEARCH_PLAYER', {}).get((game, p['player'], p['side']))
         if rs and rs.get('decision') and rs['decision'] != p['decision']: p['decision'] = rs['decision']; p['cond'] = rs['why']
     eplays = [p for p in eplays if p['decision'] != 'Pass']
     eplays.sort(key=lambda p: (p['decision'] != 'Final line', p['side'] != 'Yes', -(p['edge_lo'] if p['decision'] == 'Final line' else p['edge_mid'])))
+    if V2: eplays.sort(key=lambda p: (p['decision'] != 'Final line', -p['lo'], -p['mid']))
     seen = {p['player'] for p in plays}; ekeep = []
     for p in eplays:
         if p['player'] in seen or len(ekeep) >= 4:
@@ -343,13 +378,14 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
     card['lens'] = blocks.lens_block(a, h, 11, (f"The lens put {len(plays)} line{'s' if len(plays) != 1 else ''} on the card here: " + '; '.join(f"{p['line']}: {p['decision'].lower()}" for p in plays) + '.') if plays else
                                      ('Nothing clears break-even after fees yet.' if nprops else 'Player ladders for this game open later in the week; the lens tables are ready for them.'))
     qok, qt = BR.QB.get(game, (True, ''))
+    if V2: qok = True   # v2: a backup starter is a research factor; the game stays on the board
     card['brain'] = {'qb': {'ok': qok, 't': qt}, 'interaction': BR.interaction(plays) if plays else [], 'coverage': coverage(game, nprops), 'revisions': revisions(game, plays, res.get(game, []))}
     card['early'] = eplays; card['early_n'] = neprops; card['early_passed'] = [{k: v for k, v in x_.items() if k != 'lens'} for x_ in epassed[:6]]
     CARDS.append(card)
 MIX = {}
 LIVE = [c for c in CARDS if c.get('status') != 'Final' and c['game'] not in LOCKED]
 LOCKC = [c for c in CARDS if c['game'] in LOCKED]
-for tier, ek in (('Final line', 'edge_lo'), ('Conditional lean', 'edge_mid')):
+for tier, ek in (() if V2 else (('Final line', 'edge_lo'), ('Conditional lean', 'edge_mid'))):   # v2: no under/over mix
     P_ = [(c, p) for c in LIVE for p in c['plays'] if p['decision'] == tier]
     lo_ = sum(p['side'] == 'Yes' for c in LOCKC for p in c['plays'] if p['decision'] == tier); lu_ = sum(p['side'] == 'No' for c in LOCKC for p in c['plays'] if p['decision'] == tier)
     O_ = [x for x in P_ if x[1]['side'] == 'Yes']; U_ = sorted([x for x in P_ if x[1]['side'] == 'No'], key=lambda x: -x[1][ek])
@@ -362,7 +398,7 @@ for tier, ek in (('Final line', 'edge_lo'), ('Conditional lean', 'edge_mid')):
         for row in CSV:
             if row['line'] == p['line'] and row['game'] == c['game']: row['decision'] = 'Pass'; row['condition'] = 'Left off for the card mix (about one under per three overs); still clears on its own numbers'
 # early (book-priced) lines follow the same mix: about one under for every three overs
-for tier, ek in (('Final line', 'edge_lo'), ('Conditional lean', 'edge_mid')):
+for tier, ek in (() if V2 else (('Final line', 'edge_lo'), ('Conditional lean', 'edge_mid'))):   # v2: no under/over mix
     P_ = [(c, p) for c in LIVE for p in c.get('early', []) if p['decision'] == tier]
     O_ = [x for x in P_ if x[1]['side'] == 'Yes']; U_ = sorted([x for x in P_ if x[1]['side'] == 'No'], key=lambda x: -x[1][ek])
     allow = max(1, math.ceil(len(O_) / BR.RATIO)) if U_ else 0
@@ -375,6 +411,7 @@ for c in LIVE:
     pl = c['plays']
     c['likely'] = [f"{p['line']} ({p['price']}¢): ours {p['mid']:.0f}%, needs {p['be']}%" for p in sorted(pl, key=lambda p: -p['mid'])[:3]]
     c['value'] = [f"{p['line']} at {p['price']}¢ (needs {p['be']}%, ours {p['est'][0]}–{p['est'][1]}%): {p['decision'].lower()}." for p in pl[:3]] or ['Nothing clears break-even after fees yet.']
+    if V2: c['value'] = [f"{p['line']} at {p['price']}¢: {p['value']['t']}" for p in pl[:3]] or [f"Nothing reaches a {RV.BAR}% chance at {RV.CAP}¢ or less yet."]
     if pl: c['lens']['verdict'] = f"The lens put {len(pl)} line{'s' if len(pl) != 1 else ''} on the card here: " + '; '.join(f"{p['line']}: {p['decision'].lower()}" for p in pl) + '.'
     c['brain']['interaction'] = BR.interaction(pl) if pl else []
     c['brain']['revisions'] = revisions(c['game'], pl, res.get(c['game'], []))
@@ -409,6 +446,8 @@ F = {'at': AT, 'books_at': AT, 'week': 11, 'cards': CARDS, 'model': 'v6', 'backt
 # Sun Nov 22: the final draft of the Week 11 card (W11_DRAFT='Final draft', W11_RECHECK_AT=<UTC time the card lines' Kalshi prices were re-checked>)
 if os.environ.get('W11_DRAFT'): F['draft'] = os.environ['W11_DRAFT']
 if os.environ.get('W11_RECHECK_AT'): F['recheck_at'] = os.environ['W11_RECHECK_AT']
+F['rules'] = RULES
+if V2: F.update({'rules_since': RV.SINCE, 'cap': RV.CAP, 'bar': RV.BAR, 'rules_text': RV.TEXT})
 BRAIN = {'at': AT, 'plays': {}, 'games': {}}
 for c in CARDS:
     if c.get('status') == 'Final':
@@ -431,11 +470,11 @@ BRAIN['rank'] = [{'game': c['game'], 'line': p['line'], 'decision': p['decision'
                  for c in CARDS if c.get('status') != 'Final' for p in c['plays']]
 BRAIN['rank'].sort(key=lambda r: -r['mid'])
 BRAIN['bt'] = BT; BRAIN['mix'] = MIX
-json.dump(BRAIN, open(W + 'final11/brain_w11.json', 'w'), ensure_ascii=False, default=float, separators=(',', ':'))
-json.dump(F, open(W + 'final11/final_w11.json', 'w'), ensure_ascii=False, default=float, separators=(',', ':'))
-with open(W + 'final11/final_w11.csv', 'w', newline='') as f:
+json.dump(BRAIN, open(OUTD + 'brain_w11.json', 'w'), ensure_ascii=False, default=float, separators=(',', ':'))
+json.dump(F, open(OUTD + 'final_w11.json', 'w'), ensure_ascii=False, default=float, separators=(',', ':'))
+with open(OUTD + 'final_w11.csv', 'w', newline='') as f:
     w = csv.DictWriter(f, fieldnames=list(CSV[0].keys())); w.writeheader(); w.writerows(CSV)
-with open(W + 'final11/early_w11.csv', 'w', newline='') as f:
+with open(OUTD + 'early_w11.csv', 'w', newline='') as f:
     w = csv.DictWriter(f, fieldnames=list(ECSV[0].keys())); w.writeheader(); w.writerows(ECSV)
 print('final lines', nF, 'leans', nL, 'csv rows', len(CSV), '| early (book-priced):', F['early']['final'], 'final', F['early']['lean'], 'leans from', F['early']['assessed'], 'player markets')
 for c in CARDS:

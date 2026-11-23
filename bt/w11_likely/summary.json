@@ -1,0 +1,142 @@
+{
+ "as posted: edge first (finals + leans, Sunday games)": {
+  "n": 64,
+  "won": 42,
+  "lost": 22,
+  "hit": 65.6,
+  "profit_c": 309,
+  "avg_price": 60.8,
+  "avg_ours_lo": 61.8,
+  "avg_ours_mid": 64.8
+ },
+ "chance first, price cap 96c, top 18": {
+  "n": 18,
+  "won": 17,
+  "lost": 1,
+  "hit": 94.4,
+  "profit_c": -23,
+  "avg_price": 95.7,
+  "avg_ours_lo": 94.5,
+  "avg_ours_mid": 95.0
+ },
+ "chance first, price cap 90c, top 18": {
+  "n": 18,
+  "won": 16,
+  "lost": 2,
+  "hit": 88.9,
+  "profit_c": -9,
+  "avg_price": 89.4,
+  "avg_ours_lo": 88.6,
+  "avg_ours_mid": 89.4
+ },
+ "chance first, price cap 85c, top 18": {
+  "n": 18,
+  "won": 16,
+  "lost": 2,
+  "hit": 88.9,
+  "profit_c": 77,
+  "avg_price": 84.6,
+  "avg_ours_lo": 84.1,
+  "avg_ours_mid": 85.2
+ },
+ "chance first, price cap 80c, top 18": {
+  "n": 18,
+  "won": 12,
+  "lost": 6,
+  "hit": 66.7,
+  "profit_c": -220,
+  "avg_price": 78.9,
+  "avg_ours_lo": 78.4,
+  "avg_ours_mid": 79.8
+ },
+ "chance first, price cap 75c, top 18": {
+  "n": 18,
+  "won": 15,
+  "lost": 3,
+  "hit": 83.3,
+  "profit_c": 168,
+  "avg_price": 74.0,
+  "avg_ours_lo": 73.8,
+  "avg_ours_mid": 75.3
+ },
+ "chance first, price cap 70c, top 18": {
+  "n": 18,
+  "won": 11,
+  "lost": 7,
+  "hit": 61.1,
+  "profit_c": -138,
+  "avg_price": 68.8,
+  "avg_ours_lo": 68.4,
+  "avg_ours_mid": 69.8
+ },
+ "chance first, only where ours >= needs, top 18": {
+  "n": 18,
+  "won": 13,
+  "lost": 5,
+  "hit": 72.2,
+  "profit_c": -40,
+  "avg_price": 74.4,
+  "avg_ours_lo": 75.2,
+  "avg_ours_mid": 77.3
+ },
+ "chance first, only where ours >= needs, all that qualify": {
+  "n": 20,
+  "won": 14,
+  "lost": 6,
+  "hit": 70.0,
+  "profit_c": -31,
+  "avg_price": 71.6,
+  "avg_ours_lo": 72.2,
+  "avg_ours_mid": 74.3
+ },
+ "calibration (lines passing the checks, by our number)": {
+  "(0, 50]": {
+   "n": 133.0,
+   "won": 64.0,
+   "ours": 38.2,
+   "price": 40.5,
+   "pl": 1017.0,
+   "hit": 48.1
+  },
+  "(50, 60]": {
+   "n": 88.0,
+   "won": 51.0,
+   "ours": 55.2,
+   "price": 57.0,
+   "pl": 83.0,
+   "hit": 58.0
+  },
+  "(60, 70]": {
+   "n": 138.0,
+   "won": 88.0,
+   "ours": 65.2,
+   "price": 66.5,
+   "pl": -374.0,
+   "hit": 63.8
+  },
+  "(70, 80]": {
+   "n": 160.0,
+   "won": 126.0,
+   "ours": 75.4,
+   "price": 76.8,
+   "pl": 316.0,
+   "hit": 78.8
+  },
+  "(80, 90]": {
+   "n": 246.0,
+   "won": 210.0,
+   "ours": 85.4,
+   "price": 86.6,
+   "pl": -294.0,
+   "hit": 85.4
+  },
+  "(90, 100]": {
+   "n": 172.0,
+   "won": 161.0,
+   "ours": 92.7,
+   "price": 93.8,
+   "pl": -36.0,
+   "hit": 93.6
+  }
+ }
+}

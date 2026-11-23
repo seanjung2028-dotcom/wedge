@@ -175,7 +175,7 @@ def read_js_obj(path, name):
     return json.loads(m.group(1))
 
 def public_card(F):
-    keep = {k: F.get(k) for k in ('at', 'books_at', 'week', 'model', 'backtest', 'graded') if k in F}
+    keep = {k: F.get(k) for k in ('at', 'books_at', 'week', 'model', 'backtest', 'graded', 'rules', 'rules_since', 'cap', 'bar', 'rules_text') if k in F}   # rules: the method in use (v1 edge / v2 chance), public
     keep.update({k: None for k in ('lens_how', 'lens_check', 'lens_check_title', 'lens_check_head', 'lens_thru')})
     keep['public'] = True
     keep['cards'] = [{'game': c['game'], 'kick': c.get('kick', ''), 'venue': c.get('venue', ''), 'status': c.get('status', ''), 'score': c.get('score', ''),

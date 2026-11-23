@@ -101,8 +101,17 @@ Two pages under NFL > Live. Both are open to every visitor; the server decides w
     - the side clearing in the likely game script and in close games
     - for overs, not leaning on fourth-quarter work
   - `bt/brain_bt.py` backtests the checks on Weeks 7–9.
-  - The method itself is `brain/OG_Brain_Master_Prompt_Pre_YouTube_2026-11-13.md`. Keep it private.
-- **Card mix:** about one under for every three overs, set by `RATIO` in `final10/brain_layer.py`. Unders that still clear but are left off for the mix are marked as passes with that reason.
+  - The method itself is `brain/Master_Prompt_2026-11-23.txt` (from Week 12). The Nov 13 version, `brain/OG_Brain_Master_Prompt_Pre_YouTube_2026-11-13.md`, stays untouched as the restore baseline. Keep both private.
+- **Pick rules, Weeks 7–11 (v1):** a final line's low end beats the price after fees; a lean's middle does. Games with a backup quarterback were left off. Card mix: about one under for every three overs (`RATIO` in `final10/brain_layer.py`).
+- **Pick rules from Week 12 (v2, `brain/rules.py`), set by the owner Mon Nov 23 under the revised master prompt:**
+  - Lines are ranked by the chance the exact line hits. Price and value come second: each line shows what the price needs against our number, but that never moves it.
+  - Final line: the low end of our range is 70%+, it passes the role, game-script and late-work checks and the hand research, and it costs 75¢ or less.
+  - Lean: our middle is 70%+ but the low end is under 70%, or one named condition is open (a questionable tag, or a backup quarterback's receiving lines until he has started 2 of his team's last 3 games).
+  - Backup-quarterback games are no longer left off. There is no under/over mix. One line per player and four per game, as before.
+  - The 75¢ cap is the owner's setting. The 70% bar is Wedge's own conversion, since the master prompt has no fixed numbers.
+  - `finalN/build.py` runs v2 when `WEDGE_RULES=v2`. `final11` defaults to v1 so Week 11 stays as posted. When `final12/` is copied from `final11/`, make v2 its default and give its `brain_layer.py` a `BACKUP` table (team → starter and his starts in the last 3).
+  - Page copy for v2 is `v2/r21_rules.py`. It shows only when the card's data carries `rules: 'v2'`.
+  - `bt/w11_likely/` holds the Week 11 test: the chance-first backtest, the v2 shadow card (`build/`) and its grading.
 
 ## Layout
 

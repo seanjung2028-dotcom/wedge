@@ -1,0 +1,89 @@
+{
+ "rules": "v2 (brain/rules.py)",
+ "board": "Sun Nov 22, 10:32 AM CT",
+ "finals": {
+  "n": 42,
+  "graded": 38,
+  "won": 32,
+  "lost": 6,
+  "profit_c": 406,
+  "avg_price": 73.6,
+  "avg_ours_mid": 75.2
+ },
+ "leans": {
+  "n": 4,
+  "graded": 4,
+  "won": 4,
+  "lost": 0,
+  "profit_c": 107,
+  "avg_price": 73.2,
+  "avg_ours_mid": 76.5
+ },
+ "card": {
+  "n": 46,
+  "graded": 42,
+  "won": 36,
+  "lost": 6,
+  "profit_c": 513,
+  "avg_price": 73.5,
+  "avg_ours_mid": 75.3
+ },
+ "per_game": {
+  "ARI @ KC": 4,
+  "BAL @ CAR": 4,
+  "CIN @ WSH": 4,
+  "JAX @ NYG": 4,
+  "LV @ DEN": 2,
+  "MIA @ BUF": 4,
+  "MIN @ SF": 4,
+  "NO @ CHI": 4,
+  "NYJ @ LAC": 4,
+  "PIT @ PHI": 4,
+  "TB @ DET": 4,
+  "TEN @ DAL": 4
+ },
+ "unders_on_card": 30,
+ "value_reads_on_card": {
+  "over": 25,
+  "under": 17,
+  "fair": 4
+ },
+ "passed": {
+  "Card limit (one per player, four per game)": {
+   "n": 80,
+   "graded": 72,
+   "won": 54,
+   "lost": 18,
+   "profit_c": 189,
+   "avg_price": 72.3,
+   "avg_ours_mid": 72.7
+  },
+  "Failed a research check": {
+   "n": 145,
+   "graded": 136,
+   "won": 98,
+   "lost": 38,
+   "profit_c": -250,
+   "avg_price": 73.9,
+   "avg_ours_mid": 74.8
+  },
+  "Priced above 75\u00a2": {
+   "n": 115,
+   "graded": 104,
+   "won": 84,
+   "lost": 20,
+   "profit_c": 11,
+   "avg_price": 80.6,
+   "avg_ours_mid": 79.4
+  },
+  "Research pass": {
+   "n": 2,
+   "graded": 2,
+   "won": 2,
+   "lost": 0,
+   "profit_c": 58,
+   "avg_price": 71.0,
+   "avg_ours_mid": 75.7
+  }
+ }
+}

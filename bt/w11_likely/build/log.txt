@@ -1,0 +1,69 @@
+mix {}
+final lines 41 leans 8 csv rows 420 | early (book-priced): 2 final 3 leans from 23 player markets
+IND @ HOU  plays 3 passed 6
+    Final Xavier Hutchinson 40+ receiving yards (Yes) 45 needs 47 ours 47.9 50.2 52.3 Lean
+    Condi Nico Collins 5+ receptions (Yes) 56 needs 58 ours 56.9 60.0 62.8 Solid
+    Condi C.J. Stroud 10+ rushing yards (Yes) 55 needs 57 ours 53.9 58.6 61.4 Solid
+MIA @ BUF  plays 4 passed 6
+    Condi Kevin Coleman Jr. under 15 receiving yards (No) 75 needs 77 ours 75.7 78.0 79.7 High
+    Condi Malik Washington under 50 receiving yards (No) 74 needs 76 ours 74.4 76.6 78.4 High
+    Condi Chris Bell under 30 receiving yards (No) 74 needs 76 ours 74.0 76.3 78.2 High
+    Condi Ollie Gordon II under 25 receiving yards (No) 70 needs 72 ours 71.5 75.1 77.8 High
+BAL @ CAR  plays 4 passed 6
+    Final Tetairoa McMillan 40+ receiving yards (Yes) 75 needs 77 ours 74.4 75.7 76.6 High
+    Final Chuba Hubbard under 100 rushing yards (No) 74 needs 76 ours 72.8 75.6 77.0 High
+    Final Bryce Young under 15 rushing yards (No) 72 needs 74 ours 71.6 74.5 76.0 High
+    Condi Ja'Kobi Lane under 60 receiving yards (No) 75 needs 77 ours 75.3 76.1 76.7 High
+    EARLY Condi Darren Waller 2+ receptions (Yes) 72 needs 74 ours 70.5 72.7 74.5 | books 2.5 6
+NO @ CHI   plays 4 passed 6
+    Final Rome Odunze 25+ receiving yards (Yes) 74 needs 76 ours 74.6 75.3 75.9 High
+    Final Colston Loveland 30+ receiving yards (Yes) 75 needs 77 ours 74.0 75.4 76.6 High
+    Final Sam Roush under 2 receptions (No) 75 needs 77 ours 74.0 75.2 76.6 High
+    Final Chris Olave 4+ receptions (Yes) 75 needs 77 ours 73.9 76.6 78.6 High
+TEN @ DAL  plays 4 passed 6
+    Final Gunnar Helm 2+ receptions (Yes) 75 needs 77 ours 76.6 77.6 78.8 High
+    Final Calvin Ridley under 15 receiving yards (No) 75 needs 77 ours 71.1 71.6 72.3 High
+    Final KaVontae Turpin under 20 receiving yards (No) 75 needs 77 ours 70.9 75.4 78.6 High
+    Final CeeDee Lamb 6+ receptions (Yes) 73 needs 75 ours 70.4 73.8 76.9 High
+    EARLY Condi Carnell Tate under 100 receiving yards (No) 72 needs 74 ours 69.6 70.1 70.9 | books 65.8 7
+TB @ DET   plays 4 passed 6
+    Final Emeka Egbuka under 70 receiving yards (No) 73 needs 75 ours 75.9 78.2 79.9 High
+    Final Chris Godwin Jr. under 50 receiving yards (No) 73 needs 75 ours 74.5 76.5 78.0 High
+    Final Isaac TeSlaa under 30 receiving yards (No) 74 needs 76 ours 73.5 74.7 75.4 High
+    Final Amon-Ra St. Brown under 110 receiving yards (No) 73 needs 75 ours 72.6 73.4 74.4 High
+    EARLY Condi Baker Mayfield under 10 rushing yards (No) 65 needs 67 ours 66.3 70.2 73.8 | books 7.5 8
+ARI @ KC   plays 4 passed 6
+    Final Bam Knight under 40 rushing yards (No) 75 needs 77 ours 76.4 78.2 79.7 High
+    Final Emmett Johnson 15+ receiving yards (Yes) 75 needs 77 ours 76.3 77.9 79.3 High
+    Final Jaydn Ott under 25 rushing yards (No) 73 needs 75 ours 72.4 74.0 75.9 High
+    Final Patrick Mahomes under 20 rushing yards (No) 71 needs 73 ours 70.4 72.1 74.1 High
+JAX @ NYG  plays 4 passed 6
+    Final Devin Singletary under 20 rushing yards (No) 74 needs 76 ours 75.5 78.3 81.0 High
+    Final Bhayshul Tuten under 115 rush + rec yards (No) 74 needs 76 ours 75.4 76.4 78.1 High
+    Final Josh Cameron under 25 receiving yards (No) 74 needs 76 ours 73.4 75.1 76.6 High
+    Final Malachi Fields 15+ receiving yards (Yes) 74 needs 76 ours 72.9 74.3 75.5 High
+NYJ @ LAC  plays 4 passed 6
+    Final Braelon Allen 20+ rushing yards (Yes) 74 needs 76 ours 73.7 74.6 75.5 High
+    Final Adonai Mitchell 25+ receiving yards (Yes) 74 needs 76 ours 73.6 74.6 75.3 High
+    Final Tre' Harris under 5 receptions (No) 74 needs 76 ours 71.2 73.6 75.2 High
+    Final Breece Hall under 70 rushing yards (No) 74 needs 76 ours 71.0 72.1 73.0 High
+LV @ DEN   plays 2 passed 6
+    Final Mike Washington Jr. 15+ rushing yards (Yes) 72 needs 74 ours 72.4 73.3 74.0 High
+    Final Evan Engram 10+ receiving yards (Yes) 71 needs 73 ours 70.0 71.5 72.9 High
+    EARLY Final Jack Bech under 25 receiving yards (No) 72 needs 74 ours 72.5 74.6 76.4 | books 17.5 5
+    EARLY Final Jalen Nailor under 30 receiving yards (No) 69 needs 71 ours 71.9 74.5 76.3 | books 19.8 6
+PIT @ PHI  plays 4 passed 6
+    Final Joe Milton III under 50 rushing yards (No) 73 needs 75 ours 73.5 76.6 78.8 High
+    Final Saquon Barkley under 70 rushing yards (No) 70 needs 72 ours 72.2 75.5 77.9 High
+    Final Pat Freiermuth 2+ receptions (Yes) 75 needs 77 ours 72.2 73.7 75.4 High
+    Final Germie Bernard 15+ receiving yards (Yes) 75 needs 77 ours 71.2 73.1 75.2 High
+MIN @ SF   plays 4 passed 6
+    Final George Kittle under 6 receptions (No) 74 needs 76 ours 74.1 78.7 81.6 High
+    Final Deebo Samuel Sr. under 4 receptions (No) 73 needs 75 ours 74.1 78.3 81.8 High
+    Final Jordan Mason under 60 rushing yards (No) 71 needs 73 ours 72.5 74.8 76.3 High
+    Condi Tai Felton under 30 receiving yards (No) 75 needs 77 ours 77.0 79.0 80.6 High
+CIN @ WSH  plays 4 passed 6
+    Final Chase Brown under 40 receiving yards (No) 74 needs 76 ours 77.4 80.7 83.3 High
+    Final Jayden Daniels 25+ rushing yards (Yes) 75 needs 77 ours 77.2 78.4 81.1 High
+    Final Tee Higgins under 100 receiving yards (No) 74 needs 76 ours 73.1 74.9 76.3 High
+    Final Samaje Perine under 15 receiving yards (No) 73 needs 75 ours 72.5 74.0 76.0 High

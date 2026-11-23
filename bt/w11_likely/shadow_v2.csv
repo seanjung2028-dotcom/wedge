@@ -1,0 +1,389 @@
+game,group,cat,line,ask,lo,mid,hi,value_read,why,result,pl_c
+TEN @ DAL,Final line,,Gunnar Helm 2+ receptions (Yes),75,76.6,77.6,78.8,under,,Won,25.0
+TEN @ DAL,Final line,,Calvin Ridley under 15 receiving yards (No),75,71.1,71.6,72.3,over,,Lost,-75.0
+TEN @ DAL,Final line,,KaVontae Turpin under 20 receiving yards (No),75,70.9,75.4,78.6,over,,Won,25.0
+TEN @ DAL,Final line,,CeeDee Lamb 6+ receptions (Yes),73,70.4,73.8,76.9,over,,Won,27.0
+NYJ @ LAC,Final line,,Braelon Allen 20+ rushing yards (Yes),74,73.7,74.6,75.5,over,,Won,26.0
+NYJ @ LAC,Final line,,Adonai Mitchell 25+ receiving yards (Yes),74,73.6,74.6,75.3,over,,Won,26.0
+NYJ @ LAC,Final line,,Tre' Harris under 5 receptions (No),74,71.2,73.6,75.2,over,,Won,26.0
+NYJ @ LAC,Final line,,Breece Hall under 70 rushing yards (No),74,71.0,72.1,73.0,over,,Lost,-74.0
+CIN @ WSH,Final line,,Chase Brown under 40 receiving yards (No),74,77.4,80.7,83.3,under,,Pending,
+CIN @ WSH,Final line,,Jayden Daniels 25+ rushing yards (Yes),75,77.2,78.4,81.1,under,,Pending,
+CIN @ WSH,Final line,,Tee Higgins under 100 receiving yards (No),74,73.1,74.9,76.3,over,,Pending,
+CIN @ WSH,Final line,,Samaje Perine under 15 receiving yards (No),73,72.5,74.0,76.0,over,,Pending,
+MIN @ SF,Final line,,George Kittle under 6 receptions (No),74,74.1,78.7,81.6,under,,Won,26.0
+MIN @ SF,Final line,,Deebo Samuel Sr. under 4 receptions (No),73,74.1,78.3,81.8,under,,Won,27.0
+MIN @ SF,Final line,,Jordan Mason under 60 rushing yards (No),71,72.5,74.8,76.3,under,,Won,29.0
+MIN @ SF,Final line,,Aaron Jones Sr. under 20 receiving yards (No),73,72.3,73.9,75.5,over,,Won,27.0
+TB @ DET,Final line,,Emeka Egbuka under 70 receiving yards (No),73,75.9,78.2,79.9,under,,Won,27.0
+TB @ DET,Final line,,Chris Godwin Jr. under 50 receiving yards (No),73,74.5,76.5,78.0,under,,Won,27.0
+TB @ DET,Final line,,Isaac TeSlaa under 30 receiving yards (No),74,73.5,74.7,75.4,over,,Won,26.0
+TB @ DET,Final line,,Amon-Ra St. Brown under 110 receiving yards (No),73,72.6,73.4,74.4,over,,Won,27.0
+MIA @ BUF,Conditional lean,,Kevin Coleman Jr. under 15 receiving yards (No),75,75.7,78.0,79.7,under,,Won,25.0
+MIA @ BUF,Conditional lean,,Malik Washington under 50 receiving yards (No),74,74.4,76.6,78.4,under,,Won,26.0
+MIA @ BUF,Conditional lean,,Chris Bell under 30 receiving yards (No),74,74.0,76.3,78.2,fair,,Won,26.0
+MIA @ BUF,Conditional lean,,Ollie Gordon II under 25 receiving yards (No),70,71.5,75.1,77.8,under,,Won,30.0
+LV @ DEN,Final line,,Mike Washington Jr. 15+ rushing yards (Yes),72,72.4,73.3,74.0,over,,Won,28.0
+LV @ DEN,Final line,,Evan Engram 10+ receiving yards (Yes),71,70.0,71.5,72.9,over,,Won,29.0
+JAX @ NYG,Final line,,Devin Singletary under 20 rushing yards (No),74,75.5,78.3,81.0,under,,Won,26.0
+JAX @ NYG,Final line,,Bhayshul Tuten under 115 rush + rec yards (No),74,75.4,76.4,78.1,fair,,Won,26.0
+JAX @ NYG,Final line,,Josh Cameron under 25 receiving yards (No),74,73.4,75.1,76.6,over,,Lost,-74.0
+JAX @ NYG,Final line,,Malachi Fields 15+ receiving yards (Yes),74,72.9,74.3,75.5,over,,Won,26.0
+PIT @ PHI,Final line,,Joe Milton III under 50 rushing yards (No),73,73.5,76.6,78.8,under,,Won,27.0
+PIT @ PHI,Final line,,Saquon Barkley under 70 rushing yards (No),70,72.2,75.5,77.9,under,,Lost,-70.0
+PIT @ PHI,Final line,,Pat Freiermuth 2+ receptions (Yes),75,72.2,73.7,75.4,over,,Won,25.0
+PIT @ PHI,Final line,,Germie Bernard 15+ receiving yards (Yes),75,71.2,73.1,75.2,over,,Won,25.0
+NO @ CHI,Final line,,Rome Odunze 25+ receiving yards (Yes),74,74.6,75.3,75.9,over,,Won,26.0
+NO @ CHI,Final line,,Colston Loveland 30+ receiving yards (Yes),75,74.0,75.4,76.6,over,,Lost,-75.0
+NO @ CHI,Final line,,Sam Roush under 2 receptions (No),75,74.0,75.2,76.6,over,,Won,25.0
+NO @ CHI,Final line,,Chris Olave 4+ receptions (Yes),75,73.9,76.6,78.6,fair,,Won,25.0
+ARI @ KC,Final line,,Bam Knight under 40 rushing yards (No),75,76.4,78.2,79.7,under,,Won,25.0
+ARI @ KC,Final line,,Emmett Johnson 15+ receiving yards (Yes),75,76.3,77.9,79.3,under,,Won,25.0
+ARI @ KC,Final line,,Jaydn Ott under 25 rushing yards (No),73,72.4,74.0,75.9,over,,Won,27.0
+ARI @ KC,Final line,,Patrick Mahomes under 20 rushing yards (No),71,70.4,72.1,74.1,over,,Won,29.0
+BAL @ CAR,Final line,,Tetairoa McMillan 40+ receiving yards (Yes),75,74.4,75.7,76.6,over,,Won,25.0
+BAL @ CAR,Final line,,Chuba Hubbard under 100 rushing yards (No),74,72.8,75.6,77.0,fair,,Lost,-74.0
+BAL @ CAR,Final line,,Bryce Young under 15 rushing yards (No),72,71.6,74.5,76.0,under,,Won,28.0
+BAL @ CAR,Final line,,Tommy Tremble 10+ receiving yards (Yes),70,70.1,71.3,72.2,over,,Won,30.0
+TEN @ DAL,Passed,Priced above 75¢,Calvin Ridley under 2 receptions (No),80,77.9,78.2,78.6,over,"Likely enough (ours 78–79%) but priced 80¢, above the 75¢ cap.",Lost,-80.0
+TEN @ DAL,Passed,Priced above 75¢,Xavier Restrepo under 3 receptions (No),77,74.0,74.4,75.0,over,"Likely enough (ours 74–75%) but priced 77¢, above the 75¢ cap.",Won,23.0
+TEN @ DAL,Passed,Priced above 75¢,KaVontae Turpin under 3 receptions (No),87,84.4,87.3,89.2,over,"Likely enough (ours 84–89%) but priced 87¢, above the 75¢ cap.",Won,13.0
+TEN @ DAL,Passed,Failed a research check,Chimere Dike under 4 receptions (No),76,74.9,75.7,76.4,over,Likely enough (ours 75–76%) but fails the role check.,Lost,-76.0
+TEN @ DAL,Passed,Failed a research check,Daniel Bellinger under 3 receptions (No),80,77.4,77.8,78.4,over,Likely enough (ours 77–78%) but fails the role check.,Won,20.0
+TEN @ DAL,Passed,Failed a research check,Elic Ayomanor under 6 receptions (No),83,82.5,82.9,83.2,over,Likely enough (ours 82–83%) but fails the role check.,Won,17.0
+TEN @ DAL,Passed,Failed a research check,Tony Pollard under 5 receptions (No),72,70.9,71.5,71.9,over,Likely enough (ours 71–72%) but fails the role check.,Won,28.0
+TEN @ DAL,Passed,Priced above 75¢,Ryan Flournoy under 6 receptions (No),83,78.8,81.8,84.5,over,"Likely enough (ours 79–84%) but priced 83¢, above the 75¢ cap.",Won,17.0
+TEN @ DAL,Passed,Priced above 75¢,Javonte Williams under 4 receptions (No),81,79.4,80.1,81.0,over,"Likely enough (ours 79–81%) but priced 81¢, above the 75¢ cap.",Won,19.0
+TEN @ DAL,Passed,Failed a research check,George Pickens 4+ receptions (Yes),78,73.4,76.9,79.9,over,Likely enough (ours 73–80%) but fails the role check.,Won,22.0
+TEN @ DAL,Passed,Failed a research check,Brevyn Spann-Ford under 4 receptions (No),76,75.1,76.1,77.3,over,Likely enough (ours 75–77%) but fails the role check.,Won,24.0
+TEN @ DAL,Passed,Failed a research check,Gunnar Helm 15+ receiving yards (Yes),69,70.2,71.3,72.6,fair,"Likely enough (ours 70–73%) but fails the game-script check, late-work check.",Lost,-69.0
+TEN @ DAL,Passed,Failed a research check,Chimere Dike 10+ receiving yards (Yes),73,70.3,71.4,72.1,over,"Likely enough (ours 70–72%) but fails the game-script check, late-work check.",Won,27.0
+TEN @ DAL,Passed,Failed a research check,Daniel Bellinger under 20 receiving yards (No),74,71.3,72.0,72.6,over,Likely enough (ours 71–73%) but fails the role check.,Won,26.0
+TEN @ DAL,Passed,Failed a research check,Elic Ayomanor 25+ receiving yards (Yes),74,72.0,72.8,73.3,over,"Likely enough (ours 72–73%) but fails the game-script check, late-work check.",Won,26.0
+TEN @ DAL,Passed,Failed a research check,Brevyn Spann-Ford 10+ receiving yards (Yes),73,69.6,71.4,72.9,over,Likely enough (ours 70–73%) but fails the late-work check.,Lost,-73.0
+TEN @ DAL,Passed,Failed a research check,CeeDee Lamb 70+ receiving yards (Yes),72,69.3,72.7,75.8,over,Likely enough (ours 69–76%) but fails the late-work check.,Won,28.0
+TEN @ DAL,Passed,Failed a research check,Tony Pollard 10+ receiving yards (Yes),75,73.3,74.6,75.6,over,"Likely enough (ours 73–76%) but fails the game-script check, late-work check.",Lost,-75.0
+TEN @ DAL,Passed,Failed a research check,Cam Ward 10+ rushing yards (Yes),67,71.4,75.2,78.1,under,Likely enough (ours 71–78%) but fails the game-script check.,Lost,-67.0
+TEN @ DAL,Passed,Priced above 75¢,Dak Prescott under 20 rushing yards (No),82,77.4,79.8,81.3,over,"Likely enough (ours 77–81%) but priced 82¢, above the 75¢ cap.",Won,18.0
+TEN @ DAL,Passed,Failed a research check,Tony Pollard 50+ rushing yards (Yes),74,77.5,80.8,83.3,under,Likely enough (ours 78–83%) but fails the game-script check.,Won,26.0
+TEN @ DAL,Passed,Priced above 75¢,Tony Pollard under 140 rush + rec yards (No),84,74.2,77.0,80.0,over,"Likely enough (ours 74–80%) but priced 84¢, above the 75¢ cap.",Won,16.0
+TEN @ DAL,Passed,Priced above 75¢,Javonte Williams under 125 rush + rec yards (No),77,73.0,75.5,77.3,over,"Likely enough (ours 73–77%) but priced 77¢, above the 75¢ cap.",Won,23.0
+TEN @ DAL,Passed,"Card limit (one per player, four per game)",George Pickens under 100 receiving yards (No),74,69.7,73.4,76.8,over,"Fifth line in the game, or a second line on the player.",Lost,-74.0
+TEN @ DAL,Passed,"Card limit (one per player, four per game)",Xavier Restrepo under 25 receiving yards (No),73,69.5,70.2,71.1,over,"Fifth line in the game, or a second line on the player.",Won,27.0
+TEN @ DAL,Passed,"Card limit (one per player, four per game)",Javonte Williams 60+ rushing yards (Yes),70,68.4,70.4,73.2,over,"Fifth line in the game, or a second line on the player.",Won,30.0
+TEN @ DAL,Passed,"Card limit (one per player, four per game)",Ryan Flournoy under 60 receiving yards (No),73,67.9,71.8,75.5,over,"Fifth line in the game, or a second line on the player.",Won,27.0
+NYJ @ LAC,Passed,Priced above 75¢,Kimani Vidal under 3 receptions (No),79,72.3,75.0,77.9,over,"Likely enough (ours 72–78%) but priced 79¢, above the 75¢ cap.",Won,21.0
+NYJ @ LAC,Passed,Priced above 75¢,Keaton Mitchell under 4 receptions (No),87,81.4,83.4,85.5,over,"Likely enough (ours 81–86%) but priced 87¢, above the 75¢ cap.",Won,13.0
+NYJ @ LAC,Passed,Priced above 75¢,Quentin Johnston under 4 receptions (No),80,71.5,74.2,76.4,over,"Likely enough (ours 72–76%) but priced 80¢, above the 75¢ cap.",Won,20.0
+NYJ @ LAC,Passed,Priced above 75¢,Garrett Wilson under 8 receptions (No),77,73.7,74.4,75.2,over,"Likely enough (ours 74–75%) but priced 77¢, above the 75¢ cap.",Won,23.0
+NYJ @ LAC,Passed,Priced above 75¢,Kenyon Sadiq under 4 receptions (No),77,72.3,73.5,74.6,over,"Likely enough (ours 72–75%) but priced 77¢, above the 75¢ cap.",Won,23.0
+NYJ @ LAC,Passed,Failed a research check,Adonai Mitchell under 5 receptions (No),77,73.5,74.1,74.8,over,Likely enough (ours 74–75%) but fails the game-script check.,Won,23.0
+NYJ @ LAC,Passed,Failed a research check,Breece Hall 2+ receptions (Yes),75,74.4,75.2,75.7,over,Likely enough (ours 74–76%) but fails the role check.,Won,25.0
+NYJ @ LAC,Passed,Priced above 75¢,Braelon Allen under 3 receptions (No),79,78.1,78.8,79.5,over,"Likely enough (ours 78–80%) but priced 79¢, above the 75¢ cap.",Won,21.0
+NYJ @ LAC,Passed,Priced above 75¢,Omarion Hampton under 3 receptions (No),83,78.7,80.8,82.9,over,"Likely enough (ours 79–83%) but priced 83¢, above the 75¢ cap.",Won,17.0
+NYJ @ LAC,Passed,Priced above 75¢,Kimani Vidal under 20 receiving yards (No),79,72.7,74.9,77.2,over,"Likely enough (ours 73–77%) but priced 79¢, above the 75¢ cap.",Won,21.0
+NYJ @ LAC,Passed,Priced above 75¢,Keaton Mitchell under 20 receiving yards (No),77,70.0,72.3,74.8,over,"Likely enough (ours 70–75%) but priced 77¢, above the 75¢ cap.",Won,23.0
+NYJ @ LAC,Passed,Failed a research check,Quentin Johnston 10+ receiving yards (Yes),73,75.0,77.4,79.8,under,Likely enough (ours 75–80%) but fails the late-work check.,Lost,-73.0
+NYJ @ LAC,Passed,Failed a research check,Tre' Harris under 60 receiving yards (No),71,68.3,71.3,73.4,over,Likely enough (ours 68–73%) but fails the game-script check.,Won,29.0
+NYJ @ LAC,Passed,Failed a research check,Garrett Wilson 40+ receiving yards (Yes),77,77.8,78.8,79.4,fair,Likely enough (ours 78–79%) but fails the role check.,Lost,-77.0
+NYJ @ LAC,Passed,Failed a research check,Mason Taylor 10+ receiving yards (Yes),73,72.9,73.8,74.4,over,Likely enough (ours 73–74%) but fails the role check.,Won,27.0
+NYJ @ LAC,Passed,Failed a research check,Kenyon Sadiq 10+ receiving yards (Yes),75,75.7,76.7,77.5,fair,"Likely enough (ours 76–78%) but fails the role check, late-work check.",Won,25.0
+NYJ @ LAC,Passed,Failed a research check,Breece Hall 10+ receiving yards (Yes),74,72.0,73.8,75.2,over,Likely enough (ours 72–75%) but fails the role check.,Won,26.0
+NYJ @ LAC,Passed,Priced above 75¢,Geno Smith under 15 rushing yards (No),82,80.2,81.0,81.7,over,"Likely enough (ours 80–82%) but priced 82¢, above the 75¢ cap.",Won,18.0
+NYJ @ LAC,Passed,Priced above 75¢,Omarion Hampton under 90 rushing yards (No),76,70.5,72.5,76.0,over,"Likely enough (ours 70–76%) but priced 76¢, above the 75¢ cap.",Won,24.0
+NYJ @ LAC,Passed,Failed a research check,Kimani Vidal under 25 rushing yards (No),75,68.2,70.3,73.9,over,Likely enough (ours 68–74%) but fails the game-script check.,Lost,-75.0
+NYJ @ LAC,Passed,Priced above 75¢,Keaton Mitchell under 30 rushing yards (No),80,74.7,76.5,79.6,over,"Likely enough (ours 75–80%) but priced 80¢, above the 75¢ cap.",Won,20.0
+NYJ @ LAC,Passed,Failed a research check,Justin Herbert 15+ rushing yards (Yes),69,68.3,72.2,74.1,under,Likely enough (ours 68–74%) but fails the role check.,Won,31.0
+NYJ @ LAC,Passed,Priced above 75¢,Kimani Vidal under 55 rush + rec yards (No),91,85.9,87.0,88.6,over,"Likely enough (ours 86–89%) but priced 91¢, above the 75¢ cap.",Won,9.0
+NYJ @ LAC,Passed,Priced above 75¢,Keaton Mitchell under 55 rush + rec yards (No),89,82.8,84.1,85.9,over,"Likely enough (ours 83–86%) but priced 89¢, above the 75¢ cap.",Won,11.0
+NYJ @ LAC,Passed,Priced above 75¢,Breece Hall under 120 rush + rec yards (No),86,84.3,85.0,85.5,over,"Likely enough (ours 84–86%) but priced 86¢, above the 75¢ cap.",Won,14.0
+NYJ @ LAC,Passed,Failed a research check,Braelon Allen under 65 rush + rec yards (No),76,71.8,72.8,73.5,over,Likely enough (ours 72–74%) but fails the game-script check.,Lost,-76.0
+NYJ @ LAC,Passed,Priced above 75¢,Omarion Hampton under 120 rush + rec yards (No),87,85.0,86.1,87.9,over,"Likely enough (ours 85–88%) but priced 87¢, above the 75¢ cap.",Won,13.0
+NYJ @ LAC,Passed,"Card limit (one per player, four per game)",Braelon Allen under 15 receiving yards (No),73,71.6,73.2,74.7,over,"Fifth line in the game, or a second line on the player.",Won,27.0
+NYJ @ LAC,Passed,"Card limit (one per player, four per game)",Omarion Hampton under 15 receiving yards (No),74,69.6,71.5,73.8,over,"Fifth line in the game, or a second line on the player.",Won,26.0
+NYJ @ LAC,Passed,"Card limit (one per player, four per game)",Mason Taylor under 4 receptions (No),72,69.6,70.5,71.5,over,"Fifth line in the game, or a second line on the player.",Won,28.0
+CIN @ WSH,Passed,Priced above 75¢,Dohnte Meyers under 4 receptions (No),81,78.5,80.0,82.0,over,"Likely enough (ours 78–82%) but priced 81¢, above the 75¢ cap.",Pending,
+CIN @ WSH,Passed,Priced above 75¢,Treylon Burks under 4 receptions (No),80,79.0,80.6,81.2,over,"Likely enough (ours 79–81%) but priced 80¢, above the 75¢ cap.",Pending,
+CIN @ WSH,Passed,Priced above 75¢,Ben Sinnott under 2 receptions (No),79,74.8,77.8,79.5,over,"Likely enough (ours 75–80%) but priced 79¢, above the 75¢ cap.",Pending,
+CIN @ WSH,Passed,Priced above 75¢,Stefon Diggs under 7 receptions (No),81,79.7,81.0,81.6,over,"Likely enough (ours 80–82%) but priced 81¢, above the 75¢ cap.",Pending,
+CIN @ WSH,Passed,Priced above 75¢,Samaje Perine under 3 receptions (No),86,84.8,85.8,87.0,over,"Likely enough (ours 85–87%) but priced 86¢, above the 75¢ cap.",Pending,
+CIN @ WSH,Passed,Priced above 75¢,Mike Gesicki under 4 receptions (No),77,74.5,77.0,79.0,over,"Likely enough (ours 74–79%) but priced 77¢, above the 75¢ cap.",Pending,
+CIN @ WSH,Passed,Failed a research check,Ja'Marr Chase under 10 receptions (No),71,67.9,70.2,72.3,over,Likely enough (ours 68–72%) but fails the role check.,Pending,
+CIN @ WSH,Passed,Priced above 75¢,Drew Sample under 3 receptions (No),85,77.6,80.6,84.3,over,"Likely enough (ours 78–84%) but priced 85¢, above the 75¢ cap.",Pending,
+CIN @ WSH,Passed,Failed a research check,Dohnte Meyers 10+ receiving yards (Yes),74,69.3,72.2,74.0,over,Likely enough (ours 69–74%) but fails the role check.,Pending,
+CIN @ WSH,Passed,Priced above 75¢,Ben Sinnott under 15 receiving yards (No),76,71.2,75.9,78.4,over,"Likely enough (ours 71–78%) but priced 76¢, above the 75¢ cap.",Pending,
+CIN @ WSH,Passed,Priced above 75¢,Drew Sample under 20 receiving yards (No),81,72.7,76.3,80.9,over,"Likely enough (ours 73–81%) but priced 81¢, above the 75¢ cap.",Pending,
+CIN @ WSH,Passed,Failed a research check,Stefon Diggs 30+ receiving yards (Yes),73,69.6,70.4,72.1,over,Likely enough (ours 70–72%) but fails the late-work check.,Pending,
+CIN @ WSH,Passed,Priced above 75¢,Chig Okonkwo 25+ receiving yards (Yes),78,73.8,76.3,78.2,over,"Likely enough (ours 74–78%) but priced 78¢, above the 75¢ cap.",Pending,
+CIN @ WSH,Passed,Failed a research check,Antonio Williams 20+ receiving yards (Yes),75,71.5,72.8,73.9,over,Likely enough (ours 72–74%) but fails the late-work check.,Pending,
+CIN @ WSH,Passed,Failed a research check,Mike Gesicki 10+ receiving yards (Yes),79,72.4,75.3,78.4,over,"Likely enough (ours 72–78%) but fails the game-script check, late-work check.",Pending,
+CIN @ WSH,Passed,Failed a research check,Ja'Marr Chase under 120 receiving yards (No),72,70.2,71.8,74.0,over,Likely enough (ours 70–74%) but fails the role check.,Pending,
+CIN @ WSH,Passed,Failed a research check,Samaje Perine under 30 rushing yards (No),69,69.6,71.0,72.3,fair,Likely enough (ours 70–72%) but fails the role check.,Pending,
+CIN @ WSH,Passed,Failed a research check,Samaje Perine under 55 rush + rec yards (No),82,81.1,81.9,82.5,over,Likely enough (ours 81–82%) but fails the role check.,Pending,
+CIN @ WSH,Passed,"Card limit (one per player, four per game)",Chase Brown under 6 receptions (No),74,76.4,79.7,82.5,under,"Fifth line in the game, or a second line on the player.",Pending,
+CIN @ WSH,Passed,"Card limit (one per player, four per game)",Antonio Williams under 5 receptions (No),73,72.0,73.0,74.2,over,"Fifth line in the game, or a second line on the player.",Pending,
+CIN @ WSH,Passed,"Card limit (one per player, four per game)",Treylon Burks under 50 receiving yards (No),74,71.8,73.8,74.6,over,"Fifth line in the game, or a second line on the player.",Pending,
+CIN @ WSH,Passed,"Card limit (one per player, four per game)",Chase Brown under 95 rush + rec yards (No),72,71.5,72.6,73.3,over,"Fifth line in the game, or a second line on the player.",Pending,
+CIN @ WSH,Passed,"Card limit (one per player, four per game)",Chase Brown under 60 rushing yards (No),71,71.2,72.6,73.8,fair,"Fifth line in the game, or a second line on the player.",Pending,
+CIN @ WSH,Passed,"Card limit (one per player, four per game)",Joe Burrow under 15 rushing yards (No),68,70.2,71.6,72.8,under,"Fifth line in the game, or a second line on the player.",Pending,
+CIN @ WSH,Passed,"Card limit (one per player, four per game)",Tee Higgins under 7 receptions (No),71,69.5,72.4,74.6,over,"Fifth line in the game, or a second line on the player.",Pending,
+CIN @ WSH,Passed,"Card limit (one per player, four per game)",Chig Okonkwo under 6 receptions (No),73,69.2,70.4,71.9,over,"Fifth line in the game, or a second line on the player.",Pending,
+MIN @ SF,Passed,Failed a research check,Jordan Watkins under 2 receptions (No),78,74.0,75.3,76.8,over,"Likely enough (ours 74–77%) but fails the role check, game-script check.",Won,22.0
+MIN @ SF,Passed,Failed a research check,Keenan Allen 2+ receptions (Yes),74,74.1,76.0,77.4,fair,Likely enough (ours 74–77%) but fails the role check.,Won,26.0
+MIN @ SF,Passed,Failed a research check,Myles Price under 2 receptions (No),69,69.4,71.4,72.8,fair,Likely enough (ours 69–73%) but fails the role check.,Lost,-69.0
+MIN @ SF,Passed,Priced above 75¢,Tai Felton under 3 receptions (No),77,79.0,80.8,82.2,under,"Likely enough (ours 79–82%) but priced 77¢, above the 75¢ cap.",Lost,-77.0
+MIN @ SF,Passed,Priced above 75¢,Jordan Mason under 3 receptions (No),87,83.6,85.8,88.0,over,"Likely enough (ours 84–88%) but priced 87¢, above the 75¢ cap.",Won,13.0
+MIN @ SF,Passed,Failed a research check,Christian McCaffrey 3+ receptions (Yes),76,76.3,79.3,81.6,under,Likely enough (ours 76–82%) but fails the role check.,Lost,-76.0
+MIN @ SF,Passed,Priced above 75¢,Jauan Jennings under 4 receptions (No),76,77.8,79.6,80.8,under,"Likely enough (ours 78–81%) but priced 76¢, above the 75¢ cap.",Won,24.0
+MIN @ SF,Passed,Priced above 75¢,Aaron Jones Sr. under 4 receptions (No),83,79.7,82.5,85.1,over,"Likely enough (ours 80–85%) but priced 83¢, above the 75¢ cap.",Won,17.0
+MIN @ SF,Passed,Failed a research check,Jordan Watkins under 25 receiving yards (No),74,69.6,71.6,73.6,over,"Likely enough (ours 70–74%) but fails the role check, game-script check.",Won,26.0
+MIN @ SF,Passed,Failed a research check,Keenan Allen 15+ receiving yards (Yes),70,69.4,72.1,74.0,fair,Likely enough (ours 69–74%) but fails the role check.,Won,30.0
+MIN @ SF,Passed,Failed a research check,Myles Price under 20 receiving yards (No),73,74.8,76.3,77.2,under,Likely enough (ours 75–77%) but fails the role check.,Lost,-73.0
+MIN @ SF,Passed,Priced above 75¢,Jauan Jennings under 40 receiving yards (No),78,80.2,81.6,82.7,under,"Likely enough (ours 80–83%) but priced 78¢, above the 75¢ cap.",Won,22.0
+MIN @ SF,Passed,Failed a research check,Christian McCaffrey 20+ receiving yards (Yes),72,71.7,74.7,77.1,under,Likely enough (ours 72–77%) but fails the role check.,Lost,-72.0
+MIN @ SF,Passed,Priced above 75¢,Deebo Samuel Sr. under 20 rushing yards (No),80,76.4,77.4,77.9,over,"Likely enough (ours 76–78%) but priced 80¢, above the 75¢ cap.",Lost,-80.0
+MIN @ SF,Passed,Priced above 75¢,Kaelon Black 15+ rushing yards (Yes),78,79.1,79.6,80.5,fair,"Likely enough (ours 79–80%) but priced 78¢, above the 75¢ cap.",Lost,-78.0
+MIN @ SF,Passed,Priced above 75¢,Christian McCaffrey 30+ rushing yards (Yes),81,81.0,81.5,82.3,over,"Likely enough (ours 81–82%) but priced 81¢, above the 75¢ cap.",Won,19.0
+MIN @ SF,Passed,Failed a research check,Brock Purdy 10+ rushing yards (Yes),70,70.8,71.5,72.6,over,Likely enough (ours 71–73%) but fails the role check.,Lost,-70.0
+MIN @ SF,Passed,Priced above 75¢,Kirk Cousins under 10 rushing yards (No),80,80.0,81.7,82.9,fair,"Likely enough (ours 80–83%) but priced 80¢, above the 75¢ cap.",Won,20.0
+MIN @ SF,Passed,Failed a research check,Aaron Jones Sr. under 50 rushing yards (No),78,78.1,80.1,81.3,fair,Likely enough (ours 78–81%) but fails the game-script check.,Won,22.0
+MIN @ SF,Passed,Failed a research check,Deebo Samuel Sr. under 65 rush + rec yards (No),80,74.5,75.2,75.7,over,Likely enough (ours 74–76%) but fails the game-script check.,Won,20.0
+MIN @ SF,Passed,Priced above 75¢,Jordan Mason under 75 rush + rec yards (No),77,76.4,78.3,79.4,over,"Likely enough (ours 76–79%) but priced 77¢, above the 75¢ cap.",Won,23.0
+MIN @ SF,Passed,Failed a research check,Christian McCaffrey under 115 rush + rec yards (No),75,71.8,72.5,73.2,over,Likely enough (ours 72–73%) but fails the game-script check.,Won,25.0
+MIN @ SF,Passed,Failed a research check,Aaron Jones Sr. under 90 rush + rec yards (No),92,89.2,90.0,90.5,over,Likely enough (ours 89–90%) but fails the game-script check.,Won,8.0
+MIN @ SF,Passed,"Card limit (one per player, four per game)",George Kittle under 70 receiving yards (No),74,73.6,77.8,81.2,under,"Fifth line in the game, or a second line on the player.",Won,26.0
+MIN @ SF,Passed,"Card limit (one per player, four per game)",Deebo Samuel Sr. under 40 receiving yards (No),71,71.7,76.6,80.5,under,"Fifth line in the game, or a second line on the player.",Won,29.0
+MIN @ SF,Passed,"Card limit (one per player, four per game)",Tai Felton under 30 receiving yards (No),75,77.0,79.0,80.6,under,"Fifth line in the game, or a second line on the player.",Lost,-75.0
+MIN @ SF,Passed,"Card limit (one per player, four per game)",Justin Jefferson under 120 receiving yards (No),75,76.7,78.1,79.1,under,"Fifth line in the game, or a second line on the player.",Won,25.0
+MIN @ SF,Passed,"Card limit (one per player, four per game)",T.J. Hockenson under 7 receptions (No),72,71.8,73.5,75.0,over,"Fifth line in the game, or a second line on the player.",Won,28.0
+MIN @ SF,Passed,"Card limit (one per player, four per game)",Jordan Mason under 10 receiving yards (No),72,70.5,72.3,74.3,over,"Fifth line in the game, or a second line on the player.",Won,28.0
+MIN @ SF,Passed,"Card limit (one per player, four per game)",Justin Jefferson under 9 receptions (No),68,69.3,71.0,72.3,under,"Fifth line in the game, or a second line on the player.",Won,32.0
+MIN @ SF,Passed,"Card limit (one per player, four per game)",T.J. Hockenson under 60 receiving yards (No),68,68.7,70.2,72.1,fair,"Fifth line in the game, or a second line on the player.",Won,32.0
+TB @ DET,Passed,Failed a research check,Ted Hurst III under 2 receptions (No),75,73.7,76.2,78.0,over,Likely enough (ours 74–78%) but fails the game-script check.,Lost,-75.0
+TB @ DET,Passed,Failed a research check,Tez Johnson under 3 receptions (No),74,73.9,76.1,78.0,fair,Likely enough (ours 74–78%) but fails the role check.,Won,26.0
+TB @ DET,Passed,Priced above 75¢,Kenny Gainwell under 4 receptions (No),82,82.1,83.7,85.1,fair,"Likely enough (ours 82–85%) but priced 82¢, above the 75¢ cap.",Lost,-82.0
+TB @ DET,Passed,Priced above 75¢,Sam LaPorta under 6 receptions (No),82,80.9,81.3,82.3,over,"Likely enough (ours 81–82%) but priced 82¢, above the 75¢ cap.",Won,18.0
+TB @ DET,Passed,Priced above 75¢,Jameson Williams under 6 receptions (No),81,80.9,81.6,82.2,over,"Likely enough (ours 81–82%) but priced 81¢, above the 75¢ cap.",Won,19.0
+TB @ DET,Passed,Priced above 75¢,Isaac TeSlaa under 3 receptions (No),84,82.9,83.7,84.2,over,"Likely enough (ours 83–84%) but priced 84¢, above the 75¢ cap.",Won,16.0
+TB @ DET,Passed,Priced above 75¢,Amon-Ra St. Brown under 10 receptions (No),80,79.5,80.0,80.6,over,"Likely enough (ours 80–81%) but priced 80¢, above the 75¢ cap.",Won,20.0
+TB @ DET,Passed,Failed a research check,Ted Hurst III under 20 receiving yards (No),71,70.5,72.4,74.3,over,Likely enough (ours 70–74%) but fails the game-script check.,Lost,-71.0
+TB @ DET,Passed,Failed a research check,Cade Otton 15+ receiving yards (Yes),76,67.9,71.9,76.4,over,Likely enough (ours 68–76%) but fails the role check.,Lost,-76.0
+TB @ DET,Passed,Failed a research check,Tez Johnson under 40 receiving yards (No),73,72.3,74.3,76.5,over,Likely enough (ours 72–76%) but fails the role check.,Won,27.0
+TB @ DET,Passed,Priced above 75¢,Kenny Gainwell under 25 receiving yards (No),76,76.3,78.2,79.9,fair,"Likely enough (ours 76–80%) but priced 76¢, above the 75¢ cap.",Lost,-76.0
+TB @ DET,Passed,Failed a research check,Bucky Irving under 25 receiving yards (No),69,69.4,71.9,73.9,under,Likely enough (ours 69–74%) but fails the role check.,Lost,-69.0
+TB @ DET,Passed,Research pass,Bucky Irving under 90 rushing yards (No),75,76.2,79.3,82.0,under,Research pass (hand research defeated it).,Won,25.0
+TB @ DET,Passed,Failed a research check,Kenny Gainwell under 30 rushing yards (No),74,76.1,79.3,82.2,under,Likely enough (ours 76–82%) but fails the role check.,Won,26.0
+TB @ DET,Passed,Failed a research check,Jalon Daniels under 30 rushing yards (No),74,74.1,77.2,80.1,under,Likely enough (ours 74–80%) but fails the game-script check.,Void,0.0
+TB @ DET,Passed,Priced above 75¢,Jared Goff under 10 rushing yards (No),85,87.0,88.9,90.3,under,"Likely enough (ours 87–90%) but priced 85¢, above the 75¢ cap.",Lost,-85.0
+TB @ DET,Passed,Failed a research check,Sione Vaki under 20 rushing yards (No),66,68.7,72.2,75.0,under,Likely enough (ours 69–75%) but fails the role check.,Won,34.0
+TB @ DET,Passed,Failed a research check,Jahmyr Gibbs under 110 rushing yards (No),71,72.5,75.6,78.2,under,Likely enough (ours 72–78%) but fails the game-script check.,Won,29.0
+TB @ DET,Passed,Failed a research check,Kenny Gainwell under 55 rush + rec yards (No),79,78.6,81.4,84.0,fair,Likely enough (ours 79–84%) but fails the role check.,Lost,-79.0
+TB @ DET,Passed,Priced above 75¢,Bucky Irving under 115 rush + rec yards (No),76,77.0,80.0,82.7,under,"Likely enough (ours 77–83%) but priced 76¢, above the 75¢ cap.",Won,24.0
+TB @ DET,Passed,Failed a research check,Jahmyr Gibbs under 155 rush + rec yards (No),73,73.4,76.3,78.9,under,Likely enough (ours 73–79%) but fails the game-script check.,Won,27.0
+TB @ DET,Passed,"Card limit (one per player, four per game)",Emeka Egbuka under 6 receptions (No),75,75.2,78.1,80.4,under,"Fifth line in the game, or a second line on the player.",Won,25.0
+TB @ DET,Passed,"Card limit (one per player, four per game)",Chris Godwin Jr. under 5 receptions (No),74,74.0,76.5,78.4,under,"Fifth line in the game, or a second line on the player.",Won,26.0
+TB @ DET,Passed,"Card limit (one per player, four per game)",Cade Otton under 5 receptions (No),74,72.5,77.0,80.1,under,"Fifth line in the game, or a second line on the player.",Won,26.0
+TB @ DET,Passed,"Card limit (one per player, four per game)",Sam LaPorta 20+ receiving yards (Yes),74,72.4,73.5,74.3,over,"Fifth line in the game, or a second line on the player.",Won,26.0
+TB @ DET,Passed,"Card limit (one per player, four per game)",Jahmyr Gibbs under 50 receiving yards (No),72,72.0,73.0,73.5,over,"Fifth line in the game, or a second line on the player.",Won,28.0
+TB @ DET,Passed,"Card limit (one per player, four per game)",Jahmyr Gibbs 3+ receptions (Yes),74,71.6,72.1,72.9,over,"Fifth line in the game, or a second line on the player.",Won,26.0
+TB @ DET,Passed,"Card limit (one per player, four per game)",Jameson Williams 30+ receiving yards (Yes),73,70.8,71.5,72.8,over,"Fifth line in the game, or a second line on the player.",Won,27.0
+TB @ DET,Passed,"Card limit (one per player, four per game)",Bucky Irving 2+ receptions (Yes),75,68.6,70.7,73.1,over,"Fifth line in the game, or a second line on the player.",Won,25.0
+MIA @ BUF,Passed,Priced above 75¢,Kevin Coleman Jr. under 2 receptions (No),76,76.7,78.8,80.5,under,"Likely enough (ours 77–80%) but priced 76¢, above the 75¢ cap.",Won,24.0
+MIA @ BUF,Passed,Priced above 75¢,Caleb Douglas under 6 receptions (No),79,78.9,80.5,82.5,over,"Likely enough (ours 79–82%) but priced 79¢, above the 75¢ cap.",Won,21.0
+MIA @ BUF,Passed,Priced above 75¢,Chris Bell under 3 receptions (No),76,74.8,77.0,78.8,over,"Likely enough (ours 75–79%) but priced 76¢, above the 75¢ cap.",Won,24.0
+MIA @ BUF,Passed,Failed a research check,Keon Coleman 2+ receptions (Yes),69,73.6,77.5,81.2,under,Likely enough (ours 74–81%) but fails the game-script check.,Won,31.0
+MIA @ BUF,Passed,Failed a research check,Dawson Knox 2+ receptions (Yes),63,66.6,70.6,73.2,under,Likely enough (ours 67–73%) but fails the game-script check.,Won,37.0
+MIA @ BUF,Passed,Failed a research check,Malik Washington under 5 receptions (No),69,69.3,71.8,73.9,under,Likely enough (ours 69–74%) but fails the game-script check.,Won,31.0
+MIA @ BUF,Passed,Failed a research check,Khalil Shakir 3+ receptions (Yes),64,66.8,71.1,74.6,under,Likely enough (ours 67–75%) but fails the role check.,Won,36.0
+MIA @ BUF,Passed,Priced above 75¢,James Cook III under 3 receptions (No),79,69.8,72.1,74.8,over,"Likely enough (ours 70–75%) but priced 79¢, above the 75¢ cap.",Won,21.0
+MIA @ BUF,Passed,Priced above 75¢,DJ Moore under 6 receptions (No),83,80.8,83.1,84.8,over,"Likely enough (ours 81–85%) but priced 83¢, above the 75¢ cap.",Lost,-83.0
+MIA @ BUF,Passed,Failed a research check,Keon Coleman 15+ receiving yards (Yes),73,77.2,80.7,84.0,under,Likely enough (ours 77–84%) but fails the late-work check.,Won,27.0
+MIA @ BUF,Passed,Failed a research check,Dawson Knox 10+ receiving yards (Yes),69,71.7,74.8,77.3,under,Likely enough (ours 72–77%) but fails the game-script check.,Won,31.0
+MIA @ BUF,Passed,Failed a research check,Caleb Douglas under 70 receiving yards (No),72,71.2,73.1,75.5,over,Likely enough (ours 71–76%) but fails the game-script check.,Won,28.0
+MIA @ BUF,Passed,Failed a research check,Khalil Shakir 20+ receiving yards (Yes),72,74.8,78.4,81.2,under,Likely enough (ours 75–81%) but fails the role check.,Won,28.0
+MIA @ BUF,Passed,Priced above 75¢,James Cook III under 25 receiving yards (No),82,73.7,75.9,78.4,over,"Likely enough (ours 74–78%) but priced 82¢, above the 75¢ cap.",Won,18.0
+MIA @ BUF,Passed,Failed a research check,Ray Davis 10+ rushing yards (Yes),75,72.4,73.9,74.8,over,"Likely enough (ours 72–75%) but fails the game-script check, late-work check.",Lost,-75.0
+MIA @ BUF,Passed,Priced above 75¢,Kyle McCord under 15 rushing yards (No),79,79.9,81.7,83.3,under,"Likely enough (ours 80–83%) but priced 79¢, above the 75¢ cap.",Won,21.0
+MIA @ BUF,Passed,Failed a research check,Ollie Gordon II under 70 rushing yards (No),70,70.7,73.1,75.2,under,"Likely enough (ours 71–75%) but fails the role check, game-script check.",Won,30.0
+MIA @ BUF,Passed,Failed a research check,James Cook III 70+ rushing yards (Yes),74,74.2,75.8,76.8,fair,Likely enough (ours 74–77%) but fails the late-work check.,Won,26.0
+MIA @ BUF,Passed,Failed a research check,Josh Allen 15+ rushing yards (Yes),70,69.4,71.2,72.2,over,"Likely enough (ours 69–72%) but fails the role check, late-work check.",Lost,-70.0
+MIA @ BUF,Passed,Failed a research check,Ollie Gordon II under 95 rush + rec yards (No),70,68.8,70.9,73.0,over,"Likely enough (ours 69–73%) but fails the role check, game-script check.",Won,30.0
+MIA @ BUF,Passed,Failed a research check,James Cook III under 135 rush + rec yards (No),75,70.8,71.8,73.5,over,Likely enough (ours 71–74%) but fails the game-script check.,Won,25.0
+MIA @ BUF,Passed,"Card limit (one per player, four per game)",Greg Dulcich under 40 receiving yards (No),71,69.9,71.9,74.1,over,"Fifth line in the game, or a second line on the player.",Won,29.0
+MIA @ BUF,Passed,"Card limit (one per player, four per game)",Jaylen Wright under 10 rushing yards (No),68,69.8,72.2,74.4,under,"Fifth line in the game, or a second line on the player.",Lost,-68.0
+MIA @ BUF,Passed,"Card limit (one per player, four per game)",Ollie Gordon II under 4 receptions (No),68,69.6,73.3,76.3,under,"Fifth line in the game, or a second line on the player.",Won,32.0
+MIA @ BUF,Passed,"Card limit (one per player, four per game)",DJ Moore under 70 receiving yards (No),72,68.2,71.3,73.6,over,"Fifth line in the game, or a second line on the player.",Lost,-72.0
+MIA @ BUF,Passed,"Card limit (one per player, four per game)",Greg Dulcich 2+ receptions (Yes),73,67.6,70.3,72.2,over,"Fifth line in the game, or a second line on the player.",Won,27.0
+MIA @ BUF,Passed,"Card limit (one per player, four per game)",Ty Johnson under 25 receiving yards (No),73,66.9,70.5,73.3,over,"Fifth line in the game, or a second line on the player.",Lost,-73.0
+MIA @ BUF,Passed,"Card limit (one per player, four per game)",Ty Johnson under 3 receptions (No),72,66.5,70.1,72.9,over,"Fifth line in the game, or a second line on the player.",Lost,-72.0
+LV @ DEN,Passed,Failed a research check,Jaylen Waddle 3+ receptions (Yes),73,72.9,75.0,76.7,fair,Likely enough (ours 73–77%) but fails the role check.,Won,27.0
+LV @ DEN,Passed,Priced above 75¢,Marvin Mims Jr. under 3 receptions (No),84,80.4,81.7,83.2,over,"Likely enough (ours 80–83%) but priced 84¢, above the 75¢ cap.",Won,16.0
+LV @ DEN,Passed,Failed a research check,Pat Bryant 2+ receptions (Yes),73,72.8,74.9,76.6,fair,Likely enough (ours 73–77%) but fails the role check.,Won,27.0
+LV @ DEN,Passed,Priced above 75¢,Ashton Jeanty under 6 receptions (No),77,77.6,80.0,81.8,under,"Likely enough (ours 78–82%) but priced 77¢, above the 75¢ cap.",Won,23.0
+LV @ DEN,Passed,Failed a research check,Jonah Coleman under 5 receptions (No),73,70.6,73.6,75.9,over,Likely enough (ours 71–76%) but fails the role check.,Won,27.0
+LV @ DEN,Passed,Priced above 75¢,Evan Engram under 4 receptions (No),76,70.3,71.6,73.4,over,"Likely enough (ours 70–73%) but priced 76¢, above the 75¢ cap.",Lost,-76.0
+LV @ DEN,Passed,Priced above 75¢,Courtland Sutton under 5 receptions (No),77,71.9,73.7,75.7,over,"Likely enough (ours 72–76%) but priced 77¢, above the 75¢ cap.",Won,23.0
+LV @ DEN,Passed,Failed a research check,Jaylen Waddle 25+ receiving yards (Yes),74,74.3,76.0,77.1,fair,"Likely enough (ours 74–77%) but fails the role check, game-script check.",Won,26.0
+LV @ DEN,Passed,Priced above 75¢,Marvin Mims Jr. under 25 receiving yards (No),78,72.7,73.8,75.5,over,"Likely enough (ours 73–76%) but priced 78¢, above the 75¢ cap.",Lost,-78.0
+LV @ DEN,Passed,Failed a research check,Pat Bryant 15+ receiving yards (Yes),72,73.4,75.4,76.6,under,"Likely enough (ours 73–77%) but fails the role check, late-work check.",Won,28.0
+LV @ DEN,Passed,Failed a research check,Ashton Jeanty under 40 receiving yards (No),67,66.3,70.0,73.3,under,Likely enough (ours 66–73%) but fails the game-script check.,Lost,-67.0
+LV @ DEN,Passed,Failed a research check,Jonah Coleman 10+ receiving yards (Yes),77,75.7,76.9,78.1,over,Likely enough (ours 76–78%) but fails the late-work check.,Won,23.0
+LV @ DEN,Passed,Failed a research check,Courtland Sutton 20+ receiving yards (Yes),71,72.4,74.1,75.3,under,Likely enough (ours 72–75%) but fails the late-work check.,Lost,-71.0
+LV @ DEN,Passed,Failed a research check,Fernando Mendoza 10+ rushing yards (Yes),70,70.0,70.9,71.6,over,Likely enough (ours 70–72%) but fails the role check.,Won,30.0
+LV @ DEN,Passed,Failed a research check,Ashton Jeanty 20+ rushing yards (Yes),70,70.1,71.0,71.7,over,Likely enough (ours 70–72%) but fails the role check.,Won,30.0
+LV @ DEN,Passed,Failed a research check,J.K. Dobbins 15+ rushing yards (Yes),68,74.0,78.3,81.5,under,Likely enough (ours 74–82%) but fails the role check.,Lost,-68.0
+LV @ DEN,Passed,Failed a research check,Jonah Coleman 60+ rushing yards (Yes),65,68.1,72.8,76.3,under,"Likely enough (ours 68–76%) but fails the game-script check, late-work check.",Won,35.0
+LV @ DEN,Passed,Priced above 75¢,Bo Nix under 30 rushing yards (No),86,74.0,77.7,81.5,over,"Likely enough (ours 74–82%) but priced 86¢, above the 75¢ cap.",Won,14.0
+LV @ DEN,Passed,Priced above 75¢,Ashton Jeanty under 95 rush + rec yards (No),79,74.1,75.0,76.0,over,"Likely enough (ours 74–76%) but priced 79¢, above the 75¢ cap.",Lost,-79.0
+LV @ DEN,Passed,Priced above 75¢,Jonah Coleman under 150 rush + rec yards (No),88,80.3,83.0,85.7,over,"Likely enough (ours 80–86%) but priced 88¢, above the 75¢ cap.",Won,12.0
+JAX @ NYG,Passed,Priced above 75¢,Bhayshul Tuten under 4 receptions (No),83,80.5,82.1,83.4,over,"Likely enough (ours 80–83%) but priced 83¢, above the 75¢ cap.",Won,17.0
+JAX @ NYG,Passed,Priced above 75¢,Jakobi Meyers under 5 receptions (No),77,76.2,77.0,77.7,over,"Likely enough (ours 76–78%) but priced 77¢, above the 75¢ cap.",Won,23.0
+JAX @ NYG,Passed,Priced above 75¢,Malik Nabers under 8 receptions (No),77,74.8,75.8,76.8,over,"Likely enough (ours 75–77%) but priced 77¢, above the 75¢ cap.",Won,23.0
+JAX @ NYG,Passed,Priced above 75¢,Malachi Fields under 4 receptions (No),76,74.1,75.2,76.2,over,"Likely enough (ours 74–76%) but priced 76¢, above the 75¢ cap.",Won,24.0
+JAX @ NYG,Passed,Failed a research check,Darnell Mooney under 3 receptions (No),78,76.9,77.9,78.9,over,Likely enough (ours 77–79%) but fails the role check.,Won,22.0
+JAX @ NYG,Passed,Priced above 75¢,Cam Skattebo under 4 receptions (No),79,77.5,78.8,80.1,over,"Likely enough (ours 78–80%) but priced 79¢, above the 75¢ cap.",Won,21.0
+JAX @ NYG,Passed,Failed a research check,Travis Hunter under 3 receptions (No),86,85.0,85.0,85.0,over,Likely enough (ours 85–85%) but fails the role check.,Won,14.0
+JAX @ NYG,Passed,Priced above 75¢,Parker Washington 3+ receptions (Yes),82,79.8,80.5,81.1,over,"Likely enough (ours 80–81%) but priced 82¢, above the 75¢ cap.",Won,18.0
+JAX @ NYG,Passed,Failed a research check,Nate Boerkircher under 3 receptions (No),85,81.3,82.4,83.6,over,Likely enough (ours 81–84%) but fails the role check.,Won,15.0
+JAX @ NYG,Passed,Priced above 75¢,Josh Cameron under 3 receptions (No),86,85.1,85.8,86.6,over,"Likely enough (ours 85–87%) but priced 86¢, above the 75¢ cap.",Lost,-86.0
+JAX @ NYG,Passed,Priced above 75¢,Brian Thomas Jr. under 3 receptions (No),84,81.2,81.9,82.5,over,"Likely enough (ours 81–82%) but priced 84¢, above the 75¢ cap.",Won,16.0
+JAX @ NYG,Passed,Failed a research check,Brenton Strange under 5 receptions (No),79,75.0,76.1,77.2,over,Likely enough (ours 75–77%) but fails the game-script check.,Won,21.0
+JAX @ NYG,Passed,Priced above 75¢,Theo Johnson under 20 receiving yards (No),76,73.8,76.3,78.4,over,"Likely enough (ours 74–78%) but priced 76¢, above the 75¢ cap.",Won,24.0
+JAX @ NYG,Passed,Failed a research check,Malik Nabers 40+ receiving yards (Yes),76,74.7,76.0,77.1,over,Likely enough (ours 75–77%) but fails the late-work check.,Won,24.0
+JAX @ NYG,Passed,Failed a research check,Isaiah Likely under 70 receiving yards (No),74,71.6,74.2,76.4,over,Likely enough (ours 72–76%) but fails the game-script check.,Won,26.0
+JAX @ NYG,Passed,Failed a research check,Darnell Mooney under 30 receiving yards (No),74,71.9,73.3,74.6,over,Likely enough (ours 72–75%) but fails the role check.,Won,26.0
+JAX @ NYG,Passed,Failed a research check,Travis Hunter under 20 receiving yards (No),73,73.0,73.0,73.0,over,Likely enough (ours 73–73%) but fails the role check.,Won,27.0
+JAX @ NYG,Passed,Failed a research check,Nate Boerkircher under 25 receiving yards (No),76,70.7,72.1,73.3,over,Likely enough (ours 71–73%) but fails the role check.,Won,24.0
+JAX @ NYG,Passed,Priced above 75¢,Brian Thomas Jr. under 30 receiving yards (No),77,73.6,75.0,76.3,over,"Likely enough (ours 74–76%) but priced 77¢, above the 75¢ cap.",Won,23.0
+JAX @ NYG,Passed,Research pass,Cam Skattebo under 70 rushing yards (No),67,68.7,72.0,75.3,under,Research pass (hand research defeated it).,Won,33.0
+JAX @ NYG,Passed,Failed a research check,Cam Skattebo under 95 rush + rec yards (No),70,70.1,73.1,76.3,under,Likely enough (ours 70–76%) but fails the game-script check.,Won,30.0
+JAX @ NYG,Passed,"Card limit (one per player, four per game)",Chris Rodriguez Jr. 10+ rushing yards (Yes),75,72.1,73.6,74.7,over,"Fifth line in the game, or a second line on the player.",Won,25.0
+JAX @ NYG,Passed,"Card limit (one per player, four per game)",Isaiah Likely under 7 receptions (No),74,72.0,73.6,75.1,over,"Fifth line in the game, or a second line on the player.",Won,26.0
+JAX @ NYG,Passed,"Card limit (one per player, four per game)",Parker Washington 40+ receiving yards (Yes),74,72.0,73.4,74.8,over,"Fifth line in the game, or a second line on the player.",Won,26.0
+JAX @ NYG,Passed,"Card limit (one per player, four per game)",Theo Johnson under 2 receptions (No),73,71.8,73.5,75.0,over,"Fifth line in the game, or a second line on the player.",Won,27.0
+JAX @ NYG,Passed,"Card limit (one per player, four per game)",Brenton Strange under 50 receiving yards (No),74,71.4,72.1,73.1,over,"Fifth line in the game, or a second line on the player.",Won,26.0
+JAX @ NYG,Passed,"Card limit (one per player, four per game)",Bhayshul Tuten 50+ rushing yards (Yes),74,71.1,72.6,73.8,over,"Fifth line in the game, or a second line on the player.",Lost,-74.0
+JAX @ NYG,Passed,"Card limit (one per player, four per game)",Cam Skattebo under 25 receiving yards (No),72,70.5,71.2,71.9,over,"Fifth line in the game, or a second line on the player.",Won,28.0
+JAX @ NYG,Passed,"Card limit (one per player, four per game)",Jakobi Meyers under 60 receiving yards (No),72,70.3,71.6,73.0,over,"Fifth line in the game, or a second line on the player.",Lost,-72.0
+JAX @ NYG,Passed,"Card limit (one per player, four per game)",Trevor Lawrence under 20 rushing yards (No),71,70.2,71.5,72.9,over,"Fifth line in the game, or a second line on the player.",Won,29.0
+JAX @ NYG,Passed,"Card limit (one per player, four per game)",J.J. McCarthy under 25 rushing yards (No),68,69.9,73.1,76.4,under,"Fifth line in the game, or a second line on the player.",Lost,-68.0
+JAX @ NYG,Passed,"Card limit (one per player, four per game)",Bhayshul Tuten under 25 receiving yards (No),74,69.9,72.0,73.9,over,"Fifth line in the game, or a second line on the player.",Won,26.0
+PIT @ PHI,Passed,Failed a research check,Makai Lemon under 5 receptions (No),74,72.9,75.0,76.7,over,Likely enough (ours 73–77%) but fails the role check.,Won,26.0
+PIT @ PHI,Passed,Failed a research check,Darius Cooper under 3 receptions (No),76,75.6,77.6,79.1,fair,Likely enough (ours 76–79%) but fails the role check.,Lost,-76.0
+PIT @ PHI,Passed,Priced above 75¢,Rico Dowdle under 4 receptions (No),83,80.6,82.2,83.6,over,"Likely enough (ours 81–84%) but priced 83¢, above the 75¢ cap.",Lost,-83.0
+PIT @ PHI,Passed,Priced above 75¢,Darnell Washington under 4 receptions (No),84,82.8,84.1,85.0,over,"Likely enough (ours 83–85%) but priced 84¢, above the 75¢ cap.",Won,16.0
+PIT @ PHI,Passed,Priced above 75¢,DK Metcalf under 6 receptions (No),83,81.2,82.2,83.0,over,"Likely enough (ours 81–83%) but priced 83¢, above the 75¢ cap.",Won,17.0
+PIT @ PHI,Passed,Failed a research check,Makai Lemon under 40 receiving yards (No),69,68.3,70.3,71.7,over,Likely enough (ours 68–72%) but fails the role check.,Won,31.0
+PIT @ PHI,Passed,Failed a research check,Darius Cooper under 30 receiving yards (No),70,69.6,71.3,72.7,over,Likely enough (ours 70–73%) but fails the role check.,Lost,-70.0
+PIT @ PHI,Passed,Priced above 75¢,DeVonta Smith under 80 receiving yards (No),76,75.0,76.4,77.5,over,"Likely enough (ours 75–78%) but priced 76¢, above the 75¢ cap.",Won,24.0
+PIT @ PHI,Passed,Priced above 75¢,Jaylen Warren under 40 receiving yards (No),83,80.7,82.5,84.3,over,"Likely enough (ours 81–84%) but priced 83¢, above the 75¢ cap.",Won,17.0
+PIT @ PHI,Passed,Failed a research check,DK Metcalf 25+ receiving yards (Yes),74,71.5,73.4,75.3,over,Likely enough (ours 72–75%) but fails the late-work check.,Lost,-74.0
+PIT @ PHI,Passed,Priced above 75¢,Rico Dowdle under 20 receiving yards (No),76,73.7,76.1,78.2,over,"Likely enough (ours 74–78%) but priced 76¢, above the 75¢ cap.",Won,24.0
+PIT @ PHI,Passed,Priced above 75¢,Aaron Rodgers under 10 rushing yards (No),85,81.1,83.4,84.9,over,"Likely enough (ours 81–85%) but priced 85¢, above the 75¢ cap.",Lost,-85.0
+PIT @ PHI,Passed,Failed a research check,Jaylen Warren 50+ rushing yards (Yes),71,69.0,71.3,74.5,over,Likely enough (ours 69–74%) but fails the role check.,Lost,-71.0
+PIT @ PHI,Passed,Priced above 75¢,Rico Dowdle under 75 rush + rec yards (No),78,73.6,76.9,78.9,over,"Likely enough (ours 74–79%) but priced 78¢, above the 75¢ cap.",Won,22.0
+PIT @ PHI,Passed,Failed a research check,Jaylen Warren under 115 rush + rec yards (No),73,67.1,70.8,73.1,over,Likely enough (ours 67–73%) but fails the game-script check.,Won,27.0
+PIT @ PHI,Passed,Priced above 75¢,Saquon Barkley under 105 rush + rec yards (No),82,81.6,83.6,84.8,fair,"Likely enough (ours 82–85%) but priced 82¢, above the 75¢ cap.",Won,18.0
+PIT @ PHI,Passed,"Card limit (one per player, four per game)",Pat Freiermuth 10+ receiving yards (Yes),75,72.2,73.4,74.8,over,"Fifth line in the game, or a second line on the player.",Won,25.0
+PIT @ PHI,Passed,"Card limit (one per player, four per game)",Dallas Goedert under 50 receiving yards (No),75,74.6,75.7,76.9,over,"Fifth line in the game, or a second line on the player.",Won,25.0
+PIT @ PHI,Passed,"Card limit (one per player, four per game)",DeVonta Smith under 7 receptions (No),75,72.7,74.7,76.2,over,"Fifth line in the game, or a second line on the player.",Won,25.0
+PIT @ PHI,Passed,"Card limit (one per player, four per game)",Saquon Barkley under 3 receptions (No),72,71.8,76.1,79.5,under,"Fifth line in the game, or a second line on the player.",Won,28.0
+PIT @ PHI,Passed,"Card limit (one per player, four per game)",Rico Dowdle 25+ rushing yards (Yes),71,69.9,72.3,75.3,over,"Fifth line in the game, or a second line on the player.",Lost,-71.0
+PIT @ PHI,Passed,"Card limit (one per player, four per game)",Germie Bernard under 5 receptions (No),72,69.9,71.5,72.6,over,"Fifth line in the game, or a second line on the player.",Lost,-72.0
+PIT @ PHI,Passed,"Card limit (one per player, four per game)",Jaylen Warren 2+ receptions (Yes),73,69.7,72.0,74.0,over,"Fifth line in the game, or a second line on the player.",Won,27.0
+PIT @ PHI,Passed,"Card limit (one per player, four per game)",Dallas Goedert under 5 receptions (No),70,68.9,70.3,71.7,over,"Fifth line in the game, or a second line on the player.",Won,30.0
+PIT @ PHI,Passed,"Card limit (one per player, four per game)",Darnell Washington under 30 receiving yards (No),69,68.5,70.1,71.1,over,"Fifth line in the game, or a second line on the player.",Won,31.0
+PIT @ PHI,Passed,"Card limit (one per player, four per game)",Saquon Barkley under 15 receiving yards (No),66,65.7,70.2,73.7,under,"Fifth line in the game, or a second line on the player.",Won,34.0
+NO @ CHI,Passed,Failed a research check,Jordyn Tyson 4+ receptions (Yes),73,72.5,75.5,77.7,under,Likely enough (ours 72–78%) but fails the role check.,Lost,-73.0
+NO @ CHI,Passed,Priced above 75¢,Noah Fant under 3 receptions (No),88,85.7,86.8,87.9,over,"Likely enough (ours 86–88%) but priced 88¢, above the 75¢ cap.",Won,12.0
+NO @ CHI,Passed,Failed a research check,Juwan Johnson under 4 receptions (No),78,74.7,76.3,78.2,over,Likely enough (ours 75–78%) but fails the game-script check.,Won,22.0
+NO @ CHI,Passed,Failed a research check,Devaughn Vele under 4 receptions (No),79,74.9,77.1,79.1,over,Likely enough (ours 75–79%) but fails the game-script check.,Lost,-79.0
+NO @ CHI,Passed,Priced above 75¢,Rome Odunze under 5 receptions (No),78,76.4,77.5,78.7,over,"Likely enough (ours 76–79%) but priced 78¢, above the 75¢ cap.",Won,22.0
+NO @ CHI,Passed,Failed a research check,Luther Burden III under 7 receptions (No),81,77.5,78.4,79.6,over,Likely enough (ours 78–80%) but fails the game-script check.,Won,19.0
+NO @ CHI,Passed,Failed a research check,Kalif Raymond under 4 receptions (No),76,72.8,73.9,75.3,over,Likely enough (ours 73–75%) but fails the game-script check.,Won,24.0
+NO @ CHI,Passed,Priced above 75¢,Kyle Monangai under 3 receptions (No),88,86.9,87.3,87.8,over,"Likely enough (ours 87–88%) but priced 88¢, above the 75¢ cap.",Won,12.0
+NO @ CHI,Passed,Failed a research check,D'Andre Swift under 4 receptions (No),79,75.2,75.9,76.8,over,Likely enough (ours 75–77%) but fails the game-script check.,Won,21.0
+NO @ CHI,Passed,Failed a research check,Colston Loveland under 7 receptions (No),80,77.4,78.1,79.0,over,Likely enough (ours 77–79%) but fails the role check.,Won,20.0
+NO @ CHI,Passed,Priced above 75¢,Kyle Monangai under 15 receiving yards (No),78,74.4,75.8,77.3,over,"Likely enough (ours 74–77%) but priced 78¢, above the 75¢ cap.",Won,22.0
+NO @ CHI,Passed,Priced above 75¢,D'Andre Swift under 30 receiving yards (No),77,72.7,73.9,75.5,over,"Likely enough (ours 73–76%) but priced 77¢, above the 75¢ cap.",Won,23.0
+NO @ CHI,Passed,Priced above 75¢,Noah Fant under 20 receiving yards (No),78,75.1,76.6,77.8,over,"Likely enough (ours 75–78%) but priced 78¢, above the 75¢ cap.",Won,22.0
+NO @ CHI,Passed,Failed a research check,Juwan Johnson 10+ receiving yards (Yes),73,72.2,73.7,75.1,over,"Likely enough (ours 72–75%) but fails the role check, late-work check.",Lost,-73.0
+NO @ CHI,Passed,Failed a research check,Devaughn Vele 10+ receiving yards (Yes),73,72.5,74.2,76.2,over,Likely enough (ours 72–76%) but fails the role check.,Won,27.0
+NO @ CHI,Passed,Failed a research check,Chris Olave 40+ receiving yards (Yes),77,77.2,78.7,80.2,fair,Likely enough (ours 77–80%) but fails the late-work check.,Won,23.0
+NO @ CHI,Passed,Priced above 75¢,Alvin Kamara under 25 receiving yards (No),77,68.9,70.6,73.0,over,"Likely enough (ours 69–73%) but priced 77¢, above the 75¢ cap.",Won,23.0
+NO @ CHI,Passed,Failed a research check,Alvin Kamara under 15 rushing yards (No),76,73.2,75.8,78.7,over,Likely enough (ours 73–79%) but fails the game-script check.,Won,24.0
+NO @ CHI,Passed,Failed a research check,Kyle Monangai 30+ rushing yards (Yes),71,72.3,74.1,75.6,under,"Likely enough (ours 72–76%) but fails the role check, late-work check.",Lost,-71.0
+NO @ CHI,Passed,Failed a research check,Tyler Shough under 30 rushing yards (No),73,71.2,74.0,77.1,over,Likely enough (ours 71–77%) but fails the role check.,Lost,-73.0
+NO @ CHI,Passed,Priced above 75¢,Travis Etienne Jr. under 50 rushing yards (No),78,76.4,78.8,81.5,over,"Likely enough (ours 76–82%) but priced 78¢, above the 75¢ cap.",Lost,-78.0
+NO @ CHI,Passed,Priced above 75¢,Audric Estime under 30 rushing yards (No),76,73.9,76.5,79.3,over,"Likely enough (ours 74–79%) but priced 76¢, above the 75¢ cap.",Void,0.0
+NO @ CHI,Passed,Failed a research check,D'Andre Swift under 90 rushing yards (No),77,72.0,73.5,75.3,over,Likely enough (ours 72–75%) but fails the role check.,Won,23.0
+NO @ CHI,Passed,Priced above 75¢,Travis Etienne Jr. under 75 rush + rec yards (No),82,79.3,81.5,84.0,over,"Likely enough (ours 79–84%) but priced 82¢, above the 75¢ cap.",Lost,-82.0
+NO @ CHI,Passed,Priced above 75¢,Alvin Kamara under 55 rush + rec yards (No),91,88.2,89.6,90.9,over,"Likely enough (ours 88–91%) but priced 91¢, above the 75¢ cap.",Won,9.0
+NO @ CHI,Passed,Failed a research check,Kyle Monangai under 85 rush + rec yards (No),81,73.3,75.0,76.8,over,Likely enough (ours 73–77%) but fails the game-script check.,Won,19.0
+NO @ CHI,Passed,Failed a research check,D'Andre Swift under 130 rush + rec yards (No),87,83.1,84.3,85.6,over,Likely enough (ours 83–86%) but fails the role check.,Won,13.0
+NO @ CHI,Passed,"Card limit (one per player, four per game)",Sam Roush under 20 receiving yards (No),75,73.4,75.0,76.6,over,"Fifth line in the game, or a second line on the player.",Won,25.0
+NO @ CHI,Passed,"Card limit (one per player, four per game)",Kalif Raymond 10+ receiving yards (Yes),73,72.3,73.0,73.6,over,"Fifth line in the game, or a second line on the player.",Won,27.0
+NO @ CHI,Passed,"Card limit (one per player, four per game)",Alvin Kamara 2+ receptions (Yes),69,71.7,73.9,75.6,under,"Fifth line in the game, or a second line on the player.",Lost,-69.0
+NO @ CHI,Passed,"Card limit (one per player, four per game)",Travis Etienne Jr. under 4 receptions (No),75,70.5,72.2,73.8,over,"Fifth line in the game, or a second line on the player.",Won,25.0
+NO @ CHI,Passed,"Card limit (one per player, four per game)",Luther Burden III 40+ receiving yards (Yes),70,70.4,71.2,71.8,over,"Fifth line in the game, or a second line on the player.",Lost,-70.0
+NO @ CHI,Passed,"Card limit (one per player, four per game)",Travis Etienne Jr. under 25 receiving yards (No),74,69.0,70.5,72.4,over,"Fifth line in the game, or a second line on the player.",Won,26.0
+NO @ CHI,Passed,"Card limit (one per player, four per game)",Jordyn Tyson under 80 receiving yards (No),75,68.9,70.7,72.5,over,"Fifth line in the game, or a second line on the player.",Won,25.0
+NO @ CHI,Passed,"Card limit (one per player, four per game)",Caleb Williams under 30 rushing yards (No),74,68.7,70.3,72.2,over,"Fifth line in the game, or a second line on the player.",Won,26.0
+ARI @ KC,Passed,Failed a research check,Emmett Johnson 3+ receptions (Yes),69,67.4,70.6,73.2,fair,Likely enough (ours 67–73%) but fails the game-script check.,Won,31.0
+ARI @ KC,Passed,Priced above 75¢,Noah Gray under 3 receptions (No),79,73.0,75.1,76.7,over,"Likely enough (ours 73–77%) but priced 79¢, above the 75¢ cap.",Lost,-79.0
+ARI @ KC,Passed,Failed a research check,Xavier Worthy 2+ receptions (Yes),70,69.9,72.5,74.6,under,Likely enough (ours 70–75%) but fails the role check.,Won,30.0
+ARI @ KC,Passed,Priced above 75¢,Travis Kelce under 6 receptions (No),84,79.6,81.2,82.7,over,"Likely enough (ours 80–83%) but priced 84¢, above the 75¢ cap.",Lost,-84.0
+ARI @ KC,Passed,Priced above 75¢,Rashee Rice 3+ receptions (Yes),78,77.5,79.8,81.5,fair,"Likely enough (ours 78–82%) but priced 78¢, above the 75¢ cap.",Won,22.0
+ARI @ KC,Passed,Failed a research check,Josh Downs 3+ receptions (Yes),66,66.9,70.3,73.1,under,Likely enough (ours 67–73%) but fails the role check.,Won,34.0
+ARI @ KC,Passed,Priced above 75¢,Cyrus Allen under 3 receptions (No),86,81.2,83.1,85.2,over,"Likely enough (ours 81–85%) but priced 86¢, above the 75¢ cap.",Won,14.0
+ARI @ KC,Passed,Failed a research check,Tyler Allgeier under 3 receptions (No),74,72.9,74.1,75.1,over,"Likely enough (ours 73–75%) but fails the role check, game-script check.",Won,26.0
+ARI @ KC,Passed,Failed a research check,Simi Fehoko under 3 receptions (No),80,81.5,82.7,83.4,under,Likely enough (ours 82–83%) but fails the role check.,Won,20.0
+ARI @ KC,Passed,Priced above 75¢,Reggie Virgil under 3 receptions (No),81,81.0,82.1,82.8,over,"Likely enough (ours 81–83%) but priced 81¢, above the 75¢ cap.",Won,19.0
+ARI @ KC,Passed,Priced above 75¢,Elijah Higgins under 4 receptions (No),86,84.9,86.4,87.6,over,"Likely enough (ours 85–88%) but priced 86¢, above the 75¢ cap.",Won,14.0
+ARI @ KC,Passed,Failed a research check,Devin Duvernay under 3 receptions (No),83,84.3,85.3,85.9,fair,Likely enough (ours 84–86%) but fails the role check.,Won,17.0
+ARI @ KC,Passed,Priced above 75¢,Bam Knight under 20 receiving yards (No),79,77.2,78.5,80.1,over,"Likely enough (ours 77–80%) but priced 79¢, above the 75¢ cap.",Won,21.0
+ARI @ KC,Passed,Failed a research check,Reggie Virgil under 25 receiving yards (No),71,69.3,71.0,72.3,over,Likely enough (ours 69–72%) but fails the game-script check.,Won,29.0
+ARI @ KC,Passed,Failed a research check,Devin Duvernay under 20 receiving yards (No),72,73.3,75.3,76.2,under,Likely enough (ours 73–76%) but fails the role check.,Won,28.0
+ARI @ KC,Passed,Priced above 75¢,Cyrus Allen under 30 receiving yards (No),77,70.7,72.8,74.8,over,"Likely enough (ours 71–75%) but priced 77¢, above the 75¢ cap.",Lost,-77.0
+ARI @ KC,Passed,Failed a research check,Travis Kelce 25+ receiving yards (Yes),71,72.6,74.6,76.1,under,Likely enough (ours 73–76%) but fails the role check.,Won,29.0
+ARI @ KC,Passed,Failed a research check,Trey McBride under 70 receiving yards (No),72,70.1,71.8,73.2,over,Likely enough (ours 70–73%) but fails the game-script check.,Won,28.0
+ARI @ KC,Passed,Priced above 75¢,Elijah Higgins under 25 receiving yards (No),76,75.4,77.1,78.5,over,"Likely enough (ours 75–78%) but priced 76¢, above the 75¢ cap.",Won,24.0
+ARI @ KC,Passed,Failed a research check,Simi Fehoko under 30 receiving yards (No),74,75.8,77.6,78.5,under,Likely enough (ours 76–78%) but fails the role check.,Won,26.0
+ARI @ KC,Passed,Failed a research check,Tyler Allgeier under 15 receiving yards (No),69,68.4,70.1,71.5,over,Likely enough (ours 68–72%) but fails the role check.,Won,31.0
+ARI @ KC,Passed,Failed a research check,Xavier Worthy 15+ receiving yards (Yes),68,68.6,70.8,72.4,under,Likely enough (ours 69–72%) but fails the role check.,Won,32.0
+ARI @ KC,Passed,Failed a research check,Rashee Rice 30+ receiving yards (Yes),73,74.4,76.2,77.8,under,Likely enough (ours 74–78%) but fails the late-work check.,Won,27.0
+ARI @ KC,Passed,Failed a research check,Josh Downs 20+ receiving yards (Yes),75,77.2,79.2,80.6,under,Likely enough (ours 77–81%) but fails the role check.,Won,25.0
+ARI @ KC,Passed,Failed a research check,Emmett Johnson under 110 rushing yards (No),71,70.8,72.4,74.5,over,Likely enough (ours 71–74%) but fails the role check.,Won,29.0
+ARI @ KC,Passed,Failed a research check,Tyler Allgeier under 40 rushing yards (No),69,70.4,72.7,74.6,under,Likely enough (ours 70–75%) but fails the role check.,Won,31.0
+ARI @ KC,Passed,Failed a research check,Emmett Johnson under 170 rush + rec yards (No),84,82.4,83.5,84.9,over,Likely enough (ours 82–85%) but fails the role check.,Won,16.0
+ARI @ KC,Passed,Priced above 75¢,Bam Knight under 55 rush + rec yards (No),76,75.0,76.4,77.4,over,"Likely enough (ours 75–77%) but priced 76¢, above the 75¢ cap.",Won,24.0
+ARI @ KC,Passed,Failed a research check,Tyler Allgeier under 65 rush + rec yards (No),81,80.7,82.0,82.8,over,Likely enough (ours 81–83%) but fails the role check.,Won,19.0
+ARI @ KC,Passed,"Card limit (one per player, four per game)",Bam Knight under 3 receptions (No),72,69.0,70.6,72.4,over,"Fifth line in the game, or a second line on the player.",Won,28.0
+ARI @ KC,Passed,"Card limit (one per player, four per game)",Trey McBride 5+ receptions (Yes),71,68.9,71.3,73.2,over,"Fifth line in the game, or a second line on the player.",Won,29.0
+ARI @ KC,Passed,"Card limit (one per player, four per game)",Noah Gray under 25 receiving yards (No),74,68.1,70.0,71.8,over,"Fifth line in the game, or a second line on the player.",Won,26.0
+BAL @ CAR,Passed,Priced above 75¢,Justice Hill 2+ receptions (Yes),78,75.5,76.5,77.8,over,"Likely enough (ours 76–78%) but priced 78¢, above the 75¢ cap.",Won,22.0
+BAL @ CAR,Passed,Priced above 75¢,Josh Cuevas under 3 receptions (No),83,82.3,83.2,83.8,over,"Likely enough (ours 82–84%) but priced 83¢, above the 75¢ cap.",Won,17.0
+BAL @ CAR,Passed,Priced above 75¢,Tetairoa McMillan under 7 receptions (No),81,78.0,78.7,79.5,over,"Likely enough (ours 78–80%) but priced 81¢, above the 75¢ cap.",Won,19.0
+BAL @ CAR,Passed,Priced above 75¢,Jalen Coker under 6 receptions (No),82,78.9,79.6,80.4,over,"Likely enough (ours 79–80%) but priced 82¢, above the 75¢ cap.",Won,18.0
+BAL @ CAR,Passed,Failed a research check,Chuba Hubbard under 5 receptions (No),75,70.8,72.2,73.8,over,Likely enough (ours 71–74%) but fails the role check.,Won,25.0
+BAL @ CAR,Passed,Priced above 75¢,Rashod Bateman under 4 receptions (No),79,76.9,78.5,79.8,over,"Likely enough (ours 77–80%) but priced 79¢, above the 75¢ cap.",Won,21.0
+BAL @ CAR,Passed,Priced above 75¢,Ja'Kobi Lane 2+ receptions (Yes),77,72.4,73.9,75.6,over,"Likely enough (ours 72–76%) but priced 77¢, above the 75¢ cap.",Lost,-77.0
+BAL @ CAR,Passed,Failed a research check,Justice Hill under 25 receiving yards (No),70,70.9,72.0,72.7,fair,Likely enough (ours 71–73%) but fails the role check.,Lost,-70.0
+BAL @ CAR,Passed,Priced above 75¢,Derrick Henry under 20 receiving yards (No),78,78.6,79.5,80.2,over,"Likely enough (ours 79–80%) but priced 78¢, above the 75¢ cap.",Won,22.0
+BAL @ CAR,Passed,Failed a research check,Josh Cuevas under 20 receiving yards (No),71,69.7,71.1,72.1,over,Likely enough (ours 70–72%) but fails the game-script check.,Won,29.0
+BAL @ CAR,Passed,Failed a research check,Rashod Bateman under 40 receiving yards (No),71,70.3,71.2,71.8,over,Likely enough (ours 70–72%) but fails the game-script check.,Lost,-71.0
+BAL @ CAR,Passed,Failed a research check,Jalen Coker 25+ receiving yards (Yes),73,71.7,73.1,74.0,over,"Likely enough (ours 72–74%) but fails the role check, game-script check.",Won,27.0
+BAL @ CAR,Passed,Failed a research check,Chuba Hubbard 10+ receiving yards (Yes),73,71.0,74.1,76.7,over,Likely enough (ours 71–77%) but fails the late-work check.,Lost,-73.0
+BAL @ CAR,Passed,Failed a research check,Justice Hill under 30 rushing yards (No),80,73.6,75.9,77.8,over,Likely enough (ours 74–78%) but fails the role check.,Lost,-80.0
+BAL @ CAR,Passed,Failed a research check,Justice Hill under 55 rush + rec yards (No),82,76.0,78.1,79.8,over,Likely enough (ours 76–80%) but fails the role check.,Lost,-82.0
+BAL @ CAR,Passed,Priced above 75¢,Derrick Henry under 120 rush + rec yards (No),85,80.0,81.8,83.4,over,"Likely enough (ours 80–83%) but priced 85¢, above the 75¢ cap.",Won,15.0
+BAL @ CAR,Passed,"Card limit (one per player, four per game)",Ja'Kobi Lane under 60 receiving yards (No),75,75.3,76.1,76.7,over,"Fifth line in the game, or a second line on the player.",Won,25.0
+BAL @ CAR,Passed,"Card limit (one per player, four per game)",Mark Andrews under 6 receptions (No),74,73.9,75.1,76.1,over,"Fifth line in the game, or a second line on the player.",Won,26.0
+BAL @ CAR,Passed,"Card limit (one per player, four per game)",Mark Andrews under 50 receiving yards (No),73,73.4,74.7,75.8,fair,"Fifth line in the game, or a second line on the player.",Won,27.0
+BAL @ CAR,Passed,"Card limit (one per player, four per game)",Zay Flowers under 90 receiving yards (No),70,70.8,71.7,72.3,fair,"Fifth line in the game, or a second line on the player.",Lost,-70.0
+BAL @ CAR,Passed,"Card limit (one per player, four per game)",Chuba Hubbard under 125 rush + rec yards (No),71,69.8,73.1,75.1,fair,"Fifth line in the game, or a second line on the player.",Won,29.0
+BAL @ CAR,Passed,"Card limit (one per player, four per game)",Darren Waller 15+ receiving yards (Yes),70,69.7,71.0,72.1,over,"Fifth line in the game, or a second line on the player.",Won,30.0
+BAL @ CAR,Passed,"Card limit (one per player, four per game)",Trevor Etienne under 15 rushing yards (No),70,69.5,72.5,74.0,under,"Fifth line in the game, or a second line on the player.",Lost,-70.0
+BAL @ CAR,Passed,"Card limit (one per player, four per game)",Zay Flowers under 8 receptions (No),71,69.5,71.5,73.0,over,"Fifth line in the game, or a second line on the player.",Lost,-71.0
+BAL @ CAR,Passed,"Card limit (one per player, four per game)",Derrick Henry under 3 receptions (No),70,69.5,70.8,71.9,over,"Fifth line in the game, or a second line on the player.",Lost,-70.0
+BAL @ CAR,Passed,"Card limit (one per player, four per game)",Derrick Henry under 90 rushing yards (No),74,68.2,70.8,72.9,over,"Fifth line in the game, or a second line on the player.",Lost,-74.0

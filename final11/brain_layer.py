@@ -23,7 +23,11 @@ QB = {
     'BAL @ CAR': (False, 'Baltimore starts a backup: Lamar Jackson (thumb) is on injured reserve (ESPN, Fri Nov 20), with a Week 16 return the hope.'),
     'NO @ CHI': (True, 'Tyler Shough (NO) and Caleb Williams (CHI) start; neither is on the injury report (ESPN, Fri Nov 20).'),
 }
-OVERS_NOTE = 'In testing, the model’s overs that passed these same checks broke even (36 picks, Weeks 7–9), while its unders won in each week.'
+# v2 rules (from Week 12): a backup starter is a research factor, not an exclusion. For each team starting one: who, and how many of
+# the team's last 3 games he started (nflverse, most pass attempts). Used only when the build runs with WEDGE_RULES=v2.
+BACKUP = {'MIA': {'name': 'Kyle McCord', 'recent': 1}, 'MIN': {'name': 'Kirk Cousins', 'recent': 1}, 'ARI': {'name': 'Josh Johnson', 'recent': 0},
+          'PHI': {'name': 'Joe Milton III', 'recent': 1}, 'BAL': {'name': 'Jacoby Brissett', 'recent': 1}}
+OVERS_NOTE ='In testing, the model’s overs that passed these same checks broke even (36 picks, Weeks 7–9), while its unders won in each week.'
 RATIO = 3   # preferred mix on the card: about one under for every three overs, for finals and for leans
 CTX = None
 def ctx():
