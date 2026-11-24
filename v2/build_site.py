@@ -12,12 +12,12 @@ Run after every site update:  python3 /home/claude/wedger/v2/build_site.py
 import hashlib, json, os, re, shutil, subprocess, sys
 W = '/home/claude/wedger/'; R = W + 'rh/'; OUT = W + 'site/'; SRC = W + 'v2/out/'
 P16 = 'pub1116/'   # static datasets as published Mon Nov 16 (used when the workspace copy is missing)
-DS = {'lines': 'inband_w11.csv', 'lines_all': 'lines_all_w11.csv', 'props': 'props_cat_w11.csv', 'defense': 'defense_w11.csv', 'atd': 'atd_w11.csv',
-      'results': 'results_w6_w11.csv', 'hist_perms': 'hist_perms.csv', 'hist_lines': 'hist_lines.csv', 'sit': W + 'v2/data/sit_w11_v2.csv',
-      'outlook': 'outlook_w11.csv', 'nflctx': 'nflctx_w11.csv', 'nba_lines': '../nba/nba_lines.csv', 'nba_sit': '../nba/nba_sit.csv',
+DS = {'lines': 'inband_w12.csv', 'lines_all': 'lines_all_w12.csv', 'props': 'props_cat_w12.csv', 'defense': 'defense_w12.csv', 'atd': 'atd_w12.csv',
+      'results': 'results_w6_w11.csv', 'hist_perms': 'hist_perms.csv', 'hist_lines': 'hist_lines.csv', 'sit': W + 'v2/data/sit_w12_v2.csv',
+      'outlook': 'outlook_w12.csv', 'nflctx': 'nflctx_w12.csv', 'nba_lines': '../nba/nba_lines.csv', 'nba_sit': '../nba/nba_sit.csv',
       'nba_outlook': '../nba/nba_outlook.csv', 'nba_ctx': '../nba/nba_ctx.csv', 'pick_prices': 'pick_prices_w7.csv', 'nba_results': '../nba/nba_results.csv',
-      'proj': 'proj_w11.csv', 'bt_weeks': 'bt_weeks.csv', 'bt_props': 'bt_props.csv', 'mom_summary': 'mom_summary.csv', 'team_mom': 'team_mom.csv',
-      'defhist': 'defhist_w11.csv', 'cats': 'cats.csv', 'research': 'research.csv', 'inj': W + 'v2/data/inj_w11.csv',
+      'proj': 'proj_w12.csv', 'bt_weeks': 'bt_weeks.csv', 'bt_props': 'bt_props.csv', 'mom_summary': 'mom_summary.csv', 'team_mom': 'team_mom.csv',
+      'defhist': 'defhist_w12.csv', 'cats': 'cats.csv', 'research': 'research.csv', 'inj': W + 'v2/data/inj_w12.csv',
       'card_bt': 'card_bt.csv', 'card_bt_sum': 'card_bt_sum.csv', 'final_record': 'final_record.csv', 'frec': 'frec.csv'}
 def ds_path(k, v):
     f = v if v.startswith('/') else R + v
