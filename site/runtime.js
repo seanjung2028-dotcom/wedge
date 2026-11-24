@@ -76,8 +76,14 @@
       IDS.forEach(function (id) { if (b.ds[id] != null) raw[id] = d3.csvParse(b.ds[id]); });
       booted = true;
       var full = A.level >= 2;
-      var card = full ? loadScript(C.fin[0]).then(function () { return loadScript(C.brain[0]); }).catch(function (e) { console.warn(e); A.level = Math.min(A.level, 1); return loadScript(C.fin[1]).then(function () { return loadScript(C.brain[1]); }); })
-                      : loadScript(C.fin[1]).then(function () { return loadScript(C.brain[1]); });
+      // a card copy from before this build (an edge or browser cache caught mid-deploy) doesn't carry this build's time: fetch it again past the caches
+      var bust = function (u) { return u + (u.indexOf('?') < 0 ? '?' : '&') + 'r=' + Date.now(); };
+      var loadCard = function (i) { return loadScript(C.fin[i]).then(function () { return loadScript(C.brain[i]); }).then(function () {
+        if (!C.at || !window.WZ_FINAL || window.WZ_FINAL.at === C.at) return;
+        console.warn('stale card copy (' + window.WZ_FINAL.at + '), fetching ' + C.at);
+        return loadScript(bust(C.fin[i])).then(function () { return loadScript(bust(C.brain[i])); });
+      }); };
+      var card = full ? loadCard(0).catch(function (e) { console.warn(e); A.level = Math.min(A.level, 1); return loadCard(1); }) : loadCard(1);
       return card.then(function () { return loadScript(C.wg); });
     })
       .then(function () { clearTimeout(slow); subs.forEach(function (f) { try { f(); } catch (e) { console.error(e); } }); if (veil) veil.remove(); })

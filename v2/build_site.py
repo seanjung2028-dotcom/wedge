@@ -140,8 +140,14 @@ RUNTIME = r"""/* Wedge standalone runtime: stands in for the dashboard runtime a
       IDS.forEach(function (id) { if (b.ds[id] != null) raw[id] = d3.csvParse(b.ds[id]); });
       booted = true;
       var full = A.level >= 2;
-      var card = full ? loadScript(C.fin[0]).then(function () { return loadScript(C.brain[0]); }).catch(function (e) { console.warn(e); A.level = Math.min(A.level, 1); return loadScript(C.fin[1]).then(function () { return loadScript(C.brain[1]); }); })
-                      : loadScript(C.fin[1]).then(function () { return loadScript(C.brain[1]); });
+      // a card copy from before this build (an edge or browser cache caught mid-deploy) doesn't carry this build's time: fetch it again past the caches
+      var bust = function (u) { return u + (u.indexOf('?') < 0 ? '?' : '&') + 'r=' + Date.now(); };
+      var loadCard = function (i) { return loadScript(C.fin[i]).then(function () { return loadScript(C.brain[i]); }).then(function () {
+        if (!C.at || !window.WZ_FINAL || window.WZ_FINAL.at === C.at) return;
+        console.warn('stale card copy (' + window.WZ_FINAL.at + '), fetching ' + C.at);
+        return loadScript(bust(C.fin[i])).then(function () { return loadScript(bust(C.brain[i])); });
+      }); };
+      var card = full ? loadCard(0).catch(function (e) { console.warn(e); A.level = Math.min(A.level, 1); return loadCard(1); }) : loadCard(1);
       return card.then(function () { return loadScript(C.wg); });
     })
       .then(function () { clearTimeout(slow); subs.forEach(function (f) { try { f(); } catch (e) { console.error(e); } }); if (veil) veil.remove(); })
@@ -294,17 +300,19 @@ def main():
     T2 = f'p/t2/{hx(fin_full + brain_full)[:16]}/'
     protect(T2 + 'final.js', fin_full, 'application/javascript; charset=utf-8', 2); protect(T2 + 'brain.js', brain_full, 'application/javascript; charset=utf-8', 2)
     write_manifest()
-    put('data/final-public.js', 'window.WZ_FINAL=' + json.dumps(public_card(read_js_obj(SRC + 'final.js', 'WZ_FINAL')), ensure_ascii=False, separators=(',', ':')) + ';\n')
+    card_obj = read_js_obj(SRC + 'final.js', 'WZ_FINAL'); CARD_AT = card_obj.get('at', '')
+    put('data/final-public.js', 'window.WZ_FINAL=' + json.dumps(public_card(card_obj), ensure_ascii=False, separators=(',', ':')) + ';\n')
     put('data/brain-public.js', 'window.WZ_BRAIN=' + json.dumps(public_brain(read_js_obj(SRC + 'brain.js', 'WZ_BRAIN')), ensure_ascii=False, separators=(',', ':')) + ';\n')
     shutil.copy2('/opt/npm-tools/node_modules/d3/dist/d3.min.js', OUT + 'vendor/d3.min.js')
     open(OUT + 'runtime.js', 'w').write(RUNTIME.replace('__IDS__', json.dumps(list(DS))))
     favicons()
     # Versioned URLs: the browser can cache each file, and a new build is picked up immediately (the page itself is never cached).
     # Cloudflare's edge keeps a versioned file 10 minutes at most (_headers): if a first request for a new version reaches an edge
-    # still serving the previous deploy, the stale copy can't outlive that. Browsers keep the year-long cache.
+    # still serving the previous deploy, the stale copy can't outlive that. Browsers keep data, scripts and styles 10 minutes too
+    # (vendor and image files a year), and the runtime re-fetches a card whose time doesn't match this build's (boot 'at').
     ver = lambda f: f + '?v=' + hx(open(OUT + f, 'rb').read())[:12]
     boot = {'pub': ver('data/public.json'), 't1': '/' + T1, 'fin': ['/' + T2 + 'final.js', ver('data/final-public.js')],
-            'brain': ['/' + T2 + 'brain.js', ver('data/brain-public.js')], 'wg': ver('wg.js')}
+            'brain': ['/' + T2 + 'brain.js', ver('data/brain-public.js')], 'wg': ver('wg.js'), 'at': CARD_AT}
     links = links.replace('href="wg.css"', 'href="' + ver('wg.css') + '"')
     def write_index(pv):
         html = f"""<!doctype html>
@@ -361,13 +369,13 @@ else {{ document.getElementById('wz-boot-msg').textContent = 'Wedge couldn’t l
 /index.html
   Cache-Control: no-cache
 /data/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=600
   Cloudflare-CDN-Cache-Control: max-age=600
 /*.js
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=600
   Cloudflare-CDN-Cache-Control: max-age=600
 /*.css
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=600
   Cloudflare-CDN-Cache-Control: max-age=600
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
