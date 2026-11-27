@@ -7,7 +7,7 @@ import json, sys, math
 import numpy as np
 sys.path.insert(0, '/home/claude/wedger/lens'); import core
 W = '/home/claude/wedger/'
-WEEK = 11   # the week being priced; tables use every game before it (was a hard-coded 10 in each default)
+WEEK = 12   # the week being priced; tables use every game before it (was 11 through Tuesday of Week 12, which left Week 11 out of that card: fixed Fri Nov 27)
 CAL = json.load(open(W + 'bt/cal_v6.json'))
 COLS = CAL['cols']; GL = CAL['group_levels']; B = np.array(CAL['boot'])
 COEF = np.array([CAL['coef'][f'grp.{g}'] for g in GL] + [CAL['coef'][c] for c in COLS])
@@ -71,6 +71,7 @@ def detail(name, team, opp, stat, line, mid_c, week=None, margin=None):
 # ---------------- projection 2, the research method's number for the exact line (same definition as the 1,000-run test)
 BLEND = json.load(open(W + 'bt/brain_blend.json')) if _os.path.exists(W + 'bt/brain_blend.json') else None
 if BLEND and BLEND.get('form') != 'trig blend': BLEND = None
+BLEND = None   # Fri Nov 27: the earlier research method's projection is retired with it (rules v3); Wedge % is the lens alone. Cards posted before keep their numbers.
 LABEL['research'] = 'Research projection'
 _CTX, _RP, _GM = {}, {}, None
 def _ctx(week):

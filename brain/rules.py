@@ -1,4 +1,17 @@
-"""Wedge pick rules v2, from Week 12 (set Mon Nov 23, 2026), under the master prompt of Nov 23 (brain/Master_Prompt_2026-11-23.txt).
+"""Wedge pick rules v3, from Sunday of Week 12 (set by the owner Fri Nov 27, 2026), with the research method Independent Sports
+Research v1 (brain/ISR_Clone_v1_2026-11-24.md, checks in brain/isr.py). v2 (below) picked Wednesday-Friday of Week 12, which stay as posted.
+
+What v3 changes from v2:
+  RESEARCH  the research checks and the hand research follow the new method (brain/isr.py); the earlier method's checks
+            (brain/gates.py) and its projection inside Wedge % are retired from Sunday of Week 12.
+  PATH B    the 70% bar and the 75c cap stay. A line priced 50-75c that misses the bar can still be a final line IF AND ONLY IF
+            our number is statistically significantly above its break-even (price + fee): brain/sig.py, a one-sided 95% test
+            that uses how much of the model's edge has held up on graded weeks, not just the model's own range.
+  MARKETS   the method's full list where Kalshi lists it (brain/isr.py ELIGIBLE); markets the model doesn't price are read
+            at the market's number and reach the card only on a research case.
+  CARD      up to five lines a game (the method's five, or fewer when the evidence is thin), one per player.
+
+v2, from Week 12 (set Mon Nov 23, 2026), under the master prompt of Nov 23 (brain/Master_Prompt_2026-11-23.txt):
 
 What changed from v1 (Weeks 7-11, which stay as posted and graded):
   v1 ranked lines by edge: Final = the low end of our number beats the price after fees, Lean = the middle does.
@@ -12,11 +25,14 @@ Wedge's own bars (the prompt has no fixed numbers, so these are Wedge's conversi
   BAR     70%: Final = the low end of our range is 70%+, Lean = our middle is 70%+.
   Card    one line per player, up to four per game, best chance first (unchanged from v1).
 The research checks (role, game script, late work) and the hand research still veto a line, as in v1."""
-VERSION = 'v2'
-SINCE = 'Week 12'
+import sys as _sys
+_sys.path.insert(0, '/home/claude/wedger/brain'); import sig as SIG
+VERSION = 'v3'
+SINCE = 'Week 12 Sunday'
 CAP = 75          # cents, the ask
 BAR = 70          # percent chance
-PER_GAME = 4
+FLOOR = 50        # cents: the lowest price path B can use (2.0x)
+PER_GAME = 5
 FEE = 2           # cents a contract, used only for the value read
 VETO = ('ROLE', 'SCRIPT', 'LATE')
 LBL = {'ROLE': 'role check', 'SCRIPT': 'game-script check', 'LATE': 'late-work check'}
@@ -46,8 +62,28 @@ def decide(x, stat, backup=None, status=''):
     return 'Conditional lean', hold
 
 
+def significant(x):
+    """path B: 50-75c and our number significantly above the break-even (brain/sig.py). -> (ok, lower bound %)"""
+    if x.get('mkt') is None: return False, None
+    return SIG.passes(x['ask'], x['mkt'], x['mid'], x.get('lo'), x.get('hi'))
+
+
+def decide3(x, stat, backup=None, status=''):
+    """v3: v2's call, then path B for a line that misses the bar. A path-B line carries x['path'] = 'B' and its lower bound."""
+    call, note = decide(x, stat, backup, status)
+    x['path'] = 'A' if call != 'Pass' else ''
+    ok, lb = significant(x); x['sig_low'] = None if lb is None else round(lb, 1)
+    if call == 'Final line' or not ok: return call, note
+    c = x['chk']
+    if any(not c[n]['pass'] for n in VETO) or qb_hold(stat, backup) or status == 'Questionable': return call, note
+    x['path'] = 'B'
+    return 'Final line', (f"Under the {BAR}% bar, but our number is significantly above the price: at 95% confidence it is at least "
+                          f"{lb:.0f}%, against the {x['ask'] + FEE}% the price needs.")
+
+
 def cond(x, call, note):
     """the condition line on a play"""
+    if call == 'Final line' and x.get('path') == 'B': return "Holds while our number stays significantly above the price's break-even and the news holds."
     if call == 'Final line': return f"Holds as a final line up to {CAP}¢ while the news holds."
     return note or f"Becomes a final line if the low end of our number reaches {BAR}%."
 
@@ -73,7 +109,7 @@ def why_not(y, cap=CAP):
 def passed_move(y):
     """what would put a passed player's closest rung on the card"""
     if y['ask'] > CAP: return f"Back in play if the price drops to {CAP}¢ or less."
-    if y['mid'] < BAR: return f"Our number tops out at {y['mid']:.0f}% inside the {CAP}¢ cap; the card needs {BAR}%."
+    if y['mid'] < BAR: return f"Our number tops out at {y['mid']:.0f}% inside the {CAP}¢ cap; the card needs {BAR}%, or a number significantly above the price."
     return 'Re-check if the news changes.'
 
 
@@ -163,9 +199,12 @@ def order_passed(passed, n=8):
 
 
 TEXT = {   # page copy for the method, one source for the site, the docs and the README
-    'final': f"Final line: even the low end of our range gives it a {BAR}%+ chance, it passes every research check, and it costs {CAP}¢ or less.",
+    'final': f"Final line: even the low end of our range gives it a {BAR}%+ chance, it passes every research check, and it costs {CAP}¢ or less. "
+             f"A line priced {FLOOR}–{CAP}¢ under the bar can also be one, but only when our number is significantly above what the price needs (95% confidence, judged on how much of our model's edge has held up in graded weeks).",
     'lean': f"Lean: our middle number gives it a {BAR}%+ chance and it passes every check, but the low end dips under {BAR}% or one named condition is open.",
-    'passed': f"Considered and passed: likely enough by our number but failed a check or the research, priced above {CAP}¢, or a fifth line in one game.",
+    'passed': f"Considered and passed: likely enough by our number but failed a check or the research, priced above {CAP}¢, or a sixth line in one game.",
+    'research': "Research comes first: each game is read from the matchup out (both offense-defense pairings, each player's current role and recent form against his baseline, team analysts, coaching comments and film breakdowns), then compared with the board.",
+    'markets': "Markets: rushing and receiving ladders carry our number; passing, attempts, touchdowns, spreads, team totals and team sacks are read at the market's own number and reach the card only on a research case. Individual sacks are never used.",
     'value': "Price comes second: each line shows what the price needs against our number, but that read never moves a line up or down the card.",
     'qb': "Games with a backup quarterback stay on the board; his team's receiving lines stay leans until he has started two of its last three games.",
 }

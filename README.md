@@ -92,9 +92,15 @@ Two pages under NFL > Live. Both are open to every visitor; the server decides w
 - **Wedge % (v6):** see `lens/v6.py` and `lens/core.py`.
   - It starts from the market midpoint, then moves receiving and rushing lines by backtested matchup features: what the defense allows, where the targets go, the blitz split, run direction, box count, volume, comparable defenses and consistency at the number.
   - Passing, TD and interception lines stay at the market.
-  - Since Nov 21, receiving and rushing lines are then joined with the research projection for the exact line (`research_p` in `lens/v6.py`; weight from `bt/brain_blend.json`, about 5%).
+  - Nov 21 – Nov 26, receiving and rushing lines were then joined with the research projection for the exact line (`research_p` in `lens/v6.py`; weight from `bt/brain_blend.json`, about 5%). Retired Fri Nov 27 with the earlier research method (`BLEND = None`): from Sunday of Week 12, Wedge % is the lens alone.
+  - `v6.WEEK` is the week being priced (tables use every game before it). It must move each week: Tuesday's Week 12 build still had 11, which left Week 11 out of that card's numbers and checks (fixed Fri Nov 27; most posted numbers moved under a point).
   - Weights live in `bt/cal_v6.json` and the out-of-sample report in `bt/rep_v6.json`, both fit with `bt/fit_v6.py`.
-- **Research checks:** see `brain/gates.py` and `final10/brain_layer.py`.
+- **Research method from Sunday of Week 12: Independent Sports Research v1** (`brain/ISR_Clone_v1_2026-11-24.md`, the owner's spec, read-only; keep private).
+  - Game first: environment and stakes, both offense-defense pairings, each player's fundamentals (current role over stale averages), momentum against his own baseline, team analysts and coaching quotes, film breakdowns (labeled when only a description was read), human context as a secondary hypothesis, then the board. Never claim film that wasn't watched; never fabricate numbers.
+  - Computable checks: `brain/isr.py` (role, game script, late work as vetoes; form against baseline and the full log as evidence). The hand research is in the week's `brain_layer.py` (`RESEARCH`, `RESEARCH_PLAYER`, and `RESEARCH_MARKET` for markets the model doesn't price).
+  - Markets: rushing attempts and yards, receptions, receiving yards, rush + rec yards, passing attempts, yards and TDs, player TDs, spreads, team totals, team sacks. Never individual sacks.
+  - The spec's 51/60 ledger is user-reported and not blind: never show it on the site or describe it as a hit rate.
+- **Research checks through Friday of Week 12 (the earlier method):** see `brain/gates.py` and `final10/brain_layer.py`.
   - A line must clear on price and pass several checks before it can be a final:
     - no backup quarterback in the game
     - a steady role
@@ -112,8 +118,14 @@ Two pages under NFL > Live. Both are open to every visitor; the server decides w
   - `finalN/build.py` runs v2 when `WEDGE_RULES=v2`. `final11` defaults to v1 so Week 11 stays as posted. When `final12/` is copied from `final11/`, make v2 its default and give its `brain_layer.py` a `BACKUP` table (team → starter and his starts in the last 3).
   - Page copy for v2 is `v2/r21_rules.py`. It shows only when the card's data carries `rules: 'v2'`.
   - `bt/w11_likely/` holds the Week 11 test: the chance-first backtest, the v2 shadow card (`build/`) and its grading.
+- **Pick rules v3, from Sunday of Week 12 (`brain/rules.py`, set by the owner Fri Nov 27):**
+  - The 70% bar and the 75¢ cap stay (path A, as in v2).
+  - Path B: a line priced 50–75¢ that misses the bar is a final line only if our number is statistically significantly above its break-even (price + 2¢). `brain/sig.py` fits how much of the lens's move over the market has held up on graded held-out rungs (logit offset model, standard errors clustered by player and game) and takes the one-sided 95% lower bound. On Week 11 alone (5,563 rungs) beta = 0.48 ± 0.68 (one-sided p = 0.24), so the bound sits below the market and no line qualifies yet. Add each graded week to `SOURCES` and re-run `python3 brain/sig.py`.
+  - Up to five lines a game (the method's five, or fewer), one per player. Research picks in unpriced markets show the market's number, labeled as the market's (`market_only`).
+  - Page copy: `v2/r23_research.py` (v2 copy shows for v3 too; `v3Rules()` adds the research and markets rows).
 - **Which number to rank by (Tue Nov 24, `bt/w12_model/`):** every Kalshi rung on Week 11's final-draft board (5,563 graded, Monday night included) was scored for five numbers: Kalshi's mid, Wedge % as used (v6 + the 5% research projection), the sportsbooks' fitted consensus, books moved by the lens, and a books/Wedge average. Wedge % matched Kalshi's log loss (0.4855) and its v2 card did best (39–7, +505¢; Kalshi's mid 39–9, +328¢). The books' curve was worse than Kalshi's own price (log loss +0.034, 90% interval +0.013 to +0.060; overconfident above 90%), so it is used only to price rungs Kalshi hasn't listed. Wedge % stays the number.
 - **Week 12 pipeline (Tue Nov 24):** nflverse through Week 11 is in `nfl12/` (`dl18` and `dl19` now point there; `nfl/` keeps the Week 11 inputs). `w12/mkw12.py` generated the Week 12 scripts from Week 11's. Kalshi was pulled in the browser from the public market list into `pull1124/raw/` (one call per series) and converted with `pull1124/convert.py`; ESPN injuries and the Open-Meteo kickoff forecast came the same way. `final12/build.py` runs v2 by default. No sportsbook pull yet, so there are no early (book-priced) lines and the page hides that block.
+- **Week 12 Sunday and Monday (Fri Nov 27):** Kalshi pulled in the browser into `pull1127/raw/` (all eligible series, two pages for receiving yards) and converted with `pull1127/convert.py` (`kalshi_extra_w12.json` holds the new markets). Run with `W12_PULL=pull1127 W12_INJ=pull1127 W12_PREV=bt/w12_tue_board W12_LOCK="GB @ LAR,CHI @ DET,PHI @ DAL,KC @ BUF,DEN @ PIT" bash w12/run_chain.sh`. `bt/w12_tue_board/` is Tuesday's posted card; locked games keep it. `final12/build.py` now defaults to v3.
 
 ## Layout
 

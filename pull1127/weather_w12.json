@@ -1,0 +1,8 @@
+{"at": "2026-11-27T03:25 CT", "src": "Open-Meteo hourly forecast at kickoff (UTC hour of kickoff)",
+ "NO@CIN": {"temp": 50, "precip_prob": 91, "precip_in": 0.22, "wind": 10, "gust": 32, "code": 63},
+ "NYJ@MIA": {"temp": 78, "precip_prob": 1, "precip_in": 0, "wind": 8, "gust": 10, "code": 3},
+ "TEN@JAX": {"temp": 61, "precip_prob": 3, "precip_in": 0, "wind": 4, "gust": 12, "code": 3},
+ "SEA@SF": {"temp": 66, "precip_prob": 69, "precip_in": 0, "wind": 10, "gust": 18, "code": 0},
+ "LV@CLE": {"temp": 47, "precip_prob": 99, "precip_in": 0.055, "wind": 4, "gust": 9, "code": 61},
+ "CAR@TB": {"temp": 66, "precip_prob": 22, "precip_in": 0.004, "wind": 7, "gust": 11, "code": 51},
+ "indoor": ["NYG@IND", "ATL@MIN", "BAL@HOU", "WSH@ARI", "NE@LAC (SoFi, covered)"]}

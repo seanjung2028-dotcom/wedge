@@ -516,6 +516,9 @@ s, js = _r21.apply(s, js)
 # round 22 (Tue Nov 24): Week 12
 _sp22 = _ilu.spec_from_file_location('r22_week12', V + 'r22_week12.py'); _r22 = _ilu.module_from_spec(_sp22); _sp22.loader.exec_module(_r22)
 s, js = _r22.apply(s, js)
+# round 23 (Fri Nov 27): Sunday and Monday under rules v3 and the new research method
+_sp23 = _ilu.spec_from_file_location('r23_research', V + 'r23_research.py'); _r23 = _ilu.module_from_spec(_sp23); _sp23.loader.exec_module(_r23)
+s, js = _r23.apply(s, js)
 s = s.replace('@@JS@@', '<script>' + js + '</script>')
 s = s.replace('<title>Wedge', '<title>Wedge')
 open(V + 'index_full.html', 'w').write(s)

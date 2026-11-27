@@ -1,9 +1,11 @@
 """The research method layered on the v6 card: QB eligibility, research checks per exact line, the evidence chain,
-alternatives, objections and card-level interaction. Used by final12/build.py (Week 12)."""
+alternatives, objections and card-level interaction. Used by final12/build.py (Week 12).
+From Sunday of Week 12 (Fri Nov 27) the checks come from Independent Sports Research v1 (brain/isr.py) on every game through Week 11,
+and the hand research below follows that method's workflow. Wednesday-Friday's research entries stay for the record (those games are locked)."""
 import json, math, sys
 import numpy as np, pandas as pd
 W = '/home/claude/wedger/'
-sys.path.insert(0, W + 'brain'); import gates
+sys.path.insert(0, W + 'brain'); import isr as gates   # v3: the new method's checks (brain/isr.py); brain/gates.py stays for the posted cards
 INJ_URL = 'https://www.espn.com/nfl/injuries'
 # ---- quarterbacks, Week 12 (nflverse starts through Week 11; ESPN injury report Tue Nov 24, 2:42 PM CT). From Week 12 (rules v2) a backup
 # starter does not take a game off the board: it is a research factor (BACKUP below; brain/rules.py qb_hold).
@@ -38,7 +40,7 @@ def ctx():
         st = pd.read_csv(W + 'dl19/stats_player_week_2026.csv', low_memory=False)
         pbp = pd.read_csv(W + 'dl19/play_by_play_2026.csv.gz', low_memory=False, usecols=['week', 'qtr', 'rusher_player_id', 'receiver_player_id', 'rushing_yards', 'receiving_yards'])
         games = pd.read_csv(W + 'dl19/games.csv')
-        CTX = gates.Ctx(st, pbp, games, 11)
+        CTX = gates.Ctx(st, pbp, games, 12)   # every game before Week 12 (Tuesday's build used 11 and left Week 11 out)
     return CTX
 UN = {'LAR': 'LA', 'WSH': 'WAS'}
 def un(t): return UN.get(t, t)
@@ -54,7 +56,7 @@ def decide(x):
     if vf: return 'Final line', ''
     if vl: return 'Conditional lean', ''
     return 'Pass', ''
-LBL = {'QB': 'Quarterbacks', 'ROLE': 'Role check', 'SCRIPT': 'Game-script check', 'LOG': 'Full game log', 'LATE': 'Late-work check'}
+LBL = {'QB': 'Quarterbacks', 'ROLE': 'Role check', 'SCRIPT': 'Game-script check', 'LOG': 'Full game log', 'LATE': 'Late-work check', 'MOMENTUM': 'Form against his baseline'}
 ordn = lambda n: f"{n}{'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
 def tier(mid):
     return 'High' if mid >= 65 else ('Solid' if mid >= 57 else ('Lean' if mid >= 50 else 'Long shot'))
@@ -80,6 +82,12 @@ def check_rows(x, o, word):
     q = c['LATE']['q4_share']
     out.append({'k': LBL['LATE'], 'ok': c['LATE']['pass'], 't': ('Not a factor for an under.' if x['side'] == 'No' else
                (f"{100 * q:.0f}% of his {word} came in fourth quarters." if q is not None else 'No fourth-quarter split available.'))})
+    m = c.get('MOMENTUM')
+    if m and m.get('state') in ('hot', 'cold', 'steady'):
+        t = {'hot': f"Running hot: {m['last3']:g} over his last 3 against a {m['season']:g} season median. The research checks whether it holds and whether the defense will key on him.",
+             'cold': f"Running cold: {m['last3']:g} over his last 3 against a {m['season']:g} season median. The research looks for the cause before assuming a bounce-back.",
+             'steady': f"In line with his baseline: {m['last3']:g} over his last 3, {m['season']:g} season median."}[m['state']]
+        out.append({'k': LBL['MOMENTUM'], 'ok': True, 't': t, 'info': True})
     return out
 def chain(x, o, T, rank):
     """defense concession -> offense ability -> deployment -> what the exact number needs"""
@@ -270,3 +278,198 @@ RESEARCH_PLAYER = {
         'notes': ['He draws 9–13 targets in most games and reached 100+ in 4 of 10.'],
         'src': [NFLV], 'decision': 'Pass', 'why': 'Research pass: he reached 100 yards in 4 of 10 games on 9–13 targets, too often for an under at this line.'},
 }
+
+# ==== Sunday and Monday, Week 12 (Fri Nov 27): Independent Sports Research v1, game first ==========================================
+# Each game was read before its lines: the AP game preview (records, stakes, injuries, coach and player quotes, the matchup to watch),
+# ESPN's injury report (Fri Nov 27, 3:01 AM CT: Thursday's practice reports), team analysts where they covered the game, the kickoff
+# forecast, and nflverse logs and usage through Week 11. Then each card line was held against that read; a line stays only when the
+# football case holds, and each keeps its strongest counterargument. Final injury designations post Friday afternoon.
+ESPN = {'t': 'ESPN NFL injuries, Fri Nov 27 3:01 AM CT', 'u': INJ_URL}
+WX2 = {'t': 'Open-Meteo kickoff forecast, Fri Nov 27', 'u': 'https://open-meteo.com/'}
+def AP(gid, title): return {'t': f'AP game preview via ESPN: {title} (Nov 25–26, 2026)', 'u': f'https://www.espn.com/nfl/game/_/gameId/{gid}'}
+AP_NOCIN = AP(401873087, 'Bengals look to get back on track when they host the Saints on a short week')
+AP_BALHOU = AP(401873085, 'Ravens limp in on 6-game skid without Jackson')
+AP_NYGIND = AP(401873088, 'QB Anthony Richardson hopes to follow J.J. McCarthy’s lead')
+AP_TENJAX = AP(401873090, 'Jaguars are simplifying the operation against the Titans')
+AP_NYJMIA = AP(401873089, 'Dolphins playing host to Jets')
+AP_ATLMIN = AP(401873084, 'Kirk Cousins makes his home debut in his second act with the Vikings')
+AP_NELAC = AP(401873093, 'Patriots-Chargers shaping up to be battle of backup QBs')
+AP_WSHARI = AP(401873092, 'Commanders try to continue momentum')
+AP_SEASF = AP(401873091, 'Purdy and the 49ers prepare for another tough test')
+AP_LVCLE = AP(401873086, 'Deshaun Watson and Fernando Mendoza face primetime pressure')
+AP_CARTB = AP(401873094, 'Buccaneers will need more from Baker Mayfield')
+NINERS = {'t': '49ers Webzone, 49ers vs. Seahawks injury report: Brock Purdy misses second straight practice (Nov 26, 2026)', 'u': 'https://www.49erswebzone.com/articles/205551-seahawks-injury-report-straight-practice/'}
+HENRY = {'t': 'NBC Sports, Derrick Henry (concussion) gets full practice (Nov 26, 2026)', 'u': 'https://www.nbcsports.com/fantasy/football/player-news/2026-11-26/derrick-henry-concussion-gets-full-practice'}
+JAXSCOUT = {'t': 'Jaguars.com, Scout’s Take: Bucky Brooks looks ahead to Week 12 vs. Titans (Nov 25, 2026)', 'u': 'https://jaguars.com/news/scout-s-take-bucky-brooks-looks-ahead-to-week-12-vs-titans'}
+TITANSWIRE = {'t': 'Titans Wire, Titans vs. Jaguars: 3 key matchups for Week 12 (Nov 26, 2026)', 'u': 'https://sports.yahoo.com/nfl/articles/tennessee-titans-vs-jacksonville-jaguars-100803504.html'}
+CINWX = 'Kickoff forecast in Cincinnati: 50°F, rain likely (91–97%), gusts near 30 mph (Open-Meteo, Fri Nov 27).'
+CLEWX = 'Kickoff forecast in Cleveland: 47°F, light rain (99%), little wind (Open-Meteo, Fri Nov 27).'
+SFWX = 'Kickoff forecast in Santa Clara: 66°F, showers possible (69%), 10 mph wind (Open-Meteo, Fri Nov 27).'
+QB.update({
+    'NO @ CIN': (True, 'Tyler Shough (NO) and Joe Burrow (CIN) start; neither is on the injury report (ESPN, Fri Nov 27).'),
+    'BAL @ HOU': (True, 'Jacoby Brissett makes his third Baltimore start (Lamar Jackson and Tyler Huntley are on injured reserve); C.J. Stroud (HOU) starts.'),
+    'NYG @ IND': (True, 'J.J. McCarthy (NYG) starts. Anthony Richardson starts for Indianapolis, his first start in nearly two years (Daniel Jones is gone).'),
+    'TEN @ JAX': (True, 'Cam Ward (TEN) and Trevor Lawrence (JAX) start; neither is on the injury report (ESPN, Fri Nov 27).'),
+    'NYJ @ MIA': (True, 'Geno Smith (NYJ) starts; Kyle McCord starts for Miami again (Malik Willis is on injured reserve).'),
+    'ATL @ MIN': (True, 'Michael Penix Jr. (ATL) starts; Kirk Cousins makes his third straight start for Minnesota (Kyler Murray, hamstring, is questionable).'),
+    'NE @ LAC': (True, 'Tommy DeVito starts for New England (Drake Maye, fibula, is out). Justin Herbert is in the concussion protocol, and DJ Uiagalelei is in line for his first start.'),
+    'WSH @ ARI': (True, 'Jayden Daniels (WAS) starts. Josh Johnson is likely to start for Arizona again (Carson Beck, back spasms, is questionable).'),
+    'SEA @ SF': (True, 'Sam Darnold (SEA) practiced fully. Brock Purdy (ankle, not a high-ankle sprain) missed Wednesday and Thursday and is day-to-day.'),
+    'LV @ CLE': (True, 'Fernando Mendoza (LV) makes his third start; Deshaun Watson (CLE) starts.'),
+    'CAR @ TB': (True, 'Bryce Young (CAR) and Baker Mayfield (TB) start; neither is on the injury report (ESPN, Fri Nov 27).'),
+})
+BACKUP.update({'IND': {'name': 'Anthony Richardson', 'recent': 0}, 'LAC': {'name': 'DJ Uiagalelei', 'recent': 0}})
+
+def _r(notes, src, decision=None, why=None):
+    d = {'notes': notes, 'src': src}
+    if decision: d['decision'] = decision; d['why'] = why
+    return d
+RESEARCH.update({
+    # NO @ CIN: Cincinnati by 10 on a short week after Monday's loss; two top-10 pass rushes; rain and gusts at kickoff
+    ('NO @ CIN', 'Chase Brown 15+ receiving yards (Yes)'): _r([
+        '15+ in 8 of 10 games. The Saints’ edge pair (Granderson 8.5 sacks, Young 8) is the reason to expect quick throws, and backs are Burrow’s outlet under pressure.',
+        CINWX + ' Rain favors short throws over deep ones.', 'Against it: a Bengals lead of 10+ shifts the second half to the run.'], [AP_NOCIN, NFLV, WX2]),
+    ('NO @ CIN', 'Tyler Shough 10+ rushing yards (Yes)'): _r([
+        'Cincinnati gives up 10.7 yards per scramble, the second most in the league, and Shough has 204 yards on 25 scrambles.',
+        'He has 25+ in four of his last five games. Trailing by 10 means more dropbacks against a pass rush (Mafe 9.5 sacks) that flushes quarterbacks.',
+        'Against it: wet footing and a quick-game plan can cut scrambles.'], [AP_NOCIN, NFLV]),
+    ('NO @ CIN', 'Devaughn Vele under 50 receiving yards (No)'): _r([
+        'Under 50 in only 5 of 10 games. Both things most likely to change his usage push it up: New Orleans trailing by 10, and Juwan Johnson (hamstring) questionable.',
+        CINWX], [AP_NOCIN, ESPN, NFLV, WX2], 'Pass',
+        'Research pass: a coin-flip log at this line (5 of 10), with the script and Juwan Johnson’s hamstring both pushing his targets up. The rain helps the under, but not enough.'),
+    ('NO @ CIN', 'Travis Etienne Jr. under 25 receiving yards (No)'): _r([
+        'Trailing by 10 against a top-10 pass rush (29 sacks) is the game state that sends a quarterback to his back on checkdowns, and rain favors the short throw.'],
+        [AP_NOCIN, NFLV], 'Pass', 'Research pass: the likely game (Saints trailing, under pressure, in rain) is the one that feeds a running back’s catches; the matchup points against the under.'),
+    ('NO @ CIN', 'Ja\'Marr Chase under 120 receiving yards (No)'): _r([
+        'Under 120 in 7 of 10. He went 141, 155 and 231 before Washington held him to 31 on Monday, a sign defenses are keying on him.',
+        CINWX + ' Gusts near 30 mph cut into the deep shots that produce 120-yard games, and a big Bengals lead shortens the passing game.',
+        'Against it: he has 120+ in three of his last four games.'], [AP_NOCIN, NFLV, WX2]),
+    # BAL @ HOU: Houston by 6.5; Henry practiced fully (out of protocol); Brissett has thrown 49 and 37 times in two Baltimore starts
+    ('BAL @ HOU', 'Jacoby Brissett under 10 rushing yards (No)'): _r([
+        'A pocket passer: 2 and 7 rushing yards in his two Baltimore starts, under 20 in every 2026 start.',
+        'Against it: Will Anderson Jr. (11.5 sacks) will chase him from the pocket.'], [AP_BALHOU, NFLV]),
+    ('BAL @ HOU', 'Tank Dell 20+ receiving yards (Yes)'): _r([
+        '20+ in all four games since his return. Dalton Schultz (illness) and Kayshon Boutte (hip) are questionable, which would push more targets his way.'], [AP_BALHOU, ESPN, NFLV]),
+    ('BAL @ HOU', 'Zay Flowers under 8 receptions (No)'): _r([
+        'With Brissett he caught 6 and 8: Brissett throws 37–49 times a game, and Baltimore is a 6.5-point underdog.'],
+        [AP_BALHOU, NFLV], 'Pass', 'Research pass: the quarterback change raised his volume (6 and 8 catches with Brissett), and trailing adds throws; the under needs 7 or fewer.'),
+    ('BAL @ HOU', 'Nico Collins 40+ receiving yards (Yes)'): _r([
+        '40+ in 7 of his 8 games, 58 last week. Houston is favored at home against a team that has lost six straight.',
+        'Against it: a Texans lead and Woody Marks back would tilt the game to the run.'], [AP_BALHOU, NFLV]),
+    # NYG @ IND: Richardson's first start in nearly two years; Alec Pierce on IR; the Giants' run game against one of the worst run defenses
+    ('NYG @ IND', 'Tyler Warren 3+ receptions (Yes)'): _r([
+        'Running cold: 2 and 1 catches in his last two games. Anthony Richardson makes his first start in nearly two years; his accuracy is the question, and a tight end’s short catches depend on it.'],
+        [AP_NYGIND, NFLV], 'Pass', 'Research pass: cold (2 and 1 catches in his last two), and the new quarterback’s accuracy is the open question for short targets.'),
+    ('NYG @ IND', 'Malachi Fields 15+ receiving yards (Yes)'): _r([
+        '15+ in all 10 games. The Giants should lean on the run against one of the worst run defenses, which limits the passing game, so this stays a small number.'], [AP_NYGIND, NFLV]),
+    # TEN @ JAX: Jacksonville by 14.5 two weeks after a 40-23 win; the Titans allow the most passing yards; the Jaguars are simplifying
+    ('TEN @ JAX', 'Tony Pollard under 95 rush + rec yards (No)'): _r([
+        'Over 95 in each of his last four games. In the first meeting he was held to 33 rushing yards on 9 carries but caught 8 passes for 66: 99 in all.',
+        'The script that slows his carries (Tennessee trailing) is the one that adds his catches.'], [AP_TENJAX, TITANSWIRE, NFLV], 'Pass',
+        'Research pass: over 95 in four straight, and in the first meeting the trailing script moved his yards to catches (33 rushing + 66 receiving = 99).'),
+    ('TEN @ JAX', 'Brenton Strange under 50 receiving yards (No)'): _r([
+        'His role has shrunk: 2–3 targets in each of the last four games (22, 9 and 16 yards in the last three, 9 against Tennessee in Week 10).',
+        'Against it: Tennessee allows the most passing yards in the league (272.7 a game), and the Jaguars’ scout expects him to find room between the numbers.'], [AP_TENJAX, JAXSCOUT, TITANSWIRE, NFLV]),
+    ('TEN @ JAX', 'Travis Hunter under 20 receiving yards (No)'): _r([
+        'Under 20 in 9 of 10 games: his offensive role is small, and the Jaguars’ scout lists Washington, Meyers, Strange and Thomas as the receivers who should get open.'], [JAXSCOUT, NFLV]),
+    ('TEN @ JAX', 'Cam Ward under 15 rushing yards (No)'): _r([
+        'He ran for 39 yards on 3 carries against Jacksonville in Week 10 and 41 the game before; trailing by two scores means dropbacks and scrambles.'],
+        [TITANSWIRE, NFLV], 'Pass', 'Research pass: 39 rushing yards against this defense two weeks ago, and the trailing script adds dropbacks.'),
+    # NYJ @ MIA
+    ('NYJ @ MIA', 'Adonai Mitchell 20+ receiving yards (Yes)'): _r([
+        'His role swings: 3 to 12 targets a game, 3 last week, and 0 catches on 3 targets in the October game against Miami. The preview’s matchup to watch is Mason Taylor against the Miami secondary.'],
+        [AP_NYJMIA, NFLV], 'Pass', 'Research pass: his targets swing from 3 to 12, and he was shut out by Miami in October; the role isn’t steady enough for a final.'),
+    ('NYJ @ MIA', 'Breece Hall 10+ receiving yards (Yes)'): _r([
+        '10+ in all six games he played, on 2–5 targets each.', 'Against it: Braelon Allen leads the Jets in rushing and a lead turns the backfield to him.'], [NFLV]),
+    ('NYJ @ MIA', 'Greg Dulcich 15+ receiving yards (Yes)'): _r([
+        'Three straight misses (14, 0, 12), the last two in Kyle McCord’s two starts on 2 and 7 targets.'],
+        [AP_NYJMIA, NFLV], 'Pass', 'Research pass: three straight misses, two of them since the quarterback change to McCord.'),
+    # ATL @ MIN: Minnesota by 7; Cousins at home against his former team; Addison doubtful; the 49ers beat this defense with quick throws to the middle
+    ('ATL @ MIN', 'Drake London under 7 receptions (No)'): _r([
+        'Under 7 in 7 of 10 games (5 a game). In the AP’s account of last week, San Francisco beat Minnesota with quick throws to the middle of the field, not the outside routes London mostly runs.'], [AP_ATLMIN, NFLV]),
+    ('ATL @ MIN', 'Kyle Pitts Sr. under 40 receiving yards (No)'): _r([
+        'San Francisco beat this defense by throwing quickly to spaces in the middle of the field created by its aggressive rush, and Atlanta comes off a bye with its coach saying there was plenty to learn from that game.',
+        'Pitts is Atlanta’s middle-of-the-field target and has 40+ in four of his last seven.'], [AP_ATLMIN, NFLV], 'Pass',
+        'Research pass: Minnesota’s known weakness (quick throws to the middle) is where Pitts lives, and Atlanta had a bye to plan for it.'),
+    ('ATL @ MIN', 'Justin Jefferson under 110 receiving yards (No)'): _r([
+        'Under 110 in all 9 of his games, including 74 and 86 in Cousins’ two starts.',
+        'Against it: Jordan Addison (thumb) is doubtful, and Cousins fed Jefferson some of the biggest seasons of his career.'], [AP_ATLMIN, ESPN, NFLV]),
+    ('ATL @ MIN', 'Bijan Robinson under 100 rushing yards (No)'): _r([
+        'Under 100 in 7 of 10. Atlanta is a 7-point underdog, the script that cuts carries late.', 'Against it: he is rested after the bye and went 145 and 194 in two games.'], [AP_ATLMIN, NFLV]),
+    ('ATL @ MIN', 'T.J. Hockenson under 60 receiving yards (No)'): _r([
+        'Running hot (55 over his last 3), Addison is doubtful, and Cousins and Hockenson were a high-volume pair before.'],
+        [AP_ATLMIN, ESPN, NFLV], 'Pass', 'Research pass: every catalyst points up: Cousins back, Addison doubtful, and his recent form.'),
+    # NE @ LAC: two backups, total 35.5
+    ('NE @ LAC', 'Kimani Vidal 10+ rushing yards (Yes)'): _r([
+        'A first-time starter at quarterback (DJ Uiagalelei, if Herbert stays in the protocol) usually means a heavier run plan; Vidal has 20+ in 6 of his last 7.',
+        'Against it: Omarion Hampton leads the backfield, and Vidal had 0 rushing yards in two games.'], [AP_NELAC, NFLV]),
+    ('NE @ LAC', 'Mack Hollins under 4 receptions (No)'): _r([
+        'A.J. Brown (hamstring) is doubtful and Romeo Doubs is on injured reserve, which leaves Hollins among New England’s top two receivers.'],
+        [AP_NELAC, ESPN, NFLV], 'Pass', 'Research pass: with Brown doubtful and Doubs out, his targets go up; the under needs 3 or fewer.'),
+    # WSH @ ARI: Washington by 7; Arizona fired its defensive coordinator; Josh Johnson likely again
+    ('WSH @ ARI', 'Josh Johnson under 25 rushing yards (No)'): _r([
+        'He ran for 5 yards in his Week 11 start, at 40. But Carson Beck (back spasms) is questionable, and the line only matters if Johnson starts.'],
+        [AP_WSHARI, ESPN, NFLV], 'Conditional lean', 'Only if Josh Johnson starts (Carson Beck is questionable with back spasms).'),
+    ('WSH @ ARI', 'Antonio Williams 3+ receptions (Yes)'): _r([
+        '3+ in 8 of 10. Dyami Brown is on injured reserve and Treylon Burks (foot) is questionable, so the targets concentrate on him. Arizona has allowed 30+ points in 8 of 11 games.'], [AP_WSHARI, ESPN, NFLV]),
+    ('WSH @ ARI', 'Bam Knight under 40 rushing yards (No)'): _r([
+        'Under 40 in 5 of 7. Tyler Allgeier leads Arizona’s backfield with Jeremiyah Love on injured reserve, and a 7-point deficit cuts the carries.'], [AP_WSHARI, ESPN, NFLV]),
+    ('WSH @ ARI', 'Chig Okonkwo 25+ receiving yards (Yes)'): _r([
+        '25+ in 5 of 8, 66 last week. Arizona has allowed a league-high 25 passing touchdowns and has a new defensive coordinator this week.'], [AP_WSHARI, NFLV]),
+    # SEA @ SF: Purdy day-to-day; Evans and Smith-Njigba limited; Seattle's defense has held San Francisco in check
+    ('SEA @ SF', 'Tory Horton under 15 receiving yards (No)'): _r([
+        'Under 15 in only 3 of 6 and over in his last two (26, 22). Jaxon Smith-Njigba (ankle) is limited, which can only add to Horton’s role.'],
+        [NINERS, NFLV], 'Pass', 'Research pass: a 3-of-6 log with two straight misses, and Smith-Njigba’s ankle could push him up.'),
+    ('SEA @ SF', 'Rashid Shaheed under 30 receiving yards (No)'): _r([
+        'Under 30 in 6 of 8; 1 and 8 yards in his last two. ' + SFWX, 'Against it: if Smith-Njigba is limited, Shaheed is next in line for targets.'], [NINERS, NFLV, WX2]),
+    ('SEA @ SF', 'George Kittle 30+ receiving yards (Yes)'): _r([
+        '30+ in 8 of 10. Brock Purdy (ankle) missed Wednesday and Thursday; Kyle Shanahan called him day-to-day. A backup throwing to him changes the read.'],
+        [NINERS, NFLV], 'Conditional lean', 'Only if Brock Purdy starts (ankle; missed Wednesday and Thursday practice).'),
+    ('SEA @ SF', 'Kaelon Black under 30 rushing yards (No)'): _r([
+        'Over 30 in four of his last five (34, 63, 70, 53): his role has grown. If Purdy sits, San Francisco leans on the run.'],
+        [NINERS, NFLV], 'Pass', 'Research pass: his workload has grown (30+ in four of his last five), and a Purdy absence would add carries.'),
+    # LV @ CLE: Cleveland by 4.5 in light rain; Raheim Sanders on injured reserve
+    ('LV @ CLE', 'Quinshon Judkins 40+ rushing yards (Yes)'): _r([
+        'Raheim Sanders is on injured reserve, so the carries are his. Cleveland is favored, and ' + CLEWX[0].lower() + CLEWX[1:],
+        'Against it: 40+ in only 5 of 9, and Watson has thrown for 300+ in three straight.'], [AP_LVCLE, ESPN, NFLV, WX2]),
+    ('LV @ CLE', 'Mike Washington Jr. 20+ rushing yards (Yes)'): _r([
+        '20+ in 7 of 11, 23 and 42 in his last two.', 'Against it: a Raiders deficit cuts the run game, and Ashton Jeanty leads the backfield.'], [AP_LVCLE, NFLV]),
+    # CAR @ TB (Monday): Irving ran 24 times for 106 in the 43-13 win in October; Carolina has since fired its defensive coordinator
+    ('CAR @ TB', 'Bucky Irving 60+ rushing yards (Yes)'): _r([
+        'He ran 24 times for 106 yards and two touchdowns in the October meeting, when Tampa Bay ran for 258. Carolina fired its defensive coordinator less than two weeks later.',
+        'Against it: Kenneth Gainwell took 14 carries in that game, and a Panthers lead would cut the run game.'], [AP_CARTB, NFLV]),
+    ('CAR @ TB', 'Ted Hurst III under 40 receiving yards (No)'): _r([
+        'His role jumped last week: 7 targets for 56 yards after three straight one-target games. The cause isn’t clear yet, and until it is, his old log can’t carry an under.'],
+        [NFLV], 'Pass', 'Research pass: 7 targets and 56 yards last week after three one-target games; a role change the log doesn’t reflect yet.'),
+    ('CAR @ TB', 'Chuba Hubbard under 30 receiving yards (No)'): _r([
+        'Under 30 in 7 of 10.', 'Against it: Carolina is the underdog, and he had 80 receiving two games ago.'], [AP_CARTB, NFLV]),
+    ('CAR @ TB', 'John Metchie III under 20 receiving yards (No)'): _r([
+        'He cleared 20 in 4 of 9, and the AP preview’s theme is that Tampa Bay needs more from its passing game.'],
+        [AP_CARTB, NFLV], 'Pass', 'Research pass: a near coin-flip log (under in 5 of 9), with Tampa Bay looking to throw more.'),
+})
+# lines the model doesn't price (the method's other markets), at the market's own number, kept only on a research case
+RESEARCH_MARKET = {
+    ('BAL @ HOU', 'KXNFLPASSATT', 'Jacoby Brissett', 31, 'Yes'): _r([
+        '31+ attempts in 5 of his last 6 starts (47, 35, 48, 49, 37; the miss was 23). Baltimore is a 6.5-point underdog, and Houston held Indianapolis to 38 rushing yards last week.',
+        'Against it: Derrick Henry is back from the protocol (full practice Thursday), which can pull the plan toward the run.'], [AP_BALHOU, HENRY, NFLV], 'Final line',
+        'A research pick: our model doesn’t price passing attempts, so the chance shown is the market’s.'),
+    ('ATL @ MIN', 'KXNFLRSHATT', 'Jordan Mason', 17, 'No'): _r([
+        'Under 17 carries in all six games he has played (15, 15, 8, 6, 16, 11); Aaron Jones leads Minnesota’s backfield.',
+        'Against it: a Vikings lead of 7+ hands the fourth quarter to the backs.'], [AP_ATLMIN, NFLV], 'Final line',
+        'A research pick: our model doesn’t price rushing attempts, so the chance shown is the market’s.'),
+}
+RESEARCH.update({
+    ('NO @ CIN', 'Tee Higgins under 7 receptions (No)'): _r([
+        'Under 7 in 8 of 10 games (5 a game). ' + CINWX, 'Against it: he caught 10 and 11 in two games, and Chase draws the coverage.'], [AP_NOCIN, NFLV, WX2]),
+    ('TEN @ JAX', 'Parker Washington under 100 receiving yards (No)'): _r([
+        'Over 100 in two of his last three (152, 103), and the Jaguars’ scout names him first among the receivers who should find room. He is questionable (shoulder).'],
+        [JAXSCOUT, ESPN, NFLV], 'Pass', 'Research pass: over 100 in two of his last three, and Jacksonville’s own scout expects him to be featured.'),
+    ('SEA @ SF', 'Sam Darnold under 10 rushing yards (No)'): _r([
+        'Over 10 in each of his last three games (19, 17, 20) after five straight under it.'],
+        [NFLV], 'Pass', 'Research pass: 17–20 rushing yards in each of his last three games; the log at this line has turned.'),
+})
+RESEARCH_PLAYER.update({
+    ('ATL @ MIN', 'Kyle Pitts Sr.', 'No'): _r([
+        'San Francisco beat Minnesota with quick throws to the middle of the field, and Atlanta comes off a bye with its coach saying there was plenty to learn from that game. Pitts has 4+ catches in four of his last six.'],
+        [AP_ATLMIN, NFLV], 'Pass', 'Research pass: Minnesota’s known weakness (quick throws to the middle) is where Pitts lives, and Atlanta had a bye to plan for it.'),
+})

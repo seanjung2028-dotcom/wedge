@@ -1,4 +1,8 @@
-"""Week 12 card (Tue Nov 24, Kalshi ladders checked 2:39 PM CT), picked under rules v2 (brain/rules.py): ranked by the chance the
+"""Week 12 card. Sunday and Monday (from Fri Nov 27): rules v3 with the research method Independent Sports Research v1 (brain/rules.py,
+brain/isr.py, brain/sig.py); Wedge % is the v6 lens alone (the earlier research projection is retired) and prices with every game
+through Week 11 (v6.WEEK = 12; Tuesday's build left Week 11 out, a bug fixed Fri Nov 27). Wednesday-Friday games keep Tuesday's
+card as posted (W12_PREV, W12_LOCK). Tuesday's note follows.
+Week 12 card (Tue Nov 24, Kalshi ladders checked 2:39 PM CT), picked under rules v2 (brain/rules.py): ranked by the chance the
 exact line hits, price second (75c cap, 70% bar), on Wedge % v6 with the 5% research projection (bt/w12_model/report.json: on Week 11's
 board it called hits as well as Kalshi's own mid, and its card did best of the five numbers tested). Kalshi lists player ladders for the
 Wednesday, Thursday and Friday games so far (GB @ LAR, CHI @ DET, PHI @ DAL, KC @ BUF, DEN @ PIT); Sunday and Monday open later.
@@ -10,10 +14,12 @@ sys.path.insert(0, W + 'lens'); import core, v6, blocks
 sys.path.insert(0, W + 'final12'); import brain_layer as BR
 # pick rules: v1 (edge over the price, Weeks 7-11, the default here) or v2 (chance first, brain/rules.py, from Week 12).
 # WEDGE_RULES=v2 WEDGE_OUT=<folder/> runs Week 12's board under v2 without touching the posted card (bt/w12_likely/build/).
-RULES = os.environ.get('WEDGE_RULES', 'v2'); V2 = RULES == 'v2'   # Week 12 on: v2
+RULES = os.environ.get('WEDGE_RULES', 'v3'); V3 = RULES == 'v3'; V2 = RULES in ('v2', 'v3')   # Week 12 Wed-Fri: v2; Sunday on: v3
 OUTD = os.environ.get('WEDGE_OUT', W + 'final12/')
 if V2: sys.path.insert(0, W + 'brain'); import rules as RV
 BACKUP = getattr(BR, 'BACKUP', {})
+v6.WEEK = 12   # price with every game before Week 12 (Tuesday's build defaulted to 11 and left Week 11 out)
+if V3: v6.BLEND = None   # v3: the earlier method's research projection no longer enters Wedge %
 T, ST = v6.tables(12)
 KP = json.load(open(W + 'rh/kalshi_props_w12.json')); AT = KP['at']
 import datetime as _d0, zoneinfo as _z0
@@ -133,7 +139,7 @@ for (code, name, stat), rungs, early in [(k_, v_, False) for k_, v_ in LAD.items
         x['chk'] = BR.run_checks(game, pid, team, stat, x['k'], x['side'], em)
         if V2:   # the quarterback row becomes information: a backup starter is a research factor, not an exclusion
             x['chk']['QB'] = {'pass': True, 'note': x['chk']['QB']['note'], 'info': True}
-            x['call'], x['note'] = RV.decide(x, stat, BACKUP.get(team), stt)
+            x['call'], x['note'] = (RV.decide3 if V3 else RV.decide)(x, stat, BACKUP.get(team), stt)
         else: x['call'], x['note'] = BR.decide(x)
         hits = [v for _, v, _ in L if (v >= x['k'] if x['side'] == 'Yes' else v < x['k'])]; x['n_hit'], x['n'] = len(hits), len(L)
     # within a tier, an over that clears is preferred to an under that clears (card mix: about one under per three overs)
@@ -183,6 +189,7 @@ def kicked(r):   # kickoff at or before this price check (plus 5 minutes): the c
     ko = _dt.fromisoformat(f"{r.gameday}T{r.gametime}").replace(tzinfo=_ZI('America/New_York'))
     return ko.timestamp() <= NOW.timestamp() + 300
 LOCKED = set()
+LOCK = {x.strip() for x in os.environ.get('W12_LOCK', '').split(',') if x.strip()}   # games that keep the posted card even before kickoff
 CODE = {f'{a_} @ {h_}': c_ for c_, (a_, h_) in GAMES.items()}
 FAMN = {'KXNFLRECYDS': 'receiving yards', 'KXNFLREC': 'receptions', 'KXNFLRSHYDS': 'rushing yards', 'KXNFLRRYDS': 'rush + rec yards', 'KXNFLPASSYDS': 'passing yards', 'KXNFLPASSTDS': 'passing TDs', 'KXNFLTD': 'anytime TD'}
 def coverage(game, nprops):
@@ -215,6 +222,47 @@ def revisions(game, plays, cand):
             if not why: why = 'He is no longer on the board (ruled out or no ladder).'
         out.append({'line': p['line'], 'was': p['decision'], 'now': 'Pass', 'v': 'Pass', 'why': why})
     return out
+# ---- v3: research picks in markets the model doesn't price (rushing and passing attempts, team totals, team sacks)
+EXTRA = json.load(open(W + os.environ.get('W12_PULL', 'pull1124') + '/kalshi_extra_w12.json')) if os.path.exists(W + os.environ.get('W12_PULL', 'pull1124') + '/kalshi_extra_w12.json') else None
+MKW = {'KXNFLPASSATT': 'passing attempts', 'KXNFLRSHATT': 'rushing attempts', 'KXNFLTEAMTOTAL': 'points', 'KXNFLTEAMSACK': 'sacks'}
+def market_play(game, key, R, r):
+    """one research pick from the market list: price and chance read from Kalshi's own book (chance = the side's mid; range = bid to ask)"""
+    if EXTRA is None: return None
+    _, ser, who, k, side = key; code = CODE.get(game)
+    if ser in EXTRA['props']:
+        pcs = {pc for pc, nm in EXTRA['n'].items() if nm == who}
+        hit = [x for x in EXTRA['props'][ser] if x[0] == code and x[1] in pcs and x[2] == k]
+        if not hit: return None
+        _, pc, _, ya, yb, na = hit[0]; sub = pc
+    else:
+        hit = [x for x in EXTRA['games'].get(ser, []) if x[0] == code and x[1] == who and x[2] == k]
+        if not hit: return None
+        _, team, _, ya, yb, na, tr = hit[0]; sub = f'{team}{k}'
+    ask = ya if side == 'Yes' else na; bid = yb if side == 'Yes' else 100 - ya
+    if not ask or not bid: return None
+    mid = round((ask + bid) / 2, 1); lo, hi = float(bid), float(ask); be = ask + FEE
+    word = MKW[ser]; t_ = (f"{k}+ {word}" if side == 'Yes' else f"under {k} {word}")
+    line = f"{who} {t_} ({side})"
+    if lo >= RV.BAR and ask <= RV.CAP and R.get('decision') == 'Final line': call = 'Final line'
+    elif mid >= RV.BAR and ask <= RV.CAP and R.get('decision') in ('Final line', 'Conditional lean'): call = 'Conditional lean'
+    else: call = 'Pass'
+    cond = (R.get('why', '') + ' ' + ('Holds as a final line up to 75¢ while the news holds.' if call == 'Final line' else
+            (f"A lean: the market’s own range runs {lo:.0f}–{hi:.0f}%, and a final needs {RV.BAR}% at the low end." if call == 'Conditional lean' else
+             f"Passed: the market’s range ({lo:.0f}–{hi:.0f}%) or the price ({ask}¢) misses the card’s bar."))).strip()
+    dcode = _dt.strptime(r.gameday, '%Y-%m-%d').strftime('%y%b%d').upper()
+    x_ = {'ask': ask, 'mid': mid}
+    return {'decision': call, 'player': who, 'line': line, 'thr': t_, 'side': side, 'price': ask, 'payout': round(100 / ask, 2), 'be': be, 'mkt': mid,
+            'est': [round(lo), round(hi)], 'lo': lo, 'mid': mid, 'hi': hi, 'edge_lo': round(lo - be, 1), 'edge_mid': round(mid - be, 1),
+            'platform': 'Robinhood (Kalshi contract)', 'checked': AT, 'ticker': f"{ser}-{dcode}{code}-{sub}" + (f"-{k}" if ser in EXTRA['props'] else ''),
+            'why': R['notes'][0] if R.get('notes') else '', 'support': '', 'sample': '', 'counter': next((n for n in R.get('notes', []) if n.startswith('Against it')), 'No single factor stands out against it.'),
+            'loses': 'The game script turns against the read.', 'cond': cond, 'vs': '', 'pts': 0, 'shift': 0, 'lens': [], 'tier': BR.tier(mid),
+            'chain': [{'k': 'The research case', 't': ' '.join(n for n in R.get('notes', []) if not n.startswith('Against it'))},
+                      {'k': 'What the number is', 't': 'The market’s own chance (the middle of Kalshi’s bid and ask). Our model doesn’t price this market, so there is no Wedge % here.'}],
+            'checks': [{'k': 'Research', 'ok': True, 't': 'Picked on the research case; the model’s checks cover receiving and rushing yards only.', 'info': True}],
+            'log': [], 'alts': [], 'objection': next((n for n in R.get('notes', []) if n.startswith('Against it')), ''), 'miss': 'The game script turns against the read.',
+            'change': 'A change at quarterback or a late scratch voids the read.', '_stat': 'research', '_team': '', '_qb': False,
+            'ladder': [], 'value': RV.value(x_), 'path': 'R', 'sig_low': None, 'research': {'notes': R.get('notes', []), 'src': R.get('src', [])}, 'market_only': True}
+from datetime import datetime as _dt
 # games already played keep the card as it was posted before kickoff, graded (Thu Nov 12 6:44 PM CT card for WSH @ NYG)
 PRIOR = {}   # games played this week, graded from the card as posted (none yet)
 SUNB = {'games': {}, 'plays': {}}
@@ -236,8 +284,10 @@ def grade(c, x):
     return c
 for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
     a, h = fx(r.away_team), fx(r.home_team); game = f'{a} @ {h}'
-    if game not in DONE and kicked(r) and game in FRI:
-        c0 = json.loads(json.dumps(FRI[game])); c0['locked'] = 'Kicked off before this price check: the card stays as published before kickoff.'
+    if game not in DONE and (kicked(r) or game in LOCK) and game in FRI:
+        c0 = json.loads(json.dumps(FRI[game]))
+        c0['locked'] = ('Kicked off before this price check: the card stays as published before kickoff.' if kicked(r) else
+                        'Picked Tuesday under the earlier pick rules; it stays as posted. The new research method starts with Sunday’s games.')
         c0['market'] = c0['locked'] + ' ' + c0.get('market', '')
         CARDS.append(c0); LOCKED.add(game)
         for row in (csv.DictReader(open(W + PREV + '/final_w12.csv')) if PREV else []):
@@ -289,6 +339,7 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
                                       'hits': f"{y['n_hit']}/{y['n']}", 'call': y['call'], 'tag': 'card' if y is x else ''} for y in sorted(o['rows'], key=lambda y: (y['side'], y['k']))]}
             if V2:   # chance-first extras: the separate price read, alternatives by chance, the QB row as information
                 pl_['value'] = RV.value(x); pl_['alts'] = RV.alts(x, o, res[game], thr)
+                if V3: pl_['path'] = x.get('path', ''); pl_['sig_low'] = x.get('sig_low')
                 for ck in pl_['checks']:
                     if ck['k'] == BR.LBL['QB']: ck['info'] = True
             if o['early']:
@@ -331,10 +382,11 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
     if V2:   # same limit, best chance first, no over/under preference
         keep, cut = RV.card(plays)
         for p in cut:
-            passed.insert(0, {'name': p['line'], 'why': f"Also makes the card’s bar ({p['price']}¢, needs {p['be']}%, ours {p['est'][0]}–{p['est'][1]}%), but it would be a second line on {p['player']} or a fifth in this game.",
-                              'move': 'Left off by the card limit: one line per player, four per game.', 'thesis': True, 'lens': p['lens'], 'kind': 'limit'})
+            nth = {4: 'fifth', 5: 'sixth'}.get(RV.PER_GAME, f'{RV.PER_GAME + 1}th'); nw = {4: 'four', 5: 'five'}.get(RV.PER_GAME, str(RV.PER_GAME))
+            passed.insert(0, {'name': p['line'], 'why': f"Also makes the card’s bar ({p['price']}¢, needs {p['be']}%, ours {p['est'][0]}–{p['est'][1]}%), but it would be a second line on {p['player']} or a {nth} in this game.",
+                              'move': f'Left off by the card limit: one line per player, {nw} per game.', 'thesis': True, 'lens': p['lens'], 'kind': 'limit'})
             for row in CSV:
-                if row['line'] == p['line'] and row['game'] == game: row['decision'] = 'Pass'; row['condition'] = 'Card limit: one line per player, four per game'
+                if row['line'] == p['line'] and row['game'] == game: row['decision'] = 'Pass'; row['condition'] = f'Card limit: one line per player, {nw} per game'
         cut = []
     for p in cut:
         passed.insert(0, {'name': p['line'], 'why': f"Also clears at our middle ({p['price']}¢, needs {p['be']}%, ours {p['est'][0]}–{p['est'][1]}%), but it rides the same read as a line already on the card.",
@@ -342,6 +394,17 @@ for r in g.sort_values(['gameday', 'gametime']).itertuples(index=False):
         for row in CSV:
             if row['line'] == p['line'] and row['game'] == game: row['decision'] = 'Pass'; row['condition'] = 'Same read as a line already on the card'
     plays = keep
+    if V3:   # the method's other markets: research picks at the market's own number (brain_layer.RESEARCH_MARKET), inside the same card limit
+        for key, R in getattr(BR, 'RESEARCH_MARKET', {}).items():
+            if key[0] != game: continue
+            mp = market_play(game, key, R, r)
+            if mp is None: continue
+            if mp['decision'] == 'Pass' or len(plays) >= RV.PER_GAME or any(q['player'] == mp['player'] for q in plays):
+                passed.insert(0, {'name': mp['line'], 'why': mp['cond'] if mp['decision'] == 'Pass' else 'A research pick, left off by the card limit.', 'move': 'Re-check if the news changes.', 'kind': 'research'}); continue
+            plays.append(mp)
+            CSV.append({'game': game, 'decision': mp['decision'], 'line': mp['line'], 'side': mp['side'], 'price': mp['price'], 'payout': mp['payout'], 'breakeven': mp['be'], 'market_mid': mp['mkt'],
+                        'our_lo': mp['lo'], 'our_mid': mp['mid'], 'our_hi': mp['hi'], 'edge_lo': mp['edge_lo'], 'edge_mid': mp['edge_mid'], 'evidence_pts': 0, 'shift': 0,
+                        'condition': mp['cond'], 'ticker': mp['ticker'], 'checked': AT, 'result': '', 'grade_read': '', 'grade_price': ''})
     passed = RV.order_passed(passed) if V2 else passed[:8]
     for p in eplays:
         rs = BR.RESEARCH.get((game, p['line'])) or getattr(BR, 'RESEARCH_PLAYER', {}).get((game, p['player'], p['side']))
