@@ -519,6 +519,9 @@ s, js = _r22.apply(s, js)
 # round 23 (Fri Nov 27): Sunday and Monday under rules v3 and the new research method
 _sp23 = _ilu.spec_from_file_location('r23_research', V + 'r23_research.py'); _r23 = _ilu.module_from_spec(_sp23); _sp23.loader.exec_module(_r23)
 s, js = _r23.apply(s, js)
+# round 24 (Fri Nov 27 evening): Week 12's finals in the final-line record; Week 11 not counted, labels from the data
+_sp24 = _ilu.spec_from_file_location('r24_record', V + 'r24_record.py'); _r24 = _ilu.module_from_spec(_sp24); _sp24.loader.exec_module(_r24)
+s, js = _r24.apply(s, js)
 s = s.replace('@@JS@@', '<script>' + js + '</script>')
 s = s.replace('<title>Wedge', '<title>Wedge')
 open(V + 'index_full.html', 'w').write(s)

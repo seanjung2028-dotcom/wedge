@@ -1,0 +1,33 @@
+id,week,source,game,team,line,price,mid,outcome,result,profit_c
+FR001,2,Backtest,LV @ LAC,LAC,Justin Herbert under 30 rushing yards (No),47,57.4,Won,W2: 2 rush yds,53
+FR002,3,Backtest,NYJ @ DET,NYJ,Breece Hall under 25 receiving yards (No),55,62.9,Won,W3: 23 rec yds,45
+FR003,4,Backtest,DAL @ HOU,DAL,Javonte Williams under 70 rush + rec yards (No),52,60.3,Lost,W4: 83 rush + rec yds,-52
+FR004,4,Backtest,DET @ CAR,DET,Jahmyr Gibbs 90+ rushing yards (Yes),50,62.0,Lost,W4: 46 rush yds,-50
+FR005,5,Added,NYG @ WSH,NYG,Malik Nabers 5+ receptions (Yes),67,,Won,W5: 11 rec,33
+FR006,5,Backtest,HOU @ TEN,TEN,Tyjae Spears under 25 rushing yards (No),52,61.2,Won,W5: 0 rush yds,48
+FR007,5,Backtest,MIN @ NO,MIN,Aaron Jones 70+ rushing yards (Yes),49,58.5,Won,W5: 113 rush yds,51
+FR008,6,Added,BUF @ LV,LV,Ashton Jeanty 4+ receptions (Yes),51,,Won,W6: 4 rec,49
+FR009,6,Added,HOU @ JAX,HOU,Xavier Hutchinson 2+ receptions (Yes),52,,Won,W6: 2 rec,48
+FR010,6,Added,LAC @ KC,KC,Kenneth Walker 90+ rushing yards (Yes),53,,Won,W6: 128 rush yds,47
+FR011,6,Added,WSH @ SF,SF,Brock Purdy 20+ rushing yards (Yes),47,,Won,W6: 28 rush yds,53
+FR012,6,Added,WSH @ SF,SF,Christian McCaffrey 6+ receptions (Yes),36,,Won,W6: 9 rec,64
+FR013,6,Backtest,HOU @ JAX,HOU,C.J. Stroud under 20 rushing yards (No),49,59.7,Won,W6: 5 rush yds,51
+FR014,7,Added,CIN @ BAL,CIN,Chase Brown 40+ rushing yards (Yes),54,,Lost,W7: 39 rush yds,-54
+FR015,7,Added,NE @ CHI,CHI,D'Andre Swift 3+ receptions (Yes),55,,Won,W7: 4 rec,45
+FR016,7,Added,NE @ CHI,NE,Rhamondre Stevenson 3+ receptions (Yes),50,,Won,W7: 5 rec,50
+FR017,7,Added,PIT @ NO,PIT,Jaylen Warren 15+ receiving yards (Yes),72,,Won,W7: 36 rec yds,28
+FR018,7,Backtest,KC @ SEA,SEA,Velus Jones Jr. under 10 rushing yards (No),51,63.8,Won,W7: 8 rush yds,49
+FR019,7,Backtest,LAR @ LV,LAR,Kyren Williams 70+ rushing yards (Yes),49,66.3,Won,W7: 99 rush yds,51
+FR020,8,Backtest,CHI @ SEA,CHI,Caleb Williams under 25 rushing yards (No),51,58.6,Won,W8: 1 rush yds,49
+FR021,8,Backtest,KC @ DEN,KC,Kenneth Walker III 90+ rushing yards (Yes),48,52.8,Lost,W8: 69 rush yds,-48
+FR022,9,Added,CIN @ ATL,CIN,Tee Higgins 5+ receptions (Yes),67,,Won,W9: 5 rec,33
+FR023,9,Added,CLE @ NO,NO,Chris Olave 6+ receptions (Yes),54,,Won,W9: 7 rec,46
+FR024,10,Week 10 card,CAR @ NO,CAR,Chuba Hubbard 80+ rushing yards (Yes),52,,Won,W10: 92 rush yds,48
+FR025,10,Week 10 card,CAR @ NO,NO,Tyler Shough 20+ rushing yards (Yes),43,50.1,Won,W10: 25 rush yds,57
+FR026,10,Week 10 card,HOU @ CLE,HOU,Woody Marks 40+ rushing yards (Yes),75,81.1,Won,W10: 50 rush yds,25
+FR027,10,Week 10 card,PIT @ CIN,CIN,Chase Brown under 60 rushing yards (No),68,74.6,Won,W10: 44 rush yds,32
+FR028,10,Week 10 card,PIT @ CIN,PIT,Jaylen Warren 70+ rushing yards (Yes),43,48.5,Lost,W10: 15 rush yds,-43
+FR029,10,Week 10 card,PIT @ CIN,PIT,Rico Dowdle 30+ rushing yards (Yes),51,56.5,Lost,W10: 26 rush yds,-51
+FR030,10,Week 10 card,PIT @ CIN,CIN,Samaje Perine under 20 rushing yards (No),54,61.9,Won,W10: 14 rush yds,46
+FR031,10,Week 10 card,SF @ DAL,SF,Brock Purdy 20+ rushing yards (Yes),55,,Won,W10: 21 rush yds,45
+FR032,10,Week 10 card,SF @ DAL,SF,Christian McCaffrey 60+ rushing yards (Yes),54,62.2,Won,W10: 62 rush yds,46

@@ -31,3 +31,16 @@ FR029,10,Week 10 card,PIT @ CIN,PIT,Rico Dowdle 30+ rushing yards (Yes),51,56.5,
 FR030,10,Week 10 card,PIT @ CIN,CIN,Samaje Perine under 20 rushing yards (No),54,61.9,Won,W10: 14 rush yds,46
 FR031,10,Week 10 card,SF @ DAL,SF,Brock Purdy 20+ rushing yards (Yes),55,,Won,W10: 21 rush yds,45
 FR032,10,Week 10 card,SF @ DAL,SF,Christian McCaffrey 60+ rushing yards (Yes),54,62.2,Won,W10: 62 rush yds,46
+FR033,12,Week 12 card,CHI @ DET,DET,Amon-Ra St. Brown 60+ receiving yards (Yes),75,75.7,Won,W12: 146 rec yds,25
+FR034,12,Week 12 card,CHI @ DET,DET,Jameson Williams 3+ receptions (Yes),75,77.0,Won,W12: 6 rec,25
+FR035,12,Week 12 card,CHI @ DET,CHI,Kalif Raymond under 40 receiving yards (No),74,76.7,Won,W12: 20 rec yds,26
+FR036,12,Week 12 card,CHI @ DET,CHI,Kyle Monangai under 50 rushing yards (No),73,76.7,Won,W12: 15 rush yds,27
+FR037,12,Week 12 card,DEN @ PIT,DEN,Bo Nix under 20 rushing yards (No),71,76.6,Won,W12: 7 rush yds,29
+FR038,12,Week 12 card,DEN @ PIT,PIT,Germie Bernard under 40 receiving yards (No),74,75.5,Lost,W12: 58 rec yds,-74
+FR039,12,Week 12 card,GB @ LAR,GB,Jordan Love under 10 rushing yards (No),71,76.5,Won,W12: 7 rush yds,29
+FR040,12,Week 12 card,KC @ BUF,BUF,Josh Allen under 50 rushing yards (No),71,73.9,Won,W12: 43 rush yds,29
+FR041,12,Week 12 card,KC @ BUF,KC,Josh Downs under 60 receiving yards (No),73,79.0,Won,W12: 13 rec yds,27
+FR042,12,Week 12 card,KC @ BUF,BUF,Keon Coleman under 40 receiving yards (No),74,74.6,Won,W12: 0 rec yds,26
+FR043,12,Week 12 card,KC @ BUF,KC,Travis Kelce under 6 receptions (No),75,77.3,Won,W12: 4 rec,25
+FR044,12,Week 12 card,PHI @ DAL,DAL,CeeDee Lamb 6+ receptions (Yes),75,73.0,Won,W12: 7 rec,25
+FR045,12,Week 12 card,PHI @ DAL,DAL,KaVontae Turpin under 2 receptions (No),75,75.0,Won,W12: 1 rec,25
